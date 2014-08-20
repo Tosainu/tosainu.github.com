@@ -4,6 +4,8 @@
 
 # Time.zone = "UTC"
 
+activate :syntax, line_numbers: true
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
@@ -85,6 +87,9 @@ set :partials_dir, '_partials'
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
+
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true
 
 # Build-specific configuration
 configure :build do

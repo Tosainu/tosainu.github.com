@@ -1,7 +1,18 @@
 ---
 layout: default
+pageable: true
 ---
 <div id="content" class="9u">
+  <p class="well">Archive for <strong>
+    <% case page_type when 'day' %>
+      <%= Date.new(year, month, day).strftime('%Y-%m-%d') %>
+    <% when 'month' %>
+      <%= Date.new(year, month, 1).strftime('%b %Y') %>
+    <% when 'year' %>
+      <%= year %>
+    <% end %>
+  </strong>.</p>
+
   <% page_articles.each_with_index do |article, i| %>
     <article class="entry">
       <header>

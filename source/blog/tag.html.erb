@@ -1,7 +1,11 @@
 ---
 layout: default
+pageable: true
+per_page: 12
 ---
 <div id="content" class="9u">
+  <p class="well">Articles tagged <strong><%= tagname %></strong>.</p>
+
   <% page_articles.each_with_index do |article, i| %>
     <article class="entry">
       <header>

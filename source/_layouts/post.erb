@@ -1,0 +1,29 @@
+<% wrap_layout :default do %>
+  <div id="content" class="9u">
+    <article class="entry">
+      <header>
+        <h1><%= link_to current_article.title, current_article %></h1>
+        <ul class="inline">
+          <li><i class="fa fa-calendar"></i> <%= current_article.date.strftime('%Y-%m-%d') %></li>
+        </ul>
+      </header>
+
+      <div class="text">
+        <%= yield %>
+      </div>
+    </article>
+
+    <div class="pagination">
+      <ul>
+        <% if current_article.next_article %>
+          <li><%= link_to current_article.next_article.title, current_article.next_article %></li>
+        <% end %>
+        <% if current_article.previous_article %>
+          <li><%= link_to current_article.previous_article.title, current_article.previous_article %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <%= partial "sidebar" %>
+<% end %>

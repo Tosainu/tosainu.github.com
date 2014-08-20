@@ -2,7 +2,7 @@
 # Blog settings
 ###
 
-# Time.zone = "UTC"
+Time.zone = 'Tokyo'
 
 activate :syntax, line_numbers: true
 

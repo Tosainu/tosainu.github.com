@@ -4,7 +4,7 @@
       <header>
         <h1><%= link_to current_article.title, current_article %></h1>
         <ul class="inline">
-          <li><i class="fa fa-calendar"></i> <%= current_article.date.strftime('%Y-%m-%d') %></li>
+          <li><i class="fa fa-calendar"></i> <%= current_article.date.strftime('%Y-%m-%d %X') %></li>
         </ul>
       </header>
 

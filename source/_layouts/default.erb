@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <!-- 天安門事件 -->
-<html lang="ja">
+<html lang="<%= data.site.lang %>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv='X-UA-Compatible' content='IE=9'>
-    <meta name="generator" content="Vim">
+    <meta name="author" content="<%= data.site.author %>" />
+    <meta name="description" content="<%= data.site.description %>" />
+    <meta name="generator" content="Middleman">
+    <meta name="keywords" content="<%= data.site.keywords %>" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <title><%= current_article.title + ' | ' unless current_article.nil? %>Blog Title</title>
+    <title><%= current_article.title + ' | ' unless current_article.nil? %><%= data.site.title %></title>
     <%= stylesheet_link_tag 'reset' %>
     <%= javascript_include_tag "skel.min" %>
     <%= javascript_include_tag "main" %>
@@ -19,7 +22,7 @@
 
     <%= stylesheet_link_tag 'font-awesome' %>
     <%= stylesheet_link_tag 'syntax' %>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <%= feed_tag :atom, '/feed.xml', title: 'Atom Feed' %>
   </head>
 
   <body>
@@ -27,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="4u title">
-            <h1 class="title-text"><a href="/">Blog Title</a></h1>
+            <h1 class="title-text"><a href="/"><%= data.site.title %></a></h1>
             <!-- menu toggle for mobile pages -->
             <label for="nav-toggle" class="toggle-button"><i class="fa fa-list-ul"></i></label>
           </div>
@@ -53,7 +56,7 @@
     <div class="footer">
       <div class="container">
         <footer>
-          <p>Copyright &copy; 2014 Tosainu.</p>
+          <p><%= data.site.footer %></p>
         </footer>
       </div>
     </div>

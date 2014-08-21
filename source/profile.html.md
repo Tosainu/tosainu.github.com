@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: noside
 title: Profile
 ---
 

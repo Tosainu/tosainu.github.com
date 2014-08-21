@@ -14,14 +14,16 @@
     </article>
 
     <div class="pagination">
-      <ul>
+      <div class="prev">
         <% if current_article.next_article %>
-          <li><%= link_to current_article.next_article.title, current_article.next_article %></li>
+          <span><%= link_to '&laquo; Newer', current_article.next_article %></span>
         <% end %>
+      </div>
+      <div class="next">
         <% if current_article.previous_article %>
-          <li><%= link_to current_article.previous_article.title, current_article.previous_article %></li>
+          <span><%= link_to 'Older &raquo;', current_article.previous_article %></span>
         <% end %>
-      </ul>
+      </div>
     </div>
   </div>
 

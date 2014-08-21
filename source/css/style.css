@@ -1,40 +1,52 @@
 @charset "utf-8";
 
-/* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
---------------------------------*/
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,
-del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,
-label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,
-figure:focus,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video
-{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-ins{background-color:#ff9;color:#000;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-
 /*
 --------------------------------*/
 html {
   overflow-y: scroll;
 }
 body {
-  background-color: #f4f5fb;
-  color: #3e3e3e;
-  font:14px/1.5 "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, Helvetica, Arial, sans-serif;
+  color: #252628;
+  background-color: #fafafa;
+  font-size: 14px;
+  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+  line-height: 1.6;
   overflow-x: hidden;
   word-wrap: break-word;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  margin: 10px 0;
+  font-size: 200%;
+  font-weight: bold;
+  line-height: 1.0;
+}
+h2 {
+  margin: 20px 0;
+  padding: 0 15px;
+  font-size: 180%;
+  font-weight: bold;
+  border-left: 8px solid #bb3e3e;
+}
+h3 {
+  margin: 20px 0;
+  padding: 0 15px;
+  font-size: 160%;
+  font-weight: bold;
+  border-left: 8px solid #fcb041;
+}
+h4 {
+  margin: 20px 0;
+  font-size: 140%;
+  font-weight: bold;
+}
+h5 {
+  margin: 20px 0;
+  font-size: 130%;
+  font-weight: bold;
+}
+h6 {
+  margin: 20px 0;
+  font-size: 110%;
   font-weight: bold;
 }
 p {
@@ -44,47 +56,69 @@ p code {
   margin: 0 2px;
   padding: 2px;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #cbcbcb;
 }
-em, strong {
+em {
+  font-style: italic;
+}
+strong {
   font-style: normal;
   font-weight: bold;
 }
 img {
-  margin: 10px 0;
-  padding: 3px;
-  background: #fff;
-  border: 1px solid #cbcbcb;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  border: 1px #ddd solid;
 }
 a:link, a:visited {
-  color: #2d2d2d;
+  color: #428bca;
+  text-decoration: none;
 }
 a:active, a:hover {
   color: #2d2d2d;
-  text-decoration: none;
+  text-decoration: underline;
 }
 ul {
-  margin: 10px 0;
+  margin: 20px 0;
   list-style: none;
 }
 li {
-  margin: 7px 0;
+  margin: 10px 0;
 }
 .inline li {
   display: inline;
   margin-right: 5px;
 }
 dl {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 dl dd {
   margin: 5px 0 10px 20px;
 }
 blockquote {
-  padding: 5px 15px;
-  border-left: 5px solid #2d2d2d;
-  font-size: 120%;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: #ececec;
+  border: 1px #ddd solid;
+}
+table:not(.highlight) {
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+table:not(.highlight) caption {
+  padding-bottom: 5px;
+}
+table:not(.highlight) th,
+table:not(.highlight) td {
+  padding: 5px;
+  border: 1px #ddd solid;
+}
+table:not(.highlight) thead th {
+  padding: 5px 20px;
+  background: #ececec;
+  text-align: center;
+}
+table:not(.highlight) tbody {
+  background-color: #fff;
 }
 
 .continue {
@@ -169,20 +203,17 @@ blockquote {
 --------------------------------*/
 /* header */
 .header {
-  background: #2d2d2d;
+  background: #252628;
   color: #f4f5fb;
-  border-top: 5px solid #bb3e3e;
-  padding: 20px 0;
-}
-.title {
-  line-height: 1.0;
+  border-top: 5px solid #428bca;
+  padding: 10px 0;
 }
 .title a:link, .title a:visited {
   color: #f4f5fb;
   text-decoration: none;
 }
 .title a:active, .title a:hover {
-  color: #777777;
+  color: #bababa;
   text-decoration: none;
 }
 .toggle-button {
@@ -198,11 +229,12 @@ blockquote {
 }
 .nav-top ul {
   list-style-type: none;
-  margin: 0;
+  margin: 10px 0;
+  line-height: 200%;
 }
 .nav-top ul li {
   display: inline;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .nav-top ul li a {
   padding: 5px;
@@ -214,7 +246,7 @@ blockquote {
 .nav-top ul li a:active, .nav-top ul li a:hover, .nav-top ul li.active a {
   color: #777777;
   text-decoration: none;
-  border-bottom: 3px solid #fcb041;
+  border-bottom: 5px solid #428bca;
 }
 
 /* main */
@@ -224,31 +256,21 @@ blockquote {
 
 /* content */
 article {
-  margin-bottom: 30px;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #ddd;
 }
 article header, article footer {
-  margin: 0 0 10px;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 0 0 20px;
+  font-size: 90%;
+  color: #999;
 }
 article header ul, article footer ul {
   margin: 10px 0 0;
 }
-.text {
-  margin: 10px 0;
-}
-.text h2 {
-  margin: 20px 0;
-  padding: 10px 15px;
-  border-left: 5px solid #bb3e3e;
-}
-.text h3 {
-  margin: 20px 0;
-  padding: 7px 15px;
-  border-left: 5px solid #fcb041;
-}
 .text img {
-  max-width: 100%;
+  max-width: 560px;
   height: auto;
 }
 .text ul {
@@ -256,46 +278,22 @@ article header ul, article footer ul {
   list-style-type: square;
 }
 .text ol {
-  margin: 0 30px;
   list-style-type: decimal;
 }
 .text dl dt {
   font-weight: bold;
 }
-.text table {
-  width: 60%;
-  border: 1px #c0c0c0 solid;
-  border-collapse: collapse;
-  font-size: 80%;
-}
-.text table caption {
-  padding-bottom: 5px;
-}
-.text table th,
-.text table td {
-  padding: 6px 8px;
-  border: 1px #c0c0c0 solid;
-}
-.text table thead th {
-  background-color: #deefff;
-  text-align: center;
-}
-.text table tfoot td {
-  background-color: #f5f5f5;
-}
-.text table tbody {
-  background-color: #ffffff;
-}
-.text table tbody tr:hover {
-  background-color: #e5e5e5;
-}
 
 /* utility */
-.utilitys {
-  margin-bottom: 20px;
+.utility {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #ddd;
 }
 .utility h2 {
-  font-size: 140%;
+  font-size: 120%;
+  padding: 0;
+  border: none;
 }
 .category {
   margin: 10px 20px;
@@ -342,13 +340,4 @@ article header ul, article footer ul {
   color: #f4f5fb;
   background: #2d2d2d;
   text-align: right;
-}
-.footer a:link, .footer a:visited {
-  color: #f4f5fb;
-  text-decoration: none;
-}
-.footer a:active, .footer a:hover {
-  color: #777777;
-  text-decoration: none;
-  border-bottom: 3px solid #fcb041;
 }

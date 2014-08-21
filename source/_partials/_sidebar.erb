@@ -2,12 +2,12 @@
 
   <div class="utility">
     <h2><i class="fa fa-file-text-o"></i> Recent Articles</h2>
-    <dl>
-      <% blog.articles[0...5].each do |article| %>
+    <% blog.articles[0...5].each do |article| %>
+      <dl>
         <dt><%= link_to article.title, article %></dt>
         <dd><%= article.date.strftime('%Y-%m-%d') %></dd>
-      <% end %>
-    </dl>
+      </dl>
+    <% end %>
   </div>
 
   <div class="utility">
@@ -20,7 +20,7 @@
   </div>
 
   <div class="utility">
-    <h2><i class="fa fa-archive"></i> Archive</h2>current_article
+    <h2><i class="fa fa-archive"></i> Archive</h2>
     <ul class="archive">
       <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
         <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>

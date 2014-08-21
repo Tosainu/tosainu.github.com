@@ -1,24 +1,24 @@
-.highlight {
-  margin-bottom: 25px;
+.hl {
+  margin: 20px 0;
 }
-.highlight .gutter {
+.hl .gutter {
   width: 50px;
 }
-.highlight td {
+.hl td {
   padding: 0;
   border: solid 1px #ddd;
 }
-.highlight pre {
+.hl pre {
   margin: 0;
 }
-.highlight .code {
+.hl .code {
   width: calc(100% - 50px);
   overflow-y: scroll;
 }
-.highlight .code pre {
+.hl .code pre {
   padding: 12px;
 }
-.highlight table {
+.hl table {
   width: 100%;
   table-layout: fixed;
 }
@@ -92,8 +92,8 @@
 }
 /* Generic.Output */
 .gl {
-  background: none repeat scroll 0 0 #FAFAFA;
-  border-right: 1px solid #DDDDDD;
+  background: none repeat scroll 0 0 #ececec;
+  border-right: 1px solid #ddd;
   color: #999;
   text-align: right;
   -webkit-touch-callout: none;
@@ -299,6 +299,7 @@ pre {
   border: none;
   background: #fff;
   padding: 0;
+  font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
   margin-bottom: 40px;
   white-space: pre;
   overflow-x: auto;
@@ -322,7 +323,6 @@ pre a::before {
   background: #eee;
   margin-right: 16px;
   padding: 2px 10px;
-  font-size: 13px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -338,9 +338,6 @@ pre a:last-of-type::before {
 }
 pre a:only-of-type::before {
   padding: 10px;
-}
-pre * {
-  font-weight: normal !important;
 }
 pre.lineno {
   margin: 0;

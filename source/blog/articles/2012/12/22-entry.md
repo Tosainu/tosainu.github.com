@@ -1,0 +1,74 @@
+---
+title: 本気で自作計画してます
+date: 2012-12-22 21:18:36 JST
+tags: PC,Maini7-3930k
+---
+<p>どうもとさいぬです。</p>
+<p>更新なかったけど死んでいないですよ〜</p>
+<p>&nbsp;</p>
+<p>今、自作を本気で考えています。</p>
+<p>&nbsp;</p>
+<p>自作PCの世界を知った小6の頃からもう5年。</p>
+<p>親にねだってもいつもダメと言われていました。</p>
+<p>中3の入試もあり、ほとんど諦め気味でした。</p>
+<p>&nbsp;</p>
+<p>しかし最近、政権もかわり、結構本格的に金融・財政政策をしようとし始めているではあーりませんか！</p>
+<p>せっかく安くなっているパーツやデジモノを何も買っていないようではもったいない！</p>
+<p>&nbsp;</p>
+<p>友達の自作erの影響もあって最近、久しぶりにパーツ構成を妄想し始めたわけです。</p>
+<p>&nbsp;</p>
+<p>最近のパーツを調べるといろいろびっくり</p>
+<p>高性能化してるのに手が出しやすい価格なのは感動です。</p>
+<p><span style="font-size:18px;"><strong>CPUコア多いわ！</strong></span></p>
+<p>Core2Quadは高嶺の花・・・なんて思っていたのに、今は4コア8スレッドが当たり前って感じですね。</p>
+<p>AMDは物理8コアなプロセッサーがとても安く出ていますし・・・</p>
+<p>Xeon E5 2687w DualSocketおもしろそー</p>
+<p>&nbsp;</p>
+<p><span style="font-size:18px;"><strong>グラボでけえよ</strong></span></p>
+<p>長さ30cm越え、3スロット占有ですか・・・</p>
+<p>性能も格段に良くなっています</p>
+<p>Intel HD Graphicsでも十分感動しましたが、ここはハイエンドなものをチョイスしたいところですね</p>
+<p>&nbsp;</p>
+<p><span style="font-size:18px;"><strong>マザボもでけえよ</strong></span></p>
+<p>一般向けの製品で一番大きなフォームファクタはATXと思っていましたが、それ以上のものがゴロゴロ出てますね</p>
+<p>何となくE-ATXに惹かれる・・・</p>
+<p>&nbsp;</p>
+<p><span style="font-size:18px;"><strong>水冷おもしろそー</strong></span></p>
+<p>最近は安価な簡易水冷キットも出ていますし、調べてみると本格的に水冷化している人が結構いますね</p>
+<p>夏休みアメリカで買った自作PCの雑誌でも取り上げていたし、とても興味アリ</p>
+<p>&nbsp;</p>
+<p>もうとさいぬは<span style="font-size:18px;"><span style="color:red;"><strong>興奮MAXイヤッハー</strong></span></span></p>
+<p>この冬休みこそは必死にお願いしようと思います。</p>
+<p>&nbsp;</p>
+<p>ちなみにこんな感じの構成を妄想中。</p>
+<p>Xeonデュアルソケットは構成を考えたら80万超えたので却下(泣)</p>
+<p>&nbsp;</p>
+<p>CPU：Intel Core i7 3930k</p>
+<p>MB：ASUS P9X79 PRO</p>
+<p>RAM：Corsair CMZ32GX3M4X1600C10（DDR3 PC3-12800 8Gx4）</p>
+<p>SSD：Intel 335 Series 240GB</p>
+<p>HDD：東芝 3TB SATA3 7200rpm</p>
+<p>GPU：ELSA Geforce GTX 680 2GB</p>
+<p>PSU：SilverStone SST-ST85F-P</p>
+<p>Case：Antec P193 v3 jp</p>
+<p>&nbsp;</p>
+<p>CPUはありきたりな4コア8スレッドがなんか嫌だったのとIvyはあんまり好きになれなっかたからSandyBridge-Eを、</p>
+<p>グラボは結構評価の高いGTX680にしてみる。</p>
+<p>ランパゲにE-ATXなx79マザボがあるけれど高いんだよな・・・ってことで諦める。</p>
+<p>SSDは絶対。これ重要。</p>
+<p>ケースはAntec。小6の時AntecのSOLO見て惚れた。ただそれだけ。</p>
+<p>CPUクーラーなどはENERMAXとかの安価なもので済まし、夏前に本格水冷を検討。</p>
+<p>&nbsp;</p>
+<p>価格.com最高値参考に予算を計算すると、この構成で20万以内に収められた。</p>
+<p>でも高い。</p>
+<p>RAM減らして、他のメーカーのGTX660tiくらいにまで落としてみたらあと4万くらいは削れそうだけど、</p>
+<p>やっぱりハイエンドなパーツを選択したいのが本音。（ただの自己満）</p>
+<p>&nbsp;</p>
+<p>あっ、OSはLinux。窓は気が向いたら入れるつもり。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak -->-</p>
+<p>最近、サイトのデーターベース（MySQL）がよくエラー出してアクセスできないことがあるそうですね。</p>
+<p>暇があったらwktkサーバーに乗り換えてみようと思う。</p>
+<p>部活動のサイトに利用しているけれど、けっこういい感じ。</p>

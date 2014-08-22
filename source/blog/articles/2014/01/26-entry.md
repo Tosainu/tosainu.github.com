@@ -1,0 +1,63 @@
+---
+title: お名前vps最上位プランのお試しを契約してしまった
+date: 2014-01-26 09:51:01 JST
+tags: ArchLinux,Linux
+---
+おはよーございます
+
+&nbsp;
+
+タイトル通りです。契約してしまいました。
+
+スペックはこんなやつです。
+
+| \ | 最下位 | 契約したの |
+| --- | ------ | -------------- |
+| CPU | 2コア | 10コア (Intel Core 2 Duo T7700相当？) |
+| RAM | 1GB |16GB |
+| HDD | 100GB |1TB |
+
+つよい(つよい)
+
+## ArchLinuxをインストールする
+
+デフォルトのOSがセント君でつらぽよなのでArchLinuxを入れちゃいます。
+
+しかし、公式が用意しているArchのインストーラが古過ぎる(/arch/setup実行する時代)ので、手動でisoファイルのアップロードをします。
+
+Fullのインストーラのアップロードはクソ回線で時間がかかるのでNetboot Live Systemを利用しました。
+
+&nbsp;
+
+<a href="https://releng.archlinux.org/pxeboot/">Arch Linux - Netboot Live System</a>からipxe.isoをダウンロード、
+
+コンソール画面下に接続方法が書いてあるのでFileZilla等で接続して、
+
+<a href="https://picasaweb.google.com/lh/photo/cJ4FcfUHsafex_xRopzzA9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-REemULw2wPE/UuRYOLAL3BI/AAAAAAAAC8Q/fwGycTvCwl8/s400/2014-01-26-093241_1920x1080_scrot.png" height="400" width="357" /></a>
+
+imagesフォルダ内にアップロードしましょう。
+
+こんな感じに選択できるようになるので選択して起動、
+
+<a href="https://picasaweb.google.com/lh/photo/Wl5TB0Cbov4EIGMpLiTihtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-5Q-tvcj8F88/UuRZ_VfJ90I/AAAAAAAAC8c/FphIGvW6PrM/s800/image.png" height="396" width="324" /></a>
+
+あとはミラーサーバにFTP.JAIST.AC.JPを選択すればいつものようなインストールができるようになります。
+
+<a href="https://picasaweb.google.com/lh/photo/eXrZJgBxizeQTdmd4Pxee9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-zx2Ku3KWfXc/UuRa8u-wylI/AAAAAAAAC8k/rbbLaG17LxI/s400/2014-01-26-041133_1920x1080_scrot.png" height="298" width="400" /></a>
+
+やったね！
+
+## で、
+
+とりあえずは引っ越し作業に向けていろいろパッケージの追加をしています。
+
+せっかくの15日間なので、ベンチとかもガンガン回してみたいと思っています。
+
+&nbsp;
+
+## おまけ
+
+/etc/motdを書き換えると、ログイン時のウェルカムメッセージを変えることができます。
+
+<blockquote class="twitter-tweet" lang="en"><p>/etc/motd書き換え楽しい&#10;✌(&#39;ω&#39;✌ )三✌(&#39;ω&#39;)✌三( ✌&#39;ω&#39;)✌ <a href="http://t.co/SKFkmUDfF0">pic.twitter.com/SKFkmUDfF0</a></p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;): (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/427230789697163264">January 26, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

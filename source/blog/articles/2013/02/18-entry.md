@@ -1,0 +1,67 @@
+---
+title: もーすぐ春休み♪今はまだテスト期間だけどな！
+date: 2013-02-18 01:55:55 JST
+tags: Diary
+---
+<p>どもども。</p>
+<p>只今テスト期間。まだ4日7教科もありますorz</p>
+<p>&nbsp;</p>
+<p>おまけに時計（<a href="http://www5.pf-x.net/~tosainu/index.php/view/196">2011/03/02の記事参照</a>）を学校内で失くしたり、</p>
+<p>数カ月前に寮の鍵（※<a href="http://www5.pf-x.net/~tosainu/index.php/view/203">とさいぬは寮生活をしている</a>）を失くし交換。3万円の支払いが確定していたのに、先週の金曜日その鍵が見つかったりと、</p>
+<p>とにかくテンションがメチャクチャ下がっているとさいぬです。</p>
+<p>&nbsp;</p>
+<p>でも、一つだけ楽しみなことがあります。</p>
+<p>入試とかで忙しいのか、僕の通う学校は3月はほぼ毎日（数日を除いて）授業がありません。</p>
+<p>ってことで、長い休みを使っていろいろ企んでおります。</p>
+<p>今日は忘れないようにのメモも兼ねて今後の予定を書くことにします。</p>
+<p>&nbsp;</p>
+<h3>秋葉原・東京行くかも！</h3>
+<p>友人の話ですが、僕の住む地域からでも、旅行会社や夜行バスを使うことで意外と交通費が安く済みそうなんだとか。</p>
+<p>親と相談する必要があるので決まったわけではないけれども、楽しみです。</p>
+<p>&nbsp;</p>
+<h3>自作機弄るよ！</h3>
+<p>自作PCってのは凝りだしたらキリがないんですよ〜</p>
+<p><a href="http://www.million-dollar-pc.com/">Million Dollar PC</a>に載せるようなものを目指してはないですが、ただ組んだだけってのは自作erとは呼べないと思ってます。</p>
+<p>とりあえず、ファンの載せ替えとファンコン導入を計画しています。</p>
+<p>ファンコンは既に購入済です。</p>
+<p><a href="https://picasaweb.google.com/lh/photo/oDAi4LRc22zjOwEynvBGBdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-Au87XeUcfUc/USD_xec8BqI/AAAAAAAABF0/yuYr6bfHTo4/s400/DSC07071.JPG" height="300" width="400" /></a></p>
+<p><span style="font-size:24px;">風マスターPRO ACE</span>です。</p>
+<p>もう生産中止となっていて、探すのが大変でしたが、</p>
+<p>1's PCのアウトレットで2900円という価格で購入できました。</p>
+<p>ただの風マスターPROを買うよりも安いですね。ラッキー</p>
+<p>&nbsp;</p>
+<h3>Arduino UNOを拾った（笑）</h3>
+<p><a href="https://picasaweb.google.com/102459157243301356168/2013?feat=embedwebsite#5845953580333335522"><img src="https://lh4.googleusercontent.com/-3_Gfuzz0u0o/USD_zuExA-I/AAAAAAAABF8/EeqWXt7dI9E/s400/DSC07072.JPG" height="300" width="400" /></a></p>
+<p>何でも落ちている僕の学校です。もちろん動作しました。</p>
+<p>以前から興味があったデバイスなので、ちょっと触れてみようと思います。</p>
+<p>&nbsp;</p>
+<h3>ペリア関係の記事まとめるよ〜</h3>
+<p><a href="https://picasaweb.google.com/lh/photo/32xgSZe9IvPfJomsYq1sG9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-p2k5aHoZezo/USD_4uHMJeI/AAAAAAAABGM/jTDrFnF7XFc/s400/DSC07073.JPG" height="300" width="400" /></a></p>
+<p>この週末勉強の他に何をやっていたかというと、</p>
+<p>先日の記事に書いた通り</p>
+<p><span style="font-size:24px;">2台のペリアアンロック</span>です。</p>
+<p>今回のこともあり、結構書こうと思っている内容もまとまってきました。</p>
+<p>僕の周りでペリアを弄る人が増えてきたこともあるので、早めに書いてしまいたいと思っています。</p>
+<p>&nbsp;</p>
+<h3>VAIO ZにXPが入った！</h3>
+<p><a href="https://picasaweb.google.com/lh/photo/teoSE5xBajkR0tj-SKs1D9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-AJCddo3AWd8/USD_0kybIgI/AAAAAAAABGE/A_ni_pL3nLk/s400/DSC07055.JPG" height="300" width="400" /></a></p>
+<p>画像はまだドライバを当てていないものなので、解像度は800x600で表示されていますが、</p>
+<p>13.1型フルHD、Corei7プロセッサ、8GBメモリ、厚さ約12mmな窓XPノートってなんか熱くないですか！？</p>
+<p>実際ただの無駄としかいえないのですが。（特にRAM8GBは32bitOSにry）</p>
+<p>ってことで僕の愛機Zたんは</p>
+<p>・Fedora 17（←メイン。これ重要。でもテストには出ません。）</p>
+<p>・ゴミンドウズ 7 Home</p>
+<p>↑マイドキュメントの中身を勝手に消したり、スタートアップ修復で起動しなくなったり、ディスク修復といいながらファイルを破壊するゴミOS。でも仕方がない。普及した以上、使わざるをえない場合があるのです・・・</p>
+<p>・Windows XP Pro</p>
+<p>のトリプルブートができるキチガイになったとさ！</p>
+<p>統合ディスクとかドライバとかの解説で一つページを作ろうかと検討中</p>
+<p>&nbsp;</p>
+<h3>サーバー立てるかも</h3>
+<p>学校の友人数人でとある同好会をつくろうとしています。</p>
+<p>その関係で、同好会のwebサイトを独自鯖から配信する計画があります。</p>
+<p>現在も友人がオークションで手に入れた玄箱を使い、時々試験をしたりしてます。</p>
+<p>鯖のディスクの空きや、回線の帯域によっては、このサイトも『鯖管理者のブログ』って感じに引っ越すかもしれません。</p>
+<p>&nbsp;</p>
+<p>こんな感じでしょうか。</p>
+<p>ではテスト明けにまた会いましょう。</p>
+<p>ではでは〜</p>

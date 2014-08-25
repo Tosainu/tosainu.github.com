@@ -4,7 +4,8 @@
 .hl .gutter {
   width: 50px;
 }
-.hl td {
+.hl td.gutter,
+.hl td.code {
   padding: 0;
   border: solid 1px #ddd;
 }
@@ -303,8 +304,8 @@ pre {
   margin-bottom: 40px;
   white-space: pre;
   overflow-x: auto;
-  word-break: inherit;
-  word-wrap: inherit;
+  word-break: normal;
+  word-wrap: normal;
 }
 pre .code {
   display: block;

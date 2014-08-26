@@ -237,13 +237,28 @@ article {
   padding: 0 0 20px;
   border-bottom: 1px solid #ddd;
 }
-article header, article footer {
+article header {
   margin: 0;
   padding: 0 0 20px;
   font-size: 90%;
   color: #999;
 }
-article header ul, article footer ul {
+article footer {
+  margin: 0;
+  padding: 20px 0 0;
+}
+article footer span {
+  float: left;
+  overflow: hidden;
+}
+article footer:after {
+  display: block;
+  clear: both;
+  content: "";
+  overflow: hidden;
+  height: 0;
+}
+article header ul {
   margin: 10px 0 0;
 }
 .text img {

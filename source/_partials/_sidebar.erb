@@ -22,8 +22,10 @@
   <div class="utility">
     <h2><i class="fa fa-archive"></i> Archive</h2>
     <ul class="archive">
-      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-        <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
+      <% blog.articles.group_by {|a| a.date.year }.each do |year, articles_year| %>
+        <% articles_year.group_by {|a| a.date.month }.each do |month, articles_month | %>
+          <li><%= link_to "#{year}/#{format('%02d', month)}", blog_month_path(year, month) %> (<%= articles_month.length %>)</li>
+        <% end %>
       <% end %>
     </ul>
   </div>

@@ -9,7 +9,11 @@
     <meta name="generator" content="Middleman">
     <meta name="keywords" content="<%= data.site.keywords %>" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-    <title><%= current_article.title + ' | ' unless current_article.nil? %><%= data.site.title %></title>
+    <title><%= if current_page.data.title.present? and yield_content(:title)
+                 current_page.data.title + ' ' + yield_content(:title) + ' | '
+               elsif current_page.data.title.present?
+                 current_page.data.title + ' | '
+               end %><%= data.site.title %></title>
     <%= stylesheet_link_tag 'reset' %>
     <%= javascript_include_tag "skel.min" %>
     <%= javascript_include_tag "main" %>

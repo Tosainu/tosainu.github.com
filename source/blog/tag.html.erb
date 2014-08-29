@@ -1,8 +1,11 @@
 ---
+title: "Tag: "
 layout: default
 pageable: true
 per_page: 3
 ---
+<% content_for(:title, "#{tagname}") %>
+
 <div id="content" class="9u">
   <p class="well">Articles tagged <strong><%= tagname %></strong>.</p>
 

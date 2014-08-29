@@ -14,7 +14,7 @@
     <h2><i class="fa fa-folder-open-o"></i> Tags</h2>
     <ul>
       <% blog.tags.each do |tag, articles| %>
-        <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+        <li><%= link_to "#{tag}", tag_path(tag) %> (<%= articles.size %>)</li>
       <% end %>
     </ul>
   </div>
@@ -24,7 +24,7 @@
     <ul class="archive">
       <% blog.articles.group_by {|a| a.date.year }.each do |year, articles_year| %>
         <% articles_year.group_by {|a| a.date.month }.each do |month, articles_month | %>
-          <li><%= link_to "#{year}/#{format('%02d', month)}", blog_month_path(year, month) %> (<%= articles_month.length %>)</li>
+          <li><%= link_to "#{year}-#{format('%02d', month)}", blog_month_path(year, month) %> (<%= articles_month.length %>)</li>
         <% end %>
       <% end %>
     </ul>

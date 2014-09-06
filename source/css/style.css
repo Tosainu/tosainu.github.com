@@ -270,6 +270,7 @@ article header ul {
   list-style-type: square;
 }
 .text ol {
+  margin-left: 30px;
   list-style-type: decimal;
 }
 .text dl dt {

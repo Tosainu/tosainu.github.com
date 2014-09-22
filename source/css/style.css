@@ -102,7 +102,10 @@ li {
 dl {
   margin: 20px 0;
 }
-dl dd {
+dt {
+  font-weight: bold;
+}
+dd {
   margin: 5px 0 10px 20px;
 }
 
@@ -238,38 +241,6 @@ table:not(.highlight) tbody {
   color: #bababa;
   text-decoration: none;
 }
-.toggle-button {
-  display: none;
-}
-
-/* navication */
-.toggle-checkbox {
-  display: none;
-}
-.nav-top {
-  text-align: right;
-}
-.nav-top ul {
-  list-style-type: none;
-  margin: 10px 0;
-  line-height: 200%;
-}
-.nav-top ul li {
-  display: inline;
-  margin-left: 20px;
-}
-.nav-top ul li a {
-  padding: 5px;
-}
-.nav-top ul li a:link, .nav-top ul li a:visited {
-  color: #f4f5fb;
-  text-decoration: none;
-}
-.nav-top ul li a:active, .nav-top ul li a:hover, .nav-top ul li.active a {
-  color: #777777;
-  text-decoration: none;
-  border-bottom: 5px solid #428bca;
-}
 
 /* main */
 .main {
@@ -357,6 +328,13 @@ article header ul {
   content: "";
   overflow: hidden;
   height: 0;
+}
+.avatar {
+  text-align: center;
+}
+.avatar img {
+  max-width: 80%;
+  margin: 0;
 }
 .tags {
   margin: 10px 20px;

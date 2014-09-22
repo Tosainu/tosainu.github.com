@@ -1,6 +1,13 @@
 <div class="sidebar 3u">
 
   <section>
+    <h2>About</h2>
+    <p class="avatar"><img src="https://myon.info/icon.jpg" alt=""></p>
+    <p><%= link_to data.site.author.name, '/about' %></p>
+    <p><%= data.site.description %></p>
+  </section>
+
+  <section>
     <h2><i class="fa fa-file-text-o"></i> Recent Posts</h2>
     <% blog.articles[0...5].each do |article| %>
       <dl>

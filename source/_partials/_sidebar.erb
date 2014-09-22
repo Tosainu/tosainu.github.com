@@ -1,25 +1,25 @@
-<div class="utilitys 3u" class="3u">
+<div class="sidebar 3u">
 
-  <div class="utility">
-    <h2><i class="fa fa-file-text-o"></i> Recent Articles</h2>
+  <section>
+    <h2><i class="fa fa-file-text-o"></i> Recent Posts</h2>
     <% blog.articles[0...5].each do |article| %>
       <dl>
         <dt><%= link_to article.title, article %></dt>
         <dd><%= article.date.strftime('%Y-%m-%d') %></dd>
       </dl>
     <% end %>
-  </div>
+  </section>
 
-  <div class="utility">
+  <section>
     <h2><i class="fa fa-folder-open-o"></i> Tags</h2>
-    <ul>
+    <ul class="tags">
       <% blog.tags.each do |tag, articles| %>
         <li><%= link_to "#{tag}", tag_path(tag) %> (<%= articles.size %>)</li>
       <% end %>
     </ul>
-  </div>
+  </section>
 
-  <div class="utility">
+  <section>
     <h2><i class="fa fa-archive"></i> Archive</h2>
     <ul class="archive">
       <% blog.articles.group_by {|a| a.date.year }.each do |year, articles_year| %>
@@ -28,6 +28,6 @@
         <% end %>
       <% end %>
     </ul>
-  </div>
+  </section>
 
 </div>

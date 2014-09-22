@@ -1,19 +1,21 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /*
 --------------------------------*/
 html {
   overflow-y: scroll;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 body {
-  color: #252628;
   background-color: #fafafa;
+  color: #252628;
+  font-family: Roboto,'Droid Sans',Meiryo,'Hiragino Kaku Gothic ProN',sans-serif;
   font-size: 14px;
-  font-family: Verdana, Roboto, "Droid Sans", "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  word-wrap: break-word;
 }
+
 h1 {
   margin: 10px 0;
   font-size: 200%;
@@ -49,6 +51,7 @@ h6 {
   font-size: 110%;
   font-weight: bold;
 }
+
 p {
   margin: 20px 0;
 }
@@ -57,6 +60,7 @@ p code {
   padding: 2px;
   background: #fff;
   border: 1px solid #cbcbcb;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 em {
   font-style: italic;
@@ -65,10 +69,7 @@ strong {
   font-style: normal;
   font-weight: bold;
 }
-img {
-  margin: 20px 0;
-  border: 1px #ddd solid;
-}
+
 a:link, a:visited {
   color: #428bca;
   text-decoration: none;
@@ -77,9 +78,18 @@ a:active, a:hover {
   color: #2d2d2d;
   text-decoration: underline;
 }
+
+img {
+  margin: 20px 0;
+  border: 1px #ddd solid;
+}
+
 ul {
   margin: 20px 0;
   list-style: none;
+}
+ol {
+  margin: 20px 0;
 }
 li {
   margin: 10px 0;
@@ -88,18 +98,68 @@ li {
   display: inline;
   margin-right: 5px;
 }
+
 dl {
   margin: 20px 0;
 }
 dl dd {
   margin: 5px 0 10px 20px;
 }
+
+pre {
+  border: none;
+  background: #fff;
+  padding: 0;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  margin-bottom: 40px;
+  white-space: pre;
+  overflow-x: auto;
+  word-break: normal;
+  word-wrap: normal;
+}
+pre .code {
+  display: block;
+}
+.lineno {
+  margin: 0;
+  padding: 12px;
+  background-color: transparent;
+  border: none;
+  color: #999;
+}
+.hl {
+  margin: 20px 0;
+}
+.hl .gutter {
+  width: 50px;
+}
+.hl td.gutter,
+.hl td.code {
+  padding: 0;
+  border: solid 1px #ddd;
+}
+.hl pre {
+  margin: 0;
+}
+.hl .code {
+  width: calc(100% - 50px);
+  overflow-y: scroll;
+}
+.hl .code pre {
+  padding: 12px;
+}
+.hl table {
+  width: 100%;
+  table-layout: fixed;
+}
+
 blockquote {
   margin: 20px 0;
   padding: 10px 20px;
   background: #ececec;
   border: 1px #ddd solid;
 }
+
 table:not(.highlight) {
   margin: 20px 0;
   border-collapse: collapse;
@@ -135,21 +195,6 @@ table:not(.highlight) tbody {
 
 .required {
   color: #cb636c;
-}
-.well {
-  padding: 5px 10px;
-  background: #f7f7f9;
-  border: 1px solid #e1e1e8;
-}
-.alert {
-  padding: 5px 10px;
-  background: #d9998e;
-  border: 1px solid #cb636c;
-}
-.info {
-  padding: 5px 10px;
-  background: #bcdfb1;
-  border: 1px solid #77d282;
 }
 
 .pagination {
@@ -233,13 +278,13 @@ table:not(.highlight) tbody {
 
 /* content */
 article {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   padding: 0 0 20px;
   border-bottom: 1px solid #ddd;
 }
 article header {
   margin: 0;
-  padding: 0 0 20px;
+  padding: 0 0 10px;
   font-size: 90%;
   color: #999;
 }
@@ -277,44 +322,25 @@ article header ul {
   font-weight: bold;
 }
 
-/* utility */
-.utility {
+/* sidebar */
+.sidebar section {
   margin: 0 0 20px;
   padding: 0 0 20px;
   border-bottom: 1px solid #ddd;
 }
-.utility h2 {
+.sidebar section h2 {
   font-size: 120%;
   padding: 0;
   border: none;
 }
-.category {
-  margin: 10px 20px;
-}
-.category, .category li ul {
-  list-style-type: square;
-}
-.utility ul li ul {
-  margin: 5px 20px;
-}
-.utility ul li img {
-  margin: 0;
-}
-.utility dl:after {
-  display: block;
-  clear: both;
-  content: "";
-  overflow: hidden;
-  height: 0;
-}
-.utility dl dt {
+.sidebar section dl dt {
   float: left;
 }
-.utility dl dd {
+.sidebar section dl dd {
   float: right;
   margin: 0;
 }
-.archive:after {
+.sidebar section dl:after {
   display: block;
   clear: both;
   content: "";
@@ -324,6 +350,17 @@ article header ul {
 .archive li {
   float: left;
   width: 50%;
+}
+.archive:after {
+  display: block;
+  clear: both;
+  content: "";
+  overflow: hidden;
+  height: 0;
+}
+.tags {
+  margin: 10px 20px;
+  list-style-type: square;
 }
 
 /* Footer */

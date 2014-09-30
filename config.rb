@@ -99,6 +99,10 @@ activate :disqus do |d|
   d.shortname = 'tosainu'
 end
 
+activate :deploy do |deploy|
+  deploy.method = :git
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

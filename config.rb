@@ -108,7 +108,7 @@ configure :build do
   activate :minify_javascript
 
   # Minify html on build
-  activate :minify_html
+  activate :minify_html, remove_comments: false
 
   # Enable cache buster
   # activate :asset_hash

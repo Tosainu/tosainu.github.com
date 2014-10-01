@@ -1,12 +1,8 @@
-# middleman blog theme
- A simple blog theme for middleman-blog
-
-## Sample
-
-<http://blog.myon.info>
+# My blog
 
 ## License
-This content is released under the [MIT license](LICENSE).
+
+Copyright (C) 2014 Tosainu All Rights Reserved.
 
 ### [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 > The [Font Awesome](http://fortawesome.github.com/Font-Awesome) font is licensed under the [SIL Open Font License](http://scripts.sil.org/OFL).

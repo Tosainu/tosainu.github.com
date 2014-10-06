@@ -396,6 +396,16 @@ sudo gpasswd -a $USER libvirt
 sudo systemctl enable libvirtd
 ```
 
+`/etc/libvirt/libvirtd.conf` を開いて以下をコメントアウト.
+
+```
+unix_sock_group = "libvirt"
+unix_sock_ro_perms = "0777"
+unix_sock_rw_perms = "0770"
+auth_unix_ro = "none"
+auth_unix_rw = "none"
+```
+
 ### Programing
 
 このPCはプログラム書くのに使うPCではないので必要最小限.  

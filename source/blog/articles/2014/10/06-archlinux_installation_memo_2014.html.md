@@ -1,5 +1,5 @@
 ---
-title: ArchLinuxインストールめも (2014)
+title: ArchLinuxインストールめも (2014秋版)
 date: 2014-10-06 00:51 JST
 tags: Linux, ArchLinux, Maini7-3930k
 ---
@@ -28,11 +28,18 @@ tags: Linux, ArchLinux, Maini7-3930k
 
 ## Before Installation
 
+BIOSの設定を開いて,
+
 * **Secure Bootを無効に**
-* BIOSでUEFI-Firstに
+* CSMで各デバイスをUEFI-Firstに
 * FastBootも一時的に切ったほうが良いかも
 
-## Boot Arch Linux Disk
+気をつけなければいけないのは, 各インストールメディアをUEFIモードでBootさせなければいけないことです.  
+UEFIなシステムと認識されず, GPTなディスクにインストールできません.
+
+あと, 先にWinをインストールしておくとDualboot環境が組みやすいです.
+
+## \#archinstallbattle, はっじまるよ〜
 
 ```
 // 無線LANにつなぐ
@@ -67,7 +74,7 @@ rtt min/avg/max/mdev = 213.972/215.602/217.699/1.602 ms
 | /dev/sdb | 3TB |  |  | HDD |
 | /dev/sdb1 | 1.5TB | EXT4 | /home |  |
 | /dev/sdb2 | 50GB | EXT4 | /var | BOINCの関係でSSDとは別にした |
-| /dev/sda3 | 500GB |  |  | 予備 |
+| /dev/sda3 | 250GB |  |  | 予備 |
 | /dev/sdb4 | 残り | NTF\*ckSystem |  | ゴミFSに大事なデータなんて置けない |
 
 ```
@@ -194,7 +201,7 @@ DEBUG_CFLAGS="-g -fvar-tracking-assignments"
 DEBUG_CXXFLAGS="-g -fvar-tracking-assignments"
 ```
 
-面倒だからスクリプト書いた.
+yaourtのインストールは面倒だからスクリプト書いた.
 
 ```
 # curl myon.info/data/install_yaourt.sh | bash
@@ -217,12 +224,12 @@ DEBUG_CXXFLAGS="-g -fvar-tracking-assignments"
 # EDITOR=vim visudo
 ```
 
-以後, このユーザsbで作業していきます.
+以後, このユーザで作業していきます.
 
 ## Window Manager
 
-Geforce載んでるのでnvidiaを入れます.  
-当然, 他のGPUを載んでいる場合は以下をコピペしても動きません.
+Geforce載っけてるのでnvidiaを入れます.  
+当然, 他のGPUの場合は以下をコピペしても動きません.
 
 Intelならxf86-video-intel, Radeonならcatalystで良いと思う.
 
@@ -242,7 +249,7 @@ $ yaourt -S lightdm lightdm-gtk3-greeter
 // 動作確認
 $ lightdm --test-mode --debug
 
-// GUI起動してもターミナルエミュレータがないからつらぽよ
+// GUI起動してもターミナルエミュレータがないと詰む
 $ yaourt -S lilyterm
 
 // いろいろ必要
@@ -257,7 +264,7 @@ $ sudo systemctl restart
 ```
 
 これで再起動後LightDMのログイン画面やCinnamonが動くはずです.  
-GUIが起動したあとはNetworkManagerを使ってインターネッツに接続すると便利です.
+GUIが起動したあとはNetworkManagerを使ってインターネッツに接続すると便利.
 
 ## Install Useful Softwares
 
@@ -283,23 +290,25 @@ infinalityパッチを適用する. 設定はお好みで.
 
 ### IME
 
-fcitx入れるとCinnamon氏が勝手に自動起動の設定作ってくれるっぽいけど, `.xprofile` の設定はやってくれないようなので意味ない.
-
 * fcitx-im
 * fcitx-qt5
 * fcitx-configtool
 * fcitx-mozc
 
-`.xprofile` はこんな感じ
+fcitx入れるとCinnamon氏が勝手に自動起動の設定作ってくれるっぽい.  
+今のところ `.xprofile` に環境変数設定しなくても動いてるので, もしかしたらいらないかもしれないけど一応.
 
 ```shell
+#!/bin/sh
+#
+# ~/.xprofile
+#
+
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 export DefaultIMModule=fcitx
 ```
-
-`.xinitrc` はこう.
 
 ```shell
 #!/bin/sh
@@ -322,7 +331,7 @@ fi
 ### xdg-user-dirs
 
 `~/Music` とかのディレクトリを設定してくれる.  
-インストール後 `xdg-user-dirs-update` すると各フォルダが `~/` に作成される.
+インストール後 `xdg-user-dirs-update` すると各フォルダが `~/` 下に作成される.
 
 * xdg-user-dirs
 
@@ -352,19 +361,40 @@ evinceはPDF見るやつ.
 
 ### Tools
 
-便利.
+便利なやつら.
 
 * file-roller
 * filezilla
+* gdisk
 * gnome-disk-utility
 * gnome-system-monitor
 * gparted
+* iftop
 * nmap
+* ntp
+* sl
+* sysstat
+* tree
 * wireshark-gtk
 * xsensors
 
+### Games
+
+あんまりやらないけど.
+
+* steam
+* supertuxkart
 
 ### libvirt
+
+* libvirt
+* virt-manager
+
+```
+sudo groupadd libvirt
+sudo gpasswd -a $USER libvirt
+sudo systemctl enable libvirtd
+```
 
 ### Programing
 
@@ -379,3 +409,40 @@ Rubyとかは`vim-python3`入れた時に入ってるかも.
 * ruby
 
 ## Dual Boot
+
+`/etc/grub.d/40_custom` に以下を追記.
+
+```shell
+if [ "${grub_platform}" == "efi" ]; then
+menuentry "Windows 10 Technical Preview" {
+  insmod part_gpt
+  insmod fat
+  insmod search_fs_uuid
+  insmod chain
+  search --fs-uuid --set=root $hints_string $uuid
+  chainloader /EFI/Microsoft/Boot/bootmgfw.efi
+}
+fi
+```
+
+`$uuid` と `$hints_string` には以下のコマンドを実行した時の結果を設定します.
+
+```
+// $uuid
+$ sudo grub-probe --target=fs_uuid /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi
+
+// $hints_string
+$ sudo grub-probe --target=hints_string $esp/EFI/Microsoft/Boot/bootmgfw.efi
+```
+
+設定が済んだらGrubの設定ファイルを再生成します.
+
+```
+$ sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+再起動してデュアルブートできるか確認.
+
+## Finish!
+
+それでは楽しいArchLinuxライフを〜.

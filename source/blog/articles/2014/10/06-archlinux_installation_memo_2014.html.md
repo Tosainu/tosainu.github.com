@@ -279,8 +279,8 @@ GUIが起動したあとはNetworkManagerを使ってインターネッツに接
 
 infinalityパッチを適用する. 設定はお好みで.
 
-* fontconfig-infinality
-* lib32-freetype2-infinality
+* fontconfig-infinality (AUR)
+* lib32-freetype2-infinality (AUR)
 
 ### Browser
 

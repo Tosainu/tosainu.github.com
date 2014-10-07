@@ -331,9 +331,11 @@ fi
 ### xdg-user-dirs
 
 `~/Music` とかのディレクトリを設定してくれる.  
-インストール後 `xdg-user-dirs-update` すると各フォルダが `~/` 下に作成される.
+インストール後 `xdg-user-dirs-update` すると各フォルダが `~/` 下に作成される.  
+また, `xdg-user-dirs-gtk-update` とすることでneomo(Cinnamonデフォルトのファイルマネージャ)のサイドバーにもMusic等が表示されるようになる.
 
 * xdg-user-dirs
+* xdg-user-dirs-gtk
 
 ### Multimedia
 
@@ -363,6 +365,7 @@ evinceはPDF見るやつ.
 
 便利なやつら.
 
+* dropbox (AUR)
 * file-roller
 * filezilla
 * gdisk
@@ -370,6 +373,7 @@ evinceはPDF見るやつ.
 * gnome-system-monitor
 * gparted
 * iftop
+* nemo-dropbox (AUR)
 * nmap
 * ntp
 * sl

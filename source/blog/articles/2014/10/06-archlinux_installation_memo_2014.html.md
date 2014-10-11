@@ -391,12 +391,20 @@ evinceはPDF見るやつ.
 
 ### libvirt
 
+なんか結構重要な依存パッケージ勝手に入れてくれないっぽい.
+
+* dmidecode
+* dnsmasq
+* ebtables
 * libvirt
+* qemu
 * virt-manager
 
 ```
 sudo groupadd libvirt
+sudo groupadd kvm
 sudo gpasswd -a $USER libvirt
+sudo gpasswd -a $USER kvm
 sudo systemctl enable libvirtd
 ```
 

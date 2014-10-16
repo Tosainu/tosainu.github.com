@@ -356,9 +356,9 @@ fi
 
 ### Office
 
-evinceはPDF見るやつ.
+epdfviewはPDF見るやつ.
 
-* evince
+* epdfview
 * libreoffice-fresh
 
 ### Tools

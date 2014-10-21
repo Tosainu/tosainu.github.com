@@ -4,8 +4,6 @@
 
 Time.zone = 'Tokyo'
 
-activate :syntax, css_class: 'hl', line_numbers: true
-
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
@@ -88,11 +86,18 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
 
+# markdown
 set :markdown_engine, :redcarpet
 set(:markdown,
       tables:              true,
       fenced_code_blocks:  true
      )
+
+# slim
+set :slim, {:pretty => true, :format => :html5, :streaming => false}
+
+# syntax highlighting
+activate :syntax, css_class: 'hl', line_numbers: true
 
 # Disqus
 activate :disqus do |d|

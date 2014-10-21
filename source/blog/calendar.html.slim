@@ -1,0 +1,48 @@
+---
+title: "Archive: "
+layout: default
+pageable: true
+per_page: 3
+---
+ruby:
+  case page_type when 'day'
+    date = Date.new(year, month, day).strftime('%Y-%m-%d')
+  when 'month'
+    date = Date.new(year, month, 1).strftime('%Y-%m')
+  when 'year'
+    date = year
+  end
+
+- content_for :title, date
+
+#content.9u
+  p.well
+    == "Archive for <strong>#{date}</strong>."
+
+  - page_articles.each_with_index do |article, i|
+    article.entry
+      header
+        h1
+          = link_to article.title, article
+
+        ul.inline
+          li
+            i.fa.fa-calendar
+            = article.date.strftime('%Y-%m-%d %X')
+
+      div.text
+        == article.body
+
+  - if paginate && num_pages > 1
+    .pagination
+      .prev
+        - if prev_page && page_number > 1
+          span
+            = link_to '&laquo; Newer', prev_page
+
+      .next
+        - if next_page && page_number < num_pages
+          span
+            = link_to 'Older &raquo;', next_page
+
+= partial 'sidebar'

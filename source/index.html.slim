@@ -1,0 +1,33 @@
+---
+layout: default
+pageable: true
+per_page: 3
+---
+#content.9u
+  - page_articles.each_with_index do |article, i|
+    article.entry
+      header
+        h1
+          = link_to article.title, article
+
+        ul.inline
+          li
+            i.fa.fa-calendar
+            == article.date.strftime('%Y-%m-%d %X')
+
+      .text
+        == article.body
+
+  - if paginate && num_pages > 1
+    .pagination
+      .prev
+        - if prev_page && page_number > 1
+          span
+            = link_to '&laquo; Newer', prev_page
+
+      .next
+        - if next_page && page_number < num_pages
+          span
+            = link_to 'Older &raquo;', next_page
+
+= partial "sidebar"

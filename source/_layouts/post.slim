@@ -1,0 +1,31 @@
+= wrap_layout :default do
+  div#content.9u
+    article.entry
+      header
+        h1
+          = link_to current_article.title, current_article
+
+        ul.inline
+          li
+            i.fa.fa-calendar
+              = current_article.date.strftime('%Y-%m-%d %X')
+
+      .text
+        = yield
+
+      = partial 'share'
+
+      = disqus
+
+    .pagination
+      .prev
+        - if current_article.next_article
+          span
+            = link_to '&laquo; Newer', current_article.next_article
+
+      .next
+        - if current_article.previous_article
+          span
+            = link_to 'Older &raquo;', current_article.previous_article
+
+  = partial "sidebar"

@@ -8,9 +8,9 @@ ruby:
   case page_type when 'day'
     date = Date.new(year, month, day).strftime('%Y-%m-%d')
   when 'month'
-    date = Date.new(year, month, 1).strftime('%Y-%m')
+    date = Date.new(year, month).strftime('%Y-%m')
   when 'year'
-    date = year
+    date = Date.new(year).strftime('%Y')
   end
 
 - content_for :title, date

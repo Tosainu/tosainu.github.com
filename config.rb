@@ -9,27 +9,22 @@ activate :blog do |blog|
   blog.prefix = "blog"
 
   blog.permalink = "{year}-{month}-{day}/{title}.html"
-  # Matcher for blog source files
   blog.sources = "articles/{year}/{month}/{day}-{title}.html"
-  # blog.taglink = "tags/{tag}.html"
-  blog.layout = "_layouts/post"
-  blog.summary_separator = /(READMORE)/
-  blog.summary_length = nil
-  # blog.year_link = "{year}.html"
-  # blog.month_link = "{year}/{month}.html"
-  # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
-  blog.tag_template = "blog/tag.html"
+  blog.layout = "_layouts/post"
   blog.calendar_template = "blog/calendar.html"
+  blog.tag_template = "blog/tag.html"
+
+  # summary
+  blog.summary_length = nil
+  blog.summary_separator = /(READMORE)/
 
   # Enable pagination
   blog.paginate = true
   blog.per_page = 3
   blog.page_link = "page/{num}"
 end
-
-activate :directory_indexes
 
 page "/feed.xml", layout: false
 
@@ -43,61 +38,42 @@ page "/feed.xml", layout: false
 # end
 
 ###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
-# page "/path/to/file.html", layout: false
-#
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
-#
-# A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
-
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
-
-###
 # Helpers
 ###
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-activate :livereload
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
+set :css_dir, 'css'
+set :images_dir, 'img'
+set :js_dir, 'js'
 set :layouts_dir, '_layouts'
 set :partials_dir, '_partials'
-set :css_dir, 'css'
-set :js_dir, 'js'
-set :images_dir, 'img'
 
 # markdown
 set :markdown_engine, :redcarpet
-set(:markdown,
-      tables:              true,
-      fenced_code_blocks:  true
-     )
+set :markdown, {
+  :fenced_code_blocks => true,
+  :tables => true
+}
 
 # slim
-set :slim, {:pretty => true, :format => :html5, :streaming => false}
+set :slim, {
+  :format => :html5,
+  :pretty => false,
+  :sort_attrs => false,
+  :streaming => false,
+  :tabsize => 2
+}
 
 # syntax highlighting
-activate :syntax, css_class: 'hl', line_numbers: true
+activate :syntax, {
+  :css_class => 'hl',
+  :line_numbers => true
+}
+
+# directory_index
+activate :directory_indexes
+
+# Reload the browser automatically whenever files change
+activate :livereload
 
 # Disqus
 activate :disqus do |d|
@@ -115,16 +91,4 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
-
-  # Minify html on build
-  activate :minify_html, remove_comments: false
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
 end

@@ -16,7 +16,12 @@ per_page: 3
             == article.date.strftime('%Y-%m-%d %X')
 
       .text
-        == article.body
+        - if article.summary.length != article.body.length
+          = article.summary
+          = link_to 'Read more…', article
+
+        - else
+          == article.body
 
   - if paginate && num_pages > 1
     .pagination

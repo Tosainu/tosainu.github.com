@@ -81,7 +81,7 @@ private:
 ##  演習2: TextBoxとComboBoxを用いた簡易電卓の作成
 
 2つのTextBoxに値を入力し, 中央のComboBoxで演算方法(+-\*/)を選択して結果をLabelに表示するプログラムです.  
-また, 追加課題として三角関数の面積とべき乗計算もできるようにもします.
+また, 追加課題として三角形の面積とべき乗計算もできるようにもします.
 
 ![2](https://lh6.googleusercontent.com/-bEatjyNh-RM/VF7dHch-fJI/AAAAAAAADn8/Y2WsJqiiE3s/s800/2-2.png)
 

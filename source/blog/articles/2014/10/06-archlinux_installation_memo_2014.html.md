@@ -191,7 +191,7 @@ CHOST="x86_64-unknown-linux-gnu"
 # -march (or -mcpu) builds exclusively for an architecture
 # -mtune optimizes for an architecture, but builds for whole processor family
 CPPFLAGS="-D_FORTIFY_SOURCE=2"
-CFLAGS="-march=corei7-avx -O2 -pipe -fstack-protector --param=ssp-buffer-size=4"
+CFLAGS="-march=native -O2 -pipe -fstack-protector --param=ssp-buffer-size=4"
 CXXFLAGS="${CFLAGS}"
 LDFLAGS="-Wl,-O1,--sort-common,--as-needed,-z,relro"
 #-- Make Flags: change this for DistCC/SMP systems

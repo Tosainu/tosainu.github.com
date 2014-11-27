@@ -1,0 +1,23 @@
+footer.share
+  /! Twitter
+  span style = 'width:90px;'
+    a.twitter-share-button href = 'https://twitter.com/share' data-lang='en' Tweet
+    script type = 'text/javascript' src = 'https://platform.twitter.com/widgets.js' charset = 'utf-8'
+
+  /! Hatena
+  span style = 'width:120px;'
+    a.hatena-bookmark-button href = 'http://b.hatena.ne.jp/entry/' data-hatena-bookmark-layout = 'standard-balloon' data-hatena-bookmark-lang = 'en' title = 'このエントリーをはてなブックマークに追加'
+      img src =' https://b.hatena.ne.jp/images/entry-button/button-only@2x.png' alt = 'このエントリーをはてなブックマークに追加' width = '20' height = '20' style = 'border: none;'
+    script type = 'text/javascript' src = 'https://b.hatena.ne.jp/js/bookmark_button.js' charset = 'utf-8' async = 'async'
+
+  /! Pocket
+  span style = 'width:100px;'
+    a.pocket-btn data-pocket-label = 'pocket' data-pocket-count = 'horizontal' data-lang = 'en'
+    javascript:
+      !function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");
+
+  /! Google+
+  span style = 'width:70px;'
+    .g-plusone data-size = 'medium'
+    javascript:
+      (function(){var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();

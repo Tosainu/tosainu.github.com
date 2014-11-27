@@ -1,0 +1,44 @@
+.sidebar.3u
+  section
+    h2
+      i.fa.fa-user
+      |  About
+
+    p.avatar
+      img src == data.site.author.avatar alt = 'avatar'
+
+    p = link_to data.site.author.name, '/about'
+    p == data.site.description
+
+  section
+    h2
+      i.fa.fa-file-text-o
+      |  Recent Posts
+
+    - blog.articles[0...5].each do |article|
+      dl
+        dt = link_to article.title, article
+        dd == article.date.strftime('%Y-%m-%d')
+
+  section
+    h2
+      i.fa.fa-folder-open-o
+      |  Tags
+
+    ul.tags
+      - blog.tags.sort.each do |tag, articles|
+        li
+          = link_to tag, tag_path(tag)
+          == " (#{articles.size})"
+
+  section
+    h2
+      i.fa.fa-archive
+      |  Archive
+
+    ul.archive
+      - blog.articles.group_by {|a| a.date.year}.each do |year, articles_year|
+        - articles_year.group_by {|a| a.date.month}.each do |month, articles_month|
+          li
+            = link_to "#{year}-#{format('%02d', month)}", blog_month_path(year, month)
+            == " (#{articles_month.length})"

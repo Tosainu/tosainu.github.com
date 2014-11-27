@@ -2,7 +2,7 @@
   section
     h2
       i.fa.fa-user
-      | About
+      |  About
 
     p.avatar
       img src == data.site.author.avatar alt = 'avatar'
@@ -13,7 +13,7 @@
   section
     h2
       i.fa.fa-file-text-o
-      | Recent Posts
+      |  Recent Posts
 
     - blog.articles[0...5].each do |article|
       dl
@@ -23,7 +23,7 @@
   section
     h2
       i.fa.fa-folder-open-o
-      | Tags
+      |  Tags
 
     ul.tags
       - blog.tags.sort.each do |tag, articles|
@@ -34,7 +34,7 @@
   section
     h2
       i.fa.fa-archive
-      | Archive
+      |  Archive
 
     ul.archive
       - blog.articles.group_by {|a| a.date.year}.each do |year, articles_year|

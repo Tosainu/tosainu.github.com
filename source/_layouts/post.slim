@@ -8,7 +8,8 @@
         ul.inline
           li
             i.fa.fa-calendar
-              = current_article.date.strftime('%Y-%m-%d %X')
+            = ' '
+            = current_article.date.strftime('%Y-%m-%d %X')
 
       .text
         = yield

@@ -13,7 +13,8 @@ per_page: 3
         ul.inline
           li
             i.fa.fa-calendar
-            == article.date.strftime('%Y-%m-%d %X')
+            = ' '
+            = article.date.strftime('%Y-%m-%d %X')
 
       .text
         - if article.summary.length != article.body.length

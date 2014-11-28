@@ -68,7 +68,6 @@ tags: PC,Maini7-3930k
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak -->-</p>
 <p>最近、サイトのデーターベース（MySQL）がよくエラー出してアクセスできないことがあるそうですね。</p>
 <p>暇があったらwktkサーバーに乗り換えてみようと思う。</p>
 <p>部活動のサイトに利用しているけれど、けっこういい感じ。</p>

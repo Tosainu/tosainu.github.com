@@ -39,7 +39,7 @@ tags: PC,Maini7-3930k
 </div>
 <p>&nbsp;</p>
 <p>はい、では↓からIntel Centrino Advanced-N 6205 for Desktopのレビュー的なものになりまーす。</p>
-<!-- pagebreak -->
+READMORE
 <p>&nbsp;</p>
 <p>箱の中身</p>
 <p><a href="https://picasaweb.google.com/lh/photo/Qrbggm9xzbJ_RrztiYrI-NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-685YTX9SAdE/UYTXr8jefTI/AAAAAAAACCo/RInWMrXMcbE/s400/IMG_0444.JPG" height="300" width="400" /></a></p>

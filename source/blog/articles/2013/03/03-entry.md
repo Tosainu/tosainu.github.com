@@ -11,7 +11,7 @@ tags: Diary
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>↓では一つずつ紹介していこうと思います。</p>
-<!-- pagebreak -->
+READMORE
 <p>&nbsp;</p>
 <h3>PC関係</h3>
 <p>・Intel Core i3 3220</p>

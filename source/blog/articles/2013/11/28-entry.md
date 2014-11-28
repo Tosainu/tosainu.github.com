@@ -9,7 +9,7 @@ tags: Programming,C++
 
 以前から書いていたTwitter関連のプログラムが一歩進んだので報告しておきます。
 
-<!-- pagebreak -->
+READMORE
 
 &nbsp;
 

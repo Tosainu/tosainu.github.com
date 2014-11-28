@@ -26,6 +26,8 @@ tags: Linux, ArchLinux, Maini7-3930k
 * Win10TPとDualBoot
 * LightDM & Cinnamon
 
+READMORE
+
 ## Before Installation
 
 BIOSの設定を開いて,

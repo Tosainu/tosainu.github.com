@@ -15,7 +15,7 @@ tags: PC,Maini7-3930k
 
 &nbsp;
 
-<!-- pagebreak -->
+READMORE
 
 ## そもそもなんでケース交換したのさ？
 

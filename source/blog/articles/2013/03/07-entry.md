@@ -47,7 +47,7 @@ tags: Maini7-3930k,PC,Subi3-3220
 <p>&nbsp;</p>
 <p><a href="https://picasaweb.google.com/lh/photo/iwWs2XInCRc1Y0aMgxaC19MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-Cujp_iYl1TE/UTdHtFBFS3I/AAAAAAAABas/m5zGFy_dUPc/s400/IMG_0029.JPG" height="300" width="400" /></a></p>
 <p>&nbsp;</p>
-<!-- pagebreak -->
+READMORE
 <p>&nbsp;</p>
 <p>さてまず安鯖の紹介でもしようと思います。</p>
 <p>まず届いた箱から</p>

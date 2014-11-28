@@ -14,7 +14,7 @@ tags: JavaScript,Programming
 
 [Get Started with OpenShift | OpenShift by Red Hat](https://www.openshift.com/get-started#cli "Get Started with OpenShift | OpenShift by Red Hat")を参考に、Node.jsなアプリケーションを動かしてみます。
 
-<!-- pagebreak -->
+READMORE
 
 ## Sign up
 [Create an account | OpenShift Online by Red Hat](https://www.openshift.com/app/account/new?then=/community/get-started "Create an account | OpenShift Online by Red Hat")

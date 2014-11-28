@@ -33,7 +33,7 @@ SAよりは簡単だったかな、と思います。
 
 以下、画像です。
 
-<!-- pagebreak -->
+READMORE
 
 <a href="https://picasaweb.google.com/lh/photo/prTczqc9K7NwzzZnW-fBGtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-Bgog5GFIru0/UonEAjT8V2I/AAAAAAAACwY/cq16-5oEVAs/s400/GTAIV%25202013-11-09%252018-34-26-25.png" height="225" width="400" /></a>
 

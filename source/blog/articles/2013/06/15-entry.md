@@ -21,7 +21,7 @@ tags: Games,GTASA
 <p>&nbsp;</p>
 <p>でもこれがとんでもないものでした・・・</p>
 <p>&nbsp;</p>
-<!-- pagebreak -->
+READMORE
 <p>&nbsp;</p>
 <p><a href="https://picasaweb.google.com/lh/photo/YZ_4Z9797sFZnVAO8gLJMdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-cYuhqBK_kyU/UbtT8oH6LgI/AAAAAAAACPk/L5ufdPhqRbs/s400/gta_sa%25202013-06-15%252002-22-54-22.png" height="225" width="400" /></a></p>
 <p><span style="font-size:36px;">ん？？？</span></p>

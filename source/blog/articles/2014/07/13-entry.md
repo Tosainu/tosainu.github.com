@@ -13,7 +13,7 @@ tags: WebSite,ArchLinux,Linux
 
 "これは申し込まなきゃいけないッ" ってことでConoHaはじめました.
 
-<!-- pagebreak -->
+READMORE
 
 ## アカウント作成からVPS作成まで
 

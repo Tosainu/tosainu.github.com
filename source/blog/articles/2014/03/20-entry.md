@@ -11,7 +11,7 @@ tags: ArchLinux,Linux,VAIOZ(VPCZ23AJ)
 
 尚、細かいインストール手順は今回は書きません。
 
-<!-- pagebreak -->
+READMORE
 
 &nbsp;
 

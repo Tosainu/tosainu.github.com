@@ -11,7 +11,7 @@ tags: PC,Maini7-3930k
 <p>なんか変わってる2人組を秋葉原で見たら、多分それはとさいぬです。</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak --><!-- pagebreak -->--</p>
+READMORE
 <p>&nbsp;</p>
 <p>さて、本題に入ります。</p>
 <p>1月に組んだ自作機ですが、</p>

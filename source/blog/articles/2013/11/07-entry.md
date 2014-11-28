@@ -26,7 +26,7 @@ tags: Linux,ArchLinux
 
 ※あくまで一例ですので・・・
 
-<!-- pagebreak -->
+READMORE
 
 &nbsp;
 

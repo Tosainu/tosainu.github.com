@@ -7,7 +7,7 @@ tags: AVR,Arduino,Programming,Linux
 <p>ここ3日、ずっとAVRマイコンをAssemblyでプログラミングしていました。<span class="fontsize1">（きっと）</span></p>
 <p>何となくわかってきたのでとりあえずメモ。</p>
 <p>&nbsp;</p>
-<!-- pagebreak -->
+READMORE
 <p>&nbsp;</p>
 <h2>使用しているマイコンと回路図</h2>
 <p>調べてみたところ、Arduinoに任意のHEXが書き込めるようだったので、書き込み器付きマイコンボードとしてArduino Unoを使いました。</p>

@@ -23,7 +23,7 @@ tags: Diary
 
 気になった方だけ続きをどうぞ・・・
 
-<!-- pagebreak -->
+READMORE
 
 &nbsp;
 

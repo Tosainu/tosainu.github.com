@@ -12,6 +12,8 @@ tags: Diary, Xperia2011, XperiaArc, Android
 手続きをしたのは7月末でしたが, 旅行とお盆休み, そして書類の不備等があって時間がかかりましたが, 何とか夏休み中に届いてよかったなぁって感じです.  
 ![sim](https://lh4.googleusercontent.com/-cF_mC9cKXnE/VABcwc4KbxI/AAAAAAAADfI/tq__3yiD6dE/s640/IMG_2487.JPG)
 
+READMORE
+
 ## とりあえず
 
 何気にLTE対応nanoSIMにしました(LTE, nanoSIM共に対応端末持ってないくせに).  

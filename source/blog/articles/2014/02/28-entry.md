@@ -24,7 +24,7 @@ api.twitter.comの接続にSSL必須になったアレですね、これで見�
 
 また、僕の環境では上記プラグインの導入方法では動かなかったので、その修正方法も公開しておきます。
 
-<!-- pagebreak -->
+READMORE
 
 ## PEARパスの修正
 \libs\PEAR\HTTP\Request2内のException.php 47行目、

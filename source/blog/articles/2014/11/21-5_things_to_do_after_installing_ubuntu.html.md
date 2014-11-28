@@ -14,6 +14,8 @@ tags: Linux
 
 **重要:** この記事には**重要なまとめ**が最後にあります. **絶対**に最後まで読んでください.
 
+READMORE
+
 ## 5位: Chromium
 
 ![chromium](https://lh6.googleusercontent.com/-W8UARVzo6no/VG8_t5AjayI/AAAAAAAADrE/6grqSKAXX74/s800/Chromium_11_Logo.png)

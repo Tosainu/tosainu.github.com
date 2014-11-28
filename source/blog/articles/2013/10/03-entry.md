@@ -16,7 +16,7 @@ tags: Linux
 <p>&nbsp;</p>
 <p>それではとさいぬのくだらないtweetとスクショと共にお楽しみくださいw</p>
 <p>また、この記事では「gentooのインストール方法」にはあまり触れませんのでご了承ください。</p>
-<!-- pagebreak -->
+READMORE
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2>#gentooinstallbattle目標</h2>

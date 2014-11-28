@@ -21,7 +21,7 @@ tags: Diary
 
 「ちょっと気になるところ・不満なところ」を書いていこうと思います。
 
-<!-- pagebreak -->
+READMORE
 
 &nbsp;
 

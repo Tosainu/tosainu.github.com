@@ -14,7 +14,7 @@ tags: Diary,PC
 ![ma3](https://lh5.googleusercontent.com/-Is72ZNJov3Y/U2eb20U6WTI/AAAAAAAADOU/3dcHFacZ4UY/s640/IMG_1815.JPG "ma3")  
 こんなマシンがゴロゴロ置いてある、トンデモナイイベントでした。
 
-<!-- pagebreak -->
+READMORE
 
 ## 超ハイエンドモンスターPCによるオーバークロックvsマルチコア比較デモ
 

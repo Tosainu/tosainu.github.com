@@ -80,7 +80,7 @@ AACSキーの更新とかかなぁということで, 画面に従いYes
 僕のはPowerDVD 10 **Ultra**じゃなかったらしい  
 ![20](https://lh3.googleusercontent.com/-Re1JICduWo4/VJUvXHypY1I/AAAAAAAAD0E/PZAAil0Z7yc/s800/20.png)
 
-次記事に続きます. (今日中に書きたい)
+次記事に続きます. <del>(今日中に書きたい)</del>書けませんでした → [対Blu-ray用決戦部隊、通称MakeMKV](/blog/2014-12-21/play_blu_rau_in_archlinux/)
 
 <blockquote class="twitter-tweet" lang="en"><p>PowerDVDもう許さなねぇからなぁ？</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/545908000934727681">December 19, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

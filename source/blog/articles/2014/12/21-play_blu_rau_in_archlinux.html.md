@@ -16,7 +16,7 @@ tags: Diary, ArchLinux
 今回の記事最後で紹介する[MakeMKV](http://www.makemkv.com/)というソフトウェアは, **技術的保護手段が施された市販のBlu-rayのコンテンツを複製(リッピング)する行為**も可能であり, 当然このようなことを行うことは違法となります.  
 しかし, 今回の記事ではMakeMKVに含まれるLGPLなオープンソースライブラリ**libmmbd**利用し, コピープロテクトの**解除は行うものの複製はしない**(再生するだけ)ため違法にはならないと思われます.
 
-また, 同様の理由でlibaacs等に関しても, 上記と同様の理由で違法性はないと思われます.
+また, 同様の理由でlibaacs等に関しても違法性はないと思われます.
 
 ## んで
 
@@ -127,7 +127,7 @@ Blu-rayにチェックを入れて, またBDドライブのパスを設定して
 (＾ω＾≡＾ω＾)おっおっ  
 ![op](https://lh3.googleusercontent.com/-JijMeiq2cJs/VJa7eHYY4II/AAAAAAAAD1s/6-BIo0XGE_I/s640/Screenshot%2520from%25202014-12-21%252021%253A19%253A08.png)
 
-**ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!**!  
+**ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!**  
 ![title](https://lh6.googleusercontent.com/-DgJPUivZ3uE/VJa7yRqWidI/AAAAAAAAD18/UGmTK0O76yw/s640/IMG_2638.JPG)
 
 あぁ, 長かった..... やっとごちうさを見ることができるぜ.....  

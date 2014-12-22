@@ -10,6 +10,7 @@ gem 'middleman-livereload'
 gem 'middleman-syntax'
 gem 'redcarpet'
 gem 'slim'
+gem 'susy'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.0'

@@ -1,7 +1,7 @@
 ---
 title: ι(´Д｀υ)アツイー
 date: 2013-06-08 16:24:39 JST
-tags: GTASA,Games
+tags: GTASA
 ---
 <p><span style="font-size:36px;">アツイー</span></p>
 <a href="https://picasaweb.google.com/lh/photo/q0vkXPKDR2Azu3FsJAGvINMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-uGtXi2shwDQ/UbLSuAtLGdI/AAAAAAAACNQ/iXNvZHqkDiU/s400/IMG_0574.JPG" height="300" width="400" /></a>

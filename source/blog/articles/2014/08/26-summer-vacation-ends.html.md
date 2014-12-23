@@ -1,7 +1,7 @@
 ---
 title: 夏休みが終わる
 date: 2014-08-26 18:35 JST
-tags: Diary, WebSite
+tags: Diary, Website
 ---
 
 みょん.

@@ -1,7 +1,7 @@
 ---
 title: 新デザインだじぇ〜
 date: 2013-05-26 18:27:58 JST
-tags: WebSite
+tags: Website
 ---
 <p>どうも〜</p>
 <p>&nbsp;</p>

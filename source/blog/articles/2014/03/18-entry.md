@@ -1,7 +1,7 @@
 ---
 title: VaioZのOSをすべて再インストールした(Windows7編)
 date: 2014-03-18 20:13:00 JST
-tags: VAIOZ(VPCZ23AJ),PC
+tags: Vaio-Z2,PC
 ---
 どーもです
 

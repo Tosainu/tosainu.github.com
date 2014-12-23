@@ -1,7 +1,7 @@
 ---
 title: 夏休み最終日なわけだが
 date: 2013-09-01 18:50:28 JST
-tags: Diary,Programming,VideoEditing
+tags: Diary
 ---
 <p>来ちゃいましたね、9月。</p>
 <p>夏休み最終日です。</p>

@@ -1,7 +1,7 @@
 ---
 title: ArchLinuxインストールめも (2014秋版)
 date: 2014-10-06 00:51 JST
-tags: Linux, ArchLinux, Maini7-3930k
+tags: Linux, ArchLinux, i7-3930k_PC
 ---
 
 どーもです.

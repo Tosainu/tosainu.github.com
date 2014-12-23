@@ -1,7 +1,7 @@
 ---
 title: サイトテーマを変更しました
 date: 2014-01-04 22:42:17 JST
-tags: WebSite
+tags: Website
 ---
 どーもですん。
 

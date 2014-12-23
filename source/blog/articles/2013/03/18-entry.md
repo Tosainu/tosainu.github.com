@@ -1,7 +1,7 @@
 ---
 title: また・・・
 date: 2013-03-18 16:57:30 JST
-tags: PC,Maini7-3930k
+tags: PC,i7-3930k_PC
 ---
 <p><a href="https://picasaweb.google.com/lh/photo/c7G_iYX9CZ-qbYqL6bPi4NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-WABKgnE1kwI/UUbB0hF0u4I/AAAAAAAABsY/9Ng7F64u0aM/s400/IMG_0255.JPG" height="300" width="400" /></a></p>
 <p><span style="font-size:36px;">またやられた</span></p>

@@ -1,7 +1,7 @@
 ---
 title: ConoHaはじめたからとりあえずbtrfsにArchLinux入れた
 date: 2014-07-13 22:29:50 JST
-tags: WebSite,ArchLinux,Linux
+tags: Website,ArchLinux,Linux
 ---
 みょーーん.
 

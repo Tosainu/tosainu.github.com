@@ -1,7 +1,7 @@
 ---
 title: 【Arduino/AVR】Linux環境でAssemblyLangプログラミングしたメモ
 date: 2013-10-06 21:11:08 JST
-tags: AVR,Arduino,Programming,Linux
+tags: Arduino,Programming,Linux
 ---
 <p>どもどもー</p><p><a href="https://picasaweb.google.com/lh/photo/oaCeHmoxRUIGL7kM-n0TwNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-fFh3rCgGq9g/UlFSJC09C-I/AAAAAAAACpw/rmMps_jgNy4/s400/IMG_1127.JPG" height="300" width="400" /></a></p>
 <p>ここ3日、ずっとAVRマイコンをAssemblyでプログラミングしていました。<span class="fontsize1">（きっと）</span></p>

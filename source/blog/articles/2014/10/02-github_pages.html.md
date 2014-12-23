@@ -1,7 +1,7 @@
 ---
 title: 秋休みとかいうやつでした
 date: 2014-10-02 01:37 JST
-tags: Diary, WebSite
+tags: Diary, Website
 ---
 
 みょん.  

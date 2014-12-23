@@ -1,7 +1,7 @@
 ---
 title: 【自作機1号】VcoreをOffsetModeで指定してみた
 date: 2013-05-01 19:24:25 JST
-tags: PC,Maini7-3930k
+tags: PC,i7-3930k_PC
 ---
 <p>どーもです～</p>
 <p>&nbsp;</p>

@@ -1,11 +1,6 @@
-###
-# Blog settings
-###
-
 Time.zone = 'Tokyo'
 
 activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
   blog.prefix = "blog"
 
   blog.permalink = "{year}-{month}-{day}/{title}.html"
@@ -28,19 +23,6 @@ end
 
 page "/feed.xml", layout: false
 
-###
-# Compass
-###
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
-# Helpers
-###
-
 set :css_dir, 'css'
 set :images_dir, 'img'
 set :js_dir, 'js'
@@ -57,7 +39,7 @@ set :markdown, {
 
 # slim
 set :slim, {
-  :format => :html5,
+  :format => :html,
   :pretty => false,
   :sort_attrs => false,
   :streaming => false,
@@ -87,9 +69,6 @@ end
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
 end

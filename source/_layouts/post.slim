@@ -10,6 +10,13 @@
               i.fa.fa-calendar
             |  
             = current_article.date.strftime('%Y-%m-%d %X')
+          li
+            span.list_icon
+              i.fa.fa-tags
+            |  
+            - current_article.tags.sort.each do |tag|
+              span.tag
+                = link_to tag, tag_path(tag)
 
       = yield
 

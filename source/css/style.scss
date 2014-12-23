@@ -240,6 +240,10 @@ article, section {
 
 header {
   margin-bottom: 20px;
+
+  ul {
+    font-size: 90%;
+  }
 }
 
 hr {
@@ -279,8 +283,11 @@ hr {
   }
 }
 
-.muted {
-  color: $mid-gray;
+.tag {
+  background-color: $off-white;
+  border: 1px solid $light-gray;
+  margin-right: 5px;
+  padding: 2px;
 }
 
 .cf {

@@ -22,6 +22,13 @@ per_page: 3
               i.fa.fa-calendar
             |  
             = article.date.strftime('%Y-%m-%d %X')
+          li
+            span.list_icon
+              i.fa.fa-tags
+            |  
+            - article.tags.sort.each do |tag|
+              span.tag
+                = link_to tag, tag_path(tag)
 
       - if article.summary.length != article.body.length
         = article.summary

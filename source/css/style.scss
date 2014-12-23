@@ -1,1 +1,323 @@
+@import 'compass/reset';
+@import 'compass/typography/lists/inline-list';
+@import 'compass/utilities/general/clearfix';
 @import 'susy';
+@import 'variables';
+
+/*
+--------------------------------*/
+body {
+  background: $white;
+  color: $font_color;
+  font-family: $font-family;
+  font-size: $font_size;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// heading
+#{headings()} {
+  font-weight: bold;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  border-left: 8px solid $red;
+  font-size: 180%;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+h3 {
+  border-left: 8px solid $orange;
+  font-size: 160%;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+h4 {
+  font-size: 140%;
+  margin: 10px 0;
+}
+h5 {
+  font-size: 130%;
+  margin: 10px 0;
+}
+h6 {
+  font-size: 110%;
+  margin: 10px 0;
+}
+
+// text
+p {
+  margin: 20px 0;
+
+  code {
+    background: $white;
+    border: 1px solid $light-gray;
+    font-family: $font_family_mono;
+    margin: 0 2px;
+    padding: 2px;
+  }
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-style: normal;
+  font-weight: bold;
+}
+sup {
+  font-size: 0.8em;
+
+  a:before {
+    content: "*";
+  }
+}
+
+// link
+a:link, a:visited {
+  color: $blue;
+  text-decoration: none;
+}
+a:active, a:hover {
+  color: $blue;
+  text-decoration: underline;
+}
+
+// list
+dl {
+  margin: 20px 0;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 5px 0 10px 20px;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 10px 0;
+}
+ol {
+  list-style-type: decimal;
+  margin: 20px 0;
+}
+li {
+  margin-left: 25px;
+  padding: 3px 0;
+}
+
+.il {
+  @include inline-list;
+
+  li {
+    margin-right: 10px;
+  }
+}
+
+.hl {
+  @include clearfix;
+
+  li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.list_icon {
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+}
+
+blockquote {
+  background: $off-white;
+  border: 1px solid $light-gray;
+  font-size: 110%;
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+
+aside {
+  background: $off-white;
+  border: 1px solid $light-gray;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+// image
+img {
+  border: 1px solid $light-gray;
+  margin: 20px 0;
+}
+
+// code
+pre {
+  background: $white;
+  border: none;
+  font-family: $font_family_mono;
+  margin-bottom: 40px;
+  overflow-x: auto;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+
+  .code {
+    display: block;
+  }
+}
+
+.lineno {
+  background-color: transparent;
+  border: none;
+  color: $mid-gray;
+  margin: 0;
+  padding: 12px;
+}
+
+.hl {
+  margin: 20px 0;
+
+  .gutter {
+    width: 50px;
+  }
+
+  td.gutter, td.code {
+    border: solid 1px $light-gray;
+    padding: 0;
+  }
+
+  pre {
+    margin: 0;
+  }
+
+  .code {
+    overflow-y: scroll;
+    width: calc(100% - 50px);
+
+    pre {
+      padding: 12px;
+    }
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+// table
+table:not(.highlight) {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table:not(.highlight) caption {
+  padding-bottom: 5px;
+}
+table:not(.highlight) th,
+table:not(.highlight) td {
+  border: 1px solid $light-gray;
+  padding: 5px;
+}
+table:not(.highlight) thead th {
+  background: $light-gray;
+  padding: 5px 20px;
+  text-align: center;
+}
+table:not(.highlight) tbody {
+  background-color: $white;
+}
+
+article, section {
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+hr {
+  background: $light-gray;
+  border: none;
+  height: 1px;
+}
+
+.continue {
+  display: inline-block;
+  margin: 10px 0;
+
+  li {
+    list-style-type: none;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.pagination {
+  margin: 20px 0;
+
+  span a {
+    background-color: $off-white;
+    border: 1px solid $light-gray;
+    padding: 4px 12px;
+  }
+
+  .prev {
+    float: left;
+  }
+  .next {
+    float: right;
+  }
+}
+
+.muted {
+  color: $mid-gray;
+}
+
+.cf {
+  @include clearfix;
+}
+
+/* Layout
+--------------------------------*/
+.container { @include container(72rem); }
+
+// header
+#header {
+  background: $dark-gray;
+  padding: 10px 0;
+
+  a:link, a:visited, a:active, a:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+// main column
+#main {
+  padding: 20px 0;
+}
+
+#content { @include span(9); }
+
+#side { @include span(last 3); }
+
+// footer
+#footer {
+  background: $dark-gray;
+  color: $white;
+  padding: 10px 0;
+  text-align: right;
+}
+
+/* Responsive
+--------------------------------*/

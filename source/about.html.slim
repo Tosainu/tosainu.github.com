@@ -5,67 +5,7 @@ title: About
   h1
     = link_to data.site.author.name, '/about'
 
-  #content.4u
-    p.avatar
-      img src == data.site.author.avatar alt = 'avatar'
-
-    section
-      h2 Detail
-
-      dl
-        dt 職業?
-        dd 出遅れ過ぎた情報系学生
-
-        dt 住んでるところ
-        dd 愛知県豊橋市
-
-    section
-      h2 Link
-
-      dl
-        - if data.site.author.twitter.present?
-          dt
-            i.fa.fa-twitter
-            | Twitter
-          dd
-            = link_to "@#{data.site.author.twitter}", "https://twitter.com/#{data.site.author.twitter}"
-
-        - if data.site.author.github.present?
-          dt
-            i.fa.fa-github-square
-            | GitHub
-          dd
-            = link_to "#{data.site.author.github}", "https://github.com/#{data.site.author.github}"
-
-        - if data.site.author.bitbucket.present?
-          dt
-            i.fa.fa-bitbucket
-            | Bitbucket
-          dd
-            = link_to "#{data.site.author.bitbucket}", "https://bitbucket.org/#{data.site.author.bitbucket}"
-
-        - if data.site.author.youtube.present?
-          dt
-            i.fa.fa-youtube
-            | YouTube
-          dd
-            = link_to "#{data.site.author.youtube}", "http://www.youtube.com/user/#{data.site.author.youtube}"
-
-        - if data.site.author.flickr.present?
-          dt
-            i.fa.fa-flickr
-            | Flickr
-          dd
-            = link_to "#{data.site.author.flickr}", "https://www.flickr.com/photos/#{data.site.author.flickr}"
-
-        - if data.site.author.amazon.present?
-          dt
-            i.fa.fa-gift
-            | Amazon
-          dd
-            = link_to "Wishlist", "http://www.amazon.co.jp/registry/wishlist/#{data.site.author.amazon}"
-
-  #content.8u
+  #content
     section
       h2 Hobby
 
@@ -121,3 +61,62 @@ title: About
 
         dt BGM
         dd いろいろ聴く. EDM, Dubstepだとか激しめなものや東方アレンジなんかも
+
+  #side
+    img src = data.site.author.avatar alt = 'avatar'
+
+    section
+      h2 Detail
+
+      dl
+        dt 職業?
+        dd 出遅れ過ぎた情報系学生
+
+        dt 住んでるところ
+        dd 愛知県豊橋市
+
+    section
+      h2 Link
+
+      dl
+        - if data.site.author.twitter.present?
+          dt
+            i.fa.fa-twitter
+            |  Twitter
+          dd
+            = link_to "@#{data.site.author.twitter}", "https://twitter.com/#{data.site.author.twitter}"
+
+        - if data.site.author.github.present?
+          dt
+            i.fa.fa-github-square
+            |  GitHub
+          dd
+            = link_to "#{data.site.author.github}", "https://github.com/#{data.site.author.github}"
+
+        - if data.site.author.bitbucket.present?
+          dt
+            i.fa.fa-bitbucket
+            |  Bitbucket
+          dd
+            = link_to "#{data.site.author.bitbucket}", "https://bitbucket.org/#{data.site.author.bitbucket}"
+
+        - if data.site.author.youtube.present?
+          dt
+            i.fa.fa-youtube
+            |  YouTube
+          dd
+            = link_to "#{data.site.author.youtube}", "http://www.youtube.com/user/#{data.site.author.youtube}"
+
+        - if data.site.author.flickr.present?
+          dt
+            i.fa.fa-flickr
+            |  Flickr
+          dd
+            = link_to "#{data.site.author.flickr}", "https://www.flickr.com/photos/#{data.site.author.flickr}"
+
+        - if data.site.author.amazon.present?
+          dt
+            i.fa.fa-gift
+            |  Amazon
+          dd
+            = link_to "Wishlist", "http://www.amazon.co.jp/registry/wishlist/#{data.site.author.amazon}"

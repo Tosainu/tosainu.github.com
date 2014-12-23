@@ -1,32 +1,29 @@
 = wrap_layout :default do
-  div#content.9u
-    article.entry
+  #content
+    article
       header
-        h1
-          = link_to current_article.title, current_article
+        h1 = link_to current_article.title, current_article
 
-        ul.inline
+        ul.il.muted
           li
-            i.fa.fa-calendar
-            = ' '
+            span.list_icon
+              i.fa.fa-calendar
+            |  
             = current_article.date.strftime('%Y-%m-%d %X')
 
-      .text
-        = yield
+      = yield
 
       = partial 'share'
 
       = disqus
 
-    .pagination
-      .prev
+    .pagination.cf
+      span.prev
         - if current_article.next_article
-          span
-            = link_to '&laquo; Newer', current_article.next_article
+          = link_to '&laquo; Newer', current_article.next_article
 
-      .next
+      span.next
         - if current_article.previous_article
-          span
-            = link_to 'Older &raquo;', current_article.previous_article
+          = link_to 'Older &raquo;', current_article.previous_article
 
-  = partial "sidebar"
+  = partial 'sidebar'

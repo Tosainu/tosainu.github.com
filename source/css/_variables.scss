@@ -1,0 +1,19 @@
+// susy
+$susy: (columns: 12, gutters: 0.5);
+
+// colors
+$red:        #e74c3c;
+$orange:     #f39c12;
+$blue:       #3399CC;
+$green:      #25ba84;
+$off-white:  #fafafa;
+$light-gray: #eeeeee;
+$mid-gray:   #b1b4b9;
+$dark-gray:  #484d55;
+$white:      #ffffff;
+
+// font
+$font_size: 16px;
+$font_color: $dark-gray;
+$font_family: Roboto, 'Droid Sans', Meiryo, 'Hiragino Kaku Gothic ProN', sans-serif;
+$font_family_mono: Consolas, "Liberation Mono", Menlo, Courier, monospace;

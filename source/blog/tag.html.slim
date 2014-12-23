@@ -7,39 +7,37 @@ per_page: 3
 
 - content_for :title, tagname
 
-#content.9u
-  p.well
-    == "Articles tagged <strong>#{tagname}</strong>."
+#content
+  aside
+    p = "Articles tagged <strong>#{tagname}</strong>."
 
   - page_articles.each_with_index do |article, i|
-    article.entry
+    article
       header
-        h1
-          = link_to article.title, article
+        h1 = link_to article.title, article
 
-        ul.inline
+        ul.il.muted
           li
-            i.fa.fa-calendar
+            span.list_icon
+              i.fa.fa-calendar
+            |  
             = article.date.strftime('%Y-%m-%d %X')
 
-      div.text
-        - if article.summary.length != article.body.length
-          = article.summary
-          = link_to 'Read more…', article
+      - if article.summary.length != article.body.length
+        = article.summary
+        = link_to 'Read more…', article
 
-        - else
-          == article.body
+      - else
+        = article.body
 
   - if paginate && num_pages > 1
-    .pagination
-      .prev
+    .pagination.cf
+      span.prev
         - if prev_page && page_number > 1
-          span
-            = link_to '&laquo; Newer', prev_page
+          = link_to '&laquo; Newer', prev_page
 
-      .next
+      span.next
         - if next_page && page_number < num_pages
-          span
-            = link_to 'Older &raquo;', next_page
+          = link_to 'Older &raquo;', next_page
 
 = partial 'sidebar'

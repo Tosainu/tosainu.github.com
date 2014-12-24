@@ -1,7 +1,7 @@
 ---
 title: 【重要なお知らせ】レン鯖変更（するかも）
 date: 2013-03-27 18:34:10 JST
-tags: WebSite
+tags: Website
 ---
 <p>半日、MySQLがエラー出しててアクセスできなかったようですね・・・</p>
 <p>&nbsp;</p>

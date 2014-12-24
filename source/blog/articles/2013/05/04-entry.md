@@ -1,7 +1,7 @@
 ---
 title: Xtreme OverClock BreakThrough 4th Stage　とかに行ってきました～
 date: 2013-05-04 19:50:18 JST
-tags: PC,Maini7-3930k
+tags: PC,i7-3930k_PC
 ---
 <p><a href="https://picasaweb.google.com/lh/photo/kszjD4mqMHP_IITfyAZ3UdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-MBrF9rOnW_w/UYTXW5lYv_I/AAAAAAAACCY/1CwMvioTXUE/s400/IMG_0442.JPG" height="400" width="300" /></a></p>
 <p><a href="https://picasaweb.google.com/lh/photo/NqkR9f7dN7g-kS---ix_W9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-5Za_mMdiZVo/UYTWWkfwPVI/AAAAAAAACBg/zPPm9AjDaLM/s288/IMG_0436.JPG" height="216" width="288" /></a><a href="https://picasaweb.google.com/lh/photo/0Dqf_f3ZR2FN47N26Pt4LtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-qlGuHfpE1qU/UYTW0-X2thI/AAAAAAAACB4/DdqQ9ILvC1Q/s288/IMG_0437.JPG" height="216" width="288" /></a></p>

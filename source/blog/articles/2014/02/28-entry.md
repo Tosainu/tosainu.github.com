@@ -1,7 +1,7 @@
 ---
 title: Twit Plugin for freoが動かなくなったのを修正した
 date: 2014-02-28 17:51:34 JST
-tags: WebSite,Programming
+tags: Website,Programming
 ---
 どーもどーも
 

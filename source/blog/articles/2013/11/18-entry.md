@@ -1,7 +1,7 @@
 ---
 title: 【GTAIV】メインミッションクリア！
 date: 2013-11-18 17:42:22 JST
-tags: Games,GTAIV
+tags: GTAIV
 ---
 どーもです。
 

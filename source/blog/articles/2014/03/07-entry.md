@@ -1,7 +1,7 @@
 ---
 title: ケースをAntec P100に替えてしまいました
 date: 2014-03-07 15:54:24 JST
-tags: PC,Maini7-3930k
+tags: PC,i7-3930k_PC
 ---
 どーもです。
 

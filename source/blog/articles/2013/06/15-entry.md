@@ -1,7 +1,7 @@
 ---
 title: 【GTASA】なんか違ういぬさくやMOD
 date: 2013-06-15 02:42:29 JST
-tags: Games,GTASA
+tags: GTASA
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

@@ -1,7 +1,7 @@
 ---
 title: 【動画制作】今日の成果
 date: 2013-06-22 17:08:10 JST
-tags: VideoEditing
+tags: Diary
 ---
 <div class="video">
 <iframe width="560" height="315" src="http://www.youtube.com/embed/MX7J0doT1us?rel=0" frameborder="0" allowfullscreen></iframe>

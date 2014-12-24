@@ -1,7 +1,7 @@
 ---
 title: 【GTA SA】飛行機教習所ミッションクリア〜
 date: 2013-05-09 21:49:53 JST
-tags: Games,GTASA
+tags: GTASA
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

@@ -1,7 +1,7 @@
 ---
 title: 【SIMCITY2013】都市にアクセス出来なくなった件がさらに悪化した件
 date: 2013-04-23 17:53:22 JST
-tags: Games,SIMCITY2013
+tags: SIMCITY2013
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

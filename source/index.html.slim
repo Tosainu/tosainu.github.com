@@ -3,37 +3,41 @@ layout: default
 pageable: true
 per_page: 3
 ---
-#content.9u
+#content
   - page_articles.each_with_index do |article, i|
-    article.entry
+    article
       header
-        h1
-          = link_to article.title, article
+        h1 = link_to article.title, article
 
-        ul.inline
+        ul.il
           li
-            i.fa.fa-calendar
-            = ' '
-            = article.date.strftime('%Y-%m-%d %X')
+            span.list_icon
+              i.fa.fa-calendar
+            |  
+            = article.date.strftime('%F %R')
+          li
+            span.list_icon
+              i.fa.fa-tags
+            |  
+            - article.tags.sort.each do |tag|
+              a href = tag_path(tag)
+                span.tag = tag
 
-      .text
-        - if article.summary.length != article.body.length
-          = article.summary
-          = link_to 'Read more…', article
+      - if article.summary.length != article.body.length
+        = article.summary
+        = link_to 'Read more…', article
 
-        - else
-          == article.body
+      - else
+        = article.body
 
   - if paginate && num_pages > 1
     .pagination
-      .prev
-        - if prev_page && page_number > 1
-          span
-            = link_to '&laquo; Newer', prev_page
+      - if prev_page && page_number > 1
+        a href = prev_page.url
+          span.prev &laquo; Newer
 
-      .next
-        - if next_page && page_number < num_pages
-          span
-            = link_to 'Older &raquo;', next_page
+      - if next_page && page_number < num_pages
+        a href = next_page.url
+          span.next Older &raquo;
 
-= partial "sidebar"
+= partial 'sidebar'

@@ -1,7 +1,7 @@
 ---
 title: 【自作機2号】Hackintosh体験で感じたこと
 date: 2013-05-02 22:57:14 JST
-tags: PC,Subi3-3220
+tags: PC,i3-3220_PC
 ---
 <p>どーもです〜</p>
 <p>&nbsp;</p>

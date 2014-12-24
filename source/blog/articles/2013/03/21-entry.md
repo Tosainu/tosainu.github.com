@@ -1,7 +1,7 @@
 ---
 title: 動画を作ったんだ、うん
 date: 2013-03-21 09:53:48 JST
-tags: VideoEditing
+tags: Diary
 ---
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm20384482" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm20384482">【ニコニコ動画】CPUソケットを吹っ切らせたかった</a></iframe>
 <p>&nbsp;</p>

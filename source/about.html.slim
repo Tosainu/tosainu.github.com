@@ -5,119 +5,103 @@ title: About
   h1
     = link_to data.site.author.name, '/about'
 
-  #content.4u
-    p.avatar
-      img src == data.site.author.avatar alt = 'avatar'
+  hr
 
+  #content
     section
-      h2 Detail
+      h2 About
 
-      dl
-        dt 職業?
-        dd 出遅れ過ぎた情報系学生
+      p
+        | 愛知のどこかで自称情報系の電気科学生やっています.
+        br
+        | 諸事情で年齢はあまり表に出していませんが, 普通自動車免許は取得しています.
 
-        dt 住んでるところ
-        dd 愛知県豊橋市
-
-    section
-      h2 Link
-
-      dl
-        - if data.site.author.twitter.present?
-          dt
-            i.fa.fa-twitter
-            | Twitter
-          dd
-            = link_to "@#{data.site.author.twitter}", "https://twitter.com/#{data.site.author.twitter}"
-
-        - if data.site.author.github.present?
-          dt
-            i.fa.fa-github-square
-            | GitHub
-          dd
-            = link_to "#{data.site.author.github}", "https://github.com/#{data.site.author.github}"
-
-        - if data.site.author.bitbucket.present?
-          dt
-            i.fa.fa-bitbucket
-            | Bitbucket
-          dd
-            = link_to "#{data.site.author.bitbucket}", "https://bitbucket.org/#{data.site.author.bitbucket}"
-
-        - if data.site.author.youtube.present?
-          dt
-            i.fa.fa-youtube
-            | YouTube
-          dd
-            = link_to "#{data.site.author.youtube}", "http://www.youtube.com/user/#{data.site.author.youtube}"
-
-        - if data.site.author.flickr.present?
-          dt
-            i.fa.fa-flickr
-            | Flickr
-          dd
-            = link_to "#{data.site.author.flickr}", "https://www.flickr.com/photos/#{data.site.author.flickr}"
-
-        - if data.site.author.amazon.present?
-          dt
-            i.fa.fa-gift
-            | Amazon
-          dd
-            = link_to "Wishlist", "http://www.amazon.co.jp/registry/wishlist/#{data.site.author.amazon}"
-
-  #content.8u
-    section
-      h2 Hobby
-
-      dl
-        dt Programming
-        dd C++書けるようになりたい. RubyやJavaScriptにも興味あり
-
-        dt Android端末
-        dd
-          | Xperia 2011愛してる
-          i.fa.fa-arrow-right
-          a title = 'Xperia2011年モデル改造まとめ' href = '/blog/2014-09-26/Xperia2011_Modding_Guide' Xperia2011年モデル改造まとめ
-
-        dt ネットワーク機器/サーバ管理
-        dd 趣味でいろいろサーバを扱うことになりました
+      p
+        | 2013年秋頃, 本気でプログラミングの勉強を始めることを決意し(以前も何度か手を出していた), 以来C++11 later(not VC++)を中心にいろいろ書いています.
+        br
+        | 最近はJavaScript(node.js)やRuby, Haskellにも興味あったり.
 
     section
       h2 Like
 
       ul
-        li Linux (好きなディストリはArchLinuxやRHEL系など)
         li Android
+        li Arch Linux
         li Intel Sandy Bridge Microarchitecture
         li Sony Vaio
+        li Vim
+        li
+          | Xperia 2011 => 
+          a title = 'Xperia2011年モデル改造まとめ' href = '/blog/2014-09-26/Xperia2011_Modding_Guide' Xperia2011年モデル改造まとめ
+        li ご注文はうさぎですか？
 
     section
       h2 Dislike
 
       ul
         li Micro$oftとその製品
-        li Wine (非Win環境で無理矢理Winアプリを動かそうとするProject)
-        li 日本語
         li マルチバイト文字
+        li 政治ネタ
+        li 日本語
+        li 非Win環境で無理矢理Winアプリを動かそうとするProject
 
     section
       h2 Work setup
 
       dl
-        dt PC / Server
+        dt PC
         dd Vaio Z 2012, 自作機等. だいたいArchLinuxが入ってる
-
-        dt Editor
-        dd Vim
-
-        dt Blowser
-        dd Chromium
-
-        dt Photo Editor
-        dd GIMP, RawTherapee
 
         dt Camera
         dd Canon S110
 
         dt BGM
-        dd いろいろ聴く. EDM, Dubstepだとか激しめなものや東方アレンジなんかも
+        dd Electro, Houseとか中心にいろいろ. こころぴょんぴょん待ち！✧ヾ(❀╹◡╹)ﾉﾞ
+
+  #side
+    section
+      img src = data.site.author.avatar alt = 'avatar'
+
+    section
+      h2 Link
+
+      dl
+        - if data.site.author.twitter.present?
+          dt Twitter
+          dd
+            = link_to "@#{data.site.author.twitter}", "https://twitter.com/#{data.site.author.twitter}", target: '_blank'
+
+        - if data.site.author.adn.present?
+          dt App.net
+          dd
+            = link_to "#{data.site.author.adn}", "https://alpha.app.net/#{data.site.author.adn}", target: '_blank'
+
+        - if data.site.author.qiita.present?
+          dt Qiita
+          dd
+            = link_to "#{data.site.author.qiita}", "http://qiita.com/#{data.site.author.qiita}", target: '_blank'
+
+        - if data.site.author.github.present?
+          dt GitHub
+          dd
+            = link_to "#{data.site.author.github}", "https://github.com/#{data.site.author.github}", target: '_blank'
+
+        - if data.site.author.bitbucket.present?
+          dt Bitbucket
+          dd
+            = link_to "#{data.site.author.bitbucket}", "https://bitbucket.org/#{data.site.author.bitbucket}", target: '_blank'
+
+        - if data.site.author.youtube.present?
+          dt YouTube
+          dd
+            = link_to "#{data.site.author.youtube}", "http://www.youtube.com/user/#{data.site.author.youtube}", target: '_blank'
+
+        - if data.site.author.flickr.present?
+          dt Flickr
+          dd
+            = link_to "#{data.site.author.flickr}", "https://www.flickr.com/photos/#{data.site.author.flickr}", target: '_blank'
+
+        - if data.site.author.amazon.present?
+          dt Amazon Wishlist
+          dd
+            = link_to '(✿╹◡╹)ﾉ 干し芋のリスト', "http://www.amazon.co.jp/registry/wishlist/#{data.site.author.amazon}", target: '_blank'

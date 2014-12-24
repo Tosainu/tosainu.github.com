@@ -1,32 +1,36 @@
 = wrap_layout :default do
-  div#content.9u
-    article.entry
+  #content
+    article
       header
-        h1
-          = link_to current_article.title, current_article
+        h1 = link_to current_article.title, current_article
 
-        ul.inline
+        ul.il.muted
           li
-            i.fa.fa-calendar
-            = ' '
-            = current_article.date.strftime('%Y-%m-%d %X')
+            span.list_icon
+              i.fa.fa-calendar
+            |  
+            = current_article.date.strftime('%F %R')
+          li
+            span.list_icon
+              i.fa.fa-tags
+            |  
+            - current_article.tags.sort.each do |tag|
+              span.tag
+                = link_to tag, tag_path(tag)
 
-      .text
-        = yield
+      = yield
 
-      = partial 'share'
+    = partial 'share'
 
-      = disqus
+    = disqus
 
     .pagination
-      .prev
-        - if current_article.next_article
-          span
-            = link_to '&laquo; Newer', current_article.next_article
+      - if current_article.previous_article
+        a href = current_article.previous_article.url
+          span.next Older &raquo;
 
-      .next
-        - if current_article.previous_article
-          span
-            = link_to 'Older &raquo;', current_article.previous_article
+      - if current_article.next_article
+        a href = current_article.next_article.url
+          span.prev &laquo; Newer
 
-  = partial "sidebar"
+  = partial 'sidebar'

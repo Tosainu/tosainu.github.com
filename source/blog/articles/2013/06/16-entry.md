@@ -1,7 +1,7 @@
 ---
 title: 【GTASA】メインミッションクリア！
 date: 2013-06-16 20:17:10 JST
-tags: Games,GTASA
+tags: GTASA
 ---
 <p>どーもです。</p>
 <p>本当に暑くなりましたね</p>

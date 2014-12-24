@@ -6,48 +6,53 @@ per_page: 3
 ---
 ruby:
   case page_type when 'day'
-    date = Date.new(year, month, day).strftime('%Y-%m-%d')
+    date = ['Daily', Date.new(year, month, day).strftime('%Y-%m-%d')]
   when 'month'
-    date = Date.new(year, month).strftime('%Y-%m')
+    date = ['Monthly', Date.new(year, month).strftime('%Y-%m')]
   when 'year'
-    date = Date.new(year).strftime('%Y')
+    date = ['Yearly', Date.new(year).strftime('%Y')]
   end
 
-- content_for :title, date
+- content_for :title, date[1]
 
-#content.9u
-  p.well
-    == "Archive for <strong>#{date}</strong>."
+#content
+  aside
+    p = "#{date[0]} Archives: <strong>#{date[1]}</strong>."
 
   - page_articles.each_with_index do |article, i|
-    article.entry
+    article
       header
-        h1
-          = link_to article.title, article
+        h1 = link_to article.title, article
 
-        ul.inline
+        ul.il.muted
           li
-            i.fa.fa-calendar
-            = article.date.strftime('%Y-%m-%d %X')
+            span.list_icon
+              i.fa.fa-calendar
+            |  
+            = article.date.strftime('%F %R')
+          li
+            span.list_icon
+              i.fa.fa-tags
+            |  
+            - article.tags.sort.each do |tag|
+              span.tag
+                = link_to tag, tag_path(tag)
 
-      div.text
-        - if article.summary.length != article.body.length
-          = article.summary
-          = link_to 'Read more…', article
+      - if article.summary.length != article.body.length
+        = article.summary
+        = link_to 'Read more…', article
 
-        - else
-          == article.body
+      - else
+        = article.body
 
   - if paginate && num_pages > 1
     .pagination
-      .prev
-        - if prev_page && page_number > 1
-          span
-            = link_to '&laquo; Newer', prev_page
+      - if prev_page && page_number > 1
+        a href = prev_page.url
+          span.prev &laquo; Newer
 
-      .next
-        - if next_page && page_number < num_pages
-          span
-            = link_to 'Older &raquo;', next_page
+      - if next_page && page_number < num_pages
+        a href = next_page.url
+          span.next Older &raquo;
 
 = partial 'sidebar'

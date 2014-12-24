@@ -1,7 +1,7 @@
 ---
 title: GTASAクリア記念？動画うpしました～
 date: 2013-06-23 19:01:47 JST
-tags: VideoEditing
+tags: GTASA
 ---
 <p>GTAVの発表も噂される中、今頃SA？</p>
 <p>なんて思う人がいるかもしれませんが、つい最近GTASAのメインミッションをクリアしました。</p>

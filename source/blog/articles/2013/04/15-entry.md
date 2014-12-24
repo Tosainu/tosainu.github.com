@@ -1,7 +1,7 @@
 ---
 title: I.G.Intel HD Graphics 2500は残念な子なのか！？
 date: 2013-04-15 18:12:54 JST
-tags: VAIOZ(VPCZ23AJ),Subi3-3220,Maini7-3930k,PC
+tags: Vaio-Z2,i3-3220_PC,i7-3930k_PC,PC
 ---
 <p>どーもとさいぬです。</p>
 <p>&nbsp;</p>

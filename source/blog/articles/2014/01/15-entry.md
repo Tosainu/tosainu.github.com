@@ -1,7 +1,7 @@
 ---
 title: Vaioに入れたLinuxで静音モードやバッテリーケアを有効にする
 date: 2014-01-15 00:48:27 JST
-tags: VAIOZ(VPCZ23AJ),Linux
+tags: Vaio-Z2,Linux
 ---
 どーもです
 

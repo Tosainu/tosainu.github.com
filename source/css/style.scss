@@ -5,7 +5,17 @@
 @import 'susy';
 @import 'variables';
 
-/*
+/* mixin
+--------------------------------*/
+@mixin button_bg($color) {
+  background: $color;
+
+  &:active, &:hover {
+    background: darken($color, 20%);
+  }
+}
+
+/* 
 --------------------------------*/
 html {
   overflow-x: hidden;
@@ -260,17 +270,9 @@ hr {
   padding-bottom: 20px;
 
   span {
-    a {
-      background-color: $off-white;
-      border: 1px solid $light-gray;
-      padding: 4px 12px;
-    }
-  }
-
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
+    @include button_bg($off-white);
+    border: 1px solid $light-gray;
+    padding: 10px 20px;
   }
 
   .prev {
@@ -282,7 +284,7 @@ hr {
 }
 
 .tag {
-  background-color: $off-white;
+  @include button_bg($off-white);
   border: 1px solid $light-gray;
   margin-right: 5px;
   padding: 2px;
@@ -320,13 +322,13 @@ hr {
   }
 }
 .twitter {
-  background: #55acee;
+  @include button_bg(#55acee);
 }
 .hatena {
-  background: #007bca;
+  @include button_bg(#007bca);
 }
 .pocket {
-  background: #ed4055;
+  @include button_bg(#ed4055);
 
   svg {
     width: 17px;
@@ -335,10 +337,10 @@ hr {
   }
 }
 .google_plus {
-  background: #c93725;
+  @include button_bg(#c93725);
 }
 .adn {
-  background: #4a484d;
+  @include button_bg(#4a484d);
 }
 .fa-hatena:before {
   content: "B!";

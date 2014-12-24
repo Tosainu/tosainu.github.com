@@ -25,12 +25,12 @@
     = disqus
 
     .pagination
-      span.prev
-        - if current_article.next_article
-          = link_to '&laquo; Newer', current_article.next_article
+      - if current_article.previous_article
+        a href = current_article.previous_article.url
+          span.next Older &raquo;
 
-      span.next
-        - if current_article.previous_article
-          = link_to 'Older &raquo;', current_article.previous_article
+      - if current_article.next_article
+        a href = current_article.next_article.url
+          span.prev &laquo; Newer
 
   = partial 'sidebar'

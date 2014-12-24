@@ -20,8 +20,8 @@ per_page: 3
               i.fa.fa-tags
             |  
             - article.tags.sort.each do |tag|
-              span.tag
-                = link_to tag, tag_path(tag)
+              a href = tag_path(tag)
+                span.tag = tag
 
       - if article.summary.length != article.body.length
         = article.summary
@@ -32,12 +32,12 @@ per_page: 3
 
   - if paginate && num_pages > 1
     .pagination
-      span.prev
-        - if prev_page && page_number > 1
-          = link_to '&laquo; Newer', prev_page
+      - if prev_page && page_number > 1
+        a href = prev_page.url
+          span.prev &laquo; Newer
 
-      span.next
-        - if next_page && page_number < num_pages
-          = link_to 'Older &raquo;', next_page
+      - if next_page && page_number < num_pages
+        a href = next_page.url
+          span.next Older &raquo;
 
 = partial 'sidebar'

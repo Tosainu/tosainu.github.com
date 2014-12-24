@@ -63,6 +63,11 @@ activate :disqus do |d|
   d.shortname = 'tosainu'
 end
 
+# google analytics
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-57978655-1'
+end
+
 activate :deploy do |deploy|
   deploy.method = :git
 end

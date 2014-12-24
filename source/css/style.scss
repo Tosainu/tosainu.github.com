@@ -79,13 +79,15 @@ sup {
 }
 
 // link
-a:link, a:visited {
-  color: $blue;
-  text-decoration: none;
-}
-a:active, a:hover {
-  color: $blue;
-  text-decoration: underline;
+a {
+  &:link, &:visited {
+    color: $blue;
+    text-decoration: none;
+  }
+  &:active, &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
 }
 
 // list
@@ -120,15 +122,11 @@ li {
   }
 }
 
-.hl {
-  @include clearfix;
-
-  li {
-    float: left;
-    list-style-type: none;
-    margin: 0;
-    width: 50%;
-  }
+.hl li {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  width: 50%;
 }
 
 .list_icon {
@@ -219,22 +217,22 @@ pre {
 table:not(.highlight) {
   border-collapse: collapse;
   margin: 20px 0;
-}
-table:not(.highlight) caption {
-  padding-bottom: 5px;
-}
-table:not(.highlight) th,
-table:not(.highlight) td {
-  border: 1px solid $light-gray;
-  padding: 5px;
-}
-table:not(.highlight) thead th {
-  background: $light-gray;
-  padding: 5px 20px;
-  text-align: center;
-}
-table:not(.highlight) tbody {
-  background-color: $white;
+
+  caption {
+    padding-bottom: 5px;
+  }
+  th, td {
+    border: 1px solid $light-gray;
+    padding: 5px;
+  }
+  thead th {
+    background: $light-gray;
+    padding: 5px 20px;
+    text-align: center;
+  }
+  tbody {
+    background-color: $white;
+  }
 }
 
 article, section {
@@ -257,27 +255,22 @@ hr {
   height: 1px;
 }
 
-.continue {
-  display: inline-block;
-  margin: 10px 0;
-
-  li {
-    list-style-type: none;
-    margin: 0;
-
-    a {
-      text-decoration: none;
-    }
-  }
-}
-
 .pagination {
   margin: 20px 0;
+  padding-bottom: 20px;
 
-  span a {
-    background-color: $off-white;
-    border: 1px solid $light-gray;
-    padding: 4px 12px;
+  span {
+    a {
+      background-color: $off-white;
+      border: 1px solid $light-gray;
+      padding: 4px 12px;
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
   }
 
   .prev {
@@ -297,9 +290,9 @@ hr {
 
 // share
 .share {
+  border-bottom: 1px solid $light-gray;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid $light-gray;
   overflow: hidden;
 
   @include with-layout(5 .2) {
@@ -318,11 +311,11 @@ hr {
       &:last-child span {
         @include span(1 last);
       }
-    }
 
-    a:link, a:visited, a:active, a:hover {
-      color: $white;
-      text-decoration: none;
+      &:link, &:visited, &:active, &:hover {
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -331,10 +324,15 @@ hr {
 }
 .hatena {
   background: #007bca;
-
 }
 .pocket {
   background: #ed4055;
+
+  svg {
+    width: 17px;
+    height: 16px;
+    fill: $white;
+  }
 }
 .google_plus {
   background: #c93725;

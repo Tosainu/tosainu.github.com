@@ -31,7 +31,7 @@ per_page: 3
         = article.body
 
   - if paginate && num_pages > 1
-    .pagination.cf
+    .pagination
       span.prev
         - if prev_page && page_number > 1
           = link_to '&laquo; Newer', prev_page

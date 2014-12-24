@@ -9,7 +9,7 @@ per_page: 3
 
 #content
   aside
-    p = "Articles tagged <strong>#{tagname}</strong>."
+    p = "Tag Archives: <strong>#{tagname}</strong>."
 
   - page_articles.each_with_index do |article, i|
     article
@@ -38,7 +38,7 @@ per_page: 3
         = article.body
 
   - if paginate && num_pages > 1
-    .pagination.cf
+    .pagination
       span.prev
         - if prev_page && page_number > 1
           = link_to '&laquo; Newer', prev_page

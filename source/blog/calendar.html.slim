@@ -6,18 +6,18 @@ per_page: 3
 ---
 ruby:
   case page_type when 'day'
-    date = Date.new(year, month, day).strftime('%Y-%m-%d')
+    date = ['Daily', Date.new(year, month, day).strftime('%Y-%m-%d')]
   when 'month'
-    date = Date.new(year, month).strftime('%Y-%m')
+    date = ['Monthly', Date.new(year, month).strftime('%Y-%m')]
   when 'year'
-    date = Date.new(year).strftime('%Y')
+    date = ['Yearly', Date.new(year).strftime('%Y')]
   end
 
-- content_for :title, date
+- content_for :title, date[1]
 
 #content
   aside
-    p = "Archive for <strong>#{date}</strong>."
+    p = "#{date[0]} Archives: <strong>#{date[1]}</strong>."
 
   - page_articles.each_with_index do |article, i|
     article
@@ -46,7 +46,7 @@ ruby:
         = article.body
 
   - if paginate && num_pages > 1
-    .pagination.cf
+    .pagination
       span.prev
         - if prev_page && page_number > 1
           = link_to '&laquo; Newer', prev_page

@@ -7,7 +7,7 @@
 
     img src = data.site.author.avatar alt = 'avatar'
 
-    = data.site.description
+    p = data.site.description
 
   section
     h4
@@ -34,7 +34,7 @@
       i.fa.fa-archive
       |  Archive
 
-    ul.hl
+    ul.hl.cf
       - blog.articles.group_by {|a| a.date.year}.each do |year, articles_year|
         - articles_year.group_by {|a| a.date.month}.each do |month, articles_month|
           li

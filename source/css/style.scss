@@ -6,12 +6,15 @@
 
 /*
 --------------------------------*/
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
   background: $white;
   color: $font_color;
   font-family: $font-family;
-  font-size: $font_size;
-  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -152,6 +155,7 @@ aside {
 img {
   border: 1px solid $light-gray;
   margin: 20px 0;
+  max-width: 100%;
 }
 
 // code
@@ -296,7 +300,29 @@ hr {
 
 /* Layout
 --------------------------------*/
-.container { @include container(72rem); }
+body {
+  @media screen and (max-width: $mobile_width - 1) {
+    font-size: $font_size_s;
+    line-height: $line-height_s;
+  }
+  @media screen and (min-width: $mobile_width) and (max-width: $desttop_width - 1) {
+    font-size: $font_size_m;
+    line-height: $line-height_m;
+  }
+  @media screen and (min-width: $desttop_width) {
+    font-size: $font_size;
+    line-height: $line-height;
+  }
+}
+
+.container {
+  @media screen and (max-width: $desttop_width - 1) {
+    @include container(95%);
+  }
+  @media screen and (min-width: $desttop_width) {
+    @include container;
+  }
+}
 
 // header
 #header {
@@ -314,9 +340,17 @@ hr {
   padding: 20px 0;
 }
 
-#content { @include span(9); }
+#content {
+  @media screen and (min-width: $mobile_width) {
+    @include span(9);
+  }
+}
 
-#side { @include span(last 3); }
+#side {
+  @media screen and (min-width: $mobile_width) {
+    @include span(last 3);
+  }
+}
 
 // footer
 #footer {
@@ -325,6 +359,3 @@ hr {
   padding: 10px 0;
   text-align: right;
 }
-
-/* Responsive
---------------------------------*/

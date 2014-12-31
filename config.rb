@@ -40,10 +40,7 @@ set :markdown, {
 }
 
 # syntax highlighting
-activate :syntax, {
-  :css_class => 'hl',
-  :line_numbers => true
-}
+activate :syntax, :css_class => 'hl'
 
 # slim
 Slim::Engine.disable_option_validator!

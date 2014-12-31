@@ -34,7 +34,7 @@
       i.fa.fa-archive
       |  Archive
 
-    ul.hl.cf
+    ul.archive.cf
       - blog.articles.group_by {|a| a.date.year}.each do |year, articles_year|
         - articles_year.group_by {|a| a.date.month}.each do |month, articles_month|
           li

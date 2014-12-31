@@ -23,6 +23,8 @@ end
 
 page "/feed.xml", layout: false
 
+activate :directory_indexes
+
 set :css_dir, 'css'
 set :images_dir, 'img'
 set :js_dir, 'js'
@@ -37,43 +39,40 @@ set :markdown, {
   :tables => true
 }
 
-# slim
-set :slim, {
-  :format => :html,
-  :pretty => false,
-  :sort_attrs => false,
-  :streaming => false,
-  :tabsize => 2
-}
-
 # syntax highlighting
 activate :syntax, {
   :css_class => 'hl',
   :line_numbers => true
 }
 
-# directory_index
-activate :directory_indexes
-
-# Reload the browser automatically whenever files change
-activate :livereload
+# slim
+Slim::Engine.disable_option_validator!
+set :slim, {
+  :format => :html,
+  :sort_attrs => false,
+  :streaming => false,
+  :tabsize => 2
+}
 
 # Disqus
 activate :disqus do |d|
   d.shortname = 'tosainu'
 end
 
-# google analytics
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-57978655-1'
-end
-
 activate :deploy do |deploy|
   deploy.method = :git
 end
 
-# Build-specific configuration
+configure :development do
+  activate :livereload, :no_swf => true
+
+  Slim::Engine.options[:pretty] = true
+end
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  set :ga_key, 'UA-57978655-1'
+
+  Slim::Engine.options[:pretty] = false
 end

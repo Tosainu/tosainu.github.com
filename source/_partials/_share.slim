@@ -1,6 +1,6 @@
 .share.cf
   /! Twitter
-  - twitter_share_url = "https://twitter.com/share?text=#{URI::encode(current_page.data.title + " - " + data.site.title)}&related=#{data.site.author.twitter}"
+  - twitter_share_url = "https://twitter.com/share?text=#{URI::encode(current_page.data.title.to_s + " - " + data.site.title)}&related=#{data.site.author.twitter}"
   a href = twitter_share_url target = '_blank'
     span.twitter
       i.fa.fa-twitter
@@ -25,7 +25,7 @@
       i.fa.fa-google-plus
 
   /! adn
-  - adn_share_url = "https://account.app.net/intent/post/?text=#{URI::encode(current_page.data.title + " - " + data.site.title + " " + data.site.url + current_path)}"
+  - adn_share_url = "https://account.app.net/intent/post/?text=#{URI::encode(current_page.data.title.to_s + " - " + data.site.title + " " + data.site.url + current_path)}"
   a href = adn_share_url target = '_blank'
     span.adn
       i.fa.fa-adn

@@ -1,8 +1,8 @@
 ruby:
   if current_page.data.title.present? and yield_content(:title)
-    title = current_page.data.title + ' ' + yield_content(:title) + ' | ' + data.site.title
+    title = current_page.data.title.to_s + ' ' + yield_content(:title) + ' | ' + data.site.title
    elsif current_page.data.title.present?
-     title = current_page.data.title + ' | ' + data.site.title
+     title = current_page.data.title.to_s + ' | ' + data.site.title
    else
      title = data.site.title
    end

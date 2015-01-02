@@ -8,6 +8,8 @@ gem 'middleman-deploy'
 gem 'middleman-disqus'
 gem 'middleman-livereload'
 gem 'middleman-syntax'
+
+gem 'font-awesome-sass', '~> 4.2.0'
 gem 'redcarpet'
 gem 'slim'
 gem 'susy'

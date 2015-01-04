@@ -1,4 +1,4 @@
-# My blog
+# My blog [![Build Status](https://travis-ci.org/Tosainu/blog.svg)](https://travis-ci.org/Tosainu/blog)
 
 <http://blog.myon.info/>
 

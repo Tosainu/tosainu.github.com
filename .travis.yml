@@ -1,0 +1,5 @@
+language: ruby
+before_script:
+  - git clone --quiet -b gh-pages https://github.com/Tosainu/blog build
+script:
+  - bundle exec middleman build

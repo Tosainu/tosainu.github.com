@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+  - 2.1.0
 before_script:
   - git clone --quiet -b gh-pages https://github.com/Tosainu/blog build
 script:

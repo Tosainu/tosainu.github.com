@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+  - 2.1.0
+env:
+  global:
+    - GIT_AUTHOR_EMAIL='tosainu.maple@gmail.com'
+    - GIT_AUTHOR_NAME='Tosainu@travis-ci'
+    - GIT_COMMITTER_EMAIL='tosainu.maple@gmail.com'
+    - GIT_COMMITTER_NAME='Tosainu@travis-ci'
+    - secure: NXUDOvFkSnK6GyAvsyej3DRztUDothha31XeY3X+ph3PhFxonMiAZlzPkolBgQ8QKT+LBAwnfOwSEZjP78uKo/ARtest4Giu7I91EXmv3bFhHIsrf5LCAVMxCvx3PvQO6vWZfDpU7A6lIEdlPW+oFPVm8WbTEhYjawRDOOSmb80=
+before_script:
+  - git clone --quiet -b gh-pages https://github.com/Tosainu/blog build
+script:
+  - bundle exec middleman build
+after_success:
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && bundle exec middleman deploy >/dev/null 2>&1'

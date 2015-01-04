@@ -58,6 +58,11 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.branch = 'gh-pages'
+
+  if ENV['GH_TOKEN'] then
+    deploy.remote = "https://#{ENV['GH_TOKEN']}@github.com/Tosainu/blog.git"
+  end
 end
 
 configure :development do

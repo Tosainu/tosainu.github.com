@@ -352,14 +352,12 @@ body {
   padding: 20px 0;
 }
 
-#content {
-  @media screen and (min-width: $mobile_width) {
+@media screen and (min-width: $mobile_width) {
+  #content {
     @include span(9);
   }
-}
 
-#side {
-  @media screen and (min-width: $mobile_width) {
+  #side {
     @include span(last 3);
   }
 }

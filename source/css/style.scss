@@ -37,15 +37,15 @@ h1 {
   font-size: 200%;
 }
 h2 {
-  border-left: 8px solid $red;
+  border-left: 9px solid $red;
   font-size: 180%;
-  margin: 20px 0;
+  margin: 1.2em 0 .6em;
   padding: 0 15px;
 }
 h3 {
-  border-left: 8px solid $orange;
-  font-size: 160%;
-  margin: 20px 0;
+  border-left: 9px solid $orange;
+  font-size: 150%;
+  margin: 1.2em 0 .6em;
   padding: 0 15px;
 }
 h4 {
@@ -63,7 +63,7 @@ h6 {
 
 // text
 p {
-  margin: 20px 0;
+  margin-bottom: 1.2em;
 
   code {
     background: $white;
@@ -102,33 +102,33 @@ a {
 
 // list
 dl {
-  margin: 20px 0;
+  margin: .6em 0;
 }
 dt {
   font-weight: bold;
 }
 dd {
-  margin: 5px 0 10px 20px;
+  margin: 0 1.2em .6em;
 }
 
 ul {
   list-style-type: circle;
-  margin: 10px 0;
+  margin: .6em 0;
 }
 ol {
   list-style-type: decimal;
-  margin: 20px 0;
+  margin: .6em 0;
 }
 li {
-  margin-left: 25px;
-  padding: 3px 0;
+  margin-left: 1.8em;
+  padding: .3em 0;
 }
 
 .il {
   @include inline-list;
 
   li {
-    margin-right: 10px;
+    margin-right: .6em;
   }
 }
 
@@ -142,7 +142,7 @@ li {
 .list_icon {
   display: inline-block;
   text-align: center;
-  width: 20px;
+  width: 1.2em;
 }
 
 blockquote {
@@ -151,18 +151,23 @@ blockquote {
   font-size: 110%;
   margin: 20px 0;
   padding: 10px 20px;
+
+  p {
+    margin: 0;
+  }
 }
 
 aside {
   background: $off-white;
   border: 1px solid $light-gray;
   margin-bottom: 20px;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 // image
 img {
-  margin: 20px 0;
+  display: block;
+  margin: .6em auto;
   max-width: 100%;
 }
 
@@ -171,6 +176,7 @@ pre {
   background: $white;
   border: 1px solid $light-gray;
   font-family: $font_family_mono;
+  line-height: 1.4em;
   margin: 20px 0;
   overflow-x: auto;
   padding: 10px;
@@ -222,13 +228,13 @@ hr {
 }
 
 .pagination {
-  margin: 20px 0;
+  margin: 2.4em 0;
   padding-bottom: 20px;
 
   span {
     @include button_bg($off-white);
     border: 1px solid $light-gray;
-    padding: 10px 20px;
+    padding: .3em 1.2em;
   }
 
   .prev {
@@ -244,6 +250,14 @@ hr {
   border: 1px solid $light-gray;
   margin-right: 5px;
   padding: 2px;
+}
+
+.footnotes {
+  padding: 1.2em 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 // share

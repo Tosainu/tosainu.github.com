@@ -151,9 +151,9 @@ $ ./QWebView_example
 ![example](https://lh6.googleusercontent.com/-h9rrhxDATYo/VLOHLGrOFxI/AAAAAAAAD4U/cZhcZTFEtHg/s640/2015-01-12-173150_1920x1080_scrot.png)
 
 これだけです. 簡単ですね.  
-ちなみに, `main.cc`の8行目の`R"( ... )"`はC++11からのRaw String Literal[^1]と呼ばれるものです.
+ちなみに, `main.cc`の8行目の`R"( ... )"`はC++11からのRaw String Literal[^5]と呼ばれるものです.
 
-[^1]: [C++11: Syntax and Feature - 2.8.4.3 生文字列リテラル（Raw String Literal）](http://ezoeryou.github.io/cpp-book/C++11-Syntax-and-Feature.xhtml#raw.string.literal)
+[^5]: [C++11: Syntax and Feature - 2.8.4.3 生文字列リテラル（Raw String Literal）](http://ezoeryou.github.io/cpp-book/C++11-Syntax-and-Feature.xhtml#raw.string.literal)
 
 ## C++からDOM
 

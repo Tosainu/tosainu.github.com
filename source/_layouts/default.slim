@@ -1,12 +1,3 @@
-ruby:
-  if current_page.data.title.present? and yield_content(:title)
-    title = current_page.data.title.to_s + ' ' + yield_content(:title) + ' | ' + data.site.title
-   elsif current_page.data.title.present?
-     title = current_page.data.title.to_s + ' | ' + data.site.title
-   else
-     title = data.site.title
-   end
-
 doctype html
 html lang = data.site.lang
   head
@@ -21,13 +12,13 @@ html lang = data.site.lang
     meta property = 'twitter:card' content = 'summary'
     meta property = 'twitter:site' content = ('@' + data.site.author.twitter)
     meta property = 'twitter:creator' content = ('@' + data.site.author.twitter)
-    meta property = 'twitter:title' content = title
+    meta property = 'twitter:title' content = page_title
     meta property = 'twitter:description' content = data.site.description
     meta property = 'twitter:image' content = data.site.author.avatar
     meta property = 'twitter:url' content = (data.site.url + current_path)
     meta property = 'twitter:domain' content = data.site.url
 
-    title = title
+    title = page_title
 
     = stylesheet_link_tag 'style'
     = stylesheet_link_tag 'syntax'

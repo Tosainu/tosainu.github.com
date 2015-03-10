@@ -1,5 +1,5 @@
 ---
-title: 2015
+title: '2015'
 date: 2015-01-02 09:52 JST
 tags: Diary
 ---

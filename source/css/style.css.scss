@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+@import 'compass/reset';
+@import 'fontawesome';
+
+/*
+---------------------------- */
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  background: #fff;
+  color: #404040;
+  font: 16px/2.0 'Exo 2', sans-serif;
+  height: 100%;
+}
+
+a:link, a:visited {
+  color: #404040;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #999;
+}
+
+h1 {
+  animation: open .5s ease-out;
+  font-size: 200%;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+h2 {
+  color: #202020;
+  font-size: 160%;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #202020;
+  font-size: 120%;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+img {
+  animation: open .5s ease-out;
+  margin: 10px 0;
+}
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  width: 22px;
+}
+
+.icon-3x {
+  display: inline-block;
+  text-align: center;
+  vertical-align:middle;
+  width: 64px;
+}
+
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* layout
+---------------------------- */
+.wrap {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* header */
+header {
+  background: #202020;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+    color: #999;
+  }
+}
+
+.title {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/* content */
+section {
+  box-sizing: border-box;
+  display: table;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.bigheader {
+  background: #202020;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+}
+
+.about {
+  background: #f2f2f2;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.works {
+  background: #fff;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer {
+  background: #202020;
+  color: #fff;
+  padding: 10px 0;
+  text-align: right;
+}
+
+/* grid */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+  width: 49.2%;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+/* link */
+.link {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.link > a {
+  display: table-cell;
+  padding: 7px;
+}
+
+/* media query
+---------------------------- */
+@media screen and (max-width: 960px) {
+  html, body {
+    display: block;
+  }
+
+  .wrap {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    display: none;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .col {
+    margin: 1% 0 1% 0;
+    width: 100%;
+  }
+}
+
+/* animation
+---------------------------- */
+@keyframes open {
+  0% {
+    margin: 30px 0;
+    opacity: 0;
+  }
+  100% {
+    margin: 10px 0;
+    opacity: 1;
+  }
+}

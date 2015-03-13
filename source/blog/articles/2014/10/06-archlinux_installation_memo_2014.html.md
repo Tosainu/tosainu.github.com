@@ -206,7 +206,7 @@ DEBUG_CXXFLAGS="-g -fvar-tracking-assignments"
 yaourtのインストールは面倒だからスクリプト書いた.
 
 ```
-# curl myon.info/data/install_yaourt.sh | bash
+# curl tosainu.bitbucket.org/install_yaourt.sh | bash
 ```
 
 ## Create User

@@ -61,7 +61,7 @@ READMORE
 仕方がないので**簡単なAndroidアプリ**を書くことにしました.
 
 [Tosainu / ToggleTether — Bitbucket](https://bitbucket.org/Tosainu/toggletether)  
-[toggleTether-release.apk](http://myon.info/data/toggleTether-release.apk)
+[toggleTether-release.apk](http://tosainu.bitbucket.org/toggleTether-release.apk)
 
 起動するとWifiテザリングが有効か無効かを確認し, 有効だったら無効に, 無効だったら有効にするだけのアプリです.  
 Homeアプリの設定で "メニューボタン長押し" でこれが起動するようにすると幸せになれました.

@@ -9,8 +9,8 @@ tags: OSx86, i7-3930k_PC
 
 READMORE
 
-※ 本記事はあくまで**夢のメモ**であり, 記事中の画像は**記憶を元に高画質でレンダリングしたもの**です  
-※ Apple以外で製造されたハードウェアにOS Xをインストールすることは**Appleの規約違反**になります
+* 本記事はあくまで**夢のメモ**であり, 記事中の画像は**記憶を元に高画質でレンダリングしたもの**です
+* Apple以外で製造されたハードウェアにOS Xをインストールすることは**Appleの規約違反**になります
 
 ## Introduction
 
@@ -206,7 +206,7 @@ Do you want to open ssdt.dsl (y/n)? n
 
 ### Install Clover
 
-[Cloverのサイト](http://sourceforge.net/projects/cloverefiboot/)から最新のインストーラをダウンロードし(今回はv2.3-r3193), `Clover_v2.3k\_r3193.pkg`を実行.  
+[Cloverのサイト](http://sourceforge.net/projects/cloverefiboot/)から最新のインストーラをダウンロードし(今回はv2.3-r3193), `Clover_v2.3k_r3193.pkg`を実行.  
 Continue -> Continue -> Customize と進み, こんな感じにチェックを入れてInstallしました.  
 ![clover](https://lh3.googleusercontent.com/-6Dn9YZH7FXM/VQd7AcTiuAI/AAAAAAAAD_g/FHXJksd1OSY/s800/Screen%2520Shot%25202015-03-17%2520at%25209.52.18.png)
 
@@ -363,7 +363,7 @@ $ brew link openssl --force
 ### node.js
 
 ```
-$ git clone https://github.com/creationix/nvm.git~/.nvm
+$ git clone https://github.com/creationix/nvm.git ~/.nvm
 $ source ~/.nvm/nvm.sh
 $ nvm install 0.12
 $ nvm use 0.12
@@ -421,7 +421,7 @@ chromium    gimp     iterm2               onyx
 #### Karabinder
 
 Macを使ってみてからずっと気になっていたのですが, Key Repeatが**異様に遅い**のです.  
-キーボードの設定に**Key Repeat**という綱目がありますが, それをFastにしても全然遅いです.
+キーボードの設定に**Key Repeat**という項目がありますが, それをFastにしても全然遅いです.
 
 もっと早くできないかと調べていて出会ったのがこれです.  
 とりあえず`Delay Until Repeat`を`275ms`, `Key Repeat`を`27ms`に設定して様子を見ています.  

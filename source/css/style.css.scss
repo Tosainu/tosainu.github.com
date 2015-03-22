@@ -70,6 +70,7 @@ footer {
   img {
     border: 5px solid $white;
     border-radius: 50%;
+    animation: avatar-fade-in .4s ease-in;
   }
 
   h1 {
@@ -176,5 +177,18 @@ $desktop_width: 1024px;
   .wrap-container {
     width: 960px;
     margin: 0 auto;
+  }
+}
+
+/* Animation
+--------------------------------*/
+@keyframes avatar-fade-in {
+  0%, 20% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }

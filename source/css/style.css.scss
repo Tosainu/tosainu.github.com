@@ -18,7 +18,12 @@ $white:      #ffffff;
 ---------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400);
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   overflow-x: hidden;
   background: $white;
   color: $mid-gray;
@@ -50,11 +55,13 @@ footer {
   text-align: right;
 }
 
-.avatar {
+.banner {
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: $dark-gray;
 
   & > * {
     margin-bottom: 1.5rem;
@@ -105,10 +112,6 @@ footer {
 .fa-github  { @include sns-icon(#333333); }
 .fa-paper-plane { @include sns-icon(#d44738); }
 
-.banner {
-  background: $dark-gray;
-}
-
 .about-me {
   background: $light-gray;
 
@@ -141,7 +144,7 @@ $desktop_width: 1024px;
     padding: 0 10px;
   }
 
-  .avatar img {
+  .banner img {
     width: 128px;
     height: 128px;
   }

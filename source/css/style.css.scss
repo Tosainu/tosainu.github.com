@@ -23,8 +23,6 @@ body {
   background: $white;
   color: $mid-gray;
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  line-height: 2.0;
 }
 
 h2 {
@@ -43,11 +41,6 @@ a {
 
 /* Layout
 ---------------------------- */
-.wrap-container {
-  width: 960px;
-  margin: 0 auto;
-}
-
 header {
   background: $dark-gray;
   color: $white;
@@ -136,4 +129,59 @@ footer {
 }
 
 .works {
+}
+
+/* Media Queries
+--------------------------------*/
+$mobile_width: 480px;
+$desktop_width: 1024px;
+
+// mobile
+@media screen and (max-width: $mobile_width) {
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  .wrap-container {
+    padding: 0 10px;
+  }
+
+  .avatar img {
+    width: 128px;
+    height: 128px;
+  }
+
+  .link a {
+    margin-right: 1.5em;
+  }
+}
+
+// tablet
+@media screen and (min-width: $mobile_width + 1) and (max-width: $desktop_width - 1) {
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .wrap-container {
+    padding: 0 20px;
+  }
+}
+
+// desktop
+@media screen and (min-width: $desktop_width) {
+  body {
+    font-size: 18px;
+    line-height: 2.0;
+  }
+
+  .wrap-container {
+    width: 960px;
+    margin: 0 auto;
+  }
 }

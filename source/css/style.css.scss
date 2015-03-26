@@ -93,25 +93,20 @@ footer {
       margin-right: 0;
     }
   }
-}
 
-@mixin sns-icon($color) {
-  width: 1em;
-  height: 1em;
-  padding: .4em;
-  border-radius: 8px;
-  color: $white;
+  i {
+    width: 1em;
+    height: 1em;
+    padding: .4em;
+    border-radius: 8px;
+    color: $white;
 
-  &:active, &:hover {
-    background: $white;
-    color: $dark-gray;
+    &:active, &:hover {
+      background: $white;
+      color: $dark-gray;
+    }
   }
 }
-
-.fa-twitter { @include sns-icon(#55acee); }
-.fa-adn     { @include sns-icon(#4a484d); }
-.fa-github  { @include sns-icon(#333333); }
-.fa-paper-plane { @include sns-icon(#d44738); }
 
 .about-me {
   background: $light-gray;

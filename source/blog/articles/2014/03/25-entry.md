@@ -1,7 +1,7 @@
 ---
 title: C++の勉強していたら数学力の無さを痛感した
 date: 2014-03-25 01:26:37 JST
-tags: Programming,C++
+tags: C++
 ---
 ども
 

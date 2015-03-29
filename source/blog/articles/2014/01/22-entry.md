@@ -1,7 +1,7 @@
 ---
 title: コンソールでも「みょん」したい！
 date: 2014-01-22 22:11:17 JST
-tags: C++,Programming
+tags: C++
 ---
 みょん
 

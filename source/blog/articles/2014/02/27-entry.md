@@ -1,7 +1,7 @@
 ---
 title: OpenShift OnlineでNode.jsアプリを動かしてみたよ！(その1)
 date: 2014-02-27 23:25:05 JST
-tags: JavaScript,Programming
+tags: JavaScript
 ---
 どーもですん。
 

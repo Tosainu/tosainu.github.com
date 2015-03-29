@@ -1,7 +1,7 @@
 ---
 title: 【Arduino】Linuxで快適Arduino開発（Vim + Makefile）
 date: 2013-08-02 16:27:48 JST
-tags: Linux,Programming,Arduino
+tags: Linux,Arduino
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

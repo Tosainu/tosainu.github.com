@@ -1,7 +1,7 @@
 ---
 title: 最近見つけたC++の便利な標準ライブラリいろいろ
 date: 2014-12-14 19:10 JST
-tags: Programming, C++
+tags:  C++
 ---
 
 みょん.

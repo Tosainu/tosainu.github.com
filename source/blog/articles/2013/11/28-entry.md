@@ -1,7 +1,7 @@
 ---
 title: みょん(進捗)
 date: 2013-11-28 23:58:50 JST
-tags: Programming,C++
+tags: C++
 ---
 みょん。
 

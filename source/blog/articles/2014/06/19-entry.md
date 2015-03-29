@@ -1,7 +1,7 @@
 ---
 title: C言語はこうやって教えてくれればいいなって思っただけ
 date: 2014-06-19 19:05:43 JST
-tags: Programming
+tags: C++
 ---
 どーもです
 

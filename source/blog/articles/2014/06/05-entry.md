@@ -1,7 +1,7 @@
 ---
 title: テスト終わりました
 date: 2014-06-05 14:23:12 JST
-tags: Diary,Programming,C++
+tags: Diary,C++
 ---
 どもですー
 

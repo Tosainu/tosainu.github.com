@@ -1,7 +1,7 @@
 ---
 title: 【JavaScript】FirefoxでinnerTextが使えない件
 date: 2013-12-16 22:19:11 JST
-tags: Programming,JavaScript
+tags: JavaScript
 ---
 みょん。
 

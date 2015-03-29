@@ -1,7 +1,7 @@
 ---
 title: てすとおわりました
 date: 2014-12-07 16:26 JST
-tags: Diary, Programming, C++
+tags: Diary, C++
 ---
 
 みょん.

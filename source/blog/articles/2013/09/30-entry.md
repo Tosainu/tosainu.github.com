@@ -1,7 +1,7 @@
 ---
 title: Node.jsとSocket.IOで遊んでた
 date: 2013-09-30 18:02:21 JST
-tags: Programming,JavaScript
+tags: JavaScript
 ---
 <p>どもども〜</p>
 <p>&nbsp;</p>

@@ -1,7 +1,7 @@
 ---
 title: Node.jsでTwitterAPI使っていろいろやった
 date: 2014-02-11 00:36:43 JST
-tags: Programming,JavaScript
+tags: JavaScript
 ---
 全く....テスト前に何やってるんでしょうか.........
 

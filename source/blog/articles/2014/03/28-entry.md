@@ -1,7 +1,7 @@
 ---
 title: StreamingAPIを使ったハッシュタグ監視ツール"htWatch"を作った
 date: 2014-03-28 01:08:06 JST
-tags: JavaScript,Programming
+tags: JavaScript
 ---
 どーもです。
 

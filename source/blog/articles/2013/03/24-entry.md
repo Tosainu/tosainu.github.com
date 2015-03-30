@@ -1,14 +1,14 @@
 ---
-title: ArchLinuxをインストールし、デスクトップ環境Cinnamonを動かすまでのメモ
+title: Arch Linuxをインストールし、デスクトップ環境Cinnamonを動かすまでのメモ
 date: 2013-03-24 17:31:09 JST
-tags: Linux,ArchLinux
+tags: Arch Linux
 ---
 <p><span class="fontsize6">もっと真面目に記事を新しく書きました。こちらの記事もどうぞ↓</span></p>
-<p><span class="fontsize6"><a href="http://tosainu.wktk.so/view/325">【ArchLinux】ArchLinuxインストールめも (2013完全版？？？)</a></span></p>
+<p><span class="fontsize6"><a href="http://tosainu.wktk.so/view/325">【Arch Linux】Arch Linuxインストールめも (2013完全版？？？)</a></span></p>
 <p>&nbsp;</p>
 <p>どーもとさいぬです。</p>
 <p>&nbsp;</p>
-<p>メイン機、サブ機共に<a href="https://www.archlinux.org/">ArchLinux</a>をインストールして、<a href="http://cinnamon.linuxmint.com/">Cinnamon</a>を動かすことに成功したのでメモ。</p>
+<p>メイン機、サブ機共に<a href="https://www.archlinux.org/">Arch Linux</a>をインストールして、<a href="http://cinnamon.linuxmint.com/">Cinnamon</a>を動かすことに成功したのでメモ。</p>
 <p>Archたんマジ天使</p>
 <p>&nbsp;</p>
 <p>注：初めてLinuxを使う方にはおすすめできないディストリで、かつ若干手抜きの記事のため、</p>

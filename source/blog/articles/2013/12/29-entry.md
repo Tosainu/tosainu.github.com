@@ -1,5 +1,5 @@
 ---
-title: 【Ubuntu】MySQL-5.5→MariaDB-5.5に移行する
+title: MySQL-5.5→MariaDB-5.5に移行する
 date: 2013-12-29 13:18:12 JST
 tags: Linux
 ---

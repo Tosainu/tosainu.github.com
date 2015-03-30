@@ -1,7 +1,7 @@
 ---
 title: カスタムROMを書き込んでみる
 date: 2013-06-29 15:45:12 JST
-tags: Xperia2011, XperiaArc
+tags: Xperia2011, Xperia arc
 ---
 
 ## もう躊躇いなんていらない

@@ -1,11 +1,11 @@
 ---
-title: 【ArchLinux】ArchLinuxインストールめも (2013版)
+title: Arch Linuxインストールめも (2013版)
 date: 2013-11-07 21:28:09 JST
-tags: Linux,ArchLinux
+tags: Arch Linux
 ---
 
 **この記事は古いです. 新しい記事をどうぞ.  
-[ArchLinuxインストールめも (2014秋版)](/blog/2014-10-06/archlinux_installation_memo_2014/)**
+[Arch Linuxインストールめも (2014秋版)](/blog/2014-10-06/archlinux_installation_memo_2014/)**
 
 
 2013/11/17 (Sun) 9:45:29 誤字をいくつか修正
@@ -211,7 +211,7 @@ sh-4.2# exit
 
 ### makepkg.confとfstabの調整
 
-makepkgに関しては以前の記事を参考に→<a href="http://tosainu.wktk.so/view/272">【ArchLinux】makepkg.confを弄る</a>
+makepkgに関しては以前の記事を参考に→<a href="http://tosainu.wktk.so/view/272">【Arch Linux】makepkg.confを弄る</a>
 
 fstabをUUIDで設定、さらにはSSDのTRIMを有効に、
 

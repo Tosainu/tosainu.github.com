@@ -1,7 +1,7 @@
 ---
 title: カスタムカーネルを書き込んでみる
 date: 2013-03-09 09:53:24 JST
-tags: Xperia2011, XperiaArc
+tags: Xperia2011, Xperia arc
 ---
 
 ## カスタムカーネルとは

@@ -1,7 +1,7 @@
 ---
-title: 最近のArchLinuxのインストールで注意すること＆ArchLinuxをSDカードにインストールするときに注意すること
+title: 最近のArch Linuxのインストールで注意すること＆Arch LinuxをSDカードにインストールするときに注意すること
 date: 2013-12-25 00:02:07 JST
-tags: Linux,ArchLinux
+tags: Linux, Arch Linux
 ---
 どーもです。
 
@@ -11,7 +11,7 @@ tags: Linux,ArchLinux
 
 &nbsp;
 
-## 最近のArchLinuxのインストールで注意すること
+## 最近のArch Linuxのインストールで注意すること
 
 grub-mkconfigにバグ(のようなもの)があり、以下のようになり正しく動作しません。
 
@@ -41,9 +41,9 @@ and /etc/grub.d/* files or please file a bug report with
 
 &nbsp;
 
-## ArchLinuxをSDカードにインストールするときに注意すること
+## Arch LinuxをSDカードにインストールするときに注意すること
 
-例のサーバOSもArchLinuxでいこうとしたのですが、BootDriveをSDにしたせいかうまく起動できない！！
+例のサーバOSもArch Linuxでいこうとしたのですが、BootDriveをSDにしたせいかうまく起動できない！！
 
 <a href="https://picasaweb.google.com/lh/photo/bRW4Vp9OdMfSPTmkb8bfvdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-YG2zx1ZTavo/UrmeUr08vHI/AAAAAAAAC1A/fzFBQenHK9I/s400/DSC_0249.JPG" height="229" width="400" /></a>
 

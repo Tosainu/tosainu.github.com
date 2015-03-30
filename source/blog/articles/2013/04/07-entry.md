@@ -1,7 +1,7 @@
 ---
 title: WBR-B11をイーサーネットコンバータ化した
 date: 2013-04-07 17:04:52 JST
-tags: PC
+tags: Diary
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

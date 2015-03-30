@@ -1,7 +1,7 @@
 ---
 title: MVNOなSIMを入手した結果Androidアプリを書くことに
 date: 2014-08-29 19:46 JST
-tags: Diary, Xperia2011, XperiaArc, Android
+tags: Diary, Xperia2011, Xperia arc, Android
 ---
 
 みょん.
@@ -86,7 +86,7 @@ $ android create project -n ProjectName \
 
 TargetIDにはAPI Levelを入れるのかな〜と思ったのですがそうではなく, `$ android list targets`で表示される中から選ぶみたいです.
 
-アプリのビルドには`ant`コマンドを使います. makeみたいな感じですね. ArchLinuxでは`apache-ant`パッケージです.
+アプリのビルドには`ant`コマンドを使います. makeみたいな感じですね. Arch Linuxでは`apache-ant`パッケージです.
 
 ```
 // デバッグ用

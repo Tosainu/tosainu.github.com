@@ -14,7 +14,7 @@ READMORE
 
 ## Introduction
 
-昨年秋の記事, [ArchLinuxインストールめも (2014秋版)](/blog/2014-10-06/archlinux_installation_memo_2014/) にこんな記述がありました.
+昨年秋の記事, [Arch Linuxインストールめも (2014秋版)](/blog/2014-10-06/archlinux_installation_memo_2014/) にこんな記述がありました.
 
 > ## Configure Partition
 

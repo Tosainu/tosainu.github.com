@@ -1,7 +1,7 @@
 ---
 title: VaioZのOSをすべて再インストールした(Windows7編)
 date: 2014-03-18 20:13:00 JST
-tags: Vaio-Z2,PC
+tags: Vaio-Z2, Windows
 ---
 どーもです
 
@@ -12,9 +12,9 @@ tags: Vaio-Z2,PC
 ## 環境等
 僕の使うVaioZはVPCZ23AJ、Webからのオーナーメイドモデルです。
 
-標準状態のRAIDを解除し、ArchLinux/Windows7hp/WindowsXPproのトリプルブート状態で使っていました。
+標準状態のRAIDを解除し、Arch Linux/Windows7hp/WindowsXPproのトリプルブート状態で使っていました。
 
-今回は再びRAID0を組み、ArchLinuxとWindows7hpのデュアルブートさせることにします。
+今回は再びRAID0を組み、Arch LinuxとWindows7hpのデュアルブートさせることにします。
 
 またWindows7は、リカバリディスクからインストールした場合、Photoshop体験版だとかでとんでもなく重くなるほか、デュアルブートを組むにあたってインストール時のパーティションを細かく組みたいなどの理由からクリーンインストールを行うことにしました。
 
@@ -23,7 +23,7 @@ READMORE
 &nbsp;
 
 ## 準備
-### ArchLinux
+### Arch Linux
 /home下の必要なファイルや、grub等の設定をUSBフラッシュメモリにコピーしました。
 
 ### Windows7
@@ -49,7 +49,7 @@ Sonyの壁紙等
 ### SSDのゼロフィル
 何となく気分的に。
 
-ArchLinuxのインストールディスクから起動させ、
+Arch Linuxのインストールディスクから起動させ、
 
     # dd if=/dev/zero of=/dev/sda
     # dd if=/dev/zero of=/dev/sdb
@@ -172,7 +172,7 @@ Windows Updateも一気に済ませて完了です。
 
 &nbsp;
 
-次回はArchLinuxのインストール、そしてWindowsとのデュアルブート設定をしていこうと思います。
+次回はArch Linuxのインストール、そしてWindowsとのデュアルブート設定をしていこうと思います。
 
 ではではー
 

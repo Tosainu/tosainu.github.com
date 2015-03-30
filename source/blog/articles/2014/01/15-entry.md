@@ -7,7 +7,7 @@ tags: Vaio-Z2,Linux
 
 &nbsp;
 
-VaioZにArchLinuxを入れて幸せなのですが、
+VaioZにArch Linuxを入れて幸せなのですが、
 
 <span class="fontsize6">「バッテリーがあまり保たない」</span>
 
@@ -83,7 +83,7 @@ $ echo 1 | sudo tee /sys/devices/platform/sony-laptop/touchpad
 
 ## これらを起動時に有効にする
 
-ArchLinuxの場合、これらの設定項目をShellScriptでまとめてSystemdのサービスとして実行させることで起動時に有効にすることができます。
+Arch Linuxの場合、これらの設定項目をShellScriptでまとめてSystemdのサービスとして実行させることで起動時に有効にすることができます。
 
 僕は、
 

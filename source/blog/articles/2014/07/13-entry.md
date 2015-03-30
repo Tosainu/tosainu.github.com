@@ -1,7 +1,7 @@
 ---
-title: ConoHaはじめたからとりあえずbtrfsにArchLinux入れた
+title: ConoHaはじめたからとりあえずbtrfsにArch Linux入れた
 date: 2014-07-13 22:29:50 JST
-tags: Website,ArchLinux,Linux
+tags: Arch Linux, Linux
 ---
 みょーーん.
 
@@ -40,7 +40,7 @@ READMORE
 しかし, どちらもCentOS 7対応はまだらしく, 無理やり追加してもCentOS 6用のパッケージを引っ張ってきたりでうまくインストールすることができませんでした.  
 おそらく自分でソースを落としてmakeすればいいんでしょうが, ちょっと自信がなかったので諦めることにしました.
 
-## ConoHaにArchLinuxを入れる
+## ConoHaにArch Linuxを入れる
 
 慣れたOSってのは最高です.  
 近いうちにLPICを受けたいな〜とも思ってるのでRHEL系やDebian系にももっと触れなくてはと思ってはいるんだけれども......
@@ -69,7 +69,7 @@ Device | Capacity | Filesystem | Notes
 /dev/vda1 | 2GB | swap | スワップ
 /dev/vda2 | 80GB | btrfs | rootにする. /homeと/varはsubvolumeにした.
 
-    # mkfs.btrfs -L "ArchLinux" /dev/vda2
+    # mkfs.btrfs -L "Arch Linux" /dev/vda2
     # mkdir /mnt/btrfs-root
     # mount -o rw,relatime,compress-force=lzo,space_cache,autodefrag /dev/vda2 /mnt/btrfs-root
     

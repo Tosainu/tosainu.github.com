@@ -1,7 +1,7 @@
 ---
 title: 対Blu-ray用決戦部隊、通称MakeMKV
 date: 2014-12-21 21:39 JST
-tags: Diary, ArchLinux
+tags: Diary, Arch Linux
 ---
 
 この記事は**[ご注文はBlu-rayですか?](/blog/2014-12-19/gochiusa_blu_ray_photo_review/)**および**[ひと目で尋常でないプロテクトだと見抜いたよ](/blog/2014-12-20/fu_k_power_dvd/)**の続きです.
@@ -23,7 +23,7 @@ tags: Diary, ArchLinux
 前回の記事の通り, 合法かつ確実に成功するはずの手段が使えないことが判明してしまいました.  
 こうなってしまった以上, 少し特殊な手段を使うしかありません[^2].
 
-また, 僕は普段ArchLinuxを使っているのはアイコンからもわかると思いますが, やっぱり**ArchLinuxでごちうさを見たい**わけです.
+また, 僕は普段Arch Linuxを使っているのはアイコンからもわかると思いますが, やっぱり**Arch Linuxでごちうさを見たい**わけです.
 
 ってことで, 今回はそんな方法を探ってみました.
 
@@ -31,13 +31,13 @@ READMORE
 
 ## 環境
 
-* ArchLinux x86\_64 (linux-3.17.6)
+* Arch Linux x86\_64 (linux-3.17.6)
 * Pioneer BDR-208BK (SATA)
 * Geforce GTX 660 Ti (Driver: 343.36)
 
 ## libaacsを試す (失敗)
 
-ArchLinux Wikiには[こんなページ](https://wiki.archlinux.org/index.php/BluRay)があり, libaacsを利用したBDの再生方法が丁寧に書かれています.  
+Arch Linux Wikiには[こんなページ](https://wiki.archlinux.org/index.php/BluRay)があり, libaacsを利用したBDの再生方法が丁寧に書かれています.  
 とりあえずその通りの方法で再生を試みました.
 
 ```
@@ -93,7 +93,7 @@ libavformat version 55.33.100 (internal)
 ## MakeMKVのlibmmbdを使う
 
 何かの助けにならないかと思い, [MakeMKVのLinux版](http://www.makemkv.com/forum2/viewtopic.php?f=3&t=224)をインストールしてみました.  
-ArchLinuxの場合はAURから簡単にインストールできます.
+Arch Linuxの場合はAURから簡単にインストールできます.
 
 ```
 $ yaourt -S makemkv
@@ -103,7 +103,7 @@ $ yaourt -S makemkv
 ![makemkv](https://lh4.googleusercontent.com/-BQH3ACxvq3U/VJa16KpZqUI/AAAAAAAAD1U/BnqS5swRvfs/s640/Screenshot%2520from%25202014-12-21%252020%253A57%253A54.png)
 
 さらになんとかならないかと情報を集めていると, **[MakeMKVに含まれるlibmmbdがlibaacsの代わりに利用でき, シンボリックリンクを張ることでプレイヤー等で再生が可能になる](http://www.makemkv.com/forum2/viewtopic.php?f=3&t=7009)**という情報を発見!  
-しかも, ArchLinuxではAURで公開もされているようです.
+しかも, Arch LinuxではAURで公開もされているようです.
 
 早速インストール.
 

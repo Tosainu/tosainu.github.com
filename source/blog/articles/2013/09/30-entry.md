@@ -19,7 +19,7 @@ READMORE
 <p>Socket.IOなどの組み合わせで、簡単にリアルタイムWeb（主にSNSなど）が構築できます。</p>
 <p><span class="fontsize1">※すいませんうまく説明できません・・・気になったらググってください</span></p>
 <p>&nbsp;</p>
-<h2>ArchLinuxでNode.jsを動かす</h2>
+<h2>Arch LinuxでNode.jsを動かす</h2>
 <p>pacman(yaourt)で簡単にインストール出来ました。</p>
 <pre class="prettyprint linenums">
 <code>$ yaourt -Sys nodejs         

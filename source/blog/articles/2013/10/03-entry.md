@@ -29,7 +29,7 @@ READMORE
 <p>&nbsp;</p>
 <h2>インストールする環境</h2>
 <p>ちょうど予備のHDDがすべて使用中だったため、Virtualboxで作成した仮想マシンにインストールしました。</p>
-<p>ホストはメイン機、OSはArchLinuxです。</p>
+<p>ホストはメイン機、OSはArch Linuxです。</p>
 <p>設定はこんなかんじです。</p>
 <p><a href="https://picasaweb.google.com/lh/photo/6d7nS8GacdG6dVpqYWmK99MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-S-cwaB4FDwE/Uk1qMQ1y-PI/AAAAAAAACo0/zWfaPBf6pSE/s400/Screenshot%2520from%25202013-10-01%252022%253A27%253A43.png" height="387" width="400" /></a></p>
 <p>&nbsp;</p>

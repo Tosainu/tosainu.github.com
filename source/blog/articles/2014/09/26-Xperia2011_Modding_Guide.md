@@ -1,7 +1,7 @@
 ---
 title: Xperia2011年モデル改造まとめ
 date: 2014-09-26 18:02:13 JST
-tags: Xperia2011, XperiaArc
+tags: Xperia2011, Xperia arc
 ---
 
 SoftBank銀SIMで使えるXperia Arcの入手から, その後遊んだことについてまとめてみた.

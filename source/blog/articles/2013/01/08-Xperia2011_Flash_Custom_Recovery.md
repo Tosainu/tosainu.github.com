@@ -1,7 +1,7 @@
 ---
 title: カスタムリカバリの導入
 date: 2013-01-08 11:40:59 JST
-tags: Xperia2011, XperiaArc
+tags: Xperia2011, Xperia arc
 ---
 
 僕は後から導入したのですが, 便利すぎるので先にインストールすることをおすすめします.

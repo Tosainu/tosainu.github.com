@@ -1,7 +1,7 @@
 ---
 title: Xperia Arc死にました
 date: 2014-04-06 17:39:46 JST
-tags: XperiaArc,Android
+tags: Xperia arc, Android
 ---
 <iframe width="640" height="360" src="//www.youtube.com/embed/GOzR_GXgjxA?rel=0" frameborder="0" allowfullscreen></iframe>
 

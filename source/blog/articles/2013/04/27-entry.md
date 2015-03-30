@@ -1,11 +1,11 @@
 ---
-title: 【ArchLinux】makepkg.confを弄る
+title: makepkg.confを弄る
 date: 2013-04-27 12:13:41 JST
-tags: Linux,ArchLinux
+tags: Arch Linux
 ---
 <p>どもども</p>
 <p>&nbsp;</p>
-<p>ArchLinuxにはAURというものがありまして、</p>
+<p>Arch LinuxにはAURというものがありまして、</p>
 <p>pacmanから手に入れられないようなパッケージを簡単にビルド&インストールできるものです。（雑な説明で申し訳ない）</p>
 <p>ChromeやOracleJDK、AndroidSDKなんかも手に入ったりします。</p>
 <p>&nbsp;</p>

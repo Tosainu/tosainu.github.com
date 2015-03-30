@@ -1,7 +1,7 @@
 ---
-title: VaioZのOSをすべて再インストールした(ArchLinux編)
+title: VaioZのOSをすべて再インストールした(Arch Linux編)
 date: 2014-03-20 12:41:43 JST
-tags: ArchLinux,Linux,Vaio-Z2
+tags: Arch Linux, Vaio-Z2
 ---
 どもども
 

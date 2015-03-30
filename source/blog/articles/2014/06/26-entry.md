@@ -1,7 +1,7 @@
 ---
 title: fcitxでもvi-cooperative modeもどき
 date: 2014-06-26 19:12:02 JST
-tags: Vim,ArchLinux,Linux
+tags: Vim, Arch Linux, Linux
 ---
 みょんみょん
 
@@ -11,7 +11,7 @@ tags: Vim,ArchLinux,Linux
 ![segfault](https://lh5.googleusercontent.com/-Zf3MgXhQSTo/U6vk_7te0gI/AAAAAAAADWA/aw6WR-3yWwY/s800/2014-06-22-215946_3840x1080_scrot.png "segfault")  
 uimの安定板にはQt5のサポートコードがまだ取り込まれておらず, また最新ブランチからビルドしてもQt5アプリをSegmentation Faultさせてしまう始末...
 
-ってことで, fcitx, そしてArchLinuxのCommunityレポジトリにも取り込まれたfcitx-mozcに移行することにしました.  
+ってことで, fcitx, そしてArch LinuxのCommunityレポジトリにも取り込まれたfcitx-mozcに移行することにしました.  
 また, 当然fcitxにvi-cooperative modeは無いので, `.vimrc`に似たようなことができるように設定を書いてみました.
 
 ## インストール

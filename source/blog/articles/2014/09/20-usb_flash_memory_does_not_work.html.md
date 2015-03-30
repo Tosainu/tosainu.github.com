@@ -1,7 +1,7 @@
 ---
 title: USB3.0ポートでUSB3.0フラッシュメモリが使えなくなった
 date: 2014-09-20 01:15 JST
-tags: Linux,ArchLinux
+tags: Linux, Arch Linux
 ---
 
 どもども, テスト真っ只中のとさいぬです.  

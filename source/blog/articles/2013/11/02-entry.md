@@ -1,7 +1,7 @@
 ---
 title: RaspberryPiを使ったブラウザから操縦するラジコンカー
 date: 2013-11-02 23:58:08 JST
-tags: JavaScript,RaspberryPi
+tags: JavaScript, Raspberry Pi
 ---
 どうもです！！
 
@@ -65,7 +65,7 @@ WiringPiは、Cなどの言語においてArduinoのような簡単な文法でI
 
 そこまで負荷も多くなく、かつ大きな遅延も発生しなかったため導入しました。
 
-使い方及び導入にあたりつまづいたことに関しては前回の記事にまとめてあります。→<a href="http://tosainu.wktk.so/view/323">RPi(ArchLinux)でmjpg_streamerのビルドにつまづいた</a>
+使い方及び導入にあたりつまづいたことに関しては前回の記事にまとめてあります。→<a href="http://tosainu.wktk.so/view/323">RPi(Arch Linux)でmjpg_streamerのビルドにつまづいた</a>
 
 &nbsp;
 

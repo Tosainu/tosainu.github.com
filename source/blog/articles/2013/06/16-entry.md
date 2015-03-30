@@ -1,5 +1,5 @@
 ---
-title: 【GTASA】メインミッションクリア！
+title: メインミッションクリア！
 date: 2013-06-16 20:17:10 JST
 tags: GTASA
 ---

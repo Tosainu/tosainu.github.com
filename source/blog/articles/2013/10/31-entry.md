@@ -1,7 +1,7 @@
 ---
-title: RPi(ArchLinux)でmjpg_streamerのビルドにつまづいた
+title: RPi(Arch Linux)でmjpg_streamerのビルドにつまづいた
 date: 2013-10-31 20:12:29 JST
-tags: ArchLinux,Linux,RaspberryPi
+tags: Arch Linux, Raspberry Pi
 ---
 どもどもー
 

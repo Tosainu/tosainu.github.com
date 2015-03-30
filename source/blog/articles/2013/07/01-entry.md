@@ -11,13 +11,13 @@ tags: Diary
 <p>6月は13500のアクセスがありました。本当にありがとうございます！</p>
 <p>アクセスも増え、当サイトの人気記事がはっきりしてきました。</p>
 <p><a href="https://picasaweb.google.com/lh/photo/Cp_Mwt4hMP8sL3_bbQWZftMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-uCI6h_8WIR4/UdGKcAjWzwI/AAAAAAAACWk/MTJYb4FZfIc/s400/Screenshot%2520from%25202013-07-01%252022%253A54%253A14.png" height="193" width="400" /></a></p>
-<p>スパムの影響もありますが、ArchLinux関係の記事が最もアクセスが多いようです。</p>
+<p>スパムの影響もありますが、Arch Linux関係の記事が最もアクセスが多いようです。</p>
 <p>日本語の情報少ないですし、結構需要があるのかな？</p>
 <p>ってことで、</p>
-<p><span style="font-size:24px;">VaioZにArchLinuxインストールします</span></p>
-<p>以前、<a href="http://tosainu.wktk.so/view/247">ArchLinuxをインストールし、デスクトップ環境Cinnamonを動かすまでのメモ</a>なんてのを書いてますが、</p>
+<p><span style="font-size:24px;">VaioZにArch Linuxインストールします</span></p>
+<p>以前、<a href="http://tosainu.wktk.so/view/247">Arch Linuxをインストールし、デスクトップ環境Cinnamonを動かすまでのメモ</a>なんてのを書いてますが、</p>
 <p>どう考えても手抜き記事です、本当にすいませんでした。</p>
-<p>ZたんにArchLinuxをインストールを通して、もう一度メモを書こうと思います。もちろん手抜きでない内容で、さらにインストールしたソフトウェア等の紹介もできたらいいなぁと思っています。</p>
+<p>ZたんにArch Linuxをインストールを通して、もう一度メモを書こうと思います。もちろん手抜きでない内容で、さらにインストールしたソフトウェア等の紹介もできたらいいなぁと思っています。</p>
 <p>&nbsp;</p>
 <p>今、リアル友達ととある同好会を立てようとしていますが、その活動の一つに関連して、</p>
 <p><span style="font-size:24px;">AVRマイコンのプログラミングをはじめるかも</span></p>

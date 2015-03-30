@@ -1,7 +1,7 @@
 ---
 title: 文化祭でこんなの作る（かも）、駄菓子菓子！
 date: 2013-09-29 22:16:33 JST
-tags: RaspberryPi
+tags: Raspberry Pi
 ---
 <p>どもなの。</p>
 <p>&nbsp;</p>

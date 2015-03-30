@@ -1,12 +1,12 @@
 ---
-title: ArchLinuxインストールめも (2014秋版)
+title: Arch Linuxインストールめも (2014秋版)
 date: 2014-10-06 00:51 JST
-tags: Linux, ArchLinux, i7-3930k_PC
+tags: Arch Linux, i7-3930k_PC
 ---
 
 どーもです.
 
-メイン機のArchLinuxを再インストールをしたのでメモ.  
+メイン機のArch Linuxを再インストールをしたのでメモ.  
 今回はUEFI-BootだとかBtrfsだとか, いろいろナウい感じにインストールしてみました.
 
 ## System Environment
@@ -469,4 +469,4 @@ $ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 ## Finish!
 
-それでは楽しいArchLinuxライフを〜.
+それでは楽しいArch Linuxライフを〜.

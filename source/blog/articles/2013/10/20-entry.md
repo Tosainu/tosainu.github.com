@@ -1,7 +1,7 @@
 ---
 title: 進行状況的な
 date: 2013-10-20 20:50:34 JST
-tags: RaspberryPi
+tags: Raspberry Pi
 ---
 どーもです
 

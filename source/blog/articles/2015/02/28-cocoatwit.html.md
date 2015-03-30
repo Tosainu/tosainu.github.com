@@ -1,7 +1,7 @@
 ---
 title: '[ネタ] QWebViewでGUIアプリケーションを作る'
 date: 2015-02-28 17:14 JST
-tags: C++, CocoaTwit, Qt
+tags: C++, CocoaTwit
 ---
 
 ## CocoaTwit

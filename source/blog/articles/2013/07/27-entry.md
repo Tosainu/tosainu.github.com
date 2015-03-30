@@ -1,7 +1,7 @@
 ---
-title: "【ArchLinux】ERROR: Unable to find root device 'xxxxxx'で起動しなくなった時の対処法"
+title: "ERROR: Unable to find root device 'xxxxxx'で起動しなくなった時の対処法"
 date: 2013-07-27 15:11:24 JST
-tags: Linux,ArchLinux
+tags: Arch Linux
 ---
 <p>どうもです。</p>
 <p>&nbsp;</p>
@@ -33,11 +33,11 @@ tags: Linux,ArchLinux
 <p><a href="https://bbs.archlinux.org/viewtopic.php?id=142052">[SOLVED] ERROR: Unable to find root device '/dev/sda3' (Page 1) / Kernel & Hardware / Arch Linux Forums</a></p>
 <p>&nbsp;</p>
 <h3>準備するもの</h3>
-<p>ArchLinuxのインストールディスク（chroot使えるLiveCDなら何でもいけるかも）</p>
+<p>Arch Linuxのインストールディスク（chroot使えるLiveCDなら何でもいけるかも）</p>
 <p>「何としてでも再インストールは避けたい」と思う気持ち</p>
 <p>&nbsp;</p>
 <h3>方法</h3>
-<p>ArchLinuxのインストールディスクでPCを起動、</p>
+<p>Arch LinuxのインストールディスクでPCを起動、</p>
 <p>もしシステムにudevやmkinitcpioをインストールしていない場合は、ネットワークの設定を済ませておきます。</p>
 <p>適当なマウントポイントを作成し、起動しなくなったシステムのパーティションをマウントさせます。</p>
 <p>僕の場合、/mntにarchフォルダを作成、/のsda6、/bootのsda5をマウントさせました。</p>

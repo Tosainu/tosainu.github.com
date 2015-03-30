@@ -1,7 +1,7 @@
 ---
 title: RaspberryPi開封の儀＆とりあえずRaspbian動かしてみた
 date: 2013-07-13 12:15:17 JST
-tags: Linux,RaspberryPi
+tags: Linux,Raspberry Pi
 ---
 <p>どーもです〜</p>
 <p>&nbsp;</p>
@@ -59,7 +59,7 @@ READMORE
 <p>&nbsp;</p>
 <p>では早速動かしてみようと思います。</p>
 <p><a href="https://picasaweb.google.com/lh/photo/ywtpZC4yeVjoFlAuvGHU7tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-PU4_Awze-ts/UeCvOzNcpaI/AAAAAAAACbU/bA7neZaK44w/s400/IMG_0832.JPG" height="300" width="400" /></a></p>
-<p><del>ArchLinux焼いて添い寝・・・ハァハァ///</del>とりあえずRaspbian（RaspberryPi向けにカスタムされたDebian）を動かしてみます。</p>
+<p><del>Arch Linux焼いて添い寝・・・ハァハァ///</del>とりあえずRaspbian（RaspberryPi向けにカスタムされたDebian）を動かしてみます。</p>
 <p>ddコマンドもないWindowsは用なしです。Windowsでも方法はありますが、それをやる気はありません。</p>
 <p>素晴らしいLinuxやUnix系のOSが入ってるPCで作業します。</p>
 <p>&nbsp;</p>
@@ -138,7 +138,7 @@ $ sudo raspi-config
 <p>さて、これからどうしましょうね。</p>
 <p><a href="http://xe.bz/">某改造アホさん</a>がマザーボードやNAS走らせてますが、それと同じようなことができたらなぁと思います。</p>
 <p>現時点でそんな予算全くありませんが。</p>
-<p><del>とりあえずはArchLinux焼いて添い寝・・・ハァハァ///</del></p>
+<p><del>とりあえずはArch Linux焼いて添い寝・・・ハァハァ///</del></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>ではでは〜</p>

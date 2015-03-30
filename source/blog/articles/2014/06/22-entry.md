@@ -1,7 +1,7 @@
 ---
 title: ｳｨﾝﾄﾞｰｽﾞのurlmon.dllのエラー対処法をググるとヤバイ件
 date: 2014-06-22 22:36:33 JST
-tags: PC,i3-3220_PC
+tags: Diary
 ---
 どーも
 

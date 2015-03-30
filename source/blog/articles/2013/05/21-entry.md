@@ -1,7 +1,7 @@
 ---
-title: 【Gomindows7】フォントがキモくなった時の対処法
+title: Gomindows7のフォントがキモくなった時の対処法
 date: 2013-05-21 00:31:10 JST
-tags: PC
+tags: Windows
 ---
 <p>どうもとさいぬです。</p>
 <p>&nbsp;</p>

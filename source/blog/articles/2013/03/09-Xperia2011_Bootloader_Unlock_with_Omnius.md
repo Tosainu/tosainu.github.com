@@ -1,7 +1,7 @@
 ---
 title: Omniusで国内ペリアをアンロック
 date: 2013-03-09 09:52:06 JST
-tags: Xperia2011, XperiaArc
+tags: Xperia2011, Xperia arc
 ---
 
 Xperia端末のブートローダーをアンロックする方法にOmniusを使う方法があります.  

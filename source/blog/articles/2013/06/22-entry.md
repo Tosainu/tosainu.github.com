@@ -1,5 +1,5 @@
 ---
-title: 【動画制作】今日の成果
+title: 今日の成果
 date: 2013-06-22 17:08:10 JST
 tags: Diary
 ---

@@ -1,5 +1,5 @@
 ---
-title: 【Arduino/AVR】Linux環境でAssemblyLangプログラミングしたメモ
+title: Linux環境でAssemblyLangプログラミングしたメモ
 date: 2013-10-06 21:11:08 JST
 tags: Arduino,Linux
 ---
@@ -142,7 +142,7 @@ $ avrdude -c arduino -P /dev/ttyACM0 -p m328p -b 115200 -u -e -U flash:w:"FileNa
 <p>実際にLED点滅プログラムを動かしてみたところです。<span class="fontsize1">（何気にFullHD）</span></p>
 <div class="video"><iframe width="420" height="315" src="//www.youtube.com/embed/WMPZiEUmVdc?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>
-<h2>ArchLinuxでArduinoが認識されない時</h2>
+<h2>Arch LinuxでArduinoが認識されない時</h2>
 <p>僕の環境でもそうでしたが、一般ユーザーで/dev/ttyACM0にアクセスができませんでした。</p>
 <p>しかし、次の方法で解決出来ました。</p>
 

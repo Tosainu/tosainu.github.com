@@ -1,7 +1,7 @@
 ---
 title: Qt5でJSON
 date: 2015-01-17 14:57 JST
-tags: C++, Qt
+tags: C++
 ---
 
 みょみょみょ.

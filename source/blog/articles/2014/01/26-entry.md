@@ -1,7 +1,7 @@
 ---
 title: お名前vps最上位プランのお試しを契約してしまった
 date: 2014-01-26 09:51:01 JST
-tags: ArchLinux,Linux
+tags: Arch Linux, Linux
 ---
 おはよーございます
 
@@ -19,9 +19,9 @@ tags: ArchLinux,Linux
 
 つよい(つよい)
 
-## ArchLinuxをインストールする
+## Arch Linuxをインストールする
 
-デフォルトのOSがセント君でつらぽよなのでArchLinuxを入れちゃいます。
+デフォルトのOSがセント君でつらぽよなのでArch Linuxを入れちゃいます。
 
 しかし、公式が用意しているArchのインストーラが古過ぎる(/arch/setup実行する時代)ので、手動でisoファイルのアップロードをします。
 

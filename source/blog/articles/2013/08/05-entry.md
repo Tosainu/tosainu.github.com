@@ -1,7 +1,7 @@
 ---
-title: 【RaspberryPi】圧電ブザーで『U.N.オーエンは彼女なのか？』のようなものを演奏してみた
+title: 圧電ブザーで『U.N.オーエンは彼女なのか？』のようなものを演奏してみた
 date: 2013-08-05 00:30:25 JST
-tags: RaspberryPi
+tags: Raspberry Pi
 ---
 <div class="video"><iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm21513905" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm21513905">【ニコニコ動画】RaspberryPiで『U.N.オーエンは彼女なのか？』を演奏してみた</a></iframe></div>
 <p>&nbsp;</p>
@@ -16,7 +16,7 @@ tags: RaspberryPi
 <p>予め配列intervalに使う音程の周波数を入れておき、関数noteを使ってnote(音程番号, ○分音符);という感じでmain関数に楽譜を手打ちしていきます。</p>
 <p>とりあえず動作させることを優先したため、「え゛っ！？」と思うような部分もあると思いますが、そのへんは無視してくださいw</p>
 <p>&nbsp;</p>
-<p>ちなみに、RaspberryPiにはもちろんArchLinuxを入れてあります。</p>
+<p>ちなみに、RaspberryPiにはもちろんArch Linuxを入れてあります。</p>
 <pre class="prettyprint linenums">
 <code>#include &lt;stdio.h&gt;
 #include &lt;string.h&gt;

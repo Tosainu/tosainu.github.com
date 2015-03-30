@@ -1,7 +1,7 @@
 ---
 title: ディスプレイイヤッッホォォォオオォオウ！
 date: 2013-04-21 11:31:00 JST
-tags: PC
+tags: Diary
 ---
 <p>劇場版 STEINS;GATE 負荷領域のデジャヴ見てきました〜</p>
 <p><a href="https://picasaweb.google.com/lh/photo/FKdIEOQaCToyZc6uFI6Q29MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-LU-67FlI32c/UXNHBxACQtI/AAAAAAAAB-w/eU39VOF6Y5s/s400/IMG_0414.JPG" height="300" width="400" /></a></p>

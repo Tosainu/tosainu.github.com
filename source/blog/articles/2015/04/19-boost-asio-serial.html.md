@@ -39,8 +39,8 @@ auto main() -> int {
   // テキトウに5秒待つ
   std::this_thread::sleep_for(std::chrono::seconds(5));
 
-  // "ping'n" を送信
-  boost::asio::write(serial, boost::asio::buffer("ping\r"));
+  // "ping" を送信
+  boost::asio::write(serial, boost::asio::buffer("ping\n"));
 
   // serial から response_buf に '\n' まで読み込む
   boost::asio::streambuf response_buf;

@@ -1,9 +1,11 @@
 # use container-based infrastructure
 sudo: false
 
+# Ruby configuration
 language: ruby
 rvm:
-  - 2.1
+  - 2.2
+
 env:
   global:
     - GIT_AUTHOR_EMAIL='tosainu.maple@gmail.com'

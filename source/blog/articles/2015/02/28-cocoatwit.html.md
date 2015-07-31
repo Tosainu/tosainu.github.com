@@ -126,10 +126,10 @@ model->insertRow(0, new QStandardItem(QIcon("icon.png"), "myon!!"));
 なんとかいい感じに, 思い通りのUIを設計できる方法がないかと探っていると, たまたま開いたQtのドキュメントで[`QWebView`](http://doc.qt.io/qt-5/qwebview.html)というクラスがあるのを見つけます.  
 このクラスは名前の通りWebドキュメントを表示したり編集したりするためのものです.
 
-また, `QWebView`に関連したクラスである[`QWebFrame`](http://doc.qt.io/qt-5/qwebframe.html)に, `addToJavaScriptWindowObject()`という何とも怪しいメソッドがあるのを見つけます.  
-このメソッドは, なんと[`QObject`](http://doc.qt.io/qt-5/qobject.html)を継承しているObjectを`QWebView`などで表示しているページ内のJavaScript Objectとして追加できるという物凄いものでした.
+また, `QWebView`に関連したクラスである[`QWebFrame`](http://doc.qt.io/qt-5/qwebframe.html)に, `addToJavaScriptWindowObject()`という何とも怪しいメンバ関数があるのを見つけます.  
+このメンバ関数は, なんと[`QObject`](http://doc.qt.io/qt-5/qobject.html)を継承しているObjectを`QWebView`などで表示しているページ内のJavaScript Objectとして追加できるという物凄いものでした.
 
-そして最後に, 上記のメソッドの利用例を示した[The Qt WebKit Bridge](http://doc.qt.io/qt-5/qtwebkit-bridge.html)というドキュメントにたどり着きます.  
+そして最後に, 上記のメンバ関数の利用例を示した[The Qt WebKit Bridge](http://doc.qt.io/qt-5/qtwebkit-bridge.html)というドキュメントにたどり着きます.  
 このページには, `QWebView`内で動くJavaScriptとC++なコードを結びつけてアプリケーションを作る手法のあれこれが記されています.
 
 **あっ, これってつまり..... GUI周りをすべてHTMLで実現できるってことじゃね!!??**

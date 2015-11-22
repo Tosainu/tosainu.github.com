@@ -136,7 +136,7 @@ struct foo {
 template <class Func, class Instance, class... Args>
 void hoge(Func&& f, Instance&& i, Args&&... args) {
   // (2) 外からmain()のf.nyan()が呼び出せる
-  (i->*f)(args...);
+  (i->*f)(std::forward<Args>(args)...);
 }
 
 auto main() -> int {

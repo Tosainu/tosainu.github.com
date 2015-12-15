@@ -10,5 +10,5 @@ gem 'slim'
 
 # Assets
 source 'https://rails-assets.org' do
-  gem 'rails-assets-fontawesome'
+  gem 'rails-assets-fontawesome', '4.2.0'
 end

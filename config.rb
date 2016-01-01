@@ -43,7 +43,6 @@ set :markdown, {
 activate :syntax, :css_class => 'hl'
 
 # slim
-Slim::Engine.disable_option_validator!
 set :slim, {
   :format => :html,
   :sort_attrs => false,
@@ -57,7 +56,7 @@ activate :disqus do |d|
 end
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch = 'gh-pages'
 
   if ENV['GH_TOKEN'] then
@@ -66,7 +65,7 @@ activate :deploy do |deploy|
 end
 
 configure :development do
-  activate :livereload, :no_swf => true
+  activate :livereload
 
   Slim::Engine.options[:pretty] = true
 end

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Core
-gem 'middleman', '~> 4.0.0'
+gem 'middleman', '~> 4.1.0'
 gem 'middleman-autoprefixer'
 gem 'middleman-compass'
 gem 'middleman-livereload'

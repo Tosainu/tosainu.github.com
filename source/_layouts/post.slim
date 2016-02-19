@@ -20,7 +20,7 @@
 
       = yield
 
-    = partial 'share'
+    = partial '_partials/share'
 
     = disqus
 
@@ -33,4 +33,4 @@
         a href = current_article.next_article.url
           span.prev &laquo; Newer
 
-  = partial 'sidebar'
+  = partial '_partials/sidebar'

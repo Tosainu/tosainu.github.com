@@ -29,7 +29,6 @@ set :css_dir, 'css'
 set :images_dir, 'img'
 set :js_dir, 'js'
 set :layouts_dir, '_layouts'
-set :partials_dir, '_partials'
 
 # markdown
 set :markdown_engine, :redcarpet

@@ -26,8 +26,6 @@ page "/feed.xml", layout: false
 activate :directory_indexes
 
 set :css_dir, 'css'
-set :images_dir, 'img'
-set :js_dir, 'js'
 set :layouts_dir, '_layouts'
 
 # markdown

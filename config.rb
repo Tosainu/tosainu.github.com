@@ -70,7 +70,6 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  set :ga_key, 'UA-57978655-1'
 
   Slim::Engine.options[:pretty] = false
 end

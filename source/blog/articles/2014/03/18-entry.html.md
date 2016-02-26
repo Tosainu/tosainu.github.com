@@ -95,11 +95,11 @@ RAIDを組めたらExitし、そのままWindowsインストールに進みま�
 ## ライセンス認証
 先ほどバックアップを取ったtokens.datをバイナリエディタ(今回はWindowsの[Stirling](http://www.vector.co.jp/soft/win95/util/se079072.html "Stirling"))で開きます。
 
-"OEM Certificate"で文字列を検索し、その真上の"<?xml version="1.0" encoding="utf-8" ?>"から"</r:license>"を選択し、右クリック > 選択範囲をファイルに保存として出力します。
+`OEM Certificate`で文字列を検索し、その真上の`<?xml version="1.0" encoding="utf-8" ?>`から`</r:license>`を選択し、右クリック > 選択範囲をファイルに保存として出力します。
 
 <a href="https://picasaweb.google.com/lh/photo/4wlnRaun9wobDq9ZCDWeFNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-EKT9kqFqvgk/UygdXiyN9bI/AAAAAAAADGk/qiSiwlX-Qsk/s400/SnapCrab_NoName_2014-3-18_19-16-41_No-00.png" height="230" width="400" /></a>
 
-ファイル名は先程のサイトと同様に"hoge.xrm-ms"とし、C:\に保存しました。
+ファイル名は先程のサイトと同様に`hoge.xrm-ms`とし、`C:\`に保存しました。
 
 &nbsp;
 

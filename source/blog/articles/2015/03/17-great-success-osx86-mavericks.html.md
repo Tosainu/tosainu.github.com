@@ -35,7 +35,7 @@ OS X on HDDはWin on HDDほどの不満はなかったものの, やはりSSDに
 
 しかし最近**[Clover](http://sourceforge.net/projects/cloverefiboot/)**というUEFI対応のブートローダが話題で, 使えそうだったので再挑戦してみました.
 
-![gs](http://i1017.photobucket.com/albums/af292/GReeVee93/General%20Reaction%20Pics/Boratsuccess.jpg)
+![gs](https://lh3.googleusercontent.com/-5t7sGZITAxY/Vv3YKA2O7gI/AAAAAAAAF_g/FjSq4Hq7MFc1ZVOoKF10D10r40McaW7zQCCo/s800-Ic42/borat_great_success.jpg)
 
 ### Components
 

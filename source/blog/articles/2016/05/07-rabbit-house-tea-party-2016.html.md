@@ -68,7 +68,7 @@ READMORE
 
 ---
 
-こんなに素晴らしいイベントが開催してくれたこと, そしてそれに参加できたことに本当に感謝です.  
+こんなに素晴らしいイベントを開催してくれたこと, そしてそれに参加できたことに本当に感謝です.  
 ありがとうございました!!!!!!
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">「Rabbit House Tea Party 2016」閉幕いたしました！お越しいただきました皆様、出演者の皆様、ありがとうございました！！<br>またラビットハウスに遊びに来てくださいね♪ <a href="https://twitter.com/hashtag/gochiusa?src=hash">#gochiusa</a> <a href="https://t.co/72GkYHjPpt">pic.twitter.com/72GkYHjPpt</a></p>&mdash; TVアニメ「ご注文はうさぎですか？？」 (@usagi\_anime) <a href="https://twitter.com/usagi_anime/status/728911489772359680">May 7, 2016</a></blockquote>

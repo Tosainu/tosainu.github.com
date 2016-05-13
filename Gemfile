@@ -13,6 +13,7 @@ gem 'middleman-sprockets', '4.0.0.rc1'
 gem 'middleman-syntax'
 
 gem 'font-awesome-sass', '~> 4.6.0'
+gem 'nokogiri'
 gem 'redcarpet'
 gem 'rouge', :github => 'Tosainu/rouge', :branch => 'c11-cpp11-support'
 gem 'slim'

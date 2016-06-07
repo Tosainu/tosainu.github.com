@@ -15,7 +15,7 @@ gem 'middleman-syntax'
 gem 'font-awesome-sass', '~> 4.6.0'
 gem 'nokogiri'
 gem 'redcarpet'
-gem 'rouge', :github => 'Tosainu/rouge', :branch => 'c11-cpp11-support'
+gem 'rouge'
 gem 'slim'
 
 source 'https://rails-assets.org' do

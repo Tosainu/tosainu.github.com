@@ -47,8 +47,8 @@ ROMの解説をよく読むようにしましょう.
 
 今回焼くCyanogenMod系のカスタムROMは, 公式サイトやXDAで配布されているROM本体と, Playストアを始めとするGoogle系アプリの入ったgappsを用意します.
 
-今回は[公式サイト](カスタムカーネルを書き込んでみる)からcm-7.2.0-anzu.zipを,  
-ここから[gapps-gb-20110828-signed.zip](カスタムカーネルを書き込んでみる)をダウンロードしました.
+今回は[CyanogenMod Downloads](http://download.cyanogenmod.com/?device=anzu&type=stable)からcm-7.2.0-anzu.zipを,  
+ここから[gapps-gb-20110828-signed.zip](https://basketbuild.com/gapps)をダウンロードしました.
 
 これらを端末のSDカードに, またcm-7.2.0-anzu.zipを解凍すると出てくるboot.imgは付属のカーネルになります.  
 コピーしてPC上に保存しておきます.

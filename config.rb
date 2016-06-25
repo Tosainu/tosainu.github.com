@@ -1,6 +1,7 @@
-activate :livereload
-activate :directory_indexes
 activate :autoprefixer
+activate :directory_indexes
+activate :livereload
+activate :sprockets
 
 set :css_dir, 'css'
 set :images_dir, 'img'

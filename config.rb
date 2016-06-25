@@ -24,6 +24,7 @@ end
 page "/feed.xml", layout: false
 
 activate :directory_indexes
+activate :sprockets
 
 set :css_dir, 'css'
 set :layouts_dir, '_layouts'

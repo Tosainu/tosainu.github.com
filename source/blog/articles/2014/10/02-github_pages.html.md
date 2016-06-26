@@ -16,7 +16,7 @@ tags: Diary, Website
 ![book](https://lh3.googleusercontent.com/-ebcGf8KoeV4/VCwwnJ2yC6I/AAAAAAAADjI/lvXYI7Yo9d0/s640/IMG_2541.JPG)
 
 また, 本棚の収納力が上がったおかげで机の上の本を移動することができ, その結果机をより広く使えるようになりました.  
-PCはVaioZたんをメインで使うことにしてディスプレイを縦に設置してみました.  
+PCはVAIO Zたんをメインで使うことにしてディスプレイを縦に設置してみました.  
 ![desk](https://lh4.googleusercontent.com/-2bXF2XgIN-k/VCwwphjhBPI/AAAAAAAADjQ/4DoevBl7y68/s640/IMG_2540.JPG)
 
 あとは大量に出たガラクタの類や幼稚園時代のスケッチブックなどのゴミの回収を待つだけですね.  

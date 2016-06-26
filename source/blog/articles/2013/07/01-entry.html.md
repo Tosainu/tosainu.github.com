@@ -14,7 +14,7 @@ tags: Diary
 <p>スパムの影響もありますが、Arch Linux関係の記事が最もアクセスが多いようです。</p>
 <p>日本語の情報少ないですし、結構需要があるのかな？</p>
 <p>ってことで、</p>
-<p><span style="font-size:24px;">VaioZにArch Linuxインストールします</span></p>
+<p><span style="font-size:24px;">VAIO ZにArch Linuxインストールします</span></p>
 <p>以前、<a href="http://tosainu.wktk.so/view/247">Arch Linuxをインストールし、デスクトップ環境Cinnamonを動かすまでのメモ</a>なんてのを書いてますが、</p>
 <p>どう考えても手抜き記事です、本当にすいませんでした。</p>
 <p>ZたんにArch Linuxをインストールを通して、もう一度メモを書こうと思います。もちろん手抜きでない内容で、さらにインストールしたソフトウェア等の紹介もできたらいいなぁと思っています。</p>

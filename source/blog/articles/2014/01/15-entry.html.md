@@ -1,13 +1,13 @@
 ---
-title: Vaioに入れたLinuxで静音モードやバッテリーケアを有効にする
+title: VAIOに入れたLinuxで静音モードやバッテリーケアを有効にする
 date: 2014-01-15 00:48:27 JST
-tags: Vaio-Z2,Linux
+tags: VAIO-Z2,Linux
 ---
 どーもです
 
 &nbsp;
 
-VaioZにArch Linuxを入れて幸せなのですが、
+VAIO ZにArch Linuxを入れて幸せなのですが、
 
 <span class="fontsize6">「バッテリーがあまり保たない」</span>
 
@@ -25,13 +25,13 @@ VaioZにArch Linuxを入れて幸せなのですが、
 
 ここに書いてあるのはバッテリーの充電量に制限をかける「バッテリーケア」の方法なのですが、
 
-どうも/sys/devices/platform/sony-laptop/内のファイルがVaio固有の設定するものらしく、弄っていると静音モードやバッテリーケアの有効化に成功したのでメモしておきます。
+どうも/sys/devices/platform/sony-laptop/内のファイルがVAIO固有の設定するものらしく、弄っていると静音モードやバッテリーケアの有効化に成功したのでメモしておきます。
 
 ## 動作モードの変更
 
 <a href="https://picasaweb.google.com/lh/photo/f7VEHQcqDJzuLeT1A_Nj9dMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-smQYlaCva2I/UtVUmz7NAmI/AAAAAAAAC68/Cpe3iXQnlh4/s400/Untitled.png" height="298" width="400" /></a>
 
-Windowsの付属ソフトに「Vaio Control Center」ってのがありますが、その中の設定項目である電源オプションの設定は
+Windowsの付属ソフトに「VAIO Control Center」ってのがありますが、その中の設定項目である電源オプションの設定は
 
 ```
 /sys/devices/platform/sony-laptop/thermal_control

@@ -1,7 +1,7 @@
 ---
 title: VAIO Zの分解と掃除
 date: 2013-04-14 12:20:38 JST
-tags: Vaio-Z2
+tags: VAIO-Z2
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

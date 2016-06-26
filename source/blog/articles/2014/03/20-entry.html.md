@@ -1,7 +1,7 @@
 ---
-title: VaioZのOSをすべて再インストールした(Arch Linux編)
+title: VAIO ZのOSをすべて再インストールした(Arch Linux編)
 date: 2014-03-20 12:41:43 JST
-tags: Arch Linux, Vaio-Z2
+tags: Arch Linux, VAIO-Z2
 ---
 どもども
 
@@ -19,7 +19,7 @@ READMORE
 ### RAIDドライブの場所
 RAIDドライブを組んだ場合、そのRAIDアレイはもちろん`/dev/sda`等からアクセスはできません。
 
-VaioZのようなIntel Rapid Storage TechnologyのRAIDの場合、`/dev/md`以下を見てやるとわかりやすいです。
+VAIO ZのようなIntel Rapid Storage TechnologyのRAIDの場合、`/dev/md`以下を見てやるとわかりやすいです。
 
 RAIDボリュームの名前をVolume0で組んでいる僕の環境では、次のようになりました。(おそらく環境によって値は異なります)
 
@@ -183,6 +183,6 @@ Windowsと共存させてしまう以上、ハードウェアクロックをUTC�
 
 &nbsp;
 
-それにしても、RAID有効にしたVaioたん速いです。
+それにしても、RAID有効にしたVAIOたん速いです。
 
 ではでは〜

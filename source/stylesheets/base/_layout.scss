@@ -2,45 +2,30 @@
 
 $susy: (
   columns: 12,
-  container: 1120px,
+  container: 1192px,
   global-box-sizing: border-box,
-  gutters: 0.5
+  gutters: 0.6
 );
 
-// responsive
-$mobile_width: 960px;
-$desttop_width: 1280px;
-
-body {
-  @media screen and (max-width: $mobile_width - 1) {
-    font-size: $font_size_s;
-    line-height: $line-height_s;
-  }
-  @media screen and (min-width: $mobile_width) and (max-width: $desttop_width - 1) {
-    font-size: $font_size_m;
-    line-height: $line-height_m;
-  }
-  @media screen and (min-width: $desttop_width) {
-    font-size: $font_size;
-    line-height: $line-height;
-  }
-}
-
-.container {
-  @media screen and (max-width: $desttop_width - 1) {
-    @include container(95%);
-  }
-  @media screen and (min-width: $desttop_width) {
-    @include container;
-  }
-}
+$tablet-screen-width: 570px;
+$desktop-screen-width: 960px;
+$wide-screen-width: 1280px;
 
 // main column
 #main {
   padding: 20px 0;
 }
 
-@media screen and (min-width: $mobile_width) {
+.container {
+  @media screen and (max-width: $wide-screen-width - 1) {
+    @include container(93.25%);
+  }
+  @media screen and (min-width: $wide-screen-width) {
+    @include container;
+  }
+}
+
+@media screen and (min-width: $desktop-screen-width) {
   #content {
     @include span(9);
   }

@@ -3,7 +3,7 @@
   padding-bottom: 20px;
 
   span {
-    @include button_bg($off-white);
+    @include button-bg($off-white);
     border: 1px solid $light-gray;
     padding: .3em 1.2em;
   }

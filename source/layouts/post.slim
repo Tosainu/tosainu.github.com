@@ -6,12 +6,12 @@
 
         ul.il.muted
           li
-            span.list_icon
+            span.list-icon
               i.fa.fa-calendar
             |  
             = current_article.date.strftime('%F %R')
           li
-            span.list_icon
+            span.list-icon
               i.fa.fa-tags
             |  
             - current_article.tags.sort.each do |tag|

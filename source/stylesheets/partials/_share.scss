@@ -29,13 +29,13 @@
   }
 }
 .twitter {
-  @include button_bg(#55acee);
+  @include button-bg(#55acee);
 }
 .hatena {
-  @include button_bg(#007bca);
+  @include button-bg(#007bca);
 }
 .pocket {
-  @include button_bg(#ed4055);
+  @include button-bg(#ed4055);
 
   svg {
     width: 17px;
@@ -43,11 +43,11 @@
     fill: $white;
   }
 }
-.google_plus {
-  @include button_bg(#c93725);
+.google-plus {
+  @include button-bg(#c93725);
 }
 .adn {
-  @include button_bg(#4a484d);
+  @include button-bg(#4a484d);
 }
 .fa-hatena:before {
   content: "B!";

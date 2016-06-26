@@ -13,7 +13,7 @@ header {
 }
 
 .tag {
-  @include button_bg($off-white);
+  @include button-bg($off-white);
   border: 1px solid $light-gray;
   margin-right: 5px;
   padding: 2px;

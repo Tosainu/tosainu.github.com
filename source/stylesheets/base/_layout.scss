@@ -1,0 +1,52 @@
+@import 'susy';
+
+$susy: (
+  columns: 12,
+  container: 1120px,
+  global-box-sizing: border-box,
+  gutters: 0.5
+);
+
+// responsive
+$mobile_width: 960px;
+$desttop_width: 1280px;
+
+body {
+  @media screen and (max-width: $mobile_width - 1) {
+    font-size: $font_size_s;
+    line-height: $line-height_s;
+  }
+  @media screen and (min-width: $mobile_width) and (max-width: $desttop_width - 1) {
+    font-size: $font_size_m;
+    line-height: $line-height_m;
+  }
+  @media screen and (min-width: $desttop_width) {
+    font-size: $font_size;
+    line-height: $line-height;
+  }
+}
+
+.container {
+  @media screen and (max-width: $desttop_width - 1) {
+    @include container(95%);
+  }
+  @media screen and (min-width: $desttop_width) {
+    @include container;
+  }
+}
+
+// main column
+#main {
+  padding: 20px 0;
+}
+
+@media screen and (min-width: $mobile_width) {
+  #content {
+    @include span(9);
+  }
+
+  #side {
+    @include span(last 3);
+  }
+}
+

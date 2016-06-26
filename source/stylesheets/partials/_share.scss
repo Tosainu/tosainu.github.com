@@ -1,0 +1,56 @@
+.share {
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  @include with-layout(5 .2) {
+    a {
+      span {
+        @include span(1 of 5);
+
+        font-size: 130%;
+        height: 1em;
+        line-height: 1;
+        padding: 10px 0;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      &:last-child span {
+        @include span(1 last);
+      }
+
+      &:link, &:visited, &:active, &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.twitter {
+  @include button_bg(#55acee);
+}
+.hatena {
+  @include button_bg(#007bca);
+}
+.pocket {
+  @include button_bg(#ed4055);
+
+  svg {
+    width: 17px;
+    height: 16px;
+    fill: $white;
+  }
+}
+.google_plus {
+  @include button_bg(#c93725);
+}
+.adn {
+  @include button_bg(#4a484d);
+}
+.fa-hatena:before {
+  content: "B!";
+  font-family: Verdana;
+  font-weight: bold;
+}

@@ -1,0 +1,28 @@
+article, section {
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+
+  ul {
+    font-size: 90%;
+  }
+}
+
+.tag {
+  @include button_bg($off-white);
+  border: 1px solid $light-gray;
+  margin-right: 5px;
+  padding: 2px;
+}
+
+.footnotes {
+  padding: 1.2em 0;
+
+  p {
+    margin: 0;
+  }
+}

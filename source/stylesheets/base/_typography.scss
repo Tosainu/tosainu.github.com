@@ -1,0 +1,217 @@
+@import 'compass/typography/lists/inline-list';
+@import 'compass/utilities/general/clearfix';
+
+// font
+$font_size: 16px;
+$font_size_m: 15px;
+$font_size_s: 14px;
+$line-height: 1.7;
+$line-height_m: 1.6;
+$line-height_s: 1.5;
+$font_color: $dark-gray;
+
+$font_family: Roboto, 'Droid Sans', Meiryo, 'Hiragino Kaku Gothic ProN', sans-serif;
+$font_family_mono: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  background: $white;
+  overflow-x: hidden;
+  color: $font_color;
+  font-family: $font-family;
+}
+
+// heading
+#{headings()} {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  border-left: 9px solid $red;
+  font-size: 180%;
+  margin: 1.2em 0 .6em;
+  padding: 0 15px;
+}
+
+h3 {
+  border-left: 9px solid $orange;
+  font-size: 150%;
+  margin: 1.2em 0 .6em;
+  padding: 0 15px;
+}
+
+h4 {
+  font-size: 140%;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 130%;
+  margin: 10px 0;
+}
+
+h6 {
+  font-size: 110%;
+  margin: 10px 0;
+}
+
+// text
+p {
+  margin-bottom: 1.2em;
+
+  code {
+    background: $white;
+    border: 1px solid $light-gray;
+    font-family: $font_family_mono;
+    margin: 0 2px;
+    padding: 2px;
+  }
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-style: normal;
+  font-weight: bold;
+}
+
+sup {
+  font-size: 0.8em;
+
+  a:before {
+    content: "*";
+  }
+}
+
+// link
+a {
+  &:link, &:visited {
+    color: $blue;
+    text-decoration: none;
+  }
+  &:active, &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
+}
+
+// list
+dl {
+  margin: .6em 0;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 1.2em .6em;
+}
+
+ul {
+  list-style-type: circle;
+  margin: .6em 0;
+}
+ol {
+  list-style-type: decimal;
+  margin: .6em 0;
+}
+li {
+  margin-left: 1.8em;
+  padding: .3em 0;
+}
+.il {
+  @include inline-list;
+
+  li {
+    margin-right: .6em;
+  }
+}
+.list_icon {
+  display: inline-block;
+  text-align: center;
+  width: 1.2em;
+}
+
+
+
+blockquote {
+  background: $off-white;
+  border: 1px solid $light-gray;
+  font-size: 110%;
+  margin: 20px 0;
+  padding: 10px 20px;
+
+  p {
+    margin: 0;
+  }
+}
+
+aside {
+  background: $off-white;
+  border: 1px solid $light-gray;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+}
+
+// image
+img {
+  display: block;
+  margin: .6em auto;
+  max-width: 100%;
+}
+
+// code
+pre {
+  background: $white;
+  border: 1px solid $light-gray;
+  font-family: $font_family_mono;
+  line-height: 1.4em;
+  margin: 20px 0;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+// table
+table:not(.highlight) {
+  border-collapse: collapse;
+  margin: 20px 0;
+
+  caption {
+    padding-bottom: 5px;
+  }
+  th, td {
+    border: 1px solid $light-gray;
+    padding: 5px;
+  }
+  thead th {
+    background: $light-gray;
+    padding: 5px 20px;
+    text-align: center;
+  }
+  tbody {
+    background-color: $white;
+  }
+}
+
+hr {
+  background: $light-gray;
+  border: none;
+  height: 1px;
+}
+
+// clearfix
+.cf {
+  @include clearfix;
+}

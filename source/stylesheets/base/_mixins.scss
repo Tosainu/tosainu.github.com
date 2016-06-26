@@ -1,0 +1,7 @@
+@mixin button_bg($color) {
+  background: $color;
+
+  &:active, &:hover {
+    background: darken($color, 20%);
+  }
+}

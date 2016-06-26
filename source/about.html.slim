@@ -3,7 +3,7 @@ title: About
 ---
 = wrap_layout :default do
   h1
-    = link_to data.site.author.name, '/about'
+    = link_to data.author.name, '/about'
 
   #content
     section
@@ -48,48 +48,48 @@ title: About
 
   #side
     section
-      img src = data.site.author.avatar alt = 'avatar'
+      img src = data.author.avatar alt = 'avatar'
 
     section
       h2 Link
 
       dl
-        - if data.site.author.twitter.present?
+        - if data.author.twitter.present?
           dt Twitter
           dd
-            = link_to "@#{data.site.author.twitter}", "https://twitter.com/#{data.site.author.twitter}", target: '_blank'
+            = link_to "@#{data.author.twitter}", "https://twitter.com/#{data.author.twitter}", target: '_blank'
 
-        - if data.site.author.adn.present?
+        - if data.author.adn.present?
           dt App.net
           dd
-            = link_to "#{data.site.author.adn}", "https://alpha.app.net/#{data.site.author.adn}", target: '_blank'
+            = link_to "#{data.author.adn}", "https://alpha.app.net/#{data.author.adn}", target: '_blank'
 
-        - if data.site.author.qiita.present?
+        - if data.author.qiita.present?
           dt Qiita
           dd
-            = link_to "#{data.site.author.qiita}", "http://qiita.com/#{data.site.author.qiita}", target: '_blank'
+            = link_to "#{data.author.qiita}", "http://qiita.com/#{data.author.qiita}", target: '_blank'
 
-        - if data.site.author.github.present?
+        - if data.author.github.present?
           dt GitHub
           dd
-            = link_to "#{data.site.author.github}", "https://github.com/#{data.site.author.github}", target: '_blank'
+            = link_to "#{data.author.github}", "https://github.com/#{data.author.github}", target: '_blank'
 
-        - if data.site.author.bitbucket.present?
+        - if data.author.bitbucket.present?
           dt Bitbucket
           dd
-            = link_to "#{data.site.author.bitbucket}", "https://bitbucket.org/#{data.site.author.bitbucket}", target: '_blank'
+            = link_to "#{data.author.bitbucket}", "https://bitbucket.org/#{data.author.bitbucket}", target: '_blank'
 
-        - if data.site.author.youtube.present?
+        - if data.author.youtube.present?
           dt YouTube
           dd
-            = link_to "#{data.site.author.youtube}", "http://www.youtube.com/user/#{data.site.author.youtube}", target: '_blank'
+            = link_to "#{data.author.youtube}", "http://www.youtube.com/user/#{data.author.youtube}", target: '_blank'
 
-        - if data.site.author.flickr.present?
+        - if data.author.flickr.present?
           dt Flickr
           dd
-            = link_to "#{data.site.author.flickr}", "https://www.flickr.com/photos/#{data.site.author.flickr}", target: '_blank'
+            = link_to "#{data.author.flickr}", "https://www.flickr.com/photos/#{data.author.flickr}", target: '_blank'
 
-        - if data.site.author.amazon.present?
+        - if data.author.amazon.present?
           dt Amazon Wishlist
           dd
-            = link_to '(✿╹◡╹)ﾉ 干し芋のリスト', "http://www.amazon.co.jp/registry/wishlist/#{data.site.author.amazon}", target: '_blank'
+            = link_to '(✿╹◡╹)ﾉ 干し芋のリスト', "http://www.amazon.co.jp/registry/wishlist/#{data.author.amazon}", target: '_blank'

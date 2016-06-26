@@ -21,7 +21,7 @@ tags: Arch Linux, Raspberry Pi
 
 <span class="fontsize1">（ちなみにffmpeg+ffserverでは5秒以上の遅延が発生、さらにx264を使い出すと驚きの重さでしたので常用は不可と判断しました。）</span>
 
-<img src="https://lh6.googleusercontent.com/-aYVsWTDc084/UnI4sFLXKqI/AAAAAAAACrc/uqHlrYcMCRo/s400/IMG_1235.JPG" height="300" width="400" />
+<img src="https://lh6.googleusercontent.com/-aYVsWTDc084/UnI4sFLXKqI/AAAAAAAACrc/uqHlrYcMCRo/s640/IMG_1235.JPG" />
 
 しかしこのmjpg_streamer、インストールに躓いたのでメモです。
 
@@ -72,7 +72,7 @@ mjpg_streamer -i "input_uvc.so -d /dev/video0 -r 320x184 -f 2 -y" -o "output_htt
 
 マシンの8080ポートにブラウザからアクセスすると、こんな感じに見ることができます。
 
-<img src="https://lh3.googleusercontent.com/-En1A7SAN2kg/UnI48-656hI/AAAAAAAACrk/GeVxj6A628s/s400/2013-10-31-195706_1920x1080_scrot.png" height="371" width="400" />
+<img src="https://lh3.googleusercontent.com/-En1A7SAN2kg/UnI48-656hI/AAAAAAAACrk/GeVxj6A628s/s640/2013-10-31-195706_1920x1080_scrot.png" />
 
 また、このように記述してhtmlにimgタグを使って埋め込むこともできました。
 

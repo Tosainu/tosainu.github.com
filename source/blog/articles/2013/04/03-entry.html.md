@@ -17,16 +17,16 @@ tags: i7-3930k_PC
 <p>&nbsp;</p>
 <p>今までは、電源ユニットからATX24pin、ATX8pinの他、グラボ補助電源の8+6pin、HDD・SSD用のSATA電源、光学ドライブのSATA電源、ファンコンのペリ4pinが延びていました。</p>
 <p>今回、SATA→ペリ4pinの変換コネクタを手に入れたので、ペリ4pinのケーブルをなくすことができました。</p>
-<p><img src="https://lh4.googleusercontent.com/-S_RidtvPq50/UVv5XLpkZ2I/AAAAAAAAB2M/d4ufvnen5KM/s400/IMG_0341.JPG" height="300" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-S_RidtvPq50/UVv5XLpkZ2I/AAAAAAAAB2M/d4ufvnen5KM/s640/IMG_0341.JPG" /></p>
 <p>&nbsp;</p>
 <p>近所のホームセンターで、ケーブルを固定するやつが40個入りで安く売っていたので購入。</p>
 <p>ファン関係のケーブルをここ</p>
-<p><img src="https://lh5.googleusercontent.com/-VushnvwGjJM/UVv4hVJE0hI/AAAAAAAAB10/2wOa-JsbCm0/s400/IMG_0355.JPG" height="300" width="400" /></p>
+<p><img src="https://lh5.googleusercontent.com/-VushnvwGjJM/UVv4hVJE0hI/AAAAAAAAB10/2wOa-JsbCm0/s640/IMG_0355.JPG" /></p>
 <p>に隠しました。</p>
 <p>&nbsp;</p>
-<p><img src="https://lh4.googleusercontent.com/-cFtAfBHHHj8/UVv4iXbrk_I/AAAAAAAAB2A/uCn0DH_zGoo/s400/IMG_0351.JPG" height="300" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-cFtAfBHHHj8/UVv4iXbrk_I/AAAAAAAAB2A/uCn0DH_zGoo/s640/IMG_0351.JPG" /></p>
 <p>かなり見える配線は減ったんじゃないかなぁと思います。</p>
-<p><img src="https://lh6.googleusercontent.com/-7myZp44MsW0/UVv4h9vn_4I/AAAAAAAAB14/Waf2Njr1wsE/s400/IMG_0353.JPG" height="300" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-7myZp44MsW0/UVv4h9vn_4I/AAAAAAAAB14/Waf2Njr1wsE/s640/IMG_0353.JPG" /></p>
 <p>上部のファンのケーブルも思っていたよりは気にならないです。</p>
 <p>&nbsp;</p>
 <p>授業始まったら、PCなんて弄ってる暇ないかもしれないですね。</p>

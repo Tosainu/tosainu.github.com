@@ -14,7 +14,7 @@ tags: SIMCITY2013
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><img src="https://lh5.googleusercontent.com/-gAGJ8tLE3rU/UXZKTPSGFSI/AAAAAAAAB_A/djkMvgHflsE/s400/SimCity%25202013-04-23%252017-45-13-97.png" height="225" width="400" /></p>
+<p><img src="https://lh5.googleusercontent.com/-gAGJ8tLE3rU/UXZKTPSGFSI/AAAAAAAAB_A/djkMvgHflsE/s640/SimCity%25202013-04-23%252017-45-13-97.png" /></p>
 <p><span style="font-size:36px;">サブ都市も開けなくなったorz</span></p>
 <p>&nbsp;</p>
 <p>うー・・・</p>

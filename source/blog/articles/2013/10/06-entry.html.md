@@ -3,7 +3,7 @@ title: Linux環境でAssemblyLangプログラミングしたメモ
 date: 2013-10-06 21:11:08 JST
 tags: Arduino,Linux
 ---
-<p>どもどもー</p><p><img src="https://lh3.googleusercontent.com/-fFh3rCgGq9g/UlFSJC09C-I/AAAAAAAACpw/rmMps_jgNy4/s400/IMG_1127.JPG" height="300" width="400" /></p>
+<p>どもどもー</p><p><img src="https://lh3.googleusercontent.com/-fFh3rCgGq9g/UlFSJC09C-I/AAAAAAAACpw/rmMps_jgNy4/s640/IMG_1127.JPG" /></p>
 <p>ここ3日、ずっとAVRマイコンをAssemblyでプログラミングしていました。<span class="fontsize1">（きっと）</span></p>
 <p>何となくわかってきたのでとりあえずメモ。</p>
 <p>&nbsp;</p>
@@ -15,8 +15,8 @@ READMORE
 <p>ちなみに載っているマイコンはATmega328Pです。</p>
 <p>&nbsp;</p>
 <p>図のようにパーツを接続しました。</p>
-<p><img src="https://lh3.googleusercontent.com/-Ho2irIwLDKM/UlFRzc2ArII/AAAAAAAACpo/i4w3oCKcjnU/s400/IMG_1125.JPG" height="300" width="400" /></p>
-<p><img src="https://lh3.googleusercontent.com/-urAHq4AQKEM/UlFRc4ZG1cI/AAAAAAAACpg/n5tVlJuu6h0/s400/IMG_1141.JPG" height="300" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-Ho2irIwLDKM/UlFRzc2ArII/AAAAAAAACpo/i4w3oCKcjnU/s640/IMG_1125.JPG" /></p>
+<p><img src="https://lh3.googleusercontent.com/-urAHq4AQKEM/UlFRc4ZG1cI/AAAAAAAACpg/n5tVlJuu6h0/s640/IMG_1141.JPG" /></p>
 <p>&nbsp;</p>
 <h2>追加するパッケージ</h2>
 <h3>avra</h3>

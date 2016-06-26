@@ -10,12 +10,12 @@ tags: Diary
 <p>&nbsp;</p>
 <p>メガマックのボーリュームはすごかったんですよ</p>
 <p>こんな大きな箱でした</p>
-<p><img src="https://lh3.googleusercontent.com/-OHyKULg2M3I/UOukYktZ05I/AAAAAAAABBk/nYaQQlRxIgs/s400/DSC_0002.jpg" height="314" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-OHyKULg2M3I/UOukYktZ05I/AAAAAAAABBk/nYaQQlRxIgs/s640/DSC_0002.jpg" /></p>
 <p>&nbsp;</p>
 <p>でも、今マクドナルドは60秒以上たったら何かもらえるみたいなイベントをやっているせいか、</p>
 <p>&nbsp;</p>
 <p><span style="font-size:24px;">いつも以上に作りが雑</span></p>
-<p><img src="https://lh4.googleusercontent.com/-t8x_35eN8Zk/UOukZGYghcI/AAAAAAAABBk/5oUyKY2qMEQ/s400/DSC_0004.jpg" height="327" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-t8x_35eN8Zk/UOukZGYghcI/AAAAAAAABBk/5oUyKY2qMEQ/s640/DSC_0004.jpg" /></p>
 <p>蓋を開けるなりキャベツは落ち、そして店員は積み重ねる気あったのか？と言いたくなるくらいの本体。</p>
 <p>もう崩れているって言ってもいいんじゃないでしょうか？</p>
 <p>&nbsp;</p>

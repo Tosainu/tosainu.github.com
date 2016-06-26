@@ -39,13 +39,13 @@ tags: Android
 <p>root取得済みな最新版のファームウェアを書き込んでくれるS.onyTablet.S [FLASHER](以下Flasher)の動作には端末にroot権限が要るそうです。ってことで、まず、S.onyTablet.S [ALLinONE](以下AiO)を使って端末のroot権限を取得します。</p>
 <p>&nbsp;</p>
 <p>ソニタブをデバッグモードを入れてUSBでパソコンと接続し、AiOを解凍して出てくるS.onyTablet.S.batを実行します</p>
-<p><img src="https://lh3.googleusercontent.com/--1i39gQP4Vc/UQaerJ3IJpI/AAAAAAAABDQ/VaoxMKVFkSY/s400/aio1.png" height="400" width="390" /></p>
+<p><img src="https://lh3.googleusercontent.com/--1i39gQP4Vc/UQaerJ3IJpI/AAAAAAAABDQ/VaoxMKVFkSY/s640/aio1.png" /></p>
 <p>1を入力し、Enterで端末のroot化を始めます。途中、yes等の入力が求められます。</p>
 <p>&nbsp;</p>
 <p>作業が終了すると、端末は再起動します。再起動したら、ドロワーにSuperuserがあることと、adb shellからsuとコマンドを打ち、rootユーザーになれることを確認します。</p>
 <p>&nbsp;</p>
 <p>さて、ここからはroot取得済みのICSファームを書き込みます。端末はそのままで、AiOのウィンドウは閉じ、今度はFLASHERを解凍して出てくるS.onyTablet.S [FLASHER].batを実行します。</p>
-<p><img src="https://lh5.googleusercontent.com/-s4NxyDAQrOI/UQag7GzSCHI/AAAAAAAABDk/b82iXVDGeQI/s400/flasher1.png" height="400" width="390" /></p>
+<p><img src="https://lh5.googleusercontent.com/-s4NxyDAQrOI/UQag7GzSCHI/AAAAAAAABDk/b82iXVDGeQI/s640/flasher1.png" /></p>
 <p>今回ファームウェアを書き込む端末はソニタブPなので、1bと入力してEnterでファームウェアのダウンロードと書き込みが始まります。</p>
 <p>こちらも途中質問に答えます。全部yesで大丈夫でした。</p>
 <p>意外と時間がかかりました。また、Androidが起動したままファームウェアの書き込みをするようなので、作業中は何も操作しないほうがいいかと思います。</p>

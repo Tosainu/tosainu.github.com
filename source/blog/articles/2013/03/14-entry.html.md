@@ -30,7 +30,7 @@ tags: Diary
 <p>今回、比較のために表示している記事は<a href="http://arstechnica.com/">Ars Technica</a>です。</p>
 <p>&nbsp;</p>
 <h3><a href="http://www.newsblur.com/">NewsBlur</a></h3>
-<p><img src="https://lh6.googleusercontent.com/-0N1UhLlIUXE/UUGWGfqXPxI/AAAAAAAABqY/VzfHD1Gms4w/s400/Screenshot%2520from%25202013-03-14%252018%253A17%253A28.png" height="201" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-0N1UhLlIUXE/UUGWGfqXPxI/AAAAAAAABqY/VzfHD1Gms4w/s640/Screenshot%2520from%25202013-03-14%252018%253A17%253A28.png" /></p>
 <p>UIも使いやすく、Androidの専用アプリがある。</p>
 <p>Google Readerから直接インポートも可能。</p>
 <p>&nbsp;</p>
@@ -39,7 +39,7 @@ tags: Diary
 <p>うー・・・没</p>
 <p>&nbsp;</p>
 <h3><a href="http://www.netvibes.com/">NetVibes</a></h3>
-<p><img src="https://lh4.googleusercontent.com/-lq_2Y4DZZSM/UUGTw5wPu9I/AAAAAAAABqI/CxTxcZR_N6E/s400/Screenshot%2520from%25202013-03-14%252018%253A07%253A04.png" height="201" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-lq_2Y4DZZSM/UUGTw5wPu9I/AAAAAAAABqI/CxTxcZR_N6E/s640/Screenshot%2520from%25202013-03-14%252018%253A07%253A04.png" /></p>
 <p>UIがものすごく高性能。</p>
 <p>使いいやすいだけでなく、テーマが選択できたりもした。</p>
 <p>&nbsp;</p>
@@ -47,7 +47,7 @@ tags: Diary
 <p>モバイル版のページは同様に見やすく、そこまで重いページではなさそうなので、これはこれでアリかも。</p>
 <p>&nbsp;</p>
 <h3><a href="http://www.feedly.com/">feedly.</a></h3>
-<p><img src="https://lh5.googleusercontent.com/-C4BOXGBNa6I/UUGW5pQNdpI/AAAAAAAABqg/vt9U3ZCNy8o/s400/Screenshot%2520from%25202013-03-14%252018%253A21%253A28.png" height="201" width="400" /></p>
+<p><img src="https://lh5.googleusercontent.com/-C4BOXGBNa6I/UUGW5pQNdpI/AAAAAAAABqg/vt9U3ZCNy8o/s640/Screenshot%2520from%25202013-03-14%252018%253A21%253A28.png" /></p>
 <p>とても変わっているRSSリーダー。</p>
 <p>PCではChromeやFirefoxの拡張機能として動き、Android等のモバイルデバイスには専用アプリがある。</p>
 <p>Googleリーダーから直接インポートもできた。</p>
@@ -58,7 +58,7 @@ tags: Diary
 <p>使いにくいわけではないけど、慣れが要りそう。</p>
 <p>&nbsp;</p>
 <h3><a href="http://www.pulse.me/">Pulse</a></h3>
-<p><img src="https://lh6.googleusercontent.com/-dHaWrlS6OA0/UUGad_KFwKI/AAAAAAAABqw/XaTI_jXcIqg/s400/Screenshot%2520from%25202013-03-14%252018%253A34%253A16.png" height="201" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-dHaWrlS6OA0/UUGad_KFwKI/AAAAAAAABqw/XaTI_jXcIqg/s640/Screenshot%2520from%25202013-03-14%252018%253A34%253A16.png" /></p>
 <p>これまた独特なUIなRSSリーダー。</p>
 <p>Androidのアプリもあった。</p>
 <p>&nbsp;</p>

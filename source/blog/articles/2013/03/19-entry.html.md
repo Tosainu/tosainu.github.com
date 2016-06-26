@@ -119,7 +119,7 @@ Voltage = 1187500（1.1875V）
 <p>ではでは〜</p>
 <p>&nbsp;</p>
 <p><span style="color:red;"><span style="font-size:24px;">追記（2013/3/19 (Tue) 18:6:29）</span></span></p>
-<p><img src="https://lh6.googleusercontent.com/-brgEI09a-2k/UUgqSnVbYLI/AAAAAAAABvc/i7C0MPBD5TE/s400/10096.png" height="225" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-brgEI09a-2k/UUgqSnVbYLI/AAAAAAAABvc/i7C0MPBD5TE/s640/10096.png" /></p>
 <p><span style="font-size:24px;">10096キタ———（゜∀゜）———— ！！</span></p>
 <p>前回の4700MHZの時の設定から、さらにベースクロックを102MHzにして達成です。</p>
 <p>この様子だと電圧盛らずに100MHzx48いけるかな？</p>

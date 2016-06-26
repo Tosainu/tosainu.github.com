@@ -45,7 +45,7 @@ and /etc/grub.d/* files or please file a bug report with
 
 例のサーバOSもArch Linuxでいこうとしたのですが、BootDriveをSDにしたせいかうまく起動できない！！
 
-<img src="https://lh4.googleusercontent.com/-YG2zx1ZTavo/UrmeUr08vHI/AAAAAAAAC1A/fzFBQenHK9I/s400/DSC_0249.JPG" height="229" width="400" />
+<img src="https://lh4.googleusercontent.com/-YG2zx1ZTavo/UrmeUr08vHI/AAAAAAAAC1A/fzFBQenHK9I/s640/DSC_0249.JPG" />
 
 こんな感じにEmergencyModeに入ってしまいました。
 

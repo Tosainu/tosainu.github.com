@@ -10,7 +10,7 @@ tags: SIMCITY2013
 <p>メインの都市にアクセスできないんだけど・・・</p>
 <p>&nbsp;</p>
 <p>その結果、サブ都市がどんどん人口が増えていって、そろそろメイン都市の人口を抜かそうとしている。</p>
-<p><img src="https://lh3.googleusercontent.com/-9fai0aMHfWE/UV9cHLWzdqI/AAAAAAAAB3A/oTJoAoMSp7Q/s400/SimCity%25202013-04-06%252008-08-24-72.png" height="225" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-9fai0aMHfWE/UV9cHLWzdqI/AAAAAAAAB3A/oTJoAoMSp7Q/s640/SimCity%25202013-04-06%252008-08-24-72.png" /></p>
 <p>NEET TOWNとか支持率65%とか突っ込んじゃいけないよ！！</p>
 <p>だって本当にみんなニートで仕事していない住民だらけだから。</p>
 <p>&nbsp;</p>

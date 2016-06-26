@@ -10,13 +10,13 @@ tags: VAIO-Z2, Windows
 <p>&nbsp;</p>
 <p>このZたんですが、<u>サムチョンのSSD2台</u>を<span style="color:red;">RAID0</span>しており、信頼性はないものの驚きのスピードをたたき出していました。</p>
 <p>購入直後ではありませんが、DiskMarkかけてみたらこんな数字が</p>
-<p><img src="https://lh5.googleusercontent.com/-OI0eczb2NQk/UHIqHZptnyI/AAAAAAAAA2E/ZMrnuoaqeFg/s400/diskmark.png" height="364" width="400" /></p>
+<p><img src="https://lh5.googleusercontent.com/-OI0eczb2NQk/UHIqHZptnyI/AAAAAAAAA2E/ZMrnuoaqeFg/s640/diskmark.png" /></p>
 <p>www</p>
 <p>何も言うことあるまい</p>
 <p>&nbsp;</p>
 <p>ですが最近、特に書き込みが遅い気がしたのです</p>
 <p>あまりにも気になったので調べてみると・・・</p>
-<p><img src="https://lh6.googleusercontent.com/-qzKImyW5pSQ/UHIqHqT1I5I/AAAAAAAAA2M/uXg7jwtRzX0/s400/namidame.png" height="362" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-qzKImyW5pSQ/UHIqHqT1I5I/AAAAAAAAA2M/uXg7jwtRzX0/s640/namidame.png" /></p>
 <p><strong><span style="font-size:14px;">うおおおおおおおおおおおおおおおおおお！！！！！！</span></strong></p>
 <p>なんなんだこれは！！！</p>
 <p>&nbsp;</p>
@@ -31,7 +31,7 @@ tags: VAIO-Z2, Windows
 <p>SSDには物によりますが、TRIMという機能がついています。</p>
 <p>ざっくり説明すると、「長期使用による速度低下を防ぐもの」です。（長くなるので興味がある人は各自調べてください）</p>
 <p>CrystalDiskInfoを使って、ZたんのSSDがTRIMに対応しているか調べると・・・</p>
-<p><img src="https://lh3.googleusercontent.com/-IMSWP9YHe68/UHIuI_TBF1I/AAAAAAAAA2k/fyshHv0mVqg/s400/trim.png" height="381" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-IMSWP9YHe68/UHIuI_TBF1I/AAAAAAAAA2k/fyshHv0mVqg/s640/trim.png" /></p>
 <p>よしよし、ではなぜだ？</p>
 <p>&nbsp;</p>
 <p>http://www.station-drivers.com/forum/viewtopic.php?f=32&t=3910</p>
@@ -49,7 +49,7 @@ tags: VAIO-Z2, Windows
 <p>PCが起動しても終わりではありません。RAIDアレイのドライバーのインストールが終わるとまた再起動するように言われたので再起動。</p>
 <p>&nbsp;</p>
 <p>さて、ベンチしてみようか。</p>
-<p><img src="https://lh5.googleusercontent.com/-mdK6yB6vPzw/UHIqHjlgz7I/AAAAAAAAA2I/FnhdwVb_3D0/s400/fuka-------------tsu.png" height="362" width="400" /></p>
+<p><img src="https://lh5.googleusercontent.com/-mdK6yB6vPzw/UHIqHjlgz7I/AAAAAAAAA2I/FnhdwVb_3D0/s640/fuka-------------tsu.png" /></p>
 <p><span style="font-size:24px;">キタ━━━━(゜∀゜)━━━━！！！！！！！</span></p>
 <p>復活です。よかったよかった。</p>
 <p>&nbsp;</p>

@@ -13,11 +13,11 @@ tags: Diary
 <p>&nbsp;</p>
 <p>軽く干からびてきたみかんは甘味が増して美味しいので食べていたのですが・・・</p>
 <p>&nbsp;</p>
-<p><img src="https://lh6.googleusercontent.com/-Z7yVMcO7mJ8/UUUIvdEXjoI/AAAAAAAABsA/Wj-6H8Px6HE/s400/IMG_0248.JPG" height="300" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-Z7yVMcO7mJ8/UUUIvdEXjoI/AAAAAAAABsA/Wj-6H8Px6HE/s640/IMG_0248.JPG" /></p>
 <p><span style="font-size:24px;">ボコボコやん</span></p>
 <p>こんなに乾いてしまってるみかんが混ざっていました。</p>
 <p>水分が抜けてボコボコになってしまっているうえに、</p>
-<p><img src="https://lh6.googleusercontent.com/-hJISpLSuKmk/UUUItLrIH4I/AAAAAAAABr4/qr5DA6VMtBE/s400/IMG_0251.JPG" height="300" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-hJISpLSuKmk/UUUItLrIH4I/AAAAAAAABr4/qr5DA6VMtBE/s640/IMG_0251.JPG" /></p>
 <p>元々小さかったのかもしれませんが、小さくなってしまっているようです。</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

@@ -13,7 +13,7 @@ tags: JavaScript
 
 [Tosainu/htWatch](https://github.com/Tosainu/htWatch "htWatch")
 
-<img src="https://lh5.googleusercontent.com/-kOCEoJaKNqM/UzRE9-YdWPI/AAAAAAAADHE/iDdgNummHKs/s400/2014-03-27-234612_1920x1080_scrot.png" height="276" width="400" />
+<img src="https://lh5.googleusercontent.com/-kOCEoJaKNqM/UzRE9-YdWPI/AAAAAAAADHE/iDdgNummHKs/s640/2014-03-27-234612_1920x1080_scrot.png" />
 
 ## 仕様とか
 Node.jsで書きました。  
@@ -44,7 +44,7 @@ Node.jsで書きました。
 GitHubのUsageを見れば実行できると思います。  
 するとこんなウィンドウが出るので、
 
-<img src="https://lh3.googleusercontent.com/-e3KZt_-1bw0/UzRJhJdO94I/AAAAAAAADHQ/q9MRkjNxKho/s400/2014-03-28-005230_1920x1080_scrot.png" height="137" width="400" />
+<img src="https://lh3.googleusercontent.com/-e3KZt_-1bw0/UzRJhJdO94I/AAAAAAAADHQ/q9MRkjNxKho/s640/2014-03-28-005230_1920x1080_scrot.png" />
 
 このフォームに検索したいハッシュタグ等を入力して`Start`をクリックするとStreamingAPIの接続が開始します。  
 全画面表示するなりして使ってください♡

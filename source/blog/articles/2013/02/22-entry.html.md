@@ -8,7 +8,7 @@ tags: Diary
 <p>シンプルすぎるは別として、見やすく、そして奥のページヘアクセスしやすくなっているといいのですが。</p>
 <p>&nbsp;</p>
 <p>実はMinecraftのアカ持っているんです</p>
-<p><img src="https://lh4.googleusercontent.com/-yLukwxag2ao/USdJL07hHhI/AAAAAAAABG8/BbUF65pwHaU/s400/mine.png" height="244" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-yLukwxag2ao/USdJL07hHhI/AAAAAAAABG8/BbUF65pwHaU/s640/mine.png" /></p>
 <p>去年、ちょうどVAIO Zを買った頃のこと、</p>
 <p>ニコ動はじめ、すごく流行っていたゲームですね。</p>
 <p>&nbsp;</p>

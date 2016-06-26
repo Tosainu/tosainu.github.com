@@ -5,7 +5,7 @@ tags: Website
 ---
 <p>どーもー</p>
 <p>ついカッとなってプレミアム会員になっちゃったとさいぬです。</p>
-<p><img src="https://lh4.googleusercontent.com/--Nne-EWtw9A/UWJK3UhgEcI/AAAAAAAAB4k/f_woMM1MxXo/s400/Screenshot%2520from%25202013-04-08%252013%253A42%253A07.png" height="158" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/--Nne-EWtw9A/UWJK3UhgEcI/AAAAAAAAB4k/f_woMM1MxXo/s640/Screenshot%2520from%25202013-04-08%252013%253A42%253A07.png" /></p>
 <p>&nbsp;</p>
 <p>Webサイト管理者にとって何より重要なことはページをより多くの人に見てもらうことだと思っています。</p>
 <p>そのために、</p>

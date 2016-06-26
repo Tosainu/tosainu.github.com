@@ -33,7 +33,7 @@ Fullのインストーラのアップロードはクソ回線で時間がかか�
 
 コンソール画面下に接続方法が書いてあるのでFileZilla等で接続して、
 
-<img src="https://lh4.googleusercontent.com/-REemULw2wPE/UuRYOLAL3BI/AAAAAAAAC8Q/fwGycTvCwl8/s400/2014-01-26-093241_1920x1080_scrot.png" height="400" width="357" />
+<img src="https://lh4.googleusercontent.com/-REemULw2wPE/UuRYOLAL3BI/AAAAAAAAC8Q/fwGycTvCwl8/s640/2014-01-26-093241_1920x1080_scrot.png" />
 
 imagesフォルダ内にアップロードしましょう。
 
@@ -43,7 +43,7 @@ imagesフォルダ内にアップロードしましょう。
 
 あとはミラーサーバにFTP.JAIST.AC.JPを選択すればいつものようなインストールができるようになります。
 
-<img src="https://lh3.googleusercontent.com/-zx2Ku3KWfXc/UuRa8u-wylI/AAAAAAAAC8k/rbbLaG17LxI/s400/2014-01-26-041133_1920x1080_scrot.png" height="298" width="400" />
+<img src="https://lh3.googleusercontent.com/-zx2Ku3KWfXc/UuRa8u-wylI/AAAAAAAAC8k/rbbLaG17LxI/s640/2014-01-26-041133_1920x1080_scrot.png" />
 
 やったね！
 

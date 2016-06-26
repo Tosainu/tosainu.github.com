@@ -63,7 +63,7 @@ Useful linksのDownloads→cm11.0と進み、
 
 実行中のアプリ一覧の画面
 
-<img src="https://lh5.googleusercontent.com/-MkgJZzHulcE/UqQomN9IsVI/AAAAAAAACzI/zxQUsGg9-Ik/s400/Screenshot_2013-12-08-10-08-50.png" height="400" width="225" />
+<img src="https://lh5.googleusercontent.com/-MkgJZzHulcE/UqQomN9IsVI/AAAAAAAACzI/zxQUsGg9-Ik/s640/Screenshot_2013-12-08-10-08-50.png" />
 
 &nbsp;
 
@@ -73,19 +73,19 @@ Useful linksのDownloads→cm11.0と進み、
 
 左:定格 右:1.4GHz-OC
 
-<img src="https://lh3.googleusercontent.com/-a6boOgc04KY/UqQokyCToGI/AAAAAAAACyw/bDS1IQzuBJk/s400/Screenshot_2013-12-08-09-54-53.png" height="400" width="225" />
+<img src="https://lh3.googleusercontent.com/-a6boOgc04KY/UqQokyCToGI/AAAAAAAACyw/bDS1IQzuBJk/s640/Screenshot_2013-12-08-09-54-53.png" />
 
 ### AnTuTu Benchmark
 
 左:定格 右:1.4GHz-OC
 
-<img src="https://lh4.googleusercontent.com/-0XZv2H5SzL4/UqQokhUl2WI/AAAAAAAACyo/neF8zxVBoNs/s400/Screenshot_2013-12-08-09-29-47.png" height="400" width="225" />
+<img src="https://lh4.googleusercontent.com/-0XZv2H5SzL4/UqQokhUl2WI/AAAAAAAACyo/neF8zxVBoNs/s640/Screenshot_2013-12-08-09-29-47.png" />
 
 このHa Haはスコアをバカにしているのでしょうか？？？
 
 こんな中華アプリ二度と使わねぇ・・・
 
-<img src="https://lh4.googleusercontent.com/-ZervDLWZioQ/UqQolO-XXrI/AAAAAAAACy4/u1yQou4SB3c/s400/Screenshot_2013-12-08-09-56-39.png" height="400" width="225" />
+<img src="https://lh4.googleusercontent.com/-ZervDLWZioQ/UqQolO-XXrI/AAAAAAAACy4/u1yQou4SB3c/s640/Screenshot_2013-12-08-09-56-39.png" />
 
 &nbsp;
 

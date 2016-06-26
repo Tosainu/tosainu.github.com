@@ -35,7 +35,7 @@ tags: Diary
 
 以前から言っているTwitterLibraryも公開できるレベルにしないとねぇ・・・
 
-<img src="https://lh3.googleusercontent.com/-SWQCpzC94S4/UsODBbGerDI/AAAAAAAAC2Y/pyyeL4ikRrA/s400/2014-01-01-115032_1920x1080_scrot.png" height="198" width="400" />
+<img src="https://lh3.googleusercontent.com/-SWQCpzC94S4/UsODBbGerDI/AAAAAAAAC2Y/pyyeL4ikRrA/s640/2014-01-01-115032_1920x1080_scrot.png" />
 
 &nbsp;
 

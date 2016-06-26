@@ -9,11 +9,11 @@ tags: SIMCITY2013
 <p><a href="http://www.itmedia.co.jp/news/articles/1303/19/news109.html">「シムシティ」不具合お詫び無料ソフト、「バトルフィールド 3」「Mass Effect 3」など - ITmedia ニュース</a></p>
 <p>見てシムシティ買ったらしく、</p>
 <p>&nbsp;</p>
-<p><img src="https://lh3.googleusercontent.com/-X-hatpac8rs/UVEVAOrxsQI/AAAAAAAABy8/JSx28Xpfo9g/s400/kacchatta.png" height="225" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-X-hatpac8rs/UVEVAOrxsQI/AAAAAAAABy8/JSx28Xpfo9g/s640/kacchatta.png" /></p>
 <p>僕も買っちゃいました</p>
 <p>そしてBF3もGet</p>
 <p>&nbsp;</p>
-<p><img src="https://lh3.googleusercontent.com/-AVUP0aFJ2uc/UVESKDot8LI/AAAAAAAABy0/3cWCub8IBz8/s400/SimCity%25202013-03-26%252012-07-33-61.jpg" height="225" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-AVUP0aFJ2uc/UVESKDot8LI/AAAAAAAABy0/3cWCub8IBz8/s640/SimCity%25202013-03-26%252012-07-33-61.jpg" /></p>
 <p>シムシティはスーファミ版をやったことがあるのですが、とても難しくて30分で挫折した記憶があります。</p>
 <p>&nbsp;</p>
 <p>今回のシムシティはチュートリアルや適度なヒントもあり進めやすかったです。</p>

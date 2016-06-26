@@ -19,7 +19,7 @@ tags: i7-3930k_PC
 <p><span style="font-size:18px;">パッケージが気に入ったお姉ちゃんのを買え</span></p>
 <p>&nbsp;</p>
 <p>そして、</p>
-<p><img src="https://lh3.googleusercontent.com/-kBluVKK50vQ/UNeSEvhNEII/AAAAAAAAA4U/WQWaTSm57Ko/s400/20070208210500.jpg" height="400" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-kBluVKK50vQ/UNeSEvhNEII/AAAAAAAAA4U/WQWaTSm57Ko/s640/20070208210500.jpg" /></p>
 <p>&nbsp;</p>
 <p><span style="font-size:24px;"><span style="color:red;">おいおいおいおいおい</span></span></p>
 <p>こんなのあるんだ〜ってELSAさん何やってんスカ！！！</p>

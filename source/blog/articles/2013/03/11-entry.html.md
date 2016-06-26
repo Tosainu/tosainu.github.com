@@ -32,11 +32,11 @@ tags: i7-3930k_PC
 <p>&nbsp;</p>
 <p>流行ってるゲームのベンチって何だろ？という理由で始めたFFXIVベンチ（Low）</p>
 <p>定格では8422でした。</p>
-<p><img src="https://lh6.googleusercontent.com/-uI8caUYIwIA/UT0maFHYalI/AAAAAAAABpM/9NvLlGxiVyE/s400/FFXIV%2520Bench%252020130103.png" height="225" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-uI8caUYIwIA/UT0maFHYalI/AAAAAAAABpM/9NvLlGxiVyE/s640/FFXIV%2520Bench%252020130103.png" /></p>
 <p>これなら10000目指せるんじゃね？と思い、以前からそれを目標にいろいろ粘っていました。</p>
 <p>&nbsp;</p>
 <p>4700が回った状態でさらにAfterburnerでグラボも盛ってやり・・・</p>
-<p><img src="https://lh6.googleusercontent.com/-LPtIIbrEQv4/UT0j31wB0EI/AAAAAAAABpE/iEn8OO9R3RQ/s400/ffbenchlow%25209957%252020130310.png" height="225" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-LPtIIbrEQv4/UT0j31wB0EI/AAAAAAAABpE/iEn8OO9R3RQ/s640/ffbenchlow%25209957%252020130310.png" /></p>
 <p><span style="font-size:36px;">9957達成！</span></p>
 <p>&nbsp;</p>
 <p>もう少し、あと少し・・・・</p>

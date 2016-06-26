@@ -5,7 +5,7 @@ tags: Diary
 ---
 <p>とうとうWiMAXルーターが届きました～</p>
 <p>種類はMobile Cubeです。</p>
-<img src="https://lh3.googleusercontent.com/-TAfXQ6O3TcM/UAasV16BvjI/AAAAAAAAApE/vsBv8MWiaQc/s400/DSC06143.JPG" height="300" width="400" />
+<img src="https://lh3.googleusercontent.com/-TAfXQ6O3TcM/UAasV16BvjI/AAAAAAAAApE/vsBv8MWiaQc/s640/DSC06143.JPG" />
 <p>今いろいろ設定しています。</p>
 <p>SSIDを(」・ω・)」うー！(/・ω・)/にゃー！にしたかったのですが、</p>
 <p>Android端末で文字化けしたのでいつか再チャレンジしたいと思います。</p>

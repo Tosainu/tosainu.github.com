@@ -8,7 +8,7 @@ tags: Diary
 <p>いつかはガチで勉強したいなぁと思う3DCGの世界。</p>
 <p>ってことで無料とは思えないほど高性能と噂のBlenderを使って軽く遊んでみたんだけど・・・</p>
 <p>&nbsp;</p>
-<p><img src="https://lh4.googleusercontent.com/-TOICAs0D1jE/UVP30riK0EI/AAAAAAAABzc/PwmO3JFrsC8/s400/Screenshot%2520from%25202013-03-28%252016%253A50%253A55.png" height="320" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-TOICAs0D1jE/UVP30riK0EI/AAAAAAAABzc/PwmO3JFrsC8/s640/Screenshot%2520from%25202013-03-28%252016%253A50%253A55.png" /></p>
 <p><span style="font-size:36px;">何なんだこれは！！！</span></p>
 <p>&nbsp;</p>
 <p>とさいぬは一応、春なのでってことで花を作ったつもりなのですが・・・</p>

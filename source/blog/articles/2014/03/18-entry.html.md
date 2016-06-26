@@ -97,7 +97,7 @@ RAIDを組めたらExitし、そのままWindowsインストールに進みま�
 
 `OEM Certificate`で文字列を検索し、その真上の`<?xml version="1.0" encoding="utf-8" ?>`から`</r:license>`を選択し、右クリック > 選択範囲をファイルに保存として出力します。
 
-<img src="https://lh4.googleusercontent.com/-EKT9kqFqvgk/UygdXiyN9bI/AAAAAAAADGk/qiSiwlX-Qsk/s400/SnapCrab_NoName_2014-3-18_19-16-41_No-00.png" height="230" width="400" />
+<img src="https://lh4.googleusercontent.com/-EKT9kqFqvgk/UygdXiyN9bI/AAAAAAAADGk/qiSiwlX-Qsk/s640/SnapCrab_NoName_2014-3-18_19-16-41_No-00.png" />
 
 ファイル名は先程のサイトと同様に`hoge.xrm-ms`とし、`C:\`に保存しました。
 

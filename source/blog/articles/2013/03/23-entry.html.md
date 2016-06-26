@@ -3,7 +3,7 @@ title: 悟り
 date: 2013-03-23 13:27:14 JST
 tags: Diary
 ---
-<p><img src="https://lh6.googleusercontent.com/-Cf5yznWwcGg/UU0rmb_7HgI/AAAAAAAABxc/yIAhIBnuvjg/s400/IMG_0313.JPG" height="300" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/-Cf5yznWwcGg/UU0rmb_7HgI/AAAAAAAABxc/yIAhIBnuvjg/s640/IMG_0313.JPG" /></p>
 <p>これ今日の昼食なんだけど、たぶん今までで一番きれいなビッグマックだとおもう。</p>
 <p>全国のマクドナルド厨房の人はせめてこれを目指すんだ！！</p>
 <p>&nbsp;</p>

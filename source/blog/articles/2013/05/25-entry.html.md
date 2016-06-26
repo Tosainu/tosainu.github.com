@@ -3,7 +3,7 @@ title: 4Kテレビがヤバイ
 date: 2013-05-25 21:17:46 JST
 tags: Diary
 ---
-<p><a href="https://picasaweb.google.com/lh/photo/CCvdcTwfTSsaXdfkfz6rVdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-oWbNPq85Dow/UaClSbksYJI/AAAAAAAACKQ/UPGpFnzb4rg/s400/IMG_20130525_144831.jpg" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-oWbNPq85Dow/UaClSbksYJI/AAAAAAAACKQ/UPGpFnzb4rg/s400/IMG_20130525_144831.jpg" height="300" width="400" /></p>
 <p><span style="font-size:36px;">やべぇよ・・・</span></p>
 <p><span style="font-size:36px;">綺麗すぎだよ・・・</span></p>
 <p>&nbsp;</p>

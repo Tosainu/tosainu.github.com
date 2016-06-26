@@ -21,12 +21,12 @@ tags: ML110 G7 Mod
 <p>一体誰がこんな間違いをしたんだよｗ</p>
 <p>&nbsp;</p>
 <p>面倒くさいので塞がっているところに穴を開けてマザボに接続しました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/m-u3dlqAgU0PDpIlOHbBwdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/--I2_LI32pl8/UTmwq9Y50MI/AAAAAAAABec/UdJFU7CXs44/s400/IMG_0180.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/--I2_LI32pl8/UTmwq9Y50MI/AAAAAAAABec/UdJFU7CXs44/s400/IMG_0180.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <h3>スイッチ・LED等のコネクタ</h3>
 <p>なんか間違ってる気もしますが、ピンアサインの解析をしたので画像を貼っときます。</p>
 <p>→側が凸の方です。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/n-JvlYgCyKV03ej1gMxplNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-sr1Q_1SChuM/UTm5vb1PkCI/AAAAAAAABfU/YLC_DKfYmxE/s400/Untitled.png" height="237" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-sr1Q_1SChuM/UTm5vb1PkCI/AAAAAAAABfU/YLC_DKfYmxE/s400/Untitled.png" height="237" width="400" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><span style="font-size:24px;">特殊仕様勘弁してくれマジで</span></p>
@@ -42,21 +42,21 @@ tags: ML110 G7 Mod
 <p>ケーブルのスリーブを剥き、さらにコネクタからケーブルを金属の部分ごと抜きます。</p>
 <p>金属の部分を押さえているツメを軽く持ち上げケーブルを引くと抜けます。</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/s-jqRUXAk8XorpqdcIgYRdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-3eNrA7Hvc3o/UTmwviGobgI/AAAAAAAABes/w4c1QqxAhes/s400/IMG_0181.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-3eNrA7Hvc3o/UTmwviGobgI/AAAAAAAABes/w4c1QqxAhes/s400/IMG_0181.JPG" height="300" width="400" /></p>
 <p>不要なケーブルは邪魔なので束ねておきます。</p>
 <p>&nbsp;</p>
 <p>あとはマザボの端子にあわせて残骸に差していきます。</p>
 <p>今回はUIDスイッチをリセットに割り当てることにしました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/cDgoZaCbXUZVOjaFo60arNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-5_7k9w_1pDg/UTmwuhbJgtI/AAAAAAAABek/b_LcQzKOPmQ/s400/IMG_0185.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-5_7k9w_1pDg/UTmwuhbJgtI/AAAAAAAABek/b_LcQzKOPmQ/s400/IMG_0185.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/-KEzwdEN_KEcAZ_SNXJhtdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-9uSsv7QcXoM/UTmxHkUGd3I/AAAAAAAABe4/yqSWy_RY4_o/s400/IMG_0187.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-9uSsv7QcXoM/UTmxHkUGd3I/AAAAAAAABe4/yqSWy_RY4_o/s400/IMG_0187.JPG" height="300" width="400" /></p>
 <p>わーい</p>
 <p>コネクタが全部接続されたどー！</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/_Gkr0iXey9fJegh2lEqBuNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-yCHQlljEoxk/UTmxLAIu82I/AAAAAAAABfE/V98t_fvzU3A/s400/IMG_0188.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-yCHQlljEoxk/UTmxLAIu82I/AAAAAAAABfE/V98t_fvzU3A/s400/IMG_0188.JPG" height="300" width="400" /></p>
 <p>あとは適当に配線を済ませて完成。</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/ggWUTrLiqfiHemBCuSGRWtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-cNmvXPhP7HY/UTmxIIjEpJI/AAAAAAAABe8/ZcM3QwzyF3E/s400/IMG_0189.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-cNmvXPhP7HY/UTmxIIjEpJI/AAAAAAAABe8/ZcM3QwzyF3E/s400/IMG_0189.JPG" height="300" width="400" /></p>
 <p>なんとかスイッチ類やLEDも動いているようです。</p>
 <p><del>光っていないのがあるのは気にしてはいけません</del></p>
 <p>&nbsp;</p>

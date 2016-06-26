@@ -33,17 +33,17 @@ Fullのインストーラのアップロードはクソ回線で時間がかか�
 
 コンソール画面下に接続方法が書いてあるのでFileZilla等で接続して、
 
-<a href="https://picasaweb.google.com/lh/photo/cJ4FcfUHsafex_xRopzzA9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-REemULw2wPE/UuRYOLAL3BI/AAAAAAAAC8Q/fwGycTvCwl8/s400/2014-01-26-093241_1920x1080_scrot.png" height="400" width="357" /></a>
+<img src="https://lh4.googleusercontent.com/-REemULw2wPE/UuRYOLAL3BI/AAAAAAAAC8Q/fwGycTvCwl8/s400/2014-01-26-093241_1920x1080_scrot.png" height="400" width="357" />
 
 imagesフォルダ内にアップロードしましょう。
 
 こんな感じに選択できるようになるので選択して起動、
 
-<a href="https://picasaweb.google.com/lh/photo/Wl5TB0Cbov4EIGMpLiTihtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-5Q-tvcj8F88/UuRZ_VfJ90I/AAAAAAAAC8c/FphIGvW6PrM/s800/image.png" height="396" width="324" /></a>
+<img src="https://lh3.googleusercontent.com/-5Q-tvcj8F88/UuRZ_VfJ90I/AAAAAAAAC8c/FphIGvW6PrM/s800/image.png" height="396" width="324" />
 
 あとはミラーサーバにFTP.JAIST.AC.JPを選択すればいつものようなインストールができるようになります。
 
-<a href="https://picasaweb.google.com/lh/photo/eXrZJgBxizeQTdmd4Pxee9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-zx2Ku3KWfXc/UuRa8u-wylI/AAAAAAAAC8k/rbbLaG17LxI/s400/2014-01-26-041133_1920x1080_scrot.png" height="298" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-zx2Ku3KWfXc/UuRa8u-wylI/AAAAAAAAC8k/rbbLaG17LxI/s400/2014-01-26-041133_1920x1080_scrot.png" height="298" width="400" />
 
 やったね！
 

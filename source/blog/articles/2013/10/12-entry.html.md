@@ -36,15 +36,15 @@ function handler (req, res) {
 ```
 
 <p>さて、これの何が問題かといいますと、例えばTwitterBootstrapを使ったhtmlを表示させようとしてみます。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/6x_lr6ieDuk3lVHgHFOdGdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-ajr-72FwfBM/UlkzRSxfFVI/AAAAAAAACqQ/g4kv_bqTFQg/s400/Screenshot%2520from%25202013-10-10%252022%253A42%253A21.png" height="302" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-ajr-72FwfBM/UlkzRSxfFVI/AAAAAAAACqQ/g4kv_bqTFQg/s400/Screenshot%2520from%25202013-10-10%252022%253A42%253A21.png" height="302" width="400" /></p>
 <p>すると・・・</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/a2WMUL7Hc7UjP973-fFjtdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-ydbOXvhzto8/UlkzMRk6jLI/AAAAAAAACqE/hw8Maybzp-Y/s400/Screenshot%2520from%25202013-10-12%252020%253A24%253A11.png" height="400" width="348" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-ydbOXvhzto8/UlkzMRk6jLI/AAAAAAAACqE/hw8Maybzp-Y/s400/Screenshot%2520from%25202013-10-12%252020%253A24%253A11.png" height="400" width="348" /></p>
 <p>こうなります。</p>
 <p>&nbsp;</p>
 <p>理由は簡単です。このサーバーは「どんなリクエストに対してもindex.htmlを返す」仕様です。</p>
 <p>外部のcssやjs、画像まで。読み込もうとしたファイルはすべてindex.htmlになりますw</p>
-<p><a href="https://picasaweb.google.com/lh/photo/J8JZ3tVC2xQ8zH2yNZvYDNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-SdU-defLp-Y/UlkzMgowgdI/AAAAAAAACqI/vKHAgVNgzds/s400/Screenshot%2520from%25202013-10-12%252020%253A27%253A22.png" height="170" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-SdU-defLp-Y/UlkzMgowgdI/AAAAAAAACqI/vKHAgVNgzds/s400/Screenshot%2520from%25202013-10-12%252020%253A27%253A22.png" height="170" width="400" /></p>
 <p>&nbsp;</p>
 <p>さすがにこれでは使い物にならないので修正しました。</p>
 <p>&nbsp;</p>

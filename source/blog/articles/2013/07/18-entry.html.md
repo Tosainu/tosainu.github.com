@@ -6,13 +6,13 @@ tags: GTAIV
 <p>どーもです。</p>
 <p>&nbsp;</p>
 <p>GTASAに続き、GTAIVをちまちまプレイ中です。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/At0fKS7_BxsCScZm4FIUOdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-p-NeWyacZGw/Uefj9bbK2gI/AAAAAAAACbw/c6t8clUg_Gs/s400/GTAIV%25202013-07-14%252014-45-16-29.png" height="225" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/dJmr8heHcyOPZ7ykAGjG69MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-3GD_PD_i1NI/UefkHGcEeYI/AAAAAAAACb4/2tA-zLF9crs/s400/GTAIV%25202013-07-18%252021-17-04-89.png" height="225" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-p-NeWyacZGw/Uefj9bbK2gI/AAAAAAAACbw/c6t8clUg_Gs/s400/GTAIV%25202013-07-14%252014-45-16-29.png" height="225" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-3GD_PD_i1NI/UefkHGcEeYI/AAAAAAAACb4/2tA-zLF9crs/s400/GTAIV%25202013-07-18%252021-17-04-89.png" height="225" width="400" /></p>
 <p>さっき銀行強盗ミッションをやっとクリアしたところです。</p>
 <p>いやぁ、大変だった。</p>
 <p>&nbsp;</p>
 <p>さて、僕は安さにつられてGTAIVをSteamで買いました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/8tBq7meE5CyQ3jV5z6Ss19MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-GUBoxVbBFWM/UefmqA7CXtI/AAAAAAAACcI/bqNDnL6Ao1U/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25201.png" height="222" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-GUBoxVbBFWM/UefmqA7CXtI/AAAAAAAACcI/bqNDnL6Ao1U/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25201.png" height="222" width="400" /></p>
 <p>ですが、Mod追加等でちょっと戸惑ったので、メモしておきます。</p>
 <p>&nbsp;</p>
 <h3>まず・・・</h3>
@@ -30,7 +30,7 @@ tags: GTAIV
 <p>&nbsp;</p>
 <p>解凍した中にある<span style="color:red;">xlive.dll</span>をGTAIVのインストールフォルダに突っ込みます。</p>
 <p>ほかのファイルは入れてはいけません。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/RN5VBOKAHH0ob1tqEwFw09MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-buqZd-meCZo/Uefr8Ww8lrI/AAAAAAAACcc/sdovdQIRa5s/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25202.png" height="231" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-buqZd-meCZo/Uefr8Ww8lrI/AAAAAAAACcc/sdovdQIRa5s/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25202.png" height="231" width="400" /></p>
 <p>GTAIVのインストール先ですが、Steamをインストールしたフォルダの中にあります。</p>
 <p>インストール先を自分で変えていなければここ↓にあるはずです。</p>
 <p>C:\Program Files (x86)\Steam\SteamApps\common\Grand Theft Auto IV\GTAIV</p>
@@ -59,9 +59,9 @@ tags: GTAIV
 <p>64bit：HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Rockstar Games\Grand Theft Auto IV</p>
 <p>32bit：HKEY_LOCAL_MACHINE\SOFTWARE\Rockstar Games\Grand Theft Auto IV</p>
 <p>を開き、</p>
-<p><a href="https://picasaweb.google.com/lh/photo/c-nPEejzVQnWH4zhUNcHNdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-bG0FtmtqrM4/UefxH151cdI/AAAAAAAACc0/ckxmefW4zP4/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25203.png" height="237" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-bG0FtmtqrM4/UefxH151cdI/AAAAAAAACc0/ckxmefW4zP4/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25203.png" height="237" width="400" /></p>
 <p>右クリックで新規→文字列値</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Mf-2S2CJR4dgFuNqbqcEv9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-qyOLGCK_j0c/UefxH1YsnoI/AAAAAAAACcw/f1vI2I2a1Eo/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25204.png" height="237" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-qyOLGCK_j0c/UefxH1YsnoI/AAAAAAAACcw/f1vI2I2a1Eo/s400/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25204.png" height="237" width="400" /></p>
 <p>名前をINSTALL_LANG、値を1041にします。</p>
 <p>&nbsp;</p>
 <p>これで文字化けは解消されたはずです。</p>
@@ -72,7 +72,7 @@ tags: GTAIV
 <p>&nbsp;</p>
 <h3>Speedometer IVの導入</h3>
 <p>スピードメーターです。なぜか入れたくなるんですよねぇ・・・</p>
-<p><a href="https://picasaweb.google.com/lh/photo/BIFyjmKrhES-zrOBtOrnfNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-9tx7Diw9x6c/Uefz9rriQ8I/AAAAAAAACdE/FYfWmaHm9O0/s400/GTAIV%25202013-07-14%252014-45-16-29.png" height="271" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-9tx7Diw9x6c/Uefz9rriQ8I/AAAAAAAACdE/FYfWmaHm9O0/s400/GTAIV%25202013-07-14%252014-45-16-29.png" height="271" width="400" /></p>
 <p>&nbsp;</p>
 <p>これと</p>
 <p><a href="http://www.gtaforums.com/index.php?showtopic=420021">GTAForums.com -> [WIP|SCR|IV] Speedometer IV</a></p>
@@ -95,6 +95,6 @@ tags: GTAIV
 <p>&nbsp;</p>
 <p>それにしてもMod入れにくくなりましたね。</p>
 <p>一度試しにレミリアスキンModを入れてみましたが・・・面倒すぎです。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/hJoolry-U673on9N5Q2579MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-q2gKPKbzQzU/Uef4akqYT0I/AAAAAAAACdU/sLVoVKKu8ZU/s400/GTAIV%25202013-05-18%252012-35-45-02.png" height="225" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-q2gKPKbzQzU/Uef4akqYT0I/AAAAAAAACdU/sLVoVKKu8ZU/s400/GTAIV%25202013-05-18%252012-35-45-02.png" height="225" width="400" /></p>
 <p>&nbsp;</p>
 <p>ではでは～</p>

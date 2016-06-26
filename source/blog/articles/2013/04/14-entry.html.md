@@ -7,7 +7,7 @@ tags: VAIO-Z2
 <p>&nbsp;</p>
 <p>最近、ウチのZたんが常に軽く離陸気味（離陸前のウォーミングアップ？）でした。</p>
 <p>おそらくフィルターとかが詰まっているのだろうってことで、</p>
-<p><a href="https://picasaweb.google.com/lh/photo/hylYBgNT1tclmug810GjTtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-Lmz0hOjpYig/UWocmtqOY5I/AAAAAAAAB7w/xY03rzoL5zI/s400/IMG_0374.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-Lmz0hOjpYig/UWocmtqOY5I/AAAAAAAAB7w/xY03rzoL5zI/s400/IMG_0374.JPG" height="300" width="400" /></p>
 <p>分解しました。</p>
 <p>&nbsp;</p>
 <p>ちゃんと分解できるマシンはいいですね。</p>
@@ -19,12 +19,12 @@ tags: VAIO-Z2
 <p>「裏のネジをすべて外したら、D-Sub15pinの部分を軽く持ち上げ押し込む」</p>
 <p>と簡単に開きます。</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/JyQKQxsp4ArVwB3KyVqJS9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-rdSe5jFwQ3Y/UWoclIaA4GI/AAAAAAAAB7g/fP8VcgSOr10/s400/IMG_0375.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-rdSe5jFwQ3Y/UWoclIaA4GI/AAAAAAAAB7g/fP8VcgSOr10/s400/IMG_0375.JPG" height="300" width="400" /></p>
 <p>うわーっ</p>
 <p>汚れていますね・・・</p>
 <p>写真は無いですが、フィルターは裏蓋についています。こちらも少し詰まっていたのでエアダスターで吹き飛ばしました。</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/X8_dPLAIV3v2c2iJatbfONMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-7I6ToYsW86w/UWoclLdse2I/AAAAAAAAB7o/rdkQkHUKRxM/s400/IMG_0376.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-7I6ToYsW86w/UWoclLdse2I/AAAAAAAAB7o/rdkQkHUKRxM/s400/IMG_0376.JPG" height="300" width="400" /></p>
 <p>Zたんの目玉機能でもあるSSDを発見。</p>
 <p>うわ・・・</p>
 <p>サムチョンだらけですね。</p>

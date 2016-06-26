@@ -4,10 +4,10 @@ date: 2013-05-15 18:37:39 JST
 tags: Diary
 ---
 <p><span style="font-size:36px;">キタ———（゜∀゜）———— ！！</span></p>
-<p><a href="https://picasaweb.google.com/lh/photo/91aT9PO-WBvI_V4FNrx91NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-Seu9FI9RV8k/UZNSlqj44DI/AAAAAAAACHg/dOBYSgpgo0Q/s400/IMG_0493.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-Seu9FI9RV8k/UZNSlqj44DI/AAAAAAAACHg/dOBYSgpgo0Q/s400/IMG_0493.JPG" height="300" width="400" /></p>
 <p>GW前から修理に出していたWimaxルータ「MobileCube」。</p>
 <p>今日やっと戻って来ました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Hm0nX4Pm5qUyfolkAAkASdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-4-3wrJATZSI/UZNSj_2c_YI/AAAAAAAACHY/YqEZNiD0HOM/s400/IMG_0494.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-4-3wrJATZSI/UZNSj_2c_YI/AAAAAAAACHY/YqEZNiD0HOM/s400/IMG_0494.JPG" height="300" width="400" /></p>
 <p>メーカーがちゃんと故障を認めたらしく、修理に掛かった費用は0円。完全な新品が送られてきました。</p>
 <p>&nbsp;</p>
 <p><span style="font-size:36px;">ぃよっっっっしゃァァァァ！</span></p>

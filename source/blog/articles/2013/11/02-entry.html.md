@@ -9,7 +9,7 @@ tags: JavaScript, Raspberry Pi
 
 製作中だったラジコン、ついに完成しました！！！！
 
-<a href="https://picasaweb.google.com/lh/photo/Y53bBmekN-TJaXenzUaWzNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-dJAeA68A4E8/UnUIKJYYchI/AAAAAAAACr0/VsvzuG6xHnc/s400/IMG_1246.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-dJAeA68A4E8/UnUIKJYYchI/AAAAAAAACr0/VsvzuG6xHnc/s400/IMG_1246.JPG" height="300" width="400" />
 
 今日は中の構造及びどのように制御しているかの解説をしようと思います。
 
@@ -17,13 +17,13 @@ tags: JavaScript, Raspberry Pi
 
 ## 接続しているデバイス類のこと
 
-<a href="https://picasaweb.google.com/lh/photo/e9HzAlPqFelkLk_RI9cn7tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-v53_m1ZLoPE/UnUImvwiMkI/AAAAAAAACsE/MMWzG4WSLmI/s400/IMG_1243.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-v53_m1ZLoPE/UnUImvwiMkI/AAAAAAAACsE/MMWzG4WSLmI/s400/IMG_1243.JPG" height="300" width="400" />
 
 まず、今回の主役「RaspberryPi」です。コントロールページのサーバー、コントロールプログラム、Webカメラのライブ配信まですべてこれで行っています。
 
 そして、IOピンに接続された基板がモータドライバ回路になります。
 
-<a href="https://picasaweb.google.com/lh/photo/FPHL50ChnGB-QGTKhN_2QNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-RodKAUXIDN8/UnUIlCmVHgI/AAAAAAAACsA/u3wNSGU2mZ4/s400/IMG_1236.JPG" height="300" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-RodKAUXIDN8/UnUIlCmVHgI/AAAAAAAACsA/u3wNSGU2mZ4/s400/IMG_1236.JPG" height="300" width="400" />
 
 RPiから給電できる電力には限界があるため、TA7291Pを2つ使用しモータドライバ回路を作成しました。
 
@@ -31,7 +31,7 @@ RPiから給電できる電力には限界があるため、TA7291Pを2つ使用
 
 横から出ているケーブルは電源供給用のUSBケーブルになります。
 
-<a href="https://picasaweb.google.com/lh/photo/zep7MGdej9S0dTY9M1NdkdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-ZdDilnVfoLs/UnUIo1TYDlI/AAAAAAAACsM/OEdILSjrRz0/s400/IMG_1241.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-ZdDilnVfoLs/UnUIo1TYDlI/AAAAAAAACsM/OEdILSjrRz0/s400/IMG_1241.JPG" height="300" width="400" />
 
 本日の事故によりメキョってしまいましたが、このWebカメラを搭載しています。
 

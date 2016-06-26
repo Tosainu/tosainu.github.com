@@ -361,7 +361,7 @@ $ sudo reboot
 
 Sign Inボタン左側の歯車アイコンから、"Cinnamon"を選択してログインします。
 
-<a href="https://picasaweb.google.com/lh/photo/EX__YrVzuQPm7HsHrHURotMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-5i55N68kJc8/UnxCdZtgN9I/AAAAAAAACss/djZT31p2mdw/s400/IMG_1258.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-5i55N68kJc8/UnxCdZtgN9I/AAAAAAAACss/djZT31p2mdw/s400/IMG_1258.JPG" height="300" width="400" />
 
 &nbsp;
 
@@ -386,7 +386,7 @@ $ fc-cache -vr
 
 あとはWMの設定等でフォントを設定してください。参考までに、僕はこのように設定しました。
 
-<a href="https://picasaweb.google.com/lh/photo/ZyRzieICHb1_2wN-GOgTY9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-MvMSiayJbe0/UnxuQ80kJNI/AAAAAAAACtE/k-zp1JtsTUo/s400/Screenshot%2520from%25202013-11-08%252013%253A50%253A59.png" height="201" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-MvMSiayJbe0/UnxuQ80kJNI/AAAAAAAACtE/k-zp1JtsTUo/s400/Screenshot%2520from%25202013-11-08%252013%253A50%253A59.png" height="201" width="400" />
 
 &nbsp;
 
@@ -452,9 +452,9 @@ uimの設定画面を開き、
 $ uim-pref-gtk3
 ```
 
-<a href="https://picasaweb.google.com/lh/photo/divHRbAB3Cq9rcoGSb5kltMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-WgcwXU-Udhg/UnyAz8swZ9I/AAAAAAAACtU/71g0Lp_D_e8/s400/Screenshot%2520from%25202013-11-08%252015%253A07%253A06.png" height="400" width="358" /></a>
+<img src="https://lh4.googleusercontent.com/-WgcwXU-Udhg/UnyAz8swZ9I/AAAAAAAACtU/71g0Lp_D_e8/s400/Screenshot%2520from%25202013-11-08%252015%253A07%253A06.png" height="400" width="358" />
 
-<a href="https://picasaweb.google.com/lh/photo/yKwWQHFP44CxEUCDeoPqHNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-dmY0qm5-fGc/UnyAzl9z8AI/AAAAAAAACtc/fWflQhMXYqo/s400/Screenshot%2520from%25202013-11-08%252015%253A11%253A12.png" height="310" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-dmY0qm5-fGc/UnyAzl9z8AI/AAAAAAAACtc/fWflQhMXYqo/s400/Screenshot%2520from%25202013-11-08%252015%253A11%253A12.png" height="310" width="400" />
 
 という感じに設定し、もう一度ログインすれば・・・・・・・・きっと・・・・・・・・・・
 
@@ -529,7 +529,7 @@ Menu→Sound & Video→GNOME Mplayerから起動、
 
 Edit→Preferrencesから設定画面を開いて、MPlayerタブの"MPlayer Default Optical Device"に"/dev/sr0"(マシンのデフォルトの光学ドライブのパス)を設定することで、外部のコーデック等のインストールも必要なくDVDの再生ができることを確認しました。
 
-<a href="https://picasaweb.google.com/lh/photo/AJCVbK2aagTumQX2mdzzqNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-WaLHa0ekjbU/UnxCWdhvWcI/AAAAAAAACsk/-vM7bqf21ME/s400/Screenshot%2520from%25202013-11-08%252010_40_14.png" height="400" width="368" /></a> <a href="https://picasaweb.google.com/lh/photo/at4zIocEwMDMGGn63Nl6dNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-U01WEHhdbfk/UnxCgaN89II/AAAAAAAACs0/YJjjJQ_8NDU/s400/IMG_1260.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-U01WEHhdbfk/UnxCgaN89II/AAAAAAAACs0/YJjjJQ_8NDU/s400/IMG_1260.JPG" height="300" width="400" />
 
 &nbsp;
 

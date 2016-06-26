@@ -9,7 +9,7 @@ tags: WalkmanZ
 
 WalkmanZのカテゴリ、初の記事になります。
 
-<a href="https://picasaweb.google.com/lh/photo/sXpk_Ycdm-rCverU55AuAtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-3t3uxNgx51w/UtNSsNHt6BI/AAAAAAAAC44/WuIzydt9hl4/s400/Screenshot%2520from%25202014-01-13%252011%253A40%253A10.png" height="220" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-3t3uxNgx51w/UtNSsNHt6BI/AAAAAAAAC44/WuIzydt9hl4/s400/Screenshot%2520from%25202014-01-13%252011%253A40%253A10.png" height="220" width="400" />
 
 カテゴリを作ったのはかなり前ですが・・・
 
@@ -40,29 +40,29 @@ READMORE
 
 WMポート上部の細長い蓋を開けるとネジが出てきます。
 
-<a href="https://picasaweb.google.com/lh/photo/JfdVBW2iKEqzpX1B936eFNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-ng0yBWe1-WE/UtNVBbpYwPI/AAAAAAAAC5E/3Q0NdLbvdKE/s400/IMG_1466.JPG" height="400" width="225" /></a>
+<img src="https://lh5.googleusercontent.com/-ng0yBWe1-WE/UtNVBbpYwPI/AAAAAAAAC5E/3Q0NdLbvdKE/s400/IMG_1466.JPG" height="400" width="225" />
 
 このネジを外し、裏蓋を持ち上げるようにすると外れます。
 
 ただし、電源ボタン側の裏蓋は両面テープで固定されているようで、少し力を入れないと外れません。
 
-<a href="https://picasaweb.google.com/lh/photo/20z34HY1ITfuN1ky4IQqdtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-D3pgUcHwQfU/UtNVIfO1OqI/AAAAAAAAC5M/U3FIVB-GWCM/s400/IMG_1467.JPG" height="225" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-D3pgUcHwQfU/UtNVIfO1OqI/AAAAAAAAC5M/U3FIVB-GWCM/s400/IMG_1467.JPG" height="225" width="400" />
 
 ホコリがヤバイです。
 
-<a href="https://picasaweb.google.com/lh/photo/YLL0NvHvlZD1S_IJYcRU_9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-bfTJELLtfqg/UtNVLg7mwPI/AAAAAAAAC5U/yQVrzyR3HAA/s400/IMG_1468.JPG" height="225" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-bfTJELLtfqg/UtNVLg7mwPI/AAAAAAAAC5U/yQVrzyR3HAA/s400/IMG_1468.JPG" height="225" width="400" />
 
 電源ボタン付近、とても大きなホコリが出てきました。
 
 反応の悪さの原因はこれでしょう。
 
-<a href="https://picasaweb.google.com/lh/photo/AUS5jTy4z7eXVPXCFb2DqtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-daQtpNGgy6A/UtNVS4fNPgI/AAAAAAAAC5c/XPqRT37-lro/s400/IMG_1470.JPG" height="400" width="225" /></a>
+<img src="https://lh4.googleusercontent.com/-daQtpNGgy6A/UtNVS4fNPgI/AAAAAAAAC5c/XPqRT37-lro/s400/IMG_1470.JPG" height="400" width="225" />
 
 ## 本体内部でネジ発見！？
 
 ホコリをエアダスターで吹いてると・・・
 
-<a href="https://picasaweb.google.com/lh/photo/IInrIrS6LpLVgCa7lDCmQNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-_TPHMtiKDLs/UtNVb2n1NbI/AAAAAAAAC5k/9IcvNjdUwK8/s400/IMG_1473.JPG" height="225" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-_TPHMtiKDLs/UtNVb2n1NbI/AAAAAAAAC5k/9IcvNjdUwK8/s400/IMG_1473.JPG" height="225" width="400" />
 
 <span class="fontsize7">！！！？？？</span>
 
@@ -70,13 +70,13 @@ WMポート上部の細長い蓋を開けるとネジが出てきます。
 
 よく見ると、どうやらこれはイヤホンジャックを固定していたネジのようです。
 
-<a href="https://picasaweb.google.com/lh/photo/7uc-X8rs0hN9oiEBHApZRdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-pFEt9OsAoks/UtNVfzdSAPI/AAAAAAAAC5s/KhCUsJ_Pepw/s400/IMG_1474.JPG" height="225" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-pFEt9OsAoks/UtNVfzdSAPI/AAAAAAAAC5s/KhCUsJ_Pepw/s400/IMG_1474.JPG" height="225" width="400" />
 
 イヤホンジャックガタつき、どう考えてもこれですね・・・
 
 ちゃんと元の場所に取り付けます。
 
-<a href="https://picasaweb.google.com/lh/photo/a0kIGmleaDzZtr3V6nzOtNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-rg9iYyK1Img/UtNVlTPw8kI/AAAAAAAAC50/GsYYwPX5lE0/s400/IMG_1479.JPG" height="400" width="225" /></a>
+<img src="https://lh5.googleusercontent.com/-rg9iYyK1Img/UtNVlTPw8kI/AAAAAAAAC50/GsYYwPX5lE0/s400/IMG_1479.JPG" height="400" width="225" />
 
 そして、ジャック内の汚れも、ティッシュで作ったこよりに接点復活剤を吹いたもので掃除しておきます。
 
@@ -93,7 +93,7 @@ WMポート上部の細長い蓋を開けるとネジが出てきます。
 
 こんな感じにスピーカの線を下に折り込みました。
 
-<a href="https://picasaweb.google.com/lh/photo/cGWaajapcOv96t5jnNOYz9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-yqDj5OQDsmw/UtNVqhKCIdI/AAAAAAAAC58/wojVqrPU-lQ/s400/IMG_1480.JPG" height="225" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-yqDj5OQDsmw/UtNVqhKCIdI/AAAAAAAAC58/wojVqrPU-lQ/s400/IMG_1480.JPG" height="225" width="400" />
 
 外さなかった理由は、スピーカを固定するネジ穴が基板上のSONYロゴ右上のネジ穴と共有しており、高さが合わなくなってしまうためです。
 
@@ -117,6 +117,6 @@ WMポート上部の細長い蓋を開けるとネジが出てきます。
 
 それにしても・・・
 
-<a href="https://picasaweb.google.com/lh/photo/BlFxKAg5bzy52XCMpmRUstMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-rKU3h2UIIFo/UtNVuHBfVrI/AAAAAAAAC6E/QRbbNYdizhM/s400/IMG_1462.JPG" height="225" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-rKU3h2UIIFo/UtNVuHBfVrI/AAAAAAAAC6E/QRbbNYdizhM/s400/IMG_1462.JPG" height="225" width="400" />
 
 キズ増えたな・・・(´・ω・｀)

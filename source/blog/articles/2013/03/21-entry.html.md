@@ -10,7 +10,7 @@ tags: Diary
 <p>うん、何がしたかったんだろうね。</p>
 <p>&nbsp;</p>
 <p>そして、うｐ早々</p>
-<p><a href="https://picasaweb.google.com/lh/photo/OIp8ToHS_hbjzp3gfhYOjdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-xwYy-MStC6Y/UUpZw5jzC8I/AAAAAAAABxI/uVdTR__RKrU/s800/nico.png" height="140" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-xwYy-MStC6Y/UUpZw5jzC8I/AAAAAAAABxI/uVdTR__RKrU/s800/nico.png" height="140" width="400" /></p>
 <p>このタグ付いちゃったよww</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

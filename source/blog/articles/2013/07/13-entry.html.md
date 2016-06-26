@@ -6,8 +6,8 @@ tags: Linux,Raspberry Pi
 <p>どーもです〜</p>
 <p>&nbsp;</p>
 <p>1月早い誕プレであの「RaspberryPi」と「東芝製SDHCカード」貰いました！</p>
-<p><a href="https://picasaweb.google.com/lh/photo/DzBXY88WASdxJgAfZ1Yu5tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-HHT7NI4WGGE/UeCtax5hf2I/AAAAAAAACbU/13uyZRUMcp8/s400/IMG_0815.JPG" height="300" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/6DETuZ4K0E2XUFNwJVqvudMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-FIgxRzTCkyo/UeCtZV9LAVI/AAAAAAAACbU/mIKvYccv3JY/s400/IMG_0816.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-HHT7NI4WGGE/UeCtax5hf2I/AAAAAAAACbU/13uyZRUMcp8/s400/IMG_0815.JPG" height="300" width="400" /></p>
+<p><img src="https://lh5.googleusercontent.com/-FIgxRzTCkyo/UeCtZV9LAVI/AAAAAAAACbU/mIKvYccv3JY/s400/IMG_0816.JPG" height="300" width="400" /></p>
 <p>本当にありがとう御座います！！</p>
 <p>&nbsp;</p>
 <p>長くなるのと画像が20枚近くあるので、記事の続きは↓からどうぞ。</p>
@@ -18,47 +18,47 @@ READMORE
 <p>&nbsp;</p>
 <p>RaspberryPiはピンク色のポリプロピレンの箱に入っていました。</p>
 <p>固定されているテープを剥がし箱を開くと、帯電袋に入った本体のほか、Quick start guide、Regulatory ompliance and Safety Information(規制準拠と安全性に関する情報)が入っていました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/utDWJxYd5jm0q1mylaxR_NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-3VTCwWYF1Sk/UeCtYTL4QhI/AAAAAAAACbU/qOnSf6d5EBs/s400/IMG_0817.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-3VTCwWYF1Sk/UeCtYTL4QhI/AAAAAAAACbU/qOnSf6d5EBs/s400/IMG_0817.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>本体を取り出してみました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/w2WXTgONYyUsuZNQhC8DqtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-nOTrIeURHO0/UeCtwUSzukI/AAAAAAAACbU/f-944bwdEzQ/s400/IMG_0818.JPG" height="300" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/B1BzTpurIKIc5VA6xIQKc9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-mz-rLpA_a18/UeCt0puEYoI/AAAAAAAACbU/tcD6VHn6Glk/s400/IMG_0819.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-nOTrIeURHO0/UeCtwUSzukI/AAAAAAAACbU/f-944bwdEzQ/s400/IMG_0818.JPG" height="300" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-mz-rLpA_a18/UeCt0puEYoI/AAAAAAAACbU/tcD6VHn6Glk/s400/IMG_0819.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>SDカードスロットは基板裏面にありました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/NHgMLGc2vr4c1h_9PPbA1dMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-rfE9IWKd0qw/UeCt19AamTI/AAAAAAAACbU/UBNs4Gv2AN8/s400/IMG_0820.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-rfE9IWKd0qw/UeCt19AamTI/AAAAAAAACbU/UBNs4Gv2AN8/s400/IMG_0820.JPG" height="300" width="400" /></p>
 <p>結構キツ目のスロットなのでSD落下とかはないかもしれませんが、挿入確認用と思われる端子が露出していて少し怖いです。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Pcer8Fw-d5dg59Un17n73tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-IekZaS9xUxw/UeCu7CFTDHI/AAAAAAAACbU/IeJxvlediM4/s400/IMG_0828.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-IekZaS9xUxw/UeCu7CFTDHI/AAAAAAAACbU/IeJxvlediM4/s400/IMG_0828.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>電源用のmicroB端子</p>
-<p><a href="https://picasaweb.google.com/lh/photo/DWFmC9mPybw8gl7Mt6F4fdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-DZjHAcAeSBo/UeCuG3sQzOI/AAAAAAAACbU/lkf1N4tmDMg/s400/IMG_0821.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-DZjHAcAeSBo/UeCuG3sQzOI/AAAAAAAACbU/lkf1N4tmDMg/s400/IMG_0821.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>HDMI端子</p>
-<p><a href="https://picasaweb.google.com/lh/photo/ArWqLeujlnZRP3KDvZAexNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-N6Y6_Zej0k4/UeCuKnaCHOI/AAAAAAAACbU/F4f7qAbu9PQ/s400/IMG_0822.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-N6Y6_Zej0k4/UeCuKnaCHOI/AAAAAAAACbU/F4f7qAbu9PQ/s400/IMG_0822.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>EthernetとUSB</p>
-<p><a href="https://picasaweb.google.com/lh/photo/fRD47i9LTuQLxhDASW8hNdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-JsYKsBc3d68/UeCuLWRtIGI/AAAAAAAACbU/0OTWxHEJEC0/s400/IMG_0823.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-JsYKsBc3d68/UeCuLWRtIGI/AAAAAAAACbU/0OTWxHEJEC0/s400/IMG_0823.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>アナログ音声出力にコンポジット映像出力端子もあります。懐かしいです。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/ZLg-kbl8TQX_anafreGxMtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-XCRl0zeOhLU/UeCuaOeBiHI/AAAAAAAACbU/6h6A6TvCCDQ/s400/IMG_0824.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-XCRl0zeOhLU/UeCuaOeBiHI/AAAAAAAACbU/6h6A6TvCCDQ/s400/IMG_0824.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>たくさんのGPIOピンもついています。調べてみる限り、普通にマイコンボードのような使い方もできそうですね。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/ZvTCKtAGhFcTk_LtO117bNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-OVOvE_AfCTc/UeCuhAacIdI/AAAAAAAACbU/g7V_HEyScYk/s400/IMG_0825.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-OVOvE_AfCTc/UeCuhAacIdI/AAAAAAAACbU/g7V_HEyScYk/s400/IMG_0825.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>SDカードも開けてみました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/EwCYshEbEk1Zq3nFqOmWwNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-4BCDOkCrli4/UeCuhPs_sjI/AAAAAAAACbU/FBK7AttvqVA/s400/IMG_0826.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-4BCDOkCrli4/UeCuhPs_sjI/AAAAAAAACbU/FBK7AttvqVA/s400/IMG_0826.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>UHS-I Class1対応です。ウチには対応機器ないのでちょっともったいないですね。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/FGi2DbKnxQNJlaabefPZaNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-fNJwFRLMigg/UeCuunwOJZI/AAAAAAAACbU/T0JMch_76v8/s400/IMG_0827.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-fNJwFRLMigg/UeCuunwOJZI/AAAAAAAACbU/T0JMch_76v8/s400/IMG_0827.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>RaspberryPiのケースにSDカードを固定する場所がありました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/xp8SXiIc2TiuBOsCaThGKNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-V3DeMwCUVt4/UeCu5XNVe-I/AAAAAAAACbU/yHWJPK1wcHQ/s400/IMG_0829.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-V3DeMwCUVt4/UeCu5XNVe-I/AAAAAAAACbU/yHWJPK1wcHQ/s400/IMG_0829.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>本体も取り付けられました。でも割れてた・・・</p>
-<p><a href="https://picasaweb.google.com/lh/photo/TagiAStTObBgWVarZxWy7tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-8sQfi0vc7ms/UeCvQeTWO5I/AAAAAAAACbU/BW3CT27J4ag/s400/IMG_0831.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-8sQfi0vc7ms/UeCvQeTWO5I/AAAAAAAACbU/BW3CT27J4ag/s400/IMG_0831.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>では早速動かしてみようと思います。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/ywtpZC4yeVjoFlAuvGHU7tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-PU4_Awze-ts/UeCvOzNcpaI/AAAAAAAACbU/bA7neZaK44w/s400/IMG_0832.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-PU4_Awze-ts/UeCvOzNcpaI/AAAAAAAACbU/bA7neZaK44w/s400/IMG_0832.JPG" height="300" width="400" /></p>
 <p><del>Arch Linux焼いて添い寝・・・ハァハァ///</del>とりあえずRaspbian（RaspberryPi向けにカスタムされたDebian）を動かしてみます。</p>
 <p>ddコマンドもないWindowsは用なしです。Windowsでも方法はありますが、それをやる気はありません。</p>
 <p>素晴らしいLinuxやUnix系のOSが入ってるPCで作業します。</p>
@@ -106,7 +106,7 @@ $
 <p>&nbsp;</p>
 <p>SDを取り出してRaspberryPiに取り付け。microBから給電すると起動します。</p>
 <p>HDMIでつないだディスプレイにはこんな画面が出て来ました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/cu44sgntV2XP2uqjGFuBh9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-b5YB1VGlZck/UeCvpeWBQmI/AAAAAAAACbU/7vCBS5QzMcM/s400/IMG_0833.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-b5YB1VGlZck/UeCvpeWBQmI/AAAAAAAACbU/7vCBS5QzMcM/s400/IMG_0833.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>今回は動作確認なので、適当に初期設定を済ましてしまいましょう。</p>
 <p>まず、1 Expand Filesystemを実行します。今の状態ではイメージが書き込まれた部分しか使うことができないので、利用可能な領域までパーティションを拡大します。</p>
@@ -130,10 +130,10 @@ $ sudo raspi-config
 <p>&nbsp;</p>
 <p>デスクトップが表示されました！</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/qjcpmVSEh5LxrH7uA7l8CdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-ZdYA6f-WruQ/UeCvnivBidI/AAAAAAAACbU/EdEQ7R3oJBs/s400/IMG_0835.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-ZdYA6f-WruQ/UeCvnivBidI/AAAAAAAACbU/EdEQ7R3oJBs/s400/IMG_0835.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>ちなみにcpuinfoとか</p>
-<p><a href="https://picasaweb.google.com/lh/photo/YtdD66CsB-oFOsN_roA8x9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-J9xdIct9snk/UeCvnkyatpI/AAAAAAAACbU/lmA-kAuOlcY/s400/IMG_0834.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-J9xdIct9snk/UeCvnkyatpI/AAAAAAAACbU/lmA-kAuOlcY/s400/IMG_0834.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>さて、これからどうしましょうね。</p>
 <p><a href="http://xe.bz/">某改造アホさん</a>がマザーボードやNAS走らせてますが、それと同じようなことができたらなぁと思います。</p>

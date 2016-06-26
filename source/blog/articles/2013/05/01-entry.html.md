@@ -6,12 +6,12 @@ tags: i7-3930k_PC
 <p>どーもです～</p>
 <p>&nbsp;</p>
 <p>2013年4月のアクセス数ですが、</p>
-<p><a href="https://picasaweb.google.com/lh/photo/V3LnPVrXtFbGg7CINaiESdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-3KVTZdreAsw/UYDlF8-v52I/AAAAAAAAB_w/yDVPKn-nnig/s400/201304.png" height="155" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-3KVTZdreAsw/UYDlF8-v52I/AAAAAAAAB_w/yDVPKn-nnig/s400/201304.png" height="155" width="400" /></p>
 <p><span style="font-size:36px;">10,000超えたwww</span></p>
 <p>&nbsp;</p>
 <p>とはいうものの、全然嬉しくないですね。</p>
 <p>記事別のアクセス数をみてみると、</p>
-<p><a href="https://picasaweb.google.com/lh/photo/AQHKsXYQby_qVod05WwbG9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-JwpAAe1U0S4/UYDlcMPP2qI/AAAAAAAACAA/jFicZibNMNo/s400/content.png" height="400" width="367" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-JwpAAe1U0S4/UYDlcMPP2qI/AAAAAAAACAA/jFicZibNMNo/s400/content.png" height="400" width="367" /></p>
 <p><a href="http://tosainu.wktk.so/view/266">スパムが来ている記事</a>のアクセス数が<span style="font-size:24px;">桁違いに多い</span></p>
 <p>&nbsp;</p>
 <p>スパム対策をしたものの、相変わらず当サイトへのアクセスは続いているようです。</p>
@@ -49,19 +49,19 @@ tags: i7-3930k_PC
 <p>どんな盛り方を設定するものかわかったものの、<span style="color:red;">VID</span>がどのくらいか調べないと盛る量の検討がつきません。</p>
 <p>調べると、<a href="http://www.hwinfo.com/download64.html">「HWINFO64」</a>が便利そうです。</p>
 <p>ダウンロードし、Sensors-onlyのチェックを入れて起動するとこんなウィンドウが出てきます。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/bviuqc5Dq0oHrPvuV9_Zl9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-ek8rXrXmfmI/UYDlGJF-0BI/AAAAAAAAB_0/s6IrGbHaNfA/s400/hwinfo64.png" height="400" width="279" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-ek8rXrXmfmI/UYDlGJF-0BI/AAAAAAAAB_0/s6IrGbHaNfA/s400/hwinfo64.png" height="400" width="279" /></p>
 <p>Core #x VID ・・・のところがコアごとのVIDです。</p>
 <p>BCLK100MHZ、TurboRatio45の状態でOCCTをかけるとVIDは1.382[V]まで上昇しました。</p>
 <p>ということで今回は余裕を持たせ、VcoreをOffsetMode:+0.020[V]にしてみました。</p>
 <p>&nbsp;</p>
 <h3>結果</h3>
 <p><u>Prime95をかけてみたところ</u></p>
-<p><a href="https://picasaweb.google.com/lh/photo/7F7W0MGy-vBCLP4wX0G6p9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-1MeUWNSrcCA/UYDynBslRdI/AAAAAAAACAQ/6UjmydXxtAs/s400/full.png" height="400" width="313" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-1MeUWNSrcCA/UYDynBslRdI/AAAAAAAACAQ/6UjmydXxtAs/s400/full.png" height="400" width="313" /></p>
 <p>4500MHzでのVIDである1.382[V]に確かに約0.02[V]盛られています。</p>
 <p>Maxが1.424[V]になっていますが、おそらくLLCが働いたのでしょう。</p>
 <p>&nbsp;</p>
 <p><u>アイドル</u></p>
-<p><a href="https://picasaweb.google.com/lh/photo/k7gbRFPOaIEL1EVNXcw_ctMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-81aFihsGa7I/UYDyna7I81I/AAAAAAAACAU/Kd711y6vgYo/s400/idle.png" height="400" width="313" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-81aFihsGa7I/UYDyna7I81I/AAAAAAAACAU/Kd711y6vgYo/s400/idle.png" height="400" width="313" /></p>
 <p><span style="font-size:24px;">キター</span></p>
 <p>ちゃんと電圧が下がっています！</p>
 <p>また、アイドルでのCPU温度は5度くらい下がりました♪</p>

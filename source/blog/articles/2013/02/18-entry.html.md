@@ -24,19 +24,19 @@ tags: Diary
 <p><a href="http://www.million-dollar-pc.com/">Million Dollar PC</a>に載せるようなものを目指してはないですが、ただ組んだだけってのは自作erとは呼べないと思ってます。</p>
 <p>とりあえず、ファンの載せ替えとファンコン導入を計画しています。</p>
 <p>ファンコンは既に購入済です。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/oDAi4LRc22zjOwEynvBGBdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-Au87XeUcfUc/USD_xec8BqI/AAAAAAAABF0/yuYr6bfHTo4/s400/DSC07071.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-Au87XeUcfUc/USD_xec8BqI/AAAAAAAABF0/yuYr6bfHTo4/s400/DSC07071.JPG" height="300" width="400" /></p>
 <p><span style="font-size:24px;">風マスターPRO ACE</span>です。</p>
 <p>もう生産中止となっていて、探すのが大変でしたが、</p>
 <p>1's PCのアウトレットで2900円という価格で購入できました。</p>
 <p>ただの風マスターPROを買うよりも安いですね。ラッキー</p>
 <p>&nbsp;</p>
 <h3>Arduino UNOを拾った（笑）</h3>
-<p><a href="https://picasaweb.google.com/102459157243301356168/2013?feat=embedwebsite#5845953580333335522"><img src="https://lh4.googleusercontent.com/-3_Gfuzz0u0o/USD_zuExA-I/AAAAAAAABF8/EeqWXt7dI9E/s400/DSC07072.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-3_Gfuzz0u0o/USD_zuExA-I/AAAAAAAABF8/EeqWXt7dI9E/s400/DSC07072.JPG" height="300" width="400" /></p>
 <p>何でも落ちている僕の学校です。もちろん動作しました。</p>
 <p>以前から興味があったデバイスなので、ちょっと触れてみようと思います。</p>
 <p>&nbsp;</p>
 <h3>ペリア関係の記事まとめるよ〜</h3>
-<p><a href="https://picasaweb.google.com/lh/photo/32xgSZe9IvPfJomsYq1sG9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-p2k5aHoZezo/USD_4uHMJeI/AAAAAAAABGM/jTDrFnF7XFc/s400/DSC07073.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-p2k5aHoZezo/USD_4uHMJeI/AAAAAAAABGM/jTDrFnF7XFc/s400/DSC07073.JPG" height="300" width="400" /></p>
 <p>この週末勉強の他に何をやっていたかというと、</p>
 <p>先日の記事に書いた通り</p>
 <p><span style="font-size:24px;">2台のペリアアンロック</span>です。</p>
@@ -44,7 +44,7 @@ tags: Diary
 <p>僕の周りでペリアを弄る人が増えてきたこともあるので、早めに書いてしまいたいと思っています。</p>
 <p>&nbsp;</p>
 <h3>VAIO ZにXPが入った！</h3>
-<p><a href="https://picasaweb.google.com/lh/photo/teoSE5xBajkR0tj-SKs1D9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-AJCddo3AWd8/USD_0kybIgI/AAAAAAAABGE/A_ni_pL3nLk/s400/DSC07055.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-AJCddo3AWd8/USD_0kybIgI/AAAAAAAABGE/A_ni_pL3nLk/s400/DSC07055.JPG" height="300" width="400" /></p>
 <p>画像はまだドライバを当てていないものなので、解像度は800x600で表示されていますが、</p>
 <p>13.1型フルHD、Corei7プロセッサ、8GBメモリ、厚さ約12mmな窓XPノートってなんか熱くないですか！？</p>
 <p>実際ただの無駄としかいえないのですが。（特にRAM8GBは32bitOSにry）</p>

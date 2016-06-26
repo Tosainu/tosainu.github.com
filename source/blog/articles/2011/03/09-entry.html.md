@@ -14,7 +14,7 @@ tags: Diary
 <p>ジャンク品だけれど、「ディスク出し入れ不調。入れれば再生できる」と書いてある。</p>
 <p>DVDプレイヤーはCDも再生できる・・・ということで</p>
 <p><span style="font-size:36px;">買っちゃいました！</span></p>
-<p><a href="https://picasaweb.google.com/lh/photo/cqf1GdL3BK3U0dO4vNLeZg?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/_k8x9PZSlKHk/TXdCMjyGWMI/AAAAAAAAAfs/B7vMroxTQTA/s400/DSC03687.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/_k8x9PZSlKHk/TXdCMjyGWMI/AAAAAAAAAfs/B7vMroxTQTA/s400/DSC03687.JPG" height="300" width="400" /></p>
 <p>さっそく分解。ある部分が割れていて、変形していたのが原因だった。</p>
 <p>割れた物を取り出し<span style="font-size:18px;">テープ</span>（笑）で固定。</p>
 <p>全く問題なく動作するようになりました。</p>

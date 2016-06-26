@@ -3,7 +3,7 @@ title: Corsair Vengeance Extreme
 date: 2013-03-15 18:24:05 JST
 tags: Diary
 ---
-<p><a href="https://picasaweb.google.com/lh/photo/xEjJfwOm1-ea00R-HanIk9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-_IBoJ8CqXq0/UULoh70NFZI/AAAAAAAABrA/khLye3Bshr4/s400/veng_extreme_r_f.png" height="100" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-_IBoJ8CqXq0/UULoh70NFZI/AAAAAAAABrA/khLye3Bshr4/s400/veng_extreme_r_f.png" height="100" width="400" /></p>
 <p><a href="http://www.techpowerup.com/181440/Corsair-Unleashes-Vengeance-Extreme-the-World-s-Fastest-Rated-PC-Memory-Kits.html">Corsair Unleashes Vengeance Extreme, the World's Fastest Rated PC Memory Kits | techPowerUp</a></p>
 <p><a href="http://www.corsair.com/us/memory-by-product-family/vengeance/vengeance-extreme-memory-8gb-3000mhz-cl12-1-65v-ddr3-memory-kit-cml8gx3m2a3000c12r.html">Vengeance® Extreme Memory — 8GB 3000MHz CL12 1.65V DDR3 Memory Kit (CML8GX3M2A3000C12R) - Vengeance - Memory by Product Family</a></p>
 <p>&nbsp;</p>

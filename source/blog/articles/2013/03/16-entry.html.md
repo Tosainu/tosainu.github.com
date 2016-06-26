@@ -9,8 +9,8 @@ tags: Diary
 <p>どんなものかというと、海外のFlashサイトです。</p>
 <p>まぁ、詳しいことは上のリンクや<a href="http://dic.nicovideo.jp/a/walfas">ここ</a>を参考にしてもらうとして、</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/R3a8osflYvnMfdexutMJc9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-HvPE2YVmc38/UUQnKAONqaI/AAAAAAAABrQ/T6UeiIcTtto/s400/Screenshot%2520from%25202013-03-16%252016%253A57%253A20.png" height="254" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/WFInlVH6k0l6HcG7jFZfjdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-nxhr11MQHIk/UUQp447bPsI/AAAAAAAABrg/ZPCAMRN6Uds/s400/Screenshot%2520from%25202013-03-16%252017%253A13%253A19.png" height="291" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-HvPE2YVmc38/UUQnKAONqaI/AAAAAAAABrQ/T6UeiIcTtto/s400/Screenshot%2520from%25202013-03-16%252016%253A57%253A20.png" height="254" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-nxhr11MQHIk/UUQp447bPsI/AAAAAAAABrg/ZPCAMRN6Uds/s400/Screenshot%2520from%25202013-03-16%252017%253A13%253A19.png" height="291" width="400" /></p>
 <p>いや、まぁこの原作とかキャラ名は触れないこととして・・・</p>
 <p>&nbsp;</p>
 <p>なんかこの絵良くないですか？</p>

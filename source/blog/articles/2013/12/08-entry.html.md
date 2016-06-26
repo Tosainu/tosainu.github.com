@@ -63,7 +63,7 @@ Useful linksのDownloads→cm11.0と進み、
 
 実行中のアプリ一覧の画面
 
-<a href="https://picasaweb.google.com/lh/photo/7gM_O3jGhLdzussKr_VKl9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-MkgJZzHulcE/UqQomN9IsVI/AAAAAAAACzI/zxQUsGg9-Ik/s400/Screenshot_2013-12-08-10-08-50.png" height="400" width="225" /></a>
+<img src="https://lh5.googleusercontent.com/-MkgJZzHulcE/UqQomN9IsVI/AAAAAAAACzI/zxQUsGg9-Ik/s400/Screenshot_2013-12-08-10-08-50.png" height="400" width="225" />
 
 &nbsp;
 
@@ -73,19 +73,19 @@ Useful linksのDownloads→cm11.0と進み、
 
 左:定格 右:1.4GHz-OC
 
-<a href="https://picasaweb.google.com/lh/photo/HbTUPP3xKrc07LS3qkJyj9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-y2zd33q5gKA/UqQol2YhFwI/AAAAAAAACzE/Iks5_FxY7rM/s400/Screenshot_2013-12-08-10-03-05.png" height="400" width="225" /></a><a href="https://picasaweb.google.com/lh/photo/T__zAPMHanMLhk3_uRXzs9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-a6boOgc04KY/UqQokyCToGI/AAAAAAAACyw/bDS1IQzuBJk/s400/Screenshot_2013-12-08-09-54-53.png" height="400" width="225" /></a>
+<img src="https://lh3.googleusercontent.com/-a6boOgc04KY/UqQokyCToGI/AAAAAAAACyw/bDS1IQzuBJk/s400/Screenshot_2013-12-08-09-54-53.png" height="400" width="225" />
 
 ### AnTuTu Benchmark
 
 左:定格 右:1.4GHz-OC
 
-<a href="https://picasaweb.google.com/lh/photo/YG28Gf-lky5BsjSv-Zlxh9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-sdylBQdCbes/UqQolR7HwrI/AAAAAAAACy8/MGXZOWLnC2s/s400/Screenshot_2013-12-08-10-00-41.png" height="400" width="225" /></a><a href="https://picasaweb.google.com/lh/photo/Kd0qLymmyvYY6hUlsU7CPNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-0XZv2H5SzL4/UqQokhUl2WI/AAAAAAAACyo/neF8zxVBoNs/s400/Screenshot_2013-12-08-09-29-47.png" height="400" width="225" /></a>
+<img src="https://lh4.googleusercontent.com/-0XZv2H5SzL4/UqQokhUl2WI/AAAAAAAACyo/neF8zxVBoNs/s400/Screenshot_2013-12-08-09-29-47.png" height="400" width="225" />
 
 このHa Haはスコアをバカにしているのでしょうか？？？
 
 こんな中華アプリ二度と使わねぇ・・・
 
-<a href="https://picasaweb.google.com/lh/photo/O8OOx3I2hCWITwCIvxFwE9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-ZervDLWZioQ/UqQolO-XXrI/AAAAAAAACy4/u1yQou4SB3c/s400/Screenshot_2013-12-08-09-56-39.png" height="400" width="225" /></a>
+<img src="https://lh4.googleusercontent.com/-ZervDLWZioQ/UqQolO-XXrI/AAAAAAAACy4/u1yQou4SB3c/s400/Screenshot_2013-12-08-09-56-39.png" height="400" width="225" />
 
 &nbsp;
 

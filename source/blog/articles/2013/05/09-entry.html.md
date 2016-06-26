@@ -6,7 +6,7 @@ tags: GTASA
 <p>どーもです。</p>
 <p>&nbsp;</p>
 <p>お気に入りのゲームGTA SAの飛行機教習所？ミッションクリアしました〜</p>
-<p><a href="https://picasaweb.google.com/lh/photo/hvIf9Bya8l9FuvbQXCafLNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-SACQAlBCyRU/UYuXBJ5LsJI/AAAAAAAACFE/__8YTTa6lNw/s400/gta_sa%25202013-05-09%252019-36-06-69.png" height="225" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-SACQAlBCyRU/UYuXBJ5LsJI/AAAAAAAACFE/__8YTTa6lNw/s400/gta_sa%25202013-05-09%252019-36-06-69.png" height="225" width="400" /></p>
 <p>（いろいろ突っ込まないでねww）</p>
 <p>なんか少し前に流行った厨二チックなポーズみたいですねwww</p>
 <p>キャプチャソフトのショートカットキーをctrl+F10にしているせいで、攻撃中のポーズになってしまいました。</p>
@@ -28,7 +28,7 @@ tags: GTASA
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>そうそう、新しいサイトデザインで使用する予定のヘッダー画像ができましたよ！</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Qh68myCV3xq_Xr-qhzS9OdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-Lj6_ciMJZhg/UYuW-CkmfWI/AAAAAAAACE8/q4qkJ9JtLwc/s400/IMG_0128.jpg" height="82" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-Lj6_ciMJZhg/UYuW-CkmfWI/AAAAAAAACE8/q4qkJ9JtLwc/s400/IMG_0128.jpg" height="82" width="400" /></p>
 <p>カメラ替えただけで結構イメージ変わりますね。（今のはDSC-W220、新画像はS110）</p>
 <p>シャープになった感じがします。</p>
 <p>&nbsp;</p>

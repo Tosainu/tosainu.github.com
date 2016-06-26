@@ -15,7 +15,7 @@ tags: Diary
 
 昨年3月の秋葉原旅行で買ってきたS110、そろそろ1年経つので簡単なレビューでもしようと思います。
 
-<a href="https://picasaweb.google.com/lh/photo/rf_VDPIGbBQFuCDBw6Vu8tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-RuVCnF2q5bA/Uv72kq0vqdI/AAAAAAAAC-s/34UX2LNvC1Y/s400/IMG_20140215_140241.jpg" height="300" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-RuVCnF2q5bA/Uv72kq0vqdI/AAAAAAAAC-s/34UX2LNvC1Y/s400/IMG_20140215_140241.jpg" height="300" width="400" />
 
 といっても、カメラ自体のスペックに関しては文句ないほど優秀、というか僕がF値がどうだ高感度撮影でのノイズが・・・とか語れるほどの知識はないので今回は割愛。
 

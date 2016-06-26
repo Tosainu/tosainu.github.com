@@ -3,7 +3,7 @@ title: CASIO G-SHOCK
 date: 2011-03-02 17:20:34 JST
 tags: 
 ---
-<a href="https://picasaweb.google.com/lh/photo/_GPvWaah54m4tINtylddoQ?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/_k8x9PZSlKHk/TW34hdJj0hI/AAAAAAAAAfE/0UFm_5Qvitk/s400/DSC03685.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/_k8x9PZSlKHk/TW34hdJj0hI/AAAAAAAAAfE/0UFm_5Qvitk/s400/DSC03685.JPG" height="300" width="400" />
 <p>数日前、いろいろあってG-SHOCKをもらった。</p><br />
 <p>でも、こーゆー時計ってすごいですね。</p>
 <p>日付、曜日、海外の時計、ストップウォッチ、タイマーなど・・・</p>

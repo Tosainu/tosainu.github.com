@@ -15,16 +15,16 @@ tags: Diary
 <p>&nbsp;</p>
 <h3>作業開始♪</h3>
 <p>まず裏蓋を開けます。本体をひっくり返して、EnterキーのようなL型の部分のネジ6箇所を外します。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/LJhZd7nSFuaGRCXoCqrmPtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-WuU26DWrid0/UbXUeoKJv7I/AAAAAAAACOo/oJwYYGsE9ZY/s400/IMG_0583.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-WuU26DWrid0/UbXUeoKJv7I/AAAAAAAACOo/oJwYYGsE9ZY/s400/IMG_0583.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>そしたら、クーラーを固定している5箇所のネジとファンのコネクタを外します。</p>
 <p>ネジは1,2,3,4,6と番号が振ってあるのでわかりやすいです（5はどこだ？？？）</p>
-<p><a href="https://picasaweb.google.com/lh/photo/sj4Bh-H3yUW9XMDisANL69MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-O5IToaWmntM/UbXUaUsJeVI/AAAAAAAACOY/POoAf-hDBrg/s400/IMG_0584.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-O5IToaWmntM/UbXUaUsJeVI/AAAAAAAACOY/POoAf-hDBrg/s400/IMG_0584.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>CPUを載せ替えます。上の黒いネジを180度回すと外れるようになります。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Xabl--Yw72BvLX42V-7JpdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-vEAjxy-lmN0/UbXUeGk8IRI/AAAAAAAACOg/4RRc11BeyoY/s400/IMG_0586.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-vEAjxy-lmN0/UbXUeGk8IRI/AAAAAAAACOg/4RRc11BeyoY/s400/IMG_0586.JPG" height="300" width="400" /></p>
 <p>グリスにはSilverArrow付属のCF3を使ってみました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/kBKhJrWxDmrcrhPgiFjjVNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-yjlSzl1Ehhs/UbXVSPorfUI/AAAAAAAACO0/kY5Hr74SR_o/s400/IMG_0582.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-yjlSzl1Ehhs/UbXVSPorfUI/AAAAAAAACO0/kY5Hr74SR_o/s400/IMG_0582.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>逆の手順で戻して換装終了です。</p>
 <p>&nbsp;</p>
@@ -35,21 +35,21 @@ tags: Diary
 <p>なんか知らんが<span style="font-size:36px;">あっさり</span>動いてしまいました</p>
 <p>チップセットが勝手にFSBオーバークロックしてくれたんでしょうか？</p>
 <p>おまけにメモリクロックも533MHz→667MHzになってました。ラッキー♪</p>
-<p><a href="https://picasaweb.google.com/lh/photo/GijTXclfE5uXm0Je_j-Qw9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-T_o1RTZnulU/UbXT7ZAjmDI/AAAAAAAACOQ/56yNPSp26-I/s400/%25E7%2584%25A1%25E9%25A1%258C.jpg" height="250" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-T_o1RTZnulU/UbXT7ZAjmDI/AAAAAAAACOQ/56yNPSp26-I/s400/%25E7%2584%25A1%25E9%25A1%258C.jpg" height="250" width="400" /></p>
 <p>&nbsp;</p>
 <p>ではベンチを回して見ましょう。</p>
 <p>換装前、換装後の順でスクショを貼っていきます。</p>
 <h4>SuperPi Mod</h4>
-<p><a href="https://picasaweb.google.com/lh/photo/XMyhzNq--oN6-sErZb2n99MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-uzqhSt8fX8Q/UbXTxy7ejKI/AAAAAAAACOA/odoTIP93q34/s400/celpi.PNG" height="250" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/Kxl9LW3fOYJ2yKOoipE2pdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-o64hDWP7Suw/UbXT3FM6vhI/AAAAAAAACOI/qdC5j9sewr8/s400/superpi1m.PNG" height="250" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-uzqhSt8fX8Q/UbXTxy7ejKI/AAAAAAAACOA/odoTIP93q34/s400/celpi.PNG" height="250" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-o64hDWP7Suw/UbXT3FM6vhI/AAAAAAAACOI/qdC5j9sewr8/s400/superpi1m.PNG" height="250" width="400" /></p>
 <p>&nbsp;</p>
 <p><span style="font-size:36px;">32[sec]→23[sec]</span></p>
 <p>クロック600MHzとキャッシュ6MB、そして45nmのリソグラフィーの違いはとても大きかった！！！</p>
 <p>pi10秒短縮はOCの世界だと物凄いことです。これは驚いた！！！</p>
 <p>&nbsp;</p>
 <h4>CrystalMark2004</h4>
-<p><a href="https://picasaweb.google.com/lh/photo/fz5ORShbu8EFTKJT2pCfu9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-bxcKFx2NYjA/UbXTxV_dyiI/AAAAAAAACN0/gJSBXl7_zag/s400/celcry.PNG" height="250" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/iGLgZYzvd7n87whAvRfBZtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-VbnHb-1eau4/UbXTxqFtXcI/AAAAAAAACN8/7IZwlH4fMfA/s400/crystalmark2004.PNG" height="250" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-bxcKFx2NYjA/UbXTxV_dyiI/AAAAAAAACN0/gJSBXl7_zag/s400/celcry.PNG" height="250" width="400" /></p>
+<p><img src="https://lh5.googleusercontent.com/-VbnHb-1eau4/UbXTxqFtXcI/AAAAAAAACN8/7IZwlH4fMfA/s400/crystalmark2004.PNG" height="250" width="400" /></p>
 <p>&nbsp;</p>
 <p><span style="font-size:36px;">ALUスコア2.5倍、</span></p>
 <p><span style="font-size:36px;">FPU、MEMスコア2倍</span></p>

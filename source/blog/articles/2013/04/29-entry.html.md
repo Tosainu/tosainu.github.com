@@ -9,7 +9,7 @@ tags: Diary
 <p><a href="http://tosainu.wktk.so/view/259">つい最近映画を見た気がしますが・・・</a></p>
 <p>&nbsp;</p>
 <p>前回は友人に、今回は家族に誘われたので。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/VTLYdBiBSxFmVQaFUkDIJNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-jpGAtjPB_E4/UX3nf5p55HI/AAAAAAAAB_g/88PWdU7j19Q/s400/IMG_0423.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-jpGAtjPB_E4/UX3nf5p55HI/AAAAAAAAB_g/88PWdU7j19Q/s400/IMG_0423.JPG" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>正直に言うと、</p>
 <p><span style="font-size:36px;">『コナンの映画っぽくない』</span></p>

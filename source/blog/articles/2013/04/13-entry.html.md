@@ -6,7 +6,7 @@ tags: Website
 <p>どーもです</p>
 <p>&nbsp;</p>
 <p>数日前から始めていた<a href="http://tosainu.wktk.so/view/263">検索サイトからの表示がおかしい件</a>が解決しつつあります。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/F48Ho82UrvVVFcIYNpqweNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-4_NWyThlqNw/UWlQrvokPQI/AAAAAAAAB6c/ZY6TsuYY_74/s400/Screenshot%2520from%25202013-04-13%252011%253A13%253A20.png" height="173" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-4_NWyThlqNw/UWlQrvokPQI/AAAAAAAAB6c/ZY6TsuYY_74/s400/Screenshot%2520from%25202013-04-13%252011%253A13%253A20.png" height="173" width="400" /></p>
 <p>ちゃんとしたサイト説明と、子ページとして最新の記事などのリンクが表示されるようになってくれました。</p>
 <p>&nbsp;</p>
 <p>主にやったことは、</p>
@@ -24,7 +24,7 @@ tags: Website
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>さて、今日の13時頃から大量のトラックバックが記録されました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/_J04Gd8-CtZizWVKrUssbNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-s40eGq3izLs/UWlQbfC6zkI/AAAAAAAAB6U/twEiV-L8suM/s400/Screenshot%2520from%25202013-04-13%252021%253A31%253A17.png" height="400" width="325" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-s40eGq3izLs/UWlQbfC6zkI/AAAAAAAAB6U/twEiV-L8suM/s400/Screenshot%2520from%25202013-04-13%252021%253A31%253A17.png" height="400" width="325" /></p>
 <p>&nbsp;</p>
 <p>どれも外国の広告サイト？のようなところから。</p>
 <p>&nbsp;</p>

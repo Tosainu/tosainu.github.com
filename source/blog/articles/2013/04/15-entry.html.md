@@ -82,9 +82,9 @@ tags: VAIO-Z2, ML110 G7 Mod, i7-3930k_PC
  </tr>
 </table>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Lt0TLXOc5SJLPDbQLdJJftMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-Vj8H0AqZSY4/UWvLHY6_zaI/AAAAAAAAB8o/XPy8YRcw0oU/s400/wei.png" height="225" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/XCPkUt3cja9GusXidqtGBdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-xq6fa5q-M7c/UWvLJif2SWI/AAAAAAAAB8w/IFqhxa2Jyq4/s400/wei.png" height="225" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/rrtyCX9hTVFP-Ic4JkghjtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-Psy1t2o6SlI/UWvLTooRoBI/AAAAAAAAB9I/ZV6ljFtZv9A/s400/wei.png" height="225" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-Vj8H0AqZSY4/UWvLHY6_zaI/AAAAAAAAB8o/XPy8YRcw0oU/s400/wei.png" height="225" width="400" /></p>
+<p><img src="https://lh4.googleusercontent.com/-xq6fa5q-M7c/UWvLJif2SWI/AAAAAAAAB8w/IFqhxa2Jyq4/s400/wei.png" height="225" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-Psy1t2o6SlI/UWvLTooRoBI/AAAAAAAAB9I/ZV6ljFtZv9A/s400/wei.png" height="225" width="400" /></p>
 <p>&nbsp;</p>
 <h3>CINEBENCH 11.5</h3>
 <table>
@@ -110,9 +110,9 @@ tags: VAIO-Z2, ML110 G7 Mod, i7-3930k_PC
  </tr>
 </table>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/102459157243301356168/2013Blog?feat=embedwebsite#5867006425645872898"><img src="https://lh4.googleusercontent.com/-W1Ra-tJrkO0/UWvLQmeOdwI/AAAAAAAAB84/xeJltDxWbvc/s400/cinebench.png" height="225" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/U2k1xxSDlWV6a1hC_9cqZNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-gZanp5aMEqw/UWvLSyAYL1I/AAAAAAAAB9A/IdhmYysPOa4/s400/cine.png" height="225" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/HvqOo3ZoWVEaFrVRWcaVC9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/--VLNKdblLxc/UWvLU6EHrAI/AAAAAAAAB9Q/yMAwHXGNRkI/s400/cine.png" height="225" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-W1Ra-tJrkO0/UWvLQmeOdwI/AAAAAAAAB84/xeJltDxWbvc/s400/cinebench.png" height="225" width="400" /></p>
+<p><img src="https://lh3.googleusercontent.com/-gZanp5aMEqw/UWvLSyAYL1I/AAAAAAAAB9A/IdhmYysPOa4/s400/cine.png" height="225" width="400" /></p>
+<p><img src="https://lh6.googleusercontent.com/--VLNKdblLxc/UWvLU6EHrAI/AAAAAAAAB9Q/yMAwHXGNRkI/s400/cine.png" height="225" width="400" /></p>
 <p>&nbsp;</p>
 <h3>3DMark Vantage</h3>
 <table>

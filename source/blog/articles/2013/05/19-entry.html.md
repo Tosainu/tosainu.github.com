@@ -16,7 +16,7 @@ tags: Diary, Windows
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>そのついでに、まだ1回も見たことのないマイ糞ソフトのSurface見てきました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/tF9apTv5HRmn5vU72em1_dMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-SMySoCFoeSA/UZikmjQJyQI/AAAAAAAACJc/FGsPSWuhd6g/s400/IMG_20130519_162651.jpg" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-SMySoCFoeSA/UZikmjQJyQI/AAAAAAAACJc/FGsPSWuhd6g/s400/IMG_20130519_162651.jpg" height="300" width="400" /></p>
 <p>&nbsp;</p>
 <p>うーん・・・</p>
 <p>キーボードが頼りない。展示品はボロボロ。</p>
@@ -25,7 +25,7 @@ tags: Diary, Windows
 <p>ソフトウェアの動作レスポンスは悪くはない感じ。ARM系のCPUで動いてるとはいえ、見た目はどう見ても窓。</p>
 <p>窓8が使いこなせる<del>変態な</del>方は何の問題もなく使えると思います。</p>
 <p>さすがにコレには違和感がありましたが。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/5j_QCfSZLZJQFEHjCpMJVtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-lYFm3In_q58/UZikhgTjHfI/AAAAAAAACJU/MM7r9vsXgtM/s400/IMG_20130519_162648.jpg" height="151" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-lYFm3In_q58/UZikhgTjHfI/AAAAAAAACJU/MM7r9vsXgtM/s400/IMG_20130519_162648.jpg" height="151" width="400" /></p>
 <p>SurfaceってTegra3だったんだ。</p>
 <p>&nbsp;</p>
 <p>問題はソフトウェアですかね。</p>

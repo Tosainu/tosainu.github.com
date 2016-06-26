@@ -11,11 +11,11 @@ tags: Diary
 
 というのも、ウチの本棚(と思われる)ものはこんな状態ですし
 
-<a href="https://picasaweb.google.com/lh/photo/dr-xRZlwLJwJJsPlEV2N9tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-YkTK5jm0mJk/Uu-zXmFQtwI/AAAAAAAAC9E/A5X7bEoAHoE/s400/IMG_1515.JPG" height="400" width="300" /></a>
+<img src="https://lh6.googleusercontent.com/-YkTK5jm0mJk/Uu-zXmFQtwI/AAAAAAAAC9E/A5X7bEoAHoE/s400/IMG_1515.JPG" height="400" width="300" />
 
 教科書にいたっては悲惨なことに・・・
 
-<a href="https://picasaweb.google.com/lh/photo/gGKjxKnKFb2vOAYzfi7Na9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-k39XKrJeP1s/Uu-07LhtNgI/AAAAAAAAC9Y/T-6-kh0dxy4/s400/IMG_1517.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-k39XKrJeP1s/Uu-07LhtNgI/AAAAAAAAC9Y/T-6-kh0dxy4/s400/IMG_1517.JPG" height="300" width="400" />
 
 &nbsp;
 
@@ -40,15 +40,15 @@ SoftwareDesign(2010)1年分をもらってきましたw
 
 どうも一般的な本棚の収納部の大きさは高さ210mm程度らしいです。
 
-<a href="https://picasaweb.google.com/lh/photo/nubS3C3ol9wRPLIq_X7MPtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-Wm6A7g4QvXY/Uu-2JtvKb9I/AAAAAAAAC9s/duX56xian6Y/s800/B0034G4HKQ_03.jpg" height="300" width="300" /></a>
+<img src="https://lh4.googleusercontent.com/-Wm6A7g4QvXY/Uu-2JtvKb9I/AAAAAAAAC9s/duX56xian6Y/s800/B0034G4HKQ_03.jpg" height="300" width="300" />
 
 これの何がいけないかって、A5サイズの本がギリギリ入らない大きさでして・・・
 
-<a href="https://picasaweb.google.com/lh/photo/dl-vvjE_-nQPgH6-vAA40NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-HUC-J0KyL2M/Uu-1YktP_sI/AAAAAAAAC9g/OCD_7hXox74/s400/IMG_1509.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-HUC-J0KyL2M/Uu-1YktP_sI/AAAAAAAAC9g/OCD_7hXox74/s400/IMG_1509.JPG" height="300" width="400" />
 
 僕の所持する教科書は勿論、一部のコミックなどもこのA5サイズ
 
-<a href="https://picasaweb.google.com/lh/photo/2jpoS8CY6iXjURE07JeWS9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-CF67a4S3olU/Uu-zhpbdYPI/AAAAAAAAC9M/HYYsCeg-Qrs/s400/IMG_1511.JPG" height="300" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-CF67a4S3olU/Uu-zhpbdYPI/AAAAAAAAC9M/HYYsCeg-Qrs/s400/IMG_1511.JPG" height="300" width="400" />
 
 うー、ナンテコッタイ
 

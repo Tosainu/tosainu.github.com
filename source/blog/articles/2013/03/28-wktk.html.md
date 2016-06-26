@@ -10,5 +10,5 @@ tags: Diary
 <p>まだURLの調整が終わっていおらず、今までのサイトにアクセスされてしまうことがあるようですが、</p>
 <p>これからもよろしくお願いします。</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/BRTfu1D2IRal2KXsJmILx9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-ITq_zvhg-kQ/UVOgYsTCb0I/AAAAAAAABzM/qBGr16mcVVE/s400/Screenshot%2520from%25202013-03-26%252019%253A04%253A30.png" height="296" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-ITq_zvhg-kQ/UVOgYsTCb0I/AAAAAAAABzM/qBGr16mcVVE/s400/Screenshot%2520from%25202013-03-26%252019%253A04%253A30.png" height="296" width="400" /></p>
 <p>でけぇ</p>

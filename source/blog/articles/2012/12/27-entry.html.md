@@ -1,7 +1,7 @@
 ---
 title: パーツ買ってきた〜
 date: 2012-12-27 10:25:12 JST
-tags: i7-3930k_PC
+tags: i7-3930k PC
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

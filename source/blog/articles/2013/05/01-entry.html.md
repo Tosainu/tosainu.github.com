@@ -1,7 +1,7 @@
 ---
 title: VcoreをOffsetModeで指定してみた
 date: 2013-05-01 19:24:25 JST
-tags: i7-3930k_PC
+tags: i7-3930k PC
 ---
 <p>どーもです～</p>
 <p>&nbsp;</p>

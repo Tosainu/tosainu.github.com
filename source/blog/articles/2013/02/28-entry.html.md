@@ -1,7 +1,7 @@
 ---
 title: フロントのIOパネル修理
 date: 2013-02-28 23:14:27 JST
-tags: i7-3930k_PC
+tags: i7-3930k PC
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

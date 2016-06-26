@@ -1,7 +1,7 @@
 ---
 title: GTX 660TiのBIOSを弄る（MaxTDP・FanSpeed・BoostClock・VoltageLimit）
 date: 2013-03-19 14:07:32 JST
-tags: i7-3930k_PC
+tags: i7-3930k PC
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

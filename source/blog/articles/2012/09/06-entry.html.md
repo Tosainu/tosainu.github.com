@@ -1,7 +1,7 @@
 ---
 title: 久しぶりです……
 date: 2012-09-06 03:47:53 JST
-tags: Xperia arc
+tags: Xperia arc, Xperia2011
 ---
 <p>おはようございます</p>
 <p>僕は課題やってたのでまだ起きています</p>

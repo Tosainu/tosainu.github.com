@@ -1,7 +1,7 @@
 ---
 title: VAIOに入れたLinuxで静音モードやバッテリーケアを有効にする
 date: 2014-01-15 00:48:27 JST
-tags: VAIO-Z2,Linux
+tags: VAIO Z2,Linux
 ---
 どーもです
 

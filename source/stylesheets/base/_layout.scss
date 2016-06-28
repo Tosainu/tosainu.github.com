@@ -11,11 +11,6 @@ $tablet-screen-width: 570px;
 $desktop-screen-width: 960px;
 $wide-screen-width: 1280px;
 
-// main column
-#main {
-  padding: 20px 0;
-}
-
 .container {
   @media screen and (max-width: $wide-screen-width - 1) {
     @include container(93.25%);

@@ -6,14 +6,7 @@ $font-color: $dark-gray;
 $font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
 $font-family-mono: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 
-html {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 body {
-  background: $white;
-  overflow-x: hidden;
   color: $font-color;
   font-family: $font-family;
   font-size: 16px;
@@ -22,74 +15,53 @@ body {
 
 // heading
 #{headings()} {
-  font-weight: bold;
   line-height: 1.3;
+  margin-bottom: 0.3em;
 }
 
 h1 {
-  font-size: 200%;
+  font-size: 2.0rem;
 }
 
 h2 {
-  border-left: 9px solid $red;
-  font-size: 180%;
-  margin: 1.2em 0 .6em;
-  padding: 0 15px;
+  border-left: 8px solid $red;
+  font-size: 1.8rem;
+  padding-left: 15px;
 }
 
 h3 {
-  border-left: 9px solid $orange;
-  font-size: 150%;
-  margin: 1.2em 0 .6em;
-  padding: 0 15px;
+  border-left: 8px solid $orange;
+  font-size: 1.5rem;
+  padding-left: 15px;
 }
 
 h4 {
-  font-size: 140%;
-  margin: 10px 0;
+  font-size: 1.4rem;
 }
 
 h5 {
-  font-size: 130%;
-  margin: 10px 0;
+  font-size: 1.3rem;
 }
 
 h6 {
-  font-size: 110%;
-  margin: 10px 0;
+  font-size: 1.1rem;
 }
 
-// text
-p {
-  margin-bottom: 1.2em;
-
-  code {
-    background: $white;
-    border: 1px solid $light-gray;
-    font-family: $font-family-mono;
-    margin: 0 2px;
-    padding: 2px;
-  }
+code {
+  font-family: $font-family-mono;
 }
 
-em {
-  font-style: italic;
+p code {
+  background: $white;
+  border: 1px solid $light-gray;
+  margin: 0 2px;
+  padding: 3px;
 }
 
-strong {
-  font-style: normal;
-  font-weight: bold;
+sup > a:before {
+  content: '*';
 }
 
-sup {
-  font-size: 0.8em;
-
-  a:before {
-    content: "*";
-  }
-}
-
-// link
 a {
   &:link, &:visited {
     color: $blue;
@@ -101,29 +73,14 @@ a {
   }
 }
 
-// list
-dl {
-  margin: .6em 0;
-}
-dt {
+dl > dt {
   font-weight: bold;
-}
-dd {
-  margin: 0 1.2em .6em;
 }
 
 ul {
   list-style-type: circle;
-  margin: .6em 0;
 }
-ol {
-  list-style-type: decimal;
-  margin: .6em 0;
-}
-li {
-  margin-left: 1.8em;
-  padding: .3em 0;
-}
+
 .il {
   @include inline-list;
 
@@ -131,80 +88,66 @@ li {
     margin-right: .6em;
   }
 }
+
 .list-icon {
   display: inline-block;
   text-align: center;
   width: 1.2em;
 }
 
-
-
 blockquote {
-  background: $off-white;
-  border: 1px solid $light-gray;
-  font-size: 110%;
-  margin: 20px 0;
-  padding: 10px 20px;
-
-  p {
-    margin: 0;
-  }
+  border-left: 4px solid $light-gray;
+  margin: 0;
+  padding: 0 15px;
 }
 
 aside {
   background: $off-white;
   border: 1px solid $light-gray;
-  margin-bottom: 20px;
-  padding: 10px 20px;
+  padding: 1em 2em;
 }
 
-// image
 img {
   display: block;
-  margin: .6em auto;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
 }
 
-// code
 pre {
   background: $white;
   border: 1px solid $light-gray;
   font-family: $font-family-mono;
   line-height: 1.4em;
-  margin: 20px 0;
   overflow-x: auto;
-  padding: 10px;
-  white-space: pre;
-  word-break: normal;
-  word-wrap: normal;
+  padding: 1em;
 }
 
-// table
-table:not(.highlight) {
+table {
   border-collapse: collapse;
-  margin: 20px 0;
 
-  caption {
-    padding-bottom: 5px;
-  }
-  th, td {
-    border: 1px solid $light-gray;
-    padding: 5px;
-  }
   thead th {
     background: $light-gray;
-    padding: 5px 20px;
-    text-align: center;
+    padding: 0.25em 1em;
   }
+
+  th, td {
+    border: 1px solid $light-gray;
+    padding: 0.25em;
+  }
+
   tbody {
     background-color: $white;
   }
 }
 
 hr {
-  background: $light-gray;
-  border: none;
-  height: 1px;
+  border-bottom: 1px solid $light-gray;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 75%;
 }
 
 // clearfix

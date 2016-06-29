@@ -1,6 +1,43 @@
-.archive li {
-  float: left;
-  list-style-type: none;
-  margin: 0;
-  width: 50%;
+.archive-tree {
+  list-style: none;
+}
+
+.tree-toggle {
+  display: none;
+}
+
+.tree-toggle-button {
+  cursor: pointer;
+  margin-left: -32px;
+}
+
+.tree-toggle-button > .fa {
+  width: 32px;
+  text-align: center;
+}
+
+.tree-toggle + .tree-toggle-button {
+  .fa-angle-right {
+    display: inline-block;
+  }
+  .fa-angle-down {
+    display: none;
+  }
+}
+
+.tree-toggle:checked + .tree-toggle-button {
+  .fa-angle-right {
+    display: none;
+  }
+  .fa-angle-down {
+    display: inline-block;
+  }
+}
+
+.tree-toggle + .tree-toggle-button + .tree-child {
+  display: none;
+}
+
+.tree-toggle:checked + .tree-toggle-button + .tree-child {
+  display: block;
 }

@@ -34,9 +34,15 @@
       i.fa.fa-archive
       |  Archive
 
-    ul.archive.cf
-      - blog.articles.group_by {|a| a.date.year}.each do |year, articles_year|
-        - articles_year.group_by {|a| a.date.month}.each do |month, articles_month|
-          li
-            = link_to "#{year}-#{format('%02d', month)}", blog_month_path(year, month)
-            = " (#{articles_month.length})"
+    ul.archive-tree
+      - blog.articles.group_by { |a| a.date.year }.each do |year, articles_year|
+        li
+          input.tree-toggle type = 'checkbox' id = "tree-label-#{year}"
+          label.tree-toggle-button for = "tree-label-#{year}"
+            i.fa.fa-lg.fa-angle-right
+            i.fa.fa-lg.fa-angle-down
+            = link_to "#{year} (#{articles_year.size})", blog_year_path(year)
+          ul.tree-child
+            - articles_year.group_by { |a| a.date.month }.each do |month, articles_month|
+              li
+                = link_to "#{year}/#{format('%02d', month)} (#{articles_month.size})", blog_month_path(year, month)

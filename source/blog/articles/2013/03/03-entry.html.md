@@ -1,7 +1,7 @@
 ---
 title: どっかーん（買ったもの報告）
 date: 2013-03-03 12:24:26 JST
-tags: Diary
+tags:
 ---
 <p><img src="https://lh4.googleusercontent.com/-WIn3i4vrS_A/UTKkD1mmy_I/AAAAAAAABRM/lBxP0CDlZFw/s640/IMG_0054.JPG" /></p>
 <p><span style="font-size:36px;">買いすぎた（笑）</span></p>

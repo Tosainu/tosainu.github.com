@@ -1,7 +1,7 @@
 ---
 title: みかん
 date: 2013-03-17 11:59:44 JST
-tags: Diary
+tags:
 ---
 <p>どもども</p>
 <p>&nbsp;</p>

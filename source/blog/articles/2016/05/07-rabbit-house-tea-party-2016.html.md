@@ -1,7 +1,7 @@
 ---
 title: Rabbit House Tea Party 2016 参加レポート
 date: 2016-05-07 23:11 JST
-tags: Diary, Gochiusa
+tags: Gochiusa
 ---
 
 ![flag](https://lh3.googleusercontent.com/-fTCrPb7rNkI/Vy37V3nzgqI/AAAAAAAAGEs/eDBd046d-6wzfcXCvm_oldLezb_x9VHlgCCo/s640/IMG_3406.JPG)  

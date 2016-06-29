@@ -1,7 +1,7 @@
 ---
 title: 2014年のいろいろ
 date: 2014-12-30 23:00 JST
-tags: Diary, Gochiusa
+tags: Gochiusa
 ---
 
 もうこんな時期ですね. 早いなぁ....(・\_・;)  

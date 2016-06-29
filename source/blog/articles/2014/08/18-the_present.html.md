@@ -1,7 +1,7 @@
 ---
 title: 近況
 date: 2014-08-18 13:16:03 JST
-tags: Diary
+tags:
 ---
 
 みょん.  

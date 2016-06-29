@@ -1,7 +1,7 @@
 ---
 title: マックの60秒のアレ
 date: 2013-01-08 13:56:47 JST
-tags: Diary
+tags:
 ---
 <p>どーもとさいぬです</p>
 <p>&nbsp;</p>

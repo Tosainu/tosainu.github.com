@@ -1,7 +1,7 @@
 ---
 title: Corsair Vengeance Extreme
 date: 2013-03-15 18:24:05 JST
-tags: Diary
+tags:
 ---
 <p><img src="https://lh3.googleusercontent.com/-_IBoJ8CqXq0/UULoh70NFZI/AAAAAAAABrA/khLye3Bshr4/s640/veng_extreme_r_f.png" /></p>
 <p><a href="http://www.techpowerup.com/181440/Corsair-Unleashes-Vengeance-Extreme-the-World-s-Fastest-Rated-PC-Memory-Kits.html">Corsair Unleashes Vengeance Extreme, the World's Fastest Rated PC Memory Kits | techPowerUp</a></p>

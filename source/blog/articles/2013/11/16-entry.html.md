@@ -1,7 +1,7 @@
 ---
 title: 近況報告的な
 date: 2013-11-16 20:35:37 JST
-tags: Diary
+tags:
 ---
 どーもです。
 

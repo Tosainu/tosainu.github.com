@@ -1,7 +1,7 @@
 ---
 title: Micro$oft Surface見てきた
 date: 2013-05-19 20:16:30 JST
-tags: Diary, Windows
+tags: Windows
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

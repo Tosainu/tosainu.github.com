@@ -1,7 +1,7 @@
 ---
 title: 2014年 あけましておめでとうございます
 date: 2014-01-01 11:59:37 JST
-tags: Diary
+tags:
 ---
 <blockquote class="twitter-tweet" lang="en"><p>あけおめです</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034226626568192">December 31, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

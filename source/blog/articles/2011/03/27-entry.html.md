@@ -1,7 +1,7 @@
 ---
 title: ケータイ買いました！
 date: 2011-03-27 09:30:37 JST
-tags: Diary
+tags:
 ---
 <p>とさいぬです。</p>
 <p>&nbsp;</p>

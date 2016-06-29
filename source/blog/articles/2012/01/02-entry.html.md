@@ -1,7 +1,7 @@
 ---
 title: 2012年初書き込み
 date: 2012-01-02 23:33:49 JST
-tags: Diary
+tags:
 ---
 <p><span style="font-size:24px;">あけましておめでとうございます！</span></p>
 <p>そして、とってもお久しぶりです。とさいぬです。</p>

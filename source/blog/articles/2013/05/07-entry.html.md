@@ -1,7 +1,7 @@
 ---
 title: かゆい
 date: 2013-05-07 18:48:14 JST
-tags: Diary
+tags:
 ---
 <p>かゆい</p>
 <p>&nbsp;</p>

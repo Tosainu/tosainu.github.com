@@ -1,7 +1,7 @@
 ---
 title: ちょっとYoutubeっていいなって思った
 date: 2013-12-12 00:11:34 JST
-tags: Diary
+tags:
 ---
 どもーっ。
 

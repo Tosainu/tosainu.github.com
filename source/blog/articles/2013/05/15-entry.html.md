@@ -1,7 +1,7 @@
 ---
 title: 脱法ハーブ
 date: 2013-05-15 18:37:39 JST
-tags: Diary
+tags:
 ---
 <p><span style="font-size:36px;">キタ———（゜∀゜）———— ！！</span></p>
 <p><img src="https://lh6.googleusercontent.com/-Seu9FI9RV8k/UZNSlqj44DI/AAAAAAAACHg/dOBYSgpgo0Q/s640/IMG_0493.JPG" /></p>

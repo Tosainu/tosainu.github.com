@@ -1,7 +1,7 @@
 ---
 title: 無何有の郷　～ Deep Mountain
 date: 2013-03-30 21:27:31 JST
-tags: Diary
+tags:
 ---
 <p>どもども</p>
 <p>&nbsp;</p>

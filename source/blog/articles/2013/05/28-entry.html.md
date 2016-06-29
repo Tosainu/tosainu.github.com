@@ -1,7 +1,7 @@
 ---
 title: これはひどい・・・
 date: 2013-05-28 20:05:36 JST
-tags: Diary
+tags:
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

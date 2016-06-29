@@ -1,7 +1,7 @@
 ---
 title: Canon PowerShot S110の不満なところ
 date: 2014-02-15 15:09:03 JST
-tags: Diary
+tags:
 ---
 テスト期間真っ最中！
 

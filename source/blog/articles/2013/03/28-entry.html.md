@@ -1,7 +1,7 @@
 ---
 title: Blenderを使ってみた
 date: 2013-03-28 17:30:57 JST
-tags: Diary
+tags:
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

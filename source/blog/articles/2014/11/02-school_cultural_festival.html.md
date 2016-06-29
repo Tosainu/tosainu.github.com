@@ -1,7 +1,7 @@
 ---
 title: 文化祭でした
 date: 2014-11-02 22:42 JST
-tags: Diary
+tags:
 ---
 
 みょん.

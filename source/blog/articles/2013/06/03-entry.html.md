@@ -1,7 +1,7 @@
 ---
 title: NewsBlurの無料での登録件数が64件に！Androidアプリも登場！
 date: 2013-06-03 01:10:56 JST
-tags: Diary
+tags:
 ---
 <p><img src="https://lh4.googleusercontent.com/-CuDJgVZ6Q9E/UatjmIZEB4I/AAAAAAAACL0/CIrvcXOL5-4/s640/newsblur.png" /></p>
 <p>どーもです。</p>

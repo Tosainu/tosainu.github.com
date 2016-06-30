@@ -23,14 +23,17 @@
 
   section
     h4
-      i.fa.fa-folder-open-o
+      i.fa.fa-tags
       |  Tags
 
-    ul
+    .tag-cloud
+      / https://en.wikipedia.org/wiki/Tag_cloud#Creation_of_a_tag_cloud
+      - t_min = blog.tags.min_by { |k, v| v.size }.last.size
+      - t_max = blog.tags.max_by { |k, v| v.size }.last.size
+
       - blog.tags.sort.each do |tag, articles|
-        li
-          = link_to tag, tag_path(tag)
-          = " (#{articles.size})"
+        - s = 1.3 * (articles.size - t_min) / (t_max - t_min) + 0.3
+        = link_to tag, tag_path(tag), {:style => "font-size: #{s}em;"}
 
   section
     h4

@@ -2,12 +2,15 @@
   section
     h4
       i.fa.fa-user
-      |  
-      = link_to data.author.name, '/about'
+      |  About Me
 
-    img src = data.author.avatar alt = 'avatar'
+    .avatar
+      img.avatar-icon src = data.author.avatar alt = 'avatar'
+      span.avatar-name = data.author.name
 
-    p = data.site.description
+    p
+      = data.author.profile << ' '
+      = link_to 'more', '/about'
 
   section
     h4

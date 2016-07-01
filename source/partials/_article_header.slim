@@ -1,0 +1,16 @@
+header
+  h1 = link_to article.title, article
+
+  ul.il
+    li
+      span.list_icon
+        i.fa.fa-calendar
+      |  
+      = article.date.strftime('%F %R')
+    li
+      span.list_icon
+        i.fa.fa-tags
+      |  
+      - article.tags.sort.each do |tag|
+        a href = tag_path(tag)
+          span.tag = tag

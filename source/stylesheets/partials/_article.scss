@@ -1,28 +1,28 @@
-article, section {
-  border-bottom: 1px solid $light-gray;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+.entry {
+  padding-bottom: 1em;
 }
 
-header {
-  margin-bottom: 20px;
-
-  ul {
-    font-size: 90%;
-  }
+.entry-header {
+  margin-bottom: 1em;
 }
 
-.tag {
-  @include button-bg($off-white);
-  border: 1px solid $light-gray;
-  margin-right: 5px;
-  padding: 2px;
+.entry-info {
+  font-size: 0.9rem;
+}
+
+.entry-info > span {
+  margin-right: 0.5em;
+}
+
+.entry-info > span > .fa {
+  text-align: center;
+  width: 1.5em;
 }
 
 .footnotes {
-  padding: 1.2em 0;
+  padding: 1em 0;
 
   p {
-    margin: 0;
+    margin: 0.5em 0;
   }
 }

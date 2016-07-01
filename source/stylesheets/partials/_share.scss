@@ -1,8 +1,6 @@
 .share {
-  border-bottom: 1px solid $light-gray;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
   overflow: hidden;
+  padding: 1em 0;
 
   @include with-layout(5 .2) {
     a {

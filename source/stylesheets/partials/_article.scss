@@ -5,18 +5,20 @@
 }
 
 .entry-header {
-  margin-bottom: 20px;
-
-  ul {
-    font-size: 90%;
-  }
+  margin-bottom: 1em;
 }
 
-.tag {
-  @include button-bg($off-white);
-  border: 1px solid $light-gray;
-  margin-right: 5px;
-  padding: 2px;
+.entry-info {
+  font-size: 0.9rem;
+}
+
+.entry-info > span {
+  margin-right: 0.5em;
+}
+
+.entry-info > span > .fa {
+  text-align: center;
+  width: 1.5em;
 }
 
 .footnotes {

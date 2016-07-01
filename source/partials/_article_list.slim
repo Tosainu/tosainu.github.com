@@ -1,5 +1,5 @@
 - page_articles.each do |article|
-  article
+  article.entry
     = partial 'partials/article_header', :locals => { :article => article }
 
     - if article.summary.length != article.body.length

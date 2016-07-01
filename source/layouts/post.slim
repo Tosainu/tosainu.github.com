@@ -1,6 +1,6 @@
 = wrap_layout :default do
   #content
-    article
+    article.entry
       = partial 'partials/article_header', :locals => { :article => current_article }
 
       = yield

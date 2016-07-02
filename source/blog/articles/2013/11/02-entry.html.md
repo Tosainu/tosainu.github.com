@@ -71,7 +71,7 @@ WiringPiは、Cなどの言語においてArduinoのような簡単な文法でI
 
 ## 実際に動かしてみた
 
-<div class="video"><iframe width="560" height="315" src="//www.youtube.com/embed/wpuF3721WQc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wpuF3721WQc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 

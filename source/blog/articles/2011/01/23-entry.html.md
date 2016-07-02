@@ -13,5 +13,5 @@ tags:
 <p><span style="font-size:28px;">即買い</span>でした。</p>
 <p>これから、ちょっとすごめのソフトウェアでも作ってみようと思います。</p><br />
 <p>おまけ～まるで今のとさいぬの歌だ！！～</p>
-<iframe title="YouTube video player" class="youtube-player" type="text/html" width="540" height="435" src="http://www.youtube.com/embed/FlFMvPAg0YQ?rel=0" frameborder="0" allowFullScreen></iframe>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/FlFMvPAg0YQ?rel=0" frameborder="0" allowfullscreen></iframe>
 <p>ではまたいつか。じゃね～</p>

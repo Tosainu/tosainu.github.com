@@ -39,7 +39,7 @@ tags: i7-3930k PC
 <p>&nbsp;</p>
 <p><a href="http://www.lian-li.com/v2/en/product/product02.php?cl_index=1">Lian Li</a>とか<a href="http://www.silverstonetek.com/product_case.php?tno=7&area=en">SilverStone</a>とかのケースいいなぁ・・・とか思いながら、</p>
 <p>結局<a href="http://www.corsair.com/900d">900D</a>も面白そうだなぁとか思ってしまうとさいぬでした。</p>
-<iframe width="400" height="225" src="http://www.youtube.com/embed/_0Q7xF07_eg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_0Q7xF07_eg?rel=0" frameborder="0" allowfullscreen></iframe>
 <p>&nbsp;</p>
 <p>いつかスポンジ等で対処したいと思います。</p>
 <p>ではでは〜</p>

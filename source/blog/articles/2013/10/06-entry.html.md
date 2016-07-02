@@ -140,7 +140,7 @@ $ avrdude -c arduino -P /dev/ttyACM0 -p m328p -b 115200 -u -e -U flash:w:"FileNa
 <p>これで書き込めます。</p>
 <p>&nbsp;</p>
 <p>実際にLED点滅プログラムを動かしてみたところです。<span class="fontsize1">（何気にFullHD）</span></p>
-<div class="video"><iframe width="420" height="315" src="//www.youtube.com/embed/WMPZiEUmVdc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WMPZiEUmVdc?rel=0" frameborder="0" allowfullscreen></iframe>
 <p>&nbsp;</p>
 <h2>Arch LinuxでArduinoが認識されない時</h2>
 <p>僕の環境でもそうでしたが、一般ユーザーで/dev/ttyACM0にアクセスができませんでした。</p>

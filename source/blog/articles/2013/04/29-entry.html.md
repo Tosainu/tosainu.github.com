@@ -21,7 +21,7 @@ tags:
 <p>（といっても相変わらず蘭ちゃんは大変な目に遭ってましたが・・・）</p>
 <p>&nbsp;</p>
 <p>実際、本編開始前に流れた<span style="font-size:24px;">「ポケモンの映画の宣伝」</span>の方が印象強かったのが本音です。</p>
-<iframe width="400" height="225" src="http://www.youtube.com/embed/rTyPZGdEyyc?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rTyPZGdEyyc?rel=0" frameborder="0" allowfullscreen></iframe>
 <p>&nbsp;</p>
 <p>あれっ？</p>
 <p><span style="font-size:36px;">ポケモンってこんなアニメだっけ！？</span></p>

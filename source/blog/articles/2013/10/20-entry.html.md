@@ -49,7 +49,7 @@ do
 done
 ```
 
-<div class="video"><iframe width="420" height="315" src="//www.youtube.com/embed/6d-ysRDLh0c?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6d-ysRDLh0c?rel=0" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 
@@ -59,7 +59,7 @@ done
 
 [Raspberry Piに接続したフルカラーLEDをNode.jsから制御する - 人と技術のマッシュアップ](http://tomowatanabe.hatenablog.com/entry/2013/01/21/221722 "Raspberry Piに接続したフルカラーLEDをNode.jsから制御する - 人と技術のマッシュアップ")
 
-<div class="video"><iframe width="420" height="315" src="//www.youtube.com/embed/qi4fIWwi0es?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qi4fIWwi0es?rel=0" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 
@@ -67,7 +67,7 @@ done
 
 プログラム及び回路はまだ試作段階なので、後日うpということで。
 
-<div class="video"><iframe width="420" height="315" src="//www.youtube.com/embed/zzh_jgLDq3w?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zzh_jgLDq3w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 &nbsp;
 

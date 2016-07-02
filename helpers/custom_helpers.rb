@@ -28,6 +28,18 @@ module CustomHelpers
     end
   end
 
+  def page_image
+    if is_blog_article?
+      if img = Nokogiri::HTML.parse(current_article.body).at_css('img')
+        img['src']
+      else
+        data.author.avatar
+      end
+    else
+      data.author.avatar
+    end
+  end
+
   def page_metadata
     current_resource.metadata[:locals]
   end

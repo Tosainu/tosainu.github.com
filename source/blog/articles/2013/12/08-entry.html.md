@@ -51,7 +51,7 @@ Useful linksのDownloads→cm11.0と進み、
 
 動かしてみた様子を動画にしてみました。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2ii13L6zgsA?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/2ii13L6zgsA?rel=0" frameborder="0" allowfullscreen></iframe></div>
 </div>
 思っていた以上にサクサクと動いてくれました。
 

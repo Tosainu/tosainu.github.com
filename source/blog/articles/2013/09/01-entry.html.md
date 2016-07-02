@@ -36,9 +36,9 @@ tags:
 <p><img src="https://lh6.googleusercontent.com/-IZDciIS2028/UiMNvWfB5bI/AAAAAAAACis/KnGe_7pnaLg/s640/Untitled.png" /></p>
 <p><span style="font-size:6px;">（AdobeCCがボッタクリ臭しかしないので消える前にCS6は手に入れたいですが・・・）</span></p>
 <p>Twitterで時々流れているので知っている方もいるかもしれませんが、時々練習によって発生したゴミをつべに上げています。</p>
-<iframe width="480" height="360" src="https://www.youtube.com/embed/iC5Yt-7PgNE?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="480" height="360" src="https://www.youtube.com/embed/iC5Yt-7PgNE?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>
-<iframe width="480" height="360" src="https://www.youtube.com/embed/vVZw9A5O0Lo?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="480" height="360" src="https://www.youtube.com/embed/vVZw9A5O0Lo?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

@@ -13,9 +13,9 @@ tags:
 <p><span style="font-size:36px;">ぃよっっっっしゃァァァァ！</span></p>
 <p><span style="font-size:36px;">「電波のとさいぬ」復活だZE！</span></p>
 <p>&nbsp;</p>
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm17096030?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm17096030">【ニコニコ動画】突撃！ガラスのニーソ姫！(SPA)</a></noscript>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm17096030?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm17096030">【ニコニコ動画】突撃！ガラスのニーソ姫！(SPA)</a></noscript></div>
 <p>&nbsp;</p>
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm18041293?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm18041293">【ニコニコ動画】突撃！コウマのメイド長！</a></noscript>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm18041293?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm18041293">【ニコニコ動画】突撃！コウマのメイド長！</a></noscript></div>
 <p>いや、その電波じゃねーからっ！！</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

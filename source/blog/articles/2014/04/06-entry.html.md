@@ -3,7 +3,7 @@ title: Xperia Arc死にました
 date: 2014-04-06 17:39:46 JST
 tags: Xperia arc, Android, Xperia2011
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GOzR_GXgjxA?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/GOzR_GXgjxA?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
 **▂▅▇█▓▒░(’ω’)░▒▓█▇▅▂うわああああああああああああああああああああああああ**
 

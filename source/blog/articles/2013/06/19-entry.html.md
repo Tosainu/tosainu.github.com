@@ -16,9 +16,9 @@ tags: GTASA
 <p><a href="http://gedimods.blogspot.jp/2013/04/22psy.html">22_PSY</a></p>
 <p><a href="http://gedimods.blogspot.jp/2013/04/gentleman-dance-animation.html">Gentleman Dance Animation!</a></p>
 <p>&nbsp;</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yu3NtonI2Ik?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/yu3NtonI2Ik?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J9KaLXMom2A?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/J9KaLXMom2A?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>
 <p>アレです、あの</p>
 <p><del><span style="font-size:8px;">有名カー用品店のCMをパクったチョンナムスタイルで有名になった</span></del></p>
@@ -32,6 +32,6 @@ tags: GTASA
 <p>ダンスクラブのモーションでも使おうかな</p>
 <p>これはこれでキモチワルイ動きだけどwww</p>
 <p>&nbsp;</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ET_3Kj6XryA?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/ET_3Kj6XryA?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>
 <p>ではおやすみなさい～</p>

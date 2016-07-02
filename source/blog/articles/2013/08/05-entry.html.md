@@ -3,9 +3,9 @@ title: 圧電ブザーで『U.N.オーエンは彼女なのか？』のような
 date: 2013-08-05 00:30:25 JST
 tags: Raspberry Pi
 ---
-<div class="video"><iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm21513905" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm21513905">【ニコニコ動画】RaspberryPiで『U.N.オーエンは彼女なのか？』を演奏してみた</a></iframe></div>
+<iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm21513905" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm21513905">【ニコニコ動画】RaspberryPiで『U.N.オーエンは彼女なのか？』を演奏してみた</a></iframe>
 <p>&nbsp;</p>
-<div class="video"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm21513905?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm21513905">【ニコニコ動画】RaspberryPiで『U.N.オーエンは彼女なのか？』を演奏してみた</a></noscript></div>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm21513905?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm21513905">【ニコニコ動画】RaspberryPiで『U.N.オーエンは彼女なのか？』を演奏してみた</a></noscript></div>
 <p>&nbsp;</p>
 <p>どーもです。</p>
 <p>&nbsp;</p>

@@ -10,7 +10,7 @@ tags: Windows
 <p>とかで大騒ぎ。</p>
 <p>&nbsp;</p>
 <p>早く何とかしないといけないのでヤ○ダ電機に行ってきました。</p>
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm17091051?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm17091051">【ニコニコ動画】ヤマダ電機　歌あり</a></noscript>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm17091051?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm17091051">【ニコニコ動画】ヤマダ電機　歌あり</a></noscript></div>
 <p><del>何かのMAD見てからヤマダ便器にしか聞こえなくなったww</del></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

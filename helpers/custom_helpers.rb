@@ -1,4 +1,4 @@
-module GuideHelpers
+module CustomHelpers
   def page_title
     title = ""
     if current_page.data.title

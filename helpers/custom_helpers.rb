@@ -20,6 +20,14 @@ module CustomHelpers
     title << data.site.title
   end
 
+  def page_description
+    if is_blog_article?
+      strip_tags(current_article.body).gsub(/\s+/, ' ').strip[0..150]
+    else
+      data.site.description
+    end
+  end
+
   def page_metadata
     current_resource.metadata[:locals]
   end

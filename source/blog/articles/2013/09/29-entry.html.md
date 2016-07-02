@@ -7,7 +7,7 @@ tags: Raspberry Pi
 <p>&nbsp;</p>
 <p>えーと、画像見てもらったほうが早い。</p>
 <p>こんなもの作ろうとしてます。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/NfVkWsD06gZJwuk0u6zBZ9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-4dYBupR0N2s/UkgjtsUGMRI/AAAAAAAACnA/30ir8jWbU4U/s400/out.jpeg" height="236" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-4dYBupR0N2s/UkgjtsUGMRI/AAAAAAAACnA/30ir8jWbU4U/s640/out.jpeg" /></p>
 <p>RasPiをラジコンカーに載せて、操縦します。</p>
 <p>ただ操縦するだけでは面白くないのでWebCamを載せストリーミング、Webアプリを動かして外部のPCからブラウザ上で操縦できるようにしてみようかと。</p>
 <p>&nbsp;</p>

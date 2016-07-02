@@ -1,13 +1,13 @@
 ---
 title: ケースをAntec P100に替えてしまいました
 date: 2014-03-07 15:54:24 JST
-tags: i7-3930k_PC
+tags: i7-3930k PC
 ---
 どーもです。
 
-<a href="https://picasaweb.google.com/lh/photo/HahEBr3KyvMnVaHuozM4DNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-XoKivWIxV-E/UxlZ2n5NcBI/AAAAAAAADBo/889Z-pZBzoI/s400/IMG_1631.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-XoKivWIxV-E/UxlZ2n5NcBI/AAAAAAAADBo/889Z-pZBzoI/s640/IMG_1631.JPG" />
 
-<a href="https://picasaweb.google.com/lh/photo/62Ow9smdrQ8KTtEZqd2sX9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-FijF9e1kEAw/UxlZ1-Dv3PI/AAAAAAAADBs/jEuuzZ2dooA/s400/IMG_1632.JPG" height="300" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-FijF9e1kEAw/UxlZ1-Dv3PI/AAAAAAAADBs/jEuuzZ2dooA/s640/IMG_1632.JPG" />
 
 はい、買ってしまいました。
 
@@ -52,9 +52,9 @@ READMORE
 ## 大きさ
 並べてみるとこんな感じです。
 
-<a href="https://picasaweb.google.com/lh/photo/nfeVRiykde4-kBo3A9U8u9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-H5O219_iTb8/UxlgFrA3WcI/AAAAAAAADC8/Fho6XuWVX_o/s400/IMG_1647.JPG" height="300" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-H5O219_iTb8/UxlgFrA3WcI/AAAAAAAADC8/Fho6XuWVX_o/s640/IMG_1647.JPG" />
 
-<a href="https://picasaweb.google.com/lh/photo/E4MAMZGcKY-yl_FACcuFHtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-FFPyzXu2m8U/UxlgUaKgqFI/AAAAAAAADDI/-hBoEkBqL5E/s400/IMG_1648.JPG" height="400" width="300" /></a>
+<img src="https://lh3.googleusercontent.com/-FFPyzXu2m8U/UxlgUaKgqFI/AAAAAAAADDI/-hBoEkBqL5E/s640/IMG_1648.JPG" />
 
 若干小さくなったかな〜って感じです。
 
@@ -69,13 +69,13 @@ Corsairケースで失敗したせいもあって、僕がケースを選ぶと�
 
 見てくださいこの厚さの違い！丈夫さが全然違います。
 
-<a href="https://picasaweb.google.com/lh/photo/I5wLmECx9upnC7Pc1qvPJdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-lQ00IRfAIwg/UxlgF2H_IbI/AAAAAAAADDA/4dSMwp3wPLA/s400/IMG_1646.JPG" height="300" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-lQ00IRfAIwg/UxlgF2H_IbI/AAAAAAAADDA/4dSMwp3wPLA/s640/IMG_1646.JPG" />
 
-<a href="https://picasaweb.google.com/lh/photo/WJQDOjA7axs6DfQtimLjFtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-vsBALNiZ9kE/UxlgE9iOy5I/AAAAAAAADCw/8dJwC0zfXdU/s400/IMG_1645.JPG" height="300" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-vsBALNiZ9kE/UxlgE9iOy5I/AAAAAAAADCw/8dJwC0zfXdU/s640/IMG_1645.JPG" />
 
 そして何よりベイ自体の丈夫さ。
 
-<a href="https://picasaweb.google.com/lh/photo/L723urN8vSx8PHWeygBsHNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/--RsFqD_rkv0/UxlgXPGPd6I/AAAAAAAADDQ/xVaAret4LVA/s400/IMG_1649.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/--RsFqD_rkv0/UxlgXPGPd6I/AAAAAAAADDQ/xVaAret4LVA/s640/IMG_1649.JPG" />
 
 Corsairのケースでは配置が変更できる分、マウンタは購入時から平行四辺形です。
 
@@ -83,7 +83,7 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 それに対してAntec P100、見ての通り丈夫な作りをしています。
 
-<a href="https://picasaweb.google.com/lh/photo/dOjrvZb129J8Lw0DrjTHB9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-Ogw0EukcURs/UxlaNGTx2rI/AAAAAAAADCE/dP2ecK1_KM0/s400/IMG_1637.JPG" height="300" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-Ogw0EukcURs/UxlaNGTx2rI/AAAAAAAADCE/dP2ecK1_KM0/s640/IMG_1637.JPG" />
 
 トレイが「カシャッ」としっかり固定されるのもびっくりしました。
 
@@ -96,13 +96,13 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 すごく静かです。
 
-<a href="https://picasaweb.google.com/lh/photo/5VnpXsOI-wapjf7aG56uN9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-CimvKES9jkU/UxlaKp9WFgI/AAAAAAAADB0/xOIsifRV6Mc/s400/IMG_1640.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-CimvKES9jkU/UxlaKp9WFgI/AAAAAAAADB0/xOIsifRV6Mc/s640/IMG_1640.JPG" />
 
 電源を設置する場所に張り付けられたゴムシート、HDDマウンタに付いた丈夫なゴム、そして丈夫な足、ケース側面に貼られたスポンジなど、防音のための機構がいくつもありいい感じです。
 
-<a href="https://picasaweb.google.com/lh/photo/H5gL593JB4zgnbm7Kue8DdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-7hk661RAqJQ/UxladR0fR8I/AAAAAAAADCU/anqRJi7_zSs/s400/IMG_1642.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-7hk661RAqJQ/UxladR0fR8I/AAAAAAAADCU/anqRJi7_zSs/s640/IMG_1642.JPG" />
 
-<a href="https://picasaweb.google.com/lh/photo/zeViLhL-bP2N_r6F8s4FUdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-JyM6dG-JIRI/UxlacEOLFaI/AAAAAAAADCM/hzBrroZ-N08/s400/IMG_1641.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-JyM6dG-JIRI/UxlacEOLFaI/AAAAAAAADCM/hzBrroZ-N08/s640/IMG_1641.JPG" />
 
 &nbsp;
 
@@ -113,9 +113,9 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 可動部分が多かったり凸凹が多いと、その部分にホコリ等が溜ってしまうじゃないですか。あれがどうしても許せなかったんです。
 
-<a href="https://picasaweb.google.com/lh/photo/rfi99C0EekqAAYmfPnEGlNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-7ghQ34cIZnw/UxlZ0QSuc7I/AAAAAAAADBc/ceabgsSs61M/s400/IMG_1633.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-7ghQ34cIZnw/UxlZ0QSuc7I/AAAAAAAADBc/ceabgsSs61M/s640/IMG_1633.JPG" />
 
-<a href="https://picasaweb.google.com/lh/photo/_r-zRaiQrL71mvU5QgTeTdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-WXZjVspfqZ4/UxlaLxB9amI/AAAAAAAADB8/CCk6LGV94r4/s400/IMG_1634.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-WXZjVspfqZ4/UxlaLxB9amI/AAAAAAAADB8/CCk6LGV94r4/s640/IMG_1634.JPG" />
 
 &nbsp;
 
@@ -126,15 +126,15 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 P100の一目見て極性のわかるケーブルには涙が出そうになりました。
 
-<a href="https://picasaweb.google.com/lh/photo/bir1czwDoau7L7pRKZOxqNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-tgXncYV6OTE/UxlJ5hAzE9I/AAAAAAAADAA/RWGVybqtP6c/s400/IMG_1607.JPG" height="300" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-tgXncYV6OTE/UxlJ5hAzE9I/AAAAAAAADAA/RWGVybqtP6c/s640/IMG_1607.JPG" />
 
 ほか、フロントIOのオーディオケーブルがHD AudioとAC'97の両対応だったり、USB3.0と2.0両対応だったりと、旧世代パーツにも何気に対応していて驚きました。
 
-<a href="https://picasaweb.google.com/lh/photo/D2UaEVAw0jNleOVu9XF2S9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-TTBwGeaw1fk/UxlKFmvlT7I/AAAAAAAADAI/uv7CZ95jhOU/s400/IMG_1613.JPG" height="300" width="400" /></a>
+<img src="https://lh5.googleusercontent.com/-TTBwGeaw1fk/UxlKFmvlT7I/AAAAAAAADAI/uv7CZ95jhOU/s640/IMG_1613.JPG" />
 
 裏のスペースも結構広く、余裕を持った裏配線ができると思います。
 
-<a href="https://picasaweb.google.com/lh/photo/5TgEMW1hhsXk20HFEPWR6NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-sTMBbusl0M4/UxlKJlNqXdI/AAAAAAAADAQ/4sP_Ud31CM0/s400/IMG_1625.JPG" height="300" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-sTMBbusl0M4/UxlKJlNqXdI/AAAAAAAADAQ/4sP_Ud31CM0/s640/IMG_1625.JPG" />
 
 &nbsp;
 
@@ -148,7 +148,7 @@ P100の一目見て極性のわかるケーブルには涙が出そうになり�
 ### ネジがわかりにくい
 取説の記述もなく迷いました。忘備録も兼ねてメモしておきます。
 
-<a href="https://picasaweb.google.com/lh/photo/MdqH1pcECOOllSrRrksumNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-WIFbzKUjLtI/UxlR8d0RDnI/AAAAAAAADBI/GK6ZIJb4k5o/s400/IMG_1609.JPG" height="210" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-WIFbzKUjLtI/UxlR8d0RDnI/AAAAAAAADBI/GK6ZIJb4k5o/s640/IMG_1609.JPG" />
 
 左から、
 

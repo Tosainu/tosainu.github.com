@@ -8,13 +8,13 @@ tags: Linux, Arch Linux
 今回のテストで一番つらいと思っている最初の2日を無事終え, 大分気が楽になった感じです.  
 (まだあと8教科残ってますが....)
 
-さて, 僕は普段, USB3.0対応のUSBフラッシュメモリである**SanDisk Extreme USB 3.0 Flash Drive**を使っているのですが, 近頃Vaio Zに入れたArch LinuxでこれをUSB3.0ポートに挿すと認識してくれなくなってしまったんです(USB2.0のポートだと動く).
+さて, 僕は普段, USB3.0対応のUSBフラッシュメモリである**SanDisk Extreme USB 3.0 Flash Drive**を使っているのですが, 近頃VAIO Zに入れたArch LinuxでこれをUSB3.0ポートに挿すと認識してくれなくなってしまったんです(USB2.0のポートだと動く).
 
 いろいろ調べたら簡単に解決したのでメモ.
 
 ## かんきょう
 
-* Vaio Z (VPCZ23AJ)
+* VAIO Z (VPCZ23AJ)
 * Arch Linux x86\_64
 * linux 3.17.0-rc5 (症状自体はlinux-3.15あたりから)
 

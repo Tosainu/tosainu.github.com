@@ -1,7 +1,7 @@
 ---
 title: SHURE SE315を買いました
 date: 2014-11-29 15:51 JST
-tags: Diary
+tags:
 ---
 
 どもども.

@@ -1,7 +1,7 @@
 ---
 title: GTX 660TiのBIOSを弄る（MaxTDP・FanSpeed・BoostClock・VoltageLimit）
 date: 2013-03-19 14:07:32 JST
-tags: i7-3930k_PC
+tags: i7-3930k PC
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>
@@ -16,7 +16,7 @@ tags: i7-3930k_PC
 <li>Max BoostClock：1085MHz→1228MHz</li>
 <li>Max CoreVoltage：1.1750V→1.212V（GPU-Z読み）</li>
 </ul>
-<p><a href="https://picasaweb.google.com/lh/photo/bhgpZubXSsDCWO2SmqWs9dMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-qwopLgi5ZXU/UUfkJzKky7I/AAAAAAAABu8/uesBanERH-U/s800/unlock%2521%2521%2521%2521%2521%2521.png" height="485" width="393" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-qwopLgi5ZXU/UUfkJzKky7I/AAAAAAAABu8/uesBanERH-U/s800/unlock%2521%2521%2521%2521%2521%2521.png" height="485" width="393" /></p>
 <p>&nbsp;</p>
 <p>これで念願のCoreClock約1230MHz達成です。</p>
 <p>&nbsp;</p>
@@ -39,7 +39,7 @@ tags: i7-3930k_PC
 <h3>1.改造前のBIOSを抜き出す</h3>
 <p>TechPowerUP GPU-Zを起動します。</p>
 <p>画像の<strong><span style="color:red;">□</span></strong>をクリックすると、BIOSが抜き出せます。適当なところに保存してください。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/j6IJ2ij0PpW8uwnXlvBNotMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-uiezirPUb0U/UUfx5CFdpYI/AAAAAAAABvM/7eoKfU9IoSw/s800/nyan.png" height="485" width="393" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-uiezirPUb0U/UUfx5CFdpYI/AAAAAAAABvM/7eoKfU9IoSw/s800/nyan.png" height="485" width="393" /></p>
 <p><span style="color:red;">もしものためにBIOSにはバックアップを作っておいてください。</span></p>
 <p>&nbsp;</p>
 <h3>2.BIOSのファイルを加工する</h3>
@@ -119,7 +119,7 @@ Voltage = 1187500（1.1875V）
 <p>ではでは〜</p>
 <p>&nbsp;</p>
 <p><span style="color:red;"><span style="font-size:24px;">追記（2013/3/19 (Tue) 18:6:29）</span></span></p>
-<p><a href="https://picasaweb.google.com/lh/photo/U0KzXHR71oe5dZqdg-efBdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-brgEI09a-2k/UUgqSnVbYLI/AAAAAAAABvc/i7C0MPBD5TE/s400/10096.png" height="225" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-brgEI09a-2k/UUgqSnVbYLI/AAAAAAAABvc/i7C0MPBD5TE/s640/10096.png" /></p>
 <p><span style="font-size:24px;">10096キタ———（゜∀゜）———— ！！</span></p>
 <p>前回の4700MHZの時の設定から、さらにベースクロックを102MHzにして達成です。</p>
 <p>この様子だと電圧盛らずに100MHzx48いけるかな？</p>

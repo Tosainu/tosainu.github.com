@@ -1,7 +1,7 @@
 ---
 title: RoboCupチームKIKSに参加することにしました
 date: 2015-04-11 00:44 JST
-tags: Diary
+tags:
 ---
 
 どもども.  

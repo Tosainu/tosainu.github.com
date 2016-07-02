@@ -1,7 +1,7 @@
 ---
 title: (僕の)ケータイのデータふっ飛ばして妹と母親に殺された1日でした
 date: 2013-12-07 01:21:50 JST
-tags: Diary,Android
+tags: Android
 ---
 どもどもですん
 

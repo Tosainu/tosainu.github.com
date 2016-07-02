@@ -1,7 +1,7 @@
 ---
 title: ひと目で尋常でないプロテクトだと見抜いたよ
 date: 2014-12-20 18:03 JST
-tags: Diary
+tags: Gochiusa
 ---
 
 この記事は先日の**[ご注文はBlu-rayですか?](/blog/2014-12-19/gochiusa_blu_ray_photo_review/)**の続きです.

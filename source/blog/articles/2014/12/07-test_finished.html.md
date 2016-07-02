@@ -1,7 +1,7 @@
 ---
 title: てすとおわりました
 date: 2014-12-07 16:26 JST
-tags: Diary, C++
+tags: C++
 ---
 
 みょん.
@@ -12,7 +12,7 @@ tags: Diary, C++
 ## ✿ 最近のこと
 
 * FE合格しました
-* Vaio ZたんからWindowsが消滅しました
+* VAIO ZたんからWindowsが消滅しました
 * 寒いですね
 * Boost.Xpressiveつよい
 * [Tosainu/twitpp](https://github.com/Tosainu/twitpp)を再び弄りはじめました(後述)

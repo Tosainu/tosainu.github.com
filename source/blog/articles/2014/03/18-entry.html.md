@@ -1,16 +1,16 @@
 ---
-title: VaioZのOSをすべて再インストールした(Windows7編)
+title: VAIO ZのOSをすべて再インストールした(Windows7編)
 date: 2014-03-18 20:13:00 JST
-tags: Vaio-Z2, Windows
+tags: VAIO Z2, Windows
 ---
 どーもです
 
-あまりにも暇だったんで、これでもう3年目になるVaioZたんのOS再インストールをすることにしました。
+あまりにも暇だったんで、これでもう3年目になるVAIO ZたんのOS再インストールをすることにしました。
 
 &nbsp;
 
 ## 環境等
-僕の使うVaioZはVPCZ23AJ、Webからのオーナーメイドモデルです。
+僕の使うVAIO ZはVPCZ23AJ、Webからのオーナーメイドモデルです。
 
 標準状態のRAIDを解除し、Arch Linux/Windows7hp/WindowsXPproのトリプルブート状態で使っていました。
 
@@ -57,9 +57,9 @@ Arch Linuxのインストールディスクから起動させ、
 とコマンドを叩きました。
 
 ### RAID0を組む
-BIOSに入り(VaioロゴでF2)、Advanced > RAID ConfigurationをShowにして再起動します。
+BIOSに入り(VAIOロゴでF2)、Advanced > RAID ConfigurationをShowにして再起動します。
 
-するとVaioロゴが表示された後にRAID設定が表示されるので、Ctrl+I(アイ)で設定画面に入ります。
+するとVAIOロゴが表示された後にRAID設定が表示されるので、Ctrl+I(アイ)で設定画面に入ります。
 
 RAIDを組めたらExitし、そのままWindowsインストールに進みます。
 
@@ -97,7 +97,7 @@ RAIDを組めたらExitし、そのままWindowsインストールに進みま�
 
 `OEM Certificate`で文字列を検索し、その真上の`<?xml version="1.0" encoding="utf-8" ?>`から`</r:license>`を選択し、右クリック > 選択範囲をファイルに保存として出力します。
 
-<a href="https://picasaweb.google.com/lh/photo/4wlnRaun9wobDq9ZCDWeFNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-EKT9kqFqvgk/UygdXiyN9bI/AAAAAAAADGk/qiSiwlX-Qsk/s400/SnapCrab_NoName_2014-3-18_19-16-41_No-00.png" height="230" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-EKT9kqFqvgk/UygdXiyN9bI/AAAAAAAADGk/qiSiwlX-Qsk/s640/SnapCrab_NoName_2014-3-18_19-16-41_No-00.png" />
 
 ファイル名は先程のサイトと同様に`hoge.xrm-ms`とし、`C:\`に保存しました。
 
@@ -156,7 +156,7 @@ Sonyサイトで配布されているドライバはそのまま実行しても�
 6. MODC-182452.no_77 VAIO Hardware Diagnostics
 7. MODC-182535.no_79 ISB Utility
 
-Vaioの型によってフォルダ名は異なってくるようですが、VPCZ23AJでは上記のようでした。
+VAIOの型によってフォルダ名は異なってくるようですが、VPCZ23AJでは上記のようでした。
 
 万が一見つからない場合、コンテンツ検索(ファイルの中の文字列を検索)させると出てくると思います。
 

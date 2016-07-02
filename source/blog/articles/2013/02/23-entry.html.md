@@ -1,9 +1,9 @@
 ---
 title: WiMAXとMobileCubeを約半年使った感想
 date: 2013-02-23 14:34:13 JST
-tags: Diary
+tags:
 ---
-<p><a href="https://picasaweb.google.com/lh/photo/7xqNquDN0JOKxiwr_Dio0tMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-T4See_3nGLQ/USg8OY_RR8I/AAAAAAAABJM/mfxZrOYO9i8/s400/DSC06760.JPG" height="225" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-T4See_3nGLQ/USg8OY_RR8I/AAAAAAAABJM/mfxZrOYO9i8/s640/DSC06760.JPG" /></p>
 <p>どもども、とさいぬです。</p>
 <p>&nbsp;</p>
 <p>以前携帯電話が壊れて以来、SIMロックを解除したXperia ArcとWiMAXを使っています。</p>
@@ -13,7 +13,7 @@ tags: Diary
 <h3>WiMAX（主に通信速度）について</h3>
 <p>あれだけ「速い」っていうのを宣伝していた割には、思ったほど速くなかったというのが素直な感想です。</p>
 <p>しかし、時間帯や場所にもよりますが、十分すぎる速度が出ます。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/HjZ7JTvDwf2ichSESAFvitMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-6OYzNFuLr9g/UShBf8o4ECI/AAAAAAAABJY/_1TJ5OFePu0/s400/Screenshot_2013-02-23-13-10-51.png" height="400" width="240" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-6OYzNFuLr9g/UShBf8o4ECI/AAAAAAAABJY/_1TJ5OFePu0/s640/Screenshot_2013-02-23-13-10-51.png" /></p>
 <p>僕の使用する環境では、下りの最速が約11.5Mbps、上りの最速は2.5Mbpsでした。</p>
 <p>特に上りは自宅の回線の3倍近く速度が出ているので快適です。</p>
 <p>&nbsp;</p>
@@ -62,7 +62,7 @@ tags: Diary
 <p>もちろん初期化は数え切れないくらいしました。</p>
 <p>また、本体のフタ？の爪が破損していて簡単な衝撃で開いてしまったり、</p>
 <p>メイン基板とバッテリーを繋ぐコネクタが取れていたり（ショートしなくてよかった〜）</p>
-<p><a href="https://picasaweb.google.com/lh/photo/q9w89HTR_Vj6vlRYS7AQFtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-2WX7YaMkAu8/UShSaaQhErI/AAAAAAAABJ0/osajMRM5KWA/s400/DSC07075.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-2WX7YaMkAu8/UShSaaQhErI/AAAAAAAABJ0/osajMRM5KWA/s640/DSC07075.JPG" /></p>
 <p>相変わらずの糞サポートです。</p>
 <p>いつ修理がはじまるのだろう。</p>
 <p>&nbsp;</p>

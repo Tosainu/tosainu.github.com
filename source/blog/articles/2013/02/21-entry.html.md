@@ -1,7 +1,7 @@
 ---
 title: テスト最終日～
 date: 2013-02-21 03:04:13 JST
-tags: Diary
+tags:
 ---
 <p>Android端末からの書き込みです</p>
 <p><br />どもどもとさいぬです。</p>

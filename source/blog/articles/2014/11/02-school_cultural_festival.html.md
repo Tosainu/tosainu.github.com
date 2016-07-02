@@ -1,7 +1,7 @@
 ---
 title: 文化祭でした
 date: 2014-11-02 22:42 JST
-tags: Diary
+tags:
 ---
 
 みょん.
@@ -10,7 +10,7 @@ tags: Diary
 <blockquote class="twitter-tweet" lang="en"><p>I&#39;m at 豊田工業高等専門学校 in 豊田市, 愛知県 <a href="https://t.co/LcmfkJGRjZ">https://t.co/LcmfkJGRjZ</a> <a href="http://t.co/htVU7l51rz">pic.twitter.com/htVU7l51rz</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/528363503997169664">November 1, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-僕が所属するクラスなどでは特に展示物は無かったのですが, いろいろあって本来のクラス(意味深)の展示物で入り口のディスプレイで使う**動画や画像を遠隔(ブラウザ)で表示させたりするシステム**をRaspberryPiとNode.jsで作ったり, 展示の制御部分で使ったUSB-シリアル変換器がWindows7までのドライバしか提供されておらず窓7不足になっていたため僕のVaioZを貸したりしていました.  
+僕が所属するクラスなどでは特に展示物は無かったのですが, いろいろあって本来のクラス(意味深)の展示物で入り口のディスプレイで使う**動画や画像を遠隔(ブラウザ)で表示させたりするシステム**をRaspberryPiとNode.jsで作ったり, 展示の制御部分で使ったUSB-シリアル変換器がWindows7までのドライバしか提供されておらず窓7不足になっていたため僕のVAIO Zを貸したりしていました.  
 ![gochiusa](https://lh4.googleusercontent.com/-PFDT1aUM528/VFY64YBgZlI/AAAAAAAADmo/p0Io4cEbiQg/s640/IMG_2555.JPG)
 
 一応メインの展示の紹介をしておくと, 5,000個近くのLEDを使った展示をやっていました.  

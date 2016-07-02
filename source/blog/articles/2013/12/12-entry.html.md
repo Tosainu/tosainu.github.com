@@ -1,7 +1,7 @@
 ---
 title: ちょっとYoutubeっていいなって思った
 date: 2013-12-12 00:11:34 JST
-tags: Diary
+tags:
 ---
 どもーっ。
 
@@ -17,7 +17,7 @@ tags: Diary
 
 先日、RayたんでKitKatを動かしてみた動画を投稿しましたが、その動画に早速ブラジル人(と思う)方からコメントを頂きました。
 
-<a href="https://picasaweb.google.com/lh/photo/f0RspN4tl8mf5aXVaefkydMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-K06_CX4y9tI/Uqh99iS3xuI/AAAAAAAACzg/whLKg-634Zc/s400/2013-12-11-235331_1920x1080_scrot.png" height="204" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/-K06_CX4y9tI/Uqh99iS3xuI/AAAAAAAACzg/whLKg-634Zc/s640/2013-12-11-235331_1920x1080_scrot.png" />
 
 いやぁ、とても嬉しかったです。
 

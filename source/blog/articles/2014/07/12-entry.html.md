@@ -1,7 +1,7 @@
 ---
 title: なつやすみ
 date: 2014-07-12 01:35:55 JST
-tags: Diary
+tags:
 ---
 みょんみょん
 

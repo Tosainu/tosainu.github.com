@@ -1,7 +1,7 @@
 ---
 title: Arch Linuxインストールめも (2014秋版)
 date: 2014-10-06 00:51 JST
-tags: Arch Linux, i7-3930k_PC
+tags: Arch Linux, i7-3930k PC
 ---
 
 どーもです.

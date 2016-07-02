@@ -1,7 +1,7 @@
 ---
 title: 夏休み最終日なわけだが
 date: 2013-09-01 18:50:28 JST
-tags: Diary
+tags:
 ---
 <p>来ちゃいましたね、9月。</p>
 <p>夏休み最終日です。</p>
@@ -33,7 +33,7 @@ tags: Diary
 <p>今更ですがあの<a href="http://spring-fragrance.mints.ne.jp/aviutl/">AviUtl</a>にレイヤー機能が追加できるプラグインが開発されているのも知りました。</p>
 <p><del><span style="font-size:6px;">（いままでカット編集しかできない低機能ソフトだと思っていました本当に申し訳ありません）</span></del></p>
 <p>とりあえずこれらフリーソフトを使い、作成していこうと思っています。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/B2IrrFAU5lvrW53g77RKeNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-IZDciIS2028/UiMNvWfB5bI/AAAAAAAACis/KnGe_7pnaLg/s400/Untitled.png" height="225" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-IZDciIS2028/UiMNvWfB5bI/AAAAAAAACis/KnGe_7pnaLg/s640/Untitled.png" /></p>
 <p><span style="font-size:6px;">（AdobeCCがボッタクリ臭しかしないので消える前にCS6は手に入れたいですが・・・）</span></p>
 <p>Twitterで時々流れているので知っている方もいるかもしれませんが、時々練習によって発生したゴミをつべに上げています。</p>
 <div class="video"><iframe width="420" height="315" src="//www.youtube.com/embed/iC5Yt-7PgNE?rel=0" frameborder="0" allowfullscreen></iframe></div>

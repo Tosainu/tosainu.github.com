@@ -1,7 +1,7 @@
 ---
 title: テスト終わりました
 date: 2013-12-05 23:51:16 JST
-tags: Diary
+tags:
 ---
 どーもです
 

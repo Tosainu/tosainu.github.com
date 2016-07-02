@@ -6,11 +6,11 @@ tags: Linux,Arduino, Vim
 <p>どーもです。</p>
 <p>&nbsp;</p>
 <p>夏休みになり、勝手に参加させてもらってる部活で「Arduino」を使うことになりました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/5cxtUWYiDjfujGX0tojb8NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-IQ9K6n2YQC0/UftB6_srH8I/AAAAAAAACec/Q7ulhUZeVWo/s400/IMG_0870.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-IQ9K6n2YQC0/UftB6_srH8I/AAAAAAAACec/Q7ulhUZeVWo/s640/IMG_0870.JPG" /></p>
 <p>↑秋月LCD実験中</p>
 <p>&nbsp;</p>
 <p>さて、Arduinoを動かすには「スケッチ」と呼ばれるプログラムを書かなければいけませんが、</p>
-<p><a href="https://picasaweb.google.com/lh/photo/-g0f_JC4LdPZVeqyqpO5kNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-OmwidzOAiEE/UftF465elnI/AAAAAAAACes/uxFcNKOBbXU/s400/Screenshot%2520from%25202013-08-02%252014%253A35%253A39.png" height="400" width="333" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-OmwidzOAiEE/UftF465elnI/AAAAAAAACes/uxFcNKOBbXU/s640/Screenshot%2520from%25202013-08-02%252014%253A35%253A39.png" /></p>
 <p>&nbsp;</p>
 <p><span style="font-size:36px;">標準エディタ使いにくい</span></p>
 <p>&nbsp;</p>
@@ -46,10 +46,10 @@ On Mac using MacPorts:
 <p><a href="https://github.com/sudar/Arduino-Makefile">https://github.com/sudar/Arduino-Makefile</a></p>
 <p>&nbsp;</p>
 <p>右側に「Download ZIP」ボタンがあるので、ここからダウンロードします。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/ZXJkaGxtnEWlVccx2bYYmNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-SAUiS5YlTsg/UftKCqUAdMI/AAAAAAAACe8/m1_G1z_YPas/s800/Screenshot%2520from%25202013-08-02%252014%253A55%253A17.png" height="192" width="270" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-SAUiS5YlTsg/UftKCqUAdMI/AAAAAAAACe8/m1_G1z_YPas/s800/Screenshot%2520from%25202013-08-02%252014%253A55%253A17.png" height="192" width="270" /></p>
 <p>&nbsp;</p>
 <p>僕はDocumentsフォルダにarduinoフォルダを作成し、その中に解凍して出てくる全てのファイル・フォルダをコピーし、さらにsourceフォルダを作成しました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/18GiNvpkAen5whISfHTjOdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-eeXCb6A2vW0/UftTus-6YdI/AAAAAAAACfw/qqiRGK236e8/s400/Screenshot%2520from%25202013-08-02%252015%253A35%253A09.png" height="239" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-eeXCb6A2vW0/UftTus-6YdI/AAAAAAAACfw/qqiRGK236e8/s640/Screenshot%2520from%25202013-08-02%252015%253A35%253A09.png" /></p>
 <p>&nbsp;</p>
 <p>このsourceフォルダの中に、こんな感じでスケッチを書いていきます。</p>
 <pre>
@@ -124,7 +124,7 @@ atmega8
 <p>&nbsp;</p>
 <p>ホームフォルダに「.vim」という名前でフォルダを作成し、先ほどダウンロードしたzipファイルを解凍して出てくる「ftdetect」と「syntax」フォルダを突っ込みます。</p>
 <p>Linuxの世界ではファイル・フォルダ名の1文字目を「.」にすると隠しファイルの扱いになるので、ファイラーによっては設定を変更しないと表示されない場合があります。注意してください。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/rdUiKslrl4134PI7pwQRZNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-x1uFDeEt59Y/UftLbb-hL4I/AAAAAAAACfM/cAa_DmiYK8s/s400/Screenshot%2520from%25202013-08-02%252014%253A59%253A26.png" height="199" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-x1uFDeEt59Y/UftLbb-hL4I/AAAAAAAACfM/cAa_DmiYK8s/s640/Screenshot%2520from%25202013-08-02%252014%253A59%253A26.png" /></p>
 <p>&nbsp;</p>
 <p>また、これは個人の好みによりますが、ホームフォルダに「.vimrc」という名前でファイルを作成し、中身にコレだけは書いておくことをおすすめします。</p>
 <pre class="prettyprint">
@@ -135,7 +135,7 @@ set smartindent
 <p>その他の設定に関しては、<a href="http://vimblog.hatenablog.com/">Vimのブログ</a>が参考になるので、試してみるといいと思います。</p>
 <p>&nbsp;</p>
 <p>これで、VimでArduinoのスケッチファイル（拡張子ino）を開くと色が付いているはずです。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/taoPGIDYOHDbZ0B9NXcfENMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-sBUXuvwQraQ/UftM6_sG7aI/AAAAAAAACfc/uqb4MVwKVwY/s400/Screenshot%2520from%25202013-07-29%252018%253A52%253A07.png" height="240" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-sBUXuvwQraQ/UftM6_sG7aI/AAAAAAAACfc/uqb4MVwKVwY/s640/Screenshot%2520from%25202013-07-29%252018%253A52%253A07.png" /></p>
 <p>&nbsp;</p>
 <h3>ビルド&書き込み</h3>
 <p>スケッチのある（inoファイルのある）ディレクトリでTerminalを開き、</p>

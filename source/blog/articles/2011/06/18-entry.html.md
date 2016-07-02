@@ -16,6 +16,6 @@ tags:
 <p>びっくりです。</p>
 <p>&nbsp;</p>
 <p>写真貼っておきます。</p>
-<a href="https://picasaweb.google.com/lh/photo/nXBBTT_36Z1FMjXLs9qFJw?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-txp9B58ahcQ/TfxQmZhCWqI/AAAAAAAAAi0/_qWD4saT0bM/s400/Maple110618_145659.jpg" height="300" width="400" /></a>
-<a href="https://picasaweb.google.com/lh/photo/NxVABr_sTiluZdSz5A3XBA?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-yiYkIAJvxt8/TfxQmlnKq2I/AAAAAAAAAi4/3xjpE0sxTFc/s400/Maple110618_145837.jpg" height="300" width="400" /></a>
+<img src="https://lh4.googleusercontent.com/-txp9B58ahcQ/TfxQmZhCWqI/AAAAAAAAAi0/_qWD4saT0bM/s640/Maple110618_145659.jpg" />
+<img src="https://lh5.googleusercontent.com/-yiYkIAJvxt8/TfxQmlnKq2I/AAAAAAAAAi4/3xjpE0sxTFc/s640/Maple110618_145837.jpg" />
 <p>ではまた、</p>

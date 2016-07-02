@@ -1,7 +1,7 @@
 ---
 title: 2013年まとめの挨拶＆muninがやっと動いたのでメモ
 date: 2013-12-31 22:59:23 JST
-tags: Linux,Diary
+tags: Linux
 ---
 大晦日ですねぇ・・・
 

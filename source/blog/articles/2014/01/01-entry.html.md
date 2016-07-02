@@ -1,7 +1,7 @@
 ---
 title: 2014年 あけましておめでとうございます
 date: 2014-01-01 11:59:37 JST
-tags: Diary
+tags:
 ---
 <blockquote class="twitter-tweet" lang="en"><p>あけおめです</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034226626568192">December 31, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -35,7 +35,7 @@ tags: Diary
 
 以前から言っているTwitterLibraryも公開できるレベルにしないとねぇ・・・
 
-<a href="https://picasaweb.google.com/lh/photo/OjgaEUqlZKHzB0DnQnB-NdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-SWQCpzC94S4/UsODBbGerDI/AAAAAAAAC2Y/pyyeL4ikRrA/s400/2014-01-01-115032_1920x1080_scrot.png" height="198" width="400" /></a>
+<img src="https://lh3.googleusercontent.com/-SWQCpzC94S4/UsODBbGerDI/AAAAAAAAC2Y/pyyeL4ikRrA/s640/2014-01-01-115032_1920x1080_scrot.png" />
 
 &nbsp;
 

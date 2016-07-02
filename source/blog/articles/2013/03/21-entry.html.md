@@ -1,7 +1,7 @@
 ---
 title: 動画を作ったんだ、うん
 date: 2013-03-21 09:53:48 JST
-tags: Diary
+tags:
 ---
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm20384482" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm20384482">【ニコニコ動画】CPUソケットを吹っ切らせたかった</a></iframe>
 <p>&nbsp;</p>
@@ -10,7 +10,7 @@ tags: Diary
 <p>うん、何がしたかったんだろうね。</p>
 <p>&nbsp;</p>
 <p>そして、うｐ早々</p>
-<p><a href="https://picasaweb.google.com/lh/photo/OIp8ToHS_hbjzp3gfhYOjdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-xwYy-MStC6Y/UUpZw5jzC8I/AAAAAAAABxI/uVdTR__RKrU/s800/nico.png" height="140" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-xwYy-MStC6Y/UUpZw5jzC8I/AAAAAAAABxI/uVdTR__RKrU/s800/nico.png" height="140" width="400" /></p>
 <p>このタグ付いちゃったよww</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

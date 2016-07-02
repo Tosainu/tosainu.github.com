@@ -1,7 +1,7 @@
 ---
 title: '#kosenconf in 名古屋2に参加してきた'
 date: 2014-08-23 23:28 JST
-tags: Diary
+tags:
 ---
 
 みょん.

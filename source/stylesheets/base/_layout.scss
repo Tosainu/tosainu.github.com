@@ -24,7 +24,6 @@ $wide-screen-width: 1280px;
   #content {
     @include span(9);
   }
-
   #side {
     @include span(last 3);
   }

@@ -8,15 +8,15 @@
 
 .entry-info {
   font-size: 0.9rem;
-}
 
-.entry-info > span {
-  margin-right: 0.5em;
-}
+  & > span {
+    margin-right: 0.5em;
 
-.entry-info > span > .fa {
-  text-align: center;
-  width: 1.5em;
+    & > .fa {
+      text-align: center;
+      width: 1.5em;
+    }
+  }
 }
 
 .footnotes {

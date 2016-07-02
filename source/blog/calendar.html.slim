@@ -1,23 +1,20 @@
 ---
-title: "Archive: "
 layout: default
 pageable: true
 per_page: 3
 ---
-ruby:
-  case page_type when 'day'
-    date = ['Daily', Date.new(year, month, day).strftime('%Y-%m-%d')]
-  when 'month'
-    date = ['Monthly', Date.new(year, month).strftime('%Y-%m')]
-  when 'year'
-    date = ['Yearly', Date.new(year).strftime('%Y')]
-  end
-
-- content_for :title, date[1]
-
 #content
   aside
-    = "#{date[0]} Archives: <strong>#{date[1]}</strong>."
+    | Archive for 
+    strong
+      - case page_type
+      - when 'year'
+        = formatted_year
+      - when 'month'
+        = formatted_year_month
+      - when 'day'
+        = formatted_year_month_day
+    |.
 
   = partial 'partials/article_list'
 

@@ -1,15 +1,14 @@
 ---
-title: "Tag: "
 layout: default
 pageable: true
 per_page: 3
 ---
-
-- content_for :title, tagname
-
 #content
   aside
-    = "Tag Archives: <strong>#{tagname}</strong>."
+    | Articles tagged 
+    strong
+      = tagname
+    |.
 
   = partial 'partials/article_list'
 

@@ -38,6 +38,13 @@ html lang = data.site.lang
 
     #footer
       .container
-        p = data.site.footer
+        p
+          | &copy; 2011-#{Time.now.year} Tosainu. 
+          | Powered by 
+          | #{link_to 'Middleman', 'https://middlemanapp.com/'}, 
+          | #{link_to 'Susy', 'http://susy.oddbird.net/'}, 
+          | #{link_to 'Font Awesome', 'http://fontawesome.io/'}, 
+          | #{link_to 'GitHub Pages', 'https://pages.github.com/'}, 
+          | #{link_to 'CloudFlare', 'https://www.cloudflare.com/'}.
 
     = partial 'partials/ga'

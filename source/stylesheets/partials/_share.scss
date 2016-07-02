@@ -3,35 +3,39 @@
   padding: 1em 0;
 
   @include with-layout(5 .2) {
-    a {
-      span {
+    .share-button {
+      & {
         @include span(1 of 5);
-
-        font-size: 130%;
-        height: 1em;
-        line-height: 1;
-        padding: 10px 0;
-        text-align: center;
-        vertical-align: middle;
       }
-
-      &:last-child span {
+      &:last-child {
         @include span(1 last);
-      }
-
-      &:link, &:visited, &:active, &:hover {
-        color: $white;
-        text-decoration: none;
       }
     }
   }
 }
+
+.share-button {
+  font-size: 1.3rem;
+  height: 1em;
+  line-height: 1;
+  padding: 0.5em 0;
+  text-align: center;
+  vertical-align: middle;
+
+  &:link, &:visited, &:active, &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
 .twitter {
   @include button-bg(#55acee);
 }
+
 .hatena {
   @include button-bg(#007bca);
 }
+
 .pocket {
   @include button-bg(#ed4055);
 
@@ -41,12 +45,15 @@
     fill: $white;
   }
 }
+
 .google-plus {
   @include button-bg(#c93725);
 }
+
 .adn {
   @include button-bg(#4a484d);
 }
+
 .fa-hatena:before {
   content: "B!";
   font-family: Verdana;

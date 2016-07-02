@@ -3,19 +3,22 @@ html lang = data.site.lang
   head
     meta charset='utf-8'
     meta name = 'author' content = data.author.name
-    - if current_path == 'index.html'
-      meta name = "description" content = data.site.description
+    meta name = "description" content = page_description
     meta name = 'generator' content = 'Middleman'
     meta name = 'viewport' content = 'width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1'
 
+    // Twitter Card Tags
     meta property = 'twitter:card' content = 'summary'
     meta property = 'twitter:site' content = ('@' + data.author.twitter)
     meta property = 'twitter:creator' content = ('@' + data.author.twitter)
-    meta property = 'twitter:title' content = page_title
-    meta property = 'twitter:description' content = data.site.description
-    meta property = 'twitter:image' content = data.author.avatar
-    meta property = 'twitter:url' content = (data.site.url + current_path)
-    meta property = 'twitter:domain' content = data.site.url
+
+    // Open Graph Tags
+    meta property = "og:type" content = 'article'
+    meta property = "og:url" content = (data.site.url + current_path)
+    meta property = "og:title" content = page_title
+    meta property = "og:description" content = page_description
+    meta property = "og:image" content = page_image
+    meta property = "og:site_name" content = data.site.title
 
     title = page_title
 

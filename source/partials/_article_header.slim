@@ -6,6 +6,7 @@ header.entry-header
       i.fa.fa-calendar
       = article.date.strftime('%F %R')
 
-    span.tags-list
-      i.fa.fa-tags
-      = article.tags.sort.map { |tag| link_to tag, tag_path(tag) }.join ', '
+    - if not article.tags.empty?
+      span.tags-list
+        i.fa.fa-tags
+        = article.tags.sort.map { |tag| link_to tag, tag_path(tag) }.join ', '

@@ -7,12 +7,12 @@ html lang = data.site.lang
     meta name = 'generator' content = 'Middleman'
     meta name = 'viewport' content = 'width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1'
 
-    // Twitter Card Tags
+    / Twitter Card Tags
     meta property = 'twitter:card' content = 'summary'
-    meta property = 'twitter:site' content = ('@' + data.author.twitter)
-    meta property = 'twitter:creator' content = ('@' + data.author.twitter)
+    meta property = 'twitter:site' content = "@#{data.author.twitter}"
+    meta property = 'twitter:creator' content = "@#{data.author.twitter}"
 
-    // Open Graph Tags
+    / Open Graph Tags
     meta property = "og:type" content = 'article'
     meta property = "og:url" content = (data.site.url + current_path)
     meta property = "og:title" content = page_title
@@ -22,8 +22,8 @@ html lang = data.site.lang
 
     title = page_title
 
-    = stylesheet_link_tag 'style'
-    = stylesheet_link_tag 'syntax'
+    link href = '/stylesheets/style.css' rel = 'stylesheet'
+    link href = '/stylesheets/syntax.css' rel = 'stylesheet'
     link href = '/assets/katex/katex.min.css' rel = 'stylesheet'
 
     = favicon_tag '/favicon.ico'

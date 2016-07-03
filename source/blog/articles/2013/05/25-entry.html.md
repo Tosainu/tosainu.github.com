@@ -1,16 +1,16 @@
 ---
 title: 4Kテレビがヤバイ
 date: 2013-05-25 21:17:46 JST
-tags: Diary
+tags:
 ---
-<p><a href="https://picasaweb.google.com/lh/photo/CCvdcTwfTSsaXdfkfz6rVdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-oWbNPq85Dow/UaClSbksYJI/AAAAAAAACKQ/UPGpFnzb4rg/s400/IMG_20130525_144831.jpg" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-oWbNPq85Dow/UaClSbksYJI/AAAAAAAACKQ/UPGpFnzb4rg/s640/IMG_20130525_144831.jpg" /></p>
 <p><span style="font-size:36px;">やべぇよ・・・</span></p>
 <p><span style="font-size:36px;">綺麗すぎだよ・・・</span></p>
 <p>&nbsp;</p>
 <p>新しい洗濯機を注文しにまたとある量販店に行ってきましたが、</p>
 <p>まさかこの田舎にこんなものが展示されているとは思いませんでした。</p>
 <p>&nbsp;</p>
-<p>WalkmanZ、XperiaArc、VaioZと、解像度の割に画面の小さい（DPIの高い）液晶を持った端末に慣れてしまっているせいか、身近な液晶が荒く見えてしまう今日この頃
+<p>WalkmanZ、XperiaArc、VAIO Zと、解像度の割に画面の小さい（DPIの高い）液晶を持った端末に慣れてしまっているせいか、身近な液晶が荒く見えてしまう今日この頃
 。</p>
 <p>このテレビには驚きました。</p>
 <p>&nbsp;</p>

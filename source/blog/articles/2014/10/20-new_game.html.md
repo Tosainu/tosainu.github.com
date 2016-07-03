@@ -1,7 +1,7 @@
 ---
 title: NEW GAME!
 date: 2014-10-20 21:26 JST
-tags: Diary
+tags:
 ---
 
 どもども.

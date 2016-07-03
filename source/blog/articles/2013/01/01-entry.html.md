@@ -1,7 +1,7 @@
 ---
 title: カゼひいたお
 date: 2013-01-01 00:24:56 JST
-tags: Diary
+tags:
 ---
 どーもとさいぬです
 

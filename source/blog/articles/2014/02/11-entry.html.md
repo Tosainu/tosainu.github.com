@@ -15,7 +15,7 @@ Node.jsにはたくさんのライブラリがありますが・・・・・
 
 <a href="https://github.com/AvianFlu/ntwitter">AvianFlu/ntwitter</a>
 
-<a href="https://picasaweb.google.com/lh/photo/KVnTgn5NHxLmWPTkV1csttMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-IwaX61k-PCE/Uvjq1-uvLzI/AAAAAAAAC-M/bHp5vFFvzZo/s400/2014-02-11-000342_1920x1080_scrot.png" height="400" width="303" /></a>
+<img src="https://lh3.googleusercontent.com/-IwaX61k-PCE/Uvjq1-uvLzI/AAAAAAAAC-M/bHp5vFFvzZo/s640/2014-02-11-000342_1920x1080_scrot.png" />
 
 っとこんな状態のものばかり・・・・
 

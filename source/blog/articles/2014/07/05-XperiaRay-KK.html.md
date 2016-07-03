@@ -35,7 +35,7 @@ tags: Xperia2011,Android
 
 ## Video
 
-<div class="video"><iframe width="640" height="360" src="//www.youtube.com/embed/OK8Kvb9O10U?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/OK8Kvb9O10U?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
 READMORE
 

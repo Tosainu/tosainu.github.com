@@ -1,49 +1,22 @@
 ---
-title: "Archive: "
 layout: default
 pageable: true
 per_page: 3
 ---
-ruby:
-  case page_type when 'day'
-    date = ['Daily', Date.new(year, month, day).strftime('%Y-%m-%d')]
-  when 'month'
-    date = ['Monthly', Date.new(year, month).strftime('%Y-%m')]
-  when 'year'
-    date = ['Yearly', Date.new(year).strftime('%Y')]
-  end
-
-- content_for :title, date[1]
-
 #content
   aside
-    = "#{date[0]} Archives: <strong>#{date[1]}</strong>."
+    | Archive for 
+    strong
+      - case page_type
+      - when 'year'
+        = formatted_year
+      - when 'month'
+        = formatted_year_month
+      - when 'day'
+        = formatted_year_month_day
+    |.
 
-  - page_articles.each_with_index do |article, i|
-    article
-      header
-        h1 = link_to article.title, article
-
-        ul.il.muted
-          li
-            span.list_icon
-              i.fa.fa-calendar
-            |  
-            = article.date.strftime('%F %R')
-          li
-            span.list_icon
-              i.fa.fa-tags
-            |  
-            - article.tags.sort.each do |tag|
-              span.tag
-                = link_to tag, tag_path(tag)
-
-      - if article.summary.length != article.body.length
-        = article.summary
-        = link_to 'Read more…', article
-
-      - else
-        = article.body
+  = partial 'partials/article_list'
 
   - if paginate && num_pages > 1
     .pagination
@@ -55,4 +28,4 @@ ruby:
         a href = next_page.url
           span.next Older &raquo;
 
-= partial '_partials/sidebar'
+= partial 'partials/sidebar'

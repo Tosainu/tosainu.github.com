@@ -1,9 +1,9 @@
 ---
 title: NewsBlurの無料での登録件数が64件に！Androidアプリも登場！
 date: 2013-06-03 01:10:56 JST
-tags: Diary
+tags:
 ---
-<p><a href="https://picasaweb.google.com/lh/photo/Ift857tVdXLcMUQ2oyXPINMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-CuDJgVZ6Q9E/UatjmIZEB4I/AAAAAAAACL0/CIrvcXOL5-4/s400/newsblur.png" height="173" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-CuDJgVZ6Q9E/UatjmIZEB4I/AAAAAAAACL0/CIrvcXOL5-4/s640/newsblur.png" /></p>
 <p>どーもです。</p>
 <p>&nbsp;</p>
 <p>GoogleReader終了が発表されて数ヶ月。</p>
@@ -22,7 +22,7 @@ tags: Diary
 <p>GoogleReaderから設定をエクスポートさせてNewsBlurに読み込ませました。</p>
 <p>&nbsp;</p>
 <p>PC</p>
-<p><a href="https://picasaweb.google.com/lh/photo/RbPeLuL6hpU9mWA1gs2GfNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-ro4IJMDLQpY/UatoGMBleUI/AAAAAAAACMU/bvsaygwn_54/s400/techpowerup.png" height="203" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-ro4IJMDLQpY/UatoGMBleUI/AAAAAAAACMU/bvsaygwn_54/s640/techpowerup.png" /></p>
 <p>いやぁ～。</p>
 <p>表示方法はGoogleReaderと大差なく良い感じです。</p>
 <p>むしろこっちの方が見やすいかも。</p>
@@ -30,8 +30,8 @@ tags: Diary
 <p>&nbsp;</p>
 <p>Androidアプリ</p>
 <p><a href="https://play.google.com/store/apps/details?id=com.newsblur">こちらからDLできます</a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/qL3iqw-LYvOPZ1hdyyHyUNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-Od35v2p26bM/UatoEOYHb-I/AAAAAAAACME/nroO1pSJB70/s400/Screenshot_2013-06-03-00-18-37.png" height="400" width="240" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/83gsfBLAAF6JQctjt0fB9dMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-7G_47Q2vuxY/UatoEPz6BeI/AAAAAAAACMI/UIsE0YNQJ8M/s400/Screenshot_2013-06-03-00-18-48.png" height="400" width="240" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-Od35v2p26bM/UatoEOYHb-I/AAAAAAAACME/nroO1pSJB70/s640/Screenshot_2013-06-03-00-18-37.png" /></p>
+<p><img src="https://lh6.googleusercontent.com/-7G_47Q2vuxY/UatoEPz6BeI/AAAAAAAACMI/UIsE0YNQJ8M/s640/Screenshot_2013-06-03-00-18-48.png" /></p>
 <p>僕は普段Android端末では<a href="https://play.google.com/store/apps/details?id=com.noinnion.android.greader.reader">gReader</a>を使っていますが、</p>
 <p>標準状態のgReaderと比べると記事はとても見やすく使いやすいですね。</p>
 <p>PCのブラウザ版とも比べものにならないくらいすっきりしています。</p>

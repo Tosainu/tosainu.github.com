@@ -1,12 +1,12 @@
 ---
 title: なんかもう届いた早すぎ
 date: 2012-07-16 20:56:44 JST
-tags: Xperia arc
+tags: Xperia arc, Xperia2011
 ---
 <p>昨日注文したXperia Arc</p>
-<p>なぜか今日の午前中に届いた</p><a href="https://picasaweb.google.com/lh/photo/r7plnapM9rz8C6Buj1WTatMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-hXcmfDGTZfo/UAP7NLTIMnI/AAAAAAAAAoA/rpc8BF35HXM/s288/DSC061362.jpg" height="216" width="288" /></a><br />Amazonさん早すぎるよ～ 嬉しいけど</p>
+<p>なぜか今日の午前中に届いた</p><img src="https://lh4.googleusercontent.com/-hXcmfDGTZfo/UAP7NLTIMnI/AAAAAAAAAoA/rpc8BF35HXM/s288/DSC061362.jpg" height="216" width="288" /><br />Amazonさん早すぎるよ～ 嬉しいけど</p>
 <p>&nbsp;</p>
-<p>SIMフリー済みなので、ソフトバンクSIMを挿すとこのとおり<br /><a href="https://picasaweb.google.com/lh/photo/rjSxZqjd4pXZauDpu8YSSdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-OebdSnBcu3M/UAP9KOP9twI/AAAAAAAAAoQ/p0Vb9deq_Rw/s400/screenshot_2012-07-16_2024.jpg" height="400" width="225" /></a><br />SoftBankなXperiaになってしまいました～</p>
+<p>SIMフリー済みなので、ソフトバンクSIMを挿すとこのとおり<br /><img src="https://lh5.googleusercontent.com/-OebdSnBcu3M/UAP9KOP9twI/AAAAAAAAAoQ/p0Vb9deq_Rw/s640/screenshot_2012-07-16_2024.jpg" /><br />SoftBankなXperiaになってしまいました～</p>
 <p>&nbsp;</p>
 <p>只今いろいろ設定中</p>
 <p>1.ビルド番号4.0.1.C.1.9(Android2.3.4)の導入</p>

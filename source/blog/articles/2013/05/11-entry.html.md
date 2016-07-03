@@ -1,13 +1,13 @@
 ---
 title: またCPUソケット動画作りました
 date: 2013-05-11 15:51:31 JST
-tags: Diary
+tags:
 ---
 <p>どうもです。</p>
 <p>以前作ったCPUソケット動画に、LGA775を入れられなかったので作りました。</p>
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm20834632" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm20834632">【ニコニコ動画】LGA775がおまた？をこするだけ</a></iframe>
 <p>&nbsp;</p>
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm20834632?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm20834632">【ニコニコ動画】LGA775がおまた？をこするだけ</a></noscript>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm20834632?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm20834632">【ニコニコ動画】LGA775がおまた？をこするだけ</a></noscript></div>
 <p>&nbsp;</p>
 <p>それだけです。</p>
 <p>&nbsp;</p>

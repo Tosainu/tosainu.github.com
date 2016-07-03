@@ -1,7 +1,7 @@
 ---
 title: 無何有の郷　～ Deep Mountain
 date: 2013-03-30 21:27:31 JST
-tags: Diary
+tags:
 ---
 <p>どもども</p>
 <p>&nbsp;</p>
@@ -14,7 +14,7 @@ tags: Diary
 <p>そして最近気づいたのですが、</p>
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm9655931" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm9655931">【ニコニコ動画】【東方原曲】妖々夢「無何有の郷　～ Deep Mountain」【高音質】</a></iframe>
 <p>&nbsp;</p>
-<p><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm9655931"></script><noscript><a href="http://www.nicovideo.jp/watch/sm9655931">【ニコニコ動画】【東方原曲】妖々夢「無何有の郷　～ Deep Mountain」【高音質】</a></noscript></p>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm9655931"></script><noscript><a href="http://www.nicovideo.jp/watch/sm9655931">【ニコニコ動画】【東方原曲】妖々夢「無何有の郷　～ Deep Mountain」【高音質】</a></noscript></div>
 <p>&nbsp;</p>
 <p>この曲にとてもリズムが似ているのです。</p>
 <p>うーん、どのアレンジ曲なのかな・・・</p>

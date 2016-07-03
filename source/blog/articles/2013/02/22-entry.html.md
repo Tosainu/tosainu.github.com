@@ -1,14 +1,14 @@
 ---
 title: まいんくらふと
 date: 2013-02-22 19:51:12 JST
-tags: Diary
+tags:
 ---
 <p>どーもとさいぬです。</p>
 <p>今日は主にトップページのデザインを変えてみましたがどうでしょうか？</p>
 <p>シンプルすぎるは別として、見やすく、そして奥のページヘアクセスしやすくなっているといいのですが。</p>
 <p>&nbsp;</p>
 <p>実はMinecraftのアカ持っているんです</p>
-<p><a href="https://picasaweb.google.com/lh/photo/o2zAp07VWyxUTnnsYK2XTNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-yLukwxag2ao/USdJL07hHhI/AAAAAAAABG8/BbUF65pwHaU/s400/mine.png" height="244" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-yLukwxag2ao/USdJL07hHhI/AAAAAAAABG8/BbUF65pwHaU/s640/mine.png" /></p>
 <p>去年、ちょうどVAIO Zを買った頃のこと、</p>
 <p>ニコ動はじめ、すごく流行っていたゲームですね。</p>
 <p>&nbsp;</p>

@@ -1,7 +1,7 @@
 ---
 title: ブログデザイン更新した
 date: 2014-12-24 22:52 JST
-tags: Diary, Website
+tags: Website
 ---
 
 どもども(✿╹◡╹)ﾉ

@@ -11,9 +11,7 @@ tags: GTASA
 <p>&nbsp;</p>
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm21186528" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm21186528">【ニコニコ動画】【GTASA】走りのミゼット（走りのセダン）【クリア記念】</a></iframe>
 <p>&nbsp;</p>
-<div class="video">
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm21186528?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm21186528">【ニコニコ動画】【GTASA】走りのミゼット（走りのセダン）【クリア記念】</a></noscript>
-</div>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm21186528?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm21186528">【ニコニコ動画】【GTASA】走りのミゼット（走りのセダン）【クリア記念】</a></noscript></div>
 <p>&nbsp;</p>
 <p>ゲーム内のBOBCATという車両をミゼットに置き換えていたのですが、STOWAWAYというミッションでこの車両が3台飛び出すシーンがあり、「これは何か動画を作らなければいけない」と思ったのがきっかけです。</p>
 <p>&nbsp;</p>

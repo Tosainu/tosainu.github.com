@@ -5,7 +5,7 @@ tags: Website
 ---
 <p>どーもー</p>
 <p>ついカッとなってプレミアム会員になっちゃったとさいぬです。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/yo9u2-oYsZZDFfPejMTfntMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/--Nne-EWtw9A/UWJK3UhgEcI/AAAAAAAAB4k/f_woMM1MxXo/s400/Screenshot%2520from%25202013-04-08%252013%253A42%253A07.png" height="158" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/--Nne-EWtw9A/UWJK3UhgEcI/AAAAAAAAB4k/f_woMM1MxXo/s640/Screenshot%2520from%25202013-04-08%252013%253A42%253A07.png" /></p>
 <p>&nbsp;</p>
 <p>Webサイト管理者にとって何より重要なことはページをより多くの人に見てもらうことだと思っています。</p>
 <p>そのために、</p>
@@ -17,10 +17,10 @@ tags: Website
 <p>などを意識してたりします。</p>
 <p>&nbsp;</p>
 <p>今朝、アドレス変更したこのサイトがちゃんとGoogleに登録されているか確認したんですが、</p>
-<p><a href="https://picasaweb.google.com/lh/photo/1DJ4CjpVkplSUJRdGRVTWdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-UpAvDnQwEro/UWIvKXzLDjI/AAAAAAAAB4U/zazXi23AYDk/s640/Screenshot_2013-04-08-08-34-22.png" height="640" width="384" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-UpAvDnQwEro/UWIvKXzLDjI/AAAAAAAAB4U/zazXi23AYDk/s640/Screenshot_2013-04-08-08-34-22.png" height="640" width="384" /></p>
 <p>うん、ちゃんと変更後のアドレスが登録されてるね・・・</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/ppMkgIDyAclvnz9fkP3IHdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-yrNFt4NVHEc/UWJMCGy-uxI/AAAAAAAAB4w/03OyBuhdnPs/s800/Screenshot_2013-04-08-08-34-222.png" height="116" width="381" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-yrNFt4NVHEc/UWJMCGy-uxI/AAAAAAAAB4w/03OyBuhdnPs/s800/Screenshot_2013-04-08-08-34-222.png" height="116" width="381" /></p>
 <p><span style="font-size:36px;">ん！？</span></p>
 <p>&nbsp;</p>
 <p>これって絶対左側に設置してるブログパーツだよね・・・</p>

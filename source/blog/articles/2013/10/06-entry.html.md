@@ -3,7 +3,7 @@ title: Linux環境でAssemblyLangプログラミングしたメモ
 date: 2013-10-06 21:11:08 JST
 tags: Arduino,Linux
 ---
-<p>どもどもー</p><p><a href="https://picasaweb.google.com/lh/photo/oaCeHmoxRUIGL7kM-n0TwNMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-fFh3rCgGq9g/UlFSJC09C-I/AAAAAAAACpw/rmMps_jgNy4/s400/IMG_1127.JPG" height="300" width="400" /></a></p>
+<p>どもどもー</p><p><img src="https://lh3.googleusercontent.com/-fFh3rCgGq9g/UlFSJC09C-I/AAAAAAAACpw/rmMps_jgNy4/s640/IMG_1127.JPG" /></p>
 <p>ここ3日、ずっとAVRマイコンをAssemblyでプログラミングしていました。<span class="fontsize1">（きっと）</span></p>
 <p>何となくわかってきたのでとりあえずメモ。</p>
 <p>&nbsp;</p>
@@ -15,8 +15,8 @@ READMORE
 <p>ちなみに載っているマイコンはATmega328Pです。</p>
 <p>&nbsp;</p>
 <p>図のようにパーツを接続しました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/r9aaLT2Zx8ukQv0v6E8LStMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-Ho2irIwLDKM/UlFRzc2ArII/AAAAAAAACpo/i4w3oCKcjnU/s400/IMG_1125.JPG" height="300" width="400" /></a></p>
-<p><a href="https://picasaweb.google.com/lh/photo/_gL9Xlm9hEdZ7mVwBN0xKtMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-urAHq4AQKEM/UlFRc4ZG1cI/AAAAAAAACpg/n5tVlJuu6h0/s400/IMG_1141.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-Ho2irIwLDKM/UlFRzc2ArII/AAAAAAAACpo/i4w3oCKcjnU/s640/IMG_1125.JPG" /></p>
+<p><img src="https://lh3.googleusercontent.com/-urAHq4AQKEM/UlFRc4ZG1cI/AAAAAAAACpg/n5tVlJuu6h0/s640/IMG_1141.JPG" /></p>
 <p>&nbsp;</p>
 <h2>追加するパッケージ</h2>
 <h3>avra</h3>
@@ -140,7 +140,7 @@ $ avrdude -c arduino -P /dev/ttyACM0 -p m328p -b 115200 -u -e -U flash:w:"FileNa
 <p>これで書き込めます。</p>
 <p>&nbsp;</p>
 <p>実際にLED点滅プログラムを動かしてみたところです。<span class="fontsize1">（何気にFullHD）</span></p>
-<div class="video"><iframe width="420" height="315" src="//www.youtube.com/embed/WMPZiEUmVdc?rel=0" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/WMPZiEUmVdc?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>
 <h2>Arch LinuxでArduinoが認識されない時</h2>
 <p>僕の環境でもそうでしたが、一般ユーザーで/dev/ttyACM0にアクセスができませんでした。</p>

@@ -1,21 +1,5 @@
-# site info
-title: とさいぬの隠し部屋
-description: プログラミングを勉強しているとさいぬのブログです. Linuxっぽい話題が多いですがいろいろ書いてます.
-keywords: とさいぬ,Tosainu,とさいぬの隠し部屋,プログラミング,学生
-url: http://blog.myon.info/
+title: Tosainu Lab
+description: プログラミングを勉強しているとさいぬのブログです. プログラムやLinux関連の話題を中心にいろいろ書いてます.
+url: 'https://blog.myon.info/'
 lang: ja
-footer: '&copy; 2011 Tosainu.'
 ga_key: 'UA-57978655-1'
-
-# author
-author:
-  name: Tosainu
-  avatar: //www.gravatar.com/avatar/a8648d613afd1ec0c84bb04973c98ad2.png?s=256
-  twitter: myon___
-  adn: myon
-  qiita: myon
-  github: Tosainu
-  bitbucket: Tosainu
-  youtube: Tosainu19
-  flickr: tosainu
-  amazon: FKZ27PMMRTIO

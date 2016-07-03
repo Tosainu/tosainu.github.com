@@ -1,21 +1,21 @@
 ---
 title: 脱法ハーブ
 date: 2013-05-15 18:37:39 JST
-tags: Diary
+tags:
 ---
 <p><span style="font-size:36px;">キタ———（゜∀゜）———— ！！</span></p>
-<p><a href="https://picasaweb.google.com/lh/photo/91aT9PO-WBvI_V4FNrx91NMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-Seu9FI9RV8k/UZNSlqj44DI/AAAAAAAACHg/dOBYSgpgo0Q/s400/IMG_0493.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh6.googleusercontent.com/-Seu9FI9RV8k/UZNSlqj44DI/AAAAAAAACHg/dOBYSgpgo0Q/s640/IMG_0493.JPG" /></p>
 <p>GW前から修理に出していたWimaxルータ「MobileCube」。</p>
 <p>今日やっと戻って来ました。</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Hm0nX4Pm5qUyfolkAAkASdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-4-3wrJATZSI/UZNSj_2c_YI/AAAAAAAACHY/YqEZNiD0HOM/s400/IMG_0494.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-4-3wrJATZSI/UZNSj_2c_YI/AAAAAAAACHY/YqEZNiD0HOM/s640/IMG_0494.JPG" /></p>
 <p>メーカーがちゃんと故障を認めたらしく、修理に掛かった費用は0円。完全な新品が送られてきました。</p>
 <p>&nbsp;</p>
 <p><span style="font-size:36px;">ぃよっっっっしゃァァァァ！</span></p>
 <p><span style="font-size:36px;">「電波のとさいぬ」復活だZE！</span></p>
 <p>&nbsp;</p>
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm17096030?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm17096030">【ニコニコ動画】突撃！ガラスのニーソ姫！(SPA)</a></noscript>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm17096030?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm17096030">【ニコニコ動画】突撃！ガラスのニーソ姫！(SPA)</a></noscript></div>
 <p>&nbsp;</p>
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm18041293?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm18041293">【ニコニコ動画】突撃！コウマのメイド長！</a></noscript>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm18041293?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm18041293">【ニコニコ動画】突撃！コウマのメイド長！</a></noscript></div>
 <p>いや、その電波じゃねーからっ！！</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

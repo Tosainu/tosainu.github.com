@@ -1,0 +1,31 @@
+@import 'susy';
+
+$susy: (
+  columns: 12,
+  container: 1192px,
+  global-box-sizing: border-box,
+  gutters: 0.6
+);
+
+$tablet-screen-width: 570px;
+$desktop-screen-width: 960px;
+$wide-screen-width: 1280px;
+
+.container {
+  @media screen and (max-width: $wide-screen-width - 1) {
+    @include container(93.25%);
+  }
+  @media screen and (min-width: $wide-screen-width) {
+    @include container;
+  }
+}
+
+@media screen and (min-width: $desktop-screen-width) {
+  #content {
+    @include span(9);
+  }
+  #side {
+    @include span(last 3);
+  }
+}
+

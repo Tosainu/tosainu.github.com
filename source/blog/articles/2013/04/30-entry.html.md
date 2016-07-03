@@ -5,7 +5,7 @@ tags: Android
 ---
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm20738068" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm20738068">【ニコニコ動画】回転するつかさ壁紙をインストールしてみた</a></iframe>
 <p>&nbsp;</p>
-<script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm20738068?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm20738068">【ニコニコ動画】回転するつかさ壁紙をインストールしてみた</a></noscript>
+<div class="video-container"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm20738068?w=490&h=307"></script><noscript><a href="http://www.nicovideo.jp/watch/sm20738068">【ニコニコ動画】回転するつかさ壁紙をインストールしてみた</a></noscript></div>
 <p>&nbsp;</p>
 <p>どーもです。</p>
 <p>&nbsp;</p>

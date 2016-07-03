@@ -24,7 +24,7 @@ tags: Arch Linux
 <p>&nbsp;</p>
 <p>その結果なのか知りませんが、次にArchを立ち上げると、</p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/Zl4JIDXoV0S8spPowJOES9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-Ph3Zgf_DUGM/UfNclDsMlsI/AAAAAAAACdw/7gNKmkuq9lk/s400/IMG_0864.JPG" height="300" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-Ph3Zgf_DUGM/UfNclDsMlsI/AAAAAAAACdw/7gNKmkuq9lk/s640/IMG_0864.JPG" /></p>
 <p>&nbsp;</p>
 <p><span style="font-size:36px;">起動しねーよ</span></p>
 <p>&nbsp;</p>

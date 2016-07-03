@@ -10,7 +10,7 @@ tags:
 <p>さて本題。</p>
 <p>たまたま開いた『ぽちっとな』のプロジェクトファイル。</p>
 <p>壊れてました。</p>
-<a href="https://picasaweb.google.com/lh/photo/JS5WYKz7geZr6f7y-IgETw?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/_k8x9PZSlKHk/TXrs6q5ZJvI/AAAAAAAAAgw/FFPVG4LPhY8/s400/pinpon.png" height="250" width="400" /></a>
+<img src="https://lh6.googleusercontent.com/_k8x9PZSlKHk/TXrs6q5ZJvI/AAAAAAAAAgw/FFPVG4LPhY8/s640/pinpon.png" />
 <p>なんだよ、55エラー、1警告って。</p>
 <p>&nbsp;</p>
 <p>まぁ、くだらないソフトだったし、友達にも</p>

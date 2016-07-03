@@ -42,11 +42,11 @@ tags: Website
 <p>Webデザインの世界では今の流行らしいです。</p>
 <p>例えば、<a href="http://skinnyties.com/">このサイト</a>のように、PC、タブレット、スマートフォン等、様々なデバイスに最適化したページを同じHTML、CSSでやってしまおうってものです。</p>
 <p>先ほど挙げたサイトの横幅を変えていくと・・・</p>
-<p><a href="https://picasaweb.google.com/lh/photo/K1m86psve-W_zgPmGmLdodMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh5.googleusercontent.com/-LsIfc37tnDg/UYb6Z6IncFI/AAAAAAAACEY/ppPBNcwAx9U/s400/Screenshot%2520from%25202013-05-06%252009%253A25%253A54.png" height="289" width="400" /></a></p>
+<p><img src="https://lh5.googleusercontent.com/-LsIfc37tnDg/UYb6Z6IncFI/AAAAAAAACEY/ppPBNcwAx9U/s640/Screenshot%2520from%25202013-05-06%252009%253A25%253A54.png" /></p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/SQzyg2Vo9VR1cAdcrwzHm9MTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh4.googleusercontent.com/-lVbQjJMQrcs/UYb6aDtVsMI/AAAAAAAACEc/LF0oCeN5FgU/s400/Screenshot%2520from%25202013-05-06%252009%253A26%253A07.png" height="334" width="400" /></a></p>
+<p><img src="https://lh4.googleusercontent.com/-lVbQjJMQrcs/UYb6aDtVsMI/AAAAAAAACEc/LF0oCeN5FgU/s640/Screenshot%2520from%25202013-05-06%252009%253A26%253A07.png" /></p>
 <p>&nbsp;</p>
-<p><a href="https://picasaweb.google.com/lh/photo/JKTVwutRwPSafSBdnVxsitMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-9LAwL5NKbZc/UYb6Znm6T4I/AAAAAAAACEU/Pz7J55sf1XM/s400/Screenshot%2520from%25202013-05-06%252009%253A26%253A20.png" height="400" width="239" /></a></p>
+<p><img src="https://lh3.googleusercontent.com/-9LAwL5NKbZc/UYb6Znm6T4I/AAAAAAAACEU/Pz7J55sf1XM/s640/Screenshot%2520from%25202013-05-06%252009%253A26%253A20.png" /></p>
 <p>というように、同じページなのに、様々なデザインに変化していきます。</p>
 <p>このサイトはスマートフォンからアクセスしている方も多いらしいので、またfreo公式の初期デザインがレスポンシブWebデザインになったようなので、これを機に導入してみようと思います。</p>
 <p>&nbsp;</p>

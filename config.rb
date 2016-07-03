@@ -7,7 +7,7 @@ activate :blog do |blog|
   blog.sources = "articles/{year}/{month}/{day}-{title}.html"
   blog.default_extension = ".md"
 
-  blog.layout = "_layouts/post"
+  blog.layout = "post"
   blog.calendar_template = "blog/calendar.html"
   blog.tag_template = "blog/tag.html"
 
@@ -26,19 +26,16 @@ page "/feed.xml", layout: false
 activate :directory_indexes
 activate :sprockets
 
-set :css_dir, 'css'
-set :layouts_dir, '_layouts'
-
 # markdown
+require 'lib/custom_renderer'
+
 set :markdown_engine, :redcarpet
 set :markdown, {
+  :renderer => CustomRenderer,
   :fenced_code_blocks => true,
   :footnotes => true,
   :tables => true
 }
-
-# syntax highlighting
-activate :syntax, :css_class => 'hl'
 
 # slim
 set :slim, {

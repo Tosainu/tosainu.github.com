@@ -1,0 +1,10 @@
+#footer {
+  padding: 1em 0;
+
+  @media screen and (max-width: $desktop-screen-width - 1) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop-screen-width) {
+    text-align: right;
+  }
+}

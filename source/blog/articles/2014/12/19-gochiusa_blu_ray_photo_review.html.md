@@ -1,7 +1,7 @@
 ---
 title: ご注文はBlu-rayですか?
 date: 2014-12-19 01:05 JST
-tags: Diary
+tags: Gochiusa
 ---
 
 <blockquote class="twitter-tweet" lang="en"><p>あぁ...買っちまった......</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/544401154763800576">December 15, 2014</a></blockquote>

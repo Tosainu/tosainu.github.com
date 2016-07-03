@@ -10,6 +10,7 @@ gem 'middleman-disqus'
 gem 'middleman-livereload'
 gem 'middleman-sprockets', '~> 4.0.0'
 
+gem 'execjs'
 gem 'font-awesome-sass', '~> 4.6.0'
 gem 'nokogiri'
 gem 'redcarpet'

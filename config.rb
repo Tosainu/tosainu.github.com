@@ -34,6 +34,7 @@ set :markdown, {
   :renderer => CustomRenderer,
   :fenced_code_blocks => true,
   :footnotes => true,
+  :strikethrough => true,
   :tables => true
 }
 

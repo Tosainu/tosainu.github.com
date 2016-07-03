@@ -27,15 +27,15 @@ activate :directory_indexes
 activate :sprockets
 
 # markdown
+require 'lib/custom_renderer'
+
 set :markdown_engine, :redcarpet
 set :markdown, {
+  :renderer => CustomRenderer,
   :fenced_code_blocks => true,
   :footnotes => true,
   :tables => true
 }
-
-# syntax highlighting
-activate :syntax, :css_class => 'hl'
 
 # slim
 set :slim, {

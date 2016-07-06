@@ -8,11 +8,11 @@ set :images_dir, 'img'
 set :layouts_dir, '_layouts'
 
 set :slim, {
-  :format     => :html,
-  :pretty     => true,
-  :sort_attrs => false,
-  :streaming  => false,
-  :tabsize    => 2
+  format:     :html,
+  pretty:     false,
+  sort_attrs: false,
+  streaming:  false,
+  tabsize:    2,
 }
 
 helpers do

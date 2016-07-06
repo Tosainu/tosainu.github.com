@@ -1,28 +1,25 @@
 Time.zone = 'Tokyo'
 
-activate :blog do |blog|
-  blog.prefix = "blog"
+page "/feed.xml", layout: false
 
-  blog.permalink = "{year}-{month}-{day}/{title}.html"
+activate :blog do |blog|
   blog.sources = "articles/{year}/{month}/{day}-{title}.html"
   blog.default_extension = ".md"
 
+  blog.prefix = "blog"
   blog.layout = "post"
+  blog.permalink = "{year}-{month}-{day}/{title}.html"
+  blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
   blog.generate_day_pages = false
-  blog.tag_template = "blog/tag.html"
 
-  # summary
   blog.summary_length = nil
   blog.summary_separator = /(READMORE)/
 
-  # Enable pagination
   blog.paginate = true
   blog.per_page = 3
   blog.page_link = "page/{num}"
 end
-
-page "/feed.xml", layout: false
 
 activate :directory_indexes
 activate :sprockets
@@ -32,22 +29,21 @@ require 'lib/custom_renderer'
 
 set :markdown_engine, :redcarpet
 set :markdown, {
-  :renderer => CustomRenderer,
-  :fenced_code_blocks => true,
-  :footnotes => true,
-  :strikethrough => true,
-  :tables => true
+  renderer:           CustomRenderer,
+  fenced_code_blocks: true,
+  footnotes:          true,
+  strikethrough:      true,
+  tables:             true,
 }
 
 # slim
 set :slim, {
-  :format => :html,
-  :sort_attrs => false,
-  :streaming => false,
-  :tabsize => 2
+  format:     :html,
+  sort_attrs: false,
+  streaming:  false,
+  tabsize:    2,
 }
 
-# Disqus
 activate :disqus do |d|
   d.shortname = 'tosainu'
 end

@@ -9,6 +9,7 @@ activate :blog do |blog|
 
   blog.layout = "post"
   blog.calendar_template = "blog/calendar.html"
+  blog.generate_day_pages = false
   blog.tag_template = "blog/tag.html"
 
   # summary

@@ -9,21 +9,21 @@ class CustomRenderer < Redcarpet::Render::HTML
   end
 
   def initialize(options={})
-    @katex = KaTeX.new
     super options
+    @katex = KaTeX.new
   end
 
   def codespan(code)
     if code =~ /^\$(.*)\$$/
       @katex.render_to_string $1
     else
-      "<code>#{code}</code>"
+      "<code>#{CGI.escapeHTML(code)}</code>"
     end
   end
 
   def block_code(code, language)
-    if code =~ /^\$\$(.*)\$\$$/m
-      @katex.render_to_string $1, displayMode: true
+    if language == 'katex'
+      @katex.render_to_string code, displayMode: true
     else
       RougePlugin.new.block_code(code, language)
     end

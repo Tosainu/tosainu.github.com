@@ -17,7 +17,6 @@ env:
     - secure: BzrNsbGNrGKmeIO7S4SdPn6JXs+SDQOKqTjA0ck4IJJ8lqlgqhMTP5CeuNQsCeeiBe5R+DZHFPwcVwvPocUF9QdhI8SfnZUsNBIgTtmyp0urQpmqQFM9zbCxffYi7Qnp76Vy+Bdp6qZhX8kEXqNKRHXGL/kJYcZSlN7T3dmCtyw=
 
 before_script:
-  - bundle update
   - git clone --quiet -b gh-pages https://github.com/Tosainu/blog build
 
 script:

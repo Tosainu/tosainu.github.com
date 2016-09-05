@@ -17,7 +17,7 @@ activate :blog do |blog|
   blog.summary_separator = /(READMORE)/
 
   blog.paginate = true
-  blog.per_page = 3
+  blog.per_page = 5
   blog.page_link = "page/{num}"
 end
 

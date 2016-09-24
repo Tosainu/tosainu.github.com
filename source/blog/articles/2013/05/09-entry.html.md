@@ -1,7 +1,7 @@
 ---
 title: 飛行機教習所ミッションクリア〜
 date: 2013-05-09 21:49:53 JST
-tags: GTASA
+tags: Game
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

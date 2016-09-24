@@ -1,7 +1,7 @@
 ---
 title: シムシティ買ったった
 date: 2013-03-26 12:31:15 JST
-tags: SIMCITY2013
+tags: Game
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

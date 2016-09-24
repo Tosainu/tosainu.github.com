@@ -1,7 +1,7 @@
 ---
 title: PSY SkinMod & Gentleman Dance Animation
 date: 2013-06-19 01:05:04 JST
-tags: GTASA
+tags: Game
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

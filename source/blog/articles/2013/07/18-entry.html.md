@@ -1,7 +1,7 @@
 ---
 title: Steam版GTAIV 日本語化・asiModとかの備忘録
 date: 2013-07-18 23:17:22 JST
-tags: GTAIV
+tags: Game
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

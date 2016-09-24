@@ -1,7 +1,7 @@
 ---
 title: メインミッションクリア！
 date: 2013-11-18 17:42:22 JST
-tags: GTAIV
+tags: Game
 ---
 どーもです。
 

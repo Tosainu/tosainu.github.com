@@ -1,7 +1,7 @@
 ---
 title: 都市にアクセス出来なくなった件がさらに悪化した件
 date: 2013-04-23 17:53:22 JST
-tags: SIMCITY2013
+tags: Game
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

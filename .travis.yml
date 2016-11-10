@@ -1,5 +1,6 @@
 # use container-based infrastructure
 sudo: false
+dist: trusty
 
 # Ruby configuration
 language: ruby

@@ -15,7 +15,7 @@ env:
     - GIT_AUTHOR_NAME='Tosainu@travis-ci'
     - GIT_COMMITTER_EMAIL='tosainu.maple@gmail.com'
     - GIT_COMMITTER_NAME='Tosainu@travis-ci'
-    - secure: BzrNsbGNrGKmeIO7S4SdPn6JXs+SDQOKqTjA0ck4IJJ8lqlgqhMTP5CeuNQsCeeiBe5R+DZHFPwcVwvPocUF9QdhI8SfnZUsNBIgTtmyp0urQpmqQFM9zbCxffYi7Qnp76Vy+Bdp6qZhX8kEXqNKRHXGL/kJYcZSlN7T3dmCtyw=
+    - secure: "cCSRqmk962wmkqfKB92I4wrHh11+cOLANVX0TJKJwZZCi9PzVXipGSZXzc4NVBg7bSZTyzfYC75Xi6YvSXswetcVf2QFykyRhpPakCQFxaG7NDZpUFJ1ESFXlNTxBzle7encs1Z4CV/Z18/TaO4CEdd7fKbjw61oO+nPks0VC7U="
 
 before_script:
   - git clone --quiet -b gh-pages https://github.com/Tosainu/blog build

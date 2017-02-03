@@ -21,7 +21,7 @@ before_script:
   - git clone --quiet -b gh-pages https://github.com/Tosainu/blog build
 
 script:
-  - bundle exec middleman build --no-parallel
+  - bundle exec middleman build
 
 after_success:
   - '[ "$TRAVIS_BRANCH" == "master" ] && bundle exec middleman deploy >/dev/null 2>&1'

@@ -11,7 +11,7 @@ gem 'middleman-livereload'
 gem 'middleman-sprockets', '~> 4.1.0'
 
 gem 'execjs'
-gem 'font-awesome-sass', '~> 4.6.0'
+gem 'font-awesome-sass', '~> 4.7.0'
 gem 'nokogiri'
 gem 'redcarpet'
 gem 'rouge'

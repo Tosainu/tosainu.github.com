@@ -64,19 +64,18 @@ footer {
   justify-content: center;
   background: $dark-gray;
 
-  & > * {
+  .avatar {
+    animation: avatar-fade-in .4s ease-in;
+    background: $white;
+    border-radius: 50%;
+    border: 5px solid $white;
     margin-bottom: 1.5rem;
   }
 
-  img {
-    border: 5px solid $white;
-    border-radius: 50%;
-    animation: avatar-fade-in .4s ease-in;
-  }
-
-  h1 {
+  .title {
     color: $white;
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -141,9 +140,9 @@ $desktop_width: 1024px;
     padding: 0 10px;
   }
 
-  .hero img {
-    width: 128px;
+  .avatar {
     height: 128px;
+    width: auto;
   }
 
   .link a {

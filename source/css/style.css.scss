@@ -114,9 +114,23 @@ footer {
 }
 
 .about-me {
-  i {
-    text-align: center;
-    width: 2em;
+  dl {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: visible;
+
+    dt {
+      flex: 0 0 2em;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    dd {
+      flex: 0 0 calc(100% - 2em);
+      margin-left: auto;
+      overflow: hidden;
+      text-align: left;
+    }
   }
 }
 

@@ -4,8 +4,8 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-/* Colors
----------------------------- */
+// Colors
+// ----------------------------
 $red:        #e74c3c;
 $orange:     #f39c12;
 $blue:       #3399CC;
@@ -15,8 +15,7 @@ $mid-gray:   #666666;
 $dark-gray:  #3f434a;
 $white:      #ffffff;
 
-/*
----------------------------- */
+// ----------------------------
 @import url(https://fonts.googleapis.com/css?family=Raleway:400);
 
 html {
@@ -24,29 +23,30 @@ html {
 }
 
 body {
-  height: 100%;
-  overflow-x: hidden;
   background: $white;
   color: $mid-gray;
   font-family: 'Raleway', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 h2 {
-  margin-bottom: 2.0rem;
   color: $dark-gray;
   font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 a {
   color: $mid-gray;
 
-  &:active, &:hover {
+  &:active,
+  &:hover {
     color: darken($mid-gray, 20%);
   }
 }
 
-/* Layout
----------------------------- */
+// Layout
+// ----------------------------
 section {
   padding: 6rem 0;
 }
@@ -57,18 +57,18 @@ footer {
 }
 
 .hero {
-  height: 100%;
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
   background: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 
   .avatar {
     animation: avatar-fade-in .4s ease-in;
     background: $white;
-    border-radius: 50%;
     border: 5px solid $white;
+    border-radius: 50%;
     margin-bottom: 1.5rem;
   }
 
@@ -80,13 +80,13 @@ footer {
 }
 
 .link {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 
   a {
-    margin-right: 2.5em;
     color: $mid-gray;
+    margin-right: 2.5em;
     text-align: center;
 
     &:last-child {
@@ -95,13 +95,14 @@ footer {
   }
 
   i {
-    width: 1em;
-    height: 1em;
-    padding: .4em;
     border-radius: 8px;
     color: $white;
+    height: 1em;
+    padding: .4em;
+    width: 1em;
 
-    &:active, &:hover {
+    &:active,
+    &:hover {
       background: $white;
       color: $dark-gray;
     }
@@ -112,21 +113,21 @@ footer {
   background: $light-gray;
 
   i {
-    width: 2.0em;
     text-align: center;
+    width: 2em;
   }
 }
 
-.works {
-}
+// .works {
+// }
 
-/* Media Queries
---------------------------------*/
-$mobile_width: 480px;
-$desktop_width: 1024px;
+// Media Queries
+// --------------------------------
+$mobile-width: 480px;
+$desktop-width: 1024px;
 
 // mobile
-@media screen and (max-width: $mobile_width) {
+@media screen and (max-width: $mobile-width) {
   body {
     font-size: 15px;
     line-height: 1.6;
@@ -151,7 +152,7 @@ $desktop_width: 1024px;
 }
 
 // tablet
-@media screen and (min-width: $mobile_width + 1) and (max-width: $desktop_width - 1) {
+@media screen and (min-width: $mobile-width + 1) and (max-width: $desktop-width - 1) {
   body {
     font-size: 17px;
     line-height: 1.7;
@@ -163,25 +164,26 @@ $desktop_width: 1024px;
 }
 
 // desktop
-@media screen and (min-width: $desktop_width) {
+@media screen and (min-width: $desktop-width) {
   body {
     font-size: 18px;
-    line-height: 2.0;
+    line-height: 2;
   }
 
   .wrap-container {
-    width: 960px;
     margin: 0 auto;
+    width: 960px;
   }
 }
 
-/* Animation
---------------------------------*/
+// Animation
+// --------------------------------
 @keyframes avatar-fade-in {
   0%, 20% {
     opacity: 0;
     transform: scale(0);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);

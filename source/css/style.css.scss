@@ -16,7 +16,7 @@ $dark-gray:  #3f434a;
 $white:      #ffffff;
 
 // ----------------------------
-@import url(https://fonts.googleapis.com/css?family=Raleway:400);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
 
 html {
   height: 100%;
@@ -26,6 +26,7 @@ body {
   background: $white;
   color: $mid-gray;
   font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   height: 100%;
   overflow-x: hidden;
 }
@@ -33,6 +34,7 @@ body {
 h2 {
   color: $dark-gray;
   font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
@@ -79,6 +81,7 @@ footer {
   .title {
     color: $white;
     font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
   }
 }

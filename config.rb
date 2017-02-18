@@ -3,10 +3,6 @@ activate :directory_indexes
 activate :livereload
 activate :sprockets
 
-set :css_dir, 'css'
-set :images_dir, 'img'
-set :layouts_dir, '_layouts'
-
 set :slim, {
   format:     :html,
   pretty:     false,

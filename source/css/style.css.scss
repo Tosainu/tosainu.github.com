@@ -49,6 +49,10 @@ a {
 // ----------------------------
 section {
   padding: 6rem 0;
+
+  &:nth-child(even) {
+    background: $light-gray;
+  }
 }
 
 footer {
@@ -110,8 +114,6 @@ footer {
 }
 
 .about-me {
-  background: $light-gray;
-
   i {
     text-align: center;
     width: 2em;

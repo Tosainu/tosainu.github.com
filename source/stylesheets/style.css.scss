@@ -75,7 +75,9 @@ footer {
     background: $white;
     border: 5px solid $white;
     border-radius: 50%;
+    height: 192px;
     margin-bottom: 1.5rem;
+    width: auto;
   }
 
   .title {
@@ -160,7 +162,7 @@ $desktop-width: 1024px;
     padding: 0 10px;
   }
 
-  .avatar {
+  .hero .avatar {
     height: 128px;
     width: auto;
   }

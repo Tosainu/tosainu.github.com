@@ -94,26 +94,32 @@ footer {
   justify-content: center;
 
   a {
-    color: $mid-gray;
     margin-right: 2.5em;
-    text-align: center;
 
     &:last-child {
       margin-right: 0;
     }
   }
+}
 
-  i {
-    border-radius: 8px;
+.link-icon {
+  .fa {
     color: $white;
-    height: 1em;
-    padding: .4em;
-    width: 1em;
+  }
 
-    &:active,
-    &:hover {
-      background: $white;
+  .fa-square {
+    opacity: 0;
+  }
+
+  &:active,
+  &:hover {
+    .fa {
       color: $dark-gray;
+    }
+
+    .fa-square {
+      color: $white;
+      opacity: 1;
     }
   }
 }

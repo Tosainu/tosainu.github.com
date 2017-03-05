@@ -1,0 +1,22 @@
+---
+layout: list
+pageable: true
+---
+
+ruby:
+  filter_title = ''
+
+  case page_type
+  when 'year'
+    filter_title = "Yearly archives: #{formatted_year}"
+  when 'month'
+    filter_title = "Monthly archives: #{formatted_year_month}"
+  when 'day'
+    filter_title = "Dayly archives: #{formatted_year_month_day}"
+  end
+
+  current_page.data.title = filter_title
+
+aside.filter
+  .container
+    span = filter_title

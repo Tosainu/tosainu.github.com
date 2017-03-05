@@ -17,9 +17,5 @@ gem 'redcarpet'
 gem 'rouge'
 gem 'slim'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-susy'
-end
-
 # For feed.xml.builder
 gem 'builder', '~> 3.0'

@@ -1,0 +1,15 @@
+footer.site-footer
+  = partial 'partials/footer_widgets'
+
+  .footer-bottom
+    .container
+      .copyright
+        | &copy; 2011-#{Time.now.year} Tosainu.
+      .powered-by
+        | Powered by&nbsp;
+        | #{link_to 'Middleman', 'https://middlemanapp.com/'},&nbsp;
+        | #{link_to 'Font Awesome', 'http://fontawesome.io/'},&nbsp;
+        | #{link_to 'KaTeX', 'https://khan.github.io/KaTeX/'},&nbsp;
+        | #{link_to 'Travis CI', 'https://travis-ci.org/'},&nbsp;
+        | #{link_to 'GitHub Pages', 'https://pages.github.com/'},&nbsp;
+        | #{link_to 'CloudFlare', 'https://www.cloudflare.com/'}.

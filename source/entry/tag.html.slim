@@ -1,0 +1,12 @@
+---
+layout: list
+pageable: true
+---
+
+ruby:
+  filter_title = "Tag archives: #{tagname}"
+  current_page.data.title = filter_title
+
+aside.filter
+  .container
+    span = filter_title

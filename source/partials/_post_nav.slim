@@ -1,0 +1,12 @@
+nav.nav.post-nav
+  .prev
+    - if current_article.previous_article
+      a href = current_article.previous_article.url
+        | &laquo; #{current_article.previous_article.title}
+    | &nbsp;
+
+  .next
+    - if current_article.next_article
+      a href = current_article.next_article.url
+        | #{current_article.next_article.title} &raquo;
+    | &nbsp;

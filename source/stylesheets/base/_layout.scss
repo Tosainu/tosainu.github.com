@@ -1,31 +1,12 @@
-@import 'susy';
-
-$susy: (
-  columns: 12,
-  container: 1192px,
-  global-box-sizing: border-box,
-  gutters: 0.6
-);
-
-$tablet-screen-width: 570px;
-$desktop-screen-width: 960px;
-$wide-screen-width: 1280px;
+$mobile-screen-width: 640px;
+$desktop-screen-width: 1024px;
+$wide-screen-width: 1200px;
 
 .container {
-  @media screen and (max-width: $wide-screen-width - 1) {
-    @include container(93.25%);
-  }
-  @media screen and (min-width: $wide-screen-width) {
-    @include container;
+  margin: 0 auto;
+  width: 960px;
+
+  @media (max-width: $desktop-screen-width) {
+    width: 93.75%;
   }
 }
-
-@media screen and (min-width: $desktop-screen-width) {
-  #content {
-    @include span(9);
-  }
-  #side {
-    @include span(last 3);
-  }
-}
-

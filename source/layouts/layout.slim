@@ -5,7 +5,7 @@ html lang = data.site.lang
     meta name = 'author' content = data.author.name
     meta name = "description" content = page_description
     meta name = 'generator' content = 'Middleman'
-    meta name = 'viewport' content = 'width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1'
+    meta name = 'viewport' content = 'width=device-width, initial-scale=1'
 
     / Twitter Card Tags
     meta property = 'twitter:card' content = 'summary'
@@ -30,27 +30,6 @@ html lang = data.site.lang
     = feed_tag :atom, '/feed.xml', title: 'Atom Feed'
 
   body
-    #header
-      .container
-        .site-title
-          a href = '/' title = 'Home'
-            = data.site.title
-
-    #main
-      .container
-        = yield
-
-    #footer
-      .container
-        p
-          | &copy; 2011-#{Time.now.year} Tosainu. 
-          br
-          | Powered by 
-          | #{link_to 'Middleman', 'https://middlemanapp.com/'}, 
-          | #{link_to 'Susy', 'http://susy.oddbird.net/'}, 
-          | #{link_to 'Font Awesome', 'http://fontawesome.io/'}, 
-          | #{link_to 'KaTeX', 'https://khan.github.io/KaTeX/'}, 
-          | #{link_to 'GitHub Pages', 'https://pages.github.com/'}, 
-          | #{link_to 'CloudFlare', 'https://www.cloudflare.com/'}.
+    = yield
 
     = partial 'partials/ga'

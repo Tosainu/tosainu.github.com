@@ -38,6 +38,10 @@ set :markdown, {
   tables:             true,
 }
 
+# rack middlewares
+require 'lib/external_link_attributes'
+use ExternalLinkAttributes, host: 'blog.myon.info'
+
 activate :disqus do |d|
   d.shortname = 'tosainu'
 end

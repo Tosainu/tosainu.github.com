@@ -3,16 +3,16 @@ title: 2014年 あけましておめでとうございます
 date: 2014-01-01 11:59:37 JST
 tags:
 ---
-<blockquote class="twitter-tweet" lang="en"><p>あけおめです</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034226626568192">December 31, 2013</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>あけおめです</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034226626568192">December 31, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>完全に時間忘れてました</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034337314246656">December 31, 2013</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>完全に時間忘れてました</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034337314246656">December 31, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>僕、どうやら年明けの瞬間はトイレにいたようです</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034970779987968">December 31, 2013</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>僕、どうやら年明けの瞬間はトイレにいたようです</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418034970779987968">December 31, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>あけおるめw&#10;&#10;なんとなく言ってみたかった</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418040175659597824">December 31, 2013</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>あけおるめw&#10;&#10;なんとなく言ってみたかった</p>&mdash; とさいぬ.rb (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/418040175659597824">December 31, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 改めて、

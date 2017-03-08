@@ -122,7 +122,7 @@ $ bundle install --path vendor/bundle
 $ bundle exec ruby bot.rb
 ```
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">Botつくれたヾ(๑&gt;◡&lt;)ﾉ&quot; <a href="https://t.co/4d2Bj0NF2I">https://t.co/4d2Bj0NF2I</a> <a href="https://t.co/WrB8ciXJCi">pic.twitter.com/WrB8ciXJCi</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/690577036096614400">January 22, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p lang="ja" dir="ltr">Botつくれたヾ(๑&gt;◡&lt;)ﾉ&quot; <a href="https://t.co/4d2Bj0NF2I">https://t.co/4d2Bj0NF2I</a> <a href="https://t.co/WrB8ciXJCi">pic.twitter.com/WrB8ciXJCi</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/690577036096614400">January 22, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## コードを実行して結果を返すBot作った

@@ -33,13 +33,13 @@ READMORE
 
 ってことで.
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>タッチパネルが逝って操作できなくなったXperiaArcにデータ通信用SIMを差すじゃろ？ <a href="http://t.co/jKkIvMk3Yr">pic.twitter.com/jKkIvMk3Yr</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/statuses/505217971577307137">August 29, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>タッチパネルが逝って操作できなくなったXperiaArcにデータ通信用SIMを差すじゃろ？ <a href="http://t.co/jKkIvMk3Yr">pic.twitter.com/jKkIvMk3Yr</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/statuses/505217971577307137">August 29, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>キーボードとマウスで操作して・・・ <a href="http://t.co/SYd46CPaEW">pic.twitter.com/SYd46CPaEW</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/statuses/505218103412670464">August 29, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>キーボードとマウスで操作して・・・ <a href="http://t.co/SYd46CPaEW">pic.twitter.com/SYd46CPaEW</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/statuses/505218103412670464">August 29, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>こうじゃ <a href="http://t.co/Vo5gTzf7YP">pic.twitter.com/Vo5gTzf7YP</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/statuses/505218191119773697">August 29, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>こうじゃ <a href="http://t.co/Vo5gTzf7YP">pic.twitter.com/Vo5gTzf7YP</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/statuses/505218191119773697">August 29, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 こんな感じで問題なくテザリングできました. 便利ですね.  

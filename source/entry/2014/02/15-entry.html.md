@@ -51,16 +51,16 @@ READMORE
 
 そしてソフトのインストーラ。僕のようにOSの表示言語を英語にすると見事にハマります。
 
-<blockquote class="twitter-tweet" lang="en"><p>Canonのカメラのツールを使いたいんだけど、インストール時に選択する言語のリストに日本がない(日本のサイトから落としたのに)&#10;そのくせに、適当な地域選ぶとあとから住んでる地域に対応してないだとかでインストールし直し要求してくる</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434490996894597120">February 15, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>Canonのカメラのツールを使いたいんだけど、インストール時に選択する言語のリストに日本がない(日本のサイトから落としたのに)&#10;そのくせに、適当な地域選ぶとあとから住んでる地域に対応してないだとかでインストールし直し要求してくる</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434490996894597120">February 15, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>あ、地域をUSA、言語をEnglishにしたら通った</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434491328441765888">February 15, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>あ、地域をUSA、言語をEnglishにしたら通った</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434491328441765888">February 15, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>今度はアレだ、エラーは出なくなったけど連携するWebアプリが全部アメリカ仕様になったのかログインできねぇwwwwwww</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434492014684434432">February 15, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>今度はアレだ、エラーは出なくなったけど連携するWebアプリが全部アメリカ仕様になったのかログインできねぇwwwwwww</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434492014684434432">February 15, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>例のキャノンソフト、日本語版Win XPにインストールしたら普通に日本語版インストールされて問題なく起動してしまったわ</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434496411753660416">February 15, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>例のキャノンソフト、日本語版Win XPにインストールしたら普通に日本語版インストールされて問題なく起動してしまったわ</p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434496411753660416">February 15, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 日本で使い日本のアカウントにログインする場合は日本語表示のOSを使いましょう。
@@ -113,7 +113,7 @@ Canon製品を買った人が投稿できるWebアルバムのようなもの。
 
 S110からTwitterと連携させてうpするとこうなります。
 
-<blockquote class="twitter-tweet" lang="en"><p>写真を投稿しました。 <a href="http://t.co/qOsBDNGWMs">http://t.co/qOsBDNGWMs</a> <a href="https://twitter.com/search?q=%23cig&amp;src=hash">#cig</a></p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434499096028532736">February 15, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>写真を投稿しました。 <a href="http://t.co/qOsBDNGWMs">http://t.co/qOsBDNGWMs</a> <a href="https://twitter.com/search?q=%23cig&amp;src=hash">#cig</a></p>&mdash; ( ✹‿✹ ) (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/434499096028532736">February 15, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 はい、画像は上記のCANON iMAGE GATEWAYにうpされ、Twitterにはそのリンクが投稿されます。

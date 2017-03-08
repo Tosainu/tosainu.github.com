@@ -9,7 +9,7 @@ tags: Android
 
 今日は某部活(正確にはちょっと違うけど)の現役・OBで集まりご飯食べに行ってきました〜
 
-<blockquote class="twitter-tweet" lang="ja"><p>めしなー <a href="http://t.co/lyS2gbPLkJ">pic.twitter.com/lyS2gbPLkJ</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/408916055990353920">2013, 12月 6</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="ja"><p>めしなー <a href="http://t.co/lyS2gbPLkJ">pic.twitter.com/lyS2gbPLkJ</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/408916055990353920">2013, 12月 6</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 とても楽しかったです。
@@ -34,7 +34,7 @@ tags: Android
 
 ってことで友人氏のXperia Rayを借りて早速試していたわけです。
 
-<blockquote class="twitter-tweet" lang="ja"><p>なう！ <a href="http://t.co/fsMGQPUaz4">pic.twitter.com/fsMGQPUaz4</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/408844229184479232">2013, 12月 6</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="ja"><p>なう！ <a href="http://t.co/fsMGQPUaz4">pic.twitter.com/fsMGQPUaz4</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/408844229184479232">2013, 12月 6</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 後日動画付きのレビューでもしようと思います。

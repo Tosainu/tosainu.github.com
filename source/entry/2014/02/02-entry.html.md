@@ -7,7 +7,7 @@ tags:
 
 <a href="https://twitter.com/rekierio">@rekierio</a>氏に「なれる!SE」を借りました。
 
-<blockquote class="twitter-tweet" lang="en"><p>読みます <a href="http://t.co/pBmMlnikGh">pic.twitter.com/pBmMlnikGh</a></p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;): (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/429165400094289921">January 31, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>読みます <a href="http://t.co/pBmMlnikGh">pic.twitter.com/pBmMlnikGh</a></p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;): (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/429165400094289921">January 31, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 とりあえず1,2巻を読んだ感想ですが、

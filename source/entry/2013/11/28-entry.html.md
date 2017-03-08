@@ -13,16 +13,16 @@ READMORE
 
 &nbsp;
 
-<blockquote class="twitter-tweet" lang="ja"><p>キタ———(゜∀゜)———— !!&#10;アクセストークン取得できたー <a href="http://t.co/ugZn9lqOvx">pic.twitter.com/ugZn9lqOvx</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405266490728804352">2013, 11月 26</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="ja"><p>キタ———(゜∀゜)———— !!&#10;アクセストークン取得できたー <a href="http://t.co/ugZn9lqOvx">pic.twitter.com/ugZn9lqOvx</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405266490728804352">2013, 11月 26</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="ja"><p>TestTweet</p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405342782400626688">2013, 11月 26</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="ja"><p>TestTweet</p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405342782400626688">2013, 11月 26</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="ja"><p>ThisTweetWasPostedFromTosainusProgram.</p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405343973524250625">2013, 11月 26</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="ja"><p>ThisTweetWasPostedFromTosainusProgram.</p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405343973524250625">2013, 11月 26</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="ja"><p>ﾂｲｰﾖができた✌(&#39;ω&#39;✌ )三✌(&#39;ω&#39;)✌三( ✌&#39;ω&#39;)✌ <a href="http://t.co/TtVmSoEKZF">pic.twitter.com/TtVmSoEKZF</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405345020418342912">2013, 11月 26</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="ja"><p>ﾂｲｰﾖができた✌(&#39;ω&#39;✌ )三✌(&#39;ω&#39;)✌三( ✌&#39;ω&#39;)✌ <a href="http://t.co/TtVmSoEKZF">pic.twitter.com/TtVmSoEKZF</a></p>&mdash; とさいぬ.cc (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/405345020418342912">2013, 11月 26</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 &nbsp;

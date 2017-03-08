@@ -137,7 +137,7 @@ Blu-rayにチェックを入れて, またBDドライブのパスを設定して
 
 本記事と同様の方法で, Windows環境でもVLCでBDの再生が可能なようです.
 
-<blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">はてなブログに投稿しました <a href="https://twitter.com/hashtag/%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%96%E3%83%AD%E3%82%B0?src=hash">#はてなブログ</a>&#10;Windowsで無料でBDを再生する - 酢飯をおかずにご飯を食べる。&#10;<a href="http://t.co/Mn8agc4JuP">http://t.co/Mn8agc4JuP</a> <a href="http://t.co/ABGwFBqn1c">pic.twitter.com/ABGwFBqn1c</a></p>&mdash; 宇治松千夜 (@eai04191) <a href="https://twitter.com/eai04191/status/626281660607168512">July 29, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="ja" dir="ltr">はてなブログに投稿しました <a href="https://twitter.com/hashtag/%E3%81%AF%E3%81%A6%E3%81%AA%E3%83%96%E3%83%AD%E3%82%B0?src=hash">#はてなブログ</a>&#10;Windowsで無料でBDを再生する - 酢飯をおかずにご飯を食べる。&#10;<a href="http://t.co/Mn8agc4JuP">http://t.co/Mn8agc4JuP</a> <a href="http://t.co/ABGwFBqn1c">pic.twitter.com/ABGwFBqn1c</a></p>&mdash; 宇治松千夜 (@eai04191) <a href="https://twitter.com/eai04191/status/626281660607168512">July 29, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [^1]: ア○キーは以前[Raspberry Piをバカにする記事](http://weekly.ascii.jp/elem/000/000/140/140621/)書いたりしてたので嫌いですし意識してサイトも見ないようにしています

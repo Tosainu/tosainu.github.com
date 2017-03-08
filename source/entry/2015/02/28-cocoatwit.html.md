@@ -99,7 +99,7 @@ QtのListViewである[`QListView`](http://doc.qt.io/qt-5/qlistview.html)を拡�
 しかし, 僕のQt力が足りないことや, 雑に書いたのもありますがどうも不安定で, コードが予想以上に複雑に....  
 ここから表示する情報を増やしたり, Tweetの行数に合わせて高さを可変させるようにしたり, デザインよくしたりと考えていくともう.....\_(:3 」∠)\_
 
-<blockquote class="twitter-tweet" lang="en"><p>それっぽいのできた <a href="http://t.co/7jZU0Iv95o">pic.twitter.com/7jZU0Iv95o</a></p>&mdash; 不正競争防止法 (@myon\_\_\_) <a href="https://twitter.com/myon___/status/550229017098326016">December 31, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>それっぽいのできた <a href="http://t.co/7jZU0Iv95o">pic.twitter.com/7jZU0Iv95o</a></p>&mdash; 不正競争防止法 (@myon\_\_\_) <a href="https://twitter.com/myon___/status/550229017098326016">December 31, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ちなみに, `QListView`と[`QStandardItemModel`](http://doc.qt.io/qt-5/qstandarditemmodel.html)を利用すると, アイコン付きのListは簡単に作れました.  
@@ -116,7 +116,7 @@ l->setIconSize(QSize(64, 64));
 model->insertRow(0, new QStandardItem(QIcon("icon.png"), "myon!!"));
 ```
 
-<blockquote class="twitter-tweet" lang="en"><p>QtでUserstream流せた∩(＞◡＜\*)∩ <a href="http://t.co/bgbyyh6r7d">pic.twitter.com/bgbyyh6r7d</a></p>&mdash; 不正競争防止法 (@myon\_\_\_) <a href="https://twitter.com/myon___/status/533104702963978241">November 14, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>QtでUserstream流せた∩(＞◡＜\*)∩ <a href="http://t.co/bgbyyh6r7d">pic.twitter.com/bgbyyh6r7d</a></p>&mdash; 不正競争防止法 (@myon\_\_\_) <a href="https://twitter.com/myon___/status/533104702963978241">November 14, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## HTMLでUIを書くという選択肢

@@ -135,7 +135,7 @@ mari0は, 某社のマリ○に似せたゲームです.
 しかし, どうにも不思議なことに, その大半の方々がWineでWindowsアプリケーションを動かすのを最終目標にしているかのような環境構築を行っているのです.
 
 昨晩の僕のこの発言も, ちょうどTLでUbuntuにWineを入れるのに苦戦している方がいて, その流れからかWineの話題でいっぱいだったのが原因でもあります.  
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>Wineが &quot;Ubuntuインストールしたら入れたい定番ソフトn選&quot; みたいなのの一つになってるの個人的に謎</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/535391010663063552">November 20, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>Wineが &quot;Ubuntuインストールしたら入れたい定番ソフトn選&quot; みたいなのの一つになってるの個人的に謎</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/535391010663063552">November 20, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 結局Wineって何なのか

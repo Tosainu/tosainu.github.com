@@ -50,7 +50,7 @@ $ dmesg
 全く関係ないのですが, dmesgコマンドの出力に色がつくようになったんですね.  
 ずいぶん見やすくなりました.
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>見やすいかも <a href="http://t.co/YpooKi08fG">pic.twitter.com/YpooKi08fG</a></p>&mdash; 期末テスト (@myon\_\_\_) <a href="https://twitter.com/myon___/status/512903387856134144">September 19, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>見やすいかも <a href="http://t.co/YpooKi08fG">pic.twitter.com/YpooKi08fG</a></p>&mdash; 期末テスト (@myon\_\_\_) <a href="https://twitter.com/myon___/status/512903387856134144">September 19, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## なおす

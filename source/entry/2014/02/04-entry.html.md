@@ -23,7 +23,7 @@ tags:
 
 今日だって、学校の図書館さんが古い雑誌の無償配布していたので・・・
 
-<blockquote class="twitter-tweet" lang="en"><p>とさいぬは SoftwareDesign(2010)1年分を 手に入れた！ <a href="http://t.co/yX0L8NkphI">pic.twitter.com/yX0L8NkphI</a></p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;): (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/430150589335359488">February 3, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>とさいぬは SoftwareDesign(2010)1年分を 手に入れた！ <a href="http://t.co/yX0L8NkphI">pic.twitter.com/yX0L8NkphI</a></p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;): (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/430150589335359488">February 3, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 SoftwareDesign(2010)1年分をもらってきましたw

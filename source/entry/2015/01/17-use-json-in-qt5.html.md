@@ -27,11 +27,11 @@ ParseしたJSONの各要素を扱うため, `QJsonDocument.object()`を使って
 この状態で目的のValueに辿り着いたのであれば`QJsonValue.toString()`や`QJsonValue.toDouble()`で文字列や数値に変換してやります.  
 しかし, 更に深い要素が欲しいのであれば`QJsonValue.toObject()`で再び`QJsonObject`に変換してやり, 同様に`.value("hoge").toObject().value("fuga")...`と続けていきます.
 
-<blockquote class="twitter-tweet" lang="en"><p>QJson, 微妙ぃ.....</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/556052826594373632">January 16, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>QJson, 微妙ぃ.....</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/556052826594373632">January 16, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>これもっとCoolな書き方できないんですかね <a href="https://t.co/myBJAUPsOr">https://t.co/myBJAUPsOr</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/556055068739661824">January 16, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>これもっとCoolな書き方できないんですかね <a href="https://t.co/myBJAUPsOr">https://t.co/myBJAUPsOr</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/556055068739661824">January 16, 2015</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p>こりゃないっしょ.....って感じだ</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/556056173267267585">January 16, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>こりゃないっしょ.....って感じだ</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/556056173267267585">January 16, 2015</a></blockquote>
 
 求: Qtの機能だけでもっとCoolに各Valueを取得する方法

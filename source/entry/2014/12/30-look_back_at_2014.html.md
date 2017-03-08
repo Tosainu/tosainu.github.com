@@ -53,14 +53,14 @@ READMORE
 
 ## 気胸
 
-<blockquote class="twitter-tweet" lang="en"><p>あ゛ーーーーっ&#10;&#10;なんか突然背中の右側に痛みががが</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484534987081781250">July 3, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>あ゛ーーーーっ&#10;&#10;なんか突然背中の右側に痛みががが</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484534987081781250">July 3, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>気胸(<a href="https://twitter.com/myon___">@myon___</a>)</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484615991515561984">July 3, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>気胸(<a href="https://twitter.com/myon___">@myon___</a>)</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484615991515561984">July 3, 2014</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p>右肺1割ほど縮小してるらしい&#10;入院沙汰ではないが3日間安静にしてろボケらしい</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484616456357703681">July 3, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>右肺1割ほど縮小してるらしい&#10;入院沙汰ではないが3日間安静にしてろボケらしい</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484616456357703681">July 3, 2014</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p>nade氏の言ってた &quot;気胸特有の背中の違和感&quot; がわかった気がする&#10;なんかゴロゴロする</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484622313065689088">July 3, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>nade氏の言ってた &quot;気胸特有の背中の違和感&quot; がわかった気がする&#10;なんかゴロゴロする</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/484622313065689088">July 3, 2014</a></blockquote>
 
 症状は軽かったけど, 数日後のOSCも十分に回れなかったりでいろいろと辛かった.
 

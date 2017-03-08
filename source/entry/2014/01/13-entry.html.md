@@ -86,7 +86,7 @@ WMポート上部の細長い蓋を開けるとネジが出てきます。
 
 イヤホンジャックの接触が悪いこともあり、こんなことが結構頻繁に起きてるんですよね。
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>アレな音楽聞いてるわけじゃないけど、時々電車の中でスピーカーから音楽流してしまい焦る</p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;):  (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/422554114862510080">January 13, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>アレな音楽聞いてるわけじゃないけど、時々電車の中でスピーカーから音楽流してしまい焦る</p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;):  (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/422554114862510080">January 13, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 いい機会だし、内部スピーカの配線を取り外てしまいます。

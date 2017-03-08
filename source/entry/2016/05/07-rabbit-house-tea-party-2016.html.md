@@ -26,7 +26,7 @@ READMORE
 どうやらバス停でごちうさ読んでいるのを見て察したみたい. これも何かの縁ってことで, T氏と会場へ向かった.  
 途中, ナビに使っていた僕の携帯のGPSが荒ぶってUターンすることになったりもしたけど, 5:50 過ぎにパシフィコ横浜前到着. 物販の列ができる場所を探す時間も含めれば丁度いいくらいだったと思う.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">c(＞◡＜と⌒c)つ彡 (@ パシフィコ横浜 (PACIFICO YOKOHAMA) in Yokohama, Kanagawa) <a href="https://t.co/SFtuIrKRYH">https://t.co/SFtuIrKRYH</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/728688846523781121">May 6, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">c(＞◡＜と⌒c)つ彡 (@ パシフィコ横浜 (PACIFICO YOKOHAMA) in Yokohama, Kanagawa) <a href="https://t.co/SFtuIrKRYH">https://t.co/SFtuIrKRYH</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/728688846523781121">May 6, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## 物販
@@ -49,7 +49,7 @@ READMORE
 そしてライブパートに突入. 1曲目が **"ノーポイッ!"** なのは予想できたけど, その後チノ役**水瀬いのりさん<u>ソロ</u>**で **"出かけましょうと答えましょう"** がきてもうびっくり. 踊りながらにもかかわらず安定した歌声で歌っている姿は本当にすごいなぁと. とにかく最高だった.  
 個人的に好きな楽曲でもあったココア役佐倉綾音さんとリゼ役種田梨沙さんによる **"Rabbit Hole"** が聴けたのも良かったし, 実は初めて聴くチマメ隊(水瀬いのりさん/徳井青空さん/村川梨衣さん)の **"ぴょん'sぷりんぷるん"** も結構盛り上がってて良かった.  
 イベントソングの **"本日は誠にラリルレイン"** はごちうさ?? BD/DVD 6巻に付いてくるみたいですよ!
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">6/3発売『ご注文はうさぎですか？？』BD&amp;DVD第6巻ジャケットを公開！初回限定特典として「Rabbit House Tea Party 2016」イベントソング『本日は誠にラリルレイン』も封入決定です！！<a href="https://twitter.com/hashtag/gochiusa?src=hash">#gochiusa</a> <a href="https://t.co/vrzw9nSbdo">pic.twitter.com/vrzw9nSbdo</a></p>&mdash; TVアニメ「ご注文はうさぎですか？？」 (@usagi\_anime) <a href="https://twitter.com/usagi_anime/status/728938903411949570">May 7, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">6/3発売『ご注文はうさぎですか？？』BD&amp;DVD第6巻ジャケットを公開！初回限定特典として「Rabbit House Tea Party 2016」イベントソング『本日は誠にラリルレイン』も封入決定です！！<a href="https://twitter.com/hashtag/gochiusa?src=hash">#gochiusa</a> <a href="https://t.co/vrzw9nSbdo">pic.twitter.com/vrzw9nSbdo</a></p>&mdash; TVアニメ「ご注文はうさぎですか？？」 (@usagi\_anime) <a href="https://twitter.com/usagi_anime/status/728938903411949570">May 7, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## その他展示
@@ -71,7 +71,7 @@ READMORE
 こんなに素晴らしいイベントを開催してくれたこと, そしてそれに参加できたことに本当に感謝です.  
 ありがとうございました!!!!!!
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">「Rabbit House Tea Party 2016」閉幕いたしました！お越しいただきました皆様、出演者の皆様、ありがとうございました！！<br>またラビットハウスに遊びに来てくださいね♪ <a href="https://twitter.com/hashtag/gochiusa?src=hash">#gochiusa</a> <a href="https://t.co/72GkYHjPpt">pic.twitter.com/72GkYHjPpt</a></p>&mdash; TVアニメ「ご注文はうさぎですか？？」 (@usagi\_anime) <a href="https://twitter.com/usagi_anime/status/728911489772359680">May 7, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">「Rabbit House Tea Party 2016」閉幕いたしました！お越しいただきました皆様、出演者の皆様、ありがとうございました！！<br>またラビットハウスに遊びに来てくださいね♪ <a href="https://twitter.com/hashtag/gochiusa?src=hash">#gochiusa</a> <a href="https://t.co/72GkYHjPpt">pic.twitter.com/72GkYHjPpt</a></p>&mdash; TVアニメ「ご注文はうさぎですか？？」 (@usagi\_anime) <a href="https://twitter.com/usagi_anime/status/728911489772359680">May 7, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 以下, イベント参加に関する私的メモです.

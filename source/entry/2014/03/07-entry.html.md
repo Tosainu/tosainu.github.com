@@ -1,7 +1,7 @@
 ---
 title: ケースをAntec P100に替えてしまいました
 date: 2014-03-07 15:54:24 JST
-tags: i7-3930k PC
+tags: DIY PC
 ---
 どーもです。
 

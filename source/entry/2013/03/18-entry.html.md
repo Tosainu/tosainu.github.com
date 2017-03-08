@@ -1,7 +1,7 @@
 ---
 title: また・・・
 date: 2013-03-18 16:57:30 JST
-tags: i7-3930k PC
+tags: DIY PC
 ---
 <p><img src="https://lh5.googleusercontent.com/-WABKgnE1kwI/UUbB0hF0u4I/AAAAAAAABsY/9Ng7F64u0aM/s640/IMG_0255.JPG" /></p>
 <p><span style="font-size:36px;">またやられた</span></p>

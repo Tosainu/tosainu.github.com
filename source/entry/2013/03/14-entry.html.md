@@ -1,7 +1,6 @@
 ---
 title: Google Readerが終了するらしい
 date: 2013-03-14 18:54:09 JST
-tags:
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

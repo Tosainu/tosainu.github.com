@@ -1,6 +1,7 @@
 ---
 title: セキュリティ・キャンプ全国大会2016に参加してきました
 date: 2016-08-18 02:55 JST
+tags: seccamp
 ---
 
 ![certificate](https://c4.staticflickr.com/9/8287/29050078715_394bda05c9_z.jpg)

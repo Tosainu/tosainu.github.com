@@ -1,7 +1,6 @@
 ---
 title: Buffalo WLI-UC-GNM
 date: 2013-04-01 15:56:55 JST
-tags:
 ---
 <p>どーも</p>
 <p>エイプリルフールってことで<a href="http://dic.nicovideo.jp/a/%E3%82%A8%E3%82%A2%E6%9C%AC%E3%81%95%E3%82%93">頭がパーン</a>ってなる動画を作ろうとして挫折したとさいぬです。</p>

@@ -1,0 +1,35 @@
+doctype html
+html lang = data.site.lang
+  head
+    meta charset='utf-8'
+    meta name = 'author' content = data.author.name
+    meta name = "description" content = page_description
+    meta name = 'generator' content = 'Middleman'
+    meta name = 'viewport' content = 'width=device-width, initial-scale=1'
+
+    / Twitter Card Tags
+    meta property = 'twitter:card' content = 'summary'
+    meta property = 'twitter:site' content = "@#{data.author.twitter}"
+    meta property = 'twitter:creator' content = "@#{data.author.twitter}"
+
+    / Open Graph Tags
+    meta property = "og:type" content = 'article'
+    meta property = "og:url" content = (data.site.url + current_path)
+    meta property = "og:title" content = page_title
+    meta property = "og:description" content = page_description
+    meta property = "og:image" content = page_image
+    meta property = "og:site_name" content = data.site.title
+
+    title = page_title
+
+    link href = '/stylesheets/style.css' rel = 'stylesheet'
+    link href = '/stylesheets/syntax.css' rel = 'stylesheet'
+    link href = '/assets/katex/katex.min.css' rel = 'stylesheet'
+
+    = favicon_tag '/favicon.ico'
+    = feed_tag :atom, '/feed.xml', title: 'Atom Feed'
+
+  body
+    = yield
+
+    = partial 'partials/ga'

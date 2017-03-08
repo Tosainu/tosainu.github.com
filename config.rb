@@ -1,16 +1,16 @@
 Time.zone = 'Tokyo'
 
-page "/feed.xml", layout: false
+page '/feed.xml', layout: false
 
 activate :blog do |blog|
-  blog.sources = "articles/{year}/{month}/{day}-{title}.html"
-  blog.default_extension = ".md"
+  blog.prefix = 'entry'
+  blog.sources = '{year}/{month}/{day}-{title}.html'
+  blog.default_extension = '.md'
 
-  blog.prefix = "blog"
-  blog.layout = "post"
-  blog.permalink = "{year}-{month}-{day}/{title}.html"
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
+  blog.layout = 'post'
+  blog.permalink = '{year}/{month}/{day}/{title}.html'
+  blog.tag_template = 'entry/tag.html'
+  blog.calendar_template = 'entry/calendar.html'
   blog.generate_day_pages = false
 
   blog.summary_length = nil
@@ -18,9 +18,11 @@ activate :blog do |blog|
 
   blog.paginate = true
   blog.per_page = 5
-  blog.page_link = "page/{num}"
+  blog.page_link = 'page/{num}'
 end
 
+activate :automatic_alt_tags
+activate :autoprefixer
 activate :directory_indexes
 activate :sprockets
 
@@ -36,13 +38,9 @@ set :markdown, {
   tables:             true,
 }
 
-# slim
-set :slim, {
-  format:     :html,
-  sort_attrs: false,
-  streaming:  false,
-  tabsize:    2,
-}
+# rack middlewares
+require 'lib/external_link_attributes'
+use ExternalLinkAttributes, host: 'blog.myon.info'
 
 activate :disqus do |d|
   d.shortname = 'tosainu'
@@ -58,14 +56,20 @@ activate :deploy do |deploy|
 end
 
 configure :development do
-  activate :livereload
+  activate :livereload, :no_swf => true
 
-  Slim::Engine.options[:pretty] = true
+  set :debug_assets, true
+  set :slim,
+    format:     :html,
+    pretty:     true,
+    tabsize:    2
 end
 
 configure :build do
   activate :minify_css
   activate :minify_javascript
 
-  Slim::Engine.options[:pretty] = false
+  set :slim,
+    format:     :html,
+    pretty:     false
 end

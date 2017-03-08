@@ -1,0 +1,19 @@
+h1 = link_to current_article.title, current_article
+
+ul.post-meta
+  li
+    i.fa.fa-calendar
+  li.date
+    = current_article.date.strftime('%Y/%m/%d')
+  li.time
+    = current_article.date.strftime('%R')
+
+  - unless current_article.tags.empty?
+    li
+      i.fa.fa-tags
+    li
+      ul.tag-list
+        - current_article.tags.sort.each do |tag|
+          li
+            a href = tag_path(tag)
+              span = tag

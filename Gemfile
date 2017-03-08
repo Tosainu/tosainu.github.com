@@ -13,13 +13,13 @@ gem 'middleman-sprockets', '~> 4.1.0'
 gem 'execjs'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'nokogiri'
+gem 'rack-plastic', github: 'sjchmiela/rack-plastic'
 gem 'redcarpet'
 gem 'rouge'
 gem 'slim'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-susy'
-end
-
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
+
+gem 'scss_lint', require: false
+gem 'slim_lint', require: false

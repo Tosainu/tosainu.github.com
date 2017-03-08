@@ -1,21 +1,18 @@
-= wrap_layout :default do
-  #content
-    article.entry
-      = partial 'partials/article_header', locals: { article: current_article }
+= wrap_layout :layout do
+  = partial 'partials/site_header'
 
-      = yield
+  main.post role='main'
+    article
+      header.post-header
+        .container
+          = partial 'partials/post_header'
 
-    = partial 'partials/share'
+      .container
+        .post-contents
+          = current_article.body
 
-    = disqus
+        = partial 'partials/share'
+        = partial 'partials/comments'
+        = partial 'partials/post_nav'
 
-    .pagination
-      - if current_article.previous_article
-        a href = current_article.previous_article.url
-          span.next Older &raquo;
-
-      - if current_article.next_article
-        a href = current_article.next_article.url
-          span.prev &laquo; Newer
-
-  = partial 'partials/sidebar'
+  = partial 'partials/site_footer'

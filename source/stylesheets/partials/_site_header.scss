@@ -1,0 +1,17 @@
+.site-header {
+  background: $dark-gray;
+  padding: .6em 0;
+
+  h1 {
+    font-weight: bold;
+    margin: 0;
+
+    a:active,
+    a:hover,
+    a:link,
+    a:visited {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

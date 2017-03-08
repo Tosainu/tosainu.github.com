@@ -4,16 +4,16 @@ date: 2014-12-19 01:05 JST
 tags: Gochiusa
 ---
 
-<blockquote class="twitter-tweet" lang="en"><p>あぁ...買っちまった......</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/544401154763800576">December 15, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>あぁ...買っちまった......</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/544401154763800576">December 15, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>報告いきます</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/545500744103653377">December 18, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>報告いきます</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/545500744103653377">December 18, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p><a href="http://t.co/kLgrC9kiua">pic.twitter.com/kLgrC9kiua</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/545500819198459904">December 18, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p><a href="http://t.co/kLgrC9kiua">pic.twitter.com/kLgrC9kiua</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/545500819198459904">December 18, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>以上です</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/545500835673694209">December 18, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>以上です</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/545500835673694209">December 18, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ども.  

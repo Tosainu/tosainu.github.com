@@ -1,7 +1,6 @@
 ---
 title: CASIO G-SHOCK
 date: 2011-03-02 17:20:34 JST
-tags: 
 ---
 <img src="https://lh6.googleusercontent.com/_k8x9PZSlKHk/TW34hdJj0hI/AAAAAAAAAfE/0UFm_5Qvitk/s640/DSC03685.JPG" />
 <p>数日前、いろいろあってG-SHOCKをもらった。</p><br />

@@ -20,7 +20,7 @@ SIMがコレなので、おそらく新規契約になってしまうのかな�
 このSIM使えば、Softbankの2つ折り携帯用プランが適用されて、ほとんど電話代だけの通信が可能になるのですが。
 
 SoftbankでAndroid携帯はお高いですし、かといって店員が推しまくってくるiPhoneは諸々の理由で使いたくないですし。  
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>標準音楽PlayerがFlac未対応だったりiTunesが面倒そう等、僕がiOS端末使わないのに理由はいくつかありますが、一番の理由はApple社製品にありがちな「他のApple社製品が生えてきた 」というApple沼が怖いってことですかね</p>&mdash; (✿╹◡╹)ﾉ とさいぬ (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/451975405960830976">April 4, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>標準音楽PlayerがFlac未対応だったりiTunesが面倒そう等、僕がiOS端末使わないのに理由はいくつかありますが、一番の理由はApple社製品にありがちな「他のApple社製品が生えてきた 」というApple沼が怖いってことですかね</p>&mdash; (✿╹◡╹)ﾉ とさいぬ (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/451975405960830976">April 4, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 うーーーーむ、もう一台Xperia2011を買ってしまおうかと思ってしまうくらいつらい。

@@ -9,7 +9,7 @@ tags: Haskell
 数日前から**すごいH本**こと[**すごいHaskellたのしく学ぼう!**](http://www.amazon.co.jp/%E3%81%99%E3%81%94%E3%81%84Haskell%E3%81%9F%E3%81%AE%E3%81%97%E3%81%8F%E5%AD%A6%E3%81%BC%E3%81%86-Miran-Lipova%C4%8Da/dp/4274068854/)を読み始めました.  
 以前から読んでみたいなと思っており, 学校図書館にお願いしてみたところ入れてもらえました. ありがたい.
 
-<blockquote class="twitter-tweet" lang="en"><p>学校図書館の新刊情報です <a href="http://t.co/sYBUo1aBkq">pic.twitter.com/sYBUo1aBkq</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/532708548568834049">November 13, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>学校図書館の新刊情報です <a href="http://t.co/sYBUo1aBkq">pic.twitter.com/sYBUo1aBkq</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/532708548568834049">November 13, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 以来3ヶ月以上この本を借りていた[^1]のですが, 学校の勉強が忙しかったり, 複数のプログラミング言語に手を出すのはアレだよなぁと思いながら結局1ページも読んでいませんでした.  

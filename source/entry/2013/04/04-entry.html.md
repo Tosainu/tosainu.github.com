@@ -1,7 +1,6 @@
 ---
 title: 劇場版 STEINS;GATE 負荷領域のデジャヴ
 date: 2013-04-04 20:30:12 JST
-tags:
 ---
 <p><span style="font-size:24px;">キタ———（゜∀゜）———— ！！</span></p>
 <p><img src="https://lh5.googleusercontent.com/-EXB4uhDaJMc/UV1ij0c0x0I/AAAAAAAAB2c/fSs2YWQhbHw/s640/Screenshot%2520from%25202013-04-04%252020%253A21%253A00.png" /></p>

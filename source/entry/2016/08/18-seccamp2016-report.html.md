@@ -1,6 +1,7 @@
 ---
 title: セキュリティ・キャンプ全国大会2016に参加してきました
 date: 2016-08-18 02:55 JST
+tags: seccamp
 ---
 
 ![certificate](https://c4.staticflickr.com/9/8287/29050078715_394bda05c9_z.jpg)
@@ -115,7 +116,7 @@ OAuthのようなID連携技術についての講義でした. 選択した講�
 
 2日目の晩にTwitterでも書いたこれ,
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">チューターさんの発表, CTF時間外にちゃんと聞きたかったなーって感じある</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/763395968301608960">August 10, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">チューターさんの発表, CTF時間外にちゃんと聞きたかったなーって感じある</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/763395968301608960">August 10, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 時間などいろいろ厳しかったのだろうけれど, やっぱり先輩であるチューターさんの発表はちゃんと聞きたいし, 何より発表する側からしても誰も聞いていないのがわかりきったうえでの発表は絶対気分悪いと思う. これが毎年恒例の**CTF妨害コンテンツ**と言われているのもすごく残念だと思うので, 来年こそは改善してほしいなぁという感じです.
@@ -176,7 +177,7 @@ CTF(Capture the flag)です. 今まで[akictf](http://ctf.katsudon.org/)の問�
 
 帰りに秋葉原に寄り道してました. 来るのは3.5年ぶりですね.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">きました <a href="https://t.co/vpGeWhGD10">pic.twitter.com/vpGeWhGD10</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/764380385744519168">August 13, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">きました <a href="https://t.co/vpGeWhGD10">pic.twitter.com/vpGeWhGD10</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/764380385744519168">August 13, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### 秋月電子

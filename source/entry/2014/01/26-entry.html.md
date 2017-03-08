@@ -59,5 +59,5 @@ imagesフォルダ内にアップロードしましょう。
 
 /etc/motdを書き換えると、ログイン時のウェルカムメッセージを変えることができます。
 
-<blockquote class="twitter-tweet" lang="en"><p>/etc/motd書き換え楽しい&#10;✌(&#39;ω&#39;✌ )三✌(&#39;ω&#39;)✌三( ✌&#39;ω&#39;)✌ <a href="http://t.co/SKFkmUDfF0">pic.twitter.com/SKFkmUDfF0</a></p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;): (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/427230789697163264">January 26, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>/etc/motd書き換え楽しい&#10;✌(&#39;ω&#39;✌ )三✌(&#39;ω&#39;)✌三( ✌&#39;ω&#39;)✌ <a href="http://t.co/SKFkmUDfF0">pic.twitter.com/SKFkmUDfF0</a></p>&mdash; とさいぬ (;ﾞ＞&#39;ω＜&#39;): (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/427230789697163264">January 26, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

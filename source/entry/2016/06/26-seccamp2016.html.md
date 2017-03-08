@@ -1,7 +1,7 @@
 ---
 title: セキュリティ・キャンプ全国大会2016 に参加します
 date: 2016-06-26 01:34 JST
-tags:
+tags: seccamp
 ---
 
 ちゃんとした報告が遅れましたが, 今年のセキュリティキャンプに受講生として参加することになりました.
@@ -33,7 +33,7 @@ READMORE
 
 本文に書いたように, これが始めて自分の書いたプログラムから投稿したTweetだったと思う.  
 たしか当時はまだたくさんバグがあって, 本文にスペース入れると失敗することが多かったことから本文は半角英字で単語区切りが大文字になっている. (すごく懐かしい)
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">ThisTweetWasPostedFromTosainusProgram.</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/405343973524250625">November 26, 2013</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">ThisTweetWasPostedFromTosainusProgram.</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/405343973524250625">November 26, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### 共通問題3

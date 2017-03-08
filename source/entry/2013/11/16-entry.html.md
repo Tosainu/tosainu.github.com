@@ -1,7 +1,6 @@
 ---
 title: 近況報告的な
 date: 2013-11-16 20:35:37 JST
-tags:
 ---
 どーもです。
 
@@ -77,10 +76,10 @@ ShellとかRubyとか。
 
 <img src="https://lh3.googleusercontent.com/-YNIqSlwFrHI/Uoc_XTrCs-I/AAAAAAAACuk/Xs55Ns2tW2Q/s640/2013-11-13-183842_1920x1080_scrot.png" />
 
-<blockquote class="twitter-tweet"><p>ついったーに「ふぇぇ」とつぶやくfeeコマンドをつくろう</p>&mdash; とさいぬ〜 (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/399835967399288832">November 11, 2013</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center"><p>ついったーに「ふぇぇ」とつぶやくfeeコマンドをつくろう</p>&mdash; とさいぬ〜 (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/399835967399288832">November 11, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet"><p>mikutterに対抗したmikotterを作るプロジェクト</p>&mdash; とさいぬ〜 (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/383968505415995393">September 28, 2013</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center"><p>mikutterに対抗したmikotterを作るプロジェクト</p>&mdash; とさいぬ〜 (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/383968505415995393">September 28, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 まぁ

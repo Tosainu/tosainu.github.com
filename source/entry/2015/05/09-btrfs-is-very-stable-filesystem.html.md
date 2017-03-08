@@ -8,19 +8,19 @@ tags: Linux, Arch Linux
 
 それは昨日の朝のことだった.
 
-<blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">dmesgがbtrfsのwarningで埋まってるyabai</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596480331273740288">May 8, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="ja" dir="ltr">dmesgがbtrfsのwarningで埋まってるyabai</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596480331273740288">May 8, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ちょっとまって</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596480764578955264">May 8, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="ja" dir="ltr">ちょっとまって</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596480764578955264">May 8, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">chromiumのExtensionがいくつか死んでたり, git statusができなくなったプロジェクトができたりしてる. とりあえず今日作業できない....</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596481481041580033">May 8, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="ja" dir="ltr">chromiumのExtensionがいくつか死んでたり, git statusができなくなったプロジェクトができたりしてる. とりあえず今日作業できない....</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596481481041580033">May 8, 2015</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">とうとうTweetDeckでTweetできなくなった(Something wrongうんちゃら)から笑えない. とりあえず書いてたプログラムとか実験レポートのコピーだけして復旧は学校から帰ったらだ</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596484221675274240">May 8, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="ja" dir="ltr">とうとうTweetDeckでTweetできなくなった(Something wrongうんちゃら)から笑えない. とりあえず書いてたプログラムとか実験レポートのコピーだけして復旧は学校から帰ったらだ</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596484221675274240">May 8, 2015</a></blockquote>
 
 ちーん
 
-<blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr"><a href="http://t.co/rsEztl7HJe">pic.twitter.com/rsEztl7HJe</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596489983625596928">May 8, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="und" dir="ltr"><a href="http://t.co/rsEztl7HJe">pic.twitter.com/rsEztl7HJe</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596489983625596928">May 8, 2015</a></blockquote>
 
 READMORE
 
@@ -30,7 +30,7 @@ READMORE
 
 ### 4/3 起動しなくなる
 
-<blockquote class="twitter-tweet" lang="en"><p lang="ja" dir="ltr">ｱｱｱｱｱｱｱｱｱｱｱ💓💓💓💓💓💓💓💓💓💓💓💓💓💓 <a href="http://t.co/qyjdr2RIrf">pic.twitter.com/qyjdr2RIrf</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/584013642930069505">April 3, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="ja" dir="ltr">ｱｱｱｱｱｱｱｱｱｱｱ💓💓💓💓💓💓💓💓💓💓💓💓💓💓 <a href="http://t.co/qyjdr2RIrf">pic.twitter.com/qyjdr2RIrf</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/584013642930069505">April 3, 2015</a></blockquote>
 
 シャットダウンを掛けたところところ, 何故かいつまでたっても電源が切れなかった.  
 **ディスクのアクセスランプも消えてるし, まぁいっか**と強制終了させたところ, 次の起動でこうなった.
@@ -39,7 +39,7 @@ READMORE
 
 ### 4/16 checksum errorが出始める
 
-<blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr">(･∀･；) <a href="http://t.co/owm0DQNAdt">pic.twitter.com/owm0DQNAdt</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/588888414709157888">April 17, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="und" dir="ltr">(･∀･；) <a href="http://t.co/owm0DQNAdt">pic.twitter.com/owm0DQNAdt</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/588888414709157888">April 17, 2015</a></blockquote>
 
 [某活動](/blog/2015-04-11/join-in-robocup-kiks-team/)に参加することになり, その関係でどうしてもWindows環境が必要となった.  
 とりあえずの対応としてKVMにWindows 8.1 Enterprise Evaluationを入れて作業をしていたのだが, 余程負荷がエグかったのか, その仮想HDDイメージにchecksum errorが出るようになった.
@@ -49,7 +49,7 @@ READMORE
 
 ### 5/6 read errorが出始める
 
-<blockquote class="twitter-tweet" lang="en"><p lang="und" dir="ltr"><a href="http://t.co/7RPs8RYrWK">pic.twitter.com/7RPs8RYrWK</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/595868510594674688">May 6, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="und" dir="ltr"><a href="http://t.co/7RPs8RYrWK">pic.twitter.com/7RPs8RYrWK</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/595868510594674688">May 6, 2015</a></blockquote>
 
 仮想で入れた窓のWindows updateを掛けたところ, Cドライブの空きがやばくなったので, ディスククリーンアップをかけていた.  
 しかし, どういう訳か処理に1時間半もかかった.

@@ -1,7 +1,6 @@
 ---
 title: 315円のDVDプレイヤー（ジャンク）
 date: 2011-03-09 18:34:23 JST
-tags:
 ---
 <p><a href="http://www5.pf-x.net/~tosainu/index.php/view/192" target="_blank">ちょっと前の記事</a>で古いSONYのアンプのことを書いた。（いつか「改造・修理記」を書く予定）</p>
 <p>ちょっと今日は、それ関係の記事を書こうと思う。</p>

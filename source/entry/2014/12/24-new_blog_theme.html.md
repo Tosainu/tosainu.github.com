@@ -122,7 +122,7 @@ gem 'susy'
 
 ## Remote Debugging
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>最高っぽいな? <a href="http://t.co/xIX9SqiYYk">pic.twitter.com/xIX9SqiYYk</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/547642586819600384">December 24, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>最高っぽいな? <a href="http://t.co/xIX9SqiYYk">pic.twitter.com/xIX9SqiYYk</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/547642586819600384">December 24, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 詳しくは[Remote Debugging on Android with Chrome - Google Chrome](https://developer.chrome.com/devtools/docs/remote-debugging)参照.  
@@ -141,5 +141,5 @@ Webデザインは相変わらず苦手ですが, 少なくとも小6の頃書�
 
 メリークリスマス.
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p>かんぱーい <a href="http://t.co/NStqyFOyjy">pic.twitter.com/NStqyFOyjy</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/547756612044066816">December 24, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>かんぱーい <a href="http://t.co/NStqyFOyjy">pic.twitter.com/NStqyFOyjy</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/547756612044066816">December 24, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -1,7 +1,7 @@
 ---
 title: RaspberryPiを使ったブラウザから操縦するラジコンカー
 date: 2013-11-02 23:58:08 JST
-tags: JavaScript, Raspberry Pi
+tags: Node.js, Raspberry Pi
 ---
 どうもです！！
 

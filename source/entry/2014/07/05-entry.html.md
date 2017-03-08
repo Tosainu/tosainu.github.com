@@ -1,7 +1,6 @@
 ---
 title: オープンソースカンファレンス2014 Nagoya行ってきました
 date: 2014-07-05 22:52:56 JST
-tags:
 ---
 本日2度めの更新です. どうもどうも.
 
@@ -13,17 +12,17 @@ tags:
 
 ![ent](https://lh6.googleusercontent.com/-dEVX30gHf2E/U7f5-ojUu6I/AAAAAAAADZA/_p-5J67Qcw8/s640/IMG_1957.JPG)
 
-<blockquote class="twitter-tweet" lang="en"><p>到着しました✌ <a href="http://t.co/BH5MUYEk4G">pic.twitter.com/BH5MUYEk4G</a></p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485246701263802368">July 5, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center " lang="en"><p>到着しました✌ <a href="http://t.co/BH5MUYEk4G">pic.twitter.com/BH5MUYEk4G</a></p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485246701263802368">July 5, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>D言語くんxHaskellくんのステッカーあるんですがこれは....</p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485268250104586241">July 5, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>D言語くんxHaskellくんのステッカーあるんですがこれは....</p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485268250104586241">July 5, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [Haskell他マスコットキャラクターシール作成の記録 - Togetterまとめ](http://togetter.com/li/685435)
 
 ![dhas](https://lh6.googleusercontent.com/-OFpcTpbD5nU/U7f57do13TI/AAAAAAAADYw/U49k5GjVjFw/s640/IMG_1955.JPG)
 
-<blockquote class="twitter-tweet" lang="en"><p>D言語くんxHaskellくん貼った <a href="http://t.co/etAvthdVOL">pic.twitter.com/etAvthdVOL</a></p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485346248359038976">July 5, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>D言語くんxHaskellくん貼った <a href="http://t.co/etAvthdVOL">pic.twitter.com/etAvthdVOL</a></p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485346248359038976">July 5, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 初参加なのでいつもがどんな感じなのかは知りませんが, 今回はCMS系の展示が多かったなぁという感じです.  

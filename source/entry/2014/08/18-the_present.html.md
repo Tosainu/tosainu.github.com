@@ -1,7 +1,6 @@
 ---
 title: 近況
 date: 2014-08-18 13:16:03 JST
-tags:
 ---
 
 みょん.  
@@ -45,7 +44,7 @@ tags:
 
 ## ﾚｯﾖﾌﾞﾕ
 
-<blockquote class="twitter-tweet" lang="en"><p>@各位&#10;20オンス(591ml)なﾚｯﾖﾌﾞﾕ購入しました <a href="http://t.co/M0MCyMEzxQ">pic.twitter.com/M0MCyMEzxQ</a></p>&mdash; とさいぬ (@myon___) <a href="https://twitter.com/myon___/statuses/497503196290768898">August 7, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>@各位&#10;20オンス(591ml)なﾚｯﾖﾌﾞﾕ購入しました <a href="http://t.co/M0MCyMEzxQ">pic.twitter.com/M0MCyMEzxQ</a></p>&mdash; とさいぬ (@myon___) <a href="https://twitter.com/myon___/statuses/497503196290768898">August 7, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 全員分はもちろん無いですが, kosenconfに持って行こうと思います.
@@ -65,7 +64,7 @@ JavaScriptは意外と簡単じゃんかと某アプリ制作当時に調子乗�
 
 ## 追記
 
-<blockquote class="twitter-tweet" lang="en"><p>FOOOOOOOOO+。:.ﾟ٩(๑＞◡＜๑)۶:.｡+ﾟ&#10;XperiaRayたんSD認識した！！！！！！！！！！！！！！！！11</p>&mdash; とさいぬ (@myon___) <a href="https://twitter.com/myon___/statuses/501608774927257601">August 19, 2014</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>FOOOOOOOOO+。:.ﾟ٩(๑＞◡＜๑)۶:.｡+ﾟ&#10;XperiaRayたんSD認識した！！！！！！！！！！！！！！！！11</p>&mdash; とさいぬ (@myon___) <a href="https://twitter.com/myon___/statuses/501608774927257601">August 19, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Rayたん復活した

@@ -1,7 +1,7 @@
 ---
 title: Hackintosh体験で感じたこと
 date: 2013-05-02 22:57:14 JST
-tags: ML110 G7 Mod, OSx86
+tags: DIY PC, OSx86
 ---
 <p>どーもです〜</p>
 <p>&nbsp;</p>

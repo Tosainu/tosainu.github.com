@@ -1,7 +1,6 @@
 ---
 title: Xtreme OverClock BreakThrough 5th Stageに行ってきました〜
 date: 2014-05-06 00:05:30 JST
-tags:
 ---
 どーもですー
 

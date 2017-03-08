@@ -1,7 +1,7 @@
 ---
 title: タイトル書くほどでもない
 date: 2014-06-16 00:55:34 JST
-tags:
+tags: seccamp
 ---
 ども
 

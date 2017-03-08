@@ -1,7 +1,6 @@
 ---
 title: WiMAXとMobileCubeを約半年使った感想
 date: 2013-02-23 14:34:13 JST
-tags:
 ---
 <p><img src="https://lh3.googleusercontent.com/-T4See_3nGLQ/USg8OY_RR8I/AAAAAAAABJM/mfxZrOYO9i8/s640/DSC06760.JPG" /></p>
 <p>どもども、とさいぬです。</p>

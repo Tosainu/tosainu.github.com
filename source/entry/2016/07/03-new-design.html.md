@@ -9,7 +9,7 @@ tags: Middleman, Ruby, Website
 
 理由としては, 最近
 
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="ja" dir="ltr">ブログタイトル, 〇〇の部屋ってあたりが数世代前のｲﾝﾀｰﾈｯﾂ感出してるのでそろそろ変えたい</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/747791333436186624">June 28, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p lang="ja" dir="ltr">ブログタイトル, 〇〇の部屋ってあたりが数世代前のｲﾝﾀｰﾈｯﾂ感出してるのでそろそろ変えたい</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/747791333436186624">June 28, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 という思いが強まっていたからです.  
@@ -83,7 +83,7 @@ Twitter使っているならば対応させておきたいのが[Twitter Cards](
 まず, [こんな感じのヘルパ関数を追加](https://github.com/Tosainu/blog/blob/8e9fa81b873719f107016e47f5b1d6c39e4e15fb/helpers/custom_helpers.rb#L23-L41)して, 本文の先頭150字, 記事に貼られた画像を取得できるようにしました.  
 そして, [Twitter CardsだけでなくOpen Graphのタグを設定](https://github.com/Tosainu/blog/blob/8e9fa81b873719f107016e47f5b1d6c39e4e15fb/source/layouts/default.slim#L10-L21)することで, その他の対応しているサービスでも利用できるようにしました.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">てすと <a href="https://t.co/8PHeWUpvua">https://t.co/8PHeWUpvua</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/749618315903971328">July 3, 2016</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="ja" dir="ltr">てすと <a href="https://t.co/8PHeWUpvua">https://t.co/8PHeWUpvua</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/749618315903971328">July 3, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 記事の画像を取得するヘルパ関数は**markdownからHTMLに変換された記事をNokogiriでparse**みたいな気持ちの悪いことをしているので, いつかなんとかできると良いなぁと. (たぶんしない)

@@ -1,7 +1,6 @@
 ---
 title: 初kosenconfに参加してきました！
 date: 2014-03-02 00:28:19 JST
-tags:
 ---
 どーもです！
 

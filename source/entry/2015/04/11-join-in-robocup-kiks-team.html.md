@@ -1,7 +1,6 @@
 ---
 title: RoboCupチームKIKSに参加することにしました
 date: 2015-04-11 00:44 JST
-tags:
 ---
 
 どもども.  
@@ -44,12 +43,12 @@ READMORE
 上に**ロボカップ語**と書きましたが, このAIのプログラムは**電気科の人間**によって**少なくとも2005年から維持/メンテされている**ものであり, それは予想以上に悲惨なものでした.  
 こんなのはその一部に過ぎません.
 
-<blockquote class="twitter-tweet" lang="en"><p>なんかgrepが効かないと思ったら, 全部cp932なファイルだった時の顔してる</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/583868618712027137">April 3, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>なんかgrepが効かないと思ったら, 全部cp932なファイルだった時の顔してる</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/583868618712027137">April 3, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<blockquote class="twitter-tweet" lang="en"><p>プロジェクトのほぼ全てに影響するヘッダファイルでusing namespace std;されてる案件って本当に存在するんだなー()</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/583926303859937280">April 3, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>プロジェクトのほぼ全てに影響するヘッダファイルでusing namespace std;されてる案件って本当に存在するんだなー()</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/583926303859937280">April 3, 2015</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p>例のプロジェクトのヘッダファイルに書かれたusing namespace std;を興味本位でコメントアウトしたところ, 案の定20,000のエラーが出た.</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/585787255748296704">April 8, 2015</a></blockquote>
+<blockquote class="twitter-tweet tw-align-center" lang="en"><p>例のプロジェクトのヘッダファイルに書かれたusing namespace std;を興味本位でコメントアウトしたところ, 案の定20,000のエラーが出た.</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/585787255748296704">April 8, 2015</a></blockquote>
 
 こんな感じのもどかしい気分になるコードが沢山あり, すごくリファクタリングし甲斐ありそうです.
 

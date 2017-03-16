@@ -1,0 +1,27 @@
+# use container-based infrastructure
+sudo: false
+dist: trusty
+
+# Ruby configuration
+language: ruby
+rvm:
+  - 2.4.0
+cache: bundler
+bundler_args: --without development --jobs=3 --retry=3
+
+env:
+  global:
+    - GIT_AUTHOR_EMAIL='tosainu.maple@gmail.com'
+    - GIT_AUTHOR_NAME='Tosainu@travis-ci'
+    - GIT_COMMITTER_EMAIL='tosainu.maple@gmail.com'
+    - GIT_COMMITTER_NAME='Tosainu@travis-ci'
+    - secure: "cCSRqmk962wmkqfKB92I4wrHh11+cOLANVX0TJKJwZZCi9PzVXipGSZXzc4NVBg7bSZTyzfYC75Xi6YvSXswetcVf2QFykyRhpPakCQFxaG7NDZpUFJ1ESFXlNTxBzle7encs1Z4CV/Z18/TaO4CEdd7fKbjw61oO+nPks0VC7U="
+
+before_script:
+  - git clone --quiet -b master https://github.com/Tosainu/blog build
+
+script:
+  - bundle exec middleman build
+
+after_success:
+  - '[ "$TRAVIS_BRANCH" == "dev" ] && bundle exec middleman deploy >/dev/null 2>&1'

@@ -1,6 +1,5 @@
 activate :autoprefixer
 activate :directory_indexes
-activate :livereload
 activate :sprockets
 
 set :slim, {
@@ -22,6 +21,8 @@ helpers do
 end
 
 configure :development do
+  activate :livereload, no_swf: true
+
   set :debug_assets, true
 end
 

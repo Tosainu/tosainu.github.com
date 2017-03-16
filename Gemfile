@@ -12,3 +12,5 @@ gem 'slim'
 
 # Assets
 gem 'font-awesome-sass', '~> 4.7.0'
+
+gem 'rack-plastic', github: 'sjchmiela/rack-plastic'

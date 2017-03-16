@@ -20,6 +20,10 @@ helpers do
   end
 end
 
+# rack middlewares
+require 'lib/external_link_attributes'
+use ExternalLinkAttributes, host: 'myon.info'
+
 configure :development do
   activate :livereload, no_swf: true
 

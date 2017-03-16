@@ -18,7 +18,7 @@ env:
     - secure: 'dAPq0eWokH+U/K/cyqnXpy6BpdjIjvoWIZbbpYGusTZ4FzduTyb1e6Lv6Pu1KvJj2ujnU6lU3jDpjM9SCVyHz+zdVZcKRNbsQiZ0iWXoWg2a5BZiKG3RZ7wMGqs6rs7gwWa1waLN5lHECnxRTI2LaC8SyYzUWA5g7zUSe1sc9MU='
 
 before_script:
-  - git clone --quiet -b master https://github.com/Tosainu/tosainu.github.com.git
+  - git clone --quiet -b master https://github.com/Tosainu/tosainu.github.com.git build
 
 script:
   - bundle exec middleman build

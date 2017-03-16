@@ -15,7 +15,7 @@ env:
     - GIT_AUTHOR_NAME='Tosainu@travis-ci'
     - GIT_COMMITTER_EMAIL='tosainu.maple@gmail.com'
     - GIT_COMMITTER_NAME='Tosainu@travis-ci'
-    - secure: "cCSRqmk962wmkqfKB92I4wrHh11+cOLANVX0TJKJwZZCi9PzVXipGSZXzc4NVBg7bSZTyzfYC75Xi6YvSXswetcVf2QFykyRhpPakCQFxaG7NDZpUFJ1ESFXlNTxBzle7encs1Z4CV/Z18/TaO4CEdd7fKbjw61oO+nPks0VC7U="
+    - secure: 'dAPq0eWokH+U/K/cyqnXpy6BpdjIjvoWIZbbpYGusTZ4FzduTyb1e6Lv6Pu1KvJj2ujnU6lU3jDpjM9SCVyHz+zdVZcKRNbsQiZ0iWXoWg2a5BZiKG3RZ7wMGqs6rs7gwWa1waLN5lHECnxRTI2LaC8SyYzUWA5g7zUSe1sc9MU='
 
 before_script:
   - git clone --quiet -b master https://github.com/Tosainu/tosainu.github.com.git

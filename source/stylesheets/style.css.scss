@@ -6,12 +6,11 @@
 
 // Colors
 // ----------------------------
-$red:        #e74c3c;
-$orange:     #f39c12;
-$blue:       #3399CC;
-$green:      #25ba84;
-$light-gray: #f5f5f5;
-$mid-gray:   #666666;
+$red:        #eb6553;
+$orange:     #faad73;
+$blue:       #007ba8;
+$light-gray: #f9fafb;
+$mid-gray:   darken($light-gray, 10%);
 $dark-gray:  #3f434a;
 $white:      #ffffff;
 
@@ -24,7 +23,7 @@ html {
 
 body {
   background: $white;
-  color: $mid-gray;
+  color: $dark-gray;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   height: 100%;
@@ -32,18 +31,17 @@ body {
 }
 
 h2 {
-  color: $dark-gray;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 
 a {
-  color: $mid-gray;
+  color: $dark-gray;
 
   &:active,
   &:hover {
-    color: darken($mid-gray, 20%);
+    color: $blue;
   }
 }
 

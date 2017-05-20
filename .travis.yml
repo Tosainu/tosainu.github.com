@@ -20,12 +20,12 @@ script:
   - bundle exec middleman build
 
 after_success:
-  # setup deploy key
   - |
     if [[ "$TRAVIS_BRANCH" != "master" && "$TRAVIS_PULL_REQUEST" != "false" ]]; then
       exit 0;
     fi
 
+    # setup deploy key
     declare -r SSH_FILE="$HOME/.ssh/github_deploy_key"
     openssl aes-256-cbc -K $encrypted_b46c1c70c077_key -iv $encrypted_b46c1c70c077_iv \
       -in "github_deploy_key.enc" -out "$SSH_FILE" -d
@@ -33,5 +33,5 @@ after_success:
     echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ${SSH_FILE}\n\tIdentitiesOnly yes\n" \
       >> ~/.ssh/config
 
-  # deploy!
-  - bundle exec middleman deploy
+    # deploy!
+    bundle exec middleman deploy

@@ -20,10 +20,7 @@ use ExternalLinkAttributes, host: 'myon.info'
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.branch = 'master'
-
-  if ENV['GH_TOKEN'] then
-    deploy.remote = "https://#{ENV['GH_TOKEN']}@github.com/Tosainu/tosainu.github.com.git"
-  end
+  deploy.remote = 'git@github.com:Tosainu/tosainu.github.com.git'
 end
 
 configure :development do

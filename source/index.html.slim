@@ -43,12 +43,16 @@ section.about-me
       dt
         i.fa.fa-fw.fa-graduation-cap
       dd
-        | Toyohashi University of Technology (Computer Science and Engineering) student
+        | Toyohashi University of Technology (Computer Science and Engineering) B3
 
       dt
         i.fa.fa-fw.fa-star
       dd
-        | Arch Linux, Programming (C++14, Haskell), CTF (pwn), Is the order a rabbit?
+        - ['Arch Linux',
+           'Programming (C++14, Rust, Haskell)',
+           'CTF (pwn)',
+           'Is the order a rabbit?'].each do |item|
+          span.likes = item
 
       dt
         i.fa.fa-fw.fa-pencil
@@ -62,4 +66,8 @@ section.works
   .wrap-container
     h2 Works
 
-    p ヽ('ω')ﾉ三ヽ('ω')ﾉ
+    dl
+      dt
+        = link_to 'cute_AA.txt', 'https://gist.github.com/Tosainu/47ed11f068f942026494'
+      dd
+        | Cute Kaomoji (顔文字) dictionary

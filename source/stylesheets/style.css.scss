@@ -143,8 +143,28 @@ footer {
   }
 }
 
-// .works {
-// }
+.likes {
+  white-space: nowrap;
+  &:after {
+    content: ', ';
+  }
+  &:last-child:after {
+    content: ''
+  }
+}
+
+.works {
+  dt {
+    display: list-item;
+    font-weight: 600;
+    list-style-type: square;
+    margin-left: 2em;
+  }
+
+  dd {
+    margin-left: 2em;
+  }
+}
 
 // Media Queries
 // --------------------------------

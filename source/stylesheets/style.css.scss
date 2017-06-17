@@ -147,9 +147,10 @@ footer {
   white-space: nowrap;
   &:after {
     content: ', ';
+    white-space: normal;
   }
   &:last-child:after {
-    content: ''
+    content: '';
   }
 }
 

@@ -14,14 +14,14 @@ env:
     - secure: "Xu1MkJQb95pkBOhRFJKn20zGe81SR1zbYoTMNATB6YmM5VOQqkjQCnp66tqbUkuxapIU2/vSDXRJZH9PVd1eEAy2DfK8mjUQnRJmqq5c1hm4wwcQttWDwrLPrRDLy/oEunH+SnSa3oID3fiXddSzPaxA/rb1sIyYrUEMgtfOkdo="
 
 before_script:
-  - git clone --quiet -b gh-pages https://github.com/Tosainu/blog build
+  - git clone --quiet -b gh-pages https://github.com/Tosainu/blog.git build
 
 script:
   - bundle exec middleman build
 
 after_success:
   - |
-    if [[ "$TRAVIS_BRANCH" != "master" && "$TRAVIS_PULL_REQUEST" != "false" ]]; then
+    if [[ "$TRAVIS_BRANCH" != "master" || "$TRAVIS_PULL_REQUEST" != "false" ]]; then
       exit 0;
     fi
 

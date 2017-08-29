@@ -8,5 +8,5 @@ gem 'middleman-livereload'
 gem 'middleman-sprockets', '~> 4.1.0'
 
 gem 'font-awesome-sass', '~> 4.7.0'
-gem 'rack-plastic', github: 'sjchmiela/rack-plastic'
+gem 'rack-plastic', git: 'https://github.com/sjchmiela/rack-plastic.git'
 gem 'slim'

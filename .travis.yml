@@ -21,7 +21,7 @@ script:
 
 after_success:
   - |
-    if [[ "$TRAVIS_BRANCH" != "dev" && "$TRAVIS_PULL_REQUEST" != "false" ]]; then
+    if [[ "$TRAVIS_BRANCH" != "dev" || "$TRAVIS_PULL_REQUEST" != "false" ]]; then
       exit 0;
     fi
 

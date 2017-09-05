@@ -63,6 +63,7 @@ configure :development do
 end
 
 configure :build do
+  activate :asset_hash, :ignore => %r{^assets/.*}
   activate :minify_css
   activate :minify_javascript
 

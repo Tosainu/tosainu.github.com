@@ -8,14 +8,14 @@ class CustomRenderer < Redcarpet::Render::HTML
     include Rouge::Plugins::Redcarpet
   end
 
-  def initialize(options={})
+  def initialize(options = {})
     super options
     @katex = KaTeX.new
   end
 
   def codespan(code)
     if code =~ /^\$(.*)\$$/
-      @katex.render_to_string $1
+      @katex.render_to_string Regexp.last_match(1)
     else
       "<code>#{CGI.escapeHTML(code)}</code>"
     end

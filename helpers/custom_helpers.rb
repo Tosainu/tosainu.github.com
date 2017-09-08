@@ -1,9 +1,7 @@
 module CustomHelpers
   def page_title
     title = ''
-    if current_page.data.title
-      title << current_page.data.title << ' | '
-    end
+    title << current_page.data.title << ' | ' if current_page.data.title
     title << data.site.title
   end
 
@@ -32,8 +30,6 @@ module CustomHelpers
       current_article.date.year
     elsif page_metadata['year']
       page_metadata['year']
-    else
-      nil
     end
   end
 

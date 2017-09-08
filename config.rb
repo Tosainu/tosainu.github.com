@@ -1,6 +1,13 @@
+require 'lib/custom_renderer'
+require 'lib/external_link_attributes'
+
 Time.zone = 'Tokyo'
 
-page '/feed.xml', layout: false
+activate :automatic_alt_tags
+activate :autoprefixer
+activate :directory_indexes
+activate :disqus, shortname: 'tosainu'
+activate :sprockets
 
 activate :blog do |blog|
   blog.prefix = 'entry'
@@ -21,30 +28,21 @@ activate :blog do |blog|
   blog.page_link = 'page/{num}'
 end
 
-activate :automatic_alt_tags
-activate :autoprefixer
-activate :directory_indexes
-activate :sprockets
+page '/feed.xml', layout: false
 
-# markdown
-require 'lib/custom_renderer'
-
+# template engines
 set :markdown_engine, :redcarpet
-set :markdown, {
-  renderer:           CustomRenderer,
-  fenced_code_blocks: true,
-  footnotes:          true,
-  strikethrough:      true,
-  tables:             true,
-}
+set :markdown, renderer:           CustomRenderer,
+               fenced_code_blocks: true,
+               footnotes:          true,
+               strikethrough:      true,
+               tables:             true
+
+set :slim, format:     :html,
+           pretty:     false
 
 # rack middlewares
-require 'lib/external_link_attributes'
 use ExternalLinkAttributes, host: 'blog.myon.info'
-
-activate :disqus do |d|
-  d.shortname = 'tosainu'
-end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
@@ -53,21 +51,12 @@ activate :deploy do |deploy|
 end
 
 configure :development do
-  activate :livereload, :no_swf => true
-
+  activate :livereload, no_swf: true
   set :debug_assets, true
-  set :slim,
-    format:     :html,
-    pretty:     true,
-    tabsize:    2
 end
 
 configure :build do
-  activate :asset_hash, :ignore => %r{^assets/.*}
+  activate :asset_hash, ignore: %r{^assets/.*}
   activate :minify_css
   activate :minify_javascript
-
-  set :slim,
-    format:     :html,
-    pretty:     false
 end

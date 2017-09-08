@@ -190,6 +190,7 @@ DEPENDENCIES
   rack-plastic!
   redcarpet
   rouge
+  rubocop
   scss_lint
   slim
   slim_lint

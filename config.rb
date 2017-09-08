@@ -30,6 +30,8 @@ end
 
 page '/feed.xml', layout: false
 
+ignore 'assets/katex/*.js'
+
 # template engines
 set :markdown_engine, :redcarpet
 set :markdown, renderer:           CustomRenderer,

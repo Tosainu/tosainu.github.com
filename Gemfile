@@ -21,6 +21,8 @@ gem 'slim'
 # For feed.xml.builder
 gem 'builder', '~> 3.0'
 
-gem 'scss_lint', require: false
-gem 'slim_lint', require: false
-gem 'rubocop', require: false
+group :development do
+  gem 'rubocop', require: false
+  gem 'scss_lint', require: false
+  gem 'slim_lint', require: false
+end

@@ -322,7 +322,7 @@ sigmoid' = cmap sigmoid
 \end{aligned}
 ```
 
-求めた2つの関数と適当なパラメータをこんな感じで渡してやればおk。
+求めた2つの関数と適当なパラメータをこんな感じで渡してやります。
 
 ```haskell
 let f   x   w = sigmoid' (x #> w)
@@ -333,24 +333,6 @@ let f   x   w = sigmoid' (x #> w)
                   (ll mx mt)
                   (dll mx mt)
                   (vector [1, 1, 1])
-```
-
-最後に識別境界を引いてやります。識別関数を、今度は `$y (\bm{x}) = 0.5$` として式を変形するとこんな感じになるので
-
-```katex
-\begin{aligned}
-  \tilde{\bm{w}}^\top \tilde{\bm{x}} &= 0.5 \\
-  \tilde{w}_0 + \tilde{w}_1 \tilde{x}_1 + \tilde{w}_2 \tilde{x}_2 &= 0.5 \\
-  \tilde{x}_2 &= \frac{0.5 - \tilde{w}_0 - \tilde{w}_1 \tilde{x}_1}{\tilde{w}_2}
-\end{aligned}
-```
-
-同様に2点を求めます。
-
-```haskell
-let x1hat = [-5.0, 5.0]
-    x2hat = map (\xi -> (0.5 - (mw ! 0) - (mw ! 1) * xi) / (mw ! 2)) x1hat
-    yhat  = zip x1hat x2hat
 ```
 
 最終的なコードは[これ](https://gist.github.com/Tosainu/02784b8e1233158436e623633a2b50b5)で、出力された `logistic.svg` はこんな感じになりました。最小二乗法のときに発生した境界線の傾きはなく、いい感じに線が引けました。

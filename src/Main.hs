@@ -7,7 +7,10 @@ import           Hakyll
 import           Hakyll.Web.Sass
 import qualified Skylighting.Format.HTML as SL
 import qualified Skylighting.Styles      as SL
+import           System.Process          (readProcess)
 import           Text.Pandoc.Options
+
+import           Templates
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
@@ -32,6 +35,11 @@ main = hakyllWith hakyllConfig $ do
     route   idRoute
     compile compressCssCompiler
 
+  create ["stylesheets/fontawesome.css"] $ do
+    route   idRoute
+    compile $ unsafeCompiler (readProcess fontAwesomeJS ["css"] [])
+      >>= makeItem . compressCss
+
   create ["stylesheets/highlight.css"] $ do
     route   idRoute
     compile $ makeItem $ compressCss $ SL.styleToCss SL.pygments
@@ -46,6 +54,11 @@ kaTeXFilter item = do
   metadata <- getMetadata $ itemIdentifier item
   if HM.member "math" metadata then withItemBody (unixFilter kaTeXJS []) item
                                else return item
+
+--- Misc
+loadFontAwesomeIcons :: Rules (Maybe FontAwesomeIcons)
+loadFontAwesomeIcons = preprocess $
+  parseFontAwesomeIcons <$> readProcess fontAwesomeJS ["list"] []
 
 --- Configurations
 hakyllConfig :: Configuration
@@ -67,3 +80,6 @@ writerOptions = defaultHakyllWriterOptions
 
 kaTeXJS :: FilePath
 kaTeXJS = "tools/katex.js"
+
+fontAwesomeJS :: FilePath
+fontAwesomeJS = "tools/fontawesome.js"

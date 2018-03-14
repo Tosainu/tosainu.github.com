@@ -1,6 +1,6 @@
 ---
 title: Node.jsで遊んだ (2)
-date: 2013-10-12 21:32:39 JST
+date: 2013-10-12 21:32:39+0900
 tags: Node.js, Raspberry Pi
 ---
 <p>どもどもー</p>

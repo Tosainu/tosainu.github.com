@@ -1,6 +1,6 @@
 ---
 title: 簡単な2クラスの線形分類器を実装してみる
-date: 2018-01-05 23:51 JST
+date: 2018-01-05 23:51:00+0900
 tags: Haskell, Machine learning
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Walkman Zのroot権限を取得してからやったこと
-date: 2014-04-15 23:35:54 JST
+date: 2014-04-15 23:35:54+0900
 tags: WalkmanZ,Android
 ---
 どーもです。

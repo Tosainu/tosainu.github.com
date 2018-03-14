@@ -1,6 +1,6 @@
 ---
 title: AtCoder Beginner Contest 011に挑戦してた
-date: 2014-06-22 02:25:00 JST
+date: 2014-06-22 02:25:00+0900
 tags: C++
 ---
 どーも

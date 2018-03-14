@@ -1,6 +1,6 @@
 ---
 title: Xperia NXを入手した
-date: 2015-05-03 16:10 JST
+date: 2015-05-03 16:10:00+0900
 tags: Xperia NX
 ---
 

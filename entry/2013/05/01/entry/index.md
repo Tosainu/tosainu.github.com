@@ -1,6 +1,6 @@
 ---
 title: VcoreをOffsetModeで指定してみた
-date: 2013-05-01 19:24:25 JST
+date: 2013-05-01 19:24:25+0900
 tags: DIY PC
 ---
 <p>どーもです～</p>

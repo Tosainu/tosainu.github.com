@@ -1,6 +1,6 @@
 ---
 title: Steam版GTAIV 日本語化・asiModとかの備忘録
-date: 2013-07-18 23:17:22 JST
+date: 2013-07-18 23:17:22+0900
 tags: Game
 ---
 <p>どーもです。</p>

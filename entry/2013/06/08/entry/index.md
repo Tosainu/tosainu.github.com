@@ -1,6 +1,6 @@
 ---
 title: ι(´Д｀υ)アツイー
-date: 2013-06-08 16:24:39 JST
+date: 2013-06-08 16:24:39+0900
 tags: Game
 ---
 <p><span style="font-size:36px;">アツイー</span></p>

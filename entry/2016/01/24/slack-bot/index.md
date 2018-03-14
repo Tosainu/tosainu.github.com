@@ -1,6 +1,6 @@
 ---
 title: SlackのBotを書いてみた
-date: 2016-01-24 14:44 JST
+date: 2016-01-24 14:44:00+0900
 tags: Slack, Ruby
 ---
 

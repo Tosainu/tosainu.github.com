@@ -1,6 +1,6 @@
 ---
 title: TwitterBootstrapを採用してみた
-date: 2013-09-15 22:56:53 JST
+date: 2013-09-15 22:56:53+0900
 tags: Website
 ---
 <p>どーもです。</p>

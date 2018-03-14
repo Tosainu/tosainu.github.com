@@ -1,6 +1,6 @@
 ---
 title: とさいぬの隠し部屋はTosainu Labになりました
-date: 2016-07-03 23:59 JST
+date: 2016-07-03 23:59:00+0900
 tags: Middleman, Ruby, Website
 ---
 

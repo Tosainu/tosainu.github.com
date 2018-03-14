@@ -1,6 +1,6 @@
 ---
 title: PSY SkinMod & Gentleman Dance Animation
-date: 2013-06-19 01:05:04 JST
+date: 2013-06-19 01:05:04+0900
 tags: Game
 ---
 <p>どーもです。</p>

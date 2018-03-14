@@ -1,6 +1,6 @@
 ---
 title: 対Blu-ray用決戦部隊、通称MakeMKV
-date: 2014-12-21 21:39 JST
+date: 2014-12-21 21:39:00+0900
 tags: Arch Linux, Gochiusa
 ---
 

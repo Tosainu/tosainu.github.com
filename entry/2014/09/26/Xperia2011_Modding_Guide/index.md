@@ -1,6 +1,6 @@
 ---
 title: Xperia2011年モデル改造まとめ
-date: 2014-09-26 18:02:13 JST
+date: 2014-09-26 18:02:13+0900
 tags: Xperia2011, Xperia arc
 ---
 

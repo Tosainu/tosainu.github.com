@@ -1,6 +1,6 @@
 ---
 title: 今日の成果
-date: 2013-06-22 17:08:10 JST
+date: 2013-06-22 17:08:10+0900
 ---
 <div class="video-container"><iframe width="560" height="315" src="http://www.youtube.com/embed/MX7J0doT1us?rel=0" frameborder="0" allowfullscreen></iframe></div>
 <p>&nbsp;</p>

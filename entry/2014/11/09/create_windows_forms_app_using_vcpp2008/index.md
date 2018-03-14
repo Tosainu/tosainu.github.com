@@ -1,6 +1,6 @@
 ---
 title: VC++2008でWindows Forms Applicationを作った
-date: 2014-11-09 13:45 JST
+date: 2014-11-09 13:45:00+0900
 tags:  C++
 ---
 

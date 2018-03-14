@@ -1,6 +1,6 @@
 ---
 title: BITSCTF writeup
-date: 2017-02-05 21:15 JST
+date: 2017-02-05 21:15:00+0900
 tags: CTF
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 4Kテレビがヤバイ
-date: 2013-05-25 21:17:46 JST
+date: 2013-05-25 21:17:46+0900
 ---
 <p><img src="https://lh6.googleusercontent.com/-oWbNPq85Dow/UaClSbksYJI/AAAAAAAACKQ/UPGpFnzb4rg/s640/IMG_20130525_144831.jpg" /></p>
 <p><span style="font-size:36px;">やべぇよ・・・</span></p>

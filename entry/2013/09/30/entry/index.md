@@ -1,6 +1,6 @@
 ---
 title: Node.jsとSocket.IOで遊んでた
-date: 2013-09-30 18:02:21 JST
+date: 2013-09-30 18:02:21+0900
 tags: Node.js
 ---
 <p>どもども〜</p>

@@ -1,6 +1,6 @@
 ---
 title: Motorolaが好きになったかも
-date: 2013-04-17 20:39:29 JST
+date: 2013-04-17 20:39:29+0900
 tags: Website,Android
 ---
 <p>どーもです</p>

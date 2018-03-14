@@ -1,6 +1,6 @@
 ---
 title: RaspberryPi開封の儀＆とりあえずRaspbian動かしてみた
-date: 2013-07-13 12:15:17 JST
+date: 2013-07-13 12:15:17+0900
 tags: Linux,Raspberry Pi
 ---
 <p>どーもです〜</p>

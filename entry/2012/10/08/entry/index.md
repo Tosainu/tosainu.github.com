@@ -1,6 +1,6 @@
 ---
 title: VAIO Z(VPCZ2)使っている人！RAIDドライバアップデートしよう！
-date: 2012-10-08 11:02:10 JST
+date: 2012-10-08 11:02:10+0900
 tags: VAIO Z2, Windows
 ---
 <p>おひさしぶりです</p>

@@ -1,6 +1,6 @@
 ---
 title: XperiaAcroのRoot取得とか
-date: 2013-05-18 18:32:48 JST
+date: 2013-05-18 18:32:48+0900
 tags: Android
 ---
 <p>どーもです。</p>

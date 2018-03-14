@@ -1,6 +1,6 @@
 ---
 title: Arch LinuxでL2TP/IPsec
-date: 2016-08-21 01:10 JST
+date: 2016-08-21 01:10:00+0900
 tags: Arch Linux, Linux, Network
 ---
 

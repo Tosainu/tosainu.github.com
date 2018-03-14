@@ -1,6 +1,6 @@
 ---
 title: ご注文はBlu-rayですか?
-date: 2014-12-19 01:05 JST
+date: 2014-12-19 01:05:00+0900
 tags: Gochiusa
 ---
 

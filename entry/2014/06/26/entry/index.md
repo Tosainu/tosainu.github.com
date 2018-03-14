@@ -1,6 +1,6 @@
 ---
 title: fcitxでもvi-cooperative modeもどき
-date: 2014-06-26 19:12:02 JST
+date: 2014-06-26 19:12:02+0900
 tags: Vim, Arch Linux, Linux
 ---
 みょんみょん

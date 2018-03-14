@@ -1,6 +1,6 @@
 ---
 title: 帰ってきますた〜
-date: 2013-03-02 20:59:55 JST
+date: 2013-03-02 20:59:55+0900
 ---
 <p><img src="https://lh6.googleusercontent.com/-BMu_A99y3zg/UTHkNKu8l6I/AAAAAAAABQI/rWW9k2vQ-7g/s640/IMG_20130301_103945.jpg" /></p>
 <p>どもでーす。</p>

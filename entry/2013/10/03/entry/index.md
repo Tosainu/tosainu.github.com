@@ -1,6 +1,6 @@
 ---
 title: GentooInstallBattle!をした
-date: 2013-10-03 23:01:05 JST
+date: 2013-10-03 23:01:05+0900
 tags: Linux
 ---
 <p>どーもども</p>

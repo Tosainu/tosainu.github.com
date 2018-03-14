@@ -1,6 +1,6 @@
 ---
 title: DEF CON CTF 2017 Qualifier writeup
-date: 2017-05-02 01:32 JST
+date: 2017-05-02 01:32:00+0900
 tags: CTF
 ---
 

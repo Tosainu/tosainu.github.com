@@ -1,6 +1,6 @@
 ---
 title: Codegate 2017 CTF prequals writeup
-date: 2017-02-11 21:20 JST
+date: 2017-02-11 21:20:00+0900
 tags: CTF
 ---
 

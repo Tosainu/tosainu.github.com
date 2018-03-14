@@ -1,6 +1,6 @@
 ---
 title: I.G.Intel HD Graphics 2500は残念な子なのか！？
-date: 2013-04-15 18:12:54 JST
+date: 2013-04-15 18:12:54+0900
 tags: VAIO Z2, DIY PC
 ---
 <p>どーもとさいぬです。</p>

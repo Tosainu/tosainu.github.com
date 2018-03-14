@@ -1,6 +1,6 @@
 ---
 title: '[ネタ] QWebViewでGUIアプリケーションを作る'
-date: 2015-02-28 17:14 JST
+date: 2015-02-28 17:14:00+0900
 tags: C++, CocoaTwit, Gochiusa
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: AlexCTF writeup
-date: 2017-02-06 20:16 JST
+date: 2017-02-06 20:16:00+0900
 tags: CTF
 ---
 

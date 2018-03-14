@@ -1,6 +1,6 @@
 ---
 title: チョコボール
-date: 2011-02-28 18:16:38 JST
+date: 2011-02-28 18:16:38+0900
 ---
 <p>お久しぶりです！</p><br />
 <img src="https://lh6.googleusercontent.com/_k8x9PZSlKHk/TWdzELZ6ArI/AAAAAAAAAeU/6_T6Y3QKsdk/s640/DSC03635.JPG" />

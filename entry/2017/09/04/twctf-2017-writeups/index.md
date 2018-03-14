@@ -1,6 +1,6 @@
 ---
 title: "Tokyo Westerns CTF 3rd 2017: simple note"
-date: 2017-09-04 23:51 JST
+date: 2017-09-04 23:51:00+0900
 tags: CTF
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: makepkg.confを弄る
-date: 2013-04-27 12:13:41 JST
+date: 2013-04-27 12:13:41+0900
 tags: Arch Linux
 ---
 <p>どもども</p>
@@ -101,13 +101,13 @@ DEBUG_CXXFLAGS="-g -fvar-tracking-assignments"
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>編集前</h3>
-<p>==> Making package: mozc 1.10.1390.102-2 (Sat Apr 27 11:09:05 JST 2013)</p>
-<p>==> Finished making: mozc 1.10.1390.102-2 (Sat Apr 27 11:14:05 JST 2013)</p>
+<p>==> Making package: mozc 1.10.1390.102-2 (Sat Apr 27 11:09:05+0900 2013)</p>
+<p>==> Finished making: mozc 1.10.1390.102-2 (Sat Apr 27 11:14:05+0900 2013)</p>
 <p>掛かった時間：<span style="font-size:24px;">5分</span></p>
 <p>&nbsp;</p>
 <h3>編集後</h3>
-<p>==> Making package: mozc 1.10.1390.102-2 (Sat Apr 27 11:22:47 JST 2013)</p>
-<p>==> Finished making: mozc 1.10.1390.102-2 (Sat Apr 27 11:24:06 JST 2013)</p>
+<p>==> Making package: mozc 1.10.1390.102-2 (Sat Apr 27 11:22:47+0900 2013)</p>
+<p>==> Finished making: mozc 1.10.1390.102-2 (Sat Apr 27 11:24:06+0900 2013)</p>
 <p>掛かった時間：<span style="font-size:24px;">1分19秒</span></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

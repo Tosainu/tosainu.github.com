@@ -1,6 +1,6 @@
 ---
 title: Ubuntu Touch on XPERIA Ray
-date: 2013-06-06 20:24:03 JST
+date: 2013-06-06 20:24:03+0900
 tags: Android,Linux
 ---
 <p>どーもです〜</p>

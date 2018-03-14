@@ -1,6 +1,6 @@
 ---
 title: Gnuplotおぼえがき
-date: 2015-06-21 08:55 JST
+date: 2015-06-21 08:55:00+0900
 tags: Gnuplot, Arch Linux
 ---
 

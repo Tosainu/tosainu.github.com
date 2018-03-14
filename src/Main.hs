@@ -2,10 +2,12 @@
 
 module Main where
 
+import qualified Data.HashMap.Strict     as HM
 import           Hakyll
 import           Hakyll.Web.Sass
 import qualified Skylighting.Format.HTML as SL
 import qualified Skylighting.Styles      as SL
+import           Text.Pandoc.Options
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
@@ -16,7 +18,7 @@ main = hakyllWith hakyllConfig $ do
   -- "entry/year/month/day/title/index.md"
   match "entry/*/*/*/*/index.md" $ do
     route $ setExtension "html"
-    compile pandocCompiler
+    compile $ pandocCompilerWith readerOptions writerOptions
 
   match "entry/*/*/*/*/**" $ do
     route idRoute
@@ -38,6 +40,13 @@ main = hakyllWith hakyllConfig $ do
     route $ gsubRoute "node_modules/katex/dist/" (const "vendor/katex/")
     compile copyFileCompiler
 
+--- Compilers
+kaTeXFilter :: Item String -> Compiler (Item String)
+kaTeXFilter item = do
+  metadata <- getMetadata $ itemIdentifier item
+  if HM.member "math" metadata then withItemBody (unixFilter kaTeXJS []) item
+                               else return item
+
 --- Configurations
 hakyllConfig :: Configuration
 hakyllConfig = defaultConfiguration
@@ -48,3 +57,13 @@ hakyllConfig = defaultConfiguration
   , previewPort          = 4567
   }
 
+readerOptions :: ReaderOptions
+readerOptions = defaultHakyllReaderOptions
+
+writerOptions :: WriterOptions
+writerOptions = defaultHakyllWriterOptions
+  { writerHTMLMathMethod = KaTeX ""
+  }
+
+kaTeXJS :: FilePath
+kaTeXJS = "tools/katex.js"

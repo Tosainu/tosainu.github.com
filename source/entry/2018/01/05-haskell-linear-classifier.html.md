@@ -71,74 +71,74 @@ main = do
 
 ## 最小二乗法でパラメータを求める
 
-識別関数 `$y(\bm{x})$` を次式で表すことにします。
+識別関数 `$y(\boldsymbol{x})$` を次式で表すことにします。
 
 ```katex
-y(\bm{x}) = \bm{w}^\top \bm{x} + w_0
+y(\boldsymbol{x}) = \boldsymbol{w}^\top \boldsymbol{x} + w_0
 ```
 
-ここで、`$\bm{x}$` は入力ベクトル
+ここで、`$\boldsymbol{x}$` は入力ベクトル
 
 ```katex
-\bm{x} = (x_1, \dots, x_M)^\top
+\boldsymbol{x} = (x_1, \dots, x_M)^\top
 ```
 
-`$\bm{w}$` はパラメータベクトル
+`$\boldsymbol{w}$` はパラメータベクトル
 
 ```katex
-\bm{w} = (w_1, \dots, w_M)^\top
+\boldsymbol{w} = (w_1, \dots, w_M)^\top
 ```
 
 `$w_0$` はバイアスパラメータです。
 
-この識別関数が `$y(\bm{x}) \ge 0$` となれば `$C_1$` に、`$y(\bm{x}) \lt 0$` となれば `$C_2$` に属すとし、これを満たすような `$\bm{w}$`、`$w_0$` を求めます。
+この識別関数が `$y(\boldsymbol{x}) \ge 0$` となれば `$C_1$` に、`$y(\boldsymbol{x}) \lt 0$` となれば `$C_2$` に属すとし、これを満たすような `$\boldsymbol{w}$`、`$w_0$` を求めます。
 
-まず、簡単化のため `$y(\bm{x})$` を次のように変形。
+まず、簡単化のため `$y(\boldsymbol{x})$` を次のように変形。
 
 ```katex
-y(\bm{x}) = \tilde{\bm{w}}^\top \tilde{\bm{x}},\quad\tilde{\bm{w}} = (w_0, \bm{w}^\top)^\top,\quad\tilde{\bm{x}} = (1, \bm{x}^\top)^\top
+y(\boldsymbol{x}) = \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}},\quad\tilde{\boldsymbol{w}} = (w_0, \boldsymbol{w}^\top)^\top,\quad\tilde{\boldsymbol{x}} = (1, \boldsymbol{x}^\top)^\top
 ```
 
-学習データ `$\tilde{\bm{X}}$` と、それに対応する目的 (教師) ベクトル `$\bm{t}$` を次のように定めると
+学習データ `$\tilde{\boldsymbol{X}}$` と、それに対応する目的 (教師) ベクトル `$\boldsymbol{t}$` を次のように定めると
 
 ```katex
 \begin{aligned}
-  \tilde{\bm{X}} &= (\tilde{\bm{x}}_1, \dots, \tilde{\bm{x}}_N)^\top \\
-         \bm{t}  &= (t_1, \dots, t_N)^\top \quad
+  \tilde{\boldsymbol{X}} &= (\tilde{\boldsymbol{x}}_1, \dots, \tilde{\boldsymbol{x}}_N)^\top \\
+         \boldsymbol{t}  &= (t_1, \dots, t_N)^\top \quad
              t_n =
                \begin{cases}
-                  1,  & \tilde{\bm{x}}_n \in C_1 \\
-                 -1,  & \tilde{\bm{x}}_n \in C_2
+                  1,  & \tilde{\boldsymbol{x}}_n \in C_1 \\
+                 -1,  & \tilde{\boldsymbol{x}}_n \in C_2
                \end{cases}
 \end{aligned}
 ```
 
-パラメータベクトル `$\tilde{\bm{w}}$` に関する2乗誤差関数 `$E_D (\tilde{\bm{w}})$` は次のようになります。
+パラメータベクトル `$\tilde{\boldsymbol{w}}$` に関する2乗誤差関数 `$E_D (\tilde{\boldsymbol{w}})$` は次のようになります。
 
 ```katex
 \begin{aligned}
-  \bm{y}(\tilde{\bm{X}}) &=
+  \boldsymbol{y}(\tilde{\boldsymbol{X}}) &=
     \begin{pmatrix}
-      y(\tilde{\bm{x}}_1) \\
+      y(\tilde{\boldsymbol{x}}_1) \\
       \vdots              \\
-      y(\tilde{\bm{x}}_N)
+      y(\tilde{\boldsymbol{x}}_N)
     \end{pmatrix}           \\
-  E_D (\tilde{\bm{w}}) &= \frac{1}{2} (\bm{t} - \bm{y}(\tilde{\bm{X}}))^\top
-                            (\bm{t} - \bm{y}(\tilde{\bm{X}}))                         \\
-                       &= \frac{1}{2} (\bm{t} - \tilde{\bm{X}} \tilde{\bm{w}})^\top
-                            (\bm{t} - \tilde{\bm{X}} \tilde{\bm{w}})                  \\
-                       &= \frac{1}{2} (\bm{t}^\top \bm{t} - \bm{t}^\top \tilde{\bm{X}} \tilde{\bm{w}}
-                            - \tilde{\bm{w}}^\top \tilde{\bm{X}}^\top \bm{t}
-                            + \tilde{\bm{w}}^\top \tilde{\bm{X}}^\top \tilde{\bm{X}} \tilde{\bm{w}})
+  E_D (\tilde{\boldsymbol{w}}) &= \frac{1}{2} (\boldsymbol{t} - \boldsymbol{y}(\tilde{\boldsymbol{X}}))^\top
+                            (\boldsymbol{t} - \boldsymbol{y}(\tilde{\boldsymbol{X}}))                         \\
+                       &= \frac{1}{2} (\boldsymbol{t} - \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}})^\top
+                            (\boldsymbol{t} - \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}})                  \\
+                       &= \frac{1}{2} (\boldsymbol{t}^\top \boldsymbol{t} - \boldsymbol{t}^\top \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}}
+                            - \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{X}}^\top \boldsymbol{t}
+                            + \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{X}}^\top \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}})
 \end{aligned}
 ```
 
-この式が最小となる `$\tilde{\bm{w}}$` を求めるため `$\tilde{\bm{w}}$` で微分し
+この式が最小となる `$\tilde{\boldsymbol{w}}$` を求めるため `$\tilde{\boldsymbol{w}}$` で微分し
 
 ```katex
 \begin{aligned}
-  \frac{\partial E_D(\tilde{\bm{w}})}{\partial \tilde{\bm{w}}} &=
-    - \tilde{\bm{X}} ^ \top \bm{t} + \tilde{\bm{X}}^\top \tilde{\bm{X}} \tilde{\bm{w}}
+  \frac{\partial E_D(\tilde{\boldsymbol{w}})}{\partial \tilde{\boldsymbol{w}}} &=
+    - \tilde{\boldsymbol{X}} ^ \top \boldsymbol{t} + \tilde{\boldsymbol{X}}^\top \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}}
 \end{aligned}
 ```
 
@@ -146,9 +146,9 @@ y(\bm{x}) = \tilde{\bm{w}}^\top \tilde{\bm{x}},\quad\tilde{\bm{w}} = (w_0, \bm{w
 
 ```katex
 \begin{aligned}
-    \tilde{\bm{X}}^\top \tilde{\bm{X}} \tilde{\bm{w}} &= \tilde{\bm{X}} ^ \top \bm{t}     \\
-    \tilde{\bm{w}} &= (\tilde{\bm{X}} ^ \top \tilde{\bm{X}}) ^ {-1} \tilde{\bm{X}} ^ \top \bm{t} \\
-    \tilde{\bm{w}} &= \tilde{\bm{X}}^\dagger \bm{t}
+    \tilde{\boldsymbol{X}}^\top \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}} &= \tilde{\boldsymbol{X}} ^ \top \boldsymbol{t}     \\
+    \tilde{\boldsymbol{w}} &= (\tilde{\boldsymbol{X}} ^ \top \tilde{\boldsymbol{X}}) ^ {-1} \tilde{\boldsymbol{X}} ^ \top \boldsymbol{t} \\
+    \tilde{\boldsymbol{w}} &= \tilde{\boldsymbol{X}}^\dagger \boldsymbol{t}
 \end{aligned}
 ```
 
@@ -176,11 +176,11 @@ let mw    = pinv mx #> mt
 let mw    = mx <\> mt
 ```
 
-パラメータベクトルが求まったので、今度は識別境界を引いてみます。識別関数を `$y (\bm{x}) = 0$` として式を変形するとこんな感じになるので
+パラメータベクトルが求まったので、今度は識別境界を引いてみます。識別関数を `$y (\boldsymbol{x}) = 0$` として式を変形するとこんな感じになるので
 
 ```katex
 \begin{aligned}
-  \tilde{\bm{w}}^\top \tilde{\bm{x}} &= 0 \\
+  \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}} &= 0 \\
   \tilde{w}_0 + \tilde{w}_1 \tilde{x}_1 + \tilde{w}_2 \tilde{x}_2 &= 0 \\
   \tilde{x}_2 &= \frac{- \tilde{w}_0 - \tilde{w}_1 \tilde{x}_1}{\tilde{w}_2}
 \end{aligned}
@@ -242,48 +242,48 @@ main = do
 
 ![sigmoid](https://tosainu.bitbucket.io/svgs/haskell-linear-classifier/sigmoid.svg)
 
-ある入力データ `$\tilde{\bm{x}}$` が与えられたとき、それが `$C_1$` に属する確率を `$p(1 | \tilde{\bm{x}})$`、そうでない確率を `$p(0 | \tilde{\bm{x}})$` とし、次のように定めます。このように、ある線形関数 `$y$` をロジスティック関数で変形したモデルのことを一般化線形モデルと呼ぶらしいです。
+ある入力データ `$\tilde{\boldsymbol{x}}$` が与えられたとき、それが `$C_1$` に属する確率を `$p(1 | \tilde{\boldsymbol{x}})$`、そうでない確率を `$p(0 | \tilde{\boldsymbol{x}})$` とし、次のように定めます。このように、ある線形関数 `$y$` をロジスティック関数で変形したモデルのことを一般化線形モデルと呼ぶらしいです。
 
 ```katex
 \begin{aligned}
-  p(1 | \tilde{\bm{x}}) &= f (\tilde{\bm{x}}) = \sigma (y (\tilde{\bm{x}})) = \frac{1}{1 + \exp (- y (\tilde{\bm{x}}))} \\
-  p(0 | \tilde{\bm{x}}) &= 1 - p(1 | \tilde{\bm{x}})
+  p(1 | \tilde{\boldsymbol{x}}) &= f (\tilde{\boldsymbol{x}}) = \sigma (y (\tilde{\boldsymbol{x}})) = \frac{1}{1 + \exp (- y (\tilde{\boldsymbol{x}}))} \\
+  p(0 | \tilde{\boldsymbol{x}}) &= 1 - p(1 | \tilde{\boldsymbol{x}})
 \end{aligned}
 ```
 
-では、学習データ `$\tilde{\bm{X}}$`、目的ベクトル `$\bm{t}$`、識別関数 `$y (\tilde{\bm{x}})$` が次のように与えられたときのパラメータベクトル `$\tilde{\bm{w}}$` を求めていきます。
+では、学習データ `$\tilde{\boldsymbol{X}}$`、目的ベクトル `$\boldsymbol{t}$`、識別関数 `$y (\tilde{\boldsymbol{x}})$` が次のように与えられたときのパラメータベクトル `$\tilde{\boldsymbol{w}}$` を求めていきます。
 
 ```katex
 \begin{aligned}
-  \tilde{\bm{X}} &= (\tilde{\bm{x}}_1, \dots, \tilde{\bm{x}}_N)^\top \\
-         \bm{t}  &= (t_1, \dots, t_N)^\top \quad
+  \tilde{\boldsymbol{X}} &= (\tilde{\boldsymbol{x}}_1, \dots, \tilde{\boldsymbol{x}}_N)^\top \\
+         \boldsymbol{t}  &= (t_1, \dots, t_N)^\top \quad
              t_n =
                \begin{cases}
-                 1,  & \tilde{\bm{x}}_n \in C_1 \\
-                 0,  & \tilde{\bm{x}}_n \in C_2
+                 1,  & \tilde{\boldsymbol{x}}_n \in C_1 \\
+                 0,  & \tilde{\boldsymbol{x}}_n \in C_2
                \end{cases} \\
-  y (\tilde{\bm{x}}) &= \tilde{\bm{w}}^\top \tilde{\bm{x}}
+  y (\tilde{\boldsymbol{x}}) &= \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}}
 \end{aligned}
 ```
 
 まず、先ほど示した確率の式は、次のようにも書けるので
 
 ```katex
-p(y | \tilde{\bm{x}}) = (f (\tilde{\bm{x}}))^y (1 - f(\tilde{\bm{x}}))^{1 - y}
+p(y | \tilde{\boldsymbol{x}}) = (f (\tilde{\boldsymbol{x}}))^y (1 - f(\tilde{\boldsymbol{x}}))^{1 - y}
 ```
 
-尤度関数 `$L (\tilde{\bm{w}})$` と対数尤度 `$\log L (\tilde{\bm{w}})$` を次のように表すことができます。
+尤度関数 `$L (\tilde{\boldsymbol{w}})$` と対数尤度 `$\log L (\tilde{\boldsymbol{w}})$` を次のように表すことができます。
 
 ```katex
 \begin{aligned}
-  L (\tilde{\bm{w}}) &= \prod_{i = 1}^{N} p (t_i | \tilde{\bm{x}}_i)  \\
-                     &= \prod_{i = 1}^{N} (f (\tilde{\bm{x}}_i))^{t_i} (1 - f(\tilde{\bm{x}}_i))^{1 - t_i} \\
-  \log L (\tilde{\bm{w}}) &= \sum_{i = 1}^{N} t_i \log f (\tilde{\bm{x}}_i)
-                              + (1 - t_i) \log (1 - f(\tilde{\bm{x}}_i))
+  L (\tilde{\boldsymbol{w}}) &= \prod_{i = 1}^{N} p (t_i | \tilde{\boldsymbol{x}}_i)  \\
+                     &= \prod_{i = 1}^{N} (f (\tilde{\boldsymbol{x}}_i))^{t_i} (1 - f(\tilde{\boldsymbol{x}}_i))^{1 - t_i} \\
+  \log L (\tilde{\boldsymbol{w}}) &= \sum_{i = 1}^{N} t_i \log f (\tilde{\boldsymbol{x}}_i)
+                              + (1 - t_i) \log (1 - f(\tilde{\boldsymbol{x}}_i))
 \end{aligned}
 ```
 
-この対数尤度が最大となるような `$\tilde{\bm{w}}$` を求めることができれば良さそうです。
+この対数尤度が最大となるような `$\tilde{\boldsymbol{w}}$` を求めることができれば良さそうです。
 
 ということで、まずは `$\sigma (x)$` を求める `sigmoid` と、それをベクトル・行列に適用する `sigmoid'` 関数をこんな感じに実装しました。[`cmap`](https://hackage.haskell.org/package/hmatrix-0.18.1.0/docs/Numeric-LinearAlgebra-Data.html#v:cmap) は、ベクトルや行列の全要素に任意の関数を適用できる関数です。
 
@@ -301,11 +301,11 @@ sigmoid' = cmap sigmoid
 
 ```katex
 \begin{aligned}
-  ll (\tilde{\bm{w}}) &= - \log L (\tilde{\bm{w}}) \\
-                      &= - \sum_{i = 1}^{N} t_i \log f (\tilde{\bm{x}}_i)
-                         + (1 - t_i) \log (1 - f(\tilde{\bm{x}}_i))       \\
-                      &= - \bm{t}^\top \log \bm{f} (\tilde{\bm{X}})
-                         - (\bm{1} - \bm{t}) ^ \top \log (\bm{1} - \bm{f} (\tilde{\bm{X}}))
+  ll (\tilde{\boldsymbol{w}}) &= - \log L (\tilde{\boldsymbol{w}}) \\
+                      &= - \sum_{i = 1}^{N} t_i \log f (\tilde{\boldsymbol{x}}_i)
+                         + (1 - t_i) \log (1 - f(\tilde{\boldsymbol{x}}_i))       \\
+                      &= - \boldsymbol{t}^\top \log \boldsymbol{f} (\tilde{\boldsymbol{X}})
+                         - (\boldsymbol{1} - \boldsymbol{t}) ^ \top \log (\boldsymbol{1} - \boldsymbol{f} (\tilde{\boldsymbol{X}}))
 \end{aligned}
 ```
 
@@ -313,12 +313,12 @@ sigmoid' = cmap sigmoid
 
 ```katex
 \begin{aligned}
-  \frac{\partial ll (\tilde{\bm{w}})}{\partial \tilde{\bm{w}}} &=
+  \frac{\partial ll (\tilde{\boldsymbol{w}})}{\partial \tilde{\boldsymbol{w}}} &=
        - \sum_{i = 1}^{N} \Big(\frac{t_i}{f (x_i)} - \frac{1 - t_i}{1 - f (x_i)} \Big)
            f (x_i) (1 - f (x_i)) \frac{\partial}{\partial \tilde{w}_i} \tilde{w}_i \tilde{x}_i  \\
     &= - \sum_{i = 1}^{N} (t_i (1 - f (x_i)) - (1 - t_i) f (x_i)) x_i \\
     &= - \sum_{i = 1}^{N} (t_i - f (x_i)) x_i \\
-    &= \tilde{\bm{X}}^\top (\bm{f} (\tilde{\bm{X}}) - \bm{t})
+    &= \tilde{\boldsymbol{X}}^\top (\boldsymbol{f} (\tilde{\boldsymbol{X}}) - \boldsymbol{t})
 \end{aligned}
 ```
 

@@ -3,4 +3,5 @@ resolver: lts-10.9
 packages:
   - .
 
-extra-deps: []
+extra-deps:
+  - hakyll-sass-0.2.3

@@ -11,9 +11,23 @@ extra-source-files:
   - README.md
 
 dependencies:
-  - base >= 4.7 && < 5
+  - aeson
+  - base
+  - bytestring
+  - containers
+  - hakyll
+  - hakyll-sass
+  - lucid
+  - pandoc
+  - process
+  - skylighting
+  - text
+  - transformers
+  - unordered-containers
+  - vector
 
 executables:
   blog:
     source-dirs:      src
     main:             Main.hs
+    ghc-options:      -threaded -Wall

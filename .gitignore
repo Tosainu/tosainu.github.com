@@ -3,3 +3,5 @@
 /.sass-cache
 /build
 /vendor/bundle
+/.stack-work
+*.cabal

@@ -1,0 +1,19 @@
+name:       blog
+version:    0.1.0.0
+category:   Web
+author:     Tosainu
+maintainer: tosainu.maple@gmail.com
+copyright:  Copyright (c) 2018 Tosainu
+license:    MIT
+github:     Tosainu/blog
+
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  blog:
+    source-dirs:      src
+    main:             Main.hs

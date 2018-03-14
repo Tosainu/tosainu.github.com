@@ -19,6 +19,10 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile copyFileCompiler
 
+  match ("node_modules/katex/dist/**" .&&. complement "**.js") $ do
+    route $ gsubRoute "node_modules/katex/dist/" (const "vendor/katex/")
+    compile copyFileCompiler
+
 --- Configurations
 hakyllConfig :: Configuration
 hakyllConfig = defaultConfiguration

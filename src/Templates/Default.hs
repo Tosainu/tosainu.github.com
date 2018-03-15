@@ -14,24 +14,40 @@ import           Templates.FontAwesome
 
 defaultTemplate :: FontAwesomeIcons -> LucidTemplate
 defaultTemplate icons = LucidTemplate $ \ctx -> do
+  -- page infoemations
   StringField body      <- lift $ ctx "body"
   StringField copyright <- lift $ ctx "copyright"
   StringField lang      <- lift $ ctx "lang"
+  StringField siteDesc  <- lift $ ctx "site-description"
   StringField siteTitle <- lift $ ctx "site-title"
   StringField pageTitle <- lift $ ctx "title"
+  StringField allTags   <- lift $ ctx "all-tags"
+  StringField analytics <- lift $ ctx "analytics"
+
+  -- author informations
+  StringField name      <- lift $ ctx "name"
+  StringField portfolio <- lift $ ctx "portfolio"
+  StringField profile   <- lift $ ctx "profile"
+  StringField avatar    <- lift $ ctx "avatar"
 
   -- TODO: pass these variables by metadata
-  let description = "nyan"
-      author      = "Tosainu"
-
+  let description = siteDesc
       title       = if pageTitle /= "" then pageTitle ++ " | " ++ siteTitle
                                        else siteTitle
 
   doctype_
   html_ [lang_ $ T.pack lang] $ do
     head_ $ do
-      meta_  [charset_ "utf-8"]
+      meta_ [charset_ "utf-8"]
+      meta_ [name_ "authr",       content_ (T.pack name)]
+      meta_ [name_ "description", content_ (T.pack description)]
+      meta_ [name_ "generator",   content_ "Hakyll"]
+      meta_ [name_ "viewport",    content_ "width=device-width, initial-scale=1"]
+
+      -- TODO: OG tags
+
       title_ (toHtml title)
+
       link_ [rel_ "stylesheet", href_ "/stylesheets/style.css"]
       link_ [rel_ "stylesheet", href_ "/stylesheets/highlight.css"]
       link_ [rel_ "stylesheet", href_ "/stylesheets/fontawesome.css"]
@@ -53,7 +69,12 @@ defaultTemplate icons = LucidTemplate $ \ctx -> do
                 h4_ $ do
                   with (fontawesome' icons "fas" "user") [class_ "fa-fw"]
                   " About Me"
-                div_ [class_ "about"] "TODO"
+                div_ [class_ "about"] $ do
+                  div_ [class_ "avatar"] $
+                    img_ [class_ "icon", src_ (T.pack avatar), alt_ "avatar"]
+                  div_ [class_ "info"] $ do
+                    div_ [class_ "name"] $ a_ [href_ (T.pack portfolio)] $ toHtml name
+                    div_ [class_ "info"] $ toHtml profile
 
               section_ [class_ "recent-posts"] $ do
                 h4_ $ do
@@ -65,7 +86,7 @@ defaultTemplate icons = LucidTemplate $ \ctx -> do
               h4_ $ do
                 with (fontawesome' icons "fas" "tags") [class_ "fa-fw"]
                 " Tags"
-              ul_ $ li_ "TODO"
+              ul_ [class_ "tag-list"] $ toHtmlRaw allTags
 
             section_ [class_ "archives"] $ do
               h4_ $ do
@@ -88,3 +109,13 @@ defaultTemplate icons = LucidTemplate $ \ctx -> do
                 , ("CloudFlare",   "https://www.cloudflare.com/")
                 ]
               "."
+
+      script_ $ mconcat
+        [ "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){"
+        , "(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),"
+        , "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)"
+        , "})(window,document,'script','//www.google-analytics.com/analytics.js','ga');"
+        , "ga('create', '"
+        , T.pack analytics
+        , "', 'auto');ga('send', 'pageview');"
+        ]

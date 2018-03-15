@@ -10,15 +10,13 @@ import qualified Data.Text                 as T
 import           Templates.Core
 import           Templates.FontAwesome
 
-postTemplate :: FontAwesomeIcons -> LucidTemplate
-postTemplate icons = LucidTemplate $ \ctx -> do
-  StringField body  <- lookupMeta ctx "body"
-  StringField date  <- lookupMeta ctx "date"
-  StringField url   <- lookupMeta ctx "url"
-  StringField tags  <- lookupMeta ctx "tags"
-  StringField title <- lookupMeta ctx "title"
-
-  StringField twst <- lookupMetaWithArgs ctx "myon" ["foo", "bar", "baz"]
+postTemplate :: FontAwesomeIcons -> LucidTemplate a
+postTemplate icons = LucidTemplate $ do
+  StringField body  <- lookupMeta "body"
+  StringField date  <- lookupMeta "date"
+  StringField url   <- lookupMeta "url"
+  StringField tags  <- lookupMeta "tags"
+  StringField title <- lookupMeta "title"
 
   main_ [class_ "post", role_ "main"] $
     article_ $ do

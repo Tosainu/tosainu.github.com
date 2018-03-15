@@ -3,7 +3,7 @@
 module Templates.Default where
 
 import           Data.List
-import qualified Data.Text                 as T
+import qualified Data.Text             as T
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
@@ -11,23 +11,23 @@ import           Lucid.Html5
 import           Templates.Core
 import           Templates.FontAwesome
 
-defaultTemplate :: FontAwesomeIcons -> LucidTemplate
-defaultTemplate icons = LucidTemplate $ \ctx -> do
+defaultTemplate :: FontAwesomeIcons -> LucidTemplate a
+defaultTemplate icons = LucidTemplate $ do
   -- page infoemations
-  StringField body      <- lookupMeta ctx "body"
-  StringField copyright <- lookupMeta ctx "copyright"
-  StringField lang      <- lookupMeta ctx "lang"
-  StringField siteDesc  <- lookupMeta ctx "site-description"
-  StringField siteTitle <- lookupMeta ctx "site-title"
-  StringField pageTitle <- lookupMeta ctx "title"
-  StringField allTags   <- lookupMeta ctx "all-tags"
-  StringField analytics <- lookupMeta ctx "analytics"
+  StringField body      <- lookupMeta "body"
+  StringField copyright <- lookupMeta "copyright"
+  StringField lang      <- lookupMeta "lang"
+  StringField siteDesc  <- lookupMeta "site-description"
+  StringField siteTitle <- lookupMeta "site-title"
+  StringField pageTitle <- lookupMeta "title"
+  StringField allTags   <- lookupMeta "all-tags"
+  StringField analytics <- lookupMeta "analytics"
 
   -- author informations
-  StringField name      <- lookupMeta ctx "name"
-  StringField portfolio <- lookupMeta ctx "portfolio"
-  StringField profile   <- lookupMeta ctx "profile"
-  StringField avatar    <- lookupMeta ctx "avatar"
+  StringField name      <- lookupMeta "name"
+  StringField portfolio <- lookupMeta "portfolio"
+  StringField profile   <- lookupMeta "profile"
+  StringField avatar    <- lookupMeta "avatar"
 
   -- TODO: pass these variables by metadata
   let description = siteDesc

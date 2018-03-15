@@ -1,34 +1,39 @@
 module Templates.Core where
 
 import           Control.Monad.Trans.Class
+import           Control.Monad.Trans.Reader
 import qualified Data.Text.Lazy               as TL
 import           Hakyll
 import           Hakyll.Web.Template.Internal (TemplateExpr (..),
                                                TemplateKey (..))
 import           Lucid.Base
 
-newtype LucidTemplate = LucidTemplate
-  { runLucidTemplate :: (TemplateExpr -> Compiler ContextField) -> HtmlT Compiler () }
+type LucidTemplateMonad a r = HtmlT (ReaderT (Context a, Item a) Compiler) r
 
-applyLucidTemplate :: LucidTemplate -> Context a -> Item a -> Compiler (Item String)
+newtype LucidTemplate a = LucidTemplate { runLucidTemplate :: LucidTemplateMonad a () }
+
+applyLucidTemplate :: LucidTemplate a -> Context a -> Item a -> Compiler (Item String)
 applyLucidTemplate template context item = do
-    body <- fmap TL.unpack . renderTextT $ runLucidTemplate template applyExpr
-    return $ itemSetBody body item
-  where
-    applyExpr (StringLiteral s)            = return (StringField s)
-    applyExpr (Ident (TemplateKey k))      = context' k [] item
-    applyExpr (Call  (TemplateKey k) args) = do
-        args' <- mapM (\e -> applyExpr e >>= getString e) args
-        context' k args' item
+  body <- TL.unpack <$> runReaderT (renderTextT (runLucidTemplate template)) (context', item)
+  return $ itemSetBody body item
+  where context' = context `mappend` missingField
 
-    context' = unContext $ context `mappend` missingField
+lookupMeta :: String -> LucidTemplateMonad a ContextField
+lookupMeta k = do
+  (c, i) <- lift ask
+  lift $ lift $ applyTemplateExpr c i (Ident (TemplateKey k))
 
-    getString _ (StringField s) = return s
-    getString e (ListField _ _) = fail $ "expected StringField but got ListField for expr " ++ show e
+lookupMetaWithArgs :: String -> [String] -> LucidTemplateMonad a ContextField
+lookupMetaWithArgs k a = do
+  (c, i) <- lift ask
+  lift $ lift $ applyTemplateExpr c i (Call (TemplateKey k) (map StringLiteral a))
 
-lookupMeta :: (TemplateExpr -> Compiler ContextField) -> String -> HtmlT Compiler ContextField
-lookupMeta e k = lift $ e (Ident (TemplateKey k))
-
-lookupMetaWithArgs :: (TemplateExpr -> Compiler ContextField) -> String -> [String] -> HtmlT Compiler ContextField
-lookupMetaWithArgs e k a = lift $ e (Call (TemplateKey k) a')
-  where a' = map StringLiteral a
+applyTemplateExpr :: Context a -> Item a -> TemplateExpr -> Compiler ContextField
+applyTemplateExpr _ _ (StringLiteral s)         = return (StringField s)
+applyTemplateExpr c i (Ident (TemplateKey k))   = unContext c k [] i
+applyTemplateExpr c i (Call  (TemplateKey k) a) = do
+  a' <- mapM (\e -> applyTemplateExpr c i e >>= getString e) a
+  unContext c k a' i
+  where getString _ (StringField s) = return s
+        getString e (ListField _ _) =
+          fail $ "expected StringField but got ListField for expr " ++ show e

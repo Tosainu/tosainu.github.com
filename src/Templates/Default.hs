@@ -2,7 +2,6 @@
 
 module Templates.Default where
 
-import           Control.Monad.Trans.Class
 import           Data.List
 import qualified Data.Text                 as T
 import           Hakyll
@@ -15,20 +14,20 @@ import           Templates.FontAwesome
 defaultTemplate :: FontAwesomeIcons -> LucidTemplate
 defaultTemplate icons = LucidTemplate $ \ctx -> do
   -- page infoemations
-  StringField body      <- lift $ ctx "body"
-  StringField copyright <- lift $ ctx "copyright"
-  StringField lang      <- lift $ ctx "lang"
-  StringField siteDesc  <- lift $ ctx "site-description"
-  StringField siteTitle <- lift $ ctx "site-title"
-  StringField pageTitle <- lift $ ctx "title"
-  StringField allTags   <- lift $ ctx "all-tags"
-  StringField analytics <- lift $ ctx "analytics"
+  StringField body      <- lookupMeta ctx "body"
+  StringField copyright <- lookupMeta ctx "copyright"
+  StringField lang      <- lookupMeta ctx "lang"
+  StringField siteDesc  <- lookupMeta ctx "site-description"
+  StringField siteTitle <- lookupMeta ctx "site-title"
+  StringField pageTitle <- lookupMeta ctx "title"
+  StringField allTags   <- lookupMeta ctx "all-tags"
+  StringField analytics <- lookupMeta ctx "analytics"
 
   -- author informations
-  StringField name      <- lift $ ctx "name"
-  StringField portfolio <- lift $ ctx "portfolio"
-  StringField profile   <- lift $ ctx "profile"
-  StringField avatar    <- lift $ ctx "avatar"
+  StringField name      <- lookupMeta ctx "name"
+  StringField portfolio <- lookupMeta ctx "portfolio"
+  StringField profile   <- lookupMeta ctx "profile"
+  StringField avatar    <- lookupMeta ctx "avatar"
 
   -- TODO: pass these variables by metadata
   let description = siteDesc

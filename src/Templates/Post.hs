@@ -2,7 +2,6 @@
 
 module Templates.Post where
 
-import           Control.Monad.Trans.Class
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
@@ -13,11 +12,13 @@ import           Templates.FontAwesome
 
 postTemplate :: FontAwesomeIcons -> LucidTemplate
 postTemplate icons = LucidTemplate $ \ctx -> do
-  StringField body      <- lift $ ctx "body"
-  StringField date      <- lift $ ctx "date"
-  StringField url       <- lift $ ctx "url"
-  StringField tags      <- lift $ ctx "tags"
-  StringField title     <- lift $ ctx "title"
+  StringField body  <- lookupMeta ctx "body"
+  StringField date  <- lookupMeta ctx "date"
+  StringField url   <- lookupMeta ctx "url"
+  StringField tags  <- lookupMeta ctx "tags"
+  StringField title <- lookupMeta ctx "title"
+
+  StringField twst <- lookupMetaWithArgs ctx "myon" ["foo", "bar", "baz"]
 
   main_ [class_ "post", role_ "main"] $
     article_ $ do

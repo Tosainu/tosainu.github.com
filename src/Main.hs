@@ -24,8 +24,8 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile copyFileCompiler
 
-  tags <- buildTags "entry/*/*/*/*/*" $
-    fromCapture "tags/*/index.html" . sanitizeTagName
+  tags <- buildTags "entry/*/*/*/*/index.md" $
+    fromCapture "entry/tags/*/index.html" . sanitizeTagName
 
   -- "entry/year/month/day/title/index.md"
   match "entry/*/*/*/*/index.md" $ do
@@ -46,21 +46,30 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile copyFileCompiler
 
-  tagsRules tags $ \t p -> do
-    route idRoute
-    compile $ do
-      posts  <- recentFirst =<< loadAllSnapshots p "content"
-      recent <- fmap (take 5) . recentFirst
-        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
-      let ctx = constField "title"        ("Tag archives: " ++ t)
-             <> constField "tag"          t
-             <> listField  "posts"        (postContext tags) (return posts)
-             <> listField  "recent-posts" (postContext tags) (return recent)
-             <> postContext tags
-             <> siteContext tags
-      makeItem ""
-        >>= applyLucidTemplate (entryListTemplate faIcons)  ctx
-        >>= applyLucidTemplate (defaultTemplate faIcons)  ctx
+  tagsRules tags $ \tag pat -> do
+    let grouper  = fmap (paginateEvery 5) . sortRecentFirst
+        tag'     = sanitizeTagName tag
+        makeId n = fromFilePath $
+                     if n == 1 then "entry/tags/" ++ tag' ++ "/index.html"
+                               else "entry/tags/" ++ tag' ++ "/page/" ++ show n ++ "/index.html"
+    tagPages <- buildPaginateWith grouper pat makeId
+
+    paginateRules tagPages $ \num pat' -> do
+      route idRoute
+      compile $ do
+        posts  <- recentFirst =<< loadAllSnapshots pat' "content"
+        recent <- fmap (take 5) . recentFirst
+          =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+        let ctx = constField "title"        ("Tag archives: " ++ tag)
+               <> constField "tag"          tag
+               <> listField  "posts"        (postContext tags) (return posts)
+               <> listField  "recent-posts" (postContext tags) (return recent)
+               <> paginateContext tagPages num
+               <> postContext tags
+               <> siteContext tags
+        makeItem ""
+          >>= applyLucidTemplate (entryListTemplate faIcons) ctx
+          >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
 
   match "stylesheets/*.scss" $ do
     route $ setExtension "css"

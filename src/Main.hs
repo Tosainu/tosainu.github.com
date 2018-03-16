@@ -2,7 +2,11 @@
 
 module Main where
 
+import           Control.Monad
+import           Data.Char
 import qualified Data.HashMap.Strict     as HM
+import           Data.Maybe              (fromMaybe)
+import           Data.Monoid             ((<>))
 import           Hakyll
 import           Hakyll.Web.Sass
 import qualified Skylighting.Format.HTML as SL
@@ -14,18 +18,49 @@ import           Templates
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
+  faIcons <- fromMaybe mempty <$> loadFontAwesomeIcons
+
   match ("CNAME" .||. "favicon.ico" .||. "images/**") $ do
     route idRoute
     compile copyFileCompiler
 
+  tags <- buildTags "entry/*/*/*/*/*" $
+    fromCapture "tags/*/index.html" . sanitizeTagName
+
   -- "entry/year/month/day/title/index.md"
   match "entry/*/*/*/*/index.md" $ do
     route $ setExtension "html"
-    compile $ pandocCompilerWith readerOptions writerOptions
+    compile $ do
+      r <- pandocCompilerWith readerOptions writerOptions
+        >>= kaTeXFilter
+        >>= saveSnapshot "content"
+        >>= applyLucidTemplate (postTemplate faIcons) (postContext tags)
+
+      recent <- fmap (take 5). recentFirst
+        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+      let ctx = listField  "recent-posts" (postContext tags) (return recent)
+             <> postContext tags
+      applyLucidTemplate (defaultTemplate faIcons) ctx r
 
   match "entry/*/*/*/*/**" $ do
     route idRoute
     compile copyFileCompiler
+
+  tagsRules tags $ \t p -> do
+    route idRoute
+    compile $ do
+      posts  <- recentFirst =<< loadAllSnapshots p "content"
+      recent <- fmap (take 5) . recentFirst
+        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+      let ctx = constField "title"        ("Tag archives: " ++ t)
+             <> constField "tag"          t
+             <> listField  "posts"        (postContext tags) (return posts)
+             <> listField  "recent-posts" (postContext tags) (return recent)
+             <> postContext tags
+             <> siteContext tags
+      makeItem ""
+        >>= applyLucidTemplate (entryListTemplate faIcons)  ctx
+        >>= applyLucidTemplate (defaultTemplate faIcons)  ctx
 
   match "stylesheets/*.scss" $ do
     route $ setExtension "css"
@@ -48,6 +83,29 @@ main = hakyllWith hakyllConfig $ do
     route $ gsubRoute "node_modules/katex/dist/" (const "vendor/katex/")
     compile copyFileCompiler
 
+--- Contexts
+postContext :: Tags -> Context String
+postContext tags = dateField        "date"          "%Y/%m/%d %R%z"
+                <> tagsListField    "tags"          tags
+                <> siteContext tags
+
+siteContext :: Tags -> Context String
+siteContext tags = constField       "lang"              "ja"
+                <> constField       "site-title"        "Tosainu Lab"
+                <> constField       "site-description"  "todo"
+                <> constField       "copyright"         "© 2011-2018 Tosainu."
+                <> constField       "analytics"         "UA-57978655-1"
+                <> allTagsListField "all-tags"          tags
+                <> authorContext
+                <> defaultContext
+
+authorContext :: Context String
+authorContext    = constField       "name"          "Tosainu"
+                <> constField       "profile"       "Arch Linux, ごちうさ❤"
+                <> constField       "portfolio"     "https://myon.info"
+                <> constField       "avatar"        "https://www.gravatar.com/avatar/a8648d613afd1ec0c84bb04973c98ad2.png?s=256"
+                <> constField       "twitter"       "myon___"
+
 --- Compilers
 kaTeXFilter :: Item String -> Compiler (Item String)
 kaTeXFilter item = do
@@ -59,6 +117,10 @@ kaTeXFilter item = do
 loadFontAwesomeIcons :: Rules (Maybe FontAwesomeIcons)
 loadFontAwesomeIcons = preprocess $
   parseFontAwesomeIcons <$> readProcess fontAwesomeJS ["list"] []
+
+sanitizeTagName :: String -> String
+sanitizeTagName = map (\x -> if isSpace x then '-' else toLower x) .
+                  filter (liftM2 (||) isAlphaNum isSpace)
 
 --- Configurations
 hakyllConfig :: Configuration
@@ -72,6 +134,11 @@ hakyllConfig = defaultConfiguration
 
 readerOptions :: ReaderOptions
 readerOptions = defaultHakyllReaderOptions
+  { readerExtensions = readerExtensions defaultHakyllReaderOptions
+                    <> extensionsFromList [ Ext_east_asian_line_breaks
+                                          , Ext_emoji
+                                          ]
+  }
 
 writerOptions :: WriterOptions
 writerOptions = defaultHakyllWriterOptions

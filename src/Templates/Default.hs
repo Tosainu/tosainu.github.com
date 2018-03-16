@@ -2,6 +2,7 @@
 
 module Templates.Default where
 
+import           Control.Monad
 import           Data.List
 import qualified Data.Text             as T
 import           Hakyll
@@ -79,7 +80,13 @@ defaultTemplate icons = LucidTemplate $ do
                 h4_ $ do
                   with (fontawesome' icons "fas" "file-alt") [class_ "fa-fw"]
                   " Recent Posts"
-                ul_ $ li_ "TODO"
+                ul_ $ do
+                  ListField ctx items <- lookupMeta "recent-posts"
+                  forM_ (zip (repeat ctx) items) $ flip withContext $ do
+                    StringField t <- lookupMeta "title"
+                    StringField u <- lookupMeta "url"
+                    li_ $
+                      a_ [href_ (T.pack u)] $ toHtml t
 
             section_ [class_ "tag-cloud"] $ do
               h4_ $ do

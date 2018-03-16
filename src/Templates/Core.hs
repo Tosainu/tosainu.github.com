@@ -37,3 +37,6 @@ applyTemplateExpr c i (Call  (TemplateKey k) a) = do
   where getString _ (StringField s) = return s
         getString e (ListField _ _) =
           fail $ "expected StringField but got ListField for expr " ++ show e
+
+withContext :: Monad m => a' -> HtmlT (ReaderT a' m) r -> HtmlT (ReaderT a m) r
+withContext c = HtmlT . withReaderT (const c) . runHtmlT

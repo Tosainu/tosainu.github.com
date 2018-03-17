@@ -14,6 +14,7 @@ import qualified Skylighting.Format.HTML as SL
 import qualified Skylighting.Styles      as SL
 import           System.FilePath
 import           System.Process          (readProcess)
+import qualified Text.HTML.TagSoup       as TS
 import           Text.Pandoc.Options
 
 import           Templates
@@ -43,6 +44,7 @@ main = hakyllWith hakyllConfig $ do
       let ctx = listField  "recent-posts" (postContext tags) (return recent)
              <> postContext tags
       applyLucidTemplate (defaultTemplate faIcons) ctx r
+        >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
 
   match "entry/*/*/*/*/**" $ do
@@ -73,6 +75,7 @@ main = hakyllWith hakyllConfig $ do
         makeItem ""
           >>= applyLucidTemplate (entryListTemplate faIcons) ctx
           >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+          >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
 
   entries <- buildPaginateWith (fmap (paginateEvery 5) . sortRecentFirst)
@@ -93,6 +96,7 @@ main = hakyllWith hakyllConfig $ do
       makeItem ""
         >>= applyLucidTemplate (entryListTemplate faIcons) ctx
         >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+        >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
 
   match "stylesheets/*.scss" $ do
@@ -153,6 +157,14 @@ cleanIndexHtmls = return . fmap (withUrls removeIndexHtml)
           | not (path `isInfixOf` "://") && takeFileName path == "index.html"
                       = dropFileName path
           | otherwise = path
+
+modifyExternalLinkAttributes :: Item String -> Compiler (Item String)
+modifyExternalLinkAttributes = return . fmap (withTags f)
+  where f t | isExternalLink t = let (TS.TagOpen "a" as) = t
+                                 in  (TS.TagOpen "a" $ as <> extraAttributs)
+            | otherwise        = t
+        isExternalLink = liftM2 (&&) (TS.isTagOpenName "a") (isExternal . TS.fromAttrib "href")
+        extraAttributs = [("target", "_blank"), ("rel", "nofollow noopener")]
 
 --- Misc
 loadFontAwesomeIcons :: Rules (Maybe FontAwesomeIcons)

@@ -25,6 +25,7 @@ dependencies:
   - pandoc
   - process
   - skylighting
+  - tagsoup
   - text
   - transformers
   - uri-encode

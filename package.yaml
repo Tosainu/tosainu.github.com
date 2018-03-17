@@ -26,6 +26,7 @@ dependencies:
   - skylighting
   - text
   - transformers
+  - uri-encode
   - unordered-containers
   - vector
 

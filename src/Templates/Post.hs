@@ -2,10 +2,11 @@
 
 module Templates.Post where
 
+import qualified Data.Text             as T
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
-import qualified Data.Text                 as T
+import qualified Network.URI.Encode    as URI
 
 import           Templates.Core
 import           Templates.FontAwesome
@@ -45,21 +46,47 @@ postHeaderTemplate icons = LucidTemplate $ do
       ul_ [class_ "tag-list"] $ toHtmlRaw tags
 
 shareButtonsTemplate :: FontAwesomeIcons -> LucidTemplate a
-shareButtonsTemplate icons = LucidTemplate $
+shareButtonsTemplate icons = LucidTemplate $ do
+  StringField pageTitle <- lookupMeta "title"
+  StringField pageUrl   <- lookupMeta "url"
+  StringField siteTitle <- lookupMeta "site-title"
+  StringField siteUrl   <- lookupMeta "site-url"
+
+  let title = URI.encode $ pageTitle ++ " | " ++ siteTitle
+      url   = URI.encode $ siteUrl ++ pageUrl
+
   aside_ [class_ "share"] $ do
-    a_ [classes_ ["share-button", "twitter"]] $ do
+    StringField twitter <- lookupMeta "twitter"
+    a_ [ classes_ ["share-button", "twitter"]
+       , target_ "_blank"
+       , rel_ "nofollow noopener"
+       , href_ (T.pack $ "https://twitter.com/share?text=" ++ title ++ "&via=" ++ twitter)
+       ] $ do
       with (fontawesome' icons "fab" "twitter") [class_ "fa-lg"]
       span_ "Twitter"
 
-    a_ [classes_ ["share-button", "hatena"]] $ do
+    a_ [ classes_ ["share-button", "hatena"]
+       , target_ "_blank"
+       , rel_ "nofollow noopener"
+       , href_ (T.pack $
+           "http://b.hatena.ne.jp/add?mode=confirm&url=" ++ url ++ "&title=" ++ title)
+       ] $ do
       img_ [src_ "/images/hatenabookmark-logomark.svg"]
       span_ "hatena"
 
-    a_ [classes_ ["share-button", "google-plus"]] $ do
+    a_ [ classes_ ["share-button", "google-plus"]
+       , target_ "_blank"
+       , rel_ "nofollow noopener"
+       , href_ (T.pack $ "https://plusone.google.com/_/+1/confirm?url=" ++ url)
+       ] $ do
       with (fontawesome' icons "fab" "google-plus-g") [class_ "fa-lg"]
       span_ "Google+"
 
-    a_ [classes_ ["share-button", "pocket"]] $ do
+    a_ [ classes_ ["share-button", "pocket"]
+       , target_ "_blank"
+       , rel_ "nofollow noopener"
+       , href_ (T.pack $ "https://getpocket.com/save?url=" ++ url)
+       ] $ do
       with (fontawesome' icons "fab" "get-pocket") [class_ "fa-lg"]
       span_ "Pocket"
 

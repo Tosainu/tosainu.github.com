@@ -25,6 +25,7 @@ postTemplate icons = LucidTemplate $ do
           toHtmlRaw body
 
         runLucidTemplate $ shareButtonsTemplate icons
+        runLucidTemplate disqusTemplate
 
 postHeaderTemplate :: FontAwesomeIcons -> LucidTemplate a
 postHeaderTemplate icons = LucidTemplate $ do
@@ -61,3 +62,20 @@ shareButtonsTemplate icons = LucidTemplate $
     a_ [classes_ ["share-button", "pocket"]] $ do
       with (fontawesome' icons "fab" "get-pocket") [class_ "fa-lg"]
       span_ "Pocket"
+
+disqusTemplate :: LucidTemplate a
+disqusTemplate = LucidTemplate $ do
+  StringField shortname <- lookupMeta "disqus"
+  aside_ [class_ "comments"] $ do
+    div_ [id_ "disqus_thread"] ""
+    script_ $ mconcat
+      [ "(function() { var d = document, s = d.createElement('script');"
+      , "s.src = 'https://"
+      , T.pack shortname
+      , ".disqus.com/embed.js';"
+      , "s.setAttribute('data-timestamp', +new Date());"
+      , "(d.head || d.body).appendChild(s); })();"
+      ]
+    noscript_ $ do
+      "Please enable JavaScript to view the "
+      a_ [href_ "https://disqus.com/?ref_noscript"] "comments powered by Disqus."

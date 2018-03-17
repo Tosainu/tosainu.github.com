@@ -123,6 +123,7 @@ siteContext tags = constField       "lang"              "ja"
                 <> constField       "site-description"  "todo"
                 <> constField       "copyright"         "© 2011-2018 Tosainu."
                 <> constField       "analytics"         "UA-57978655-1"
+                <> constField       "disqus"            "tosainu"
                 <> allTagsListField "all-tags"          tags
                 <> authorContext
                 <> defaultContext

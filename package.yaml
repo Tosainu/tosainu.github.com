@@ -13,8 +13,6 @@ extra-source-files:
 dependencies:
   - aeson
   - base
-  - blaze-html
-  - blaze-markup
   - bytestring
   - containers
   - filepath

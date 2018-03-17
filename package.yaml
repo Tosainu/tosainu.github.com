@@ -27,6 +27,7 @@ dependencies:
   - skylighting
   - tagsoup
   - text
+  - time
   - transformers
   - uri-encode
   - unordered-containers

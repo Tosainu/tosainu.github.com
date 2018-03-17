@@ -9,7 +9,7 @@ tags: Slack, Ruby
 んで, 個人的に **SlackといったらBot** みたいなのがあるので, とりあえずサクッとBot書いてみた時のメモです.  
 ぶっちゃけ, この手の記事は全世界各言語でいくつもあると思いますが.
 
-READMORE
+<!--more-->
 
 ## Real Time Messaging API
 

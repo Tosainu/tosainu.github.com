@@ -24,7 +24,7 @@ BDディスクを買っておいてアレなんですが, 僕はBDプレイヤ�
 
 とりあえず確実に再生できる方法を試そうと, 仕方なくWin10TPを起動しBDドライブに付属していた**CyberLink PowerDVD10**を使い再生を試みました.
 
-READMORE
+<!--more-->
 
 ## CyberLink PowerDVDとの格闘
 

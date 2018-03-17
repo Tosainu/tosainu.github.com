@@ -36,7 +36,7 @@ std::cout << result << std::endl; // = 4
 ってことでこんな感じなのを思いついた. もっとよさ気な書き方があったら教えてくださいー.  
 動作確認は`clang++ -Wall -Wextra -std=c++14 prog.cc`でしました.
 
-READMORE
+<!--more-->
 
 ## [std::min\_element](http://en.cppreference.com/w/cpp/algorithm/min_element)
 

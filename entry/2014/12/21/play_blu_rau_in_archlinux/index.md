@@ -27,7 +27,7 @@ tags: Arch Linux, Gochiusa
 
 ってことで, 今回はそんな方法を探ってみました.
 
-READMORE
+<!--more-->
 
 ## 環境
 

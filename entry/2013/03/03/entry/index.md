@@ -10,7 +10,7 @@ date: 2013-03-03 12:24:26+0900
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>↓では一つずつ紹介していこうと思います。</p>
-READMORE
+<!--more-->
 <p>&nbsp;</p>
 <h3>PC関係</h3>
 <p>・Intel Core i3 3220</p>

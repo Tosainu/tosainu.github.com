@@ -26,7 +26,7 @@ tags: Arch Linux
 
 ※あくまで一例ですので・・・
 
-READMORE
+<!--more-->
 
 &nbsp;
 

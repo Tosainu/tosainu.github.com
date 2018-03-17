@@ -20,7 +20,7 @@ tags: Middleman, Ruby, Website
 古臭さは抜けたかもしれないけど, カッコよくなったかはちょっと微妙ですね...  
 まぁいっか.
 
-READMORE
+<!--more-->
 
 ## その他の変更点
 

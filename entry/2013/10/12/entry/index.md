@@ -7,7 +7,7 @@ tags: Node.js, Raspberry Pi
 <p>&nbsp;</p>
 <p>前回書いたコードにとんでもない問題があったんで修正したメモです。</p>
 <p>興味ある人だけ続きをどうぞ。</p>
-READMORE
+<!--more-->
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>とりあえず前回書いたコードを見なおしてほしい。</p>

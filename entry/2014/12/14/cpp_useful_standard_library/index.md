@@ -11,7 +11,7 @@ tags:  C++
 
 ※ 以下のコードはgcc-4.9.2とclang-3.5.0で動作確認しました. ｳﾞｨｽﾞｱﾙｺﾝﾊﾟｲﾗとかは知りません.
 
-READMORE
+<!--more-->
 
 ## [std::stoi()](http://en.cppreference.com/w/cpp/string/basic_string/stol)
 

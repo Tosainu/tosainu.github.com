@@ -22,7 +22,7 @@ tags: Linux, Arch Linux
 
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="und" dir="ltr"><a href="http://t.co/rsEztl7HJe">pic.twitter.com/rsEztl7HJe</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/596489983625596928">May 8, 2015</a></blockquote>
 
-READMORE
+<!--more-->
 
 ## 予兆...?
 

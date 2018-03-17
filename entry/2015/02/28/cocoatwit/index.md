@@ -26,7 +26,7 @@ tags: C++, CocoaTwit, Gochiusa
 
 [^1]: ただし作者は当分Qtってるコードを書きたくない模様
 
-READMORE
+<!--more-->
 
 ## C++でGUI is つらい
 

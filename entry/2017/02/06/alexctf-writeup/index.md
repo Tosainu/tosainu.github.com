@@ -6,7 +6,7 @@ tags: CTF
 
 [AlexCTF](https://ctf.oddcoder.com/) にも一人チーム [poepoe](https://ctf.oddcoder.com/team/568) でこっそり参加. 590 points で 385 位でした.
 
-READMORE
+<!--more-->
 
 ## Cryptography
 

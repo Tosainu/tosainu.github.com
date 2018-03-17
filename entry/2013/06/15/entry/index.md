@@ -21,7 +21,7 @@ tags: Game
 <p>&nbsp;</p>
 <p>でもこれがとんでもないものでした・・・</p>
 <p>&nbsp;</p>
-READMORE
+<!--more-->
 <p>&nbsp;</p>
 <p><img src="https://lh4.googleusercontent.com/-cYuhqBK_kyU/UbtT8oH6LgI/AAAAAAAACPk/L5ufdPhqRbs/s640/gta_sa%25202013-06-15%252002-22-54-22.png" /></p>
 <p><span style="font-size:36px;">ん？？？</span></p>

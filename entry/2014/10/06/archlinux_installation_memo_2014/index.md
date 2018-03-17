@@ -26,7 +26,7 @@ tags: Arch Linux, DIY PC
 * Win10TPとDualBoot
 * LightDM & Cinnamon
 
-READMORE
+<!--more-->
 
 ## Before Installation
 

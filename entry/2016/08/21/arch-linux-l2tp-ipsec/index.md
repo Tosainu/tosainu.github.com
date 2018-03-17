@@ -12,7 +12,7 @@ tags: Arch Linux, Linux, Network
 記事中では, この図のIPアドレス及びネットワークインターフェース名を使っていきます.  
 ![diagram](https://c6.staticflickr.com/9/8430/29103640045_c31110bdb5_z.jpg)
 
-READMORE
+<!--more-->
 
 ちなみに, サーバにはクーポンが残っていたConoHa(リニューアル前)のメモリ1GBプラン(2core-CPU, 1GB-RAM, 100GB-HDD)を使いました.
 

@@ -8,7 +8,7 @@ tags: Gochiusa
 Rabbit House Tea Party 2016 お疲れ様でした!!!  
 こういったアニメのイベントに参加するのは初めてなのですが, 本当に最高な1日でした!!!
 
-READMORE
+<!--more-->
 
 ## 前日夜
 

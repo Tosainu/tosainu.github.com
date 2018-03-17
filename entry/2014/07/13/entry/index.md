@@ -13,7 +13,7 @@ tags: Arch Linux, Linux
 
 "これは申し込まなきゃいけないッ" ってことでConoHaはじめました.
 
-READMORE
+<!--more-->
 
 ## アカウント作成からVPS作成まで
 

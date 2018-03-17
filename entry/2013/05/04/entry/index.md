@@ -39,7 +39,7 @@ tags: DIY PC
 </div>
 <p>&nbsp;</p>
 <p>はい、では↓からIntel Centrino Advanced-N 6205 for Desktopのレビュー的なものになりまーす。</p>
-READMORE
+<!--more-->
 <p>&nbsp;</p>
 <p>箱の中身</p>
 <p><img src="https://lh6.googleusercontent.com/-685YTX9SAdE/UYTXr8jefTI/AAAAAAAACCo/RInWMrXMcbE/s640/IMG_0444.JPG" /></p>

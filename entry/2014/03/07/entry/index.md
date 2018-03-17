@@ -15,7 +15,7 @@ tags: DIY PC
 
 &nbsp;
 
-READMORE
+<!--more-->
 
 ## そもそもなんでケース交換したのさ？
 

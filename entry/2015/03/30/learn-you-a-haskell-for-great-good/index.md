@@ -18,7 +18,7 @@ tags: Haskell
 [^1]: 延滞ではなく延長です
 [^2]: 半月くらいundefined reference to ~ とかmultiple definition of ~ といったLinker errorばかりに遭遇していたもんで..... 原因は単純なんだけどなぁ
 
-READMORE
+<!--more-->
 
 ## "すごいHaskell楽しく学ぼう!" の感想
 

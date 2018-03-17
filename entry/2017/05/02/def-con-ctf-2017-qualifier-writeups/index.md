@@ -9,7 +9,7 @@ tags: CTF
 Baby's First の問題しか解けなかったけど, pwn するの久しぶりだったので楽しかった.  
 それ以外の問題も点を入れていけるようにしていくぞ💪.
 
-READMORE
+<!--more-->
 
 ## smashme
 

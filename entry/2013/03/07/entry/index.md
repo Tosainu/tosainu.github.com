@@ -47,7 +47,7 @@ tags: DIY PC
 <p>&nbsp;</p>
 <p><img src="https://lh5.googleusercontent.com/-Cujp_iYl1TE/UTdHtFBFS3I/AAAAAAAABas/m5zGFy_dUPc/s640/IMG_0029.JPG" /></p>
 <p>&nbsp;</p>
-READMORE
+<!--more-->
 <p>&nbsp;</p>
 <p>さてまず安鯖の紹介でもしようと思います。</p>
 <p>まず届いた箱から</p>

@@ -17,7 +17,7 @@ tags: CTF
 simple note 解けたのがすごく嬉しかった。  
 とはいえ時間掛けすぎているので、もう少しサクッと解けるようにしていきたいところ。
 
-READMORE
+<!--more-->
 
 ## simple note <small>(Pwn 86)</small>
 

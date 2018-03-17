@@ -8,7 +8,7 @@ tags: CTF
 
 pwn 過去問でもよく見かける Codegate 関連の CTF というだけあって, 実行ファイル解析系の問題が多めだった感じ. 正答者数が増えると問題の得点が下がっていくシステムもあったりで面白かった.
 
-READMORE
+<!--more-->
 
 ## 1. Mic Check <small>(50pt)</small>
 

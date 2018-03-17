@@ -16,7 +16,7 @@ date: 2015-04-11 00:44:00+0900
 
 [^3]: <http://en.wikipedia.org/wiki/RoboCup>
 
-READMORE
+<!--more-->
 
 ## 経緯
 

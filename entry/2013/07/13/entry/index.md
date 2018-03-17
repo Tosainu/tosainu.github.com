@@ -12,7 +12,7 @@ tags: Linux,Raspberry Pi
 <p>&nbsp;</p>
 <p>長くなるのと画像が20枚近くあるので、記事の続きは↓からどうぞ。</p>
 <p>&nbsp;</p>
-READMORE
+<!--more-->
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

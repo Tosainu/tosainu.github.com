@@ -11,7 +11,7 @@ tags: Arch Linux, VAIO Z2
 
 尚、細かいインストール手順は今回は書きません。
 
-READMORE
+<!--more-->
 
 &nbsp;
 

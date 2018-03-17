@@ -9,7 +9,7 @@ tags: Node.js
 <p>今日はそれで使おうと思っている<a href="http://nodejs.org/">Node.js</a>と<a href="http://socket.io/">Socket.IO</a>を使ってプログラムを書いていました。</p>
 <p>&nbsp;</p>
 <p>興味ある方だけ続きからどうぞ。</p>
-READMORE
+<!--more-->
 <p>&nbsp;</p>
 <h2>Node.jsとは？</h2>
 <p>簡単に言えば、</p>

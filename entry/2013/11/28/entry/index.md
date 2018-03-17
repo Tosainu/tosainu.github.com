@@ -9,7 +9,7 @@ tags: C++
 
 以前から書いていたTwitter関連のプログラムが一歩進んだので報告しておきます。
 
-READMORE
+<!--more-->
 
 &nbsp;
 

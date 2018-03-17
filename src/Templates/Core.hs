@@ -1,5 +1,6 @@
 module Templates.Core where
 
+import           Control.Monad.Except         (MonadError (..))
 import           Control.Monad.Trans.Class
 import           Control.Monad.Trans.Reader
 import qualified Data.Text.Lazy               as TL
@@ -27,6 +28,12 @@ lookupMetaWithArgs :: String -> [String] -> LucidTemplateMonad a ContextField
 lookupMetaWithArgs k a = do
   (c, i) <- lift ask
   lift $ lift $ applyTemplateExpr c i (Call (TemplateKey k) (map StringLiteral a))
+
+lookupMetaMaybe :: String -> LucidTemplateMonad a (Maybe ContextField)
+lookupMetaMaybe k = (Just <$> lookupMeta k) `catchError` const (return Nothing)
+
+lookupMetaWithArgsMaybe :: String -> [String] -> LucidTemplateMonad a (Maybe ContextField)
+lookupMetaWithArgsMaybe k a = (Just <$> lookupMetaWithArgs k a) `catchError` const (return Nothing)
 
 applyTemplateExpr :: Context a -> Item a -> TemplateExpr -> Compiler ContextField
 applyTemplateExpr _ _ (StringLiteral s)         = return (StringField s)

@@ -8,8 +8,6 @@ import qualified Data.HashMap.Strict     as HM
 import           Data.List               (isInfixOf)
 import           Data.Maybe              (fromMaybe)
 import           Data.Monoid             ((<>))
-import qualified Data.Time.Format        as Time
-import qualified Data.Time.LocalTime     as Time
 import           Hakyll
 import           Hakyll.Web.Sass
 import qualified Skylighting.Format.HTML as SL
@@ -19,6 +17,7 @@ import           System.Process          (readProcess)
 import qualified Text.HTML.TagSoup       as TS
 import           Text.Pandoc.Options
 
+import           LocalTime
 import           Templates
 
 main :: IO ()
@@ -146,12 +145,6 @@ authorContext    = constField       "name"          "Tosainu"
                 <> constField       "avatar"        "https://www.gravatar.com/avatar/a8648d613afd1ec0c84bb04973c98ad2.png?s=256"
                 <> constField       "twitter"       "myon___"
 
-localDateField :: String -> String -> Context a
-localDateField key format = field key $ \i -> do
-  time <- getItemUTC defaultTimeLocale (itemIdentifier i)
-  let time' = Time.utcToLocalTime defaultTimeZone time
-  return $ Time.formatTime defaultTimeLocale format time'
-
 --- Compilers
 kaTeXFilter :: Item String -> Compiler (Item String)
 kaTeXFilter item = do
@@ -211,11 +204,3 @@ kaTeXJS = "tools/katex.js"
 
 fontAwesomeJS :: FilePath
 fontAwesomeJS = "tools/fontawesome.js"
-
-defaultTimeZone :: Time.TimeZone
-defaultTimeZone = Time.TimeZone (9 * 60) False "JST"
-
-defaultTimeLocale :: Time.TimeLocale
-defaultTimeLocale = Time.defaultTimeLocale
-  { Time.knownTimeZones =
-      Time.knownTimeZones Time.defaultTimeLocale <> [defaultTimeZone] }

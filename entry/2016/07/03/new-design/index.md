@@ -2,6 +2,7 @@
 title: とさいぬの隠し部屋はTosainu Labになりました
 date: 2016-07-03 23:59:00+0900
 tags: Middleman, Ruby, Website
+math: true
 ---
 
 タイトルの通りです.  
@@ -29,14 +30,14 @@ tags: Middleman, Ruby, Website
 技術ネタを中心にしていこうということで, 以前から興味のあった数式表示を導入しました.  
 ってことで, とりあえずMaxwllの方程式を置いておきます.
 
-```katex
+$$
 \begin{aligned}
 \nabla \times \vec{E} &= - \frac{\partial\vec{B}}{\partial t}\\
 \nabla \times \vec{H} &= \sigma\vec{E} + \frac{\partial\vec{D}}{\partial t}\\
 \nabla \cdot \vec{D} &= \rho\\
 \nabla \cdot \vec{B} &= 0
 \end{aligned}
-```
+$$
 
 この手で有名なのはやっぱり[MathJax](https://www.mathjax.org/)ですが, [前回のデザイン変更](/blog/2014-12-24/new_blog_theme/)で書いたようにあまり重量級Webサイトにしたくないという点でうーんという感じです. 何より静的サイトジェネレータ信者である僕としては**ブラウザで開かれたときに構文解析/レンダリングが行われる**というのがもう許せないです.
 
@@ -59,15 +60,15 @@ RedcarpetのAPI都合上, 数式をcode spanやcode blockの中に記述しな�
 まずタグクラウドです. 今まではMiddleman-blogのタグ機能をカテゴリのように使っていましたが, 件数が増えて縦に長くなってきたので, もっとすっきりさせようということでこうしました.  
 実装は[Wikipediaにあったアルゴリズム](https://en.wikipedia.org/wiki/Tag_cloud#Creation_of_a_tag_cloud)を参考に,
 
-```katex
+$$
 s_i = f_{max} \cdot \frac{t_i - t_{min}}{t_{max} - t_{min}} + f_{min}
-```
+$$
 
-- `$s_i$`: 表示するフォントサイズ
-- `$f_{min}$`: 最小のフォントサイズ
-- `$f_{max}$`: 最大のフォントサイズから`$f_{min}$`を引いた値
-- `$t_i$`: 現在のタグがついた記事数
-- `$t_{max}, t_{min}$`: タグあたりの最大, 最小の記事数
+- $s_i$: 表示するフォントサイズ
+- $f_{min}$: 最小のフォントサイズ
+- $f_{max}$: 最大のフォントサイズから$f_{min}$を引いた値
+- $t_i$: 現在のタグがついた記事数
+- $t_{max}, t_{min}$: タグあたりの最大, 最小の記事数
 
 という感じにしました. 実際のSlimで書かれたテンプレートが[これ](https://github.com/Tosainu/blog/blob/8e9fa81b873719f107016e47f5b1d6c39e4e15fb/source/partials/_sidebar.slim#L24-L36)です.
 

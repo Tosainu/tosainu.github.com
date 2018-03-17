@@ -2,6 +2,7 @@
 title: 簡単な2クラスの線形分類器を実装してみる
 date: 2018-01-05 23:51:00+0900
 tags: Haskell, Machine learning
+math: true
 ---
 
 あけましたおめでとうございます (✿╹◡╹)ﾉ
@@ -67,41 +68,41 @@ main = do
 出力された `dataset.svg` はこんな感じ。
 ![dataset](https://tosainu.bitbucket.io/svgs/haskell-linear-classifier/dataset.svg)
 
-この `$C_1$` と `$C_2$` を分類してみます。
+この $C_1$ と $C_2$ を分類してみます。
 
 ## 最小二乗法でパラメータを求める
 
-識別関数 `$y(\boldsymbol{x})$` を次式で表すことにします。
+識別関数 $y(\boldsymbol{x})$ を次式で表すことにします。
 
-```katex
+$$
 y(\boldsymbol{x}) = \boldsymbol{w}^\top \boldsymbol{x} + w_0
-```
+$$
 
-ここで、`$\boldsymbol{x}$` は入力ベクトル
+ここで、$\boldsymbol{x}$ は入力ベクトル
 
-```katex
+$$
 \boldsymbol{x} = (x_1, \dots, x_M)^\top
-```
+$$
 
-`$\boldsymbol{w}$` はパラメータベクトル
+$\boldsymbol{w}$ はパラメータベクトル
 
-```katex
+$$
 \boldsymbol{w} = (w_1, \dots, w_M)^\top
-```
+$$
 
-`$w_0$` はバイアスパラメータです。
+$w_0$ はバイアスパラメータです。
 
-この識別関数が `$y(\boldsymbol{x}) \ge 0$` となれば `$C_1$` に、`$y(\boldsymbol{x}) \lt 0$` となれば `$C_2$` に属すとし、これを満たすような `$\boldsymbol{w}$`、`$w_0$` を求めます。
+この識別関数が $y(\boldsymbol{x}) \ge 0$ となれば $C_1$ に、$y(\boldsymbol{x}) \lt 0$ となれば $C_2$ に属すとし、これを満たすような $\boldsymbol{w}$、$w_0$ を求めます。
 
-まず、簡単化のため `$y(\boldsymbol{x})$` を次のように変形。
+まず、簡単化のため $y(\boldsymbol{x})$ を次のように変形。
 
-```katex
+$$
 y(\boldsymbol{x}) = \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}},\quad\tilde{\boldsymbol{w}} = (w_0, \boldsymbol{w}^\top)^\top,\quad\tilde{\boldsymbol{x}} = (1, \boldsymbol{x}^\top)^\top
-```
+$$
 
-学習データ `$\tilde{\boldsymbol{X}}$` と、それに対応する目的 (教師) ベクトル `$\boldsymbol{t}$` を次のように定めると
+学習データ $\tilde{\boldsymbol{X}}$ と、それに対応する目的 (教師) ベクトル $\boldsymbol{t}$ を次のように定めると
 
-```katex
+$$
 \begin{aligned}
   \tilde{\boldsymbol{X}} &= (\tilde{\boldsymbol{x}}_1, \dots, \tilde{\boldsymbol{x}}_N)^\top \\
          \boldsymbol{t}  &= (t_1, \dots, t_N)^\top \quad
@@ -111,11 +112,11 @@ y(\boldsymbol{x}) = \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}},\quad\til
                  -1,  & \tilde{\boldsymbol{x}}_n \in C_2
                \end{cases}
 \end{aligned}
-```
+$$
 
-パラメータベクトル `$\tilde{\boldsymbol{w}}$` に関する2乗誤差関数 `$E_D (\tilde{\boldsymbol{w}})$` は次のようになります。
+パラメータベクトル $\tilde{\boldsymbol{w}}$ に関する2乗誤差関数 $E_D (\tilde{\boldsymbol{w}})$ は次のようになります。
 
-```katex
+$$
 \begin{aligned}
   \boldsymbol{y}(\tilde{\boldsymbol{X}}) &=
     \begin{pmatrix}
@@ -131,26 +132,26 @@ y(\boldsymbol{x}) = \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}},\quad\til
                             - \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{X}}^\top \boldsymbol{t}
                             + \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{X}}^\top \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}})
 \end{aligned}
-```
+$$
 
-この式が最小となる `$\tilde{\boldsymbol{w}}$` を求めるため `$\tilde{\boldsymbol{w}}$` で微分し
+この式が最小となる $\tilde{\boldsymbol{w}}$ を求めるため $\tilde{\boldsymbol{w}}$ で微分し
 
-```katex
+$$
 \begin{aligned}
   \frac{\partial E_D(\tilde{\boldsymbol{w}})}{\partial \tilde{\boldsymbol{w}}} &=
     - \tilde{\boldsymbol{X}} ^ \top \boldsymbol{t} + \tilde{\boldsymbol{X}}^\top \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}}
 \end{aligned}
-```
+$$
 
-それを `$0$` とおくとこうなります。
+それを $0$ とおくとこうなります。
 
-```katex
+$$
 \begin{aligned}
     \tilde{\boldsymbol{X}}^\top \tilde{\boldsymbol{X}} \tilde{\boldsymbol{w}} &= \tilde{\boldsymbol{X}} ^ \top \boldsymbol{t}     \\
     \tilde{\boldsymbol{w}} &= (\tilde{\boldsymbol{X}} ^ \top \tilde{\boldsymbol{X}}) ^ {-1} \tilde{\boldsymbol{X}} ^ \top \boldsymbol{t} \\
     \tilde{\boldsymbol{w}} &= \tilde{\boldsymbol{X}}^\dagger \boldsymbol{t}
 \end{aligned}
-```
+$$
 
 これを実装すればパラメータベクトルが求まりそうです。
 
@@ -176,17 +177,17 @@ let mw    = pinv mx #> mt
 let mw    = mx <\> mt
 ```
 
-パラメータベクトルが求まったので、今度は識別境界を引いてみます。識別関数を `$y (\boldsymbol{x}) = 0$` として式を変形するとこんな感じになるので
+パラメータベクトルが求まったので、今度は識別境界を引いてみます。識別関数を $y (\boldsymbol{x}) = 0$ として式を変形するとこんな感じになるので
 
-```katex
+$$
 \begin{aligned}
   \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}} &= 0 \\
   \tilde{w}_0 + \tilde{w}_1 \tilde{x}_1 + \tilde{w}_2 \tilde{x}_2 &= 0 \\
   \tilde{x}_2 &= \frac{- \tilde{w}_0 - \tilde{w}_1 \tilde{x}_1}{\tilde{w}_2}
 \end{aligned}
-```
+$$
 
-次のようなコードで `$(-5, y(-5))$`、`$(5, y(5))$` となる2点を求め、それを結ぶ直線を描画しました。
+次のようなコードで $(-5, y(-5))$、$(5, y(5))$ となる2点を求め、それを結ぶ直線を描画しました。
 
 ```haskell
 let x1hat = [-5.0, 5.0]
@@ -207,13 +208,13 @@ toFile fo "ls1.svg" $ do
   plot (line "y"  [yhat])
 ```
 
-最終的なコードは[これ](https://gist.github.com/Tosainu/8df05092c75a53711efbda52ecec4c64)で、出力された `ls1.svg` はこんな感じになりました。`$C_1$` と `$C_2$` の間に、それっぽく境界線が引けました。
+最終的なコードは[これ](https://gist.github.com/Tosainu/8df05092c75a53711efbda52ecec4c64)で、出力された `ls1.svg` はこんな感じになりました。$C_1$ と $C_2$ の間に、それっぽく境界線が引けました。
 
 ![ls1](https://tosainu.bitbucket.io/svgs/haskell-linear-classifier/ls1.svg)
 
 ## ロジスティック回帰でパラメータを求める
 
-データ点を生成している箇所をこんな感じに変更し、`$C_2$` を `$(-1, 2)$` 付近のほかに `$(3, -3)$` 付近のデータを含むようにしてみます。
+データ点を生成している箇所をこんな感じに変更し、$C_2$ を $(-1, 2)$ 付近のほかに $(3, -3)$ 付近のデータを含むようにしてみます。
 
 ```haskell
 -- ...
@@ -234,26 +235,26 @@ main = do
 
 ![ls2](https://tosainu.bitbucket.io/svgs/haskell-linear-classifier/ls2.svg)
 
-そこで、次に示すロジスティック関数 (シグモイド関数) `$\sigma (a)$` を使って、識別境界からの距離を確率的な距離 `$[0, 1]$` としてみます。
+そこで、次に示すロジスティック関数 (シグモイド関数) $\sigma (a)$ を使って、識別境界からの距離を確率的な距離 $[0, 1]$ としてみます。
 
-```katex
+$$
 \sigma (a) = \frac{1}{1 + \exp(- a)}
-```
+$$
 
 ![sigmoid](https://tosainu.bitbucket.io/svgs/haskell-linear-classifier/sigmoid.svg)
 
-ある入力データ `$\tilde{\boldsymbol{x}}$` が与えられたとき、それが `$C_1$` に属する確率を `$p(1 | \tilde{\boldsymbol{x}})$`、そうでない確率を `$p(0 | \tilde{\boldsymbol{x}})$` とし、次のように定めます。このように、ある線形関数 `$y$` をロジスティック関数で変形したモデルのことを一般化線形モデルと呼ぶらしいです。
+ある入力データ $\tilde{\boldsymbol{x}}$ が与えられたとき、それが $C_1$ に属する確率を $p(1 | \tilde{\boldsymbol{x}})$、そうでない確率を $p(0 | \tilde{\boldsymbol{x}})$ とし、次のように定めます。このように、ある線形関数 $y$ をロジスティック関数で変形したモデルのことを一般化線形モデルと呼ぶらしいです。
 
-```katex
+$$
 \begin{aligned}
   p(1 | \tilde{\boldsymbol{x}}) &= f (\tilde{\boldsymbol{x}}) = \sigma (y (\tilde{\boldsymbol{x}})) = \frac{1}{1 + \exp (- y (\tilde{\boldsymbol{x}}))} \\
   p(0 | \tilde{\boldsymbol{x}}) &= 1 - p(1 | \tilde{\boldsymbol{x}})
 \end{aligned}
-```
+$$
 
-では、学習データ `$\tilde{\boldsymbol{X}}$`、目的ベクトル `$\boldsymbol{t}$`、識別関数 `$y (\tilde{\boldsymbol{x}})$` が次のように与えられたときのパラメータベクトル `$\tilde{\boldsymbol{w}}$` を求めていきます。
+では、学習データ $\tilde{\boldsymbol{X}}$、目的ベクトル $\boldsymbol{t}$、識別関数 $y (\tilde{\boldsymbol{x}})$ が次のように与えられたときのパラメータベクトル $\tilde{\boldsymbol{w}}$ を求めていきます。
 
-```katex
+$$
 \begin{aligned}
   \tilde{\boldsymbol{X}} &= (\tilde{\boldsymbol{x}}_1, \dots, \tilde{\boldsymbol{x}}_N)^\top \\
          \boldsymbol{t}  &= (t_1, \dots, t_N)^\top \quad
@@ -264,28 +265,28 @@ main = do
                \end{cases} \\
   y (\tilde{\boldsymbol{x}}) &= \tilde{\boldsymbol{w}}^\top \tilde{\boldsymbol{x}}
 \end{aligned}
-```
+$$
 
 まず、先ほど示した確率の式は、次のようにも書けるので
 
-```katex
+$$
 p(y | \tilde{\boldsymbol{x}}) = (f (\tilde{\boldsymbol{x}}))^y (1 - f(\tilde{\boldsymbol{x}}))^{1 - y}
-```
+$$
 
-尤度関数 `$L (\tilde{\boldsymbol{w}})$` と対数尤度 `$\log L (\tilde{\boldsymbol{w}})$` を次のように表すことができます。
+尤度関数 $L (\tilde{\boldsymbol{w}})$ と対数尤度 $\log L (\tilde{\boldsymbol{w}})$ を次のように表すことができます。
 
-```katex
+$$
 \begin{aligned}
   L (\tilde{\boldsymbol{w}}) &= \prod_{i = 1}^{N} p (t_i | \tilde{\boldsymbol{x}}_i)  \\
                      &= \prod_{i = 1}^{N} (f (\tilde{\boldsymbol{x}}_i))^{t_i} (1 - f(\tilde{\boldsymbol{x}}_i))^{1 - t_i} \\
   \log L (\tilde{\boldsymbol{w}}) &= \sum_{i = 1}^{N} t_i \log f (\tilde{\boldsymbol{x}}_i)
                               + (1 - t_i) \log (1 - f(\tilde{\boldsymbol{x}}_i))
 \end{aligned}
-```
+$$
 
-この対数尤度が最大となるような `$\tilde{\boldsymbol{w}}$` を求めることができれば良さそうです。
+この対数尤度が最大となるような $\tilde{\boldsymbol{w}}$ を求めることができれば良さそうです。
 
-ということで、まずは `$\sigma (x)$` を求める `sigmoid` と、それをベクトル・行列に適用する `sigmoid'` 関数をこんな感じに実装しました。[`cmap`](https://hackage.haskell.org/package/hmatrix-0.18.1.0/docs/Numeric-LinearAlgebra-Data.html#v:cmap) は、ベクトルや行列の全要素に任意の関数を適用できる関数です。
+ということで、まずは $\sigma (x)$ を求める `sigmoid` と、それをベクトル・行列に適用する `sigmoid'` 関数をこんな感じに実装しました。[`cmap`](https://hackage.haskell.org/package/hmatrix-0.18.1.0/docs/Numeric-LinearAlgebra-Data.html#v:cmap) は、ベクトルや行列の全要素に任意の関数を適用できる関数です。
 
 ```haskell
 sigmoid :: Floating a => a -> a
@@ -297,9 +298,9 @@ sigmoid' = cmap sigmoid
 
 パラメータベクトルは最小二乗法では求められない？ようなので、hmatrix-gsl パッケージの [`minimizeVD`](https://hackage.haskell.org/package/hmatrix-gsl-0.18.0.1/docs/Numeric-GSL-Minimization.html#v:minimizeVD) 関数を使って最急降下法で近似的に求めることにしました。
 
-今回は最大化をしたいので、最小化したい関数には対数尤度に `$- 1$` を掛けたものを
+今回は最大化をしたいので、最小化したい関数には対数尤度に $- 1$ を掛けたものを
 
-```katex
+$$
 \begin{aligned}
   ll (\tilde{\boldsymbol{w}}) &= - \log L (\tilde{\boldsymbol{w}}) \\
                       &= - \sum_{i = 1}^{N} t_i \log f (\tilde{\boldsymbol{x}}_i)
@@ -307,11 +308,11 @@ sigmoid' = cmap sigmoid
                       &= - \boldsymbol{t}^\top \log \boldsymbol{f} (\tilde{\boldsymbol{X}})
                          - (\boldsymbol{1} - \boldsymbol{t}) ^ \top \log (\boldsymbol{1} - \boldsymbol{f} (\tilde{\boldsymbol{X}}))
 \end{aligned}
-```
+$$
 
-勾配は、`$\sigma' (a) = \sigma (a) (1 - \sigma (a))$` を用いて
+勾配は、$\sigma' (a) = \sigma (a) (1 - \sigma (a))$ を用いて
 
-```katex
+$$
 \begin{aligned}
   \frac{\partial ll (\tilde{\boldsymbol{w}})}{\partial \tilde{\boldsymbol{w}}} &=
        - \sum_{i = 1}^{N} \Big(\frac{t_i}{f (x_i)} - \frac{1 - t_i}{1 - f (x_i)} \Big)
@@ -320,7 +321,7 @@ sigmoid' = cmap sigmoid
     &= - \sum_{i = 1}^{N} (t_i - f (x_i)) x_i \\
     &= \tilde{\boldsymbol{X}}^\top (\boldsymbol{f} (\tilde{\boldsymbol{X}}) - \boldsymbol{t})
 \end{aligned}
-```
+$$
 
 求めた2つの関数と適当なパラメータをこんな感じで渡してやります。
 

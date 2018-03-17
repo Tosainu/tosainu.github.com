@@ -60,13 +60,13 @@ main = hakyllWith hakyllConfig $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
         recent <- fmap (take 5) . recentFirst
           =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
-        let ctx = constField "title"        ("Tag archives: " ++ tag)
-               <> constField "tag"          tag
-               <> listField  "posts"        (postContext tags) (return posts)
-               <> listField  "recent-posts" (postContext tags) (return recent)
+        let ctx = constField  "title"        ("Tag archives: " ++ tag)
+               <> constField  "tag"          tag
+               <> listField   "posts"        postContext'       (return posts)
+               <> listField   "recent-posts" (postContext tags) (return recent)
                <> paginateContext tagPages num
-               <> postContext tags
                <> siteContext tags
+            postContext' = teaserField "teaser" "content" <> postContext tags
         makeItem ""
           >>= applyLucidTemplate (entryListTemplate faIcons) ctx
           >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
@@ -81,11 +81,11 @@ main = hakyllWith hakyllConfig $ do
       posts  <- recentFirst =<< loadAllSnapshots pat "content"
       recent <- fmap (take 5) . recentFirst
         =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
-      let ctx = listField  "posts"        (postContext tags) (return posts)
-             <> listField  "recent-posts" (postContext tags) (return recent)
+      let ctx = listField   "posts"        postContext'       (return posts)
+             <> listField   "recent-posts" (postContext tags) (return recent)
              <> paginateContext entries num
-             <> postContext tags
              <> siteContext tags
+          postContext' = teaserField "teaser" "content" <> postContext tags
       makeItem ""
         >>= applyLucidTemplate (entryListTemplate faIcons) ctx
         >>= applyLucidTemplate (defaultTemplate faIcons)   ctx

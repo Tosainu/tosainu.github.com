@@ -23,15 +23,22 @@ entryListTemplate icons = LucidTemplate $ do
     div_ [class_ "container"] $ do
       div_ [class_ "items"] $ do
         ListField ctx items <- lookupMeta "posts"
-        forM_ (zip (repeat ctx) items) $ flip withContext $ do
-          StringField postBody <- lookupMeta "body"
-
+        forM_ (zip (repeat ctx) items) $ flip withContext $
           article_ $ do
             header_ [class_ "post-header"] $
               runLucidTemplate $ postHeaderTemplate icons
 
-            div_ [class_ "post-contents"] $
-              toHtmlRaw postBody
+            div_ [class_ "post-contents"] $ do
+              mt <- lookupMetaMaybe "teaser"
+              case mt of
+                   Just (StringField t) -> do
+                     StringField url <- lookupMeta "url"
+                     toHtmlRaw t
+                     a_ [href_ (T.pack url)] "Read More »"
+
+                   _ -> do
+                     StringField postBody <- lookupMeta "body"
+                     toHtmlRaw postBody
 
       runLucidTemplate entryListNavigationTeplate
 

@@ -71,6 +71,25 @@ main = hakyllWith hakyllConfig $ do
           >>= applyLucidTemplate (entryListTemplate faIcons) ctx
           >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
 
+  entries <- buildPaginateWith (fmap (paginateEvery 5) . sortRecentFirst)
+                               "entry/*/*/*/*/index.md"
+                               (\n -> if n == 1 then fromFilePath "index.html"
+                                                else fromFilePath $ "page/" ++ show n ++ "/index.html")
+  paginateRules entries $ \num pat -> do
+    route idRoute
+    compile $ do
+      posts  <- recentFirst =<< loadAllSnapshots pat "content"
+      recent <- fmap (take 5) . recentFirst
+        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+      let ctx = listField  "posts"        (postContext tags) (return posts)
+             <> listField  "recent-posts" (postContext tags) (return recent)
+             <> paginateContext entries num
+             <> postContext tags
+             <> siteContext tags
+      makeItem ""
+        >>= applyLucidTemplate (entryListTemplate faIcons) ctx
+        >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+
   match "stylesheets/*.scss" $ do
     route $ setExtension "css"
     compile $ fmap compressCss <$> sassCompiler

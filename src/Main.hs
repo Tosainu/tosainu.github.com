@@ -5,12 +5,14 @@ module Main where
 import           Control.Monad
 import           Data.Char
 import qualified Data.HashMap.Strict     as HM
+import           Data.List               (isInfixOf)
 import           Data.Maybe              (fromMaybe)
 import           Data.Monoid             ((<>))
 import           Hakyll
 import           Hakyll.Web.Sass
 import qualified Skylighting.Format.HTML as SL
 import qualified Skylighting.Styles      as SL
+import           System.FilePath
 import           System.Process          (readProcess)
 import           Text.Pandoc.Options
 
@@ -41,6 +43,7 @@ main = hakyllWith hakyllConfig $ do
       let ctx = listField  "recent-posts" (postContext tags) (return recent)
              <> postContext tags
       applyLucidTemplate (defaultTemplate faIcons) ctx r
+        >>= cleanIndexHtmls
 
   match "entry/*/*/*/*/**" $ do
     route idRoute
@@ -70,6 +73,7 @@ main = hakyllWith hakyllConfig $ do
         makeItem ""
           >>= applyLucidTemplate (entryListTemplate faIcons) ctx
           >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+          >>= cleanIndexHtmls
 
   entries <- buildPaginateWith (fmap (paginateEvery 5) . sortRecentFirst)
                                "entry/*/*/*/*/index.md"
@@ -89,6 +93,7 @@ main = hakyllWith hakyllConfig $ do
       makeItem ""
         >>= applyLucidTemplate (entryListTemplate faIcons) ctx
         >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+        >>= cleanIndexHtmls
 
   match "stylesheets/*.scss" $ do
     route $ setExtension "css"
@@ -141,6 +146,13 @@ kaTeXFilter item = do
   metadata <- getMetadata $ itemIdentifier item
   if HM.member "math" metadata then withItemBody (unixFilter kaTeXJS []) item
                                else return item
+
+cleanIndexHtmls :: Item String -> Compiler (Item String)
+cleanIndexHtmls = return . fmap (withUrls removeIndexHtml)
+  where removeIndexHtml path
+          | not (path `isInfixOf` "://") && takeFileName path == "index.html"
+                      = dropFileName path
+          | otherwise = path
 
 --- Misc
 loadFontAwesomeIcons :: Rules (Maybe FontAwesomeIcons)

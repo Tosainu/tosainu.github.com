@@ -1,3 +1,4 @@
+{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 module Main where
@@ -17,6 +18,7 @@ import           System.Process          (readProcess)
 import qualified Text.HTML.TagSoup       as TS
 import           Text.Pandoc.Options
 
+import           Archives
 import           LocalTime
 import           Templates
 
@@ -30,6 +32,10 @@ main = hakyllWith hakyllConfig $ do
 
   tags <- buildTags "entry/*/*/*/*/index.md" $
     fromCapture "entry/tags/*/index.html" . sanitizeTagName
+
+  yearMonthArchives <- buildYearMonthArchives "entry/*/*/*/*/index.md" $
+    \case Yearly   y     -> fromFilePath ("entry/" ++ y ++ "/index.html")
+          Monthly (y, m) -> fromFilePath ("entry/" ++ y ++ "/" ++ m ++ "/index.html")
 
   -- "entry/year/month/day/title/index.md"
   match "entry/*/*/*/*/index.md" $ do
@@ -73,6 +79,34 @@ main = hakyllWith hakyllConfig $ do
                <> paginateContext tagPages num
                <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
+        makeItem ""
+          >>= applyLucidTemplate (entryListTemplate faIcons) ctx
+          >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+          >>= modifyExternalLinkAttributes
+          >>= cleanIndexHtmls
+
+  archivesRules yearMonthArchives $ \key pat -> do
+    let grouper  = fmap (paginateEvery 5) . sortRecentFirst
+        key'     = case key of Yearly   y     -> y
+                               Monthly (y, m) -> y ++ "/" ++ m
+        makeId n = fromFilePath $
+                     if n == 1 then "entry/" ++ key' ++ "/index.html"
+                               else "entry/" ++ key' ++ "/page/" ++ show n ++ "/index.html"
+    ymaPages <- buildPaginateWith grouper pat makeId
+    paginateRules ymaPages $ \num pat' -> do
+      route idRoute
+      compile $ do
+        posts  <- recentFirst =<< loadAllSnapshots pat' "content"
+        recent <- fmap (take 5) . recentFirst
+          =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+        let ctx = constField  "title"         title
+                <> listField   "posts"        postContext'       (return posts)
+                <> listField   "recent-posts" (postContext tags) (return recent)
+                <> paginateContext ymaPages num
+                <> siteContext tags
+            postContext' = teaserField "teaser" "content" <> postContext tags
+            title = case key of Yearly  _ -> "Yearly archives: "  ++ key'
+                                Monthly _ -> "Monthly archives: " ++ key'
         makeItem ""
           >>= applyLucidTemplate (entryListTemplate faIcons) ctx
           >>= applyLucidTemplate (defaultTemplate faIcons)   ctx

@@ -14,6 +14,15 @@ data Archives k = Archives
                 , archivesDependency :: Dependency
                 }
 
+data YearMonthKey = Yearly (String) | Monthly (String, String)
+       deriving (Eq, Show)
+
+instance Ord YearMonthKey where
+  (Yearly  (ya))     <= (Yearly  (yb))     = ya <= yb
+  (Yearly  (ya))     <= (Monthly (yb,  _)) = ya <  yb
+  (Monthly (ya,  _)) <= (Yearly  (yb))     = ya <= yb
+  (Monthly (ya, ma)) <= (Monthly (yb, mb)) = if ya == yb then ma <= mb else ya <= yb
+
 buildArchivesWith :: (MonadMetadata m, Ord k)
                   => (Identifier -> m [k])
                   -> Pattern
@@ -40,6 +49,16 @@ buildYearlyArchives = buildArchivesWith (fmap (replicate 1) . getYear)
 
 buildMonthlyArchives :: MonadMetadata m => Pattern -> (String -> Identifier) -> m (Archives String)
 buildMonthlyArchives = buildArchivesWith (fmap (replicate 1) . getMonth)
+
+buildYearMonthArchives :: MonadMetadata m
+                       => Pattern
+                       -> (YearMonthKey -> Identifier)
+                       -> m (Archives YearMonthKey)
+buildYearMonthArchives = buildArchivesWith f
+  where f i = do
+          y <- getYear i
+          m <- getMonth i
+          return [Yearly (y), Monthly (y, m)]
 
 getYear :: MonadMetadata m => Identifier -> m String
 getYear identifier = Time.formatTime defaultTimeLocale "%Y" <$> getItemLocalTime identifier

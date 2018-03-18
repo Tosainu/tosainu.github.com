@@ -49,6 +49,7 @@ main = hakyllWith hakyllConfig $ do
       recent <- fmap (take 5). recentFirst
         =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
       let ctx = listField  "recent-posts" (postContext tags) (return recent)
+             <> yearMonthArchiveField "archives" yearMonthArchives faIcons
              <> postContext tags
       applyLucidTemplate (defaultTemplate faIcons) ctx r
         >>= modifyExternalLinkAttributes
@@ -76,6 +77,7 @@ main = hakyllWith hakyllConfig $ do
                <> constField  "tag"          tag
                <> listField   "posts"        postContext'       (return posts)
                <> listField   "recent-posts" (postContext tags) (return recent)
+               <> yearMonthArchiveField "archives" yearMonthArchives faIcons
                <> paginateContext tagPages num
                <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
@@ -102,6 +104,7 @@ main = hakyllWith hakyllConfig $ do
         let ctx = constField  "title"         title
                 <> listField   "posts"        postContext'       (return posts)
                 <> listField   "recent-posts" (postContext tags) (return recent)
+                <> yearMonthArchiveField "archives" yearMonthArchives faIcons
                 <> paginateContext ymaPages num
                 <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
@@ -125,6 +128,7 @@ main = hakyllWith hakyllConfig $ do
         =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
       let ctx = listField   "posts"        postContext'       (return posts)
              <> listField   "recent-posts" (postContext tags) (return recent)
+             <> yearMonthArchiveField "archives" yearMonthArchives faIcons
              <> paginateContext entries num
              <> siteContext tags
           postContext' = teaserField "teaser" "content" <> postContext tags

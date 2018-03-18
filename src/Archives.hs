@@ -1,12 +1,23 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Archives where
 
 import           Control.Monad
-import qualified Data.Map         as M
-import qualified Data.Set         as S
-import qualified Data.Time.Format as Time
+import           Control.Monad.Trans.Class (lift)
+import           Data.Function             (on)
+import           Data.List                 (groupBy, sortBy)
+import qualified Data.Map                  as M
+import           Data.Maybe
+import qualified Data.Set                  as S
+import qualified Data.Text                 as T
+import qualified Data.Text.Lazy            as TL
+import qualified Data.Time.Format          as Time
 import           Hakyll
+import           Lucid.Base
+import           Lucid.Html5
 
 import           LocalTime
+import           Templates.FontAwesome
 
 data Archives k = Archives
                 { archivesMap        :: [(k, [Identifier])]
@@ -65,3 +76,38 @@ getYear identifier = Time.formatTime defaultTimeLocale "%Y" <$> getItemLocalTime
 
 getMonth :: MonadMetadata m => Identifier -> m String
 getMonth identifier = Time.formatTime defaultTimeLocale "%m" <$> getItemLocalTime identifier
+
+yearMonthArchiveField :: String -> Archives YearMonthKey -> FontAwesomeIcons -> Context a
+yearMonthArchiveField key archives icons = field key $ \_ -> fmap TL.unpack $ renderTextT $
+  ul_ [class_ "archive-tree"] $ do
+    let archives' = groupBy (isSameYear `on` fst) $
+                    sortBy  (flip compare `on` fst) $ archivesMap archives
+    forM_ archives' $ \yas -> do
+      li_ $ do
+        let (yk@(Yearly y), yids) = head yas
+        yurl <- lift $ fmap toUrl' $ getRoute $ archivesMakeId archives yk
+
+        input_ [ class_ "tree-toggle"
+               , type_ "checkbox"
+               , id_ (T.pack $ "tree-label-" ++ y) ]
+        label_ [ class_ "tree-toggle-button"
+               , for_ (T.pack $ "tree-label-" ++ y) ] $ do
+          with (fontawesome' icons "fas" "angle-right") [class_ "fa-fw"]
+          with (fontawesome' icons "fas" "angle-down")  [class_ "fa-fw"]
+          a_ [href_ (T.pack yurl)] $
+            toHtml $ y ++ " (" ++ show (length yids) ++ ")"
+
+        ul_ [class_ "tree-child"] $
+          forM_ (tail yas) $ \ma -> do
+            let (mk@(Monthly (_, m)), mids) = ma
+            murl <- lift $ fmap toUrl' $ getRoute $ archivesMakeId archives mk
+
+            li_ $
+              a_ [href_ (T.pack murl)] $
+                toHtml $ y ++ "/" ++ m ++  " (" ++ show (length mids) ++ ")"
+
+  where isSameYear a b = getYear' a == getYear' b
+        getYear' (Yearly y)       = y
+        getYear' (Monthly (y, _)) = y
+
+        toUrl' = toUrl . fromMaybe "/"

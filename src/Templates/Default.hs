@@ -23,6 +23,7 @@ defaultTemplate icons = LucidTemplate $ do
   StringField pageTitle <- lookupMeta "title"
   StringField allTags   <- lookupMeta "all-tags"
   StringField analytics <- lookupMeta "analytics"
+  StringField archives  <- lookupMeta "archives"
 
   -- author informations
   StringField name      <- lookupMeta "name"
@@ -98,7 +99,7 @@ defaultTemplate icons = LucidTemplate $ do
               h4_ $ do
                 with (fontawesome' icons "fas" "archive") [class_ "fa-fw"]
                 " Archives"
-              ul_ $ li_ "TODO"
+              toHtmlRaw archives
 
         div_ [class_ "footer-bottom"] $
           div_ [class_ "container"] $ do

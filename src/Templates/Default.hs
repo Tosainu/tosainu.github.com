@@ -54,6 +54,8 @@ defaultTemplate icons = LucidTemplate $ do
       link_ [rel_ "stylesheet", href_ "/stylesheets/fontawesome.css"]
       link_ [rel_ "stylesheet", href_ "/vendor/katex/katex.min.css"]
 
+      link_ [rel_ "alternate", href_ "/feed.xml", type_ "application/atom+xml", title_ "Atom Feed"]
+
     body_ $ do
       header_ [class_ "site-header"] $
         div_ [class_ "container"] $

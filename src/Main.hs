@@ -138,6 +138,13 @@ main = hakyllWith hakyllConfig $ do
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
 
+  create ["feed.xml"] $ do
+    route idRoute
+    compile $ do
+      posts <- fmap (take 20) . recentFirst
+        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+      renderAtom atomFeedConfig (postContext tags) posts
+
   match "stylesheets/*.scss" $ do
     route $ setExtension "css"
     compile $ fmap compressCss <$> sassCompiler
@@ -163,7 +170,11 @@ main = hakyllWith hakyllConfig $ do
 postContext :: Tags -> Context String
 postContext tags = localDateField   "date"          "%Y/%m/%d %R"
                 <> tagsListField    "tags"          tags
+                <> descriptionField "description"   150
                 <> siteContext tags
+  where descriptionField key len = field key $
+          return . escapeHtml . take len . unescapeHtml . stripTags . itemBody
+        unescapeHtml = TS.fromTagText . head . TS.parseTags
 
 siteContext :: Tags -> Context String
 siteContext tags = constField       "lang"              "ja"
@@ -222,6 +233,15 @@ hakyllConfig = defaultConfiguration
   , tmpDirectory         = ".cache/tmp"
   , previewHost          = "0.0.0.0"
   , previewPort          = 4567
+  }
+
+atomFeedConfig :: FeedConfiguration
+atomFeedConfig = FeedConfiguration
+  { feedTitle       = "Tosainu Lab"
+  , feedDescription = "todo"
+  , feedAuthorName  = "Tosainu"
+  , feedAuthorEmail = "tosainu.maple@gmail.com"
+  , feedRoot        = "https://blog.myon.info"
   }
 
 readerOptions :: ReaderOptions

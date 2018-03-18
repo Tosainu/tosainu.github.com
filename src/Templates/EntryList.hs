@@ -18,7 +18,10 @@ entryListTemplate icons = LucidTemplate $ do
   StringField body <- lookupMeta "body"
 
   main_ [class_ "list", role_ "main"] $ do
-    toHtmlRaw body
+    if body == "" then return () else
+      aside_ [class_ "filter"] $
+        div_ [class_ "container"] $
+          span_ $ toHtmlRaw body
 
     div_ [class_ "container"] $ do
       div_ [class_ "items"] $ do

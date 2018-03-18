@@ -73,7 +73,7 @@ main = hakyllWith hakyllConfig $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
         recent <- fmap (take 5) . recentFirst
           =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
-        let ctx = constField  "title"        ("Tag archives: " ++ tag)
+        let ctx = constField  "title"        title
                <> constField  "tag"          tag
                <> listField   "posts"        postContext'       (return posts)
                <> listField   "recent-posts" (postContext tags) (return recent)
@@ -81,7 +81,8 @@ main = hakyllWith hakyllConfig $ do
                <> paginateContext tagPages num
                <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
-        makeItem ""
+            title = "Tag archives: " ++ tag
+        makeItem title
           >>= applyLucidTemplate (entryListTemplate faIcons) ctx
           >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
           >>= modifyExternalLinkAttributes
@@ -110,7 +111,7 @@ main = hakyllWith hakyllConfig $ do
             postContext' = teaserField "teaser" "content" <> postContext tags
             title = case key of Yearly  _ -> "Yearly archives: "  ++ key'
                                 Monthly _ -> "Monthly archives: " ++ key'
-        makeItem ""
+        makeItem title
           >>= applyLucidTemplate (entryListTemplate faIcons) ctx
           >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
           >>= modifyExternalLinkAttributes

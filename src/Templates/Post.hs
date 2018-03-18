@@ -56,7 +56,7 @@ shareButtonsTemplate icons = LucidTemplate $ do
       url   = URI.encode $ siteUrl ++ pageUrl
 
   aside_ [class_ "share"] $ do
-    StringField twitter <- lookupMeta "twitter"
+    StringField twitter <- lookupMeta "author-twitter"
     a_ [ classes_ ["share-button", "twitter"]
        , target_ "_blank"
        , rel_ "nofollow noopener"

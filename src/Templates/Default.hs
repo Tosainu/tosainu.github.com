@@ -20,19 +20,23 @@ defaultTemplate icons = LucidTemplate $ do
   StringField lang      <- lookupMeta "lang"
   StringField siteDesc  <- lookupMeta "site-description"
   StringField siteTitle <- lookupMeta "site-title"
+  StringField siteUrl   <- lookupMeta "site-url"
   StringField pageTitle <- lookupMeta "title"
+  StringField pageUrl   <- lookupMeta "url"
   StringField allTags   <- lookupMeta "all-tags"
-  StringField analytics <- lookupMeta "analytics"
+  StringField analytics <- lookupMeta "google-analytics"
   StringField archives  <- lookupMeta "archives"
 
   -- author informations
-  StringField name      <- lookupMeta "name"
-  StringField portfolio <- lookupMeta "portfolio"
-  StringField profile   <- lookupMeta "profile"
-  StringField avatar    <- lookupMeta "avatar"
+  StringField name      <- lookupMeta "author-name"
+  StringField portfolio <- lookupMeta "author-portfolio"
+  StringField profile   <- lookupMeta "author-profile"
+  StringField avatar    <- lookupMeta "author-avatar"
+  StringField twitter   <- lookupMeta "author-twitter"
 
-  -- TODO: pass these variables by metadata
-  let description = siteDesc
+  mdescription <- lookupMetaMaybe "description"
+  let description = case mdescription of Just (StringField d) -> d
+                                         _                    -> siteDesc
       title       = if pageTitle /= "" then pageTitle ++ " | " ++ siteTitle
                                        else siteTitle
 
@@ -45,7 +49,24 @@ defaultTemplate icons = LucidTemplate $ do
       meta_ [name_ "generator",   content_ "Hakyll"]
       meta_ [name_ "viewport",    content_ "width=device-width, initial-scale=1"]
 
-      -- TODO: OG tags
+      let property_ = makeAttribute "property"
+
+      -- Twitter Card Tags
+      meta_ [property_ "twitter:card", content_ "summary"]
+      meta_ [property_ "twitter:site", content_ (T.pack twitter)]
+      meta_ [property_ "twitter:creator", content_ (T.pack twitter)]
+
+      -- Open Graph Tags
+      meta_ [property_ "og:type", content_ "article"]
+      meta_ [property_ "og:url", content_ (T.pack $ siteUrl ++ pageUrl)]
+      meta_ [property_ "og:title", content_ (T.pack title)]
+      meta_ [property_ "og:description", content_ (T.pack description)]
+      meta_ [property_ "og:site_name", content_ (T.pack siteTitle)]
+
+      mimage <- lookupMetaMaybe "image"
+      case mimage of
+           Just (StringField img) -> meta_ [property_ "og:image", content_ (T.pack img)]
+           _                      -> return ()
 
       title_ (toHtml title)
 

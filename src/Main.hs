@@ -187,20 +187,21 @@ postContext tags = localDateField   "date"          "%Y/%m/%d %R"
 siteContext :: Tags -> Context String
 siteContext tags = constField       "lang"              "ja"
                 <> constField       "site-title"        "Tosainu Lab"
-                <> constField       "site-description"  "todo"
+                <> constField       "site-description"  "とさいぬのブログです"
+                <> constField       "site-url"          "https://blog.myon.info"
                 <> constField       "copyright"         "© 2011-2018 Tosainu."
-                <> constField       "analytics"         "UA-57978655-1"
+                <> constField       "google-analytics"  "UA-57978655-1"
                 <> constField       "disqus"            "tosainu"
                 <> allTagsListField "all-tags"          tags
                 <> authorContext
                 <> defaultContext
 
 authorContext :: Context String
-authorContext    = constField       "name"          "Tosainu"
-                <> constField       "profile"       "Arch Linux, ごちうさ❤"
-                <> constField       "portfolio"     "https://myon.info"
-                <> constField       "avatar"        "https://www.gravatar.com/avatar/a8648d613afd1ec0c84bb04973c98ad2.png?s=256"
-                <> constField       "twitter"       "myon___"
+authorContext    = constField       "author-name"       "Tosainu"
+                <> constField       "author-profile"    "❤ Arch Linux, ごちうさ"
+                <> constField       "author-portfolio"  "https://myon.info"
+                <> constField       "author-avatar"     "https://myon.info/images/avatar.svg"
+                <> constField       "author-twitter"    "myon___"
 
 --- Compilers
 kaTeXFilter :: Item String -> Compiler (Item String)

@@ -6,7 +6,7 @@ module Main where
 import           Control.Monad
 import           Data.Char
 import qualified Data.HashMap.Strict     as HM
-import           Data.List               (isInfixOf)
+import           Data.List               (isInfixOf, find)
 import           Data.Maybe              (fromMaybe)
 import           Data.Monoid             ((<>))
 import           Hakyll
@@ -171,10 +171,18 @@ postContext :: Tags -> Context String
 postContext tags = localDateField   "date"          "%Y/%m/%d %R"
                 <> tagsListField    "tags"          tags
                 <> descriptionField "description"   150
+                <> imageField       "image"
                 <> siteContext tags
   where descriptionField key len = field key $
           return . escapeHtml . take len . unescapeHtml . stripTags . itemBody
         unescapeHtml = TS.fromTagText . head . TS.parseTags
+
+        imageField key = field key $ \item ->
+          case find isImageTag $ TS.parseTags $ itemBody item of
+               Just t  -> return $ TS.fromAttrib "src" t
+               Nothing -> return ""
+        isImageTag (TS.TagOpen "img" _) = True
+        isImageTag _                    = False
 
 siteContext :: Tags -> Context String
 siteContext tags = constField       "lang"              "ja"

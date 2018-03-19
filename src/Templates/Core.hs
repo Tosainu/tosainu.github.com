@@ -14,10 +14,10 @@ type LucidTemplateMonad a r = HtmlT (ReaderT (Context a, Item a) Compiler) r
 newtype LucidTemplate a = LucidTemplate { runLucidTemplate :: LucidTemplateMonad a () }
 
 applyLucidTemplate :: LucidTemplate a -> Context a -> Item a -> Compiler (Item String)
-applyLucidTemplate template context item = do
-  body <- TL.unpack <$> runReaderT (renderTextT (runLucidTemplate template)) (context', item)
+applyLucidTemplate tpl ctx item = do
+  body <- TL.unpack <$> runReaderT (renderTextT (runLucidTemplate tpl)) (ctx', item)
   return $ itemSetBody body item
-  where context' = context `mappend` missingField
+  where ctx' = ctx `mappend` missingField
 
 lookupMeta :: String -> LucidTemplateMonad a ContextField
 lookupMeta k = do

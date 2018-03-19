@@ -16,7 +16,7 @@ tags: Xperia NX
 
 ## 感想みたいなもの
 
-### Good <i class="fa fa-thumbs-up"></i>
+### Good :+1:
 
 * 性能[^1]
     * 特に1GB-RAMがつよい
@@ -31,7 +31,7 @@ tags: Xperia NX
 [^1]: とさいぬはXperia 2011がとても好きで, 現役で使っています
 [^2]: Sony Xperiaはあんまり好きじゃない
 
-### Bad <i class="fa fa-thumbs-down"></i>
+### Bad :-1:
 
 * タッチパネルの反応がイマイチ
     * 時に左下で軽いタップが長タップになる

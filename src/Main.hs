@@ -31,15 +31,17 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile copyFileCompiler
 
-  tags <- buildTags "entry/*/*/*/*/index.md" $
-    fromCapture "entry/tags/*/index.html" . sanitizeTagName
+  -- "entry/year/month/day/title/index.md"
+  let entryPattern      = "entry/*/*/*/*/index.md"
+      entryFilesPattern = "entry/*/*/*/*/**"
 
-  yearMonthArchives <- buildYearMonthArchives "entry/*/*/*/*/index.md" $
+  tags <- buildTags entryPattern $ fromCapture "entry/tags/*/index.html" . sanitizeTagName
+
+  yearMonthArchives <- buildYearMonthArchives entryPattern $
     \case Yearly   y     -> fromFilePath ("entry/" ++ y ++ "/index.html")
           Monthly (y, m) -> fromFilePath ("entry/" ++ y ++ "/" ++ m ++ "/index.html")
 
-  -- "entry/year/month/day/title/index.md"
-  match "entry/*/*/*/*/index.md" $ do
+  match entryPattern $ do
     route $ setExtension "html"
     compile $ do
       r <- pandocCompilerWith readerOptions writerOptions
@@ -47,8 +49,7 @@ main = hakyllWith hakyllConfig $ do
         >>= saveSnapshot "content"
         >>= applyLucidTemplate postTemplate (postContext tags)
 
-      recent <- fmap (take 5). recentFirst
-        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+      recent <- fmap (take 5). recentFirst =<< loadAllSnapshots entryPattern "content"
       let ctx = listField  "recent-posts" (postContext tags) (return recent)
              <> yearMonthArchiveField "archives" yearMonthArchives
              <> postContext tags
@@ -57,7 +58,7 @@ main = hakyllWith hakyllConfig $ do
         >>= cleanIndexHtmls
         >>= renderFontAwesome faIcons
 
-  match "entry/*/*/*/*/**" $ do
+  match entryFilesPattern $ do
     route idRoute
     compile copyFileCompiler
 
@@ -73,8 +74,7 @@ main = hakyllWith hakyllConfig $ do
       route idRoute
       compile $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        recent <- fmap (take 5) . recentFirst
-          =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+        recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
         let ctx = constField  "title"        title
                <> constField  "tag"          tag
                <> listField   "posts"        postContext'       (return posts)
@@ -103,8 +103,7 @@ main = hakyllWith hakyllConfig $ do
       route idRoute
       compile $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        recent <- fmap (take 5) . recentFirst
-          =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+        recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
         let ctx = constField  "title"         title
                 <> listField   "posts"        postContext'       (return posts)
                 <> listField   "recent-posts" (postContext tags) (return recent)
@@ -122,15 +121,14 @@ main = hakyllWith hakyllConfig $ do
           >>= renderFontAwesome faIcons
 
   entries <- buildPaginateWith (fmap (paginateEvery 5) . sortRecentFirst)
-                               "entry/*/*/*/*/index.md"
+                               entryPattern
                                (\n -> if n == 1 then fromFilePath "index.html"
                                                 else fromFilePath $ "page/" ++ show n ++ "/index.html")
   paginateRules entries $ \num pat -> do
     route idRoute
     compile $ do
       posts  <- recentFirst =<< loadAllSnapshots pat "content"
-      recent <- fmap (take 5) . recentFirst
-        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+      recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
       let ctx = constField  "title"        ""
              <> listField   "posts"        postContext'       (return posts)
              <> listField   "recent-posts" (postContext tags) (return recent)
@@ -148,8 +146,7 @@ main = hakyllWith hakyllConfig $ do
   create ["feed.xml"] $ do
     route idRoute
     compile $ do
-      posts <- fmap (take 20) . recentFirst
-        =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
+      posts <- fmap (take 20) . recentFirst =<< loadAllSnapshots entryPattern "content"
       renderAtom atomFeedConfig (postContext tags) posts
 
   match "stylesheets/*.scss" $ do

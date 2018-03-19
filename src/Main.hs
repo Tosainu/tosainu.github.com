@@ -169,6 +169,10 @@ main = hakyllWith hakyllConfig $ do
     route $ gsubRoute "node_modules/katex/dist/" (const "vendor/katex/")
     compile copyFileCompiler
 
+  match "node_modules/normalize.css/**" $ do
+    route $ gsubRoute "node_modules/" (const "vendor/")
+    compile copyFileCompiler
+
 --- Contexts
 postContext :: Tags -> Context String
 postContext tags = localDateField   "date"          "%Y/%m/%d %R"

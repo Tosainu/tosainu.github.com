@@ -1,23 +1,36 @@
-# use container-based infrastructure
-sudo: false
+sudo: required
 dist: trusty
 
-# Ruby configuration
-language: ruby
-rvm:
-  - 2.4.2
-cache: bundler
-bundler_args: --without development --jobs=3 --retry=3
+language: generic
 
 env:
   global:
     - secure: "Xu1MkJQb95pkBOhRFJKn20zGe81SR1zbYoTMNATB6YmM5VOQqkjQCnp66tqbUkuxapIU2/vSDXRJZH9PVd1eEAy2DfK8mjUQnRJmqq5c1hm4wwcQttWDwrLPrRDLy/oEunH+SnSa3oID3fiXddSzPaxA/rb1sIyYrUEMgtfOkdo="
 
+before_install:
+  - |
+    mkdir -p ~/.local/bin
+    export PATH=$HOME/.local/bin:$PATH
+    travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | \
+      tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
+    stack --version
+
+install:
+  - |
+    stack --no-terminal --install-ghc setup
+    stack --no-terminal exec ghc -- --version
+  - |
+    nvm install node
+    nvm use node
+    node --version
+  - npm install
+
 before_script:
-  - git clone --quiet -b gh-pages https://github.com/Tosainu/blog.git build
+  - git clone --no-checkout -b gh-pages https://github.com/Tosainu/blog.git build
 
 script:
-  - bundle exec middleman build
+  - stack --no-terminal build
+  - stack --no-terminal exec blog build
 
 after_success:
   - |
@@ -34,4 +47,13 @@ after_success:
       >> ~/.ssh/config
 
     # deploy!
-    bundle exec middleman deploy
+    cd build
+    git add -A
+    git co --allow-empty --allow-empty-message -m ''
+    git push origin gh-pages
+
+cache:
+  directories:
+    - $HOME/.stack
+    - .stack-work
+    - node_modules

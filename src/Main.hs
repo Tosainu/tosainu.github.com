@@ -127,7 +127,8 @@ main = hakyllWith hakyllConfig $ do
       posts  <- recentFirst =<< loadAllSnapshots pat "content"
       recent <- fmap (take 5) . recentFirst
         =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
-      let ctx = listField   "posts"        postContext'       (return posts)
+      let ctx = constField  "title"        ""
+             <> listField   "posts"        postContext'       (return posts)
              <> listField   "recent-posts" (postContext tags) (return recent)
              <> yearMonthArchiveField "archives" yearMonthArchives faIcons
              <> paginateContext entries num
@@ -232,8 +233,8 @@ loadFontAwesomeIcons = preprocess $
   parseFontAwesomeIcons <$> readProcess fontAwesomeJS ["list"] []
 
 sanitizeTagName :: String -> String
-sanitizeTagName = map (\x -> if isSpace x then '-' else toLower x) .
-                  filter (liftM2 (||) isAlphaNum isSpace)
+sanitizeTagName = map (\x -> if x == ' ' then '-' else toLower x) .
+                  filter (liftM2 (||) isAlphaNum (`elem` [' ', '-', '_']))
 
 --- Configurations
 hakyllConfig :: Configuration
@@ -248,7 +249,7 @@ hakyllConfig = defaultConfiguration
 atomFeedConfig :: FeedConfiguration
 atomFeedConfig = FeedConfiguration
   { feedTitle       = "Tosainu Lab"
-  , feedDescription = "todo"
+  , feedDescription = "とさいぬのブログです"
   , feedAuthorName  = "Tosainu"
   , feedAuthorEmail = "tosainu.maple@gmail.com"
   , feedRoot        = "https://blog.myon.info"

@@ -1,7 +1,12 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards   #-}
 
-module Templates.FontAwesome where
+module Templates.FontAwesome
+  ( FontAwesomeIcons
+  , fontawesome
+  , fontawesome'
+  , parseFontAwesomeIcons
+  ) where
 
 import           Data.Aeson
 import qualified Data.ByteString.Lazy.Char8 as BSL

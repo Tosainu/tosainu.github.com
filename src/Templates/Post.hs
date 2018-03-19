@@ -59,16 +59,12 @@ shareButtonsTemplate icons = LucidTemplate $ do
   aside_ [class_ "share"] $ do
     StringField twitter <- lookupMeta "author-twitter"
     a_ [ classes_ ["share-button", "twitter"]
-       , target_ "_blank"
-       , rel_ "nofollow noopener"
        , href_ (T.pack $ "https://twitter.com/share?text=" ++ title ++ "&via=" ++ twitter)
        ] $ do
       with (fontawesome' icons "fab" "twitter") [class_ "fa-lg"]
       span_ "Twitter"
 
     a_ [ classes_ ["share-button", "hatena"]
-       , target_ "_blank"
-       , rel_ "nofollow noopener"
        , href_ (T.pack $
            "http://b.hatena.ne.jp/add?mode=confirm&url=" ++ url ++ "&title=" ++ title)
        ] $ do
@@ -76,16 +72,12 @@ shareButtonsTemplate icons = LucidTemplate $ do
       span_ "hatena"
 
     a_ [ classes_ ["share-button", "google-plus"]
-       , target_ "_blank"
-       , rel_ "nofollow noopener"
        , href_ (T.pack $ "https://plusone.google.com/_/+1/confirm?url=" ++ url)
        ] $ do
       with (fontawesome' icons "fab" "google-plus-g") [class_ "fa-lg"]
       span_ "Google+"
 
     a_ [ classes_ ["share-button", "pocket"]
-       , target_ "_blank"
-       , rel_ "nofollow noopener"
        , href_ (T.pack $ "https://getpocket.com/save?url=" ++ url)
        ] $ do
       with (fontawesome' icons "fab" "get-pocket") [class_ "fa-lg"]

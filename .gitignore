@@ -5,3 +5,4 @@
 /vendor/bundle
 /.stack-work
 *.cabal
+/node_modules

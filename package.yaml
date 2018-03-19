@@ -27,8 +27,8 @@ dependencies:
   - text
   - time
   - transformers
-  - uri-encode
   - unordered-containers
+  - uri-encode
   - vector
 
 executables:

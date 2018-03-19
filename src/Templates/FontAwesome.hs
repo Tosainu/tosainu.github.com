@@ -24,8 +24,7 @@ instance FromJSON Element where
     children   <- o .:? "children" .!= []
     return Element {..}
 
-    where objectToAttributes = map (uncurry makeAttribute) . HM.toList . HM.map appendSpace
-          appendSpace = flip T.append " "
+    where objectToAttributes = map (uncurry makeAttribute) . HM.toList
 
 -- FontAwesomeIcons [(prefix, [(name, icon-meta)])]
 type FontAwesomeIcons = HM.HashMap T.Text (HM.HashMap T.Text Element)

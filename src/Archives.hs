@@ -92,8 +92,8 @@ yearMonthArchiveField key archives icons = field key $ \_ -> fmap TL.unpack $ re
                , id_ (T.pack $ "tree-label-" ++ y) ]
         label_ [ class_ "tree-toggle-button"
                , for_ (T.pack $ "tree-label-" ++ y) ] $ do
-          with (fontawesome' icons "fas" "angle-right") [class_ "fa-fw"]
-          with (fontawesome' icons "fas" "angle-down")  [class_ "fa-fw"]
+          with (fontawesome' icons "fas" "angle-right") [class_ " fa-fw"]
+          with (fontawesome' icons "fas" "angle-down")  [class_ " fa-fw"]
           a_ [href_ (T.pack yurl)] $
             toHtml $ y ++ " (" ++ show (length yids) ++ ")"
 

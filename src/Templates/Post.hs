@@ -15,7 +15,7 @@ postTemplate :: FontAwesomeIcons -> LucidTemplate a
 postTemplate icons = LucidTemplate $ do
   StringField body <- lookupMeta "body"
 
-  main_ [class_ "post", role_ "main"] $
+  main_ [class_ "post"] $
     article_ $ do
       header_ [class_ "post-header"] $
         div_ [class_ "container"] $

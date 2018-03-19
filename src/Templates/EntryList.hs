@@ -17,7 +17,7 @@ entryListTemplate :: FontAwesomeIcons -> LucidTemplate a
 entryListTemplate icons = LucidTemplate $ do
   StringField body <- lookupMeta "body"
 
-  main_ [class_ "list", role_ "main"] $ do
+  main_ [class_ "list"] $ do
     if body == "" then return () else
       aside_ [class_ "filter"] $
         div_ [class_ "container"] $

@@ -5,21 +5,20 @@ module Main where
 
 import           Control.Monad
 import           Data.Char
-import qualified Data.HashMap.Strict     as HM
-import           Data.List               (isInfixOf, find)
+import           Data.List               (find)
 import           Data.Maybe              (fromMaybe)
 import           Data.Monoid             ((<>))
 import           Hakyll
 import           Hakyll.Web.Sass
 import qualified Skylighting.Format.HTML as SL
 import qualified Skylighting.Styles      as SL
-import           System.FilePath
 import           System.Process          (readProcess)
 import qualified Text.HTML.TagSoup       as TS
 import           Text.Pandoc.Extensions
 import           Text.Pandoc.Options
 
 import           Archives
+import           Compiler
 import           LocalTime
 import           Templates
 
@@ -210,28 +209,6 @@ authorContext    = constField       "author-name"       "Tosainu"
                 <> constField       "author-avatar"     "https://myon.info/images/avatar.svg"
                 <> constField       "author-twitter"    "myon___"
 
---- Compilers
-kaTeXFilter :: Item String -> Compiler (Item String)
-kaTeXFilter item = do
-  metadata <- getMetadata $ itemIdentifier item
-  if HM.member "math" metadata then withItemBody (unixFilter kaTeXJS []) item
-                               else return item
-
-cleanIndexHtmls :: Item String -> Compiler (Item String)
-cleanIndexHtmls = return . fmap (withUrls removeIndexHtml)
-  where removeIndexHtml path
-          | not (path `isInfixOf` "://") && takeFileName path == "index.html"
-                      = dropFileName path
-          | otherwise = path
-
-modifyExternalLinkAttributes :: Item String -> Compiler (Item String)
-modifyExternalLinkAttributes = return . fmap (withTags f)
-  where f t | isExternalLink t = let (TS.TagOpen "a" as) = t
-                                 in  (TS.TagOpen "a" $ as <> extraAttributs)
-            | otherwise        = t
-        isExternalLink = liftM2 (&&) (TS.isTagOpenName "a") (isExternal . TS.fromAttrib "href")
-        extraAttributs = [("target", "_blank"), ("rel", "nofollow noopener")]
-
 --- Misc
 loadFontAwesomeIcons :: Rules (Maybe FontAwesomeIcons)
 loadFontAwesomeIcons = preprocess $
@@ -272,9 +249,6 @@ writerOptions :: WriterOptions
 writerOptions = defaultHakyllWriterOptions
   { writerHTMLMathMethod = KaTeX ""
   }
-
-kaTeXJS :: FilePath
-kaTeXJS = "tools/katex.js"
 
 fontAwesomeJS :: FilePath
 fontAwesomeJS = "tools/fontawesome.js"

@@ -16,6 +16,7 @@ import qualified Skylighting.Styles      as SL
 import           System.FilePath
 import           System.Process          (readProcess)
 import qualified Text.HTML.TagSoup       as TS
+import           Text.Pandoc.Extensions
 import           Text.Pandoc.Options
 
 import           Archives
@@ -257,10 +258,10 @@ atomFeedConfig = FeedConfiguration
 
 readerOptions :: ReaderOptions
 readerOptions = defaultHakyllReaderOptions
-  { readerExtensions = readerExtensions defaultHakyllReaderOptions
-                    <> extensionsFromList [ Ext_east_asian_line_breaks
-                                          , Ext_emoji
-                                          ]
+  { readerExtensions = enableExtension  Ext_east_asian_line_breaks $
+                       enableExtension  Ext_emoji $
+                       disableExtension Ext_citations $
+                       readerExtensions defaultHakyllReaderOptions
   }
 
 writerOptions :: WriterOptions

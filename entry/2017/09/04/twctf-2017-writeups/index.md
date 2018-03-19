@@ -45,16 +45,16 @@ x86-64 の ELF。libc 配布有り。
 主な機能はこんな感じ。
 
 1. add a new note
-  - 指定されたサイズ (`size > 0x7f`) の領域を`malloc`で確保する
-  - 領域のアドレスを配列`list`の空いているところに格納する
-  - 確保した領域に`read`で指定されたサイズ分読み込む
+    - 指定されたサイズ (`size > 0x7f`) の領域を`malloc`で確保する
+    - 領域のアドレスを配列`list`の空いているところに格納する
+    - 確保した領域に`read`で指定されたサイズ分読み込む
 2. delete the note
-  - 指定された領域を`free`する
-  - 対応する`list`の要素を`NULL`にする
+    - 指定された領域を`free`する
+    - 対応する`list`の要素を`NULL`にする
 3. show the note
-  - 指定された領域を**`puts`で表示する**
+    - 指定された領域を**`puts`で表示する**
 4. edit the note
-  - 指定された領域に**`strlen`の返した文字数分`read`で上書きする**
+    - 指定された領域に**`strlen`の返した文字数分`read`で上書きする**
 
 "4. edit the note" で`strlen`した文字数も読めるので、バッファを全て埋めておけば**隣のチャンクの`size`が書き換え可能**になる。これを利用し、`free`済みチャンクの`size`書き換え ➡ unsafe unlink attack ➡ GOT overwrite という感じで解いた。
 

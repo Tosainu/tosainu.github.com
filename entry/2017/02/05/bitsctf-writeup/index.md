@@ -129,7 +129,7 @@ log.success('Flag: %s' % r.recv())
 1. `srand(time(0))`
 2. `rand() & 0xf`
 3. `scanf("%d")` して 2 の値と比較
-  - 違ってたら `exit(0)`
+    - 違ってたら `exit(0)`
 4. 2-3 を30回繰り返す
 5. `./flag` を `open()` -> `read()` -> `printf()`
 

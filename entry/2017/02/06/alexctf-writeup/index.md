@@ -161,8 +161,8 @@ Wireshark で一番大きな Frame を見たら png 画像が入ってて, そ�
 
 1. `argv[1]` を `std::string` にする
 2. (1) の文字列を何らかの規則で内部の文字列と比較
-  - (文字数足りなくても) OK だったら `"You should have the flag by now"`
-  - NG だったら `"Better luck next time"`
+    - (文字数足りなくても) OK だったら `"You should have the flag by now"`
+    - NG だったら `"Better luck next time"`
 
 という感じだったので, `"You should have the flag by now"` になる入力を `/ALEXCTF{[A-Za-z0-9_]*}/` にマッチするまで増やしていけばok. 昔似たようなスクリプトを書いたのが残ってたのでそれを流用した.
 

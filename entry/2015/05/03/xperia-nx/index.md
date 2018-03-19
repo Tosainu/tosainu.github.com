@@ -19,9 +19,9 @@ tags: Xperia NX
 ### Good <i class="fa fa-thumbs-up"></i>
 
 * 性能[^1]
-  * 特に1GB-RAMがつよい
-  * アプリ等が入るストレージにも余裕があって良い
-  * Android版Chromeがちゃんと動いてくれる
+    * 特に1GB-RAMがつよい
+    * アプリ等が入るストレージにも余裕があって良い
+    * Android版Chromeがちゃんと動いてくれる
 * Floating Prismがおもしろい
 * カメラが出っ張っていない
 * 画面広い
@@ -34,15 +34,15 @@ tags: Xperia NX
 ### Bad <i class="fa fa-thumbs-down"></i>
 
 * タッチパネルの反応がイマイチ
-  * 時に左下で軽いタップが長タップになる
-  * 充電中は更に悪化
+    * 時に左下で軽いタップが長タップになる
+    * 充電中は更に悪化
 * 画面の一部に黄ばみ発生
 * 若干大きい
 * 裏蓋開くならバッテリーも交換可にしてほしい
 * システムが弄りにくい
-  * BootloaderのUnlock不可
-  * Custom Recoveryを/systemに入れなきゃいけない[^3]
-  * 修正を加えたシステムアプリ(SystemUi.apk等)を導入した状態でfactory resetを掛けると死ぬことがある(????)
+    * BootloaderのUnlock不可
+    * Custom Recoveryを/systemに入れなきゃいけない[^3]
+    * 修正を加えたシステムアプリ(SystemUi.apk等)を導入した状態でfactory resetを掛けると死ぬことがある(????)
 * XDA等のフォーラムがあんまり盛り上がっていない(Xperia 2011比)
 
 [^3]: つまりformat /systemするたびに入れなおさなきゃいけなくなる

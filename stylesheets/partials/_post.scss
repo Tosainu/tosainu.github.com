@@ -92,6 +92,10 @@
     border-top: 0;
   }
 
+  figure figcaption {
+    display: none;
+  }
+
   img {
     display: block;
     margin-left: auto;
@@ -109,7 +113,7 @@
     padding: 1em;
   }
 
-  :not(pre) > code {
+  p code {
     background: $light-gray;
     font-size: .9em;
     padding: .2em .4em;

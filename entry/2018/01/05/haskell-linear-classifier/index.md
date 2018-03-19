@@ -20,10 +20,10 @@ math: true
 - Arch Linux
 - Stack (Version 1.6.1)
 - LTS Haskell 9.18 (ghc-8.0.2)
-  - Chart-1.8.2
-  - hmatrix-0.18.0.0
-  - hmatrix-gsl-0.18.0.1
-  - random-1.1
+    - Chart-1.8.2
+    - hmatrix-0.18.0.0
+    - hmatrix-gsl-0.18.0.1
+    - random-1.1
 
 ## 雑なデータセットを作る
 

@@ -1,20 +1,26 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards   #-}
 
-module Templates.FontAwesome
+module FontAwesome
   ( FontAwesomeIcons
   , fontawesome
   , fontawesome'
   , parseFontAwesomeIcons
+  , renderFontAwesome
   ) where
 
 import           Data.Aeson
 import qualified Data.ByteString.Lazy.Char8 as BSL
 import qualified Data.HashMap.Strict        as HM
-import           Data.Maybe                 (fromJust)
-import           Data.Monoid                (mconcat)
+import           Data.Maybe
 import qualified Data.Text                  as T
+import qualified Data.Text.Lazy             as TL
+import           Hakyll
 import           Lucid.Base
+import           Lucid.Html5
+import qualified Text.HTML.TagSoup.Tree     as TS
+
+import           Compiler                   (tagSoupOption)
 
 data Element = Element { tag        :: T.Text
                        , attributes :: [Attribute]
@@ -46,3 +52,22 @@ toLucid = termWith <$> tag <*> attributes <*> children'
 
 parseFontAwesomeIcons :: String -> Maybe FontAwesomeIcons
 parseFontAwesomeIcons = decode . BSL.pack
+
+renderFontAwesome :: FontAwesomeIcons -> Item String -> Compiler (Item String)
+renderFontAwesome icons = return . fmap
+    (TS.renderTreeOptions tagSoupOption . TS.transformTree renderFontAwesome' . TS.parseTree)
+  where
+    renderFontAwesome' tag@(TS.TagBranch "i" as []) =
+      case toFontAwesome $ classes as of
+           Just html -> TS.parseTree $ TL.unpack $ renderText html
+           Nothing   -> [tag]
+    renderFontAwesome' tag = [tag]
+
+    toFontAwesome (prefix:('f':'a':'-':name):cs) =
+      let prefix'  = T.pack prefix
+          name'    = T.pack name
+          classes' = T.pack $ " " ++ unwords cs
+      in  fmap (`with` [class_ classes']) (fontawesome icons prefix' name')
+    toFontAwesome _ = Nothing
+
+    classes = words . fromMaybe "" . lookup "class"

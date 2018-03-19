@@ -17,7 +17,6 @@ import           Lucid.Base
 import           Lucid.Html5
 
 import           LocalTime
-import           Templates.FontAwesome
 
 data Archives k = Archives
                 { archivesMap        :: [(k, [Identifier])]
@@ -77,8 +76,8 @@ getYear identifier = Time.formatTime defaultTimeLocale "%Y" <$> getItemLocalTime
 getMonth :: MonadMetadata m => Identifier -> m String
 getMonth identifier = Time.formatTime defaultTimeLocale "%m" <$> getItemLocalTime identifier
 
-yearMonthArchiveField :: String -> Archives YearMonthKey -> FontAwesomeIcons -> Context a
-yearMonthArchiveField key archives icons = field key $ \_ -> fmap TL.unpack $ renderTextT $
+yearMonthArchiveField :: String -> Archives YearMonthKey -> Context a
+yearMonthArchiveField key archives = field key $ \_ -> fmap TL.unpack $ renderTextT $
   ul_ [class_ "archive-tree"] $ do
     let archives' = groupBy (isSameYear `on` fst) $
                     sortBy  (flip compare `on` fst) $ archivesMap archives
@@ -92,8 +91,8 @@ yearMonthArchiveField key archives icons = field key $ \_ -> fmap TL.unpack $ re
                , id_ (T.pack $ "tree-label-" ++ y) ]
         label_ [ class_ "tree-toggle-button"
                , for_ (T.pack $ "tree-label-" ++ y) ] $ do
-          with (fontawesome' icons "fas" "angle-right") [class_ " fa-fw"]
-          with (fontawesome' icons "fas" "angle-down")  [class_ " fa-fw"]
+          i_ [classes_ ["fas", "fa-angle-right", "fa-fw"]] ""
+          i_ [classes_ ["fas", "fa-angle-down", "fa-fw"]] ""
           a_ [href_ (T.pack yurl)] $
             toHtml $ y ++ " (" ++ show (length yids) ++ ")"
 

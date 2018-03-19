@@ -19,6 +19,7 @@ import           Text.Pandoc.Options
 
 import           Archives
 import           Compiler
+import           FontAwesome
 import           LocalTime
 import           Templates
 
@@ -44,16 +45,17 @@ main = hakyllWith hakyllConfig $ do
       r <- pandocCompilerWith readerOptions writerOptions
         >>= kaTeXFilter
         >>= saveSnapshot "content"
-        >>= applyLucidTemplate (postTemplate faIcons) (postContext tags)
+        >>= applyLucidTemplate postTemplate (postContext tags)
 
       recent <- fmap (take 5). recentFirst
         =<< loadAllSnapshots "entry/*/*/*/*/index.md" "content"
       let ctx = listField  "recent-posts" (postContext tags) (return recent)
-             <> yearMonthArchiveField "archives" yearMonthArchives faIcons
+             <> yearMonthArchiveField "archives" yearMonthArchives
              <> postContext tags
-      applyLucidTemplate (defaultTemplate faIcons) ctx r
+      applyLucidTemplate defaultTemplate ctx r
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
+        >>= renderFontAwesome faIcons
 
   match "entry/*/*/*/*/**" $ do
     route idRoute
@@ -77,16 +79,17 @@ main = hakyllWith hakyllConfig $ do
                <> constField  "tag"          tag
                <> listField   "posts"        postContext'       (return posts)
                <> listField   "recent-posts" (postContext tags) (return recent)
-               <> yearMonthArchiveField "archives" yearMonthArchives faIcons
+               <> yearMonthArchiveField "archives" yearMonthArchives
                <> paginateContext tagPages num
                <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
             title = "Tag archives: " ++ tag
         makeItem title
-          >>= applyLucidTemplate (entryListTemplate faIcons) ctx
-          >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+          >>= applyLucidTemplate entryListTemplate ctx
+          >>= applyLucidTemplate defaultTemplate   ctx
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
+          >>= renderFontAwesome faIcons
 
   archivesRules yearMonthArchives $ \key pat -> do
     let grouper  = fmap (paginateEvery 5) . sortRecentFirst
@@ -105,17 +108,18 @@ main = hakyllWith hakyllConfig $ do
         let ctx = constField  "title"         title
                 <> listField   "posts"        postContext'       (return posts)
                 <> listField   "recent-posts" (postContext tags) (return recent)
-                <> yearMonthArchiveField "archives" yearMonthArchives faIcons
+                <> yearMonthArchiveField "archives" yearMonthArchives
                 <> paginateContext ymaPages num
                 <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
             title = case key of Yearly  _ -> "Yearly archives: "  ++ key'
                                 Monthly _ -> "Monthly archives: " ++ key'
         makeItem title
-          >>= applyLucidTemplate (entryListTemplate faIcons) ctx
-          >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+          >>= applyLucidTemplate entryListTemplate ctx
+          >>= applyLucidTemplate defaultTemplate   ctx
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
+          >>= renderFontAwesome faIcons
 
   entries <- buildPaginateWith (fmap (paginateEvery 5) . sortRecentFirst)
                                "entry/*/*/*/*/index.md"
@@ -130,15 +134,16 @@ main = hakyllWith hakyllConfig $ do
       let ctx = constField  "title"        ""
              <> listField   "posts"        postContext'       (return posts)
              <> listField   "recent-posts" (postContext tags) (return recent)
-             <> yearMonthArchiveField "archives" yearMonthArchives faIcons
+             <> yearMonthArchiveField "archives" yearMonthArchives
              <> paginateContext entries num
              <> siteContext tags
           postContext' = teaserField "teaser" "content" <> postContext tags
       makeItem ""
-        >>= applyLucidTemplate (entryListTemplate faIcons) ctx
-        >>= applyLucidTemplate (defaultTemplate faIcons)   ctx
+        >>= applyLucidTemplate entryListTemplate ctx
+        >>= applyLucidTemplate defaultTemplate   ctx
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
+        >>= renderFontAwesome faIcons
 
   create ["feed.xml"] $ do
     route idRoute

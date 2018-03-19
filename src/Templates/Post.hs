@@ -2,35 +2,34 @@
 
 module Templates.Post where
 
-import qualified Data.Text             as T
+import qualified Data.Text          as T
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
-import qualified Network.URI.Encode    as URI
+import qualified Network.URI.Encode as URI
 
 import           Templates.Core
-import           Templates.FontAwesome
 
-postTemplate :: FontAwesomeIcons -> LucidTemplate a
-postTemplate icons = LucidTemplate $ do
+postTemplate :: LucidTemplate a
+postTemplate = LucidTemplate $ do
   StringField body <- lookupMeta "body"
 
   main_ [class_ "post"] $
     article_ $ do
       header_ [class_ "post-header"] $
         div_ [class_ "container"] $
-          runLucidTemplate $ postHeaderTemplate icons
+          runLucidTemplate postHeaderTemplate
 
       div_ [class_ "container"] $ do
         div_ [class_ "post-contents"] $
           toHtmlRaw body
 
-        runLucidTemplate $ shareButtonsTemplate icons
+        runLucidTemplate shareButtonsTemplate
         runLucidTemplate disqusTemplate
         runLucidTemplate entryNavigationTeplate
 
-postHeaderTemplate :: FontAwesomeIcons -> LucidTemplate a
-postHeaderTemplate icons = LucidTemplate $ do
+postHeaderTemplate :: LucidTemplate a
+postHeaderTemplate = LucidTemplate $ do
   StringField date  <- lookupMeta "date"
   StringField tags  <- lookupMeta "tags"
   StringField title <- lookupMeta "title"
@@ -40,14 +39,14 @@ postHeaderTemplate icons = LucidTemplate $ do
     a_ [href_ (T.pack url), title_ (T.pack title)] $ toHtml title
 
   ul_ [class_ "post-meta"] $ do
-    li_                 $ fontawesome' icons "fas" "calendar-alt"
+    li_                 $ i_ [classes_ ["fas", "fa-calendar-alt"]] ""
     li_ [class_ "date"] $ toHtml date
-    li_                 $ fontawesome' icons "fas" "tags"
+    li_                 $ i_ [classes_ ["fas", "fa-tags"]] ""
     li_ $
       ul_ [class_ "tag-list"] $ toHtmlRaw tags
 
-shareButtonsTemplate :: FontAwesomeIcons -> LucidTemplate a
-shareButtonsTemplate icons = LucidTemplate $ do
+shareButtonsTemplate :: LucidTemplate a
+shareButtonsTemplate = LucidTemplate $ do
   StringField pageTitle <- lookupMeta "title"
   StringField pageUrl   <- lookupMeta "url"
   StringField siteTitle <- lookupMeta "site-title"
@@ -61,7 +60,7 @@ shareButtonsTemplate icons = LucidTemplate $ do
     a_ [ classes_ ["share-button", "twitter"]
        , href_ (T.pack $ "https://twitter.com/share?text=" ++ title ++ "&via=" ++ twitter)
        ] $ do
-      with (fontawesome' icons "fab" "twitter") [class_ "fa-lg"]
+      i_ [classes_ ["fab", "fa-twitter", "fa-lg"]] ""
       span_ "Twitter"
 
     a_ [ classes_ ["share-button", "hatena"]
@@ -74,13 +73,13 @@ shareButtonsTemplate icons = LucidTemplate $ do
     a_ [ classes_ ["share-button", "google-plus"]
        , href_ (T.pack $ "https://plusone.google.com/_/+1/confirm?url=" ++ url)
        ] $ do
-      with (fontawesome' icons "fab" "google-plus-g") [class_ "fa-lg"]
+      i_ [classes_ ["fab", "fa-google-plus-g", "fa-lg"]] ""
       span_ "Google+"
 
     a_ [ classes_ ["share-button", "pocket"]
        , href_ (T.pack $ "https://getpocket.com/save?url=" ++ url)
        ] $ do
-      with (fontawesome' icons "fab" "get-pocket") [class_ "fa-lg"]
+      i_ [classes_ ["fab", "fa-get-pocket", "fa-lg"]] ""
       span_ "Pocket"
 
 disqusTemplate :: LucidTemplate a

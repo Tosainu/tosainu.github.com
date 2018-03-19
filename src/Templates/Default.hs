@@ -10,10 +10,9 @@ import           Lucid.Base
 import           Lucid.Html5
 
 import           Templates.Core
-import           Templates.FontAwesome
 
-defaultTemplate :: FontAwesomeIcons -> LucidTemplate a
-defaultTemplate icons = LucidTemplate $ do
+defaultTemplate :: LucidTemplate a
+defaultTemplate = LucidTemplate $ do
   -- page infoemations
   StringField body      <- lookupMeta "body"
   StringField copyright <- lookupMeta "copyright"
@@ -92,7 +91,7 @@ defaultTemplate icons = LucidTemplate $ do
             div_ [class_ "col"] $ do
               section_ [class_ "about-me"] $ do
                 h4_ $ do
-                  with (fontawesome' icons "fas" "user") [class_ "fa-fw"]
+                  i_ [classes_ ["fas", "fa-user", "fa-fw"]] ""
                   " About Me"
                 div_ [class_ "about"] $ do
                   div_ [class_ "avatar"] $
@@ -103,7 +102,7 @@ defaultTemplate icons = LucidTemplate $ do
 
               section_ [class_ "recent-posts"] $ do
                 h4_ $ do
-                  with (fontawesome' icons "fas" "file-alt") [class_ "fa-fw"]
+                  i_ [classes_ ["fas", "fa-file-alt", "fa-fw"]] ""
                   " Recent Posts"
                 ul_ $ do
                   ListField ctx items <- lookupMeta "recent-posts"
@@ -115,13 +114,13 @@ defaultTemplate icons = LucidTemplate $ do
 
             section_ [class_ "tag-cloud"] $ do
               h4_ $ do
-                with (fontawesome' icons "fas" "tags") [class_ "fa-fw"]
+                i_ [classes_ ["fas", "fa-tags", "fa-fw"]] ""
                 " Tags"
               ul_ [class_ "tag-list"] $ toHtmlRaw allTags
 
             section_ [class_ "archives"] $ do
               h4_ $ do
-                with (fontawesome' icons "fas" "archive") [class_ "fa-fw"]
+                i_ [classes_ ["fas", "fa-archive", "fa-fw"]] ""
                 " Archives"
               toHtmlRaw archives
 

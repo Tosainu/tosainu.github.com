@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Templates.EntryList where
+module Template.EntryList where
 
 import           Control.Monad
 import           Data.Maybe
@@ -9,8 +9,8 @@ import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
 
-import           Templates.Core
-import           Templates.Post
+import           Template.Core
+import           Template.Post
 
 entryListTemplate :: LucidTemplate a
 entryListTemplate = LucidTemplate $ do

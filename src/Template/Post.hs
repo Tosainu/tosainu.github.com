@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Templates.Post where
+module Template.Post where
 
 import qualified Data.Text          as T
 import           Hakyll
@@ -8,7 +8,7 @@ import           Lucid.Base
 import           Lucid.Html5
 import qualified Network.URI.Encode as URI
 
-import           Templates.Core
+import           Template.Core
 
 postTemplate :: LucidTemplate a
 postTemplate = LucidTemplate $ do

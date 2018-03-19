@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Templates.Default where
+module Template.Default where
 
 import           Control.Monad
 import           Data.List
@@ -9,7 +9,7 @@ import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
 
-import           Templates.Core
+import           Template.Core
 
 defaultTemplate :: LucidTemplate a
 defaultTemplate = LucidTemplate $ do

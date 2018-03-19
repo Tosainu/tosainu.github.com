@@ -1,4 +1,4 @@
-module Templates.Tags
+module TagField
   ( tagsListField
   , allTagsListField
   ) where

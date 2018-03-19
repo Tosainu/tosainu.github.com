@@ -1,4 +1,4 @@
-module Templates.Core where
+module Template.Core where
 
 import           Control.Monad.Except         (MonadError (..))
 import           Control.Monad.Trans.Class

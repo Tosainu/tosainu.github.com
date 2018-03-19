@@ -21,7 +21,8 @@ import           Archives
 import           Compiler
 import           FontAwesome
 import           LocalTime
-import           Templates
+import           TagField
+import           Template
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do

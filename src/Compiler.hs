@@ -11,8 +11,8 @@ import           Hakyll
 import           System.FilePath
 import qualified Text.HTML.TagSoup   as TS
 
-kaTeXFilter :: Item String -> Compiler (Item String)
-kaTeXFilter item = do
+renderKaTeX :: Item String -> Compiler (Item String)
+renderKaTeX item = do
   metadata <- getMetadata $ itemIdentifier item
   if HM.member "math" metadata then withItemBody (unixFilter  "tools/katex.js" []) item
                                else return item

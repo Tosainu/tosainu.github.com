@@ -47,7 +47,7 @@ main = hakyllWith hakyllConfig $ do
     route $ setExtension "html"
     compile $ do
       r <- pandocCompilerWith readerOptions writerOptions
-        >>= kaTeXFilter
+        >>= renderKaTeX
         >>= saveSnapshot "content"
         >>= applyLucidTemplate postTemplate (postContext tags)
 

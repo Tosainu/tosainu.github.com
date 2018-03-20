@@ -12,6 +12,7 @@ import           Hakyll
 import           Hakyll.Web.Sass
 import qualified Skylighting.Format.HTML as SL
 import qualified Skylighting.Styles      as SL
+import           System.FilePath
 import           System.Process          (readProcess)
 import qualified Text.HTML.TagSoup       as TS
 import           Text.Pandoc.Extensions
@@ -39,8 +40,8 @@ main = hakyllWith hakyllConfig $ do
   tags <- buildTags entryPattern $ fromCapture "entry/tags/*/index.html" . sanitizeTagName
 
   yearMonthArchives <- buildYearMonthArchives entryPattern $
-    \case Yearly   y     -> fromFilePath ("entry/" ++ y ++ "/index.html")
-          Monthly (y, m) -> fromFilePath ("entry/" ++ y ++ "/" ++ m ++ "/index.html")
+    \case Yearly   y     -> fromFilePath ("entry" </> y </> "index.html")
+          Monthly (y, m) -> fromFilePath ("entry" </> y </> m </> "index.html")
 
   match entryPattern $ do
     route $ setExtension "html"
@@ -67,8 +68,8 @@ main = hakyllWith hakyllConfig $ do
     let grouper  = fmap (paginateEvery 5) . sortRecentFirst
         tag'     = sanitizeTagName tag
         makeId n = fromFilePath $
-                     if n == 1 then "entry/tags/" ++ tag' ++ "/index.html"
-                               else "entry/tags/" ++ tag' ++ "/page/" ++ show n ++ "/index.html"
+                     if n == 1 then "entry" </> "tags" </> tag' </> "index.html"
+                               else "entry" </> "tags" </> tag' </> "page" </> show n </> "index.html"
     tagPages <- buildPaginateWith grouper pat makeId
 
     paginateRules tagPages $ \num pat' -> do
@@ -95,10 +96,10 @@ main = hakyllWith hakyllConfig $ do
   archivesRules yearMonthArchives $ \key pat -> do
     let grouper  = fmap (paginateEvery 5) . sortRecentFirst
         key'     = case key of Yearly   y     -> y
-                               Monthly (y, m) -> y ++ "/" ++ m
+                               Monthly (y, m) -> y </> m
         makeId n = fromFilePath $
-                     if n == 1 then "entry/" ++ key' ++ "/index.html"
-                               else "entry/" ++ key' ++ "/page/" ++ show n ++ "/index.html"
+                     if n == 1 then "entry" </> key' </> "index.html"
+                               else "entry" </> key' </> "page" </> show n </> "index.html"
     ymaPages <- buildPaginateWith grouper pat makeId
     paginateRules ymaPages $ \num pat' -> do
       route idRoute
@@ -124,7 +125,7 @@ main = hakyllWith hakyllConfig $ do
   entries <- buildPaginateWith (fmap (paginateEvery 5) . sortRecentFirst)
                                entryPattern
                                (\n -> if n == 1 then fromFilePath "index.html"
-                                                else fromFilePath $ "page/" ++ show n ++ "/index.html")
+                                                else fromFilePath $ "page" </> show n </> "index.html")
   paginateRules entries $ \num pat -> do
     route idRoute
     compile $ do

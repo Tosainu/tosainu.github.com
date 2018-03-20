@@ -26,7 +26,6 @@ dependencies:
   - tagsoup
   - text
   - time
-  - transformers
   - unordered-containers
   - uri-encode
   - vector

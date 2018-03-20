@@ -1,7 +1,7 @@
 module LocalTime where
 
-import qualified Data.Time.Format        as Time
-import qualified Data.Time.LocalTime     as Time
+import qualified Data.Time.Format    as Time
+import qualified Data.Time.LocalTime as Time
 import           Hakyll
 
 defaultTimeZone :: Time.TimeZone

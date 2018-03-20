@@ -3,15 +3,15 @@
 module Archives where
 
 import           Control.Monad
-import           Control.Monad.Trans.Class (lift)
-import           Data.Function             (on)
-import           Data.List                 (groupBy, sortBy)
-import qualified Data.Map                  as M
+import           Control.Monad.Trans (lift)
+import           Data.Function       (on)
+import           Data.List           (groupBy, sortBy)
+import qualified Data.Map            as M
 import           Data.Maybe
-import qualified Data.Set                  as S
-import qualified Data.Text                 as T
-import qualified Data.Text.Lazy            as TL
-import qualified Data.Time.Format          as Time
+import qualified Data.Set            as S
+import qualified Data.Text           as T
+import qualified Data.Text.Lazy      as TL
+import qualified Data.Time.Format    as Time
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5

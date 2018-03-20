@@ -1,12 +1,10 @@
 module Template.Core where
 
 import           Control.Monad.Except         (MonadError (..))
-import           Control.Monad.Trans.Class
-import           Control.Monad.Trans.Reader
+import           Control.Monad.Reader
 import qualified Data.Text.Lazy               as TL
 import           Hakyll
-import           Hakyll.Web.Template.Internal (TemplateExpr (..),
-                                               TemplateKey (..))
+import           Hakyll.Web.Template.Internal (TemplateExpr (..), TemplateKey (..))
 import           Lucid.Base
 
 type LucidTemplateMonad a r = HtmlT (ReaderT (Context a, Item a) Compiler) r

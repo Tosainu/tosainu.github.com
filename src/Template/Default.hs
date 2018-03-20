@@ -4,7 +4,7 @@ module Template.Default where
 
 import           Control.Monad
 import           Data.List
-import qualified Data.Text             as T
+import qualified Data.Text     as T
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5

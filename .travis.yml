@@ -1,4 +1,4 @@
-sudo: required
+sudo: false
 dist: trusty
 
 language: generic
@@ -7,15 +7,14 @@ env:
   global:
     - secure: "Xu1MkJQb95pkBOhRFJKn20zGe81SR1zbYoTMNATB6YmM5VOQqkjQCnp66tqbUkuxapIU2/vSDXRJZH9PVd1eEAy2DfK8mjUQnRJmqq5c1hm4wwcQttWDwrLPrRDLy/oEunH+SnSa3oID3fiXddSzPaxA/rb1sIyYrUEMgtfOkdo="
 
-before_install:
+install:
   - |
     mkdir -p ~/.local/bin
     export PATH=$HOME/.local/bin:$PATH
+  - |
     travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | \
       tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
     stack --version
-
-install:
   - |
     stack --no-terminal --install-ghc setup
     stack --no-terminal exec ghc -- --version
@@ -23,34 +22,49 @@ install:
     nvm install node
     nvm use node
     node --version
-  - npm install
 
-before_script:
-  - git clone --no-checkout -b gh-pages https://github.com/Tosainu/blog.git build
+jobs:
+  include:
+    - stage:  install npm packages
+      script: npm install
 
-script:
-  - stack --no-terminal build
-  - stack --no-terminal exec blog build
+    - stage:  build cabal
+      script: stack --no-terminal build -j 1 Cabal
+    - stage:  build pandoc
+      script: travis_wait 30 stack --no-terminal build pandoc
+    - stage:  build other dependencies
+      script: stack --no-terminal build  --only-dependencies
 
-after_success:
-  - |
-    if [[ "$TRAVIS_BRANCH" != "master" || "$TRAVIS_PULL_REQUEST" != "false" ]]; then
-      exit 0;
-    fi
+    - stage: deploy site
+      script:
+        - |
+          set -ex
+          git fetch origin gh-pages
+          git worktree add --no-checkout build -b gh-pages FETCH_HEAD
+          stack --no-terminal build
+          stack --no-terminal exec blog build
+          set +ex
+      after_success:
+        - |
+          if [[ "$TRAVIS_BRANCH" != "master" || "$TRAVIS_PULL_REQUEST" != "false" || "$TRAVIS_EVENT_TYPE" == "cron" ]]; then
+            exit 0;
+          fi
 
-    # setup deploy key
-    declare -r SSH_FILE="$HOME/.ssh/github_deploy_key"
-    openssl aes-256-cbc -K $encrypted_b46c1c70c077_key -iv $encrypted_b46c1c70c077_iv \
-      -in "github_deploy_key.enc" -out "$SSH_FILE" -d
-    chmod 600 "$SSH_FILE"
-    echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ${SSH_FILE}\n\tIdentitiesOnly yes\n" \
-      >> ~/.ssh/config
+          # setup deploy key
+          declare -r SSH_FILE="$HOME/.ssh/github_deploy_key"
+          openssl aes-256-cbc -K $encrypted_b46c1c70c077_key -iv $encrypted_b46c1c70c077_iv \
+            -in "github_deploy_key.enc" -out "$SSH_FILE" -d
+          chmod 600 "$SSH_FILE"
+          echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ${SSH_FILE}\n\tIdentitiesOnly yes\n" \
+            >> ~/.ssh/config
 
-    # deploy!
-    cd build
-    git add -A
-    git co --allow-empty --allow-empty-message -m ''
-    git push origin gh-pages
+          git remote set-url --push origin 'git@github.com:Tosainu/blog.git'
+
+          # deploy!
+          cd build
+          git add -A
+          git diff --quiet && git diff --staged --quiet || \
+            (git commit -m "(✿╹◡╹)ﾉ" && git push origin gh-pages)
 
 cache:
   directories:

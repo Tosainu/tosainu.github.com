@@ -151,9 +151,11 @@ main = hakyllWith hakyllConfig $ do
       posts <- fmap (take 20) . recentFirst =<< loadAllSnapshots entryPattern "content"
       renderAtom atomFeedConfig (postContext tags) posts
 
-  match "stylesheets/*.scss" $ do
-    route $ setExtension "css"
-    compile $ fmap compressCss <$> sassCompiler
+  scssDependencies <- makePatternDependency "stylesheets/*/**.scss"
+  rulesExtraDependencies [scssDependencies] $
+    match "stylesheets/*.scss" $ do
+      route $ setExtension "css"
+      compile $ fmap compressCss <$> sassCompiler
 
   match "stylesheets/*.css" $ do
     route   idRoute

@@ -195,7 +195,7 @@ cache:
 
 時間のかかるビルドは Travis CI で問題になりそうだなあと予想はしていたけど、ここまで苦労することになるとは思わなかった...
 
-あと、これはまだ検証していませんが、[Cron Jobs](https://docs.travis-ci.com/user/cron-jobs/) で定期的にビルドを回してキャッシュを更新し続けるのもやってみようかなと思っています。記事を追加しただけなのにキャッシュの期限が切れてて全体の再ビルドが掛かったりするのは (╯•﹏•╰) なので。
+あと、これはまだ検証していないけれども、[Cron Jobs](https://docs.travis-ci.com/user/cron-jobs/) で定期的にビルドを回してキャッシュを更新し続けるのもやってみようかなと思っています。記事を追加しただけなのにキャッシュの期限が切れてて全体の再ビルドが掛かったりするのは (╯•﹏•╰) なので。
 
 ## その他いろいろ
 
@@ -308,7 +308,7 @@ match ("node_modules/katex/dist/**" .&&. complement "**.js") $ do
 こうやってパッケージマネージャが管理するディレクトリ内を参照するのがあまり気にらないのですが、そういうものなんですかね...
 
 
-さて、[FontAwesome](https://fontawesome.com/) の話に戻ります。知らないうちにバージョンが 5.x が出ていた FontAwesome は、従来の Web フォントを使ったもののほかに、SVG を利用できるようになっていました。けれども、[推奨された使い方](https://fontawesome.com/how-to-use/svg-with-js)は JavaScript により表示された時に置き換えるというもの。うーん、静的サイトジェネレータ大好きマンとしては納得できないですね。
+さて、[FontAwesome](https://fontawesome.com/) の話に戻ります。知らないうちにバージョン 5.x が出ていた FontAwesome は、従来の Web フォントを使ったもののほかに、SVG を利用できるようになっていました。けれども、[推奨された使い方](https://fontawesome.com/how-to-use/svg-with-js)は JavaScript により表示された時に置き換えるというもの。うーん、静的サイトジェネレータ大好きマンとしては納得できないですね。
 
 幸いにも、[Server Side Rendering に関するドキュメント](https://fontawesome.com/how-to-use/server-side-rendering) がありましたので、この辺を参考にやってみましょう。
 

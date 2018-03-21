@@ -37,7 +37,7 @@ tagSoupOption :: TS.RenderOptions String
 tagSoupOption = TS.RenderOptions
     { TS.optRawTag   = (`elem` ["script", "style"]) . map toLower
     , TS.optMinimize = (`elem` minimize) . map toLower
-    , TS.optEscape   = id
+    , TS.optEscape   = TS.escapeHTML
     }
   where
     minimize = ["area", "br", "col", "embed", "hr", "img", "input", "meta", "link" , "param"]

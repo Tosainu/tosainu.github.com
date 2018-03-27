@@ -54,12 +54,6 @@ archivesRules archives rules =
       create [archivesMakeId archives key] $
         rules key $ fromList identifiers
 
-buildYearlyArchives :: MonadMetadata m => Pattern -> (String -> Identifier) -> m (Archives String)
-buildYearlyArchives = buildArchivesWith (fmap (replicate 1) . getYear)
-
-buildMonthlyArchives :: MonadMetadata m => Pattern -> (String -> Identifier) -> m (Archives String)
-buildMonthlyArchives = buildArchivesWith (fmap (replicate 1) . getMonth)
-
 buildYearMonthArchives :: MonadMetadata m
                        => Pattern
                        -> (YearMonthKey -> Identifier)

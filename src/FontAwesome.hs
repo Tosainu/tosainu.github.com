@@ -4,7 +4,6 @@
 module FontAwesome
   ( FontAwesomeIcons
   , fontawesome
-  , fontawesome'
   , parseFontAwesomeIcons
   , renderFontAwesome
   ) where
@@ -42,9 +41,6 @@ type FontAwesomeIcons = HM.HashMap T.Text (HM.HashMap T.Text Element)
 
 fontawesome :: Monad m => FontAwesomeIcons -> T.Text -> T.Text -> Maybe (HtmlT m ())
 fontawesome db prefix name = toLucid <$> (HM.lookup prefix db >>= HM.lookup name)
-
-fontawesome' :: Monad m => FontAwesomeIcons -> T.Text -> T.Text -> HtmlT m ()
-fontawesome' = ((fromJust .) .) . fontawesome
 
 toLucid :: Monad m => Element -> HtmlT m ()
 toLucid = termWith <$> tag <*> attributes <*> children'

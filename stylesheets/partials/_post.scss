@@ -50,6 +50,7 @@
 
   li {
     display: flex;
+    flex-grow: 1;
 
     &:not(:last-child) {
       margin-right: .4em;
@@ -60,12 +61,13 @@
     background-color: $white;
     border: 1px solid $mid-gray;
     color: $font-color;
-    max-width: 100px;
     overflow: hidden;
     padding: 0 1em;
+    text-align: center;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 100%;
 
     &:hover {
       background-color: $blue;

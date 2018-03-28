@@ -41,9 +41,10 @@ postHeaderTemplate = LucidTemplate $ do
   ul_ [class_ "post-meta"] $ do
     li_                 $ i_ [classes_ ["fas", "fa-calendar-alt"]] ""
     li_ [class_ "date"] $ toHtml date
-    li_                 $ i_ [classes_ ["fas", "fa-tags"]] ""
-    li_ $
-      ul_ [class_ "tag-list"] $ toHtmlRaw tags
+
+    if tags == "" then return () else do
+      li_ $ i_  [classes_ ["fas", "fa-tags"]] ""
+      li_ $ ul_ [class_ "tag-list"] $ toHtmlRaw tags
 
 shareButtonsTemplate :: LucidTemplate a
 shareButtonsTemplate = LucidTemplate $ do

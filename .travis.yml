@@ -35,7 +35,7 @@ jobs:
     - stage:  build cabal
       script: stack --no-terminal build -j 1 Cabal
     - stage:  build pandoc
-      script: travis_wait 30 stack --no-terminal build pandoc
+      script: travis_wait 45 stack --no-terminal build pandoc
     - stage:  build other dependencies
       script: stack --no-terminal build  --only-dependencies
 

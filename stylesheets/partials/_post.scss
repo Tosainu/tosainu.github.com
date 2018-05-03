@@ -85,6 +85,11 @@
     margin-left: 0;
     margin-right: 0;
     padding: .4em 1.2em;
+
+    pre {
+      border: none;
+      padding: 0;
+    }
   }
 
   hr {

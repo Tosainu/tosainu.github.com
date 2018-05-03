@@ -42,9 +42,9 @@ docomoの袋付きで笑ったw
 
 ## もくじ
 
-1. [root権限取得可能なファームウェアを書き込む](/blog/2013-01-08/Xperia2011_Flash_Rootable_ROM/)
-2. [2011Xperia(Android2.3.4)のroot権限の取得](/blog/2013-01-08/Xperia2011_Rooting/)
-3. [カスタムリカバリの導入](/blog/2013-01-08/Xperia2011_Flash_Custom_Recovery/)
-4. [Omniusで国内ペリアをアンロック](/blog/2013-03-09/Xperia2011_Bootloader_Unlock_with_Omnius/)
-5. [カスタムカーネルを書き込んでみる](/blog/2013-03-09/Xperia2011_Flash_Custom_Kernel/)
-6. [カスタムROMを書き込んでみる](/blog/2013-06-29/Xperia2011_Flash_Custom_ROM/)
+1. [root権限取得可能なファームウェアを書き込む](/entry/2013/01/08/Xperia2011_Flash_Rootable_ROM/)
+2. [2011Xperia(Android2.3.4)のroot権限の取得](/entry/2013/01/08/Xperia2011_Rooting/)
+3. [カスタムリカバリの導入](/entry/2013/01/08/Xperia2011_Flash_Custom_Recovery/)
+4. [Omniusで国内ペリアをアンロック](/entry/2013/03/09/Xperia2011_Bootloader_Unlock_with_Omnius/)
+5. [カスタムカーネルを書き込んでみる](/entry/2013/03/09/Xperia2011_Flash_Custom_Kernel/)
+6. [カスタムROMを書き込んでみる](/entry/2013/06/29/Xperia2011_Flash_Custom_ROM/)

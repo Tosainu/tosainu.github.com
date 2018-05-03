@@ -7,9 +7,9 @@
     "url": "git+https://github.com/Tosainu/blog.git"
   },
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.4",
-    "@fortawesome/fontawesome-free-brands": "^5.0.8",
-    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/fontawesome": "^1.1.6",
+    "@fortawesome/fontawesome-free-brands": "^5.0.11",
+    "@fortawesome/fontawesome-free-solid": "^5.0.11",
     "cheerio": "^1.0.0-rc.2",
     "katex": "^0.9.0",
     "normalize.css": "^8.0.0"

@@ -3,15 +3,16 @@
 module Archives where
 
 import           Control.Monad
-import           Control.Monad.Trans (lift)
-import           Data.Function       (on)
-import           Data.List           (groupBy, sortBy)
-import qualified Data.Map            as M
+import           Control.Monad.Except (MonadError (..))
+import           Control.Monad.Trans  (lift)
+import           Data.Function        (on)
+import           Data.List            (groupBy, sortBy)
+import qualified Data.Map             as M
 import           Data.Maybe
-import qualified Data.Set            as S
-import qualified Data.Text           as T
-import qualified Data.Text.Lazy      as TL
-import qualified Data.Time.Format    as Time
+import qualified Data.Set             as S
+import qualified Data.Text            as T
+import qualified Data.Text.Lazy       as TL
+import qualified Data.Time.Format     as Time
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
@@ -71,18 +72,29 @@ getMonth :: MonadMetadata m => Identifier -> m String
 getMonth identifier = Time.formatTime defaultTimeLocale "%m" <$> getItemLocalTime identifier
 
 yearMonthArchiveField :: String -> Archives YearMonthKey -> Context a
-yearMonthArchiveField key archives = field key $ \_ -> fmap TL.unpack $ renderTextT $
+yearMonthArchiveField key archives = field key $ getPageYear >=> buildYearMonthArchiveField archives
+  where
+    getPageYear item = (Time.formatTime defaultTimeLocale "%Y" <$>
+                         getItemLocalTime (itemIdentifier item)) `catchError` const (return "")
+
+yearMonthArchiveField' :: String -> Archives YearMonthKey -> String -> Context a
+yearMonthArchiveField' key archives pageYear =
+  field key $ const $ buildYearMonthArchiveField archives pageYear
+
+buildYearMonthArchiveField :: Archives YearMonthKey -> String -> Compiler String
+buildYearMonthArchiveField archives pageYear = fmap TL.unpack $ renderTextT $
   ul_ [class_ "archive-tree"] $ do
     let archives' = groupBy (isSameYear `on` fst) $
                     sortBy  (flip compare `on` fst) $ archivesMap archives
-    forM_ archives' $ \yas -> do
+    forM_ archives' $ \yas ->
       li_ $ do
         let (yk@(Yearly y), yids) = head yas
         yurl <- lift $ fmap toUrl' $ getRoute $ archivesMakeId archives yk
 
-        input_ [ class_ "tree-toggle"
-               , type_ "checkbox"
-               , id_ (T.pack $ "tree-label-" ++ y) ]
+        input_ $ [ class_ "tree-toggle"
+                 , type_ "checkbox"
+                 , id_ (T.pack $ "tree-label-" ++ y) ] ++
+                 [ checked_ | y == pageYear ]
         label_ [ class_ "tree-toggle-button"
                , for_ (T.pack $ "tree-label-" ++ y) ] $ do
           i_ [classes_ ["fas", "fa-angle-right", "fa-fw"]] ""

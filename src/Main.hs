@@ -109,12 +109,14 @@ main = hakyllWith hakyllConfig $ do
         let ctx = constField  "title"         title
                 <> listField   "posts"        postContext'       (return posts)
                 <> listField   "recent-posts" (postContext tags) (return recent)
-                <> yearMonthArchiveField "archives" yearMonthArchives
+                <> yearMonthArchiveField' "archives" yearMonthArchives pageYear
                 <> paginateContext ymaPages num
                 <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
-            title = case key of Yearly  _ -> "Yearly archives: "  ++ key'
-                                Monthly _ -> "Monthly archives: " ++ key'
+            title    = case key of Yearly  _ -> "Yearly archives: "  ++ key'
+                                   Monthly _ -> "Monthly archives: " ++ key'
+            pageYear = case key of Yearly y       -> y
+                                   Monthly (y, _) -> y
         makeItem title
           >>= applyLucidTemplate entryListTemplate ctx
           >>= applyLucidTemplate defaultTemplate   ctx

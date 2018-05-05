@@ -40,8 +40,8 @@ main = hakyllWith hakyllConfig $ do
   tags <- buildTags entryPattern $ fromCapture "entry/tags/*/index.html" . sanitizeTagName
 
   yearMonthArchives <- buildYearMonthArchives entryPattern $
-    \case Yearly   y     -> fromFilePath ("entry" </> y </> "index.html")
-          Monthly (y, m) -> fromFilePath ("entry" </> y </> m </> "index.html")
+    \case Yearly  y   -> fromFilePath ("entry" </> y </> "index.html")
+          Monthly y m -> fromFilePath ("entry" </> y </> m </> "index.html")
 
   match entryPattern $ do
     route $ setExtension "html"
@@ -95,8 +95,8 @@ main = hakyllWith hakyllConfig $ do
 
   archivesRules yearMonthArchives $ \key pat -> do
     let grouper  = fmap (paginateEvery 5) . sortRecentFirst
-        key'     = case key of Yearly   y     -> y
-                               Monthly (y, m) -> y </> m
+        key'     = case key of Yearly  y   -> y
+                               Monthly y m -> y </> m
         makeId n = fromFilePath $
                      if n == 1 then "entry" </> key' </> "index.html"
                                else "entry" </> key' </> "page" </> show n </> "index.html"
@@ -109,14 +109,12 @@ main = hakyllWith hakyllConfig $ do
         let ctx = constField  "title"         title
                 <> listField   "posts"        postContext'       (return posts)
                 <> listField   "recent-posts" (postContext tags) (return recent)
-                <> yearMonthArchiveField' "archives" yearMonthArchives pageYear
+                <> yearMonthArchiveField' "archives" yearMonthArchives (year key)
                 <> paginateContext ymaPages num
                 <> siteContext tags
             postContext' = teaserField "teaser" "content" <> postContext tags
-            title    = case key of Yearly  _ -> "Yearly archives: "  ++ key'
-                                   Monthly _ -> "Monthly archives: " ++ key'
-            pageYear = case key of Yearly y       -> y
-                                   Monthly (y, _) -> y
+            title = case key of Yearly  _   -> "Yearly archives: "  ++ key'
+                                Monthly _ _ -> "Monthly archives: " ++ key'
         makeItem title
           >>= applyLucidTemplate entryListTemplate ctx
           >>= applyLucidTemplate defaultTemplate   ctx

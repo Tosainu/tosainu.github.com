@@ -30,7 +30,7 @@ before_script:
 jobs:
   include:
     - stage:  install npm packages
-      script: npm ci
+      script: npm install
 
     - stage:  build cabal
       script: stack --no-terminal build -j 1 Cabal
@@ -72,7 +72,6 @@ jobs:
 
 cache:
   directories:
-    - $HOME/.npm
     - $HOME/.stack
     - .stack-work
     - node_modules

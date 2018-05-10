@@ -57,9 +57,8 @@ shareButtonsTemplate = LucidTemplate $ do
       url   = URI.encode $ siteUrl ++ pageUrl
 
   aside_ [class_ "share"] $ do
-    StringField twitter <- lookupMeta "author-twitter"
     a_ [ classes_ ["share-button", "twitter"]
-       , href_ (T.pack $ "https://twitter.com/share?text=" ++ title ++ "&via=" ++ twitter)
+       , href_ (T.pack $ "https://twitter.com/share?text=" ++ title ++ "&url=" ++ url)
        ] $ do
       i_ [classes_ ["fab", "fa-twitter", "fa-lg"]] ""
       span_ "Twitter"

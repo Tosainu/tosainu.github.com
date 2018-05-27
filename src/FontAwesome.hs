@@ -12,17 +12,14 @@ import           Data.Aeson
 import qualified Data.ByteString.Lazy.Char8 as BSL
 import qualified Data.HashMap.Strict        as HM
 import           Data.Maybe
-import qualified Data.Text                  as T
-import qualified Data.Text.Lazy             as TL
 import           Hakyll
-import           Lucid.Base
-import           Lucid.Html5
-import qualified Text.HTML.TagSoup.Tree     as TS
+import           Text.HTML.TagSoup
+import           Text.HTML.TagSoup.Tree
 
 import           Compiler                   (tagSoupOption)
 
-data Element = Element { tag        :: T.Text
-                       , attributes :: [Attribute]
+data Element = Element { tag        :: String
+                       , attributes :: [Attribute String]
                        , children   :: [Element]
                        }
              deriving Show
@@ -30,40 +27,43 @@ data Element = Element { tag        :: T.Text
 instance FromJSON Element where
   parseJSON = withObject "Element" $ \o -> do
     tag        <- o .: "tag"
-    attributes <- objectToAttributes <$> o .:? "attributes" .!= HM.empty
+    attributes <- HM.toList <$> o .:? "attributes" .!= HM.empty
     children   <- o .:? "children" .!= []
     return Element {..}
 
-    where objectToAttributes = map (uncurry makeAttribute) . HM.toList
-
 -- FontAwesomeIcons [(prefix, [(name, icon-meta)])]
-type FontAwesomeIcons = HM.HashMap T.Text (HM.HashMap T.Text Element)
+type FontAwesomeIcons = HM.HashMap String (HM.HashMap String Element)
 
-fontawesome :: Monad m => FontAwesomeIcons -> T.Text -> T.Text -> Maybe (HtmlT m ())
-fontawesome db prefix name = toLucid <$> (HM.lookup prefix db >>= HM.lookup name)
+fontawesome :: FontAwesomeIcons -> String -> String -> Maybe (TagTree String)
+fontawesome db prefix name = toTagTree <$> (HM.lookup prefix db >>= HM.lookup name)
 
-toLucid :: Monad m => Element -> HtmlT m ()
-toLucid = termWith <$> tag <*> attributes <*> children'
-  where children' = mconcat . map toLucid . children
+toTagTree :: Element -> TagTree String
+toTagTree = TagBranch <$> tag <*> attributes <*> children'
+  where children' = map toTagTree . children
 
 parseFontAwesomeIcons :: String -> Maybe FontAwesomeIcons
 parseFontAwesomeIcons = decode . BSL.pack
 
 renderFontAwesome :: FontAwesomeIcons -> Item String -> Compiler (Item String)
 renderFontAwesome icons = return . fmap
-    (TS.renderTreeOptions tagSoupOption . TS.transformTree renderFontAwesome' . TS.parseTree)
+    (renderTreeOptions tagSoupOption . transformTree renderFontAwesome' . parseTree)
   where
-    renderFontAwesome' tag@(TS.TagBranch "i" as []) =
+    renderFontAwesome' tag@(TagBranch "i" as []) =
       case toFontAwesome $ classes as of
-           Just html -> TS.parseTree $ TL.unpack $ renderText html
+           Just tree -> [tree]
            Nothing   -> [tag]
     renderFontAwesome' tag = [tag]
 
     toFontAwesome (prefix:('f':'a':'-':name):cs) =
-      let prefix'  = T.pack prefix
-          name'    = T.pack name
-          classes' = T.pack $ " " ++ unwords cs
-      in  fmap (`with` [class_ classes']) (fontawesome icons prefix' name')
+      fmap (`appendClasses` cs) (fontawesome icons prefix name)
     toFontAwesome _ = Nothing
+
+    appendClasses t [] = t
+    appendClasses (TagBranch x y z) cs =
+      let as1 = HM.fromList y
+          as2 = HM.singleton "class" $ unwords cs
+          y'  = HM.toList $ HM.unionWith (\v1 v2 -> v1 ++ " " ++ v2) as1 as2
+      in  TagBranch x y' z
+    appendClasses t _ = t
 
     classes = words . fromMaybe "" . lookup "class"

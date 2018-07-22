@@ -28,9 +28,6 @@ before_script:
 
 jobs:
   include:
-    - stage:  install npm packages
-      script: npm install
-
     - stage:  build cabal
       script: stack --no-terminal build -j 1 Cabal
     - stage:  build pandoc
@@ -42,10 +39,18 @@ jobs:
       script:
         - |
           set -ex
+
+          # install NPM packages
+          npm ci
+
+          # build site generator
+          stack --no-terminal build
+
+          # build site
           git fetch origin gh-pages
           git worktree add --no-checkout build -b gh-pages FETCH_HEAD
-          stack --no-terminal build
           stack --no-terminal exec blog build
+
           set +ex
       after_success:
         - |
@@ -73,4 +78,3 @@ cache:
   directories:
     - $HOME/.stack
     - .stack-work
-    - node_modules

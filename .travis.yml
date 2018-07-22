@@ -71,8 +71,9 @@ jobs:
           # deploy!
           cd build
           git add -A
-          git diff --quiet && git diff --staged --quiet || \
-            (git commit -m "(✿╹◡╹)ﾉ" && git push origin gh-pages)
+          git commit --allow-empty --allow-empty-message -m ""
+          git reset $(git commit-tree HEAD^{tree} -m "(✿╹◡╹)ﾉ")
+          git push -f origin gh-pages
 
 cache:
   directories:

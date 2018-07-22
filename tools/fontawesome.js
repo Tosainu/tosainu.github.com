@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const fontawesome = require('@fortawesome/fontawesome');
-const brands      = require('@fortawesome/fontawesome-free-brands').default;
-const solid       = require('@fortawesome/fontawesome-free-solid').default;
+const fontawesome = require('@fortawesome/fontawesome-svg-core');
+const brands      = require('@fortawesome/free-brands-svg-icons').fab;
+const solid       = require('@fortawesome/free-solid-svg-icons').fas;
 
 // initialize font awesome
 fontawesome.library.add(brands);

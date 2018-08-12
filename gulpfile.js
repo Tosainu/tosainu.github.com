@@ -1,8 +1,12 @@
 const gulp = require('gulp');
+const embedsvg = require('gulp-embed-svg');
 const htmlmin = require('gulp-htmlmin');
 
 function html() {
   return gulp.src('src/index.html')
+      .pipe(embedsvg({
+        root: 'src'
+      }))
       .pipe(htmlmin({collapseWhitespace: true}))
       .pipe(gulp.dest('build/'));
 }

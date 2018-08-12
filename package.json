@@ -9,6 +9,7 @@
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
+    "gulp-embed-svg": "^1.0.0",
     "gulp-htmlmin": "^4.0.0"
   }
 }

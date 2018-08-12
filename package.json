@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/Tosainu/tosainu.github.com.git"
   },
+  "scripts": {
+    "build": "./node_modules/gulp-cli/bin/gulp.js build"
+  },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",

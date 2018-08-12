@@ -1,10 +1,10 @@
-const gulp = require('gulp');
-const cheerio = require('gulp-cheerio');
+const gulp     = require('gulp');
+const cheerio  = require('gulp-cheerio');
 const cleancss = require('gulp-clean-css');
 const embedsvg = require('gulp-embed-svg');
-const htmlmin = require('gulp-htmlmin');
-const rename = require("gulp-rename");
-const sass = require('gulp-sass');
+const htmlmin  = require('gulp-htmlmin');
+const rename   = require('gulp-rename');
+const sass     = require('gulp-sass');
 
 const fontawesome = require('@fortawesome/fontawesome-svg-core');
 fontawesome.library.add(require('@fortawesome/free-brands-svg-icons').fab);
@@ -12,9 +12,7 @@ fontawesome.library.add(require('@fortawesome/free-solid-svg-icons').fas);
 
 function html() {
   return gulp.src('src/index.html')
-      .pipe(embedsvg({
-        root: 'src'
-      }))
+      .pipe(embedsvg({root: 'src'}))
       .pipe(cheerio(function($, file) {
         $('i.fab, i.fas').each(function() {
           let i       = $(this);
@@ -31,9 +29,7 @@ function html() {
 
 function scss() {
   return gulp.src('src/stylesheets/*.scss')
-      .pipe(sass({
-        outputStyle: 'compressed'
-      }))
+      .pipe(sass({outputStyle: 'compressed'}))
       .pipe(gulp.dest('build/stylesheets/'));
 }
 

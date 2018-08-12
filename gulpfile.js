@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const cheerio = require('gulp-cheerio');
+const cleancss = require('gulp-clean-css');
 const embedsvg = require('gulp-embed-svg');
 const htmlmin = require('gulp-htmlmin');
 const rename = require("gulp-rename");
@@ -40,6 +41,7 @@ function css() {
   return gulp.src('node_modules/@fortawesome/fontawesome-svg-core/styles.css')
       .pipe(rename('fontawesome.css'))
       .pipe(gulp.src('node_modules/normalize.css/normalize.css'))
+      .pipe(cleancss())
       .pipe(gulp.dest('build/stylesheets/'));
 }
 

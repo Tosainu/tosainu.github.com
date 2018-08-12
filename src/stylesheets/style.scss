@@ -29,6 +29,7 @@ body {
 h2 {
   font-size: 1.8rem;
   font-weight: 600;
+  margin-top: 0;
   margin-bottom: 2rem;
 }
 
@@ -39,6 +40,10 @@ a {
   &:hover {
     color: $blue;
   }
+}
+
+dl {
+  margin: 0;
 }
 
 // Layout
@@ -54,6 +59,10 @@ section {
 footer {
   padding: 2rem 0;
   text-align: right;
+
+  p {
+    margin: 0;
+  }
 }
 
 .hero {
@@ -78,6 +87,7 @@ footer {
     color: $white;
     font-size: 2.5rem;
     font-weight: 600;
+    margin-top: 0;
     margin-bottom: 1.4rem;
   }
 }

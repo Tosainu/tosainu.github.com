@@ -1,8 +1,5 @@
 @charset 'utf-8';
 
-@import 'font-awesome-sprockets';
-@import 'font-awesome';
-
 // Colors
 // ----------------------------
 $red:        #eb6553;
@@ -100,23 +97,23 @@ footer {
 }
 
 .link-icon {
-  .fa {
+  svg:first-child {
     color: $white;
+    opacity: 0;
   }
 
-  .fa-square {
-    opacity: 0;
+  svg:last-child {
+    color: $white;
   }
 
   &:active,
   &:hover {
-    .fa {
-      color: $dark-gray;
+    svg:first-child {
+      opacity: 1;
     }
 
-    .fa-square {
-      color: $white;
-      opacity: 1;
+    svg:last-child {
+      color: $dark-gray;
     }
   }
 }

@@ -11,6 +11,7 @@
     "gulp-cli": "^2.0.1",
     "gulp-embed-svg": "^1.0.0",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "normalize.css": "^8.0.0"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "name": "tosainu.github.com",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tosainu/tosainu.github.com.git"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1"
+  }
+}

@@ -2,28 +2,33 @@
 sudo: false
 dist: trusty
 
-# Ruby configuration
-language: ruby
-rvm:
-  - 2.5.0
-cache: bundler
-bundler_args: --without development --jobs=3 --retry=3
+language: generic
 
 env:
   global:
     - secure: "oo9A9sstCsgWoxyo0L+PRZ313NeWSGcdgWcdmPd5fvUGs/a44NgKNFGpe9RmZtQBWVdOweYmXcw6dh4c/fSlbZyH44KK/txdGts0ax0ONEBCcazgySNjj+Yxsglu4yjndR9m1Jn088NpB0CyP7+/dV0l/VPPxTsnHWuKvoBmdis="
 
+install:
+  - |
+    nvm install 10.8.0
+    nvm use 10.8.0
+    npm ci
+
 before_script:
-  - git clone --quiet -b master https://github.com/Tosainu/tosainu.github.com.git build
+  - git fetch origin master
+  - git worktree add --no-checkout build -b master FETCH_HEAD
+
 
 script:
-  - bundle exec middleman build
+  - npm run build
 
 after_success:
   - |
     if [[ "$TRAVIS_BRANCH" != "dev" || "$TRAVIS_PULL_REQUEST" != "false" ]]; then
       exit 0;
     fi
+
+    set -ex
 
     # setup deploy key
     declare -r SSH_FILE="$HOME/.ssh/github_deploy_key"
@@ -33,5 +38,13 @@ after_success:
     echo -e "Host github.com\n\tHostName github.com\n\tUser git\n\tIdentityFile ${SSH_FILE}\n\tIdentitiesOnly yes\n" \
       >> ~/.ssh/config
 
+    git remote set-url --push origin 'git@github.com:Tosainu/tosainu.github.com.git'
+
     # deploy!
-    bundle exec middleman deploy
+    cd build
+    git add -A
+    git commit --allow-empty --allow-empty-message -m ""
+    git reset $(git commit-tree HEAD^{tree} -m "(✿╹◡╹)ﾉ")
+    git push -f origin master
+
+    set +ex

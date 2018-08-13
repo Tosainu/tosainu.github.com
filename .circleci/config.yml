@@ -1,0 +1,122 @@
+version: 2
+jobs:
+  build_deps:
+    working_directory: ~/build
+    docker:
+      - image: haskell:8.4.3
+    environment:
+      STACK_BUILD_FLAGS: --flag hakyll:-previewServer --flag hakyll:-watchServer
+    steps:
+      - checkout
+      - run: git submodule sync --recursive
+      - run: git submodule update --recursive --init
+
+      - restore_cache:
+          keys:
+            - stack-v1-{{ arch }}-{{ checksum "stack.yaml" }}-{{ checksum "package.yaml" }}
+            - stack-v1-{{ arch }}-{{ checksum "stack.yaml" }}-
+
+      - restore_cache:
+          keys:
+            - stack-work-v1-{{ arch }}-{{ checksum "stack.yaml" }}-{{ checksum "package.yaml" }}
+
+      - run:
+          command: stack --no-terminal -j 2 build $STACK_BUILD_FLAGS --only-dependencies
+          no_output_timeout: 30m
+
+      - save_cache:
+          key: stack-v1-{{ arch }}-{{ checksum "stack.yaml" }}-
+          paths:
+            - ~/.stack
+
+      - run: stack --no-terminal -j 2 install $STACK_BUILD_FLAGS
+
+      - save_cache:
+          key: stack-v1-{{ arch }}-{{ checksum "stack.yaml" }}-{{ checksum "package.yaml" }}
+          paths:
+            - ~/.stack
+
+      - save_cache:
+          key: stack-work-v1-{{ arch }}-{{ checksum "stack.yaml" }}-{{ checksum "package.yaml" }}
+          paths:
+            - ~/build/.stack-work
+
+      - persist_to_workspace:
+          root: ~/.local/bin
+          paths:
+            - blog
+
+  build:
+    working_directory: ~/build
+    docker:
+      - image: circleci/node:10.8.0-stretch
+    steps:
+      - checkout
+      - run: git submodule sync --recursive
+      - run: git submodule update --recursive --init
+
+      - attach_workspace:
+          at: ~/build
+
+      - run: npm ci
+
+      - run: ./blog build
+
+      - store_artifacts:
+          path: build
+
+      - persist_to_workspace:
+          root: ~/build
+          paths:
+            - build
+
+  deploy:
+    working_directory: ~/build
+    docker:
+      - image: circleci/node:10.8.0-stretch
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "b2:37:78:5c:93:1c:43:6f:0d:58:5c:1e:c7:56:62:8c"
+
+      - attach_workspace:
+          at: ~/build
+
+      - run:
+          name: Add github.com to ~/.ssh/known_hosts
+          command: |
+            echo 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==' >> ~/.ssh/known_hosts
+
+      - run:
+          name: Set git user and email
+          command: |
+            git config --global user.name $GH_NAME
+            git config --global user.email $GH_EMAIL
+
+      - deploy:
+          name: Deploy
+          working_directory: ~/build/build
+          command: |
+            set -e
+            git init
+            git checkout --orphan gh-pages
+            git add -A
+            git commit --allow-empty --allow-empty-message -m '(⋈◍＞◡＜◍)。✧♡'
+            git remote add origin $CIRCLE_REPOSITORY_URL
+            git push -f origin gh-pages
+            set +e
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build_deps
+      - build:
+          requires:
+            - build_deps
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

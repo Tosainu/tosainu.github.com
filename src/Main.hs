@@ -29,6 +29,10 @@ main :: IO ()
 main = hakyllWith hakyllConfig $ do
   faIcons <- fromMaybe mempty <$> loadFontAwesomeIcons
 
+  match "images/**/*.svg" $ do
+    route idRoute
+    compile $ optimizeSVGCompiler ["-p", "4"]
+
   match ("CNAME" .||. "favicon.ico" .||. "images/**") $ do
     route idRoute
     compile copyFileCompiler
@@ -212,7 +216,7 @@ authorContext :: Context String
 authorContext    = constField       "author-name"       "Tosainu"
                 <> constField       "author-profile"    "❤ Arch Linux, ごちうさ"
                 <> constField       "author-portfolio"  "https://myon.info"
-                <> constField       "author-avatar"     "https://myon.info/images/avatar.svg"
+                <> constField       "author-avatar"     "/images/icon/cocoa.svg"
                 <> constField       "author-twitter"    "myon___"
 
 --- Misc

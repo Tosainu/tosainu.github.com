@@ -17,6 +17,10 @@ renderKaTeX item = do
   if HM.member "math" metadata then withItemBody (unixFilter  "tools/katex.js" []) item
                                else return item
 
+optimizeSVGCompiler :: [String] -> Compiler (Item String)
+optimizeSVGCompiler opts = getResourceString >>=
+  withItemBody (unixFilter "node_modules/svgo/bin/svgo" $ ["-i", "-", "-o", "-"] ++ opts)
+
 cleanIndexHtmls :: Item String -> Compiler (Item String)
 cleanIndexHtmls = return . fmap (withUrls removeIndexHtml)
   where removeIndexHtml path

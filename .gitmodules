@@ -1,0 +1,3 @@
+[submodule "icon"]
+	path = images/icon
+	url = https://github.com/Tosainu/icon.git

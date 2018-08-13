@@ -5,6 +5,7 @@ const embedsvg = require('gulp-embed-svg');
 const htmlmin  = require('gulp-htmlmin');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass');
+const svgmin   = require('gulp-svgmin');
 const del      = require('del');
 
 const browsersync = require('browser-sync').create();
@@ -14,12 +15,11 @@ fontawesome.library.add(require('@fortawesome/free-brands-svg-icons').fab);
 fontawesome.library.add(require('@fortawesome/free-solid-svg-icons').fas);
 
 function clean() {
-  return del(['build/**', '!build', '!build/.git']);
+  return del(['build/**', '!build', '!build/.git', 'tmp']);
 }
 
 function html() {
   return gulp.src('src/index.html')
-      .pipe(embedsvg({root: 'src'}))
       .pipe(cheerio(function($, file) {
         $('i.fab, i.fas').each(function() {
           let i       = $(this);
@@ -30,6 +30,7 @@ function html() {
               fontawesome.icon({prefix: prefix, iconName: name}, {classes: classes}).html);
         });
       }))
+      .pipe(embedsvg({selectors: '.avatar', root: 'tmp'}))
       .pipe(htmlmin({collapseWhitespace: true}))
       .pipe(gulp.dest('build/'));
 }
@@ -48,12 +49,18 @@ function css() {
       .pipe(gulp.dest('build/stylesheets/'));
 }
 
+function svg() {
+  return gulp.src(['src/images/*.svg', 'icon/cocoa.svg'])
+      .pipe(svgmin({plugins: [{convertPathData: {floatPrecision: 4}}]}))
+      .pipe(gulp.dest('tmp/images/'));
+}
+
 function other_files() {
   return gulp.src('src/{CNAME,favicon.ico}')
       .pipe(gulp.dest('build/'));
 }
 
-const build = gulp.series(clean, gulp.parallel(html, scss, css, other_files));
+const build = gulp.series(clean, svg, gulp.parallel(html, scss, css, other_files));
 
 function reload(done) {
   browsersync.reload();

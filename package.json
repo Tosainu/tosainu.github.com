@@ -7,12 +7,14 @@
     "url": "git+https://github.com/Tosainu/tosainu.github.com.git"
   },
   "scripts": {
+    "clean": "./node_modules/gulp-cli/bin/gulp.js clean",
     "build": "./node_modules/gulp-cli/bin/gulp.js build"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-clean-css": "^3.10.0",

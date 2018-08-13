@@ -5,10 +5,15 @@ const embedsvg = require('gulp-embed-svg');
 const htmlmin  = require('gulp-htmlmin');
 const rename   = require('gulp-rename');
 const sass     = require('gulp-sass');
+const del      = require('del');
 
 const fontawesome = require('@fortawesome/fontawesome-svg-core');
 fontawesome.library.add(require('@fortawesome/free-brands-svg-icons').fab);
 fontawesome.library.add(require('@fortawesome/free-solid-svg-icons').fas);
+
+function clean() {
+  return del(['build/**', '!build', '!build/.git']);
+}
 
 function html() {
   return gulp.src('src/index.html')
@@ -46,7 +51,8 @@ function other_files() {
       .pipe(gulp.dest('build/'));
 }
 
-const build = gulp.parallel(html, scss, css, other_files);
+const build = gulp.series(clean, gulp.parallel(html, scss, css, other_files));
 
+gulp.task('clean', clean);
 gulp.task('build', build);
 gulp.task('default', build);

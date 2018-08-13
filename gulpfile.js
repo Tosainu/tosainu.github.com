@@ -7,6 +7,8 @@ const rename   = require('gulp-rename');
 const sass     = require('gulp-sass');
 const del      = require('del');
 
+const browsersync = require('browser-sync').create();
+
 const fontawesome = require('@fortawesome/fontawesome-svg-core');
 fontawesome.library.add(require('@fortawesome/free-brands-svg-icons').fab);
 fontawesome.library.add(require('@fortawesome/free-solid-svg-icons').fas);
@@ -53,6 +55,21 @@ function other_files() {
 
 const build = gulp.series(clean, gulp.parallel(html, scss, css, other_files));
 
+function reload(done) {
+  browsersync.reload();
+  done();
+}
+
+function serve(done) {
+  browsersync.init({server: {baseDir: 'build'}});
+  done();
+}
+
+function watch() {
+  gulp.watch('src/index.html', gulp.series(html, reload));
+  gulp.watch('src/stylesheets/*.scss', gulp.series(scss, reload));
+}
+
 gulp.task('clean', clean);
 gulp.task('build', build);
-gulp.task('default', build);
+gulp.task('default', gulp.series(build, serve, watch));

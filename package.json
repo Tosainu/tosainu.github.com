@@ -7,6 +7,7 @@
     "url": "git+https://github.com/Tosainu/tosainu.github.com.git"
   },
   "scripts": {
+    "watch": "./node_modules/gulp-cli/bin/gulp.js",
     "clean": "./node_modules/gulp-cli/bin/gulp.js clean",
     "build": "./node_modules/gulp-cli/bin/gulp.js build"
   },
@@ -14,6 +15,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "browser-sync": "^2.24.6",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-cheerio": "^0.6.3",

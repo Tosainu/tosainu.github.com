@@ -7,6 +7,13 @@ jobs:
     environment:
       STACK_BUILD_FLAGS: --flag hakyll:-previewServer --flag hakyll:-watchServer
     steps:
+      - run:
+          name: Install some packages
+          command: |
+            apt-get update
+            mkdir -p /usr/share/man/man1
+            apt-get install -y git openssh-client
+
       - checkout
       - run: git submodule sync --recursive
       - run: git submodule update --recursive --init
@@ -97,14 +104,12 @@ jobs:
           name: Deploy
           working_directory: ~/build/build
           command: |
-            set -e
             git init
             git checkout --orphan gh-pages
             git add -A
-            git commit --allow-empty --allow-empty-message -m '(⋈◍＞◡＜◍)。✧♡'
+            git commit --allow-empty --allow-empty-message -m '(⋈◍＞◡＜◍)。✧♡ [skip ci]'
             git remote add origin $CIRCLE_REPOSITORY_URL
             git push -f origin gh-pages
-            set +e
 
 workflows:
   version: 2

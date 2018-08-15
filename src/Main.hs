@@ -156,6 +156,7 @@ main = hakyllWith hakyllConfig $ do
       renderAtom atomFeedConfig (postContext tags) posts
 
   scssDependencies <- makePatternDependency "stylesheets/*/**.scss"
+  match "stylesheets/*/**.scss" $ compile getResourceBody
   rulesExtraDependencies [scssDependencies] $
     match "stylesheets/*.scss" $ do
       route $ setExtension "css"

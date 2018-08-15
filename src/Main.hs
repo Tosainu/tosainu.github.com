@@ -11,7 +11,6 @@ import           Hakyll
 import           Hakyll.Web.Sass
 import           Skylighting            (pygments, styleToCss)
 import           System.FilePath
-import           System.Process         (readProcess)
 import qualified Text.HTML.TagSoup      as TS
 import           Text.Pandoc.Extensions
 import           Text.Pandoc.Options
@@ -25,7 +24,7 @@ import           Template
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
-  faIcons <- fold <$> loadFontAwesomeIcons
+  faIcons <- fold <$> preprocess loadFontAwesomeIcons
 
   -- "entry/year/month/day/title/index.md"
   let entryPattern      = "entry/*/*/*/*/index.md"
@@ -218,10 +217,6 @@ authorContext    = constField       "author-name"       "Tosainu"
                 <> constField       "author-twitter"    "myon___"
 
 --- Misc
-loadFontAwesomeIcons :: Rules (Maybe FontAwesomeIcons)
-loadFontAwesomeIcons = preprocess $
-  parseFontAwesomeIcons <$> readProcess fontAwesomeJS ["list"] []
-
 sanitizeTagName :: String -> String
 sanitizeTagName = map (\x -> if x == ' ' then '-' else toLower x) .
                   filter (liftM2 (||) isAlphaNum (`elem` [' ', '-', '_']))
@@ -257,6 +252,3 @@ writerOptions :: WriterOptions
 writerOptions = defaultHakyllWriterOptions
   { writerHTMLMathMethod = KaTeX ""
   }
-
-fontAwesomeJS :: FilePath
-fontAwesomeJS = "tools/fontawesome.js"

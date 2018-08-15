@@ -4,7 +4,7 @@
 module FontAwesome
   ( FontAwesomeIcons
   , fontawesome
-  , parseFontAwesomeIcons
+  , loadFontAwesomeIcons
   , renderFontAwesome
   ) where
 
@@ -13,6 +13,7 @@ import qualified Data.ByteString.Lazy.Char8 as BSL
 import qualified Data.HashMap.Strict        as HM
 import           Data.Maybe
 import           Hakyll
+import           System.Process             (readProcess)
 import           Text.HTML.TagSoup
 import           Text.HTML.TagSoup.Tree
 
@@ -34,15 +35,15 @@ instance FromJSON Element where
 -- FontAwesomeIcons [(prefix, [(name, icon-meta)])]
 type FontAwesomeIcons = HM.HashMap String (HM.HashMap String Element)
 
+loadFontAwesomeIcons :: IO (Maybe FontAwesomeIcons)
+loadFontAwesomeIcons = decode . BSL.pack <$> readProcess "tools/fontawesome.js" [] ""
+
 fontawesome :: FontAwesomeIcons -> String -> String -> Maybe (TagTree String)
 fontawesome db prefix name = toTagTree <$> (HM.lookup prefix db >>= HM.lookup name)
 
 toTagTree :: Element -> TagTree String
 toTagTree = TagBranch <$> tag <*> attributes <*> children'
   where children' = map toTagTree . children
-
-parseFontAwesomeIcons :: String -> Maybe FontAwesomeIcons
-parseFontAwesomeIcons = decode . BSL.pack
 
 renderFontAwesome :: FontAwesomeIcons -> Item String -> Compiler (Item String)
 renderFontAwesome icons = return . fmap

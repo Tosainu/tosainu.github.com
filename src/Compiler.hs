@@ -6,7 +6,6 @@ import           Control.Monad
 import           Data.Char
 import qualified Data.HashMap.Strict as HM
 import           Data.List           (isInfixOf)
-import           Data.Monoid         ((<>))
 import           Hakyll
 import           System.FilePath
 import qualified Text.HTML.TagSoup   as TS

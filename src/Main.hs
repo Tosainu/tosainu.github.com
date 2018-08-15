@@ -5,16 +5,14 @@ module Main where
 
 import           Control.Monad
 import           Data.Char
-import           Data.List               (find)
-import           Data.Maybe              (fromMaybe)
-import           Data.Monoid             ((<>))
+import           Data.Foldable          (fold)
+import           Data.List              (find)
 import           Hakyll
 import           Hakyll.Web.Sass
-import qualified Skylighting.Format.HTML as SL
-import qualified Skylighting.Styles      as SL
+import           Skylighting            (pygments, styleToCss)
 import           System.FilePath
-import           System.Process          (readProcess)
-import qualified Text.HTML.TagSoup       as TS
+import           System.Process         (readProcess)
+import qualified Text.HTML.TagSoup      as TS
 import           Text.Pandoc.Extensions
 import           Text.Pandoc.Options
 
@@ -27,15 +25,7 @@ import           Template
 
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
-  faIcons <- fromMaybe mempty <$> loadFontAwesomeIcons
-
-  match "images/**/*.svg" $ do
-    route idRoute
-    compile $ optimizeSVGCompiler ["-p", "4"]
-
-  match ("CNAME" .||. "favicon.ico" .||. "images/**") $ do
-    route idRoute
-    compile copyFileCompiler
+  faIcons <- fold <$> loadFontAwesomeIcons
 
   -- "entry/year/month/day/title/index.md"
   let entryPattern      = "entry/*/*/*/*/index.md"
@@ -155,6 +145,14 @@ main = hakyllWith hakyllConfig $ do
       posts <- fmap (take 20) . recentFirst =<< loadAllSnapshots entryPattern "content"
       renderAtom atomFeedConfig (postContext tags) posts
 
+  match "images/**/*.svg" $ do
+    route idRoute
+    compile $ optimizeSVGCompiler ["-p", "4"]
+
+  match ("CNAME" .||. "favicon.ico" .||. "images/**") $ do
+    route idRoute
+    compile copyFileCompiler
+
   scssDependencies <- makePatternDependency "stylesheets/*/**.scss"
   match "stylesheets/*/**.scss" $ compile getResourceBody
   rulesExtraDependencies [scssDependencies] $
@@ -173,7 +171,7 @@ main = hakyllWith hakyllConfig $ do
 
   create ["stylesheets/highlight.css"] $ do
     route   idRoute
-    compile $ makeItem $ compressCss $ SL.styleToCss SL.pygments
+    compile $ makeItem $ compressCss $ styleToCss pygments
 
   match ("node_modules/katex/dist/**" .&&. complement "**.js") $ do
     route $ gsubRoute "node_modules/katex/dist/" (const "vendor/katex/")

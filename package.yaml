@@ -28,7 +28,6 @@ dependencies:
   - time
   - unordered-containers
   - uri-encode
-  - vector
 
 executables:
   blog:

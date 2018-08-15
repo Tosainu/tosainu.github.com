@@ -164,14 +164,13 @@ main = hakyllWith hakyllConfig $ do
     route   idRoute
     compile compressCssCompiler
 
-  create ["stylesheets/fontawesome.css"] $ do
-    route   idRoute
-    compile $ unsafeCompiler (readProcess fontAwesomeJS ["css"] [])
-      >>= makeItem . compressCss
-
   create ["stylesheets/highlight.css"] $ do
     route   idRoute
     compile $ makeItem $ compressCss $ styleToCss pygments
+
+  match "node_modules/@fortawesome/fontawesome-svg-core/styles.css" $ do
+    route $ constRoute "vendor/fontawesome/style.css"
+    compile compressCssCompiler
 
   match ("node_modules/katex/dist/**" .&&. complement "**.js") $ do
     route $ gsubRoute "node_modules/katex/dist/" (const "vendor/katex/")

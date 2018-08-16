@@ -6,7 +6,7 @@ tags: Haskell, Hakyll, Website
 
 ## TL;DR
 
-- Hakyll の `Routes` で `route` は省略できる
+- Hakyll の `Rules` で `route` は省略できる
     - 省略すると **compile されるが出力されない**
 - この挙動は**何度も呼ばれる処理のプリコンパイル**に応用できそう
 - [blog.myon.info](/) のフッタ生成処理にこれを採用して**ビルドを高速化**できた
@@ -16,7 +16,7 @@ tags: Haskell, Hakyll, Website
 
 ## `route` なしの `Rules`
 
-Hakyll の `Rules` には、「どこに配置するのか」を指定する `route` と「どう加工するか」を指定する `compile` を記述します。このうち `route` は、[ドキュメント](https://www.stackage.org/haddock/lts-12.6/hakyll-4.12.3.0/Hakyll-Core-Routes.html)にもあるように省略することができ、省略した場合はファイルが出力されなくなります。
+Hakyll の [`Rules`](https://www.stackage.org/haddock/lts-12.6/hakyll-4.12.3.0/Hakyll-Core-Rules.html) には、「どこに配置するのか」を指定する [`route`](https://www.stackage.org/haddock/lts-12.6/hakyll-4.12.3.0/Hakyll-Core-Rules.html#v:route) と「どう加工するか」を指定する [`compile`](https://www.stackage.org/haddock/lts-12.6/hakyll-4.12.3.0/Hakyll-Core-Rules.html#v:compile) を記述します。このうち `route` は、[ドキュメント](https://www.stackage.org/haddock/lts-12.6/hakyll-4.12.3.0/Hakyll-Core-Routes.html)にもあるように省略することができ、省略した場合はファイルが出力されなくなります。
 
 > Finally, some special cases:
 >
@@ -46,7 +46,7 @@ main = hakyll $ do
       makeItem $ ("Λ__Λ < " <> hoge :: String)
 ```
 
-コードを実行したあと出力ディレクトリを確認すると、`route` を指定した `fuga.txt` のみが出力されているのがわかります。また出力された `fuga.txt` の内容を確認してみると `hoge.txt` の `Roules` で指定した結果が表れており、`hoge.txt` の `compile` の処理はちゃんと実行されているのがわかります。
+コードを実行したあと出力ディレクトリを確認すると、`route` を指定した `fuga.txt` のみが出力されているのがわかります。また出力された `fuga.txt` の内容を確認してみると `hoge.txt` の `Rules` で指定した結果が表れており、`hoge.txt` の `compile` の処理はちゃんと実行されているのがわかります。
 
     $ chmod +x site.hs
     $ ./site.hs -v build
@@ -114,7 +114,7 @@ index cd20808..980bb9b 100644
              <a href="http://jaspervdj.be/hakyll">Hakyll</a>
 ```
 
-最後に `site.hs` で最新記事の情報を `Context` に入れてやります。`loadAll` を使うと `posts/*` などで依存関係のエラーが出てしまう[^1]ので、snapshot を作成してそれを利用するようにします。
+最後に `site.hs` で最新記事の情報を `Context` に入れてやります。[`loadAll`](https://www.stackage.org/haddock/lts-12.6/hakyll-4.12.3.0/Hakyll-Core-Compiler.html#v:loadAll) を使うと `posts/*` などで依存関係のエラーが出てしまう[^1]ので、snapshot を作成してそれを利用するようにします。
 
 [^1]: 自身が自身に依存してしまうので
 
@@ -271,7 +271,7 @@ index 53650a8..2d738ab 100644
      match "templates/*" $ compile templateCompiler
 ```
 
-そして、最新記事を毎回列挙するかわりに `recent-posts.html` を `loadBody` するようにします。今回は読み込んだ最新記事リストを `recent-list` という `Context` でテンプレート側に渡すことにしました。
+そして、最新記事を毎回列挙するかわりに `recent-posts.html` を [`loadBody`](https://www.stackage.org/haddock/lts-12.6/hakyll-4.12.3.0/Hakyll-Core-Compiler.html#v:loadBody) するようにします。今回は読み込んだ最新記事リストを `recent-list` という `Context` でテンプレート側に渡すことにしました。
 
 ```diff
 diff --git a/site.hs b/site.hs
@@ -385,8 +385,8 @@ index 980bb9b..0963027 100644
 
 ## まとめ
 
-`route` なしの `Roules` の挙動を使ってプリコンパイルのようなことを行い、ビルドを高速化する方法を紹介しました。[blog.myon.info](/) では、この方法でフッタのプリコンパイルをするようにしたことで、1分半程度掛かっていたビルドが40秒ほどで済むようになりました。
+`route` なしの `Rules` の挙動を使ってプリコンパイルのようなことを行い、ビルドを高速化する方法を紹介しました。[blog.myon.info](/) では、この方法でフッタのプリコンパイルをするようにしたことで、1分半程度掛かっていたビルドが40秒ほどで済むようになりました。
 
-`route` なしの `Routes` の活用法はまだたくさんありそうです。[Extra Dependencies in Hakyll - Blaenk Denum](https://www.blaenkdenum.com/posts/extra-dependencies-in-hakyll/) では、scss のような複数のファイルから1つのファイルを生成したいというケースを Extra Dependencies を使って実現する例を紹介していますが、ここでも活躍しています。
+`route` なしの `Rules` の活用法はまだたくさんありそうです。[Extra Dependencies in Hakyll - Blaenk Denum](https://www.blaenkdenum.com/posts/extra-dependencies-in-hakyll/) では、scss のような複数のファイルから1つのファイルを生成したいというケースを Extra Dependencies を使って実現する例を紹介していますが、ここでも活躍しています。
 
 ということで、Hakyll 便利なのでみんな使いましょう！

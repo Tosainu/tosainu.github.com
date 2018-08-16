@@ -164,8 +164,9 @@ main = hakyllWith hakyllConfig $ do
   create ["feed.xml"] $ do
     route idRoute
     compile $ do
+      let ctx = bodyField "description" <> postContext tags
       posts <- fmap (take 20) . recentFirst =<< loadAllSnapshots entryPattern "content"
-      renderAtom atomFeedConfig (postContext tags) posts
+      renderAtom atomFeedConfig ctx posts
 
   match "images/**/*.svg" $ do
     route idRoute
@@ -209,9 +210,8 @@ postContext tags = localDateField   "date"          "%Y/%m/%d %R"
                 <> descriptionField "description"   150
                 <> imageField       "image"
                 <> siteContext
-  where descriptionField key len = field key $
-          return . filter (/= '\n') . escapeHtml . take len . unescapeHtml . stripTags . itemBody
-        unescapeHtml = TS.fromTagText . head . TS.parseTags
+  where descriptionField key len = field key $ \_ ->
+          take len . escapeHtml . concat . lines . itemBody <$> getResourceBody
 
         imageField key = field key $ \item ->
           case find isImageTag $ TS.parseTags $ itemBody item of

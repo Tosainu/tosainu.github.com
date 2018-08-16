@@ -39,16 +39,21 @@ main = hakyllWith hakyllConfig $ do
   match entryPattern $ do
     route $ setExtension "html"
     compile $ do
-      r <- pandocCompilerWith readerOptions writerOptions
+      content <- pandocCompilerWith readerOptions writerOptions
         >>= renderKaTeX
         >>= saveSnapshot "content"
-        >>= applyLucidTemplate postTemplate (postContext tags)
 
-      recent <- fmap (take 5). recentFirst =<< loadAllSnapshots entryPattern "content"
-      let ctx = listField  "recent-posts" (postContext tags) (return recent)
-             <> yearMonthArchiveField "archives" yearMonthArchives
+      let ctx = yearMonthArchiveField "archives" yearMonthArchives
              <> postContext tags
-      applyLucidTemplate defaultTemplate ctx r
+
+      flc    <- mapM load ["footer_left.html", "footer_center.html"]
+      fr     <- applyLucidTemplate footerWidgetRightTemplate ctx =<< makeEmptyItem'
+      footer <- applyLucidTemplate footerTemplate ctx
+                  =<< makeItem (concatMap itemBody $ flc ++ [fr])
+
+      applyLucidTemplate postTemplate ctx content
+        >>= withItemBody (\item -> return $ item <> itemBody footer)
+        >>= applyLucidTemplate defaultTemplate ctx
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
         >>= renderFontAwesome faIcons
@@ -68,20 +73,18 @@ main = hakyllWith hakyllConfig $ do
     paginateRules tagPages $ \num pat' -> do
       route idRoute
       compile $ do
+        footer <- loadBody "footer.html"
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
-        let ctx = constField  "title"        title
-               <> constField  "tag"          tag
-               <> listField   "posts"        postContext'       (return posts)
-               <> listField   "recent-posts" (postContext tags) (return recent)
-               <> yearMonthArchiveField "archives" yearMonthArchives
+        let ctx = listField "posts" postContext' (return posts)
                <> paginateContext tagPages num
-               <> siteContext tags
+               <> defaultContext
             postContext' = teaserField "teaser" "content" <> postContext tags
+            siteContext' = constField "title" title <> siteContext
             title = "Tag archives: " ++ tag
         makeItem title
           >>= applyLucidTemplate entryListTemplate ctx
-          >>= applyLucidTemplate defaultTemplate   ctx
+          >>= withItemBody (\item -> return $ item <> footer)
+          >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
           >>= renderFontAwesome faIcons
@@ -98,19 +101,25 @@ main = hakyllWith hakyllConfig $ do
       route idRoute
       compile $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
-        let ctx = constField  "title"         title
-                <> listField   "posts"        postContext'       (return posts)
-                <> listField   "recent-posts" (postContext tags) (return recent)
-                <> yearMonthArchiveField' "archives" yearMonthArchives (year key)
+        let ctx = listField "posts" postContext' (return posts)
                 <> paginateContext ymaPages num
-                <> siteContext tags
+                <> defaultContext
             postContext' = teaserField "teaser" "content" <> postContext tags
+            siteContext' = constField "title" title
+                         <> yearMonthArchiveField' "archives" yearMonthArchives (year key)
+                         <> siteContext
             title = case key of Yearly  _   -> "Yearly archives: "  ++ key'
                                 Monthly _ _ -> "Monthly archives: " ++ key'
+
+        flc    <- mapM load ["footer_left.html", "footer_center.html"]
+        fr     <- applyLucidTemplate footerWidgetRightTemplate siteContext' =<< makeEmptyItem'
+        footer <- applyLucidTemplate footerTemplate siteContext
+                    =<< makeItem (concatMap itemBody $ flc ++ [fr])
+
         makeItem title
           >>= applyLucidTemplate entryListTemplate ctx
-          >>= applyLucidTemplate defaultTemplate   ctx
+          >>= withItemBody (\item -> return $ item <> itemBody footer)
+          >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
           >>= renderFontAwesome faIcons
@@ -122,21 +131,44 @@ main = hakyllWith hakyllConfig $ do
   paginateRules entries $ \num pat -> do
     route idRoute
     compile $ do
+      footer <- loadBody "footer.html"
       posts  <- recentFirst =<< loadAllSnapshots pat "content"
-      recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
-      let ctx = constField  "title"        ""
-             <> listField   "posts"        postContext'       (return posts)
-             <> listField   "recent-posts" (postContext tags) (return recent)
-             <> yearMonthArchiveField "archives" yearMonthArchives
+      let ctx = listField "posts" postContext' (return posts)
              <> paginateContext entries num
-             <> siteContext tags
+             <> defaultContext
           postContext' = teaserField "teaser" "content" <> postContext tags
-      makeItem ""
+          siteContext' = constField "title" "" <> siteContext
+      makeEmptyItem'
         >>= applyLucidTemplate entryListTemplate ctx
-        >>= applyLucidTemplate defaultTemplate   ctx
+        >>= withItemBody (\item -> return $ item <> footer)
+        >>= applyLucidTemplate defaultTemplate siteContext'
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
         >>= renderFontAwesome faIcons
+
+  -- precompiled footer and footer widgets
+  create ["footer.html"] $
+    compile $
+      mapM loadBody ["footer_left.html", "footer_center.html", "footer_right.html"]
+        >>= makeItem . concat
+        >>= applyLucidTemplate footerTemplate siteContext
+
+  create ["footer_left.html"] $
+    compile $ do
+      recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
+      let ctx = listField "recent-posts" (postContext tags) (return recent)
+             <> authorContext
+      makeEmptyItem' >>= applyLucidTemplate footerWidgetLeftTemplate ctx
+
+  create ["footer_center.html"] $
+    compile $ do
+      let ctx = allTagsListField "all-tags" tags
+      makeEmptyItem' >>= applyLucidTemplate footerWidgetCenterTemplate ctx
+
+  create ["footer_right.html"] $
+    compile $ do
+      let ctx = yearMonthArchiveField "archives" yearMonthArchives
+      makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
 
   create ["feed.xml"] $ do
     route idRoute
@@ -185,9 +217,9 @@ postContext tags = localDateField   "date"          "%Y/%m/%d %R"
                 <> tagsListField    "tags"          tags
                 <> descriptionField "description"   150
                 <> imageField       "image"
-                <> siteContext tags
+                <> siteContext
   where descriptionField key len = field key $
-          return . escapeHtml . take len . unescapeHtml . stripTags . itemBody
+          return . filter (/= '\n') . escapeHtml . take len . unescapeHtml . stripTags . itemBody
         unescapeHtml = TS.fromTagText . head . TS.parseTags
 
         imageField key = field key $ \item ->
@@ -197,29 +229,34 @@ postContext tags = localDateField   "date"          "%Y/%m/%d %R"
         isImageTag (TS.TagOpen "img" _) = True
         isImageTag _                    = False
 
-siteContext :: Tags -> Context String
-siteContext tags = constField       "lang"              "ja"
-                <> constField       "site-title"        "Tosainu Lab"
-                <> constField       "site-description"  "とさいぬのブログです"
-                <> constField       "site-url"          "https://blog.myon.info"
-                <> constField       "copyright"         "© 2011-2018 Tosainu."
-                <> constField       "google-analytics"  "UA-57978655-1"
-                <> constField       "disqus"            "tosainu"
-                <> allTagsListField "all-tags"          tags
-                <> authorContext
-                <> defaultContext
+siteContext :: Context String
+siteContext   = constField "lang"              "ja"
+             <> constField "site-title"        "Tosainu Lab"
+             <> constField "site-description"  "とさいぬのブログです"
+             <> constField "site-url"          "https://blog.myon.info"
+             <> constField "copyright"         "© 2011-2018 Tosainu."
+             <> constField "google-analytics"  "UA-57978655-1"
+             <> constField "disqus"            "tosainu"
+             <> authorContext
+             <> defaultContext
 
 authorContext :: Context String
-authorContext    = constField       "author-name"       "Tosainu"
-                <> constField       "author-profile"    "❤ Arch Linux, ごちうさ"
-                <> constField       "author-portfolio"  "https://myon.info"
-                <> constField       "author-avatar"     "/images/icon/cocoa.svg"
-                <> constField       "author-twitter"    "myon___"
+authorContext = constField "author-name"       "Tosainu"
+             <> constField "author-profile"    "❤ Arch Linux, ごちうさ"
+             <> constField "author-portfolio"  "https://myon.info"
+             <> constField "author-avatar"     "/images/icon/cocoa.svg"
+             <> constField "author-twitter"    "myon___"
 
 --- Misc
 sanitizeTagName :: String -> String
 sanitizeTagName = map (\x -> if x == ' ' then '-' else toLower x) .
                   filter (liftM2 (||) isAlphaNum (`elem` [' ', '-', '_']))
+
+makeEmptyItem :: Monoid a => Compiler (Item a)
+makeEmptyItem = makeItem mempty
+
+makeEmptyItem' :: Compiler (Item String)
+makeEmptyItem' = makeEmptyItem
 
 --- Configurations
 hakyllConfig :: Configuration

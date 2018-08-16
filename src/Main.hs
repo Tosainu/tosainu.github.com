@@ -1,4 +1,3 @@
-{-# LANGUAGE LambdaCase        #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 module Main where
@@ -30,11 +29,12 @@ main = hakyllWith hakyllConfig $ do
   let entryPattern      = "entry/*/*/*/*/index.md"
       entryFilesPattern = "entry/*/*/*/*/**"
 
-  tags <- buildTags entryPattern $ fromCapture "entry/tags/*/index.html" . sanitizeTagName
+  let tagPagesPath tag = "entry" </> "tags" </> sanitizeTagName tag </> "index.html"
+  tags <- buildTags entryPattern $ fromFilePath . tagPagesPath
 
-  yearMonthArchives <- buildYearMonthArchives entryPattern $
-    \case Yearly  y   -> fromFilePath ("entry" </> y </> "index.html")
-          Monthly y m -> fromFilePath ("entry" </> y </> m </> "index.html")
+  let archivesPagesPath (Yearly y)    = "entry" </> y </> "index.html"
+      archivesPagesPath (Monthly y m) = "entry" </> y </> m </> "index.html"
+  archives <- buildYearMonthArchives entryPattern $ fromFilePath . archivesPagesPath
 
   match entryPattern $ do
     route $ setExtension "html"
@@ -43,7 +43,7 @@ main = hakyllWith hakyllConfig $ do
         >>= renderKaTeX
         >>= saveSnapshot "content"
 
-      let ctx = yearMonthArchiveField "archives" yearMonthArchives
+      let ctx = yearMonthArchiveField "archives" archives
              <> postContext tags
 
       flc    <- mapM load ["footer_left.html", "footer_center.html"]
@@ -63,13 +63,9 @@ main = hakyllWith hakyllConfig $ do
     compile copyFileCompiler
 
   tagsRules tags $ \tag pat -> do
-    let grouper  = fmap (paginateEvery 5) . sortRecentFirst
-        tag'     = sanitizeTagName tag
-        makeId n = fromFilePath $
-                     if n == 1 then "entry" </> "tags" </> tag' </> "index.html"
-                               else "entry" </> "tags" </> tag' </> "page" </> show n </> "index.html"
-    tagPages <- buildPaginateWith grouper pat makeId
-
+    tagPages <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
+                    makeId  = makePageIdentifier $ tagPagesPath tag
+                in  buildPaginateWith grouper pat makeId
     paginateRules tagPages $ \num pat' -> do
       route idRoute
       compile $ do
@@ -89,27 +85,23 @@ main = hakyllWith hakyllConfig $ do
           >>= cleanIndexHtmls
           >>= renderFontAwesome faIcons
 
-  archivesRules yearMonthArchives $ \key pat -> do
-    let grouper  = fmap (paginateEvery 5) . sortRecentFirst
-        key'     = case key of Yearly  y   -> y
-                               Monthly y m -> y </> m
-        makeId n = fromFilePath $
-                     if n == 1 then "entry" </> key' </> "index.html"
-                               else "entry" </> key' </> "page" </> show n </> "index.html"
-    ymaPages <- buildPaginateWith grouper pat makeId
-    paginateRules ymaPages $ \num pat' -> do
+  archivesRules archives $ \key pat -> do
+    archivesPages <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
+                         makeId  = makePageIdentifier $ archivesPagesPath key
+                     in  buildPaginateWith grouper pat makeId
+    paginateRules archivesPages $ \num pat' -> do
       route idRoute
       compile $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
         let ctx = listField "posts" postContext' (return posts)
-                <> paginateContext ymaPages num
+                <> paginateContext archivesPages num
                 <> defaultContext
             postContext' = teaserField "teaser" "content" <> postContext tags
             siteContext' = constField "title" title
-                         <> yearMonthArchiveField' "archives" yearMonthArchives (year key)
+                         <> yearMonthArchiveField' "archives" archives (year key)
                          <> siteContext
-            title = case key of Yearly  _   -> "Yearly archives: "  ++ key'
-                                Monthly _ _ -> "Monthly archives: " ++ key'
+            title = case key of Yearly  y   -> "Yearly archives: "  <> y
+                                Monthly y m -> "Monthly archives: " <> y <> "/" <> m
 
         flc    <- mapM load ["footer_left.html", "footer_center.html"]
         fr     <- applyLucidTemplate footerWidgetRightTemplate siteContext' =<< makeEmptyItem'
@@ -124,10 +116,9 @@ main = hakyllWith hakyllConfig $ do
           >>= cleanIndexHtmls
           >>= renderFontAwesome faIcons
 
-  entries <- buildPaginateWith (fmap (paginateEvery 5) . sortRecentFirst)
-                               entryPattern
-                               (\n -> if n == 1 then fromFilePath "index.html"
-                                                else fromFilePath $ "page" </> show n </> "index.html")
+  entries <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
+                 makeId  = makePageIdentifier "index.html"
+             in  buildPaginateWith grouper entryPattern makeId
   paginateRules entries $ \num pat -> do
     route idRoute
     compile $ do
@@ -167,7 +158,7 @@ main = hakyllWith hakyllConfig $ do
 
   create ["footer_right.html"] $
     compile $ do
-      let ctx = yearMonthArchiveField "archives" yearMonthArchives
+      let ctx = yearMonthArchiveField "archives" archives
       makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
 
   create ["feed.xml"] $ do
@@ -251,6 +242,11 @@ authorContext = constField "author-name"       "Tosainu"
 sanitizeTagName :: String -> String
 sanitizeTagName = map (\x -> if x == ' ' then '-' else toLower x) .
                   filter (liftM2 (||) isAlphaNum (`elem` [' ', '-', '_']))
+
+makePageIdentifier :: FilePath -> PageNumber -> Identifier
+makePageIdentifier p 1 = fromFilePath p
+makePageIdentifier p n = fromFilePath $ takeDirectory' p </> "page" </> show n </> takeFileName p
+  where takeDirectory' x = let x' = takeDirectory x in if x' == "." then "" else x'
 
 makeEmptyItem :: Monoid a => Compiler (Item a)
 makeEmptyItem = makeItem mempty

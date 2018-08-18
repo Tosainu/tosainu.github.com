@@ -4,17 +4,21 @@ module Compiler where
 
 import           Control.Monad
 import           Data.Char
-import qualified Data.HashMap.Strict as HM
-import           Data.List           (isInfixOf)
+import           Data.List         (find, isInfixOf)
+import           Data.Maybe        (fromMaybe)
 import           Hakyll
 import           System.FilePath
-import qualified Text.HTML.TagSoup   as TS
+import qualified Text.HTML.TagSoup as TS
 
 renderKaTeX :: Item String -> Compiler (Item String)
-renderKaTeX item = do
-  metadata <- getMetadata $ itemIdentifier item
-  if HM.member "math" metadata then withItemBody (unixFilter  "tools/katex.js" []) item
-                               else return item
+renderKaTeX item = case find isMathTag $ TS.parseTags $ itemBody item of
+                        Just _  -> withItemBody (unixFilter "tools/katex.js" []) item
+                        Nothing -> return item
+  where
+    isMathTag (TS.TagOpen "span" attr) = hasMathClass attr
+    isMathTag _                        = False
+
+    hasMathClass = elem "math" . words . fromMaybe "" . lookup "class"
 
 optimizeSVGCompiler :: [String] -> Compiler (Item String)
 optimizeSVGCompiler opts = getResourceString >>=

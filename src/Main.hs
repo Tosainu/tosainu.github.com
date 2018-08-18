@@ -39,9 +39,7 @@ main = hakyllWith hakyllConfig $ do
   match entryPattern $ do
     route $ setExtension "html"
     compile $ do
-      content <- pandocCompilerWith readerOptions writerOptions
-        >>= renderKaTeX
-        >>= saveSnapshot "content"
+      content <- saveSnapshot "content" =<< pandocCompilerWith readerOptions writerOptions
 
       let ctx = yearMonthArchiveField "archives" archives
              <> postContext tags
@@ -52,6 +50,7 @@ main = hakyllWith hakyllConfig $ do
                   =<< makeItem (concatMap itemBody $ flc ++ [fr])
 
       applyLucidTemplate postTemplate ctx content
+        >>= renderKaTeX
         >>= withItemBody (\item -> return $ item <> itemBody footer)
         >>= applyLucidTemplate defaultTemplate ctx
         >>= modifyExternalLinkAttributes
@@ -79,6 +78,7 @@ main = hakyllWith hakyllConfig $ do
             title = "Tag archives: " ++ tag
         makeItem title
           >>= applyLucidTemplate entryListTemplate ctx
+          >>= renderKaTeX
           >>= withItemBody (\item -> return $ item <> footer)
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
@@ -110,6 +110,7 @@ main = hakyllWith hakyllConfig $ do
 
         makeItem title
           >>= applyLucidTemplate entryListTemplate ctx
+          >>= renderKaTeX
           >>= withItemBody (\item -> return $ item <> itemBody footer)
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
@@ -131,6 +132,7 @@ main = hakyllWith hakyllConfig $ do
           siteContext' = constField "title" "" <> siteContext
       makeEmptyItem'
         >>= applyLucidTemplate entryListTemplate ctx
+        >>= renderKaTeX
         >>= withItemBody (\item -> return $ item <> footer)
         >>= applyLucidTemplate defaultTemplate siteContext'
         >>= modifyExternalLinkAttributes

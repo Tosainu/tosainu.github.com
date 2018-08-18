@@ -138,13 +138,13 @@ footerWidgetLeftTemplate = LucidTemplate $ do
 
 footerWidgetCenterTemplate :: LucidTemplate a
 footerWidgetCenterTemplate = LucidTemplate $ do
-  StringField allTags <- lookupMeta "all-tags"
+  StringField tags <- lookupMeta "tag-cloud"
 
   section_ [class_ "tag-cloud"] $ do
     h4_ $ do
       i_ [classes_ ["fas", "fa-tags", "fa-fw"]] ""
       " Tags"
-    ul_ [class_ "tag-list"] $ toHtmlRaw allTags
+    ul_ [class_ "tag-list"] $ toHtmlRaw tags
 
 footerWidgetRightTemplate :: LucidTemplate a
 footerWidgetRightTemplate = LucidTemplate $ do

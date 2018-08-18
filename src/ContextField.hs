@@ -2,8 +2,8 @@ module ContextField
   ( descriptionField
   , imageField
   , localDateField
-  , tagsListField
-  , allTagsListField
+  , tagsField'
+  , tagCloudField'
   ) where
 
 import           Control.Monad
@@ -36,8 +36,8 @@ localDateField :: String -> String -> Context a
 localDateField key format = field key $ \i ->
   Time.formatTime defaultTimeLocale format <$> getItemLocalTime (itemIdentifier i)
 
-tagsListField :: String -> Tags -> Context a
-tagsListField key tags = field key $ \item -> do
+tagsField' :: String -> Tags -> Context a
+tagsField' key tags = field key $ \item -> do
   tags' <- getTags $ itemIdentifier item
   links <- forM tags' $ \tag -> do
     route' <- getRoute $ tagsMakeId tags tag
@@ -46,8 +46,8 @@ tagsListField key tags = field key $ \item -> do
   where toLink' _   Nothing     = Nothing
         toLink' tag (Just path) = Just $ toLink tag path
 
-allTagsListField :: String -> Tags -> Context a
-allTagsListField key tags = field key $ \_ -> renderTags toLink' concat tags
+tagCloudField' :: String -> Tags -> Context a
+tagCloudField' key tags = field key $ \_ -> renderTags toLink' concat tags
   where toLink' tag path _ _ _ = TL.unpack $ renderText $ li_ $ toLink tag path
 
 toLink :: String -> String -> Html ()

@@ -152,7 +152,7 @@ main = hakyllWith hakyllConfig $ do
 
   create ["footer_center.html"] $
     compile $ do
-      let ctx = allTagsListField "all-tags" tags
+      let ctx = tagCloudField' "tag-cloud" tags
       makeEmptyItem' >>= applyLucidTemplate footerWidgetCenterTemplate ctx
 
   create ["footer_right.html"] $
@@ -205,7 +205,7 @@ main = hakyllWith hakyllConfig $ do
 --- Contexts
 postContext :: Tags -> Context String
 postContext tags = localDateField   "date"          "%Y/%m/%d %R"
-                <> tagsListField    "tags"          tags
+                <> tagsField'       "tags"          tags
                 <> descriptionField "description"   150
                 <> imageField       "image"
                 <> siteContext

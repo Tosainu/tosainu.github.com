@@ -5,20 +5,17 @@ module Main where
 import           Control.Monad
 import           Data.Char
 import           Data.Foldable          (fold)
-import           Data.List              (find)
 import           Hakyll
 import           Hakyll.Web.Sass
 import           Skylighting            (pygments, styleToCss)
 import           System.FilePath
-import qualified Text.HTML.TagSoup      as TS
 import           Text.Pandoc.Extensions
 import           Text.Pandoc.Options
 
 import           Archives
 import           Compiler
+import           ContextField
 import           FontAwesome
-import           LocalTime
-import           TagField
 import           Template
 
 main :: IO ()
@@ -212,15 +209,6 @@ postContext tags = localDateField   "date"          "%Y/%m/%d %R"
                 <> descriptionField "description"   150
                 <> imageField       "image"
                 <> siteContext
-  where descriptionField key len = field key $ \_ ->
-          take len . escapeHtml . concat . lines . itemBody <$> getResourceBody
-
-        imageField key = field key $ \item ->
-          case find isImageTag $ TS.parseTags $ itemBody item of
-               Just t  -> return $ TS.fromAttrib "src" t
-               Nothing -> return ""
-        isImageTag (TS.TagOpen "img" _) = True
-        isImageTag _                    = False
 
 siteContext :: Context String
 siteContext   = constField "lang"              "ja"

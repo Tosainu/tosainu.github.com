@@ -14,8 +14,3 @@ defaultTimeLocale = Time.defaultTimeLocale
 
 getItemLocalTime :: MonadMetadata m => Identifier -> m Time.LocalTime
 getItemLocalTime = fmap (Time.utcToLocalTime defaultTimeZone) . getItemUTC defaultTimeLocale
-
-localDateField :: String -> String -> Context a
-localDateField key format = field key $ \i ->
-  Time.formatTime defaultTimeLocale format <$> getItemLocalTime (itemIdentifier i)
-

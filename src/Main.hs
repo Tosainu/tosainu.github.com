@@ -33,23 +33,23 @@ main = hakyllWith hakyllConfig $ do
       archivesPagesPath (Monthly y m) = "entry" </> y </> m </> "index.html"
   archives <- buildYearMonthArchives entryPattern $ fromFilePath . archivesPagesPath
 
+  let makeAndAppendFooter ctx item = do
+        flc    <- mapM load ["footer_left.html", "footer_center.html"]
+        fr     <- applyLucidTemplate footerWidgetRightTemplate ctx =<< makeEmptyItem'
+        footer <- applyLucidTemplate footerTemplate ctx
+                    =<< makeItem (concatMap itemBody $ flc ++ [fr])
+        appendItemBody (itemBody footer) item
+
   match entryPattern $ do
     route $ setExtension "html"
     compile $ do
-      content <- saveSnapshot "content" =<< pandocCompilerWith readerOptions writerOptions
-
-      let ctx = yearMonthArchiveField "archives" archives
-             <> postContext tags
-
-      flc    <- mapM load ["footer_left.html", "footer_center.html"]
-      fr     <- applyLucidTemplate footerWidgetRightTemplate ctx =<< makeEmptyItem'
-      footer <- applyLucidTemplate footerTemplate ctx
-                  =<< makeItem (concatMap itemBody $ flc ++ [fr])
-
-      applyLucidTemplate postTemplate ctx content
+      let footerContext = yearMonthArchiveField "archives" archives <> siteContext
+      pandocCompilerWith readerOptions writerOptions
+        >>= saveSnapshot "content"
         >>= renderKaTeX
-        >>= withItemBody (\item -> return $ item <> itemBody footer)
-        >>= applyLucidTemplate defaultTemplate ctx
+        >>= applyLucidTemplate postTemplate (postContext tags)
+        >>= makeAndAppendFooter footerContext
+        >>= applyLucidTemplate defaultTemplate siteContext
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
         >>= renderFontAwesome faIcons
@@ -67,16 +67,16 @@ main = hakyllWith hakyllConfig $ do
       compile $ do
         footer <- loadBody "footer.html"
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        let ctx = listField "posts" postContext' (return posts)
-               <> paginateContext tagPages num
-               <> defaultContext
+        let title = "Tag archives: " ++ tag
+            listContext  = listField "posts" postContext' (return posts)
+                        <> paginateContext tagPages num
+                        <> defaultContext
             postContext' = teaserField "teaser" "content" <> postContext tags
             siteContext' = constField "title" title <> siteContext
-            title = "Tag archives: " ++ tag
         makeItem title
-          >>= applyLucidTemplate entryListTemplate ctx
+          >>= applyLucidTemplate entryListTemplate listContext
           >>= renderKaTeX
-          >>= withItemBody (\item -> return $ item <> footer)
+          >>= appendItemBody footer
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
@@ -90,25 +90,20 @@ main = hakyllWith hakyllConfig $ do
       route idRoute
       compile $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        let ctx = listField "posts" postContext' (return posts)
-                <> paginateContext archivesPages num
-                <> defaultContext
-            postContext' = teaserField "teaser" "content" <> postContext tags
-            siteContext' = constField "title" title
-                         <> yearMonthArchiveField' "archives" archives (year key)
-                         <> siteContext
-            title = case key of Yearly  y   -> "Yearly archives: "  <> y
+        let title = case key of Yearly  y   -> "Yearly archives: "  <> y
                                 Monthly y m -> "Monthly archives: " <> y <> "/" <> m
-
-        flc    <- mapM load ["footer_left.html", "footer_center.html"]
-        fr     <- applyLucidTemplate footerWidgetRightTemplate siteContext' =<< makeEmptyItem'
-        footer <- applyLucidTemplate footerTemplate siteContext
-                    =<< makeItem (concatMap itemBody $ flc ++ [fr])
+            footerContext = yearMonthArchiveField' "archives" archives (year key)
+                         <> siteContext
+            listContext   = listField "posts" postContext' (return posts)
+                         <> paginateContext archivesPages num
+                         <> defaultContext
+            postContext'  = teaserField "teaser" "content" <> postContext tags
+            siteContext'  = constField "title" title <> siteContext
 
         makeItem title
-          >>= applyLucidTemplate entryListTemplate ctx
+          >>= applyLucidTemplate entryListTemplate listContext
           >>= renderKaTeX
-          >>= withItemBody (\item -> return $ item <> itemBody footer)
+          >>= makeAndAppendFooter footerContext
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
@@ -122,15 +117,15 @@ main = hakyllWith hakyllConfig $ do
     compile $ do
       footer <- loadBody "footer.html"
       posts  <- recentFirst =<< loadAllSnapshots pat "content"
-      let ctx = listField "posts" postContext' (return posts)
-             <> paginateContext entries num
-             <> defaultContext
+      let listContext  = listField "posts" postContext' (return posts)
+                      <> paginateContext entries num
+                      <> defaultContext
           postContext' = teaserField "teaser" "content" <> postContext tags
           siteContext' = constField "title" "" <> siteContext
       makeEmptyItem'
-        >>= applyLucidTemplate entryListTemplate ctx
+        >>= applyLucidTemplate entryListTemplate listContext
         >>= renderKaTeX
-        >>= withItemBody (\item -> return $ item <> footer)
+        >>= appendItemBody footer
         >>= applyLucidTemplate defaultTemplate siteContext'
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
@@ -243,6 +238,9 @@ makeEmptyItem = makeItem mempty
 
 makeEmptyItem' :: Compiler (Item String)
 makeEmptyItem' = makeEmptyItem
+
+appendItemBody :: Semigroup a => a -> Item a -> Compiler (Item a)
+appendItemBody x = withItemBody (return . (<> x))
 
 --- Configurations
 hakyllConfig :: Configuration

@@ -4,7 +4,7 @@ module Compiler where
 
 import           Control.Monad
 import           Data.Char
-import           Data.List         (find, isInfixOf)
+import           Data.List         (find)
 import           Data.Maybe        (fromMaybe)
 import           Hakyll
 import           System.FilePath
@@ -26,18 +26,19 @@ optimizeSVGCompiler opts = getResourceString >>=
 
 cleanIndexHtmls :: Item String -> Compiler (Item String)
 cleanIndexHtmls = return . fmap (withUrls removeIndexHtml)
-  where removeIndexHtml path
-          | not (path `isInfixOf` "://") && takeFileName path == "index.html"
-                      = dropFileName path
-          | otherwise = path
+  where
+    removeIndexHtml path
+      | not (isExternal path) && takeFileName path == "index.html" = dropFileName path
+      | otherwise = path
 
 modifyExternalLinkAttributes :: Item String -> Compiler (Item String)
 modifyExternalLinkAttributes = return . fmap (withTags f)
-  where f t | isExternalLink t = let (TS.TagOpen "a" as) = t
-                                 in  (TS.TagOpen "a" $ as <> extraAttributs)
-            | otherwise        = t
-        isExternalLink = liftM2 (&&) (TS.isTagOpenName "a") (isExternal . TS.fromAttrib "href")
-        extraAttributs = [("target", "_blank"), ("rel", "nofollow noopener")]
+  where
+    f t | isExternalLink t = let (TS.TagOpen "a" as) = t
+                             in  (TS.TagOpen "a" $ as <> extraAttributs)
+        | otherwise        = t
+    isExternalLink = liftM2 (&&) (TS.isTagOpenName "a") (isExternal . TS.fromAttrib "href")
+    extraAttributs = [("target", "_blank"), ("rel", "nofollow noopener")]
 
 -- https://github.com/jaspervdj/hakyll/blob/v4.11.0.0/lib/Hakyll/Web/Html.hs#L77-L90
 tagSoupOption :: TS.RenderOptions String

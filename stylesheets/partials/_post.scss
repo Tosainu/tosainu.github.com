@@ -130,7 +130,7 @@
     content: '*';
   }
 
-  table {
+  table:not(.highlight) {
     border-collapse: collapse;
 
     th {

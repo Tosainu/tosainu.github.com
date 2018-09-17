@@ -24,6 +24,17 @@ optimizeSVGCompiler :: [String] -> Compiler (Item String)
 optimizeSVGCompiler opts = getResourceString >>=
   withItemBody (unixFilter "node_modules/svgo/bin/svgo" $ ["-i", "-", "-o", "-"] ++ opts)
 
+absolutizeUrls :: Item String -> Compiler (Item String)
+absolutizeUrls item = do
+  r <- getRoute =<< getUnderlying
+  return $ case r of
+                Just r' -> fmap (withUrls (absolutizeUrls' r')) item
+                _       -> item
+  where
+    absolutizeUrls' r u
+      | not (isExternal u) && isRelative u = normalise $ "/" </> takeDirectory r </> u
+      | otherwise = u
+
 cleanIndexHtmls :: Item String -> Compiler (Item String)
 cleanIndexHtmls = return . fmap (withUrls removeIndexHtml)
   where

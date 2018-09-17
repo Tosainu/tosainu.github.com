@@ -45,6 +45,7 @@ main = hakyllWith hakyllConfig $ do
     compile $ do
       let footerContext = yearMonthArchiveField "archives" archives <> siteContext
       pandocCompilerWith readerOptions writerOptions
+        >>= absolutizeUrls
         >>= saveSnapshot "content"
         >>= renderKaTeX
         >>= applyLucidTemplate postTemplate (postContext tags)

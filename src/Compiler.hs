@@ -35,6 +35,13 @@ absolutizeUrls item = do
       | not (isExternal u) && isRelative u = normalise $ "/" </> takeDirectory r </> u
       | otherwise = u
 
+prependBaseUrl :: String -> Item String -> Compiler (Item String)
+prependBaseUrl base = return . fmap (withUrls prependBaseUrl')
+  where
+    prependBaseUrl' u
+      | not (isExternal u) && isAbsolute u = base <> u
+      | otherwise = u
+
 cleanIndexHtmls :: Item String -> Compiler (Item String)
 cleanIndexHtmls = return . fmap (withUrls removeIndexHtml)
   where

@@ -160,8 +160,10 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile $ do
       let ctx = bodyField "description" <> postContext tags
-      posts <- fmap (take 20) . recentFirst =<< loadAllSnapshots entryPattern "content"
-      renderAtom atomFeedConfig ctx posts
+      loadAllSnapshots entryPattern "content"
+        >>= fmap (take 20) . recentFirst
+        >>= mapM (prependBaseUrl (feedRoot atomFeedConfig))
+        >>= renderAtom atomFeedConfig ctx
 
   match "images/**/*.svg" $ do
     route idRoute

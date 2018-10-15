@@ -265,7 +265,6 @@ int main(int argc, char** argv) {
 #include <iostream>
 #include <vector>
 
-
 #define BOOST_COROUTINES_NO_DEPRECATION_WARNING
 #include <boost/asio.hpp>
 #include <boost/asio/spawn.hpp>
@@ -319,11 +318,11 @@ boost::asio::io_context::strand strand{ctx};
 boost::asio::steady_timer timer{ctx};
 boost::asio::spawn(strand, [&state, &timer](auto&& yield) {
   // 一定時間毎 (1/60 [s]) に状態を表示する
-}
+});
 
 boost::asio::spawn(strand, [&joystick, &state](auto&& yield) {
   // Joystick のイベント監視 & 内部状態更新をする
-}
+});
 
 ctx.run();
 ```

@@ -1,4 +1,4 @@
-# Tosainu's Portfolio [![Build Status](https://travis-ci.org/Tosainu/tosainu.github.com.svg?branch=dev)](https://travis-ci.org/Tosainu/tosainu.github.com)
+# Tosainu's Portfolio [![CircleCI](https://circleci.com/gh/Tosainu/tosainu.github.com/tree/dev.svg?style=svg)](https://circleci.com/gh/Tosainu/tosainu.github.com/tree/dev)
 
 ## License
 

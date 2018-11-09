@@ -12,19 +12,19 @@
     "build": "./node_modules/gulp-cli/bin/gulp.js build"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.2",
-    "@fortawesome/free-brands-svg-icons": "^5.2.0",
-    "@fortawesome/free-solid-svg-icons": "^5.2.0",
-    "browser-sync": "^2.24.6",
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-brands-svg-icons": "^5.5.0",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-cheerio": "^0.6.3",
     "gulp-clean-css": "^3.10.0",
     "gulp-cli": "^2.0.1",
-    "gulp-embed-svg": "^1.0.0",
+    "gulp-embed-svg": "^1.0.2",
     "gulp-htmlmin": "^4.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-svgmin": "^1.2.4",
     "normalize.css": "^8.0.0"
   }

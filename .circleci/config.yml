@@ -53,7 +53,7 @@ jobs:
             git add -A
             git commit --allow-empty -m '(⋈◍＞◡＜◍)。✧♡ [skip ci]'
             git remote add origin $CIRCLE_REPOSITORY_URL
-            git push -n -f origin master
+            git push -f origin master
 
 workflows:
   version: 2

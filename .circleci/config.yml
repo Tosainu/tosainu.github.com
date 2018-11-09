@@ -1,0 +1,68 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/work
+    docker:
+      - image: circleci/node:11.1.0-stretch
+    steps:
+      - checkout
+      - run: git submodule sync --recursive
+      - run: git submodule update --recursive --init
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - store_artifacts:
+          path: build
+
+      - persist_to_workspace:
+          root: ~/work
+          paths:
+            - build
+
+  deploy:
+    working_directory: ~/work
+    docker:
+      - image: circleci/node:11.1.0-stretch
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "66:b9:ab:c6:0e:0f:83:06:e9:1c:19:0a:19:02:10:d3"
+
+      - attach_workspace:
+          at: ~/work
+
+      - run:
+          name: Add github.com to ~/.ssh/known_hosts
+          command: |
+            echo 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==' >> ~/.ssh/known_hosts
+
+      - run:
+          name: Set git user and email
+          command: |
+            git config --global user.name $GH_NAME
+            git config --global user.email $GH_EMAIL
+
+      - deploy:
+          name: Deploy
+          working_directory: ~/work/build
+          command: |
+            git init
+            git checkout --orphan master
+            git add -A
+            git commit --allow-empty -m '(⋈◍＞◡＜◍)。✧♡ [skip ci]'
+            git remote add origin $CIRCLE_REPOSITORY_URL
+            git push -n -f origin master
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: dev

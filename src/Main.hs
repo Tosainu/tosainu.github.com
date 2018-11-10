@@ -5,6 +5,8 @@ module Main where
 import           Control.Monad
 import           Data.Char
 import           Data.Foldable          (fold)
+import           Data.List              (nub)
+import           Data.Maybe             (mapMaybe)
 import           Hakyll
 import           Hakyll.Web.Sass
 import           Skylighting            (pygments, styleToCss)
@@ -16,6 +18,7 @@ import           Archives
 import           Compiler
 import           ContextField
 import           FontAwesome
+import           LocalTime              (getPageYear)
 import           Template
 
 main :: IO ()
@@ -33,23 +36,19 @@ main = hakyllWith hakyllConfig $ do
       archivesPagesPath (Monthly y m) = "entry" </> y </> m </> "index.html"
   archives <- buildYearMonthArchives entryPattern $ fromFilePath . archivesPagesPath
 
-  let makeAndAppendFooter ctx item = do
-        flc    <- mapM load ["footer_left.html", "footer_center.html"]
-        fr     <- applyLucidTemplate footerWidgetRightTemplate ctx =<< makeEmptyItem'
-        footer <- applyLucidTemplate footerTemplate ctx
-                    =<< makeItem (concatMap itemBody $ flc ++ [fr])
-        appendItemBody (itemBody footer) item
+  let appendFooter y item = do
+        footer <- loadBody $ setVersion y "footer.html"
+        appendItemBody footer item
 
   match entryPattern $ do
     route $ setExtension "html"
-    compile $ do
-      let footerContext = yearMonthArchiveField "archives" archives <> siteContext
+    compile $
       pandocCompilerWith readerOptions writerOptions
         >>= absolutizeUrls
         >>= saveSnapshot "content"
         >>= renderKaTeX
         >>= applyLucidTemplate postTemplate (postContext tags)
-        >>= makeAndAppendFooter footerContext
+        >>= liftM2 (>>=) getPageYear (flip appendFooter)
         >>= applyLucidTemplate defaultTemplate (postContext tags)
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
@@ -66,7 +65,6 @@ main = hakyllWith hakyllConfig $ do
     paginateRules tagPages $ \num pat' -> do
       route idRoute
       compile $ do
-        footer <- loadBody "footer.html"
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
         let title = "Tag archives: " ++ tag
             listContext  = listField "posts" postContext' (return posts)
@@ -77,7 +75,7 @@ main = hakyllWith hakyllConfig $ do
         makeItem title
           >>= applyLucidTemplate entryListTemplate listContext
           >>= renderKaTeX
-          >>= appendItemBody footer
+          >>= appendFooter Nothing
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
@@ -93,8 +91,6 @@ main = hakyllWith hakyllConfig $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
         let title = case key of Yearly  y   -> "Yearly archives: "  <> y
                                 Monthly y m -> "Monthly archives: " <> y <> "/" <> m
-            footerContext = yearMonthArchiveField' "archives" archives (year key)
-                         <> siteContext
             listContext   = listField "posts" postContext' (return posts)
                          <> paginateContext archivesPages num
                          <> defaultContext
@@ -104,7 +100,7 @@ main = hakyllWith hakyllConfig $ do
         makeItem title
           >>= applyLucidTemplate entryListTemplate listContext
           >>= renderKaTeX
-          >>= makeAndAppendFooter footerContext
+          >>= appendFooter (Just $ year key)
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
@@ -116,7 +112,6 @@ main = hakyllWith hakyllConfig $ do
   paginateRules entries $ \num pat -> do
     route idRoute
     compile $ do
-      footer <- loadBody "footer.html"
       posts  <- recentFirst =<< loadAllSnapshots pat "content"
       let listContext  = listField "posts" postContext' (return posts)
                       <> paginateContext entries num
@@ -126,7 +121,7 @@ main = hakyllWith hakyllConfig $ do
       makeEmptyItem'
         >>= applyLucidTemplate entryListTemplate listContext
         >>= renderKaTeX
-        >>= appendItemBody footer
+        >>= appendFooter Nothing
         >>= applyLucidTemplate defaultTemplate siteContext'
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
@@ -153,8 +148,26 @@ main = hakyllWith hakyllConfig $ do
 
   create ["footer_right.html"] $
     compile $ do
-      let ctx = yearMonthArchiveField "archives" archives
+      let ctx = yearMonthArchiveField "archives" archives Nothing
       makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
+
+  let entryYears as =
+        let f (Yearly y) = Just y
+            f _          = Nothing
+        in  nub $ mapMaybe (f . fst) $ archivesMap as
+  forM_ (entryYears archives) $ \y -> do
+    let ident = fromFilePath "footer_right.html"
+
+    create [ident] $ version y $
+      compile $ do
+        let ctx = yearMonthArchiveField "archives" archives (Just y)
+        makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
+
+    create ["footer.html"] $ version y $
+      compile $
+        mapM loadBody ["footer_left.html", "footer_center.html", setVersion (Just y) ident]
+          >>= makeItem . concat
+          >>= applyLucidTemplate footerTemplate siteContext
 
   create ["feed.xml"] $ do
     route idRoute

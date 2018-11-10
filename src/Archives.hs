@@ -3,16 +3,15 @@
 module Archives where
 
 import           Control.Monad
-import           Control.Monad.Except (MonadError (..))
-import           Control.Monad.Trans  (lift)
-import           Data.Function        (on)
-import           Data.List            (groupBy, sortBy)
-import qualified Data.Map             as M
+import           Control.Monad.Trans (lift)
+import           Data.Function       (on)
+import           Data.List           (groupBy, sortBy)
+import qualified Data.Map            as M
 import           Data.Maybe
-import qualified Data.Set             as S
-import qualified Data.Text            as T
-import qualified Data.Text.Lazy       as TL
-import qualified Data.Time.Format     as Time
+import qualified Data.Set            as S
+import qualified Data.Text           as T
+import qualified Data.Text.Lazy      as TL
+import qualified Data.Time.Format    as Time
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
@@ -69,17 +68,11 @@ buildYearMonthArchives = buildArchivesWith $ \i -> do
       m = Time.formatTime defaultTimeLocale "%m" t
   return [Yearly y, Monthly y m]
 
-yearMonthArchiveField :: String -> Archives YearMonthKey -> Context a
-yearMonthArchiveField key archives = field key $ getPageYear >=> buildYearMonthArchiveField archives
-  where
-    getPageYear item = (Time.formatTime defaultTimeLocale "%Y" <$>
-                         getItemLocalTime (itemIdentifier item)) `catchError` const (return "")
-
-yearMonthArchiveField' :: String -> Archives YearMonthKey -> String -> Context a
-yearMonthArchiveField' key archives pageYear =
+yearMonthArchiveField :: String -> Archives YearMonthKey -> Maybe String -> Context a
+yearMonthArchiveField key archives pageYear =
   field key $ const $ buildYearMonthArchiveField archives pageYear
 
-buildYearMonthArchiveField :: Archives YearMonthKey -> String -> Compiler String
+buildYearMonthArchiveField :: Archives YearMonthKey -> Maybe String -> Compiler String
 buildYearMonthArchiveField archives pageYear = fmap TL.unpack $ renderTextT $
   ul_ [class_ "archive-tree"] $ do
     let getUrl    = lift . fmap (toUrl . fromMaybe "#") . getRoute
@@ -95,7 +88,7 @@ buildYearMonthArchiveField archives pageYear = fmap TL.unpack $ renderTextT $
         input_ $ [ class_ "tree-toggle"
                  , type_ "checkbox"
                  , id_ (T.pack $ "tree-label-" ++ y) ] ++
-                 [ checked_ | y == pageYear ]
+                 [ checked_ | maybe False (== y) pageYear ]
         label_ [ class_ "tree-toggle-button"
                , for_ (T.pack $ "tree-label-" ++ y) ] $ do
           i_ [classes_ ["fas", "fa-angle-right", "fa-fw"]] ""

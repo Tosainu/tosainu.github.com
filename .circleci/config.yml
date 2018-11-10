@@ -28,6 +28,14 @@ jobs:
             - stack-work-v1-{{ arch }}-{{ checksum "stack.yaml" }}-{{ checksum "package.yaml" }}
 
       - run:
+          name: Update toolchains
+          command: |
+            stack upgrade
+            stack config set system-ghc --global false
+            stack config set install-ghc --global true
+            stack --no-terminal setup
+
+      - run:
           command: stack --no-terminal -j 2 build $STACK_BUILD_FLAGS --only-dependencies
           no_output_timeout: 30m
 
@@ -56,7 +64,7 @@ jobs:
   build:
     working_directory: ~/build
     docker:
-      - image: circleci/node:10.8.0-stretch
+      - image: circleci/node:11.1.0-stretch
     steps:
       - checkout
       - run: git submodule sync --recursive
@@ -80,7 +88,7 @@ jobs:
   deploy:
     working_directory: ~/build
     docker:
-      - image: circleci/node:10.8.0-stretch
+      - image: circleci/node:11.1.0-stretch
     steps:
       - add_ssh_keys:
           fingerprints:

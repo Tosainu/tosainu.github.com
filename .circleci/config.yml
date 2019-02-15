@@ -3,7 +3,7 @@ jobs:
   build_deps:
     working_directory: ~/build
     docker:
-      - image: haskell:8.4.3
+      - image: haskell:8.4.4
     environment:
       STACK_BUILD_FLAGS: --flag hakyll:-previewServer --flag hakyll:-watchServer
     steps:
@@ -26,14 +26,6 @@ jobs:
       - restore_cache:
           keys:
             - stack-work-v1-{{ arch }}-{{ checksum "stack.yaml" }}-{{ checksum "package.yaml" }}
-
-      - run:
-          name: Update toolchains
-          command: |
-            stack upgrade
-            stack config set system-ghc --global false
-            stack config set install-ghc --global true
-            stack --no-terminal setup
 
       - run:
           command: stack --no-terminal -j 2 build $STACK_BUILD_FLAGS --only-dependencies
@@ -64,7 +56,7 @@ jobs:
   build:
     working_directory: ~/build
     docker:
-      - image: circleci/node:11.1.0-stretch
+      - image: circleci/node:11.9.0-stretch
     steps:
       - checkout
       - run: git submodule sync --recursive
@@ -88,7 +80,7 @@ jobs:
   deploy:
     working_directory: ~/build
     docker:
-      - image: circleci/node:11.1.0-stretch
+      - image: circleci/node:11.9.0-stretch
     steps:
       - add_ssh_keys:
           fingerprints:

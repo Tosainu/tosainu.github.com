@@ -1,11 +1,19 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Compiler where
+module Compiler
+  ( renderKaTeX
+  , renderFontAwesome
+  , optimizeSVGCompiler
+  , absolutizeUrls
+  , prependBaseUrl
+  , cleanIndexHtmls
+  , modifyExternalLinkAttributes
+  , tagSoupOption
+  ) where
 
 import           Control.Monad
 import           Data.Char
 import qualified Data.HashMap.Strict    as HM
-import           Data.List              (find)
 import           Data.Maybe             (fromMaybe)
 import           Hakyll
 import           System.FilePath
@@ -15,14 +23,18 @@ import qualified Text.HTML.TagSoup.Tree as TST
 import           FontAwesome
 
 renderKaTeX :: Item String -> Compiler (Item String)
-renderKaTeX item = case find isMathTag $ TS.parseTags $ itemBody item of
-                        Just _  -> withItemBody (unixFilter "tools/katex.js" []) item
-                        Nothing -> return item
+renderKaTeX =
+    withItemBody $ fmap (TST.renderTreeOptions tagSoupOption) . transformTreeM f . TST.parseTree
   where
-    isMathTag (TS.TagOpen "span" attr) = hasMathClass attr
-    isMathTag _                        = False
+    f tag@(TST.TagBranch _ as [TST.TagLeaf (TS.TagText e)])
+      | hasMathClass as =
+          TST.parseTree <$> unixFilter "tools/katex.js" ["displayMode" | hasDisplayClass as] e
+      | otherwise = return [tag]
+    f tag = return [tag]
 
-    hasMathClass = elem "math" . words . fromMaybe "" . lookup "class"
+    hasDisplayClass = elem "display" . classes
+    hasMathClass = elem "math" . classes
+    classes = words . fromMaybe "" . lookup "class"
 
 renderFontAwesome :: FontAwesomeIcons -> Item String -> Compiler (Item String)
 renderFontAwesome icons = return . fmap
@@ -95,3 +107,15 @@ tagSoupOption = TS.RenderOptions
     }
   where
     minimize = ["area", "br", "col", "embed", "hr", "img", "input", "meta", "link" , "param"]
+
+concatMapM :: Monad m=> (a -> m [b]) -> [a] -> m [b]
+concatMapM f xs = liftM concat (mapM f xs)
+
+transformTreeM :: Monad m
+               => (TST.TagTree str -> m [TST.TagTree str])
+               -> [TST.TagTree str]
+               -> m [TST.TagTree str]
+transformTreeM act = concatMapM f
+  where
+    f (TST.TagBranch a b inner) = transformTreeM act inner >>= act . TST.TagBranch a b
+    f x = act x

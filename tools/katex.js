@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const cheerio = require('cheerio');
 const katex   = require('katex');
 
 function readStdin() {
@@ -17,15 +16,10 @@ function readStdin() {
 
 readStdin()
     .then((input) => {
-      const $ = cheerio.load(input, {decodeEntities: false});
-      $('.math').each(function() {
-        if ($(this).children().length == 0) {
-          var equation = /^\\[\[\(]((.|\s)+)\\[\]\)]$/m.exec($(this).text())[1];
-          var result   = katex.renderToString(equation, {displayMode: $(this).is('.display')});
-          $(this).html(result);
-        }
-      });
-      console.log($('body').html());
+      let displayMode = process.argv.includes('displayMode');
+      let equation = /^\\[\[\(]((.|\s)+)\\[\]\)]$/m.exec(input)[1];
+      let result   = katex.renderToString(equation, {displayMode: displayMode});
+      process.stdout.write(result);
     })
     .catch((error) => {
       console.error(error);

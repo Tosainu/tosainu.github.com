@@ -226,7 +226,7 @@ siteContext   = constField "lang"              "ja"
              <> constField "site-title"        "Tosainu Lab"
              <> constField "site-description"  "とさいぬのブログです"
              <> constField "site-url"          "https://blog.myon.info"
-             <> constField "copyright"         "© 2011-2018 Tosainu."
+             <> constField "copyright"         "© 2011-2019 Tosainu."
              <> constField "google-analytics"  "UA-57978655-1"
              <> constField "disqus"            "tosainu"
              <> authorContext

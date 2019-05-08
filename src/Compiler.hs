@@ -4,11 +4,15 @@ module Compiler where
 
 import           Control.Monad
 import           Data.Char
-import           Data.List         (find)
-import           Data.Maybe        (fromMaybe)
+import qualified Data.HashMap.Strict    as HM
+import           Data.List              (find)
+import           Data.Maybe             (fromMaybe)
 import           Hakyll
 import           System.FilePath
-import qualified Text.HTML.TagSoup as TS
+import qualified Text.HTML.TagSoup      as TS
+import qualified Text.HTML.TagSoup.Tree as TST
+
+import           FontAwesome
 
 renderKaTeX :: Item String -> Compiler (Item String)
 renderKaTeX item = case find isMathTag $ TS.parseTags $ itemBody item of
@@ -19,6 +23,30 @@ renderKaTeX item = case find isMathTag $ TS.parseTags $ itemBody item of
     isMathTag _                        = False
 
     hasMathClass = elem "math" . words . fromMaybe "" . lookup "class"
+
+renderFontAwesome :: FontAwesomeIcons -> Item String -> Compiler (Item String)
+renderFontAwesome icons = return . fmap
+    (TST.renderTreeOptions tagSoupOption . TST.transformTree renderFontAwesome' . TST.parseTree)
+  where
+    renderFontAwesome' tag@(TST.TagBranch "i" as []) =
+      case toFontAwesome $ classes as of
+           Just tree -> [tree]
+           Nothing   -> [tag]
+    renderFontAwesome' tag = [tag]
+
+    toFontAwesome (prefix:('f':'a':'-':name):cs) =
+      fmap (`appendClasses` cs) (fontawesome icons prefix name)
+    toFontAwesome _ = Nothing
+
+    appendClasses t [] = t
+    appendClasses (TST.TagBranch x y z) cs =
+      let as1 = HM.fromList y
+          as2 = HM.singleton "class" $ unwords cs
+          y'  = HM.toList $ HM.unionWith (\v1 v2 -> v1 ++ " " ++ v2) as1 as2
+      in  TST.TagBranch x y' z
+    appendClasses t _ = t
+
+    classes = words . fromMaybe "" . lookup "class"
 
 optimizeSVGCompiler :: [String] -> Compiler (Item String)
 optimizeSVGCompiler opts = getResourceString >>=

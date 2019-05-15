@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="913.52032"
+   height="509.125"
+   viewBox="0 0 913.52032 509.125"
+   version="1.1"
+   id="svg6312"
+   sodipodi:docname="color.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata6318">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Gnuplot</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6316">
+    <defs
+       id="defs5470">
+      <circle
+         r="0.5"
+         id="gpDot"
+         cx="0"
+         cy="0"
+         style="stroke:currentColor;stroke-width:0.5" />
+      <path
+         d="M -1,0 H 1 M 0,-1 v 2"
+         id="gpPt0"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <path
+         d="M -1,-1 1,1 M 1,-1 -1,1"
+         id="gpPt1"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <path
+         d="M -1,0 H 1 M 0,-1 v 2 m -1,-2 2,2 m -2,0 2,-2"
+         id="gpPt2"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <rect
+         height="2"
+         width="2"
+         y="-1"
+         x="-1"
+         id="gpPt3"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <rect
+         height="2"
+         width="2"
+         y="-1"
+         x="-1"
+         id="gpPt4"
+         style="fill:currentColor;stroke:currentColor;stroke-width:0.222" />
+      <circle
+         r="1"
+         cy="0"
+         cx="0"
+         id="gpPt5"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <use
+         id="gpPt6"
+         xlink:href="#gpPt5"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <path
+         d="m 0,-1.33 -1.33,2 h 2.66 z"
+         id="gpPt7"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <use
+         id="gpPt8"
+         xlink:href="#gpPt7"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         transform="scale(-1)"
+         id="gpPt9"
+         xlink:href="#gpPt7"
+         style="stroke:currentColor"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="gpPt10"
+         xlink:href="#gpPt9"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         transform="rotate(45)"
+         id="gpPt11"
+         xlink:href="#gpPt3"
+         style="stroke:currentColor"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <use
+         id="gpPt12"
+         xlink:href="#gpPt11"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <path
+         d="M 0,1.33 1.265,0.411 0.782,-1.067 -0.782,-1.076 -1.265,0.411 Z"
+         id="gpPt13"
+         inkscape:connector-curvature="0"
+         style="stroke:currentColor;stroke-width:0.222" />
+      <use
+         id="gpPt14"
+         xlink:href="#gpPt13"
+         style="fill:currentColor;stroke:none"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" />
+      <filter
+         width="1"
+         height="1"
+         y="0"
+         x="0"
+         filterUnits="objectBoundingBox"
+         id="textbox">
+        <feFlood
+           id="feFlood5460"
+           result="bgnd"
+           flood-opacity="1"
+           flood-color="white" />
+        <feComposite
+           id="feComposite5462"
+           operator="atop"
+           in2="bgnd"
+           in="SourceGraphic" />
+      </filter>
+      <filter
+         width="1"
+         height="1"
+         y="0"
+         x="0"
+         filterUnits="objectBoundingBox"
+         id="greybox">
+        <feFlood
+           id="feFlood5465"
+           result="grey"
+           flood-opacity="1"
+           flood-color="lightgrey" />
+        <feComposite
+           id="feComposite5467"
+           operator="atop"
+           in2="grey"
+           in="SourceGraphic" />
+      </filter>
+    </defs>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview6314"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.69666667"
+     inkscape:cx="186.76075"
+     inkscape:cy="199.27787"
+     inkscape:current-layer="svg6312" />
+  <title
+     id="title5438">Gnuplot</title>
+  <desc
+     id="desc5440">Produced by GNUPLOT 5.2 patchlevel 6 </desc>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5480"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5478"
+       d="M 48,468 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5492"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5484"
+       d="m 48,468 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5490"
+       font-size="12.00"
+       transform="translate(39.7,471.9)">
+      <text
+         id="text5488">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5486">0</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5500"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5498"
+       d="M 48,429.6 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5512"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5504"
+       d="m 48,429.6 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5510"
+       font-size="12.00"
+       transform="translate(39.7,433.5)">
+      <text
+         id="text5508">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5506">0.1</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5520"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5518"
+       d="M 48,391.2 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5532"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5524"
+       d="m 48,391.2 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5530"
+       font-size="12.00"
+       transform="translate(39.7,395.1)">
+      <text
+         id="text5528">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5526">0.2</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5540"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5538"
+       d="M 48,352.8 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5552"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5544"
+       d="m 48,352.8 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5550"
+       font-size="12.00"
+       transform="translate(39.7,356.7)">
+      <text
+         id="text5548">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5546">0.3</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5560"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5558"
+       d="M 48,314.4 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5572"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5564"
+       d="m 48,314.4 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5570"
+       font-size="12.00"
+       transform="translate(39.7,318.3)">
+      <text
+         id="text5568">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5566">0.4</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5580"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5578"
+       d="M 48,276 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5592"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5584"
+       d="m 48,276 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5590"
+       font-size="12.00"
+       transform="translate(39.7,279.9)">
+      <text
+         id="text5588">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5586">0.5</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5600"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5598"
+       d="M 48,237.7 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5612"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5604"
+       d="m 48,237.7 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5610"
+       font-size="12.00"
+       transform="translate(39.7,241.6)">
+      <text
+         id="text5608">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5606">0.6</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5620"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5618"
+       d="M 48,199.3 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5632"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5624"
+       d="m 48,199.3 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5630"
+       font-size="12.00"
+       transform="translate(39.7,203.2)">
+      <text
+         id="text5628">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5626">0.7</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5640"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5638"
+       d="M 48,160.9 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5652"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5644"
+       d="m 48,160.9 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5650"
+       font-size="12.00"
+       transform="translate(39.7,164.8)">
+      <text
+         id="text5648">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5646">0.8</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5660"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5658"
+       d="M 48,122.5 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5672"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5664"
+       d="m 48,122.5 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5670"
+       font-size="12.00"
+       transform="translate(39.7,126.4)">
+      <text
+         id="text5668">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5666">0.9</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5680"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5678"
+       d="M 48,84.1 H 935.9"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5692"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5684"
+       d="m 48,84.1 m 887.9,0" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:end;fill:#000000;stroke:none"
+       id="g5690"
+       font-size="12.00"
+       transform="translate(39.7,88)">
+      <text
+         id="text5688">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5686">1</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5700"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5698"
+       d="M 48,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5712"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5704"
+       d="M 48,468 M 48,84.1" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5710"
+       font-size="12.00"
+       transform="translate(48,489.9)">
+      <text
+         id="text5708">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5706">0</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5720"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5718"
+       d="M 136.8,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5732"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5724"
+       d="m 136.8,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5730"
+       font-size="12.00"
+       transform="translate(136.8,489.9)">
+      <text
+         id="text5728">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5726">0.1</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5740"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5738"
+       d="M 225.6,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5752"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5744"
+       d="m 225.6,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5750"
+       font-size="12.00"
+       transform="translate(225.6,489.9)">
+      <text
+         id="text5748">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5746">0.2</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5760"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5758"
+       d="M 314.4,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5772"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5764"
+       d="m 314.4,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5770"
+       font-size="12.00"
+       transform="translate(314.4,489.9)">
+      <text
+         id="text5768">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5766">0.3</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5780"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5778"
+       d="M 403.2,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5792"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5784"
+       d="m 403.2,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5790"
+       font-size="12.00"
+       transform="translate(403.2,489.9)">
+      <text
+         id="text5788">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5786">0.4</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5800"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5798"
+       d="M 492,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5812"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5804"
+       d="M 492,468 M 492,84.1" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5810"
+       font-size="12.00"
+       transform="translate(492,489.9)">
+      <text
+         id="text5808">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5806">0.5</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5820"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5818"
+       d="M 580.7,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5832"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5824"
+       d="m 580.7,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5830"
+       font-size="12.00"
+       transform="translate(580.7,489.9)">
+      <text
+         id="text5828">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5826">0.6</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5840"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5838"
+       d="M 669.5,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5852"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5844"
+       d="m 669.5,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5850"
+       font-size="12.00"
+       transform="translate(669.5,489.9)">
+      <text
+         id="text5848">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5846">0.7</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5860"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5858"
+       d="M 758.3,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5872"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5864"
+       d="m 758.3,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5870"
+       font-size="12.00"
+       transform="translate(758.3,489.9)">
+      <text
+         id="text5868">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5866">0.8</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5880"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5878"
+       d="M 847.1,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5892"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5884"
+       d="m 847.1,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5890"
+       font-size="12.00"
+       transform="translate(847.1,489.9)">
+      <text
+         id="text5888">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5886">0.9</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     style="color:#808080;fill:none;stroke:currentColor;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5900"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#808080;stroke-dasharray:2, 4"
+       inkscape:connector-curvature="0"
+       id="path5898"
+       d="M 935.9,468 V 84.1"
+       class="gridline" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g5912"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path5904"
+       d="m 935.9,468 m 0,-383.9" />
+    <g
+       style="font-size:12px;font-family:Arial;text-anchor:middle;fill:#000000;stroke:none"
+       id="g5910"
+       font-size="12.00"
+       transform="translate(935.9,489.9)">
+      <text
+         id="text5908">
+        <tspan
+           style="font-family:Arial"
+           id="tspan5906">1</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_2"
+     transform="translate(-23.510547,-79.375)">
+    <title
+       id="title5931">red</title>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g5943">
+      <path
+         sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+         style="stroke:#ff0000"
+         inkscape:connector-curvature="0"
+         id="path5941"
+         d="m 48,468 h 3.5 3.4 3.6 3.4 3.5 3.5 l 3.5,-0.1 h 3.5 l 3.4,-0.1 h 3.5 l 3.5,-0.1 h 3.5 l 3.5,-0.1 3.4,-0.1 3.5,-0.2 3.5,-0.1 3.5,-0.2 3.5,-0.1 3.4,-0.2 3.5,-0.2 3.6,-0.3 3.4,-0.2 3.5,-0.3 3.5,-0.3 3.4,-0.3 3.6,-0.4 3.4,-0.4 3.5,-0.4 3.5,-0.4 3.4,-0.5 3.6,-0.5 3.4,-0.5 3.5,-0.5 3.5,-0.6 3.5,-0.6 3.5,-0.6 3.4,-0.7 3.5,-0.7 3.5,-0.8 3.5,-0.7 3.5,-0.9 3.4,-0.8 3.5,-0.9 3.5,-0.9 3.5,-0.9 3.5,-1 3.4,-1.1 3.5,-1 3.6,-1.1 3.4,-1.1 3.5,-1.2 3.4,-1.2 3.5,-1.3 3.6,-1.3 3.4,-1.3 3.5,-1.4 3.4,-1.3 3.6,-1.5 3.5,-1.5 3.4,-1.5 3.5,-1.6 3.4,-1.6 3.6,-1.6 3.5,-1.7 3.4,-1.8 3.5,-1.7 3.5,-1.8 3.5,-1.9 3.5,-1.8 3.4,-2 3.5,-1.9 3.5,-2 3.5,-2.1 3.5,-2 3.4,-2.1 3.5,-2.2 3.5,-2.2 3.5,-2.2 3.5,-2.3 3.4,-2.3 3.5,-2.4 3.5,-2.3 3.5,-2.5 3.5,-2.4 3.4,-2.5 3.6,-2.5 3.5,-2.6 3.4,-2.6 3.5,-2.6 3.4,-2.7 3.6,-2.7 3.5,-2.7 3.4,-2.8 3.5,-2.8 3.4,-2.8 3.6,-2.8 3.5,-2.9 3.4,-2.9 3.5,-3 3.5,-2.9 3.5,-3 3.5,-3.1 3.4,-3 3.5,-3.1 3.5,-3.1 3.5,-3.1 3.5,-3.1 3.4,-3.2 3.6,-3.2 3.4,-3.2 3.5,-3.2 3.5,-3.3 3.4,-3.2 3.6,-3.3 3.4,-3.3 3.5,-3.3 3.5,-3.3 3.4,-3.3 3.6,-3.4 3.4,-3.3 3.5,-3.4 3.5,-3.4 3.5,-3.3 3.5,-3.4 3.4,-3.4 3.5,-3.4 3.5,-3.4 3.5,-3.3 3.5,-3.4 3.5,-3.4 3.4,-3.4 3.5,-3.4 3.5,-3.3 3.5,-3.4 3.5,-3.3 3.4,-3.4 3.6,-3.3 3.4,-3.4 3.5,-3.3 3.5,-3.3 3.4,-3.2 3.6,-3.3 3.4,-3.2 3.5,-3.2 3.5,-3.2 3.4,-3.2 3.6,-3.1 3.4,-3.1 3.5,-3.1 3.5,-3.1 3.5,-3 3.5,-3 3.4,-2.9 3.5,-2.9 3.5,-2.9 3.5,-2.8 3.5,-2.8 3.4,-2.7 3.5,-2.7 3.6,-2.7 3.4,-2.6 3.5,-2.5 3.4,-2.5 3.5,-2.4 3.6,-2.4 3.4,-2.3 3.5,-2.2 3.4,-2.2 3.5,-2.1 3.6,-2 3.4,-2 3.5,-1.9 3.5,-1.8 3.5,-1.8 3.5,-1.6 3.4,-1.6 3.5,-1.6 3.5,-1.3 3.5,-1.4 3.5,-1.2 3.4,-1.2 3.5,-1 3.5,-1 3.5,-0.8 3.5,-0.8 3.4,-0.6 3.5,-0.6 3.5,-0.4 3.5,-0.3 3.5,-0.2 3.4,-0.1 h 3.5 l 3.6,0.2 3.4,0.3 3.5,0.3 3.4,0.6 3.5,0.6 3.6,0.8 3.4,1 3.5,1 3.4,1.3 3.6,1.3 3.5,1.5 3.4,1.7 3.5,1.8 3.4,2 3.6,2.1 3.5,2.3 3.4,2.4 3.5,2.6 3.5,2.8 3.5,3 3.5,3.1 3.4,3.4 3.5,3.4 3.5,3.7 3.5,3.9 3.5,4.1 3.4,4.2 3.5,4.5 3.5,4.6 3.5,4.9 3.5,5 3.4,5.3 3.6,5.5 3.4,5.7 3.5,5.9 3.5,6.1 3.4,6.4 3.6,6.6 3.4,6.8 3.5,7 3.5,7.3 3.4,7.5 3.6,7.8 3.5,8 3.4,8.3 3.5,8.5 3.5,8.8 3.5,9 3.5,9.4 3.4,9.5 3.5,9.9 3.5,10.1 3.5,10.4 3.5,10.7 3.4,11 3.5,11.2 3.5,11.6 3.5,11.9 3.5,12.1 3.4,12.5 3.6,12.7 3.4,13.1 3.5,13.4" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_3"
+     transform="translate(-23.510547,-79.375)">
+    <title
+       id="title5946">green</title>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g5958">
+      <path
+         sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+         style="stroke:#00ff00"
+         inkscape:connector-curvature="0"
+         id="path5956"
+         d="m 48,468 3.5,-0.1 3.4,-0.2 3.6,-0.5 3.4,-0.6 3.5,-0.7 3.5,-0.9 3.5,-1.1 3.5,-1.2 3.4,-1.4 3.5,-1.5 3.5,-1.6 3.5,-1.8 3.5,-1.9 3.4,-2 3.5,-2.2 3.5,-2.2 3.5,-2.4 3.5,-2.5 3.4,-2.6 3.5,-2.7 3.6,-2.8 3.4,-2.9 3.5,-3 3.5,-3 3.4,-3.2 3.6,-3.3 3.4,-3.3 3.5,-3.4 3.5,-3.5 3.4,-3.5 3.6,-3.7 3.4,-3.7 3.5,-3.7 3.5,-3.8 3.5,-3.8 3.5,-3.9 3.4,-4 3.5,-4 3.5,-4 3.5,-4.1 3.5,-4.1 3.4,-4.2 3.5,-4.2 3.5,-4.2 3.5,-4.2 3.5,-4.3 3.4,-4.2 3.5,-4.3 3.6,-4.4 3.4,-4.3 3.5,-4.3 3.4,-4.4 3.5,-4.3 3.6,-4.3 3.4,-4.4 3.5,-4.3 3.4,-4.4 3.6,-4.3 3.5,-4.3 3.4,-4.3 3.5,-4.3 3.4,-4.3 3.6,-4.3 3.5,-4.2 3.4,-4.2 3.5,-4.2 3.5,-4.2 3.5,-4.1 3.5,-4.1 3.4,-4.1 3.5,-4.1 3.5,-3.9 3.5,-4 3.5,-3.9 3.4,-3.9 3.5,-3.8 3.5,-3.8 3.5,-3.8 3.5,-3.7 3.4,-3.6 3.5,-3.6 3.5,-3.6 3.5,-3.5 3.5,-3.4 3.4,-3.4 3.6,-3.3 3.5,-3.3 3.4,-3.1 3.5,-3.2 3.4,-3 3.6,-3 3.5,-3 3.4,-2.8 3.5,-2.8 3.4,-2.7 3.6,-2.7 3.5,-2.6 3.4,-2.5 3.5,-2.5 3.5,-2.3 3.5,-2.3 3.5,-2.2 3.4,-2.1 3.5,-2.1 3.5,-1.9 3.5,-1.9 3.5,-1.9 3.4,-1.7 3.6,-1.6 3.4,-1.6 3.5,-1.5 3.5,-1.3 3.4,-1.4 3.6,-1.2 3.4,-1.1 3.5,-1.1 3.5,-0.9 3.4,-0.9 3.6,-0.8 3.4,-0.7 3.5,-0.6 3.5,-0.6 3.5,-0.4 3.5,-0.4 3.4,-0.2 3.5,-0.2 3.5,-0.1 h 3.5 l 3.5,0.1 3.5,0.2 3.4,0.2 3.5,0.4 3.5,0.4 3.5,0.6 3.5,0.6 3.4,0.7 3.6,0.8 3.4,0.9 3.5,0.9 3.5,1.1 3.4,1.1 3.6,1.2 3.4,1.4 3.5,1.3 3.5,1.5 3.4,1.6 3.6,1.6 3.4,1.7 3.5,1.9 3.5,1.9 3.5,1.9 3.5,2.1 3.4,2.1 3.5,2.2 3.5,2.3 3.5,2.3 3.5,2.5 3.4,2.5 3.5,2.6 3.6,2.7 3.4,2.7 3.5,2.8 3.4,2.8 3.5,3 3.6,3 3.4,3 3.5,3.2 3.4,3.1 3.5,3.3 3.6,3.3 3.4,3.4 3.5,3.4 3.5,3.5 3.5,3.6 3.5,3.6 3.4,3.6 3.5,3.7 3.5,3.8 3.5,3.8 3.5,3.8 3.4,3.9 3.5,3.9 3.5,4 3.5,3.9 3.5,4.1 3.4,4.1 3.5,4.1 3.5,4.1 3.5,4.2 3.5,4.2 3.4,4.2 3.5,4.2 3.6,4.3 3.4,4.3 3.5,4.3 3.4,4.3 3.5,4.3 3.6,4.3 3.4,4.4 3.5,4.3 3.4,4.4 3.6,4.3 3.5,4.3 3.4,4.4 3.5,4.3 3.4,4.3 3.6,4.4 3.5,4.3 3.4,4.2 3.5,4.3 3.5,4.2 3.5,4.2 3.5,4.2 3.4,4.2 3.5,4.1 3.5,4.1 3.5,4 3.5,4 3.4,4 3.5,3.9 3.5,3.8 3.5,3.8 3.5,3.7 3.4,3.7 3.6,3.7 3.4,3.5 3.5,3.5 3.5,3.4 3.4,3.3 3.6,3.3 3.4,3.2 3.5,3 3.5,3 3.4,2.9 3.6,2.8 3.5,2.7 3.4,2.6 3.5,2.5 3.5,2.4 3.5,2.2 3.5,2.2 3.4,2 3.5,1.9 3.5,1.8 3.5,1.6 3.5,1.5 3.4,1.4 3.5,1.2 3.5,1.1 3.5,0.9 3.5,0.7 3.4,0.6 3.6,0.5 3.4,0.2 3.5,0.1" />
+    </g>
+  </g>
+  <g
+     id="gnuplot_plot_4"
+     transform="translate(-23.510547,-79.375)">
+    <title
+       id="title5961">blue</title>
+    <g
+       style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+       id="g5973">
+      <path
+         sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+         style="stroke:#0000ff"
+         inkscape:connector-curvature="0"
+         id="path5971"
+         d="m 48,468 3.5,-12.6 3.4,-12.4 3.6,-12 3.4,-11.8 3.5,-11.5 3.5,-11.2 3.5,-10.9 3.5,-10.6 3.4,-10.4 3.5,-10.1 3.5,-9.8 3.5,-9.6 3.5,-9.3 3.4,-9 3.5,-8.8 3.5,-8.6 3.5,-8.3 3.5,-8 3.4,-7.9 3.5,-7.5 3.6,-7.4 3.4,-7.1 3.5,-6.9 3.5,-6.6 3.4,-6.5 3.6,-6.2 3.4,-6 3.5,-5.8 3.5,-5.5 3.4,-5.4 3.6,-5.2 3.4,-5 3.5,-4.7 3.5,-4.6 3.5,-4.4 3.5,-4.2 3.4,-4 3.5,-3.9 3.5,-3.6 3.5,-3.5 3.5,-3.3 3.4,-3.1 3.5,-3 3.5,-2.8 3.5,-2.6 3.5,-2.5 3.4,-2.3 3.5,-2.2 3.6,-2 3.4,-1.8 3.5,-1.7 3.4,-1.6 3.5,-1.4 3.6,-1.3 3.4,-1.2 3.5,-1 3.4,-0.9 3.6,-0.7 3.5,-0.7 3.4,-0.5 3.5,-0.3 3.4,-0.3 3.6,-0.1 3.5,-0.1 3.4,0.1 3.5,0.2 3.5,0.3 3.5,0.4 3.5,0.5 3.4,0.6 3.5,0.8 3.5,0.8 3.5,0.9 3.5,1 3.4,1 3.5,1.2 3.5,1.3 3.5,1.3 3.5,1.4 3.4,1.5 3.5,1.6 3.5,1.6 3.5,1.8 3.5,1.7 3.4,1.9 3.6,1.9 3.5,2 3.4,2.1 3.5,2.1 3.4,2.2 3.6,2.2 3.5,2.3 3.4,2.3 3.5,2.5 3.4,2.4 3.6,2.5 3.5,2.5 3.4,2.6 3.5,2.6 3.5,2.7 3.5,2.7 3.5,2.8 3.4,2.7 3.5,2.9 3.5,2.8 3.5,2.9 3.5,2.9 3.4,2.9 3.6,3 3.4,3 3.5,3 3.5,3 3.4,3.1 3.6,3.1 3.4,3.1 3.5,3.1 3.5,3.1 3.4,3.1 3.6,3.2 3.4,3.2 3.5,3.1 3.5,3.2 3.5,3.2 3.5,3.2 3.4,3.1 3.5,3.3 3.5,3.2 3.5,3.1 3.5,3.2 3.5,3.3 3.4,3.1 3.5,3.2 3.5,3.2 3.5,3.2 3.5,3.2 3.4,3.1 3.6,3.2 3.4,3.1 3.5,3.1 3.5,3.2 3.4,3.1 3.6,3.1 3.4,3 3.5,3.1 3.5,3 3.4,3.1 3.6,3 3.4,3 3.5,3 3.5,2.9 3.5,2.9 3.5,2.9 3.4,2.9 3.5,2.8 3.5,2.9 3.5,2.8 3.5,2.7 3.4,2.8 3.5,2.7 3.6,2.7 3.4,2.7 3.5,2.6 3.4,2.6 3.5,2.6 3.6,2.6 3.4,2.5 3.5,2.5 3.4,2.4 3.5,2.4 3.6,2.4 3.4,2.4 3.5,2.3 3.5,2.3 3.5,2.2 3.5,2.3 3.4,2.1 3.5,2.2 3.5,2.1 3.5,2 3.5,2.1 3.4,2 3.5,2 3.5,1.9 3.5,1.9 3.5,1.8 3.4,1.9 3.5,1.7 3.5,1.8 3.5,1.7 3.5,1.6 3.4,1.6 3.5,1.7 3.6,1.5 3.4,1.5 3.5,1.5 3.4,1.4 3.5,1.4 3.6,1.4 3.4,1.3 3.5,1.3 3.4,1.3 3.6,1.2 3.5,1.2 3.4,1.1 3.5,1.1 3.4,1.1 3.6,1 3.5,1 3.4,1 3.5,0.9 3.5,0.9 3.5,0.9 3.5,0.8 3.4,0.8 3.5,0.8 3.5,0.7 3.5,0.7 3.5,0.7 3.4,0.6 3.5,0.6 3.5,0.6 3.5,0.6 3.5,0.5 3.4,0.5 3.6,0.4 3.4,0.4 3.5,0.5 3.5,0.3 3.4,0.4 3.6,0.3 3.4,0.3 3.5,0.3 3.5,0.3 3.4,0.2 3.6,0.2 3.5,0.2 3.4,0.2 3.5,0.2 3.5,0.1 3.5,0.2 3.5,0.1 3.4,0.1 3.5,0.1 h 3.5 l 3.5,0.1 h 3.5 l 3.4,0.1 h 3.5 l 3.5,0.1 h 3.5 3.5 3.4 3.6 3.4 3.5" />
+    </g>
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6251"
+     transform="translate(-23.510547,-79.375)">
+    <g
+       style="stroke:none;shape-rendering:crispEdges"
+       id="g6249">
+      <polygon
+         style="fill:#000000"
+         id="polygon5993"
+         points="48,588 55,588 55,516.1 48,516.1 " />
+      <polygon
+         style="fill:#000011"
+         id="polygon5995"
+         points="54.9,588 61.9,588 61.9,516.1 54.9,516.1 " />
+      <polygon
+         style="fill:#000120"
+         id="polygon5997"
+         points="61.8,588 68.9,588 68.9,516.1 61.8,516.1 " />
+      <polygon
+         style="fill:#000230"
+         id="polygon5999"
+         points="68.8,588 75.8,588 75.8,516.1 68.8,516.1 " />
+      <polygon
+         style="fill:#00043e"
+         id="polygon6001"
+         points="75.7,588 82.7,588 82.7,516.1 75.7,516.1 " />
+      <polygon
+         style="fill:#00054b"
+         id="polygon6003"
+         points="82.6,588 89.7,588 89.7,516.1 82.6,516.1 " />
+      <polygon
+         style="fill:#000858"
+         id="polygon6005"
+         points="89.6,588 96.6,588 96.6,516.1 89.6,516.1 " />
+      <polygon
+         style="fill:#000a64"
+         id="polygon6007"
+         points="96.5,588 103.5,588 103.5,516.1 96.5,516.1 " />
+      <polygon
+         style="fill:#010d70"
+         id="polygon6009"
+         points="103.4,588 110.5,588 110.5,516.1 103.4,516.1 " />
+      <polygon
+         style="fill:#01107b"
+         id="polygon6011"
+         points="110.4,588 117.4,588 117.4,516.1 110.4,516.1 " />
+      <polygon
+         style="fill:#011485"
+         id="polygon6013"
+         points="117.3,588 124.4,588 124.4,516.1 117.3,516.1 " />
+      <polygon
+         style="fill:#01188e"
+         id="polygon6015"
+         points="124.3,588 131.3,588 131.3,516.1 124.3,516.1 " />
+      <polygon
+         style="fill:#021c97"
+         id="polygon6017"
+         points="131.2,588 138.2,588 138.2,516.1 131.2,516.1 " />
+      <polygon
+         style="fill:#0220a0"
+         id="polygon6019"
+         points="138.1,588 145.2,588 145.2,516.1 138.1,516.1 " />
+      <polygon
+         style="fill:#0324a8"
+         id="polygon6021"
+         points="145.1,588 152.1,588 152.1,516.1 145.1,516.1 " />
+      <polygon
+         style="fill:#0329af"
+         id="polygon6023"
+         points="152,588 159,588 159,516.1 152,516.1 " />
+      <polygon
+         style="fill:#042eb6"
+         id="polygon6025"
+         points="158.9,588 166,588 166,516.1 158.9,516.1 " />
+      <polygon
+         style="fill:#0533bc"
+         id="polygon6027"
+         points="165.9,588 172.9,588 172.9,516.1 165.9,516.1 " />
+      <polygon
+         style="fill:#0538c1"
+         id="polygon6029"
+         points="172.8,588 179.8,588 179.8,516.1 172.8,516.1 " />
+      <polygon
+         style="fill:#063dc7"
+         id="polygon6031"
+         points="179.7,588 186.8,588 186.8,516.1 179.7,516.1 " />
+      <polygon
+         style="fill:#0743cb"
+         id="polygon6033"
+         points="186.7,588 193.7,588 193.7,516.1 186.7,516.1 " />
+      <polygon
+         style="fill:#0848d0"
+         id="polygon6035"
+         points="193.6,588 200.7,588 200.7,516.1 193.6,516.1 " />
+      <polygon
+         style="fill:#0a4ed4"
+         id="polygon6037"
+         points="200.6,588 207.6,588 207.6,516.1 200.6,516.1 " />
+      <polygon
+         style="fill:#0b53d7"
+         id="polygon6039"
+         points="207.5,588 214.5,588 214.5,516.1 207.5,516.1 " />
+      <polygon
+         style="fill:#0c59da"
+         id="polygon6041"
+         points="214.4,588 221.5,588 221.5,516.1 214.4,516.1 " />
+      <polygon
+         style="fill:#0e5fdd"
+         id="polygon6043"
+         points="221.4,588 228.4,588 228.4,516.1 221.4,516.1 " />
+      <polygon
+         style="fill:#0f64df"
+         id="polygon6045"
+         points="228.3,588 235.3,588 235.3,516.1 228.3,516.1 " />
+      <polygon
+         style="fill:#116ae1"
+         id="polygon6047"
+         points="235.2,588 242.3,588 242.3,516.1 235.2,516.1 " />
+      <polygon
+         style="fill:#1370e2"
+         id="polygon6049"
+         points="242.2,588 249.2,588 249.2,516.1 242.2,516.1 " />
+      <polygon
+         style="fill:#1575e3"
+         id="polygon6051"
+         points="249.1,588 256.2,588 256.2,516.1 249.1,516.1 " />
+      <polygon
+         style="fill:#177be4"
+         id="polygon6053"
+         points="256.1,588 263.1,588 263.1,516.1 256.1,516.1 " />
+      <polygon
+         style="fill:#1981e4"
+         id="polygon6055"
+         points="263,588 270,588 270,516.1 263,516.1 " />
+      <polygon
+         style="fill:#1b86e5"
+         id="polygon6057"
+         points="269.9,588 277,588 277,516.1 269.9,516.1 " />
+      <polygon
+         style="fill:#1d8ce4"
+         id="polygon6059"
+         points="276.9,588 283.9,588 283.9,516.1 276.9,516.1 " />
+      <polygon
+         style="fill:#2092e4"
+         id="polygon6061"
+         points="283.8,588 290.8,588 290.8,516.1 283.8,516.1 " />
+      <polygon
+         style="fill:#2297e3"
+         id="polygon6063"
+         points="290.7,588 297.8,588 297.8,516.1 290.7,516.1 " />
+      <polygon
+         style="fill:#259ce2"
+         id="polygon6065"
+         points="297.7,588 304.7,588 304.7,516.1 297.7,516.1 " />
+      <polygon
+         style="fill:#27a2e1"
+         id="polygon6067"
+         points="304.6,588 311.6,588 311.6,516.1 304.6,516.1 " />
+      <polygon
+         style="fill:#2aa7e0"
+         id="polygon6069"
+         points="311.5,588 318.6,588 318.6,516.1 311.5,516.1 " />
+      <polygon
+         style="fill:#2dacde"
+         id="polygon6071"
+         points="318.5,588 325.5,588 325.5,516.1 318.5,516.1 " />
+      <polygon
+         style="fill:#30b1dc"
+         id="polygon6073"
+         points="325.4,588 332.5,588 332.5,516.1 325.4,516.1 " />
+      <polygon
+         style="fill:#33b5da"
+         id="polygon6075"
+         points="332.4,588 339.4,588 339.4,516.1 332.4,516.1 " />
+      <polygon
+         style="fill:#37bad8"
+         id="polygon6077"
+         points="339.3,588 346.3,588 346.3,516.1 339.3,516.1 " />
+      <polygon
+         style="fill:#3abed5"
+         id="polygon6079"
+         points="346.2,588 353.3,588 353.3,516.1 346.2,516.1 " />
+      <polygon
+         style="fill:#3dc3d3"
+         id="polygon6081"
+         points="353.2,588 360.2,588 360.2,516.1 353.2,516.1 " />
+      <polygon
+         style="fill:#41c7d0"
+         id="polygon6083"
+         points="360.1,588 367.1,588 367.1,516.1 360.1,516.1 " />
+      <polygon
+         style="fill:#44cbcd"
+         id="polygon6085"
+         points="367,588 374.1,588 374.1,516.1 367,516.1 " />
+      <polygon
+         style="fill:#48cfca"
+         id="polygon6087"
+         points="374,588 381,588 381,516.1 374,516.1 " />
+      <polygon
+         style="fill:#4cd2c6"
+         id="polygon6089"
+         points="380.9,588 387.9,588 387.9,516.1 380.9,516.1 " />
+      <polygon
+         style="fill:#4fd6c3"
+         id="polygon6091"
+         points="387.8,588 394.9,588 394.9,516.1 387.8,516.1 " />
+      <polygon
+         style="fill:#53d9c0"
+         id="polygon6093"
+         points="394.8,588 401.8,588 401.8,516.1 394.8,516.1 " />
+      <polygon
+         style="fill:#57dcbc"
+         id="polygon6095"
+         points="401.7,588 408.8,588 408.8,516.1 401.7,516.1 " />
+      <polygon
+         style="fill:#5bdfb8"
+         id="polygon6097"
+         points="408.7,588 415.7,588 415.7,516.1 408.7,516.1 " />
+      <polygon
+         style="fill:#5fe1b5"
+         id="polygon6099"
+         points="415.6,588 422.6,588 422.6,516.1 415.6,516.1 " />
+      <polygon
+         style="fill:#64e4b1"
+         id="polygon6101"
+         points="422.5,588 429.6,588 429.6,516.1 422.5,516.1 " />
+      <polygon
+         style="fill:#68e6ad"
+         id="polygon6103"
+         points="429.5,588 436.5,588 436.5,516.1 429.5,516.1 " />
+      <polygon
+         style="fill:#6ce8a9"
+         id="polygon6105"
+         points="436.4,588 443.4,588 443.4,516.1 436.4,516.1 " />
+      <polygon
+         style="fill:#70e9a5"
+         id="polygon6107"
+         points="443.3,588 450.4,588 450.4,516.1 443.3,516.1 " />
+      <polygon
+         style="fill:#75eba1"
+         id="polygon6109"
+         points="450.3,588 457.3,588 457.3,516.1 450.3,516.1 " />
+      <polygon
+         style="fill:#79ec9c"
+         id="polygon6111"
+         points="457.2,588 464.3,588 464.3,516.1 457.2,516.1 " />
+      <polygon
+         style="fill:#7eed98"
+         id="polygon6113"
+         points="464.2,588 471.2,588 471.2,516.1 464.2,516.1 " />
+      <polygon
+         style="fill:#82ee94"
+         id="polygon6115"
+         points="471.1,588 478.1,588 478.1,516.1 471.1,516.1 " />
+      <polygon
+         style="fill:#86ef90"
+         id="polygon6117"
+         points="478,588 485.1,588 485.1,516.1 478,516.1 " />
+      <polygon
+         style="fill:#8bef8c"
+         id="polygon6119"
+         points="485,588 492,588 492,516.1 485,516.1 " />
+      <polygon
+         style="fill:#8fef87"
+         id="polygon6121"
+         points="491.9,588 498.9,588 498.9,516.1 491.9,516.1 " />
+      <polygon
+         style="fill:#94ef83"
+         id="polygon6123"
+         points="498.8,588 505.9,588 505.9,516.1 498.8,516.1 " />
+      <polygon
+         style="fill:#98ef7f"
+         id="polygon6125"
+         points="505.8,588 512.8,588 512.8,516.1 505.8,516.1 " />
+      <polygon
+         style="fill:#9dee7b"
+         id="polygon6127"
+         points="512.7,588 519.7,588 519.7,516.1 512.7,516.1 " />
+      <polygon
+         style="fill:#a1ed77"
+         id="polygon6129"
+         points="519.6,588 526.7,588 526.7,516.1 519.6,516.1 " />
+      <polygon
+         style="fill:#a6ec72"
+         id="polygon6131"
+         points="526.6,588 533.6,588 533.6,516.1 526.6,516.1 " />
+      <polygon
+         style="fill:#aaeb6e"
+         id="polygon6133"
+         points="533.5,588 540.6,588 540.6,516.1 533.5,516.1 " />
+      <polygon
+         style="fill:#aee96a"
+         id="polygon6135"
+         points="540.5,588 547.5,588 547.5,516.1 540.5,516.1 " />
+      <polygon
+         style="fill:#b3e866"
+         id="polygon6137"
+         points="547.4,588 554.4,588 554.4,516.1 547.4,516.1 " />
+      <polygon
+         style="fill:#b7e662"
+         id="polygon6139"
+         points="554.3,588 561.4,588 561.4,516.1 554.3,516.1 " />
+      <polygon
+         style="fill:#bbe45e"
+         id="polygon6141"
+         points="561.3,588 568.3,588 568.3,516.1 561.3,516.1 " />
+      <polygon
+         style="fill:#bfe15a"
+         id="polygon6143"
+         points="568.2,588 575.2,588 575.2,516.1 568.2,516.1 " />
+      <polygon
+         style="fill:#c3df56"
+         id="polygon6145"
+         points="575.1,588 582.2,588 582.2,516.1 575.1,516.1 " />
+      <polygon
+         style="fill:#c7dc52"
+         id="polygon6147"
+         points="582.1,588 589.1,588 589.1,516.1 582.1,516.1 " />
+      <polygon
+         style="fill:#cbd94f"
+         id="polygon6149"
+         points="589,588 596.1,588 596.1,516.1 589,516.1 " />
+      <polygon
+         style="fill:#cfd54b"
+         id="polygon6151"
+         points="596,588 603,588 603,516.1 596,516.1 " />
+      <polygon
+         style="fill:#d2d247"
+         id="polygon6153"
+         points="602.9,588 609.9,588 609.9,516.1 602.9,516.1 " />
+      <polygon
+         style="fill:#d6cf44"
+         id="polygon6155"
+         points="609.8,588 616.9,588 616.9,516.1 609.8,516.1 " />
+      <polygon
+         style="fill:#d9cb40"
+         id="polygon6157"
+         points="616.8,588 623.8,588 623.8,516.1 616.8,516.1 " />
+      <polygon
+         style="fill:#dcc73d"
+         id="polygon6159"
+         points="623.7,588 630.7,588 630.7,516.1 623.7,516.1 " />
+      <polygon
+         style="fill:#dfc33a"
+         id="polygon6161"
+         points="630.6,588 637.7,588 637.7,516.1 630.6,516.1 " />
+      <polygon
+         style="fill:#e2be37"
+         id="polygon6163"
+         points="637.6,588 644.6,588 644.6,516.1 637.6,516.1 " />
+      <polygon
+         style="fill:#e4ba33"
+         id="polygon6165"
+         points="644.5,588 651.5,588 651.5,516.1 644.5,516.1 " />
+      <polygon
+         style="fill:#e7b530"
+         id="polygon6167"
+         points="651.4,588 658.5,588 658.5,516.1 651.4,516.1 " />
+      <polygon
+         style="fill:#e9b12d"
+         id="polygon6169"
+         points="658.4,588 665.4,588 665.4,516.1 658.4,516.1 " />
+      <polygon
+         style="fill:#ebac2b"
+         id="polygon6171"
+         points="665.3,588 672.4,588 672.4,516.1 665.3,516.1 " />
+      <polygon
+         style="fill:#eda728"
+         id="polygon6173"
+         points="672.3,588 679.3,588 679.3,516.1 672.3,516.1 " />
+      <polygon
+         style="fill:#eea125"
+         id="polygon6175"
+         points="679.2,588 686.2,588 686.2,516.1 679.2,516.1 " />
+      <polygon
+         style="fill:#f09c23"
+         id="polygon6177"
+         points="686.1,588 693.2,588 693.2,516.1 686.1,516.1 " />
+      <polygon
+         style="fill:#f19720"
+         id="polygon6179"
+         points="693.1,588 700.1,588 700.1,516.1 693.1,516.1 " />
+      <polygon
+         style="fill:#f1921e"
+         id="polygon6181"
+         points="700,588 707,588 707,516.1 700,516.1 " />
+      <polygon
+         style="fill:#f28c1c"
+         id="polygon6183"
+         points="706.9,588 714,588 714,516.1 706.9,516.1 " />
+      <polygon
+         style="fill:#f28619"
+         id="polygon6185"
+         points="713.9,588 720.9,588 720.9,516.1 713.9,516.1 " />
+      <polygon
+         style="fill:#f28117"
+         id="polygon6187"
+         points="720.8,588 727.8,588 727.8,516.1 720.8,516.1 " />
+      <polygon
+         style="fill:#f17b15"
+         id="polygon6189"
+         points="727.7,588 734.8,588 734.8,516.1 727.7,516.1 " />
+      <polygon
+         style="fill:#f17513"
+         id="polygon6191"
+         points="734.7,588 741.7,588 741.7,516.1 734.7,516.1 " />
+      <polygon
+         style="fill:#ef7012"
+         id="polygon6193"
+         points="741.6,588 748.7,588 748.7,516.1 741.6,516.1 " />
+      <polygon
+         style="fill:#ee6a10"
+         id="polygon6195"
+         points="748.6,588 755.6,588 755.6,516.1 748.6,516.1 " />
+      <polygon
+         style="fill:#ec640e"
+         id="polygon6197"
+         points="755.5,588 762.5,588 762.5,516.1 755.5,516.1 " />
+      <polygon
+         style="fill:#ea5e0d"
+         id="polygon6199"
+         points="762.4,588 769.5,588 769.5,516.1 762.4,516.1 " />
+      <polygon
+         style="fill:#e7590c"
+         id="polygon6201"
+         points="769.4,588 776.4,588 776.4,516.1 769.4,516.1 " />
+      <polygon
+         style="fill:#e4530a"
+         id="polygon6203"
+         points="776.3,588 783.3,588 783.3,516.1 776.3,516.1 " />
+      <polygon
+         style="fill:#e04d09"
+         id="polygon6205"
+         points="783.2,588 790.3,588 790.3,516.1 783.2,516.1 " />
+      <polygon
+         style="fill:#dc4808"
+         id="polygon6207"
+         points="790.2,588 797.2,588 797.2,516.1 790.2,516.1 " />
+      <polygon
+         style="fill:#d74207"
+         id="polygon6209"
+         points="797.1,588 804.2,588 804.2,516.1 797.1,516.1 " />
+      <polygon
+         style="fill:#d23d06"
+         id="polygon6211"
+         points="804.1,588 811.1,588 811.1,516.1 804.1,516.1 " />
+      <polygon
+         style="fill:#cd3805"
+         id="polygon6213"
+         points="811,588 818,588 818,516.1 811,516.1 " />
+      <polygon
+         style="fill:#c73304"
+         id="polygon6215"
+         points="817.9,588 825,588 825,516.1 817.9,516.1 " />
+      <polygon
+         style="fill:#c02e04"
+         id="polygon6217"
+         points="824.9,588 831.9,588 831.9,516.1 824.9,516.1 " />
+      <polygon
+         style="fill:#b92903"
+         id="polygon6219"
+         points="831.8,588 838.8,588 838.8,516.1 831.8,516.1 " />
+      <polygon
+         style="fill:#b12403"
+         id="polygon6221"
+         points="838.7,588 845.8,588 845.8,516.1 838.7,516.1 " />
+      <polygon
+         style="fill:#a92002"
+         id="polygon6223"
+         points="845.7,588 852.7,588 852.7,516.1 845.7,516.1 " />
+      <polygon
+         style="fill:#a01c02"
+         id="polygon6225"
+         points="852.6,588 859.6,588 859.6,516.1 852.6,516.1 " />
+      <polygon
+         style="fill:#971801"
+         id="polygon6227"
+         points="859.5,588 866.6,588 866.6,516.1 859.5,516.1 " />
+      <polygon
+         style="fill:#8c1401"
+         id="polygon6229"
+         points="866.5,588 873.5,588 873.5,516.1 866.5,516.1 " />
+      <polygon
+         style="fill:#821001"
+         id="polygon6231"
+         points="873.4,588 880.5,588 880.5,516.1 873.4,516.1 " />
+      <polygon
+         style="fill:#760d00"
+         id="polygon6233"
+         points="880.4,588 887.4,588 887.4,516.1 880.4,516.1 " />
+      <polygon
+         style="fill:#6a0a00"
+         id="polygon6235"
+         points="887.3,588 894.3,588 894.3,516.1 887.3,516.1 " />
+      <polygon
+         style="fill:#5d0800"
+         id="polygon6237"
+         points="894.2,588 901.3,588 901.3,516.1 894.2,516.1 " />
+      <polygon
+         style="fill:#4f0500"
+         id="polygon6239"
+         points="901.2,588 908.2,588 908.2,516.1 901.2,516.1 " />
+      <polygon
+         style="fill:#410300"
+         id="polygon6241"
+         points="908.1,588 915.1,588 915.1,516.1 908.1,516.1 " />
+      <polygon
+         style="fill:#320200"
+         id="polygon6243"
+         points="915,588 922.1,588 922.1,516.1 915,516.1 " />
+      <polygon
+         style="fill:#220100"
+         id="polygon6245"
+         points="922,588 929,588 929,516.1 922,516.1 " />
+      <polygon
+         style="fill:#110000"
+         id="polygon6247"
+         points="928.9,588 935.9,588 935.9,516.1 928.9,516.1 " />
+    </g>
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6257"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6255"
+       d="M 48,588 H 935.9 V 516.1 H 48 Z" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6263"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6261"
+       d="m 48,588 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6267"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6265"
+       d="m 48,516.1 v 9 m 88.7,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6271"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6269"
+       d="m 136.7,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6275"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6273"
+       d="m 225.5,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6279"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6277"
+       d="m 314.3,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6283"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6281"
+       d="m 403.1,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6287"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6285"
+       d="m 491.9,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6291"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6289"
+       d="m 580.7,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6295"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6293"
+       d="m 669.5,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6299"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6297"
+       d="m 758.3,516.1 v 9 m 88.8,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6303"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6301"
+       d="m 847.1,516.1 v 9 m 88.7,62.9 v -9" />
+  </g>
+  <g
+     style="color:#000000;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter"
+     id="g6307"
+     transform="translate(-23.510547,-79.375)">
+    <path
+       style="stroke:#000000"
+       inkscape:connector-curvature="0"
+       id="path6305"
+       d="m 935.8,516.1 v 9" />
+  </g>
+</svg>

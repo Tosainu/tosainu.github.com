@@ -35,9 +35,9 @@ Exit status (exit code や return status などとも呼ばれます) は、あ�
 この Exit status は何のための値なのかというと、プロセスの実行結果を簡潔に親プロセスに伝える役割があります。例えば [`ls(1)`](https://linux.die.net/man/1/ls) コマンドの `man` をみてみると、このコマンドの Exit status についてこのような説明がされています。
 
 > ### Exit status:
-> 1. if OK,
-> 2. if minor problems (e.g., cannot access subdirectory),
-> 3. if serious trouble (e.g., cannot access command-line argument).
+> 0. if OK,
+> 1. if minor problems (e.g., cannot access subdirectory),
+> 2. if serious trouble (e.g., cannot access command-line argument).
 
 で、ここで僕が伝えたいのは、実行したコマンドの Exit status がどういう意味を持っているか調べようということではありません。\*nix のシェルコマンドの大半は Exit status がゼロなら正常終了、それ以外の値は何かしらの問題が発生しているのだということです。つまり、**Exit status という数桁の数字がゼロでないかを確認するだけで、コマンドが出力したメッセージなどを読まなくとも正常終了したか判断できる**のです。
 

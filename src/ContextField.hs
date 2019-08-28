@@ -7,17 +7,16 @@ module ContextField
   ) where
 
 import           Control.Monad
-import           Data.List         (find)
+import           Data.List           (find)
 import           Data.Maybe
-import qualified Data.Text         as T
-import qualified Data.Text.Lazy    as TL
-import qualified Data.Time.Format  as Time
+import qualified Data.Text           as T
+import qualified Data.Text.Lazy      as TL
+import           Data.Time.Format
+import           Data.Time.LocalTime
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
-import qualified Text.HTML.TagSoup as TS
-
-import           LocalTime
+import qualified Text.HTML.TagSoup   as TS
 
 descriptionField :: String -> Int -> Context String
 descriptionField key len = field key $ \_ ->
@@ -32,9 +31,9 @@ imageField key = field key $ \item ->
     isImageTag (TS.TagOpen "img" _) = True
     isImageTag _                    = False
 
-localDateField :: String -> String -> Context a
-localDateField key format = field key $ \i ->
-  Time.formatTime defaultTimeLocale format <$> getItemLocalTime (itemIdentifier i)
+localDateField :: TimeLocale -> TimeZone -> String -> String -> Context a
+localDateField locale zone key format = field key $ \i ->
+  formatTime locale format . utcToLocalTime zone <$> getItemUTC locale (itemIdentifier i)
 
 tagsField' :: String -> Tags -> Context a
 tagsField' key tags = field key $ \item -> do

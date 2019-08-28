@@ -7,6 +7,8 @@ import           Data.Char
 import           Data.Foldable          (fold)
 import           Data.List              (nub)
 import           Data.Maybe             (mapMaybe)
+import           Data.Time.Format       (TimeLocale (..), defaultTimeLocale)
+import           Data.Time.LocalTime    (TimeZone (..))
 import           Hakyll
 import           Hakyll.Web.Sass
 import           Skylighting            (pygments, styleToCss)
@@ -215,7 +217,7 @@ main = hakyllWith hakyllConfig $ do
 
 --- Contexts
 postContext :: Tags -> Context String
-postContext tags = localDateField   "date"          "%Y/%m/%d %R"
+postContext tags = localDateField defaultTimeLocale' timeZoneJST "date" "%Y/%m/%d %R"
                 <> tagsField'       "tags"          tags
                 <> descriptionField "description"   150
                 <> imageField       "image"
@@ -288,4 +290,12 @@ readerOptions = defaultHakyllReaderOptions
 writerOptions :: WriterOptions
 writerOptions = defaultHakyllWriterOptions
   { writerHTMLMathMethod = KaTeX ""
+  }
+
+timeZoneJST :: TimeZone
+timeZoneJST = TimeZone (9 * 60) False "JST"
+
+defaultTimeLocale' :: TimeLocale
+defaultTimeLocale' = defaultTimeLocale
+  { knownTimeZones = knownTimeZones defaultTimeLocale ++ [timeZoneJST]
   }

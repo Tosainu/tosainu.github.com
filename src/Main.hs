@@ -3,12 +3,13 @@
 module Main where
 
 import           Control.Monad
+import           Control.Monad.Except   (MonadError (..))
 import           Data.Char
 import           Data.Foldable          (fold)
 import           Data.List              (nub)
 import           Data.Maybe             (mapMaybe)
-import           Data.Time.Format       (TimeLocale (..), defaultTimeLocale)
-import           Data.Time.LocalTime    (TimeZone (..))
+import           Data.Time.Format       (TimeLocale (..), defaultTimeLocale, formatTime)
+import           Data.Time.LocalTime    (TimeZone (..), utcToLocalTime)
 import           Hakyll
 import           Hakyll.Web.Sass
 import           Skylighting            (pygments, styleToCss)
@@ -20,7 +21,6 @@ import           Archives
 import           Compiler
 import           ContextField
 import           FontAwesome
-import           LocalTime              (getPageYear)
 import           Template
 
 main :: IO ()
@@ -38,7 +38,12 @@ main = hakyllWith hakyllConfig $ do
       archivesPagesPath (Monthly y m) = "entry" </> y </> m </> "index.html"
   archives <- buildYearMonthArchives entryPattern $ fromFilePath . archivesPagesPath
 
-  let appendFooter y item = do
+  let appendFooter locale zone item = do
+        utc <- fmap Just (getItemUTC locale (itemIdentifier item))
+                 `catchError` const (return Nothing)
+        let y = fmap (formatTime locale "%Y" . utcToLocalTime zone) utc
+        appendFooterWith y item
+      appendFooterWith y item = do
         footer <- loadBody $ setVersion y "footer.html"
         appendItemBody footer item
 
@@ -50,7 +55,7 @@ main = hakyllWith hakyllConfig $ do
         >>= saveSnapshot "content"
         >>= renderKaTeX
         >>= applyLucidTemplate postTemplate (postContext tags)
-        >>= liftM2 (>>=) getPageYear (flip appendFooter)
+        >>= appendFooter defaultTimeLocale' timeZoneJST
         >>= applyLucidTemplate defaultTemplate (postContext tags)
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls
@@ -77,7 +82,7 @@ main = hakyllWith hakyllConfig $ do
         makeItem title
           >>= applyLucidTemplate entryListTemplate listContext
           >>= renderKaTeX
-          >>= appendFooter Nothing
+          >>= appendFooterWith Nothing
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
@@ -102,7 +107,7 @@ main = hakyllWith hakyllConfig $ do
         makeItem title
           >>= applyLucidTemplate entryListTemplate listContext
           >>= renderKaTeX
-          >>= appendFooter (Just $ year key)
+          >>= appendFooterWith (Just $ year key)
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
@@ -123,7 +128,7 @@ main = hakyllWith hakyllConfig $ do
       makeEmptyItem'
         >>= applyLucidTemplate entryListTemplate listContext
         >>= renderKaTeX
-        >>= appendFooter Nothing
+        >>= appendFooterWith Nothing
         >>= applyLucidTemplate defaultTemplate siteContext'
         >>= modifyExternalLinkAttributes
         >>= cleanIndexHtmls

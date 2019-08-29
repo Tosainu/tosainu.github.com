@@ -24,7 +24,6 @@ postTemplate = LucidTemplate $ do
           toHtmlRaw body
 
         runLucidTemplate disqusTemplate
-        runLucidTemplate entryNavigationTeplate
 
 postHeaderTemplate :: LucidTemplate a
 postHeaderTemplate = LucidTemplate $ do
@@ -60,11 +59,3 @@ disqusTemplate = LucidTemplate $ do
     noscript_ $ do
       "Please enable JavaScript to view the "
       a_ [href_ "https://disqus.com/?ref_noscript"] "comments powered by Disqus."
-
-entryNavigationTeplate :: LucidTemplate a
-entryNavigationTeplate = LucidTemplate $
-  nav_ [classes_ ["nav", "post-nav"]] $
-    -- div_ [class_ "prev"] "TODO"
-    --
-    -- div_ [class_ "next"] "TODO"
-    return ()

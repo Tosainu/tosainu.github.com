@@ -2,11 +2,10 @@
 
 module Template.Post where
 
-import qualified Data.Text          as T
+import qualified Data.Text   as T
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
-import qualified Network.URI.Encode as URI
 
 import           Template.Core
 
@@ -24,7 +23,6 @@ postTemplate = LucidTemplate $ do
         div_ [class_ "post-contents"] $
           toHtmlRaw body
 
-        runLucidTemplate shareButtonsTemplate
         runLucidTemplate disqusTemplate
         runLucidTemplate entryNavigationTeplate
 
@@ -45,42 +43,6 @@ postHeaderTemplate = LucidTemplate $ do
     if tags == "" then return () else do
       li_ $ i_  [classes_ ["fas", "fa-tags"]] ""
       li_ $ ul_ [class_ "tag-list"] $ toHtmlRaw tags
-
-shareButtonsTemplate :: LucidTemplate a
-shareButtonsTemplate = LucidTemplate $ do
-  StringField pageTitle <- lookupMeta "title"
-  StringField pageUrl   <- lookupMeta "url"
-  StringField siteTitle <- lookupMeta "site-title"
-  StringField siteUrl   <- lookupMeta "site-url"
-
-  let title = URI.encode $ pageTitle ++ " | " ++ siteTitle
-      url   = URI.encode $ siteUrl ++ pageUrl
-
-  aside_ [class_ "share"] $ do
-    a_ [ classes_ ["share-button", "twitter"]
-       , href_ (T.pack $ "https://twitter.com/share?text=" ++ title ++ "&url=" ++ url)
-       ] $ do
-      i_ [classes_ ["fab", "fa-twitter", "fa-lg"]] ""
-      span_ "Twitter"
-
-    a_ [ classes_ ["share-button", "hatena"]
-       , href_ (T.pack $
-           "http://b.hatena.ne.jp/add?mode=confirm&url=" ++ url ++ "&title=" ++ title)
-       ] $ do
-      img_ [src_ "/images/hatenabookmark-logomark.svg"]
-      span_ "hatena"
-
-    a_ [ classes_ ["share-button", "google-plus"]
-       , href_ (T.pack $ "https://plusone.google.com/_/+1/confirm?url=" ++ url)
-       ] $ do
-      i_ [classes_ ["fab", "fa-google-plus-g", "fa-lg"]] ""
-      span_ "Google+"
-
-    a_ [ classes_ ["share-button", "pocket"]
-       , href_ (T.pack $ "https://getpocket.com/save?url=" ++ url)
-       ] $ do
-      i_ [classes_ ["fab", "fa-get-pocket", "fa-lg"]] ""
-      span_ "Pocket"
 
 disqusTemplate :: LucidTemplate a
 disqusTemplate = LucidTemplate $ do

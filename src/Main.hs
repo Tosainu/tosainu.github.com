@@ -204,6 +204,10 @@ main = hakyllWith hakyllConfig $ do
     route   idRoute
     compile compressCssCompiler
 
+  match ".circleci/*" $ do
+    route idRoute
+    compile copyFileCompiler
+
   create ["stylesheets/highlight.css"] $ do
     route   idRoute
     compile $ makeItem $ compressCss $ styleToCss pygments
@@ -273,7 +277,14 @@ hakyllConfig = defaultConfiguration
   , tmpDirectory         = ".cache/tmp"
   , previewHost          = "0.0.0.0"
   , previewPort          = 4567
+  , ignoreFile           = ignoreFile'
   }
+  where
+    ignoreFile' path
+      | fileName == ".circleci" = False
+      | otherwise = ignoreFile defaultConfiguration path
+      where
+        fileName = takeFileName path
 
 atomFeedConfig :: FeedConfiguration
 atomFeedConfig = FeedConfiguration

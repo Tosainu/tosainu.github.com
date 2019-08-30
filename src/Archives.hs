@@ -1,22 +1,29 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Archives where
+module Archives
+  ( Archives (..)
+  , YearlyArchives
+  , MonthlyArchives
+  , archivesRules
+  , buildYearlyArchives
+  , buildMonthlyArchives
+  , yearMonthArchiveField
+  ) where
 
 import           Control.Monad
 import           Control.Monad.Trans (lift)
 import           Data.Function       (on)
-import           Data.List           (groupBy, sortBy)
+import           Data.List           (sortBy)
 import qualified Data.Map            as M
 import           Data.Maybe
 import qualified Data.Set            as S
 import qualified Data.Text           as T
 import qualified Data.Text.Lazy      as TL
-import qualified Data.Time.Format    as Time
+import           Data.Time.Format
+import           Data.Time.LocalTime
 import           Hakyll
 import           Lucid.Base
 import           Lucid.Html5
-
-import           LocalTime
 
 data Archives k = Archives
                 { archivesMap        :: [(k, [Identifier])]
@@ -24,18 +31,8 @@ data Archives k = Archives
                 , archivesDependency :: Dependency
                 }
 
-data YearMonthKey = Yearly String | Monthly String String
-       deriving (Eq, Show)
-
-instance Ord YearMonthKey where
-  (Yearly  ya)    <= (Yearly  yb)     = ya <= yb
-  (Yearly  ya)    <= (Monthly yb  _)  = ya <  yb
-  (Monthly ya  _) <= (Yearly  yb)     = ya <= yb
-  (Monthly ya ma) <= (Monthly yb mb)  = if ya == yb then ma <= mb else ya <= yb
-
-year :: YearMonthKey -> String
-year (Yearly  y)   = y
-year (Monthly y _) = y
+type YearlyArchives = Archives String
+type MonthlyArchives = Archives (String, String)
 
 buildArchivesWith :: (MonadMetadata m, Ord k)
                   => (Identifier -> m [k])
@@ -58,49 +55,56 @@ archivesRules archives rules =
       create [archivesMakeId archives key] $
         rules key $ fromList identifiers
 
-buildYearMonthArchives :: MonadMetadata m
-                       => Pattern
-                       -> (YearMonthKey -> Identifier)
-                       -> m (Archives YearMonthKey)
-buildYearMonthArchives = buildArchivesWith $ \i -> do
-  t <- getItemLocalTime i
-  let y = Time.formatTime defaultTimeLocale "%Y" t
-      m = Time.formatTime defaultTimeLocale "%m" t
-  return [Yearly y, Monthly y m]
+buildYearlyArchives :: MonadMetadata m
+                    => TimeLocale
+                    -> TimeZone
+                    -> Pattern
+                    -> (String -> Identifier)
+                    -> m YearlyArchives
+buildYearlyArchives locale zone = buildArchivesWith $ \i ->
+  return . formatTime locale "%Y" . utcToLocalTime zone <$> getItemUTC locale i
 
-yearMonthArchiveField :: String -> Archives YearMonthKey -> Maybe String -> Context a
-yearMonthArchiveField key archives pageYear =
-  field key $ const $ buildYearMonthArchiveField archives pageYear
+buildMonthlyArchives :: MonadMetadata m
+                    => TimeLocale
+                    -> TimeZone
+                    -> Pattern
+                    -> ((String, String) -> Identifier)
+                    -> m MonthlyArchives
+buildMonthlyArchives locale zone = buildArchivesWith $ \i -> do
+  time <- utcToLocalTime zone <$> getItemUTC locale i
+  let y = formatTime locale "%Y" time
+      m = formatTime locale "%m" time
+  return [(y, m)]
 
-buildYearMonthArchiveField :: Archives YearMonthKey -> Maybe String -> Compiler String
-buildYearMonthArchiveField archives pageYear = fmap TL.unpack $ renderTextT $
+yearMonthArchiveField :: String -> YearlyArchives -> MonthlyArchives -> Maybe String -> Context a
+yearMonthArchiveField key ya ma pageYear =
+  field key $ const $ buildYearMonthArchiveField ya ma pageYear
+
+buildYearMonthArchiveField :: YearlyArchives -> MonthlyArchives -> Maybe String -> Compiler String
+buildYearMonthArchiveField ya ma pageYear = fmap TL.unpack $ renderTextT $
   ul_ [class_ "archive-tree"] $ do
-    let getUrl    = lift . fmap (toUrl . fromMaybe "#") . getRoute
-        archives' = groupBy (isSameYear `on` fst) $
-                    sortBy  (flip compare `on` fst) $ archivesMap archives
-        isSameYear a b = year a == year b
+    let yearMap = sortBy (flip compare `on` (read :: String -> Int) . fst) $ archivesMap ya
+        getUrl = lift . fmap (toUrl . fromMaybe "#") . getRoute
 
-    forM_ archives' $ \yas ->
+    forM_ yearMap $ \(year, yids) ->
       li_ $ do
-        let (yk@(Yearly y), yids) = head yas
-        yurl <- getUrl $ archivesMakeId archives yk
+        let monthMap = sortBy (flip compare `on` (read :: String -> Int) . snd . fst) $
+                       filter ((== year) . fst . fst) $ archivesMap ma
+            treeLael = T.pack $ "tree-label-" ++ year
 
-        input_ $ [ class_ "tree-toggle"
-                 , type_ "checkbox"
-                 , id_ (T.pack $ "tree-label-" ++ y) ] ++
-                 [ checked_ | maybe False (== y) pageYear ]
-        label_ [ class_ "tree-toggle-button"
-               , for_ (T.pack $ "tree-label-" ++ y) ] $ do
+        input_ $ [class_ "tree-toggle", type_ "checkbox", id_ treeLael] ++
+                 [checked_ | maybe False (== year) pageYear]
+        label_ [class_ "tree-toggle-button", for_ treeLael] $ do
           i_ [classes_ ["fas", "fa-angle-right", "fa-fw"]] ""
           i_ [classes_ ["fas", "fa-angle-down", "fa-fw"]] ""
+
+          yurl <- getUrl $ archivesMakeId ya year
           a_ [href_ (T.pack yurl)] $
-            toHtml $ y ++ " (" ++ show (length yids) ++ ")"
+            toHtml $ year ++ " (" ++ show (length yids) ++ ")"
 
         ul_ [class_ "tree-child"] $
-          forM_ (tail yas) $ \ma -> do
-            let (mk@(Monthly _ m), mids) = ma
-            murl <- getUrl $ archivesMakeId archives mk
-
-            li_ $
+          forM_ monthMap $ \(mk@(_, month), mids) ->
+            li_ $ do
+              murl <- getUrl $ archivesMakeId ma mk
               a_ [href_ (T.pack murl)] $
-                toHtml $ y ++ "/" ++ m ++  " (" ++ show (length mids) ++ ")"
+                toHtml $ year ++ "/" ++ month ++  " (" ++ show (length mids) ++ ")"

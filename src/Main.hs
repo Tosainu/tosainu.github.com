@@ -6,8 +6,6 @@ import           Control.Monad
 import           Control.Monad.Except   (MonadError (..))
 import           Data.Char
 import           Data.Foldable          (fold)
-import           Data.List              (nub)
-import           Data.Maybe             (mapMaybe)
 import           Data.Time.Format       (TimeLocale (..), defaultTimeLocale, formatTime)
 import           Data.Time.LocalTime    (TimeZone (..), utcToLocalTime)
 import           Hakyll
@@ -33,10 +31,6 @@ main = hakyllWith hakyllConfig $ do
 
   let tagPagesPath tag = "entry" </> "tags" </> sanitizeTagName tag </> "index.html"
   tags <- buildTags entryPattern $ fromFilePath . tagPagesPath
-
-  let archivesPagesPath (Yearly y)    = "entry" </> y </> "index.html"
-      archivesPagesPath (Monthly y m) = "entry" </> y </> m </> "index.html"
-  archives <- buildYearMonthArchives entryPattern $ fromFilePath . archivesPagesPath
 
   let appendFooter locale zone item = do
         utc <- fmap Just (getItemUTC locale (itemIdentifier item))
@@ -88,16 +82,18 @@ main = hakyllWith hakyllConfig $ do
           >>= cleanIndexHtmls
           >>= renderFontAwesome faIcons
 
-  archivesRules archives $ \key pat -> do
+  let yearlyPagePath year = "entry" </> year </> "index.html"
+  yearlyArchives <- buildYearlyArchives defaultTimeLocale' timeZoneJST entryPattern $
+                      fromFilePath . yearlyPagePath
+  archivesRules yearlyArchives $ \year pat -> do
     archivesPages <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
-                         makeId  = makePageIdentifier $ archivesPagesPath key
+                         makeId  = makePageIdentifier $ yearlyPagePath year
                      in  buildPaginateWith grouper pat makeId
     paginateRules archivesPages $ \num pat' -> do
       route idRoute
       compile $ do
         posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        let title = case key of Yearly  y   -> "Yearly archives: "  <> y
-                                Monthly y m -> "Monthly archives: " <> y <> "/" <> m
+        let title = "Yearly archives: " <> year
             listContext   = listField "posts" postContext' (return posts)
                          <> paginateContext archivesPages num
                          <> defaultContext
@@ -107,7 +103,34 @@ main = hakyllWith hakyllConfig $ do
         makeItem title
           >>= applyLucidTemplate entryListTemplate listContext
           >>= renderKaTeX
-          >>= appendFooterWith (Just $ year key)
+          >>= appendFooterWith (Just year)
+          >>= applyLucidTemplate defaultTemplate siteContext'
+          >>= modifyExternalLinkAttributes
+          >>= cleanIndexHtmls
+          >>= renderFontAwesome faIcons
+
+  let monthlyPagePath (year, month) = "entry" </> year </> month </> "index.html"
+  monthlyArchives <- buildMonthlyArchives defaultTimeLocale' timeZoneJST entryPattern $
+                       fromFilePath . monthlyPagePath
+  archivesRules monthlyArchives $ \key@(year, month) pat -> do
+    archivesPages <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
+                         makeId  = makePageIdentifier $ monthlyPagePath key
+                     in  buildPaginateWith grouper pat makeId
+    paginateRules archivesPages $ \num pat' -> do
+      route idRoute
+      compile $ do
+        posts  <- recentFirst =<< loadAllSnapshots pat' "content"
+        let title = "Monthly archives: " <> year <> "/" <> month
+            listContext   = listField "posts" postContext' (return posts)
+                         <> paginateContext archivesPages num
+                         <> defaultContext
+            postContext'  = teaserField "teaser" "content" <> postContext tags
+            siteContext'  = constField "title" title <> siteContext
+
+        makeItem title
+          >>= applyLucidTemplate entryListTemplate listContext
+          >>= renderKaTeX
+          >>= appendFooterWith (Just year)
           >>= applyLucidTemplate defaultTemplate siteContext'
           >>= modifyExternalLinkAttributes
           >>= cleanIndexHtmls
@@ -155,24 +178,20 @@ main = hakyllWith hakyllConfig $ do
 
   create ["footer_right.html"] $
     compile $ do
-      let ctx = yearMonthArchiveField "archives" archives Nothing
+      let ctx = yearMonthArchiveField "archives" yearlyArchives monthlyArchives Nothing
       makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
 
-  let entryYears as =
-        let f (Yearly y) = Just y
-            f _          = Nothing
-        in  nub $ mapMaybe (f . fst) $ archivesMap as
-  forM_ (entryYears archives) $ \y -> do
+  forM_ (map fst $ archivesMap yearlyArchives) $ \year -> do
     let ident = fromFilePath "footer_right.html"
 
-    create [ident] $ version y $
+    create [ident] $ version year $
       compile $ do
-        let ctx = yearMonthArchiveField "archives" archives (Just y)
+        let ctx = yearMonthArchiveField "archives" yearlyArchives monthlyArchives (Just year)
         makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
 
-    create ["footer.html"] $ version y $
+    create ["footer.html"] $ version year $
       compile $
-        mapM loadBody ["footer_left.html", "footer_center.html", setVersion (Just y) ident]
+        mapM loadBody ["footer_left.html", "footer_center.html", setVersion (Just year) ident]
           >>= makeItem . concat
           >>= applyLucidTemplate footerTemplate siteContext
 

@@ -224,11 +224,11 @@ main = hakyllWith hakyllConfig $ do
     route $ constRoute "vendor/fontawesome/style.css"
     compile compressCssCompiler
 
-  match ("node_modules/katex/dist/**" .&&. complement "**.js") $ do
+  match ("node_modules/katex/dist/katex.min.css" .||. "node_modules/katex/dist/fonts/**") $ do
     route $ gsubRoute "node_modules/katex/dist/" (const "vendor/katex/")
     compile copyFileCompiler
 
-  match "node_modules/normalize.css/**" $ do
+  match "node_modules/normalize.css/normalize.css" $ do
     route $ gsubRoute "node_modules/" (const "vendor/")
     compile copyFileCompiler
 

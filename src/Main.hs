@@ -158,40 +158,29 @@ main = hakyllWith hakyllConfig $ do
         >>= renderFontAwesome faIcons
 
   -- precompiled footer and footer widgets
-  create ["footer.html"] $
-    compile $
-      mapM loadBody ["footer_left.html", "footer_center.html", "footer_right.html"]
-        >>= makeItem . concat
-        >>= applyLucidTemplate footerTemplate siteContext
-
-  create ["footer_left.html"] $
-    compile $ do
-      recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
-      let ctx = listField "recent-posts" (postContext tags) (return recent)
-             <> authorContext
-      makeEmptyItem' >>= applyLucidTemplate footerWidgetLeftTemplate ctx
-
-  create ["footer_center.html"] $
-    compile $ do
-      let ctx = tagCloudField' "tag-cloud" tags
-      makeEmptyItem' >>= applyLucidTemplate footerWidgetCenterTemplate ctx
-
-  create ["footer_right.html"] $
-    compile $ do
-      let ctx = yearMonthArchiveField "archives" yearlyArchives monthlyArchives Nothing
-      makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
-
-  forM_ (map fst $ archivesMap yearlyArchives) $ \year -> do
-    let ident = fromFilePath "footer_right.html"
-
-    create [ident] $ version year $
+  let years = map fst $ archivesMap yearlyArchives
+      version' = maybe id version
+  forM_ (Nothing:map Just years) $ \year -> version' year $ do
+    create ["footer_left.html"] $
       compile $ do
-        let ctx = yearMonthArchiveField "archives" yearlyArchives monthlyArchives (Just year)
+        recent <- fmap (take 5) . recentFirst =<< loadAllSnapshots entryPattern "content"
+        let ctx = listField "recent-posts" (postContext tags) (return recent)
+              <> authorContext
+        makeEmptyItem' >>= applyLucidTemplate footerWidgetLeftTemplate ctx
+
+    create ["footer_center.html"] $
+      compile $ do
+        let ctx = tagCloudField' "tag-cloud" tags
+        makeEmptyItem' >>= applyLucidTemplate footerWidgetCenterTemplate ctx
+
+    create ["footer_right.html"] $
+      compile $ do
+        let ctx = yearMonthArchiveField "archives" yearlyArchives monthlyArchives year
         makeEmptyItem' >>= applyLucidTemplate footerWidgetRightTemplate ctx
 
-    create ["footer.html"] $ version year $
+    create ["footer.html"] $
       compile $
-        mapM loadBody ["footer_left.html", "footer_center.html", setVersion (Just year) ident]
+        mapM (loadBody . setVersion year) ["footer_left.html", "footer_center.html", "footer_right.html"]
           >>= makeItem . concat
           >>= applyLucidTemplate footerTemplate siteContext
 

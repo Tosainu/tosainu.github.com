@@ -11,7 +11,7 @@ import           Template.Core
 
 postTemplate :: LucidTemplate a
 postTemplate = LucidTemplate $ do
-  StringField body <- lookupMeta "body"
+  StringField body <- lookupField "body"
 
   main_ [class_ "post"] $
     article_ $ do
@@ -27,10 +27,10 @@ postTemplate = LucidTemplate $ do
 
 postHeaderTemplate :: LucidTemplate a
 postHeaderTemplate = LucidTemplate $ do
-  StringField date  <- lookupMeta "date"
-  StringField tags  <- lookupMeta "tags"
-  StringField title <- lookupMeta "title"
-  StringField url   <- lookupMeta "url"
+  StringField date  <- lookupField "date"
+  StringField tags  <- lookupField "tags"
+  StringField title <- lookupField "title"
+  StringField url   <- lookupField "url"
 
   h1_ $
     a_ [href_ (T.pack url), title_ (T.pack title)] $ toHtml title
@@ -45,7 +45,7 @@ postHeaderTemplate = LucidTemplate $ do
 
 disqusTemplate :: LucidTemplate a
 disqusTemplate = LucidTemplate $ do
-  StringField shortname <- lookupMeta "disqus"
+  StringField shortname <- lookupField "disqus"
   aside_ [class_ "comments"] $ do
     div_ [id_ "disqus_thread"] ""
     script_ $ mconcat

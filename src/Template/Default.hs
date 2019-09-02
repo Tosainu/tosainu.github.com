@@ -13,20 +13,20 @@ import           Template.Core
 defaultTemplate :: LucidTemplate a
 defaultTemplate = LucidTemplate $ do
   -- page infoemations
-  StringField body      <- lookupMeta "body"
-  StringField lang      <- lookupMeta "lang"
-  StringField siteDesc  <- lookupMeta "site-description"
-  StringField siteTitle <- lookupMeta "site-title"
-  StringField siteUrl   <- lookupMeta "site-url"
-  StringField pageTitle <- lookupMeta "title"
-  StringField pageUrl   <- lookupMeta "url"
-  StringField analytics <- lookupMeta "google-analytics"
+  StringField body      <- lookupField "body"
+  StringField lang      <- lookupField "lang"
+  StringField siteDesc  <- lookupField "site-description"
+  StringField siteTitle <- lookupField "site-title"
+  StringField siteUrl   <- lookupField "site-url"
+  StringField pageTitle <- lookupField "title"
+  StringField pageUrl   <- lookupField "url"
+  StringField analytics <- lookupField "google-analytics"
 
   -- author informations
-  StringField name      <- lookupMeta "author-name"
-  StringField twitter   <- lookupMeta "author-twitter"
+  StringField name      <- lookupField "author-name"
+  StringField twitter   <- lookupField "author-twitter"
 
-  mdescription <- lookupMetaMaybe "description"
+  mdescription <- lookupFieldMaybe "description"
   let description = case mdescription of Just (StringField d) -> d
                                          _                    -> siteDesc
       title       = if pageTitle /= "" then pageTitle ++ " | " ++ siteTitle
@@ -55,7 +55,7 @@ defaultTemplate = LucidTemplate $ do
       meta_ [property_ "og:description", content_ (T.pack description)]
       meta_ [property_ "og:site_name", content_ (T.pack siteTitle)]
 
-      mimage <- lookupMetaMaybe "image"
+      mimage <- lookupFieldMaybe "image"
       case mimage of
            Just (StringField img) -> meta_ [property_ "og:image", content_ (T.pack img)]
            _                      -> return ()
@@ -88,8 +88,8 @@ defaultTemplate = LucidTemplate $ do
 
 footerTemplate :: LucidTemplate a
 footerTemplate = LucidTemplate $ do
-  StringField body      <- lookupMeta "body"
-  StringField copyright <- lookupMeta "copyright"
+  StringField body      <- lookupField "body"
+  StringField copyright <- lookupField "copyright"
 
   footer_ [class_ "site-footer"] $ do
     div_ [class_ "footer-widgets"] $
@@ -107,10 +107,10 @@ footerTemplate = LucidTemplate $ do
 
 footerWidgetLeftTemplate :: LucidTemplate a
 footerWidgetLeftTemplate = LucidTemplate $ do
-  StringField avatar    <- lookupMeta "author-avatar"
-  StringField name      <- lookupMeta "author-name"
-  StringField portfolio <- lookupMeta "author-portfolio"
-  StringField profile   <- lookupMeta "author-profile"
+  StringField avatar    <- lookupField "author-avatar"
+  StringField name      <- lookupField "author-name"
+  StringField portfolio <- lookupField "author-portfolio"
+  StringField profile   <- lookupField "author-profile"
 
   div_ [class_ "col"] $ do
     section_ [class_ "about-me"] $ do
@@ -129,16 +129,16 @@ footerWidgetLeftTemplate = LucidTemplate $ do
         i_ [classes_ ["fas", "fa-file-alt", "fa-fw"]] ""
         " Recent Posts"
       ul_ $ do
-        ListField ctx items <- lookupMeta "recent-posts"
+        ListField ctx items <- lookupField "recent-posts"
         forM_ (zip (repeat ctx) items) $ flip withContext $ do
-          StringField t <- lookupMeta "title"
-          StringField u <- lookupMeta "url"
+          StringField t <- lookupField "title"
+          StringField u <- lookupField "url"
           li_ $
             a_ [href_ (T.pack u)] $ toHtml t
 
 footerWidgetCenterTemplate :: LucidTemplate a
 footerWidgetCenterTemplate = LucidTemplate $ do
-  StringField tags <- lookupMeta "tag-cloud"
+  StringField tags <- lookupField "tag-cloud"
 
   section_ [class_ "tag-cloud"] $ do
     h4_ $ do
@@ -148,7 +148,7 @@ footerWidgetCenterTemplate = LucidTemplate $ do
 
 footerWidgetRightTemplate :: LucidTemplate a
 footerWidgetRightTemplate = LucidTemplate $ do
-  StringField archives <- lookupMeta "archives"
+  StringField archives <- lookupField "archives"
 
   section_ [class_ "archives"] $ do
     h4_ $ do

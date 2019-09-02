@@ -16,18 +16,18 @@ applyLucidTemplate tpl ctx item = do
   return $ itemSetBody body item
   where ctx' = ctx `mappend` missingField
 
-lookupMeta :: String -> LucidTemplateMonad a ContextField
-lookupMeta = flip lookupMetaWithArgs []
+lookupField :: String -> LucidTemplateMonad a ContextField
+lookupField = flip lookupFieldWith []
 
-lookupMetaWithArgs :: String -> [String] -> LucidTemplateMonad a ContextField
-lookupMetaWithArgs k a = lift $ ask >>= lift . unContext'
+lookupFieldWith :: String -> [String] -> LucidTemplateMonad a ContextField
+lookupFieldWith k a = lift $ ask >>= lift . unContext'
   where unContext' (c, i) = unContext c k a i
 
-lookupMetaMaybe :: String -> LucidTemplateMonad a (Maybe ContextField)
-lookupMetaMaybe k = (Just <$> lookupMeta k) `catchError` const (return Nothing)
+lookupFieldMaybe :: String -> LucidTemplateMonad a (Maybe ContextField)
+lookupFieldMaybe k = (Just <$> lookupField k) `catchError` const (return Nothing)
 
-lookupMetaWithArgsMaybe :: String -> [String] -> LucidTemplateMonad a (Maybe ContextField)
-lookupMetaWithArgsMaybe k a = (Just <$> lookupMetaWithArgs k a) `catchError` const (return Nothing)
+lookupFieldMaybeWith :: String -> [String] -> LucidTemplateMonad a (Maybe ContextField)
+lookupFieldMaybeWith k a = (Just <$> lookupFieldWith k a) `catchError` const (return Nothing)
 
 withContext :: Monad m => a' -> HtmlT (ReaderT a' m) r -> HtmlT (ReaderT a m) r
 withContext c = HtmlT . withReaderT (const c) . runHtmlT

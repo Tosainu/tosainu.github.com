@@ -1,10 +1,9 @@
 module Template.Core where
 
-import           Control.Monad.Except         (MonadError (..))
+import           Control.Monad.Except (MonadError (..))
 import           Control.Monad.Reader
-import qualified Data.Text.Lazy               as TL
+import qualified Data.Text.Lazy       as TL
 import           Hakyll
-import           Hakyll.Web.Template.Internal (TemplateExpr (..), TemplateKey (..))
 import           Lucid.Base
 
 type LucidTemplateMonad a r = HtmlT (ReaderT (Context a, Item a) Compiler) r
@@ -18,30 +17,17 @@ applyLucidTemplate tpl ctx item = do
   where ctx' = ctx `mappend` missingField
 
 lookupMeta :: String -> LucidTemplateMonad a ContextField
-lookupMeta k = do
-  (c, i) <- lift ask
-  lift $ lift $ applyTemplateExpr c i (Ident (TemplateKey k))
+lookupMeta = flip lookupMetaWithArgs []
 
 lookupMetaWithArgs :: String -> [String] -> LucidTemplateMonad a ContextField
-lookupMetaWithArgs k a = do
-  (c, i) <- lift ask
-  lift $ lift $ applyTemplateExpr c i (Call (TemplateKey k) (map StringLiteral a))
+lookupMetaWithArgs k a = lift $ ask >>= lift . unContext'
+  where unContext' (c, i) = unContext c k a i
 
 lookupMetaMaybe :: String -> LucidTemplateMonad a (Maybe ContextField)
 lookupMetaMaybe k = (Just <$> lookupMeta k) `catchError` const (return Nothing)
 
 lookupMetaWithArgsMaybe :: String -> [String] -> LucidTemplateMonad a (Maybe ContextField)
 lookupMetaWithArgsMaybe k a = (Just <$> lookupMetaWithArgs k a) `catchError` const (return Nothing)
-
-applyTemplateExpr :: Context a -> Item a -> TemplateExpr -> Compiler ContextField
-applyTemplateExpr _ _ (StringLiteral s)         = return (StringField s)
-applyTemplateExpr c i (Ident (TemplateKey k))   = unContext c k [] i
-applyTemplateExpr c i (Call  (TemplateKey k) a) = do
-  a' <- mapM (\e -> applyTemplateExpr c i e >>= getString e) a
-  unContext c k a' i
-  where getString _ (StringField s) = return s
-        getString e (ListField _ _) =
-          fail $ "expected StringField but got ListField for expr " ++ show e
 
 withContext :: Monad m => a' -> HtmlT (ReaderT a' m) r -> HtmlT (ReaderT a m) r
 withContext c = HtmlT . withReaderT (const c) . runHtmlT

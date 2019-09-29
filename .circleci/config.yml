@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/work
     docker:
-      - image: circleci/node:11.9.0-stretch
+      - image: circleci/node:12.10.0-buster
     steps:
       - checkout
       - run: git submodule sync --recursive
@@ -24,7 +24,7 @@ jobs:
   deploy:
     working_directory: ~/work
     docker:
-      - image: circleci/node:11.9.0-stretch
+      - image: circleci/node:12.10.0-buster
     steps:
       - add_ssh_keys:
           fingerprints:

@@ -1,6 +1,7 @@
 const gulp     = require('gulp');
 const cheerio  = require('gulp-cheerio');
 const cleancss = require('gulp-clean-css');
+const concat   = require('gulp-concat');
 const embedsvg = require('gulp-embed-svg');
 const htmlmin  = require('gulp-htmlmin');
 const rename   = require('gulp-rename');
@@ -38,13 +39,16 @@ function html() {
 function scss() {
   return gulp.src('src/stylesheets/*.scss')
       .pipe(sass({outputStyle: 'compressed'}))
-      .pipe(gulp.dest('build/stylesheets/'));
+      .pipe(gulp.dest('tmp/stylesheets/'));
 }
 
 function css() {
-  return gulp.src('node_modules/@fortawesome/fontawesome-svg-core/styles.css')
-      .pipe(rename('fontawesome.css'))
-      .pipe(gulp.src('node_modules/normalize.css/normalize.css'))
+  return gulp.src([
+        'node_modules/normalize.css/normalize.css',
+        'tmp/stylesheets/*.css',
+        'node_modules/@fortawesome/fontawesome-svg-core/styles.css',
+      ])
+      .pipe(concat('style.css'))
       .pipe(cleancss())
       .pipe(gulp.dest('build/stylesheets/'));
 }
@@ -60,7 +64,7 @@ function other_files() {
       .pipe(gulp.dest('build/'));
 }
 
-const build = gulp.series(clean, svg, gulp.parallel(html, scss, css, other_files));
+const build = gulp.series(clean, svg, gulp.parallel(html, gulp.series(scss, css), other_files));
 
 function reload(done) {
   browsersync.reload();

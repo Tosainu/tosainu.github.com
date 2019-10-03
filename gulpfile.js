@@ -50,7 +50,7 @@ function css() {
       ])
       .pipe(concat('style.css'))
       .pipe(cleancss())
-      .pipe(gulp.dest('build/stylesheets/'));
+      .pipe(gulp.dest('build/'));
 }
 
 function svg() {

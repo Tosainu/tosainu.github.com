@@ -54,17 +54,39 @@ function css() {
 }
 
 function svg() {
-  return gulp.src(['src/images/*.svg', 'icon/cocoa.svg'])
+  return gulp.src('icon/cocoa.svg')
       .pipe(svgmin({plugins: [{convertPathData: {floatPrecision: 4}}]}))
       .pipe(gulp.dest('tmp/images/'));
 }
 
-function other_files() {
-  return gulp.src('src/{CNAME,favicon.ico}')
+function image() {
+  return gulp.src('icon/cocoa-512.jpg')
+      .pipe(rename('icon.jpg'))
       .pipe(gulp.dest('build/'));
 }
 
-const build = gulp.series(clean, svg, gulp.parallel(html, gulp.series(scss, css), other_files));
+function favicon() {
+  return gulp.src('icon/cocoa.ico')
+      .pipe(rename('favicon.ico'))
+      .pipe(gulp.dest('build/'));
+}
+
+function other_files() {
+  return gulp.src('src/CNAME')
+      .pipe(gulp.dest('build/'));
+}
+
+const build = gulp.series(
+  clean,
+  svg,
+  gulp.parallel(
+    html,
+    gulp.series(scss, css),
+    image,
+    favicon,
+    other_files
+  )
+);
 
 function reload(done) {
   browsersync.reload();

@@ -727,13 +727,17 @@ pub fn lhs(tokens: &[Token]) -> Option<(&[Token], Lhs)> {
 }
 
 #[test]
-fn test_rhs() {
-    assert_eq!(rhs(&[]), None);
-    assert_eq!(rhs(&[Token::CurlyOpen]), None);
-    assert_eq!(rhs(&[Token::Identifier("123".to_owned())]), None);
+fn test_lhs() {
+    assert_eq!(lhs(&[]), None);
+    assert_eq!(lhs(&[Token::CurlyOpen]), None);
+    assert_eq!(lhs(&[Token::Integer(123)]), None);
     assert_eq!(
-        rhs(&[Token::Integer(123)]),
-        Some((&[] as &[Token], Rhs::Number(123)))
+        lhs(&[Token::Identifier("hoge".to_owned())]),
+        Some((&[] as &[Token], Lhs::Pointer("hoge".to_owned())))
+    );
+    assert_eq!(
+        lhs(&[Token::Star, Token::Identifier("hoge".to_owned())]),
+        Some((&[] as &[Token], Lhs::Dereference("hoge".to_owned())))
     );
 }
 ```
@@ -749,7 +753,7 @@ pub fn expression(tokens: &[Token]) -> Option<(&[Token], Expression)> {
             rhs(&tokens[1..]).map(|(t, r)| (t, Expression::AssignAdd(l, r)))
         }
 
-        // '-=' かつその後に rhs が続いたら Expression::AssignAdd
+        // '-=' かつその後に rhs が続いたら Expression::AssignSub
         (Some(Token::MinusEq), _) => {
             rhs(&tokens[1..]).map(|(t, r)| (t, Expression::AssignSub(l, r)))
         }

@@ -1,0 +1,40 @@
+graph G {
+  node [shape=box];
+
+  program -- ss2;
+
+  ss2 [label = "statements"];
+  ss2 -- ss1;
+
+  ss1 [label = "statements"];
+
+  s1 [label = "statement"];
+  ss1 -- s1;
+
+  e1 [label = "expression (+=)"];
+  s1 -- e1;
+
+  l1 [label = "lhs (deref)"];
+  e1 -- l1;
+
+  v1 [label = "\"ptr\""];
+  l1 -- v1;
+
+  r1 [label = "rhs"];
+  e1 -- r1;
+
+  v2 [label = "65"];
+  r1 -- v2;
+
+  s2 [label = "statement"];
+  ss2 -- s2;
+
+  e2 [label = "expression (func call)"];
+  s2 -- e2;
+
+  l2 [label = "lhs (ptr)"];
+  e2 -- l2;
+
+  v3 [label = "\"putchar\""];
+  l2 -- v3;
+}

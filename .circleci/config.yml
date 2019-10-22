@@ -125,3 +125,17 @@ workflows:
           filters:
             branches:
               only: master
+
+  schedule_build:
+    jobs:
+      - build_deps
+      - build:
+          requires:
+            - build_deps
+
+    triggers:
+      - schedule:
+          cron: "0 0 * * 0"
+          filters:
+            branches:
+              only: master

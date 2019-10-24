@@ -1,7 +1,8 @@
-resolver: lts-12.17
+resolver: lts-14.11
 
 packages:
   - .
 
 extra-deps:
+  - hakyll-4.13.0.1
   - hakyll-sass-0.2.3

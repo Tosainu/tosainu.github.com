@@ -6,3 +6,4 @@
 /.stack-work
 *.cabal
 /node_modules
+stack.yaml.lock

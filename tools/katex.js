@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const katex   = require('katex');
+const katex = require('katex');
 
 function readStdin() {
   return new Promise((resolve, reject) => {
@@ -17,8 +17,7 @@ function readStdin() {
 readStdin()
     .then((input) => {
       let displayMode = process.argv.includes('displayMode');
-      let equation = /^\\[\[\(]((.|\s)+)\\[\]\)]$/m.exec(input)[1];
-      let result   = katex.renderToString(equation, {displayMode: displayMode});
+      let result = katex.renderToString(input, {displayMode: displayMode});
       process.stdout.write(result);
     })
     .catch((error) => {

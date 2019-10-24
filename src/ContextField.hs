@@ -38,12 +38,11 @@ localDateField locale zone key format = field key $ \i ->
 tagsField' :: String -> Tags -> Context a
 tagsField' key tags = field key $ \item -> do
   tags' <- getTags $ itemIdentifier item
-  links <- forM tags' $ \tag -> do
-    route' <- getRoute $ tagsMakeId tags tag
-    return $ toLink' tag route'
-  return $ TL.unpack $ renderText $ mconcat $ map li_ $ catMaybes links
-  where toLink' _   Nothing     = Nothing
-        toLink' tag (Just path) = Just $ toLink tag path
+  links <- catMaybes <$> mapM (liftM2 (<$>) toLink' (getRoute . tagsMakeId tags)) tags'
+  if null links
+     then noResult ("Field " ++ key ++ ": tag not set (" ++ show (itemIdentifier item) ++ ")")
+     else return $ TL.unpack $ renderText $ mconcat $ map li_ links
+  where toLink' tag = fmap (toLink tag)
 
 tagCloudField' :: String -> Tags -> Context a
 tagCloudField' key tags = field key $ \_ -> renderTags toLink' concat tags

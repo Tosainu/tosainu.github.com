@@ -45,8 +45,9 @@ main = hakyllWith hakyllConfig $ do
     compile $
       pandocCompilerWith readerOptions writerOptions
         >>= absolutizeUrls
-        >>= saveSnapshot "content"
+        >>= saveSnapshot "feed-content"
         >>= renderKaTeX
+        >>= saveSnapshot "content"
         >>= loadAndApplyTemplate "templates/entry.html" (postContext tags)
         >>= appendFooter defaultTimeLocale' timeZoneJST
         >>= loadAndApplyTemplate "templates/default.html" (postContext tags)
@@ -74,7 +75,6 @@ main = hakyllWith hakyllConfig $ do
             postContext' = teaserField "teaser" "content" <> postContext tags
         makeEmptyItem'
           >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-          >>= renderKaTeX
           >>= appendFooterWith Nothing
           >>= loadAndApplyTemplate "templates/default.html" listContext'
           >>= modifyExternalLinkAttributes
@@ -101,7 +101,6 @@ main = hakyllWith hakyllConfig $ do
 
         makeEmptyItem'
           >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-          >>= renderKaTeX
           >>= appendFooterWith (Just year)
           >>= loadAndApplyTemplate "templates/default.html" listContext'
           >>= modifyExternalLinkAttributes
@@ -128,7 +127,6 @@ main = hakyllWith hakyllConfig $ do
 
         makeEmptyItem'
           >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-          >>= renderKaTeX
           >>= appendFooterWith (Just year)
           >>= loadAndApplyTemplate "templates/default.html" listContext'
           >>= modifyExternalLinkAttributes
@@ -148,7 +146,6 @@ main = hakyllWith hakyllConfig $ do
           postContext' = teaserField "teaser" "content" <> postContext tags
       makeEmptyItem'
         >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-        >>= renderKaTeX
         >>= appendFooterWith Nothing
         >>= loadAndApplyTemplate "templates/default.html" listContext'
         >>= modifyExternalLinkAttributes
@@ -171,7 +168,7 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile $ do
       let ctx = bodyField "description" <> postContext tags
-      loadAllSnapshots entryPattern "content"
+      loadAllSnapshots entryPattern "feed-content"
         >>= fmap (take 20) . recentFirst
         >>= mapM (prependBaseUrl (feedRoot atomFeedConfig))
         >>= renderAtom atomFeedConfig ctx

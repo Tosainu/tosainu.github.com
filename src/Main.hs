@@ -59,98 +59,51 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile copyFileCompiler
 
-  tagsRules tags $ \tag pat -> do
-    tagPages <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
-                    makeId  = makePageIdentifier $ tagPagesPath tag
-                in  buildPaginateWith grouper pat makeId
-    paginateRules tagPages $ \num pat' -> do
-      route idRoute
-      compile $ do
-        posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        let title = "Tag archives: " ++ tag
-            listContext' = listField "posts" postContext' (return posts)
-                        <> paginateContext tagPages num
-                        <> constField "title" title
-                        <> listContext
-            postContext' = teaserField "teaser" "content" <> postContext tags
-        makeEmptyItem'
-          >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-          >>= appendFooterWith Nothing
-          >>= loadAndApplyTemplate "templates/default.html" listContext'
-          >>= modifyExternalLinkAttributes
-          >>= cleanIndexHtmls
-          >>= renderFontAwesome faIcons
+  let listPageRules title footerVer pages = paginateRules pages $ \num pat -> do
+        route idRoute
+        compile $ do
+          posts  <- recentFirst =<< loadAllSnapshots pat "content"
+          let listContext' = listField "posts" postContext' (return posts)
+                          <> paginateContext pages num
+                          <> maybe missingField (constField "title") title
+                          <> listContext
+              postContext' = teaserField "teaser" "content" <> postContext tags
+          makeEmptyItem'
+            >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
+            >>= appendFooterWith footerVer
+            >>= loadAndApplyTemplate "templates/default.html" listContext'
+            >>= modifyExternalLinkAttributes
+            >>= cleanIndexHtmls
+            >>= renderFontAwesome faIcons
+
+  tagsRules tags $ \tag pat ->
+    let grouper = fmap (paginateEvery 5) . sortRecentFirst
+        makeId  = makePageIdentifier $ tagPagesPath tag
+        title   = "Tag archives: " ++ tag
+    in  buildPaginateWith grouper pat makeId >>= listPageRules (Just title) Nothing
 
   let yearlyPagePath year = "entry" </> year </> "index.html"
   yearlyArchives <- buildYearlyArchives defaultTimeLocale' timeZoneJST entryPattern $
                       fromFilePath . yearlyPagePath
-  archivesRules yearlyArchives $ \year pat -> do
-    archivesPages <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
-                         makeId  = makePageIdentifier $ yearlyPagePath year
-                     in  buildPaginateWith grouper pat makeId
-    paginateRules archivesPages $ \num pat' -> do
-      route idRoute
-      compile $ do
-        posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        let title = "Yearly archives: " <> year
-            listContext'  = listField "posts" postContext' (return posts)
-                         <> paginateContext archivesPages num
-                         <> constField "title" title
-                         <> listContext
-            postContext'  = teaserField "teaser" "content" <> postContext tags
-
-        makeEmptyItem'
-          >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-          >>= appendFooterWith (Just year)
-          >>= loadAndApplyTemplate "templates/default.html" listContext'
-          >>= modifyExternalLinkAttributes
-          >>= cleanIndexHtmls
-          >>= renderFontAwesome faIcons
+  archivesRules yearlyArchives $ \year pat ->
+    let grouper = fmap (paginateEvery 5) . sortRecentFirst
+        makeId  = makePageIdentifier $ yearlyPagePath year
+        title   = "Yearly archives: " <> year
+    in  buildPaginateWith grouper pat makeId >>= listPageRules (Just title) (Just year)
 
   let monthlyPagePath (year, month) = "entry" </> year </> month </> "index.html"
   monthlyArchives <- buildMonthlyArchives defaultTimeLocale' timeZoneJST entryPattern $
                        fromFilePath . monthlyPagePath
-  archivesRules monthlyArchives $ \key@(year, month) pat -> do
-    archivesPages <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
-                         makeId  = makePageIdentifier $ monthlyPagePath key
-                     in  buildPaginateWith grouper pat makeId
-    paginateRules archivesPages $ \num pat' -> do
-      route idRoute
-      compile $ do
-        posts  <- recentFirst =<< loadAllSnapshots pat' "content"
-        let title = "Monthly archives: " <> year <> "/" <> month
-            listContext'  = listField "posts" postContext' (return posts)
-                         <> paginateContext archivesPages num
-                         <> constField "title" title
-                         <> listContext
-            postContext'  = teaserField "teaser" "content" <> postContext tags
+  archivesRules monthlyArchives $ \key@(year, month) pat ->
+    let grouper = fmap (paginateEvery 5) . sortRecentFirst
+        makeId  = makePageIdentifier $ monthlyPagePath key
+        title   = "Monthly archives: " <> year <> "/" <> month
+    in  buildPaginateWith grouper pat makeId >>= listPageRules (Just title) (Just year)
 
-        makeEmptyItem'
-          >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-          >>= appendFooterWith (Just year)
-          >>= loadAndApplyTemplate "templates/default.html" listContext'
-          >>= modifyExternalLinkAttributes
-          >>= cleanIndexHtmls
-          >>= renderFontAwesome faIcons
-
-  entries <- let grouper = fmap (paginateEvery 5) . sortRecentFirst
-                 makeId  = makePageIdentifier "index.html"
-             in  buildPaginateWith grouper entryPattern makeId
-  paginateRules entries $ \num pat -> do
-    route idRoute
-    compile $ do
-      posts  <- recentFirst =<< loadAllSnapshots pat "content"
-      let listContext' = listField "posts" postContext' (return posts)
-                      <> paginateContext entries num
-                      <> listContext
-          postContext' = teaserField "teaser" "content" <> postContext tags
-      makeEmptyItem'
-        >>= loadAndApplyTemplate "templates/entry_list.html" listContext'
-        >>= appendFooterWith Nothing
-        >>= loadAndApplyTemplate "templates/default.html" listContext'
-        >>= modifyExternalLinkAttributes
-        >>= cleanIndexHtmls
-        >>= renderFontAwesome faIcons
+  listPageRules Nothing Nothing =<<
+    let grouper = fmap (paginateEvery 5) . sortRecentFirst
+        makeId  = makePageIdentifier "index.html"
+    in  buildPaginateWith grouper entryPattern makeId
 
   let years = map fst $ archivesMap yearlyArchives
       version' = maybe id version

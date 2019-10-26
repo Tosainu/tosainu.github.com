@@ -27,7 +27,6 @@ dependencies:
   - text
   - time
   - unordered-containers
-  - uri-encode
 
 executables:
   blog:

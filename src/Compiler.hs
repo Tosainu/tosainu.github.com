@@ -8,7 +8,6 @@ module Compiler
   , prependBaseUrl
   , cleanIndexHtmls
   , modifyExternalLinkAttributes
-  , tagSoupOption
   ) where
 
 import           Control.Monad

@@ -130,7 +130,11 @@ main = hakyllWith hakyllConfig $ do
     route idRoute
     compile $ optimizeSVGCompiler ["-p", "4"]
 
-  match ("CNAME" .||. "favicon.ico" .||. "images/**") $ do
+  match "images/icon/cocoa.ico" $ do
+    route $ constRoute "favicon.ico"
+    compile copyFileCompiler
+
+  match ("CNAME" .||. "images/**") $ do
     route idRoute
     compile copyFileCompiler
 

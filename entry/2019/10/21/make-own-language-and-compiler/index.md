@@ -641,7 +641,7 @@ let tree = Program::Statements(Statements::Statements(
     Box::new(Statements::Statement(Statement::Expression(
         Expression::AssignAdd(Lhs::Dereference("ptr".to_owned()), Rhs::Number(65)),
     ))),
-    Statement::Expression(Expression::FunctionCall(Lhs::Dereference(
+    Statement::Expression(Expression::FunctionCall(Lhs::Pointer(
         "putchar".to_owned(),
     ))),
 ));
@@ -670,7 +670,7 @@ Statements(
         ),
         Expression(
             FunctionCall(
-                Dereference(
+                Pointer(
                     "putchar",
                 ),
             ),

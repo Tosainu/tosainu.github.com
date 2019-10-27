@@ -7,7 +7,7 @@ module ContextField
   ) where
 
 import           Control.Monad
-import           Data.List           (find)
+import           Data.List           (isSuffixOf)
 import           Data.Maybe
 import qualified Data.Text           as T
 import qualified Data.Text.Lazy      as TL
@@ -24,12 +24,14 @@ descriptionField key len = field key $ \_ ->
 
 imageField :: String -> Context String
 imageField key = field key $ \item ->
-  case find isImageTag $ TS.parseTags $ itemBody item of
-       Just t  -> return $ TS.fromAttrib "src" t
-       Nothing -> return ""
+  case extractImages $ TS.parseTags $ itemBody item of
+       []      -> noResult ("Field " ++ key ++ ": " ++ show (itemIdentifier item) ++ "has no image")
+       (src:_) -> return src
   where
-    isImageTag (TS.TagOpen "img" _) = True
-    isImageTag _                    = False
+    extractImages = map (TS.fromAttrib "src") . filter f
+    f tag = let src = TS.fromAttrib "src" tag
+                cond = not $ null src || isExternal src || ".svg" `isSuffixOf` src
+            in  TS.isTagOpenName "img" tag && cond
 
 localDateField :: TimeLocale -> TimeZone -> String -> String -> Context a
 localDateField locale zone key format = field key $ \i ->

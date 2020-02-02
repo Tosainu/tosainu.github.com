@@ -269,19 +269,19 @@ x86-64 の ELF.
 そこで, 次のような攻撃を行う.  
 メッセージを1つ追加したとき, heap はこのような双方向リストになっている. ここで一つのブロックのことを chunk, 前の chunk を指すポインタを `bk`, 次の chunk を指すポインタを `fd` と呼ぶことにする.
 
-![heap1](https://tosainu.bitbucket.io/svgs/heap1.svg)
+![heap1](heap1.svg)
 
 ここで1つ目のメッセージを変更して heap bof を起こし, 次の chunk の bk を `exit()` の GOT のアドレスから8を引いたものに書き換える.
 
-![heap2](https://tosainu.bitbucket.io/svgs/heap2.svg)
+![heap2](heap2.svg)
 
 この状態で2つ目のメッセージの追加するとこのようになり,
 
-![heap3](https://tosainu.bitbucket.io/svgs/heap3.svg)
+![heap3](heap3.svg)
 
 そのまま2つ目のメッセージの削除を行うと, `exit()` の GOT のアドレスから8を引いたもの以降を1つの chunk として見た時に `fd` に相当する `exit()` の GOT を3つ目の chunk のアドレスに書き換えることができる. (図の chunk1, chunk2 の `fd`, `bk` が指す要素は, 一応 gdb でも確認しているが正直自信がない. ここでは特に重要でないので気にしないで...)
 
-![heap4](https://tosainu.bitbucket.io/svgs/heap4.svg)
+![heap4](heap4.svg)
 
 あとは3つ目の chunk が作られる予定のアドレス辺りに shellcode が配置されるように1つ目のメッセージを再び変更する. すると `exit@plt()` が呼び出されたときに shellcode が実行されるようになる.
 

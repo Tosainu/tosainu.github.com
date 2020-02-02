@@ -10,7 +10,7 @@ tags: Arch Linux, Linux, Network
 
 図にするとこんな感じ.  
 記事中では, この図のIPアドレス及びネットワークインターフェース名を使っていきます.  
-![diagram](https://c6.staticflickr.com/9/8430/29103640045_c31110bdb5_z.jpg)
+![diagram](l2tp-ipsec.png)
 
 <!--more-->
 

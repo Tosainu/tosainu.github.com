@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
-const {library, icon} = require('@fortawesome/fontawesome-svg-core');
-library.add(require('@fortawesome/free-brands-svg-icons').fab);
-library.add(require('@fortawesome/free-solid-svg-icons').fas);
+const { icon } = require('@fortawesome/fontawesome-svg-core');
+
+const pkgs = [
+  require('@fortawesome/free-brands-svg-icons'),
+  require('@fortawesome/free-solid-svg-icons')
+];
 
 let o = {};
-for (prefix in library.definitions) {
-  o[prefix] = {};
-  for (name in library.definitions[prefix]) {
-    o[prefix][name] = icon({prefix: prefix, iconName: name}).abstract[0];
+for (const p of pkgs) {
+  o[p.prefix] = {};
+  for (const i of Object.values(p[p.prefix])) {
+    o[p.prefix][i.iconName] = icon(i).abstract[0];
   }
 }
 process.stdout.write(JSON.stringify(o));

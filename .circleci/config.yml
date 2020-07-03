@@ -1,19 +1,17 @@
-version: 2
+version: 2.1
+
+executors:
+  haskell:
+    docker:
+      - image: haskell:8.8.3
+
 jobs:
   build_deps:
     working_directory: ~/build
-    docker:
-      - image: haskell:8.6.5
+    executor: haskell
     environment:
       STACK_BUILD_FLAGS: --flag hakyll:-previewServer --flag hakyll:-watchServer
     steps:
-      - run:
-          name: Install some packages
-          command: |
-            apt-get update
-            mkdir -p /usr/share/man/man1
-            apt-get install -y git openssh-client
-
       - checkout
       - run: git submodule sync --recursive
       - run: git submodule update --recursive --init

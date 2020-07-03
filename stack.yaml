@@ -1,8 +1,9 @@
-resolver: lts-14.11
+resolver: lts-16.3
 
 packages:
   - .
 
 extra-deps:
-  - hakyll-4.13.0.1
-  - hakyll-sass-0.2.3
+  - hakyll-sass-0.2.4
+  - hlibsass-0.1.10.1
+  - hsass-0.8.0

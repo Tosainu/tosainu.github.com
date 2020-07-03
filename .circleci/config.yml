@@ -4,6 +4,9 @@ executors:
   haskell:
     docker:
       - image: haskell:8.8.3
+  node:
+    docker:
+      - image: circleci/node:14-buster
 
 jobs:
   build_deps:
@@ -54,8 +57,7 @@ jobs:
 
   build:
     working_directory: ~/build
-    docker:
-      - image: circleci/node:13-stretch
+    executor: node
     steps:
       - checkout
       - run: git submodule sync --recursive
@@ -87,8 +89,7 @@ jobs:
 
   deploy:
     working_directory: ~/build
-    docker:
-      - image: circleci/node:13-stretch
+    executor: node
     steps:
       - add_ssh_keys:
           fingerprints:

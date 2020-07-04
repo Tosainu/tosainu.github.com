@@ -18,7 +18,7 @@ JTAG デバッガが欲しくなったので [Bus Blaster v3](http://dangerouspr
 
 ### Raspberry Pi と Bus Blaster を接続する
 
-Raspberry Pi Model B に載っている SoC の BCM2835 は、GPIO を入力・出力のほか 6つの Alternate mode が指定でき、そのときの特別な役割が各ピンごとに決められています。これをまとめた表が[ペリフェラルのマニュアル](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2835/BCM2835-ARM-Peripherals.pdf)の Table 6-31 にまとまっています。
+Raspberry Pi Model B に載っている SoC の BCM2835 は、GPIO を入力・出力のほか 6つの Alternate mode が指定でき、そのときの特別な役割が各ピンごとに決められています。これをまとめた表が[ペリフェラルのマニュアル](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2835/BCM2835-ARM-Peripherals.pdf)の Table 6-31 にあります。
 
 JTAG 用のピンも、ある GPIO の Alternate mode として実装されています。今回 JTAG に使う GPIO をまとめるとこんな感じになります。TDI は GPIO26 の Alt4 にもありますが、今回使う Raspberry Pi Model B だと基板上のピンヘッダと繋がっていないため、GPIO4 の Alt5 を使います。
 
@@ -34,9 +34,9 @@ JTAG 用のピンも、ある GPIO の Alternate mode として実装されて�
 
 Raspberry Pi の P1 ヘッダの役割は[このページの図](https://elinux.org/RPi_Low-level_peripherals#P1_Header)などがわかりやすいです。これらを参考にしながら Bus Blaster と接続していきます。Bus Blaster は基板上にピンの役割が書いてあるのがいいですね。
 
-![](IMG_0631.webp)
+![](IMG_0631.jpg)
 
-![](IMG_0630.webp)
+![](IMG_0630.jpg)
 
 Bus Blaster の JP4 に刺さっているジャンパピンは、今回は外したほうが良さそうです。JP4 は Bus Blaster からターゲットに給電する・しないを切り替えるものです。Raspberry Pi は電源供給用の USB Micro-B 端子があるので Bus Blaster からの給電は必要ないですし、Bus Blaster から供給できるのは 3.3v 200mA が最大で Raspberry Pi を動かすには弱いためです。
 
@@ -49,7 +49,9 @@ Raspberry Pi は、CPU が動き始める前に GPU が様々な初期化を行�
 > ##### `enable_jtag_gpio`
 > Setting `enable_jtag_gpio=1` **selects Alt4 mode for GPIO pins 22-27**, and sets up some internal SoC connections, thus enabling the JTAG interface for the ARM CPU. It works on all models of Raspberry Pi.
 
-と書いてあり、今回のように TDI に GPIO 4 を使うことは想定されていなさそうです[^rpicfg]。実際にこのオプションを設定した Raspberry Pi で [U-Boot](https://github.com/u-boot/u-boot) を起動し、`md` コマンドで GPIO の機能を指定する GPFSELn レジスタ付近 (`0x20200000`) を覗いてみた結果がこれです。GPFSEL2 (`0x20200008`) の値は `0x006db6c8` (`0b011011011011011011001000`) で、確かに GPIO 22-27 に対応したビット `[23:6]` が全て Alt4 (`0b011`) になっています。しかし GPFSEL0 (`0x20200000`) の値は `0x24864024` (`0b100100100001100100000000100100`) で、GPIO 4 に対応したビット `[14:12]` は Alt1 (`0b100`) になっています。残念。
+と書いてあり、今回のように TDI に GPIO 4 を使うことは想定されていなさそうです[^rpicfg]。
+
+実際にこのオプションを設定した Raspberry Pi で [U-Boot](https://github.com/u-boot/u-boot) を起動し、`md` コマンドで GPIO の機能を指定する GPFSELn レジスタ付近 (`0x20200000`) を覗いてみた結果がこれです。GPFSEL2 (`0x20200008`) の値は `0x006db6c8` (`0b011011011011011011001000`) で、確かに GPIO 22-27 に対応したビット `[23:6]` が全て Alt4 (`0b011`) になっています。しかし GPFSEL0 (`0x20200000`) の値は `0x24864024` (`0b100100100001100100000000100100`) で、GPIO 4 に対応したビット `[14:12]` は Alt1 (`0b100`) になっています。残念。
 
     
     

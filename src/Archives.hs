@@ -55,7 +55,7 @@ archivesRules archives rules =
       create [archivesMakeId archives key] $
         rules key $ fromList identifiers
 
-buildYearlyArchives :: (MonadMetadata m, MonadFail m)
+buildYearlyArchives :: MonadMetadata m
                     => TimeLocale
                     -> TimeZone
                     -> Pattern
@@ -64,7 +64,7 @@ buildYearlyArchives :: (MonadMetadata m, MonadFail m)
 buildYearlyArchives locale zone = buildArchivesWith $ \i ->
   return . formatTime locale "%Y" . utcToLocalTime zone <$> getItemUTC locale i
 
-buildMonthlyArchives :: (MonadMetadata m, MonadFail m)
+buildMonthlyArchives :: MonadMetadata m
                     => TimeLocale
                     -> TimeZone
                     -> Pattern

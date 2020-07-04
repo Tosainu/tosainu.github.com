@@ -3,10 +3,10 @@ version: 2.1
 executors:
   haskell:
     docker:
-      - image: haskell:8.8.3
+      - image: haskell:8.6.5
   node:
     docker:
-      - image: circleci/node:14-buster
+      - image: circleci/node:14-stretch
 
 jobs:
   build_deps:

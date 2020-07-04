@@ -189,7 +189,7 @@ siteContext   = constField "lang"              "ja"
              <> constField "site-description"  "とさいぬのブログです"
              <> constField "site-url"          "https://blog.myon.info"
              <> constField "site-image"        "/images/icon/cocoa-512.jpg"
-             <> constField "copyright"         "© 2011-2019 Tosainu."
+             <> constField "copyright"         "© 2011-2020 Tosainu."
              <> constField "google-analytics"  "UA-57978655-1"
              <> constField "disqus"            "tosainu"
              <> authorContext

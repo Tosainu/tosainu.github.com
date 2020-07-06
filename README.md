@@ -1,4 +1,4 @@
-# My blog [![CircleCI](https://circleci.com/gh/Tosainu/blog/tree/master.svg?style=svg)](https://circleci.com/gh/Tosainu/blog/tree/master)
+# My blog ![](https://github.com/Tosainu/blog/workflows/CI/badge.svg)
 
 <http://blog.myon.info/>
 

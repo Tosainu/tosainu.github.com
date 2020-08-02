@@ -1,0 +1,51 @@
+name: CI
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - run: npm ci
+      - run: npm run build
+
+      - run: tar cvf build.tar.xz build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: build.tar.xz
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: site
+
+      - run: tar xvf build.tar.xz
+
+      - name: Deploy
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd build
+          git init
+          git config user.name "GitHub Actions"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git switch --orphan master
+          git add -A
+          git commit --allow-empty -m "(⋈◍＞◡＜◍)。✧♡ "
+          git push -n -f "https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}" HEAD

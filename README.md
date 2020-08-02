@@ -1,4 +1,4 @@
-# Tosainu's Portfolio [![CircleCI](https://circleci.com/gh/Tosainu/tosainu.github.com/tree/dev.svg?style=svg)](https://circleci.com/gh/Tosainu/tosainu.github.com/tree/dev)
+# Tosainu's Portfolio ![](https://github.com/Tosainu/tosainu.github.com/workflows/CI/badge.svg)
 
 ## License
 

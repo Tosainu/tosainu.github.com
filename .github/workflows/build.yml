@@ -48,4 +48,4 @@ jobs:
           git switch --orphan master
           git add -A
           git commit --allow-empty -m "(⋈◍＞◡＜◍)。✧♡ "
-          git push -n -f "https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}" HEAD
+          git push -f "https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}" HEAD

@@ -83,10 +83,6 @@ function favicon() {
     .pipe(gulp.dest('build/'));
 }
 
-function circleci() {
-  return gulp.src('.circleci/config.yml').pipe(gulp.dest('build/.circleci'));
-}
-
 function other_files() {
   return gulp.src('src/CNAME').pipe(gulp.dest('build/'));
 }
@@ -99,7 +95,6 @@ const build = gulp.series(
     gulp.series(scss, css),
     image,
     favicon,
-    circleci,
     other_files
   )
 );

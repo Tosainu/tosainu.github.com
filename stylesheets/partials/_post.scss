@@ -74,14 +74,24 @@
 .post-contents {
   blockquote {
     background: $light-gray;
-    border-left: .4em solid $mid-gray;
+    border-left: .6em solid $mid-gray;
     line-height: 1.4em;
     margin-left: 0;
     margin-right: 0;
-    padding: .4em 1.2em;
+    padding: .4em 1.6em;
+
+    &:before {
+      content: "❝";
+      display: inline;
+      font-size: 2.8em;
+      line-height: 0;
+      position: relative;
+      top: 30px;
+      left: -16px;
+      color: $mid-gray;
+    }
 
     pre {
-      border: none;
       padding: 0;
     }
   }
@@ -107,7 +117,6 @@
 
   pre {
     background: $light-gray;
-    border: 1px solid $mid-gray;
     font-family: $font-family-mono;
     line-height: 1.4em;
     overflow-x: auto;
@@ -125,7 +134,17 @@
   }
 
   table:not(.highlight) {
+    margin-left: auto;
+    margin-right: auto;
     border-collapse: collapse;
+
+    @media (max-width: $desktop-screen-width) {
+      display: block;
+      width: fit-content;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
 
     th {
       background: $light-gray;
@@ -134,7 +153,7 @@
     th,
     td {
       border: 1px solid $mid-gray;
-      padding: .2em .8em;
+      padding: .2em 1em;
     }
 
     tbody {

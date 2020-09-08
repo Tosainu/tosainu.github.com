@@ -1,7 +1,7 @@
 ---
 title: SlackのBotを書いてみた
 date: 2016-01-24 14:44:00+0900
-tags: Slack, Ruby
+tags: Slack
 ---
 
 今までメッセージのやり取りをL○NEで行っていた某所が, ついにSlackに移行しました. 非常にめでたい.

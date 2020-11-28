@@ -6,20 +6,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
         with:
           submodules: true
 
-      - uses: actions/setup-haskell@v1.1.1
+      - uses: actions/setup-haskell@main
         with:
           ghc-version: 8.8.3
           enable-stack: latest
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@main
         with:
           node-version: 14
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@main
         id: stack-cache
         with:
           path: ~/.stack
@@ -40,7 +40,7 @@ jobs:
 
       - run: tar cvf build.tar.xz build
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@main
         with:
           name: blog
           path: build.tar.xz
@@ -52,7 +52,7 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
 
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@main
         with:
           name: blog
 

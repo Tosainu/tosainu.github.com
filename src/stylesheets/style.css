@@ -1,16 +1,15 @@
 @charset 'utf-8';
 
-// Colors
-// ----------------------------
+/* Colors                       */
+/* ---------------------------- */
 $red:        #eb6553;
 $orange:     #faad73;
 $blue:       #007ba8;
 $light-gray: #f9fafb;
-$mid-gray:   darken($light-gray, 10%);
 $dark-gray:  #3f434a;
 $white:      #ffffff;
 
-// ----------------------------
+/* ---------------------------- */
 html {
   height: 100vh;
 }
@@ -44,8 +43,8 @@ dl {
   margin: 0;
 }
 
-// Layout
-// ----------------------------
+/* Layout                       */
+/* ---------------------------- */
 section {
   padding: 6rem 0;
 
@@ -173,12 +172,36 @@ footer {
   }
 }
 
-// Media Queries
-// --------------------------------
+/* Media Queries                    */
+/* -------------------------------- */
 $mobile-width: 480px;
 $desktop-width: 1024px;
 
-// mobile
+body {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* tablet */
+@media screen and (max-width: $desktop-width) {
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .wrap {
+    margin: 0;
+    padding: 0 20px;
+    width: auto;
+  }
+}
+
+/* mobile */
 @media screen and (max-width: $mobile-width) {
   body {
     font-size: 15px;
@@ -203,33 +226,8 @@ $desktop-width: 1024px;
   }
 }
 
-// tablet
-@media screen and (min-width: $mobile-width + 1) and (max-width: $desktop-width - 1) {
-  body {
-    font-size: 17px;
-    line-height: 1.7;
-  }
-
-  .wrap {
-    padding: 0 20px;
-  }
-}
-
-// desktop
-@media screen and (min-width: $desktop-width) {
-  body {
-    font-size: 18px;
-    line-height: 2;
-  }
-
-  .wrap {
-    margin: 0 auto;
-    width: 960px;
-  }
-}
-
-// Animation
-// --------------------------------
+/* Animation                        */
+/* -------------------------------- */
 @keyframes avatar-fade-in {
   0% {
     opacity: 0;

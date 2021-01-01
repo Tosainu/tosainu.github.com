@@ -5,7 +5,7 @@ const concat = require('gulp-concat');
 const embedsvg = require('gulp-embed-svg');
 const htmlmin = require('gulp-htmlmin');
 const rename = require('gulp-rename');
-const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
 const svgmin = require('gulp-svgmin');
 const del = require('del');
 
@@ -45,12 +45,12 @@ function html() {
 
 function scss() {
   return gulp
-    .src('src/stylesheets/*.scss')
-    .pipe(sass({ outputStyle: 'compressed' }))
+    .src('src/stylesheets/*.css')
+    .pipe(postcss([require('precss')]))
     .pipe(gulp.dest('tmp/stylesheets/'));
 }
 
-function css() {
+function merge_css() {
   return gulp
     .src([
       'node_modules/normalize.css/normalize.css',
@@ -92,7 +92,7 @@ const build = gulp.series(
   svg,
   gulp.parallel(
     html,
-    gulp.series(scss, css),
+    gulp.series(scss, merge_css),
     image,
     favicon,
     other_files
@@ -111,7 +111,7 @@ function serve(done) {
 
 function watch() {
   gulp.watch('src/index.html', gulp.series(html, reload));
-  gulp.watch('src/stylesheets/*.scss', gulp.series(scss, reload));
+  gulp.watch('src/stylesheets/*.css', gulp.series(scss, reload));
 }
 
 gulp.task('clean', clean);

@@ -1,6 +1,7 @@
 ---
 title: 最近のArch Linuxのインストールで注意すること＆Arch LinuxをSDカードにインストールするときに注意すること
 date: 2013-12-25 00:02:07+0900
+noindex: true
 tags: Linux, Arch Linux
 ---
 どーもです。

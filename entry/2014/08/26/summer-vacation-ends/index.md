@@ -1,6 +1,7 @@
 ---
 title: 夏休みが終わる
 date: 2014-08-26 18:35:00+0900
+noindex: true
 tags: Website
 ---
 

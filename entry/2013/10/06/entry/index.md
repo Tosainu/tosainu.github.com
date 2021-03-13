@@ -1,6 +1,7 @@
 ---
 title: Linux環境でAssemblyLangプログラミングしたメモ
 date: 2013-10-06 21:11:08+0900
+noindex: true
 tags: Arduino,Linux
 ---
 <p>どもどもー</p><p><img src="https://lh3.googleusercontent.com/-fFh3rCgGq9g/UlFSJC09C-I/AAAAAAAACpw/rmMps_jgNy4/s640/IMG_1127.JPG" /></p>

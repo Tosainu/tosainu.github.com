@@ -1,6 +1,7 @@
 ---
 title: サイトバナーを作成しました
 date: 2013-04-09 20:02:28+0900
+noindex: true
 tags: Website
 ---
 <p>どーもです</p>

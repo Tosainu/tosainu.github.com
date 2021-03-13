@@ -1,6 +1,7 @@
 ---
 title: 単位ってすごく重要
 date: 2014-04-26 23:41:06+0900
+noindex: true
 ---
 <blockquote class="twitter-tweet tw-align-center" data-partner="tweetdeck"><p>ルールをきっちり守る初心者マーク車の後ろについたせいで40km/s走行なう</p>&mdash; 40km/sで飛び蹴り (@tosainu_3930k) <a href="https://twitter.com/tosainu_3930k/statuses/460004258008428544">April 26, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

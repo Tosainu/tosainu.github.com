@@ -1,6 +1,7 @@
 ---
 title: VGN-CR52B CPU換装（CelM550→C2DT9300）
 date: 2013-06-10 22:49:00+0900
+noindex: true
 ---
 <p>どーもです。</p>
 <p>&nbsp;</p>

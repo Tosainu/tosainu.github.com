@@ -1,6 +1,7 @@
 ---
 title: Twitter Bootstrapが便利そう
 date: 2013-05-13 20:05:47+0900
+noindex: true
 tags: Website
 ---
 <p>どーもです。</p>

@@ -1,6 +1,7 @@
 ---
 title: uim-mozcのvi-cooperative modeが神ってる
 date: 2014-04-14 19:56:08+0900
+noindex: true
 tags: Linux, Arch Linux, Vim
 ---
 どーもです。

@@ -1,6 +1,7 @@
 ---
 title: Blenderを使ってみた
 date: 2013-03-28 17:30:57+0900
+noindex: true
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

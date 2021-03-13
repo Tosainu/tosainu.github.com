@@ -1,6 +1,7 @@
 ---
 title: Arch Linuxインストールめも (2014秋版)
 date: 2014-10-06 00:51:00+0900
+noindex: true
 tags: Arch Linux, DIY PC
 ---
 

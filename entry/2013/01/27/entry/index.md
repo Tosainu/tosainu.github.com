@@ -1,6 +1,7 @@
 ---
 title: Sony Tablet Pを弄る
 date: 2013-01-27 10:00:17+0900
+noindex: true
 tags: Android
 ---
 <p>どもーとさいぬです</p>

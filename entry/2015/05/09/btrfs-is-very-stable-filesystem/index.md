@@ -1,6 +1,7 @@
 ---
 title: Btrfsが死んだ
 date: 2015-05-09 11:45:00+0900
+noindex: true
 tags: Linux, Arch Linux
 ---
 

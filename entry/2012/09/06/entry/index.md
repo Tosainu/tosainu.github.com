@@ -1,6 +1,7 @@
 ---
 title: 久しぶりです……
 date: 2012-09-06 03:47:53+0900
+noindex: true
 tags: Xperia arc, Xperia2011
 ---
 <p>おはようございます</p>

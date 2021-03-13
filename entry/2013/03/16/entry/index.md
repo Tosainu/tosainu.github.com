@@ -1,6 +1,7 @@
 ---
 title: Walfas
 date: 2013-03-16 17:25:28+0900
+noindex: true
 ---
 <p>どもでーす。</p>
 <p>&nbsp;</p>

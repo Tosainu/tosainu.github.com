@@ -1,6 +1,7 @@
 ---
 title: 秋休みとかいうやつでした
 date: 2014-10-02 01:37:00+0900
+noindex: true
 tags: Website
 ---
 

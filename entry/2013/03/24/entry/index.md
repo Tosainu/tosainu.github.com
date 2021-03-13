@@ -1,6 +1,7 @@
 ---
 title: Arch Linuxをインストールし、デスクトップ環境Cinnamonを動かすまでのメモ
 date: 2013-03-24 17:31:09+0900
+noindex: true
 tags: Arch Linux
 ---
 <p><span class="fontsize6">もっと真面目に記事を新しく書きました。こちらの記事もどうぞ↓</span></p>

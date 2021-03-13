@@ -64,6 +64,7 @@ main = hakyllWith hakyllConfig $ do
         compile $ do
           posts  <- recentFirst =<< loadAllSnapshots pat "content"
           let listContext' = listField "posts" postContext' (return posts)
+                          <> boolField "noindex" (const (num /= 1))
                           <> paginateContext pages num
                           <> maybe missingField (constField "title") title
                           <> listContext

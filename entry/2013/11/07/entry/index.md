@@ -1,6 +1,7 @@
 ---
 title: Arch Linuxインストールめも (2013版)
 date: 2013-11-07 21:28:09+0900
+noindex: true
 tags: Arch Linux
 ---
 

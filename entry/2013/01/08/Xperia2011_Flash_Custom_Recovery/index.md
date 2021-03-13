@@ -1,6 +1,7 @@
 ---
 title: カスタムリカバリの導入
 date: 2013-01-08 11:40:59+0900
+noindex: true
 tags: Xperia2011, Xperia arc
 ---
 

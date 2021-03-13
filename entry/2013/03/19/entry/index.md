@@ -1,6 +1,7 @@
 ---
 title: GTX 660TiのBIOSを弄る（MaxTDP・FanSpeed・BoostClock・VoltageLimit）
 date: 2013-03-19 14:07:32+0900
+noindex: true
 tags: DIY PC
 ---
 <p>どーもです</p>

@@ -1,6 +1,7 @@
 ---
 title: 今更な感じはするけど玄箱で動かすOSを考える Gentoo編
 date: 2013-02-24 20:41:52+0900
+noindex: true
 tags: Linux
 ---
 <p>どーもです。</p>

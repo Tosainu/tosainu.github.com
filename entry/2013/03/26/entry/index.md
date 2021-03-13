@@ -1,6 +1,7 @@
 ---
 title: シムシティ買ったった
 date: 2013-03-26 12:31:15+0900
+noindex: true
 tags: Game
 ---
 <p>どーもです。</p>

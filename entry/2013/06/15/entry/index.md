@@ -1,6 +1,7 @@
 ---
 title: なんか違ういぬさくやMOD
 date: 2013-06-15 02:42:29+0900
+noindex: true
 tags: Game
 ---
 <p>どーもです。</p>

@@ -1,6 +1,7 @@
 ---
 title: グラボ何にしようかな〜
 date: 2012-12-24 08:38:44+0900
+noindex: true
 tags: DIY PC
 ---
 <p>どうもです</p>

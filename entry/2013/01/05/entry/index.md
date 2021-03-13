@@ -1,6 +1,7 @@
 ---
 title: PC組みました！！
 date: 2013-01-05 20:14:07+0900
+noindex: true
 tags: DIY PC
 ---
 <p>久しぶりです</p>

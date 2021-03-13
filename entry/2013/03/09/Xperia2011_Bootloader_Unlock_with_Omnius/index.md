@@ -1,6 +1,7 @@
 ---
 title: Omniusで国内ペリアをアンロック
 date: 2013-03-09 09:52:06+0900
+noindex: true
 tags: Xperia2011, Xperia arc
 ---
 

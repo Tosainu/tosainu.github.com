@@ -1,6 +1,7 @@
 ---
 title: NEW GAME!
 date: 2014-10-20 21:26:00+0900
+noindex: true
 ---
 
 どもども.

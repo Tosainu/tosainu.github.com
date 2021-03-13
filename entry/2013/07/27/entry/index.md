@@ -1,6 +1,7 @@
 ---
 title: "ERROR: Unable to find root device 'xxxxxx'で起動しなくなった時の対処法"
 date: 2013-07-27 15:11:24+0900
+noindex: true
 tags: Arch Linux
 ---
 <p>どうもです。</p>

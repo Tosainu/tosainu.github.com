@@ -1,6 +1,7 @@
 ---
 title: HDDを修理した
 date: 2013-03-20 09:20:38+0900
+noindex: true
 ---
 <p><img src="https://lh4.googleusercontent.com/-IxDpQsFXvmc/UUj8NapegNI/AAAAAAAABv8/vAkAUQn0A_I/s640/IMG_0280.JPG" /></p>
 <p>随分前から預っていたのですが、SATAコネクタ部分が破損したHDDを昨夜から修理してました。</p>

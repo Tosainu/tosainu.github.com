@@ -1,6 +1,7 @@
 ---
 title: GTASAクリア記念？動画うpしました～
 date: 2013-06-23 19:01:47+0900
+noindex: true
 tags: Game
 ---
 <p>GTAVの発表も噂される中、今頃SA？</p>

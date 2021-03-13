@@ -1,6 +1,7 @@
 ---
 title: フロントのIOパネル修理
 date: 2013-02-28 23:14:27+0900
+noindex: true
 tags: DIY PC
 ---
 <p>どーもです</p>

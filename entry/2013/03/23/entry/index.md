@@ -1,6 +1,7 @@
 ---
 title: 悟り
 date: 2013-03-23 13:27:14+0900
+noindex: true
 ---
 <p><img src="https://lh6.googleusercontent.com/-Cf5yznWwcGg/UU0rmb_7HgI/AAAAAAAABxc/yIAhIBnuvjg/s640/IMG_0313.JPG" /></p>
 <p>これ今日の昼食なんだけど、たぶん今までで一番きれいなビッグマックだとおもう。</p>

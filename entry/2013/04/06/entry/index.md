@@ -1,6 +1,7 @@
 ---
 title: 'Pacmanのエラー「package-query: requires pacman<4.1」の対処方法'
 date: 2013-04-06 10:25:55+0900
+noindex: true
 tags: Arch Linux
 ---
 <p>本日２回目の記事ですが、今日Pacmanでパッケージをインストールしようとすると、</p>

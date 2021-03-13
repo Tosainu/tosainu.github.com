@@ -1,6 +1,7 @@
 ---
 title: WiMAX北ーーーー！！！！
 date: 2012-07-18 21:37:14+0900
+noindex: true
 ---
 <p>とうとうWiMAXルーターが届きました～</p>
 <p>種類はMobile Cubeです。</p>

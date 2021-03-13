@@ -1,6 +1,7 @@
 ---
 title: かゆい
 date: 2013-05-07 18:48:14+0900
+noindex: true
 ---
 <p>かゆい</p>
 <p>&nbsp;</p>

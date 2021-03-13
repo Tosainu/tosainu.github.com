@@ -1,6 +1,7 @@
 ---
 title: スパム・・・？
 date: 2013-04-13 21:49:01+0900
+noindex: true
 tags: Website
 ---
 <p>どーもです</p>

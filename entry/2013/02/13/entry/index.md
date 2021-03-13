@@ -1,6 +1,7 @@
 ---
 title: またペリアのブートローダーアンロックするよ〜
 date: 2013-02-13 02:16:10+0900
+noindex: true
 tags: Xperia arc, Xperia2011
 ---
 <p>どもども、とさいぬです。</p>

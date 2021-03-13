@@ -1,6 +1,7 @@
 ---
 title: なんかもう届いた早すぎ
 date: 2012-07-16 20:56:44+0900
+noindex: true
 tags: Xperia arc, Xperia2011
 ---
 <p>昨日注文したXperia Arc</p>

@@ -1,6 +1,7 @@
 ---
 title: タイトル、そんなものはない
 date: 2014-06-13 15:50:27+0900
+noindex: true
 tags: seccamp
 ---
 どうも  

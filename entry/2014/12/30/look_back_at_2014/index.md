@@ -1,6 +1,7 @@
 ---
 title: 2014年のいろいろ
 date: 2014-12-30 23:00:00+0900
+noindex: true
 tags: Gochiusa
 ---
 

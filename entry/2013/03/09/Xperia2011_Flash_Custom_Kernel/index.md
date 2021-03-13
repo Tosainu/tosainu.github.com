@@ -1,6 +1,7 @@
 ---
 title: カスタムカーネルを書き込んでみる
 date: 2013-03-09 09:53:24+0900
+noindex: true
 tags: Xperia2011, Xperia arc
 ---
 

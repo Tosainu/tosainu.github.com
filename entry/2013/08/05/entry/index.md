@@ -1,6 +1,7 @@
 ---
 title: 圧電ブザーで『U.N.オーエンは彼女なのか？』のようなものを演奏してみた
 date: 2013-08-05 00:30:25+0900
+noindex: true
 tags: Raspberry Pi
 ---
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm21513905" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm21513905">【ニコニコ動画】RaspberryPiで『U.N.オーエンは彼女なのか？』を演奏してみた</a></iframe>

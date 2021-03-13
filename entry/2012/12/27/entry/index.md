@@ -1,6 +1,7 @@
 ---
 title: パーツ買ってきた〜
 date: 2012-12-27 10:25:12+0900
+noindex: true
 tags: DIY PC
 ---
 <p>どーもです</p>

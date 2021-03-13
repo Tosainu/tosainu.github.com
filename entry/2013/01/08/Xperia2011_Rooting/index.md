@@ -1,6 +1,7 @@
 ---
 title: "2011Xperia(Android2.3.4)のroot権限の取得"
 date: 2013-01-08 11:38:09+0900
+noindex: true
 tags: Xperia2011, Xperia arc
 ---
 いろいろ弄るためにroot権限の取得をします.  

@@ -1,6 +1,7 @@
 ---
 title: MVNOなSIMを入手した結果Androidアプリを書くことに
 date: 2014-08-29 19:46:00+0900
+noindex: true
 tags: Xperia2011, Xperia arc, Android
 ---
 

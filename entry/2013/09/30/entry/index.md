@@ -1,6 +1,7 @@
 ---
 title: Node.jsとSocket.IOで遊んでた
 date: 2013-09-30 18:02:21+0900
+noindex: true
 ---
 <p>どもども〜</p>
 <p>&nbsp;</p>

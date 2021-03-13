@@ -1,6 +1,7 @@
 ---
 title: Hackintosh体験で感じたこと
 date: 2013-05-02 22:57:14+0900
+noindex: true
 tags: DIY PC
 ---
 <p>どーもです〜</p>

@@ -1,6 +1,7 @@
 ---
 title: オーバークロック゛ェア゛アアア
 date: 2013-03-11 10:25:40+0900
+noindex: true
 tags: DIY PC
 ---
 <p>どもども</p>

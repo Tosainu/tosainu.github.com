@@ -1,6 +1,7 @@
 ---
 title: お名前vps最上位プランのお試しを契約してしまった
 date: 2014-01-26 09:51:01+0900
+noindex: true
 tags: Arch Linux, Linux
 ---
 おはよーございます

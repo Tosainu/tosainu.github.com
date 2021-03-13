@@ -1,6 +1,7 @@
 ---
 title: ケータイ死亡
 date: 2012-07-15 17:25:20+0900
+noindex: true
 tags: Android
 ---
 <p>どもども、とさいぬです</p>

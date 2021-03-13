@@ -1,6 +1,7 @@
 ---
 title: Android 4.4 KitKat on Xperia Ray
 date: 2013-12-08 17:20:17+0900
+noindex: true
 tags: Android
 ---
 Ubuntu Touchを焼いた時の記事はこちら→<a href="http://tosainu.wktk.so/view/295">Ubuntu Touch on XPERIA Ray</a>

@@ -1,6 +1,7 @@
 ---
 title: またくだらない動画をうｐってしまった・・・
 date: 2013-04-30 18:05:07+0900
+noindex: true
 tags: Android
 ---
 <iframe width="312" height="176" src="http://ext.nicovideo.jp/thumb/sm20738068" scrolling="no" style="border:solid 1px #CCC;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm20738068">【ニコニコ動画】回転するつかさ壁紙をインストールしてみた</a></iframe>

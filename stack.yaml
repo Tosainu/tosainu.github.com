@@ -1,9 +1,11 @@
-resolver: lts-16.3
+resolver: lts-17.5
 
 packages:
   - .
 
 extra-deps:
+  - git: https://github.com/jaspervdj/hakyll.git
+    commit: 04aa10917e7a004277e955048040dbb7c451e6d8
   - hakyll-sass-0.2.4
   - hlibsass-0.1.10.1
   - hsass-0.8.0

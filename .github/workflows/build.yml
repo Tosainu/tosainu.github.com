@@ -3,21 +3,21 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - uses: actions/checkout@main
         with:
           submodules: true
 
-      - uses: actions/setup-haskell@main
+      - uses: haskell/actions/setup@main
         with:
-          ghc-version: 8.8.3
-          enable-stack: latest
+          ghc-version: 8.10.4
+          enable-stack: true
 
       - uses: actions/setup-node@main
         with:
-          node-version: 14
+          node-version: 15
 
       - uses: actions/cache@main
         id: stack-cache
@@ -46,7 +46,7 @@ jobs:
           path: build.tar.xz
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: build
 
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'

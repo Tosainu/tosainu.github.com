@@ -6,12 +6,12 @@ $font-family-mono: Consolas, Menlo, Monaco, monospace;
 body {
   color: $font-color;
   font-family: $font-family;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.825;
   text-rendering: optimizeLegibility;
 
-  @media (min-width: $wide-screen-width) {
-    font-size: 18px;
+  @media (max-width: $screen-width-desktop) {
+    font-size: 16px;
   }
 }
 

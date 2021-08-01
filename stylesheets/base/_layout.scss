@@ -1,12 +1,16 @@
-$mobile-screen-width: 640px;
-$desktop-screen-width: 1024px;
-$wide-screen-width: 1200px;
+$screen-width-mobile: 640px;
+$screen-width-desktop: 1280px;
 
 .container {
   margin: 0 auto;
-  width: 960px;
 
-  @media (max-width: $desktop-screen-width) {
-    width: 93.75%;
+  @media (max-width: $screen-width-desktop) {
+    max-width: 1024px;
+    width: calc(100vw - 2rem);
+  }
+
+  @media (min-width: $screen-width-desktop) {
+    max-width: 1280px;
+    width: calc(100vw - 8rem);
   }
 }

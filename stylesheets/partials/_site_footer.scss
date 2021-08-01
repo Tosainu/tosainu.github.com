@@ -9,7 +9,7 @@
 }
 
 .powered-by {
-  @media (max-width: $mobile-screen-width) {
+  @media (max-width: $screen-width-mobile) {
     display: none;
   }
 }

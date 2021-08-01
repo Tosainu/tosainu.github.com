@@ -18,30 +18,27 @@
 
     & > section,
     & > .col {
-      // mobile
-      @media (max-width: $mobile-screen-width) {
+      @media (max-width: $screen-width-mobile) {
         flex-basis: 100%;
       }
 
-      // tablet
-      @media (min-width: $mobile-screen-width + 1) and (max-width: $desktop-screen-width) {
+      @media (min-width: $screen-width-mobile) and (max-width: $screen-width-desktop) {
         flex-basis: 49%;
       }
 
-      // pc
-      @media (min-width: $desktop-screen-width + 1) {
+      @media (min-width: $screen-width-desktop) {
         flex-basis: 32%;
       }
     }
 
     .archives {
-      @media (max-width: $mobile-screen-width) {
+      @media (max-width: $screen-width-mobile) {
         display: none;
       }
     }
 
     .tag-cloud {
-      @media (min-width: $mobile-screen-width + 1) and (max-width: $desktop-screen-width) {
+      @media (min-width: $screen-width-mobile) and (max-width: $screen-width-desktop) {
         flex-basis: 100%;
         order: 10;
       }

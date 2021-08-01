@@ -1,11 +1,10 @@
-resolver: lts-17.5
+resolver: lts-17.14
 
 packages:
   - .
 
 extra-deps:
   - git: https://github.com/jaspervdj/hakyll.git
-    commit: 04aa10917e7a004277e955048040dbb7c451e6d8
+    commit: ef1e9b475cfd4886a01b0f26b9c4b30533fa7939  # it's not latest, https://github.com/jaspervdj/hakyll/pull/844 breaks my environment
   - hakyll-sass-0.2.4
-  - hlibsass-0.1.10.1
-  - hsass-0.8.0
+  - file-embed-0.0.13.0

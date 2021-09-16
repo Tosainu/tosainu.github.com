@@ -12,7 +12,7 @@ jobs:
 
       - uses: haskell/actions/setup@main
         with:
-          ghc-version: 8.10.4
+          ghc-version: 8.10.7
           enable-stack: true
 
       - uses: actions/setup-node@main
@@ -35,7 +35,7 @@ jobs:
 
       - run: npm ci
 
-      - run: ./blog build
+      - run: ./blog build +RTS -N2
       - run: ./blog check --internal-links
 
       - run: tar cvf build.tar.xz build

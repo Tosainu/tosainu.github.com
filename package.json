@@ -6,28 +6,13 @@
     "type": "git",
     "url": "git+https://github.com/Tosainu/tosainu.github.com.git"
   },
-  "scripts": {
-    "watch": "./node_modules/gulp-cli/bin/gulp.js",
-    "clean": "./node_modules/gulp-cli/bin/gulp.js clean",
-    "build": "./node_modules/gulp-cli/bin/gulp.js build"
-  },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "browser-sync": "^2.26.13",
-    "del": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-cheerio": "^0.6.3",
-    "gulp-clean-css": "^3.10.0",
-    "gulp-cli": "^2.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-embed-svg": "~1.0.2",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-postcss": "^9.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-svgmin": "^2.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@parcel/transformer-sass": "^2.3.1",
     "normalize.css": "^8.0.1",
-    "precss": "^4.0.0"
+    "parcel": "^2.3.1",
+    "parcel-transformer-embed-fontawesome": "link:./parcel-transformer-embed-fontawesome"
   }
 }

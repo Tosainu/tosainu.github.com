@@ -1,0 +1,9 @@
+{
+  "name": "parcel-transformer-embed-fontawesome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "engines": {
+    "parcel": "^2.0.0"
+  }
+}

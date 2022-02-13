@@ -12,12 +12,16 @@ jobs:
 
       - uses: actions/setup-node@main
         with:
-          node-version: 15
+          node-version: 17
 
-      - run: npm ci
-      - run: npm run build
+      - run: yarn
+      - run: yarn parcel build src/index.html
+      - run: |
+          cp src/CNAME dist/
+          cp icon/cocoa.ico dist/favicon.ico
+          cp icon/cocoa-512.jpg dist/icon.jpg
 
-      - run: tar cvf build.tar.xz build
+      - run: tar cvf build.tar.xz dist
 
       - uses: actions/upload-artifact@main
         with:
@@ -41,7 +45,7 @@ jobs:
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd build
+          cd dist
           git init
           git config user.name "GitHub Actions"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"

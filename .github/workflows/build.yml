@@ -15,11 +15,8 @@ jobs:
           node-version: 17
 
       - run: yarn
-      - run: yarn parcel build --no-source-maps src/index.html
-      - run: |
-          cp src/CNAME dist/
-          cp icon/cocoa.ico dist/favicon.ico
-          cp icon/cocoa-512.jpg dist/icon.jpg
+      - run: yarn vite build
+      - run: yarn svgo dist/assets/*.svg
 
       - run: tar cvf build.tar.xz dist
 

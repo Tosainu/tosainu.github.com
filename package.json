@@ -10,7 +10,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "katex": "^0.15.3",
+    "katex": "^0.15.6",
     "normalize.css": "^8.0.1",
     "svgo": "^2.2.2"
   }

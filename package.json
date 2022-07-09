@@ -15,7 +15,7 @@
     "posthtml-embed-fontawesome": "link:./plugins/posthtml-embed-fontawesome",
     "sass": "^1.53.0",
     "svgo": "^2.8.0",
-    "vite": "^2.9.12",
+    "vite": "^2.9.14",
     "vite-plugin-posthtml": "link:./plugins/vite-plugin-posthtml"
   }
 }

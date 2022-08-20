@@ -13,7 +13,7 @@
     "normalize.css": "^8.0.1",
     "posthtml": "^0.16.6",
     "posthtml-embed-fontawesome": "link:./plugins/posthtml-embed-fontawesome",
-    "sass": "^1.54.4",
+    "sass": "^1.54.5",
     "svgo": "^2.8.0",
     "vite": "^3.0.7",
     "vite-plugin-posthtml": "link:./plugins/vite-plugin-posthtml"

@@ -109,6 +109,14 @@
     max-width: 100%;
   }
 
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    max-width: 100%;
+  }
+
   pre {
     background: $light-gray;
     font-family: $font-family-mono;

@@ -87,7 +87,7 @@ Earthly の主要操作はだいたいこんな感じです。基本的には `D
     <source src="led.mp4" type="video/mp4">
 </video>
 
-一言でいえば、特に理由もなく面倒なことをしている L チカの亜種です。RPU で動く LED 制御のベアメタルアプリケーションと APU 上の Ubuntu で動くアプリケーションが IPI (Inter-Processor Interrupt) を飛ばし合います。APU から RPU への IPI で LED 点滅開始、その後 APU が RPU から飛んでくる IPI に応答し続けないと LED は消えてしまうというものです。題材を複雑にしすぎても準備が大変なだけだし、かといって簡単にしすぎてもおもしろくないし…と悩んだ末のものになります。ソースコードはすべて GitHub リポジトリ [Tosainu/earthly-zynqmp-example](https://github.com/Tosainu/earthly-zynqmp-example) にあり、この記事は [`27538797`](https://github.com/Tosainu/earthly-zynqmp-example/tree/27538797d4663eb2637bf9e8570dc23e7465f126) をベースに書いています。
+一言でいえば、特に理由もなく面倒なことをしている L チカの亜種です。RPU で動く LED 制御のベアメタルアプリケーションと APU 上の Ubuntu で動くアプリケーションが IPI (Inter-Processor Interrupt) を飛ばし合います。APU から RPU への IPI で LED 点滅開始、その後 APU が RPU から飛んでくる IPI に応答し続けないと LED は消えてしまうというものです。題材を複雑にしすぎても準備が大変なだけだし、かといって簡単にしすぎてもおもしろくないし…と悩んだ末のものになります。ソースコードはすべて GitHub リポジトリ [Tosainu/earthly-zynqmp-example](https://github.com/Tosainu/earthly-zynqmp-example) にあり、この記事は [`322ce449`](https://github.com/Tosainu/earthly-zynqmp-example/tree/322ce449da698ac1db1641cf12240bbfaa36d6eb) をベースに書いています。
 
 ちなみに、FPGA としての機能をほぼ使っていないのでブロックデザインは実質 PS だけです。Ultra96 ちゃん、XCZU3EG-1SBVA484E ちゃんごめんね…
 
@@ -212,7 +212,7 @@ bsp-r5-0:
     SAVE ARTIFACT psu_cortexr5_0/lib/*a /lib/
 ```
 
-[^xlnx-makefile]: BSP とかの `Makefile` を見ると `-j10` がハードコーディングされていたり、一方でどう見てもターゲットの依存関係や並列ビルドであやしいくなりそうな箇所がありますよね…。Earthly が持つ、ある条件での処理をコンテナ内で1度だけ実行するという特徴は、こういったヤツらのトラブルを避けるのにも有効です。
+[^xlnx-makefile]: BSP とかの `Makefile` を見ると `-j10` がハードコーディングされていたり、一方でどう見てもターゲットの依存関係や並列ビルドであやしくなりそうな箇所がありますよね…。Earthly が持つ、ある条件での処理をコンテナ内で1度だけ実行するという特徴は、こういったヤツらのトラブルを避けるのにも有効です。
 
 ### RPU と APU のアプリケーション
 
@@ -310,7 +310,7 @@ rootfs-base.tar:
     SAVE ARTIFACT rootfs-base.tar
 ```
 
-これまでのターゲットと違い、`FROM` には `--platform=linux/arm64` を渡して 64 bit ARM の Ubuntu が設定されています。Earthly にビルドさせる前に qemu-user-static と binfnt_misc を設定してきましょう。`mmdebstrap` 自体の機能としてこれを勝手にやってくれる機能もあるようですが、Earthly の起動するコンテナ内でやってもらおうとするとたぶん `--privileged` が必要なので使っていません。`mmdebstrap` 出力形式はディレクトリではなく `.tar` にしています。`SAVE ARTIFACT` や `COPY` にディレクトリを渡したとき、`-–keep-own` を渡したとしてもファイルのオーナーが root に変わってしまう現象があったためです。ちなみに無圧縮な `.tar` なのは時間短縮のためです。このターゲット内での処理は QEMU を介して動いてしまうのを忘れてはいけません[^qemu-xz]。
+これまでのターゲットと違い、`FROM` には `--platform=linux/arm64` を渡して 64 bit ARM の Ubuntu が設定されています。Earthly にビルドさせる前に qemu-user-static と binfnt_misc を設定しておきましょう。`mmdebstrap` にこれを勝手にやってくれる機能もあるようですが、Earthly の起動するコンテナ内でやってもらおうとするとたぶん `--privileged` が必要なので使っていません。`mmdebstrap` 出力形式はディレクトリではなく `.tar` にしています。`SAVE ARTIFACT` や `COPY` にディレクトリを渡したとき、`-–keep-own` を渡したとしてもファイルのオーナーが root に変わってしまう現象があったためです。ちなみに無圧縮な `.tar` なのは時間短縮のためです。このターゲット内での処理は QEMU を介して動いてしまうのを忘れてはいけません[^qemu-xz]。
 
 [^qemu-xz]: 何も意識せずに `tar.xz` を指定して、やけに時間かかるなーってなる出来事がありました…
 
@@ -348,7 +348,7 @@ u-boot:
     SAVE ARTIFACT tools/mkimage /mkimage
 ```
 
-Linux と同様に、コンフィグはこちらも `menuconfig` で作ったものをそのまま入れています。ちなみにこのコンフィグは `xilinx_zynqmp_virt_defconfig` をベースに使わない機能を削り、U-Boot 自身が使う Devicetree Blob をどうロードするかを変更したものです。Devicetree は FSBL にロードさせたいので、`CONFIG_OF_BOARD` に変更しています。
+Linux と同様に、コンフィグはこちらも `menuconfig` で作ったものをそのまま入れています。ちなみにこのコンフィグは `xilinx_zynqmp_virt_defconfig` をベースに使わない機能を削り、U-Boot 自身が使う Devicetree Blob をどうロードするかを変更したものです。Devicetree は FSBL にロードさせたいので `CONFIG_OF_BOARD` に変更しています。
 
 ```
 Device Tree Control  --->
@@ -563,7 +563,7 @@ Earthly という Build automation tool の紹介と、それを Zynq のソフ�
 
 ### Zynq UltraScale+ の IPI をそのまま使う
 
-今回のIPI の用途はとても単純なので、この文脈でよく出てくる libmetal や OpenAMP は使っていません。RPU は embeddedsw に含まれる `XIpiPsu` で、APU 側は Userspace I/O を介して IPI を直接操作しています。
+今回の IPI の用途はとても単純なので、この文脈でよく出てくる libmetal や OpenAMP は使っていません。RPU は embeddedsw に含まれる `XIpiPsu` で、APU 側は Userspace I/O を介して IPI を直接操作しています。
 
 IPI の基本操作 (主要レジスタ) は、割り込みの有効・無効 (`IER`, `IDR`)、IPI の Trigger (`TRIG`)、割り込みを受けたときのステータス確認とクリア (`ISR`)、割り込みを起こせたか・ターゲットがそれをクリアしたかの確認 (`OBS`) です。どの操作も、読み書きする値はターゲットの channel に対応するビットマスクです。今回の実装では、RPU 0 をデフォルトの channel 1 に, APU を channel 7 を割り当てました[^ipi-ch-apu]。ビットマスクはそれぞれ 8 bit 目と 24 bit 目がこれに対応します。
 
@@ -753,7 +753,7 @@ inline void set_ultra96_leds(XGpioPs& gpio, std::uint8_t value) noexcept {
 
 しかし、これだと一度 GPIO の値を読み出しているのがなんだかもにょっとします。また、`XGpioPs_Write()` がそのバンク全体に影響する操作なのもちょっとこわいです。特に APU で動いている Linux も GPIO を触れる状況にあるので、(実際に bank 0 を使うものはいないはずですが) 互いの処理の実行され方によっては整合性が取れなくなってしまうかもしれません。もちろん、そんな状況が想定される設計にしないに越したことはありませんが、いずれにせよ Zynq という同じメモリ空間を複数のプロセッサなどが共有している環境では注意しておくべきです[^resource-conflict]。
 
-[^resource-conflict]: SoC 内のあらゆるリソースが同じメモリ空間にアクセスできるの、Zynq のおもしろく強力であり、同時にコワイところですよね。ちなみに XSCT が生成物する `.dts` はデフォルトで何でも有効になっているので、RPU などからさわるリソースは `status` を `disabled` または `reserved` にしたり、PL 上のリソースは `/delete-node/` するのがよいです。デバイスドライバーによっては probe の段階でペリフェラルにリセットかけたりとかしちゃうので。
+[^resource-conflict]: SoC 内のあらゆるリソースが同じメモリ空間にアクセスできるの、Zynq のおもしろく強力であり、同時にコワイところですよね。ちなみに XSCT が生成する `.dts` はデフォルトで何でも有効になっているので、RPU などからさわるリソースは `status` を `disabled` または `reserved` にしたり、PL 上のリソースは `/delete-node/` するのがよいです。デバイスドライバーによっては probe の段階でペリフェラルにリセットかけたりとかしちゃうので。
 
 どうしたものかと TRM などを眺めていると、`MASK_DATA_{LSW,MSW}` というレジスタがあるのに気づきます。これは各バンクに属する下 16 bit・上 10 bit に対し、一度にビットマスクとデータを渡すことで特定のピンだけの出力を指定できるようです。まさに探していたものですね。`PS_MIO{17, ..., 20}` は bank 0 の上位10 bit の枠になるので、`MASK_DATA_0_MSW` に対してこんな感じにしてやればいいですね。
 
@@ -808,7 +808,7 @@ static void ttc_irq_handler(void* data) noexcept {
   auto ttc = static_cast<XTtcPs*>(data);
   const auto status = XTtcPs_GetInterruptStatus(ttc);
   if (status & XTTCPS_IXR_INTERVAL_MASK) {
-    ttc_irq_kicked_n.clear();
+    ttc_irq_kicked_n.clear(std::memory_order_relaxed);
 
     XTtcPs_ClearInterruptStatus(ttc, XTTCPS_IXR_INTERVAL_MASK);
   }
@@ -884,7 +884,7 @@ Systemd 世代なら見慣れた記述だと思います。カーネルモジュ
 
 `ipi-led` 以外にもいくつかの unit file を追加しています。まずは [`maximize-root-partition.service`](https://github.com/Tosainu/earthly-zynqmp-example/blob/27538797d4663eb2637bf9e8570dc23e7465f126/linux/rootfs/etc/systemd/system/maximize-root-partition.service) です。`disk.img.zst` で作った Linux 側のパーティションは 256 MiB しかないので、最初にブートしたときに `parted` と `resize2fs` を呼び出してリサイズします。リサイズが済んだらもう役目はないので、unit file の中で `systemctl disable` しています。
 
-もう1つが [`setup-usb-ether.service`](https://github.com/Tosainu/earthly-zynqmp-example/blob/27538797d4663eb2637bf9e8570dc23e7465f126/linux/rootfs/etc/systemd/system/setup-usb-ether.service) で、USB Gadget を使ったネットワーク接続を設定します。USB Gadget 経由のネットワークは想像していたより快適でした。Ultra96 実機上で複雑な作業をするのであればぜひオススメしたいです。ちなみに、これに関連して `system-top-append.dts` に PS-GTR の refclock の設定や USB 関連の pinctrl の設定を追加しています。設定しないとないと相手 PC 側で突然 disconnect 扱いになってしまうなど不安定でした。PS-GTR の refclock 情報は .xsa に入っていた気がするので、それだけでも やってくれるといいのになと思いました。
+もう1つが [`setup-usb-ether.service`](https://github.com/Tosainu/earthly-zynqmp-example/blob/27538797d4663eb2637bf9e8570dc23e7465f126/linux/rootfs/etc/systemd/system/setup-usb-ether.service) で、USB Gadget を使ったネットワーク接続を設定します。USB Gadget 経由のネットワークは想像していたより快適でした。Ultra96 実機上で複雑な作業をするのであればぜひオススメしたいです。ちなみに、これに関連して `system-top-append.dts` に PS-GTR の refclock の設定や USB 関連の pinctrl の設定を追加しています。設定しないとないと相手 PC 側で突然 disconnect 扱いになってしまうなど不安定でした。PS-GTR の refclock 情報は `.xsa` に入っていた気がするので、それだけでも やってくれるといいのになと思いました。
 
 <blockquote class="twitter-tweet tw-align-center" data-dnt="true"><p lang="cs" dir="ltr">naruhodo <a href="https://t.co/iapfw9ABxP">pic.twitter.com/iapfw9ABxP</a></p>&mdash; ✧*。ヾ(｡ᐳ﹏ᐸ｡)ﾉﾞ。*✧ (@myon___) <a href="https://twitter.com/myon___/status/1518165469169332224?ref_src=twsrc%5Etfw">April 24, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

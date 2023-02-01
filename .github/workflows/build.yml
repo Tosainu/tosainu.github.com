@@ -20,7 +20,7 @@ jobs:
 
       - run: tar cvf build.tar.xz dist
 
-      - uses: actions/upload-artifact@v3.1.1
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: site
           path: build.tar.xz

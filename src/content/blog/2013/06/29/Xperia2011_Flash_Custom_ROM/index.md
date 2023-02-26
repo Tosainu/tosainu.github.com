@@ -2,7 +2,9 @@
 title: カスタムROMを書き込んでみる
 date: 2013-06-29 15:45:12+0900
 noindex: true
-tags: Xperia2011, Xperia arc
+tags:
+  - Xperia arc
+  - Xperia 2011
 ---
 
 ## もう躊躇いなんていらない

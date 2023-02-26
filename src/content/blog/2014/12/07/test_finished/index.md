@@ -2,7 +2,8 @@
 title: てすとおわりました
 date: 2014-12-07 16:26:00+0900
 noindex: true
-tags: C++
+tags:
+  - C++
 ---
 
 みょん.

@@ -2,7 +2,8 @@
 title: ドメイン「myon.info」を取得しました
 date: 2013-12-18 01:41:52+0900
 noindex: true
-tags: Website
+tags:
+  - Website
 ---
 どーもです。
 

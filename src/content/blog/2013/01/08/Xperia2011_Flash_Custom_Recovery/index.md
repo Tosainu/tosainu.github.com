@@ -2,7 +2,9 @@
 title: カスタムリカバリの導入
 date: 2013-01-08 11:40:59+0900
 noindex: true
-tags: Xperia2011, Xperia arc
+tags:
+  - Xperia arc
+  - Xperia 2011
 ---
 
 僕は後から導入したのですが, 便利すぎるので先にインストールすることをおすすめします.

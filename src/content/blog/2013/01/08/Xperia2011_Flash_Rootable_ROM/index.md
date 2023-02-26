@@ -2,7 +2,9 @@
 title: root権限取得可能なファームウェアを書き込む
 date: 2013-01-08 11:27:30+0900
 noindex: true
-tags: Xperia2011, Xperia arc
+tags:
+  - Xperia arc
+  - Xperia 2011
 ---
 
 最新版のファームウェアではroot権限の取得ができなくなってしまいました.  

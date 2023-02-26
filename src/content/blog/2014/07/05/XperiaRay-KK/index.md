@@ -1,7 +1,9 @@
 ---
 title: 'Android 4.4 KitKat on Xperia Ray'
 date: 2014-07-05 21:44:07+0900
-tags: Xperia2011,Android
+tags:
+  - Android
+  - Xperia 2011
 ---
 前回の記事
 

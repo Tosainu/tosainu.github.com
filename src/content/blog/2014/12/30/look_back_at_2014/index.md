@@ -2,7 +2,8 @@
 title: 2014年のいろいろ
 date: 2014-12-30 23:00:00+0900
 noindex: true
-tags: Gochiusa
+tags:
+  - Gochiusa
 ---
 
 もうこんな時期ですね. 早いなぁ....(・\_・;)  
@@ -94,8 +95,8 @@ SNSで気分を左右されている現状は本当にアレだなぁと日々�
 また, 三重での反省も兼ねて名古屋ではLTにも挑戦した. 当日のスライドは[これ](http://myon.info/slides/2014_08_23_kosenconf-085nagoya2/).  
 実際に参加者さんの前で自己紹介ができたのは良かったけれど, かなり慌ててしまい本当に雑なLTだった, うん.
 
-* [初kosenconfに参加してきました！](/entry/2014/03/02/entry/)
-* [#kosenconf in 名古屋2に参加してきた](/entry/2014/08/23/kosenconf-085nagoya2/)
+* [初kosenconfに参加してきました！](/blog/2014/03/02/entry/)
+* [#kosenconf in 名古屋2に参加してきた](/blog/2014/08/23/kosenconf-085nagoya2/)
 
 ## MVNOなSIMを入手
 
@@ -105,7 +106,7 @@ Twitterへの依存を減らしていった関係もあると思う.
 最近上限が2GBになったみたいなんだけど, 1GBのままでよかったから通信料半額にしてほしい().  
 まぁそういうことではないのはわかるけど.
 
-* [MVNOなSIMを入手した結果Androidアプリを書くことに](/entry/2014/08/29/mvno/)
+* [MVNOなSIMを入手した結果Androidアプリを書くことに](/blog/2014/08/29/mvno/)
 
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Tokyo Westerns CTF 3rd 2017: simple note"
 date: 2017-09-04 23:51:00+0900
-tags: CTF
+tags:
+  - CTF
 ---
 
 [Tokyo Westerns CTF 3rd 2017](https://ctftime.org/event/474) に1人チーム [poepoe](https://ctftime.org/team/32588) で参加してました。

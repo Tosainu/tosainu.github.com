@@ -2,7 +2,9 @@
 title: ConoHaはじめたからとりあえずbtrfsにArch Linux入れた
 date: 2014-07-13 22:29:50+0900
 noindex: true
-tags: Arch Linux, Linux
+tags:
+  - Linux
+  - Arch Linux
 ---
 みょーーん.
 

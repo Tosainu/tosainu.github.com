@@ -2,7 +2,8 @@
 title: metaタグでページ説明を追加した
 date: 2013-04-08 14:03:50+0900
 noindex: true
-tags: Website
+tags:
+  - Website
 ---
 <p>どーもー</p>
 <p>ついカッとなってプレミアム会員になっちゃったとさいぬです。</p>

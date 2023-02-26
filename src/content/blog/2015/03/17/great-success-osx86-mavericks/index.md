@@ -1,7 +1,8 @@
 ---
 title: 夢を見た
 date: 2015-03-17 18:11:00+0900
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 
 どもども, 進級確定のとさいぬです.  
@@ -14,7 +15,7 @@ tags: DIY PC
 
 ## Introduction
 
-昨年秋の記事, [Arch Linuxインストールめも (2014秋版)](/entry/2014/10/06/archlinux_installation_memo_2014/) にこんな記述がありました.
+昨年秋の記事, [Arch Linuxインストールめも (2014秋版)](/blog/2014/10/06/archlinux_installation_memo_2014/) にこんな記述がありました.
 
 > ## Configure Partition
 
@@ -463,7 +464,7 @@ Mac Proです. (大嘘)
 ここまでしてMac環境が欲しかったのには理由があって, 以前も何度か紹介しているTwitterライブラリ[twitpp](https://github.com/Tosainu/twitpp)をMacに正式対応させたかったわけです.
 
 僕が趣味で書くプログラムは, Windowsには対応させなくとも, 一応\*nix系であるMacくらいには対応させたいなと思っています.  
-しかし, 先日の[CocoaTwitのネタ紹介記事](/entry/2015/02/28/cocoatwit/)でも書いたようにtwitppがMacで動かないことが判明しました.
+しかし, 先日の[CocoaTwitのネタ紹介記事](/blog/2015/02/28/cocoatwit/)でも書いたようにtwitppがMacで動かないことが判明しました.
 
 この環境が整ったことにより, twitppはAppleClangでエラーが出るコードが修正され, また環境によって異なるBoost等のパスに対応させるためCMakeを導入し, ついに[Macでも動かせるようになりました](https://github.com/Tosainu/twitpp/commit/95e20d4d11e02bf3e32c35663bedc837b358066e).
 

@@ -2,7 +2,8 @@
 title: 春休み最終日っぽいからケーブル整理したZE！
 date: 2013-04-03 18:55:12+0900
 noindex: true
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 <p>どーもです。</p>
 <p>なんか今日が春休み最終日らしいです。</p>

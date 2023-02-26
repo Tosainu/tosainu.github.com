@@ -1,7 +1,9 @@
 ---
 title: Boost.Asioでシリアル通信してみる
 date: 2015-04-19 16:54:00+0900
-tags: C++, Arduino
+tags:
+  - Arduino
+  - C++
 ---
 
 にゃんにゃん.

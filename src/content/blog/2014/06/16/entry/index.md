@@ -2,7 +2,8 @@
 title: タイトル書くほどでもない
 date: 2014-06-16 00:55:34+0900
 noindex: true
-tags: seccamp
+tags:
+  - seccamp
 ---
 ども
 

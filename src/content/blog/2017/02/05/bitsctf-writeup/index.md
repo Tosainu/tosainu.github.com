@@ -1,7 +1,8 @@
 ---
 title: BITSCTF writeup
 date: 2017-02-05 21:15:00+0900
-tags: CTF
+tags:
+  - CTF
 ---
 
 [BITSCTF 2017](https://bitsctf.bits-quark.org/) に一人チーム [poepoe](https://bitsctf.bits-quark.org/team/135) でこっそり参加. 50 points で 166 位でした.

@@ -2,7 +2,8 @@
 title: 本気で自作計画してます
 date: 2012-12-22 21:18:36+0900
 noindex: true
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 <p>どうもとさいぬです。</p>
 <p>更新なかったけど死んでいないですよ〜</p>

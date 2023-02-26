@@ -1,7 +1,9 @@
 ---
 title: Xilinx の開発ツールを Docker コンテナに閉じ込める
 date: 2018-09-15 22:19:31+0900
-tags: FPGA, Docker
+tags:
+  - Docker
+  - FPGA
 ---
 
 あまり表には出していませんでしたが、少し前から FPGA を触っています。FPGA は以前から興味があったデバイスの1つだったこともあり、苦戦しながらも今まで触れたことのない概念の連続をなんだかんだで楽しんでいる気がします。欲を言えば、FPGA ともう少し普通の出会い方をし、普通の環境で勉強したかったなぁというのがありますが...
@@ -102,7 +104,7 @@ CreateFileAssociation=1
 
 まず `ubuntu-xorg` の `Dockerfile` がこんな感じです。作成したイメージを Docker Hub などを通してグローバルに公開する予定もなかったことから、ミラーサーバを日本のものに変更してしまったりしています。
 
-```dockerfile
+```docker
 FROM ubuntu:xenial
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -137,7 +139,7 @@ RUN \
 
 続いて `ubuntu-vivado` です。とりあえず、作成した `Dockerfile` がこんな感じです。
 
-```dockerfile
+```docker
 FROM ubuntu-xorg
 
 RUN \
@@ -343,7 +345,7 @@ Digilent が [Zybo Z7](https://reference.digilentinc.com/reference/programmable-
 
 [^7]: `petalinux-build` などを実行すると裏で `Xvfb` が大量に立ち上がってたりはする
 
-```dockerfile
+```docker
 FROM ubuntu-xorg
 
 ENV DEBIAN_FRONTEND=noninteractive \

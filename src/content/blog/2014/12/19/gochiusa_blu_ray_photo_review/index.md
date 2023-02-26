@@ -1,7 +1,8 @@
 ---
 title: ご注文はBlu-rayですか?
 date: 2014-12-19 01:05:00+0900
-tags: Gochiusa
+tags:
+  - Gochiusa
 ---
 
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>あぁ...買っちまった......</p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/544401154763800576">December 15, 2014</a></blockquote>
@@ -70,4 +71,4 @@ tags: Gochiusa
 &nbsp;
 
 だがしかし, このときとさいぬは**こころぴょんぴょん**への道がこれほどにも険しいことに気づいていないのであった....  
-次記事(今週末くらい?)に続く. →[ひと目で尋常でないプロテクトだと見抜いたよ](/entry/2014/12/20/fu_k_power_dvd/)
+次記事(今週末くらい?)に続く. →[ひと目で尋常でないプロテクトだと見抜いたよ](/blog/2014/12/20/fu_k_power_dvd/)

@@ -2,7 +2,8 @@
 title: オーバークロック゛ェア゛アアア
 date: 2013-03-11 10:25:40+0900
 noindex: true
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 <p>どもども</p>
 <p>一応Xperiaの<a href="http://www5.pf-x.net/~tosainu/index.php/page/omnius">ブートローダーアンロック方法の記事</a>を完成させたつもりです。</p>

@@ -1,7 +1,8 @@
 ---
 title: '[ネタ] QWebViewでGUIアプリケーションを作る'
 date: 2015-02-28 17:14:00+0900
-tags: C++
+tags:
+  - C++
 ---
 
 ## CocoaTwit
@@ -71,7 +72,7 @@ Qtの代表的な機能であるSignal/Slotなどの実現には**魔術(マク�
 
 特に`Q_OBJECT`マクロが曲者です.  
 まず, `Q_OBJECT`が書かれたクラス宣言のあるヘッダファイルで`boost/asio.hpp`をincludeするとビルドが通らなくなることがある現象[^3]に遭遇し1ヶ月悩みました.  
-そして, [2015年の目標](/entry/2015/01/02/2015-new-year-resolution/)に書いたようにtemplateを使ったプログラムに力を入れたかったのですが, `Q_OBJECT`の使われたクラス(Qt関連のすべてのクラス)ではClass Templateが使えない[^4]と知って本当にショックでした.
+そして, [2015年の目標](/blog/2015/01/02/2015-new-year-resolution/)に書いたようにtemplateを使ったプログラムに力を入れたかったのですが, `Q_OBJECT`の使われたクラス(Qt関連のすべてのクラス)ではClass Templateが使えない[^4]と知って本当にショックでした.
 
 [^3]: <https://svn.boost.org/trac/boost/ticket/10688> includeする場所をソースファイルに変えると解決する
 [^4]: <http://qt-project.org/forums/viewthread/14058>

@@ -2,7 +2,8 @@
 title: makepkg.confを弄る
 date: 2013-04-27 12:13:41+0900
 noindex: true
-tags: Arch Linux
+tags:
+  - Arch Linux
 ---
 <p>どもども</p>
 <p>&nbsp;</p>

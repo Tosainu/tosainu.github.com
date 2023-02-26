@@ -1,7 +1,8 @@
 ---
 title: Bus Blaster で Raspberry Pi Model B を JTAG デバッグしてみる
 date: 2020-07-05 01:18:20+0900
-tags: 'Raspberry Pi'
+tags:
+  - 'Raspberry Pi'
 ---
 
 JTAG デバッガが欲しくなったので [Bus Blaster v3](http://dangerousprototypes.com/docs/Bus_Blaster) を買いました。

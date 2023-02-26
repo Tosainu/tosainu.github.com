@@ -2,7 +2,8 @@
 title: PCの世界から日本語（2byte文字）は追放するべきだと思うんだ
 date: 2013-03-22 19:47:23+0900
 noindex: true
-tags: Linux
+tags:
+  - Linux
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

@@ -2,7 +2,8 @@
 title: Xtreme OverClock BreakThrough 4th Stage　とかに行ってきました～
 date: 2013-05-04 19:50:18+0900
 noindex: true
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 <p><img src="https://lh4.googleusercontent.com/-MBrF9rOnW_w/UYTXW5lYv_I/AAAAAAAACCY/1CwMvioTXUE/s640/IMG_0442.JPG" /></p>
 <p><img src="https://lh6.googleusercontent.com/-qlGuHfpE1qU/UYTW0-X2thI/AAAAAAAACB4/DdqQ9ILvC1Q/s288/IMG_0437.JPG" height="216" width="288" /></p>

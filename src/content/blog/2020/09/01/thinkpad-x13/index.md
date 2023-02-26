@@ -1,14 +1,16 @@
 ---
 title: ThinkPad X13 を買いました
 date: 2020-09-01 00:30:20+0900
-tags: Arch Linux, ThinkPad X13
+tags:
+  - ThinkPad X13
+  - Arch Linux
 ---
 
 ノートパソコンを買いました。ThinkPad X13 Gen1 (AMD) です。4連休のセールをやっていた 7/26 に注文し 8/7 に届きました。たぶんかなり早く届いた方だと思います。
 
 <blockquote class="twitter-tweet tw-align-center" data-dnt="true"><p lang="ja" dir="ltr">ヾ(๑╹◡╹)ﾉ&quot; <a href="https://t.co/65gU0z5zUU">pic.twitter.com/65gU0z5zUU</a></p>&mdash; ✧*。ヾ(｡ᐳ﹏ᐸ｡)ﾉﾞ。*✧ (@myon___) <a href="https://twitter.com/myon___/status/1291559008206073856?ref_src=twsrc%5Etfw">August 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-今まで使っていたノートは2012年5月購入の [VAIO Z2 (VPCZ23AJ)](https://www.sony.jp/vaio/products/Z23/) で、[デスクトップを組み立てた](/entry/2013/01/05/entry/)のも2013年1月なので、新しいパソコンは約8年ぶりです。わいわい。
+今まで使っていたノートは2012年5月購入の [VAIO Z2 (VPCZ23AJ)](https://www.sony.jp/vaio/products/Z23/) で、[デスクトップを組み立てた](/blog/2013/01/05/entry/)のも2013年1月なので、新しいパソコンは約8年ぶりです。わいわい。
 
 <!--more-->
 

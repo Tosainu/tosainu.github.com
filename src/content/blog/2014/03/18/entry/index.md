@@ -2,7 +2,8 @@
 title: VAIO ZのOSをすべて再インストールした(Windows7編)
 date: 2014-03-18 20:13:00+0900
 noindex: true
-tags: VAIO Z2
+tags:
+  - VAIO Z2
 ---
 どーもです
 

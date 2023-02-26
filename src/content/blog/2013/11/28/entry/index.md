@@ -2,7 +2,8 @@
 title: みょん(進捗)
 date: 2013-11-28 23:58:50+0900
 noindex: true
-tags: C++
+tags:
+  - C++
 ---
 みょん。
 

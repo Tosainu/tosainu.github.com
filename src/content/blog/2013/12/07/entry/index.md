@@ -2,7 +2,8 @@
 title: (僕の)ケータイのデータふっ飛ばして妹と母親に殺された1日でした
 date: 2013-12-07 01:21:50+0900
 noindex: true
-tags: Android
+tags:
+  - Android
 ---
 どもどもですん
 

@@ -1,7 +1,10 @@
 ---
 title: route なしの Rules で Hakyll のビルドを高速化する
 date: 2018-08-16 15:14:00+0900
-tags: Haskell, Hakyll, Website
+tags:
+  - Website
+  - Hakyll
+  - Haskell
 ---
 
 ## TL;DR

@@ -2,7 +2,8 @@
 title: 新デザインだじぇ〜
 date: 2013-05-26 18:27:58+0900
 noindex: true
-tags: Website
+tags:
+  - Website
 ---
 <p>どうも〜</p>
 <p>&nbsp;</p>

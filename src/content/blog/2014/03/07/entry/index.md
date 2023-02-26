@@ -1,7 +1,8 @@
 ---
 title: ケースをAntec P100に替えてしまいました
 date: 2014-03-07 15:54:24+0900
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 どーもです。
 

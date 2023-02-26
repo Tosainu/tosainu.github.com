@@ -2,7 +2,8 @@
 title: '[ML110 G7] フロントI/O ピンアサイン解析'
 date: 2013-03-08 20:00:46+0900
 noindex: true
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 <p>どーもとさいぬです。</p>
 <p>&nbsp;</p>

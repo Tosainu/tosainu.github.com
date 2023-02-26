@@ -2,7 +2,8 @@
 title: ブログデザイン更新した
 date: 2014-12-24 22:52:00+0900
 noindex: true
-tags: Website
+tags:
+  - Website
 ---
 
 どもども(✿╹◡╹)ﾉ

@@ -2,7 +2,8 @@
 title: サイトテーマを変更しました
 date: 2014-01-04 22:42:17+0900
 noindex: true
-tags: Website
+tags:
+  - Website
 ---
 どーもですん。
 

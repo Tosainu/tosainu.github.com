@@ -1,7 +1,8 @@
 ---
 title: Codegate 2017 CTF prequals writeup
 date: 2017-02-11 21:20:00+0900
-tags: CTF
+tags:
+  - CTF
 ---
 
 [Codegate 2017 CTF](http://ctf.codegate.org/) の Prequalification Round に一人チーム poepoe で参加. 305 points で 78 位(General)でした.

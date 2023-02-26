@@ -2,7 +2,8 @@
 title: 『U.N.オーエンは彼女なのか？』を演奏改良版
 date: 2013-08-10 01:11:52+0900
 noindex: true
-tags: Raspberry Pi
+tags:
+  - Raspberry Pi
 ---
 <p>疲れたから本文なしで。許してヒヤシンス</p>
 <p>説明はニコ動の投コメみて（そっちもテキトーだけど）</p>

@@ -2,7 +2,8 @@
 title: Node.jsで遊んだ (2)
 date: 2013-10-12 21:32:39+0900
 noindex: true
-tags: Raspberry Pi
+tags:
+  - Raspberry Pi
 ---
 <p>どもどもー</p>
 <p>&nbsp;</p>

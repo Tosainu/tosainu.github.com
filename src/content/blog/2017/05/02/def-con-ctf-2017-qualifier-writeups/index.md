@@ -1,7 +1,8 @@
 ---
 title: DEF CON CTF 2017 Qualifier writeup
 date: 2017-05-02 01:32:00+0900
-tags: CTF
+tags:
+  - CTF
 ---
 
 [DEF CON CTF 2017 Qualifier](https://ctftime.org/event/459) に一人チーム [poepoe](https://ctftime.org/team/32588) で参加. 144 points で 117 位.

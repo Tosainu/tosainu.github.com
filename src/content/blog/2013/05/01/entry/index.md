@@ -2,7 +2,8 @@
 title: VcoreをOffsetModeで指定してみた
 date: 2013-05-01 19:24:25+0900
 noindex: true
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 <p>どーもです～</p>
 <p>&nbsp;</p>

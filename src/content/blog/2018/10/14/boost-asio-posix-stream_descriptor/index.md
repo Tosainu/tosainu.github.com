@@ -1,7 +1,9 @@
 ---
 title: Boost.Asio の posix::stream_descriptor を使う
 date: 2018-10-14 22:59:00+0900
-tags: C++, Linux
+tags:
+  - Linux
+  - C++
 ---
 
 C++熱は冷めてしまったのですが、いつか書こうと思っていたことを書かないのもアレだなぁということで、久しぶりの C++ ネタです。

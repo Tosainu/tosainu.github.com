@@ -2,7 +2,9 @@
 title: なんかもう届いた早すぎ
 date: 2012-07-16 20:56:44+0900
 noindex: true
-tags: Xperia arc, Xperia2011
+tags:
+  - Xperia 2011
+  - Xperia arc
 ---
 <p>昨日注文したXperia Arc</p>
 <p>なぜか今日の午前中に届いた</p><img src="https://lh4.googleusercontent.com/-hXcmfDGTZfo/UAP7NLTIMnI/AAAAAAAAAoA/rpc8BF35HXM/s288/DSC061362.jpg" height="216" width="288" /><br />Amazonさん早すぎるよ～ 嬉しいけど</p>

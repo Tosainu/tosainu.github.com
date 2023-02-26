@@ -2,7 +2,9 @@
 title: VAIO ZのOSをすべて再インストールした(Arch Linux編)
 date: 2014-03-20 12:41:43+0900
 noindex: true
-tags: Arch Linux, VAIO Z2
+tags:
+  - VAIO Z2
+  - Arch Linux
 ---
 どもども
 

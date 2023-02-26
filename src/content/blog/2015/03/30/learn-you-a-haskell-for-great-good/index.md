@@ -1,7 +1,8 @@
 ---
 title: すごいH本を読み始めた
 date: 2015-03-30 00:24:00+0900
-tags: Haskell
+tags:
+  - Haskell
 ---
 
 ヾ(❀╹◡╹)ﾉﾞ

@@ -1,7 +1,10 @@
 ---
 title: ブログを Hakyll に移行した
 date: 2018-03-21 22:44:00+0900
-tags: Haskell, Hakyll, Website
+tags:
+  - Website
+  - Hakyll
+  - Haskell
 ---
 
 [Middleman](https://middlemanapp.com/) で構築していたこのブログを、Haskell 製の静的サイトジェネレータである [Hakyll](https://jaspervdj.be/hakyll/) に移行しました。
@@ -132,7 +135,7 @@ writerOptions = -- ...
 
 `Ext_emoji` 拡張は、`:sushi:` を :sushi: に変えてくれるものです。また `Ext_citations` 拡張を無効にしているのは、`[@myon___](https://twitter.com/myon___)` のような `@` で始まるリンクを貼ろうとしたときにこっちの文法が呼び出されてしまったためです。
 
-ちなみに、先程の例では `WriterOptions` を省略していますが、`ReaderOptions` も `WriterOptions` もたくさん設定があるので、どちらも一度確認してみるといいと思います。例えばこのブログでは、`WriterOptions` の `writerHTMLMathMethod` に `KaTeX` を設定しています。この設定をすると、本文中の数式を `math` class のついた `div` や `span` で囲ってくれます。[Middleman 時代には独自の拡張を加えていましたが](/entry/2016/07/03/new-design/)、この辺がデフォルトで対応しているのはいいですね。
+ちなみに、先程の例では `WriterOptions` を省略していますが、`ReaderOptions` も `WriterOptions` もたくさん設定があるので、どちらも一度確認してみるといいと思います。例えばこのブログでは、`WriterOptions` の `writerHTMLMathMethod` に `KaTeX` を設定しています。この設定をすると、本文中の数式を `math` class のついた `div` や `span` で囲ってくれます。[Middleman 時代には独自の拡張を加えていましたが](/blog/2016/07/03/new-design/)、この辺がデフォルトで対応しているのはいいですね。
 
 ### 記事のビルドは早くなったけど...
 

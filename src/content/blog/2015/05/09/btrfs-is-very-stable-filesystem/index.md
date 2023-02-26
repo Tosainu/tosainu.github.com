@@ -2,7 +2,9 @@
 title: Btrfsが死んだ
 date: 2015-05-09 11:45:00+0900
 noindex: true
-tags: Linux, Arch Linux
+tags:
+  - Arch Linux
+  - Linux
 ---
 
 ## > 突然の死 <
@@ -42,7 +44,7 @@ tags: Linux, Arch Linux
 
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="und" dir="ltr">(･∀･；) <a href="http://t.co/owm0DQNAdt">pic.twitter.com/owm0DQNAdt</a></p>&mdash; とさいぬ (@myon\_\_\_) <a href="https://twitter.com/myon___/status/588888414709157888">April 17, 2015</a></blockquote>
 
-[某活動](/entry/2015/04/11/join-in-robocup-kiks-team/)に参加することになり, その関係でどうしてもWindows環境が必要となった.  
+[某活動](/blog/2015/04/11/join-in-robocup-kiks-team/)に参加することになり, その関係でどうしてもWindows環境が必要となった.  
 とりあえずの対応としてKVMにWindows 8.1 Enterprise Evaluationを入れて作業をしていたのだが, 余程負荷がエグかったのか, その仮想HDDイメージにchecksum errorが出るようになった.
 
 とはいえ, 特別何か支障があったわけではないので放置していた.  

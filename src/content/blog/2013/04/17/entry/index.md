@@ -2,7 +2,9 @@
 title: Motorolaが好きになったかも
 date: 2013-04-17 20:39:29+0900
 noindex: true
-tags: Website,Android
+tags:
+  - Android
+  - Website
 ---
 <p>どーもです</p>
 <p>&nbsp;</p>

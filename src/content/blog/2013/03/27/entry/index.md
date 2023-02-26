@@ -2,7 +2,8 @@
 title: レン鯖変更（するかも）
 date: 2013-03-27 18:34:10+0900
 noindex: true
-tags: Website
+tags:
+  - Website
 ---
 <p>半日、MySQLがエラー出しててアクセスできなかったようですね・・・</p>
 <p>&nbsp;</p>

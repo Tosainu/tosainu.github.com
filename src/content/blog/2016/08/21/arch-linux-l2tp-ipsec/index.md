@@ -1,7 +1,10 @@
 ---
 title: Arch LinuxでL2TP/IPsec
 date: 2016-08-21 01:10:00+0900
-tags: Arch Linux, Linux, Network
+tags:
+  - Network
+  - Linux
+  - Arch Linux
 ---
 
 いろいろあってVPNを張りたくなったので, Arch LinuxでL2TP/IPsecなVPNサーバを構築したときのメモです.
@@ -59,7 +62,7 @@ $ sudo sysctl --system
 
 `/etc/ipsec.conf`の41行目, `# Add connections here`の下に`include /etc/ipsec.d/*.conf`を追記.
 
-```conf
+```
 # /etc/ipsec.conf - Openswan IPsec configuration file
 
 # This file:  /usr/share/doc/openswan/ipsec.conf-sample
@@ -111,7 +114,7 @@ include /etc/ipsec.d/*.conf
 $ sudo cp /etc/ipsec.d/examples/l2tp-psk.conf /etc/ipsec.d/
 ```
 
-```conf
+```
 # /etc/ipsec.d/l2tp-psk.conf
 
 conn L2TP-PSK-NAT
@@ -164,7 +167,7 @@ conn L2TP-PSK-noNAT
 今回はサクッと立てたかったため, 認証方式にはPSK(Pre Shared Keys, 事前共有鍵)を選択.  
 `/etc/ipsec.secrets`をこんな感じに記述しました.
 
-```conf
+```
 : PSK "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 ```
 
@@ -173,7 +176,7 @@ conn L2TP-PSK-noNAT
 `/etc/xl2tpd/xl2tpd.conf`をこんな感じに記述.  
 `listen-addr`にサーバのIPアドレス, `hostname`に適当な名前, `ip range`にクライアントに割り当てるIPアドレスの範囲, `local ip`にサーバのVPN側のIPアドレスを設定します.
 
-```conf
+```
 [global]
 listen-addr=157.x.x.x
 auth file = /etc/ppp/chap-secrets
@@ -203,7 +206,7 @@ require pap = no
 
 Openswanのドキュメント等では`crtscts`や`lock`も設定されていますが, これを入れるとエラーが出て起動しなかったため消してあります.
 
-```conf
+```
 ipcp-accept-local
 ipcp-accept-remote
 
@@ -228,7 +231,7 @@ require-mschap-v2
 
 接続するユーザとパスワードを`/etc/ppp/chap-secrets`に記述しておきます.
 
-```conf
+```
 # Secrets for authentication using CHAP
 # client	server	secret			IP addresses
 nyan l2tpd bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb *
@@ -264,7 +267,7 @@ $ sudo systemctl enable openswan xl2tpd
 
 `/etc/ipsec.conf`の20行目を`plutoopts="--interface=wlp2s0"`のようにして通信を行うインターフェースを指定し, また41行目の`# Add connections here`以下に接続の設定を記述してしまいます.
 
-```conf
+```
 # /etc/ipsec.conf - Openswan IPsec configuration file
 
 # This file:  /usr/share/doc/openswan/ipsec.conf-sample
@@ -326,7 +329,7 @@ conn L2TP-PSK
 
 `/etc/ipsec.secrets`にサーバのIPアドレスとPSKを記述します.
 
-```conf
+```
 %any 157.x.x.x : PSK "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 ```
 
@@ -334,7 +337,7 @@ conn L2TP-PSK
 
 `/etc/xl2tpd/xl2tpd.conf`をこんな感じに記述.
 
-```conf
+```
 [lac vpn-connection]
 lns = 157.x.x.x
 ppp debug = no
@@ -347,7 +350,7 @@ length bit = yes
 `/etc/ppp/options.l2tpd.client`をこんな感じに記述.  
 `mtu`や`mru`は環境に合わせて適宜変更します. また, `name`と`password`にはサーバの`/etc/ppp/chap-secrets`に設定したものを記述します.
 
-```conf
+```
 ipcp-accept-local
 ipcp-accept-remote
 

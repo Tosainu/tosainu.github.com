@@ -1,10 +1,11 @@
 ---
 title: Ultra96 で Arch Linux ARM を動かす
 date: 2020-11-29 00:48:11+0900
-tags: Arch Linux
+tags:
+  - Arch Linux
 ---
 
-[Zynq UltraScale+ MPSoC](https://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html) をはじめとする Xilinx の各種プラットフォーム上で、決められた用途の Linux ベースなシステムを構築するなら公式で提供されている [PetaLinux Tools](https://www.xilinx.com/products/design-tools/embedded-software/petalinux-sdk.html) が便利です。以前取り上げた [Ultra96 のアレ](/entry/2019/05/15/ultra96-julia-set-explorer/)でも使っています。一方で、動かした Linux 環境の上で雑な作業したいなどの用途では、構築後の拡張がしにくい PetaLinux Tools は微妙です。例えば Raspberry Pi 向けに提供される [Raspberry Pi OS](https://www.raspberrypi.org/software/) のような汎用の Linux ディストリビューションベースの環境が欲しくなります。
+[Zynq UltraScale+ MPSoC](https://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html) をはじめとする Xilinx の各種プラットフォーム上で、決められた用途の Linux ベースなシステムを構築するなら公式で提供されている [PetaLinux Tools](https://www.xilinx.com/products/design-tools/embedded-software/petalinux-sdk.html) が便利です。以前取り上げた [Ultra96 のアレ](/blog/2019/05/15/ultra96-julia-set-explorer/)でも使っています。一方で、動かした Linux 環境の上で雑な作業したいなどの用途では、構築後の拡張がしにくい PetaLinux Tools は微妙です。例えば Raspberry Pi 向けに提供される [Raspberry Pi OS](https://www.raspberrypi.org/software/) のような汎用の Linux ディストリビューションベースの環境が欲しくなります。
 
 Ultra96 向けに提供される汎用の Linux ディストリビューションベースな環境として、例えば [PYNQ](http://www.pynq.io/) が Ubuntu ベースらしかったり、[ikwzm さんの Debian 10 イメージ](https://github.com/ikwzm/ZynqMP-FPGA-Linux) などが見つかります。ただ、自分としては普段使って慣れている [Arch Linux](https://www.archlinux.org/) 環境があるともっと嬉しいな... ということで、[Arch Linux ARM](https://archlinuxarm.org/) を動かしてみました。
 
@@ -31,7 +32,7 @@ Ultra96 向けに提供される汎用の Linux ディストリビューショ�
 
 [Xilinx Software Command-Line Tool](https://www.xilinx.com/html_docs/xilinx2020_1/vitis_doc/upu1569395223804.html) (xsct) や同梱される aarch64 と microblaze 向けクロスコンパイラなども利用するため Vitis が必要です。Vivado だけではだめです
 
-[^nspawn]: Vitis はインストールサイズが 100GB 程度もあって[以前紹介した](/entry/2018/09/15/install-xilinx-tools-into-docker-container/) Docker 環境だと扱いづらくなる
+[^nspawn]: Vitis はインストールサイズが 100GB 程度もあって[以前紹介した](/blog/2018/09/15/install-xilinx-tools-into-docker-container/) Docker 環境だと扱いづらくなる
 
 インストールの後半、SD カードに展開した Arch Linux ARM システム初期設定のため chroot する作業があります。もちろんターゲットが ARM なので、直接 chroot はできません。今回は QEMU の力を借ります。QEMU は、[binfmt_misc](https://www.kernel.org/doc/html/latest/admin-guide/binfmt-misc.html) と組み合わせて aarch64 向けの ELF をあたかも作業マシン上で直に実行できるかのようにしておきます。Arch Linux であれば AUR の [binfmt-qemu-static][binfmt-qemu-static] と [qemu-user-static][qemu-user-static] パッケージが利用できます ([ArchWiki][qemu-wiki])。Docker イメージの [multiarch/qemu-user-static][multiarch-qemu-static] を使うのも簡単です。
 

@@ -2,7 +2,8 @@
 title: C/C++のプリプロセッサと#include
 date: 2014-08-10 17:00:59+0900
 noindex: true
-tags: C++
+tags:
+  - C++
 ---
 
 お久しぶりです.

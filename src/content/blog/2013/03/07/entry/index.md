@@ -2,7 +2,8 @@
 title: '[ML110 G7 Mod] 組み立て開始'
 date: 2013-03-07 12:06:41+0900
 noindex: true
-tags: DIY PC
+tags:
+  - DIY PC
 ---
 <p>どーもとさいぬです。</p>
 <p>3日間また旅行？行ってました。</p>

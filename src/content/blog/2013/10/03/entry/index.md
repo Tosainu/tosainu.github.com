@@ -2,7 +2,8 @@
 title: GentooInstallBattle!をした
 date: 2013-10-03 23:01:05+0900
 noindex: true
-tags: Linux
+tags:
+  - Linux
 ---
 <p>どーもども</p>
 <p>&nbsp;</p>

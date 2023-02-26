@@ -1,7 +1,9 @@
 ---
 title: Ultra96 で Julia set をぐりぐり動かせるやつを作った
 date: 2019-05-15 12:52:00+0900
-tags: FPGA, C++
+tags:
+  - C++
+  - FPGA
 ---
 
 [Ultra96](https://www.96boards.org/product/ultra96/) というデバイスがあります。Ultra96 は Xilinx 社の [Zynq UltraScale+ MPSoC](https://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html) が載っている開発ボードで、[FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) 開発から最新の ARM 開発、Linux カーネルやそのデバイスドライバ開発なんかも学べて、しかも$249で入手できるというコスパの高い[^1]デバイスです。
@@ -602,7 +604,7 @@ fractal_0: fractal@a0000000 {
 
 追加したカーネルモジュールをブート時に自動的に読み込まれるようにするには、プロジェクトの `project-spec/meta-user/conf/petalinuxbsp.conf` に以下の行を追加する必要があるようです。
 
-```conf
+```ini
 KERNEL_MODULE_AUTOLOAD_append = " <module-name>"
 ```
 
@@ -624,12 +626,12 @@ KERNEL_MODULE_AUTOLOAD_append = " <module-name>"
 [^xilwiki]: Xilinx Wiki ってしょっちゅう403になってこまる...
 
 紹介したリンク先にあるように、PetaLinux で Weston を組み込んだイメージを作るには `project-spec/meta-user/conf/petalinuxbsp.conf` に次の行を追加すればいいようです。
-```conf
+```ini
 DISTRO_FEATURES_append = " wayland"
 IMAGE_INSTALL_append = " packagegroup-petalinux-weston"
 ```
 さらに X11 関連のパッケージが完全に不要であれば、同ファイルに
-```conf
+```ini
 DISTRO_FEATURES_remove = " x11"
 ```
 
@@ -719,7 +721,7 @@ while (1) {
 ```
 `glTexSubImage2D` の部分で**全然速度が出てくれません。** ちょっと時間計測をしたときの記憶があいまいなので正確な値は書けないのですが、今回の 1920px x 1080px の RGBA な画像 (約 7.9MB) を転送するケースで 50ms ~ 90ms 程度のオーダの時間が掛かっていました。この原因としては、単純に画像のコピーがあまり軽い処理でないということに加え、V4L2 のバッファとして割り当てられた領域のメモリキャッシュが (おそらく) 無効化されていることによるものだと推測しています。
 
-![](nodmabuf.svg){ width=70% }
+<img src="nodmabuf.svg" width="70%">
 
 [^11]: これも細かな処理を省いているのでこのコードはコピペではたぶん動きません
 
@@ -727,7 +729,7 @@ while (1) {
 
 dma-buf の動作を簡単な図にするとこんな感じです。まず、共有したいメモリ領域を持つデバイスからそのメモリ領域に関する情報へアクセスするためのファイルディスクリプタを export します。そのファイルディスクリプタを共有先のデバイスに import することで、共有先のデバイスから共有元のメモリ領域に直接アクセスすることが可能となる、というものだそうです。dma-buf 利用前と比較し、データのコピーは必要なくなり、またユーザ空間でやり取りするデータもファイルディスクリプタだけと非常に簡単なものになっています。
 
-![](dmabuf.svg){ width=70% }
+<img src="dmabuf.svg" width="70%">
 
 ということで、dma-buf を使った実装をしていきます。V4L2 のバッファを export するには [`ioctl VIDIOC_EXPBUF`](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/vidioc-expbuf.html) を使います。
 ```c
@@ -790,4 +792,4 @@ Zynq UltraScale+ MPSoC の開発ボードである Ultra96 を用いて、FPGA�
 
 ## 追記 (2019/08/30)
 
-もう少し強くなりました: [Ultra96 で Julia set をぐりぐり動かせるやつをもう少し強くした](/entry/2019/08/29/ultra96-julia-set-explorer-2/)
+もう少し強くなりました: [Ultra96 で Julia set をぐりぐり動かせるやつをもう少し強くした](/blog/2019/08/29/ultra96-julia-set-explorer-2/)

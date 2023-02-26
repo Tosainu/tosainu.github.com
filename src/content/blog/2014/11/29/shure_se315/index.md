@@ -5,7 +5,7 @@ date: 2014-11-29 15:51:00+0900
 
 どもども.
 
-[以前視聴](/entry/2014/05/06/entry/)してからずっと気になっていたイヤホン, SHURE SE315を購入しました!!!  
+[以前視聴](/blog/2014/05/06/entry/)してからずっと気になっていたイヤホン, SHURE SE315を購入しました!!!  
 ![box](https://lh4.googleusercontent.com/-C129-e5DtZg/VHltjpbEaFI/AAAAAAAADs4/ieXVWxcyfz8/s640/IMG_2595.JPG)  
 ![se315](https://lh4.googleusercontent.com/-OPNp0MRpYOA/VHltnLVSaCI/AAAAAAAADtA/g4STUewuEck/s640/IMG_2608.JPG)
 

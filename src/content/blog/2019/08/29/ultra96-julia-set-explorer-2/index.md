@@ -1,10 +1,11 @@
 ---
 title: Ultra96 で Julia set をぐりぐり動かせるやつをもう少し強くした
 date: 2019-08-29 23:19:46+0900
-tags: FPGA
+tags:
+  - FPGA
 ---
 
-以前 [Ultra96 で Julia set をぐりぐり動かせるやつ](/entry/2019/05/15/ultra96-julia-set-explorer/) ([GitHub](https://github.com/Tosainu/ultra96-fractal)) の紹介をしました。この時点で当初作ろうとしていたものをだいたい実現できていたのですが、満足していない箇所もいくつかありました。
+以前 [Ultra96 で Julia set をぐりぐり動かせるやつ](/blog/2019/05/15/ultra96-julia-set-explorer/) ([GitHub](https://github.com/Tosainu/ultra96-fractal)) の紹介をしました。この時点で当初作ろうとしていたものをだいたい実現できていたのですが、満足していない箇所もいくつかありました。
 
 今回それらの点を改善して性能をあげたり、機能を追加したりしました。どんな感じに強くなったのかを紹介していきます。
 

@@ -2,7 +2,8 @@
 title: Xperia NXを入手した
 date: 2015-05-03 16:10:00+0900
 noindex: true
-tags: Xperia NX
+tags:
+  - Xperia NX
 ---
 
 にゃーん.

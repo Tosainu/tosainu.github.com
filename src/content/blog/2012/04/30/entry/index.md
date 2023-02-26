@@ -2,7 +2,8 @@
 title: Linux系のOS
 date: 2012-04-30 14:40:56+0900
 noindex: true
-tags: Linux
+tags:
+  - Linux
 ---
 <p>とさいぬです。書きたいこといっぱいあるとか言いながら</p>
 <p>ほとんど更新できませんでした。</p>

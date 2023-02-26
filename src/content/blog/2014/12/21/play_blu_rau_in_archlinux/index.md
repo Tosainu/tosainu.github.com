@@ -1,10 +1,12 @@
 ---
 title: 対Blu-ray用決戦部隊、通称MakeMKV
 date: 2014-12-21 21:39:00+0900
-tags: Arch Linux, Gochiusa
+tags:
+  - Gochiusa
+  - Arch Linux
 ---
 
-この記事は**[ご注文はBlu-rayですか?](/entry/2014/12/19/gochiusa_blu_ray_photo_review/)**および**[ひと目で尋常でないプロテクトだと見抜いたよ](/entry/2014/12/20/fu_k_power_dvd/)**の続きです.
+この記事は**[ご注文はBlu-rayですか?](/blog/2014/12/19/gochiusa_blu_ray_photo_review/)**および**[ひと目で尋常でないプロテクトだと見抜いたよ](/blog/2014/12/20/fu_k_power_dvd/)**の続きです.
 
 ## まず
 

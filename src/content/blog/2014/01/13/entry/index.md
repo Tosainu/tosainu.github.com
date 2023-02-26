@@ -1,7 +1,8 @@
 ---
 title: WalkmanZを分解した 内部の掃除・内部スピーカの無効化
 date: 2014-01-13 12:19:51+0900
-tags: WalkmanZ
+tags:
+  - Walkman Z
 ---
 どーもですん
 

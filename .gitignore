@@ -1,9 +1,3 @@
-/.bundle
-/.cache
-/.sass-cache
-/build
-/vendor/bundle
-/.stack-work
-*.cabal
+/.astro
+/dist
 /node_modules
-stack.yaml.lock

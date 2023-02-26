@@ -1,0 +1,40 @@
+---
+import type { SiteProps } from '@/types';
+import GTag from '@/components/GoogleTag.astro';
+import * as Config from '@/config';
+import '../styles/base.css';
+
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import 'katex/dist/katex.css';
+
+export type Props = SiteProps;
+
+const { description, lang, noindex, pageTitle } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content={Config.author.nickname} />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content={`@${Config.author.social.twitter}`} />
+    <meta property="twitter:creator" content={`@${Config.author.social.twitter}`} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={Config.site.root + Astro.url.pathname} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={Config.site.root + Config.site.image} />
+    <title>{pageTitle}</title>
+    <link href="/feed.xml" title="RSS Feed" type="application/rss+xml" rel="alternate" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <slot />
+    {Config.site.gtagId && <GTag measurementId={Config.site.gtagId} />}
+  </body>
+</html>

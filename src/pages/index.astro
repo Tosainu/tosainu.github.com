@@ -1,0 +1,133 @@
+---
+import Base from '@/layouts/Base.astro';
+import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
+import * as Config from '@/config';
+
+import { faTwitter, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, faSquare, faStar, faUser } from '@fortawesome/free-solid-svg-icons';
+---
+
+<style>
+  body {
+    @apply h-screen font-['Raleway'];
+  }
+
+  .link-icon svg:first-child {
+    @apply opacity-0;
+  }
+
+  .link-icon:active svg:first-child,
+  .link-icon:hover svg:first-child {
+    @apply opacity-100;
+  }
+
+  .avatar-fade-in {
+    animation: avatar-fade-in 0.4s ease-in;
+  }
+
+  @keyframes avatar-fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+<Base pageTitle={Config.site.title} lang={Config.site.lang} description={Config.site.description}>
+  <header class="relative h-screen bg-darkgray">
+    <nav class="container absolute inset-x-0 top-4 z-50 mx-auto pr-2 text-right text-lg font-semibold text-white">
+      <a class="pb-1 hover:border-b-4 hover:border-dashed" href="/blog/">
+        Blog <FontawesomeIcon icon={faCaretRight} class="fa-lg" />
+      </a>
+    </nav>
+
+    <div class="absolute inset-0 flex flex-col items-center justify-center">
+      <img class="avatar-fade-in mb-2.5 h-44 rounded-full border-[5px] border-white" src={Config.author.avatar} />
+      <h1 class="mb-6 text-4xl font-semibold leading-loose text-white">{Config.author.nickname}</h1>
+      <div class="flex w-full max-w-sm justify-around">
+        <span>
+          <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Twitter" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+            <FontawesomeIcon icon={faTwitter} class="fa-stack-1x text-current" />
+          </a>
+        </span>
+        <span>
+          <a href={`https://github.com/${Config.author.social.github}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="GitHub" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+            <FontawesomeIcon icon={faGithub} class="fa-stack-1x text-current" />
+          </a>
+        </span>
+        <span>
+          <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Instagram" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+            <FontawesomeIcon icon={faInstagram} class="fa-stack-1x text-current" />
+          </a>
+        </span>
+        <span>
+          <a href={`mailto:${Config.author.social.email}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Mail">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+            <FontawesomeIcon icon={faEnvelope} class="fa-stack-1x text-current" />
+          </a>
+        </span>
+      </div>
+    </div>
+  </header>
+  <section class="bg-gray-50 py-24 leading-loose text-darkgray">
+    <div class="container mx-auto px-2">
+      <h2 class="mb-8 text-3xl font-semibold">About Me</h2>
+      <dl class="grid grid-cols-[2rem_1fr]">
+        <dt class="text-center">
+          <FontawesomeIcon icon={faUser} class="fa-fw" />
+        </dt>
+        <dd>{Config.author.name} ({Config.author.nickname})</dd>
+        <dt class="text-center">
+          <FontawesomeIcon icon={faMapMarkerAlt} class="fa-fw" />
+        </dt>
+        <dd>{Config.author.location}</dd>
+        <dt class="text-center">
+          <FontawesomeIcon icon={faBirthdayCake} class="fa-fw" />
+        </dt>
+        <dd>{Config.author.birthday}</dd>
+        <dt class="text-center">
+          <FontawesomeIcon icon={faBuilding} class="fa-fw" />
+        </dt>
+        <dd>{Config.author.job}</dd>
+        <dt class="text-center">
+          <FontawesomeIcon icon={faStar} class="fa-fw" />
+        </dt>
+        <dd>
+          {Config.author.interests.map((i) => <span class="whitespace-nowrap after:whitespace-normal after:content-[',_'] last:after:content-none">{i}</span>)}
+        </dd>
+      </dl>
+    </div>
+  </section>
+  <section class="py-24 leading-loose text-darkgray">
+    <div class="container mx-auto px-2">
+      <h2 class="mb-8 text-3xl font-semibold">Works</h2>
+      <dl class="list-[square]">
+        {
+          Config.authorWorks.map(({ description, name, url }) => (
+            <>
+              <dt class="ml-8 list-item font-semibold">
+                <a class="text-sky-700 underline" href={url} target="_blank" rel="nofollow noopener">
+                  {name}
+                </a>
+              </dt>
+              <dd class="ml-8">{description}</dd>
+            </>
+          ))
+        }
+      </dl>
+    </div>
+  </section>
+  <footer class="py-8 leading-8 text-darkgray">
+    <div class="container mx-auto px-2 text-right text-sm">
+      {Config.site.footer} Site generated by <a class="text-sky-700 underline" href="https://astro.build/">{Astro.generator}</a>.
+    </div>
+  </footer>
+</Base>

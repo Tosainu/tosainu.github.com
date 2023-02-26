@@ -1,0 +1,29 @@
+---
+import BlogArticle from '@/layouts/BlogArticle.astro';
+import * as Config from '@/config';
+
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const blog = await getCollection('blog');
+  return blog.map((entry) => {
+    const [year, month, day, slug] = entry.slug.split('/');
+    return {
+      params: { year, month, day, slug },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const { day, month, year } = Astro.params;
+const modData = { ...entry.data, date: `${year}/${month}/${day}` };
+
+const description = entry.data.description ?? entry.body.replaceAll(/\s+/g, ' ').trimStart().slice(0, 150);
+---
+
+<BlogArticle lang={Config.blog.lang} pageTitle={`${modData.title} | ${Config.blog.title}`} noindex={modData.noindex ?? false} frontmatter={modData} description={description}>
+  <Content />
+</BlogArticle>

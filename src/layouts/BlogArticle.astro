@@ -1,0 +1,61 @@
+---
+import type { SiteProps } from '@/types';
+import type { BlogSchema } from '@/content/_schema';
+import Blog from '@/layouts/Blog.astro';
+import LinkToTagPage from '@/components/LinkToTagPage.astro';
+import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
+
+import { faCalendar, faTag } from '@fortawesome/free-solid-svg-icons';
+
+export interface Props extends SiteProps {
+  frontmatter: BlogSchema;
+}
+
+const { frontmatter: data, ...props } = Astro.props;
+---
+
+<Blog {...props}>
+  <main class="text-darkgray">
+    <article>
+      <header class="mb-7 bg-gray-50 py-7">
+        <div class="container mx-auto px-2 py-2">
+          <h1 class="mb-4 text-4xl font-bold">
+            {data.title}
+          </h1>
+          <ul class="flex flex-row items-baseline text-sm">
+            <li class="mr-2"><FontawesomeIcon icon={faCalendar} class="fa-lg" /></li>
+            <li class="mr-2">{data.date}</li>
+            {
+              data.tags.length > 0 && (
+                <>
+                  <li class="mr-2">
+                    <FontawesomeIcon icon={faTag} class="fa-lg" />
+                  </li>
+                  {data.tags.map((t) => (
+                    <li class="mr-2">
+                      <LinkToTagPage tag={t} />
+                    </li>
+                  ))}
+                </>
+              )
+            }
+          </ul>
+        </div>
+      </header>
+      <div class="container mx-auto mb-7 px-2">
+        <div class="prose">
+          <style is:inline>
+            section.footnotes {
+              font-size: 0.75rem;
+              padding-top: 0.75rem;
+            }
+            .sr-only {
+              display: none;
+            }
+          </style>
+          <slot />
+        </div>
+      </div>
+    </article>
+  </main>
+</Blog>

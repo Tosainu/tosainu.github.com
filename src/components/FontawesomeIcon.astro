@@ -1,0 +1,14 @@
+---
+import Fontawesome from '@/components/Fontawesome.astro';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { icon as toSVGIcon } from '@fortawesome/fontawesome-svg-core';
+
+export interface Props {
+  icon: IconDefinition;
+  class?: string;
+}
+
+const { class: classNames, icon } = Astro.props;
+---
+
+<Fontawesome class={classNames} object={toSVGIcon(icon)} />

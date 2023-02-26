@@ -1,0 +1,16 @@
+---
+import type { SiteProps } from '@/types';
+import Base from '@/layouts/Base.astro';
+import Footer from '@/components/BlogFooter.astro';
+import Header from '@/components/BlogHeader.astro';
+
+export type Props = SiteProps;
+
+const { ...props } = Astro.props;
+---
+
+<Base {...props}>
+  <Header />
+  <slot />
+  <Footer />
+</Base>

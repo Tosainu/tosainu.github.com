@@ -1,0 +1,46 @@
+---
+import type { SiteProps } from '@/types';
+import BlogListItem from '@/components/BlogListItem.astro';
+import Blog from '@/layouts/Blog.astro';
+
+import type { Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props extends SiteProps {
+  page: Page<CollectionEntry<'blog'>>;
+}
+
+const { page, ...props } = Astro.props;
+---
+
+<Blog {...props}>
+  <main class="text-darkgray">
+    <slot />
+
+    <div class="container mx-auto my-7 px-2">
+      {page.data.map((post) => <BlogListItem post={post} />)}
+    </div>
+
+    <nav class="container mx-auto my-7 flex px-2">
+      <div class="basis-1/3 text-left">
+        {
+          page.url.prev && (
+            <a class="text-sky-700 underline" href={page.url.prev}>
+              « Previous
+            </a>
+          )
+        }
+      </div>
+      <div class="basis-1/3 text-center">- {page.currentPage} of {page.lastPage} -</div>
+      <div class="basis-1/3 text-right">
+        {
+          page.url.next && (
+            <a class="text-sky-700 underline" href={page.url.next}>
+              Next »
+            </a>
+          )
+        }
+      </div>
+    </nav>
+  </main>
+</Blog>

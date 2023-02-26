@@ -1,0 +1,39 @@
+---
+import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
+import LinkToTagPage from '@/components/LinkToTagPage.astro';
+
+import type { CollectionEntry } from 'astro:content';
+import { faCalendar, faTag } from '@fortawesome/free-solid-svg-icons';
+
+export interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const [year, month, day, _] = post.slug.split('/');
+const data = { ...post.data, date: `${year}/${month}/${day}` };
+---
+
+<section class="mb-4">
+  <a class="mb-1 inline-block text-lg text-sky-700 underline" href={`/blog/${post.slug}/`}>
+    <h2>{data.title}</h2>
+  </a>
+  <ul class="flex flex-row items-baseline text-sm">
+    <li class="mr-2"><FontawesomeIcon icon={faCalendar} class="fa-lg" /></li>
+    <li class="mr-2">{data.date}</li>
+    {
+      data.tags.length > 0 && (
+        <>
+          <li class="mr-2">
+            <FontawesomeIcon icon={faTag} class="fa-lg" />
+          </li>
+          {data.tags.map((t) => (
+            <li class="mr-2">
+              <LinkToTagPage tag={t} />
+            </li>
+          ))}
+        </>
+      )
+    }
+  </ul>
+</section>

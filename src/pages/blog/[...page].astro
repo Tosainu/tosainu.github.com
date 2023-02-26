@@ -1,0 +1,18 @@
+---
+import BlogList from '@/layouts/BlogList.astro';
+import applyPaginatePrefix from '@/utils/applyPaginatePrefix';
+import sortById from '@/utils/sortById';
+import * as Config from '@/config';
+
+import type { GetStaticPathsOptions } from 'astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const blog = sortById(await getCollection('blog'));
+  return applyPaginatePrefix(paginate(blog, { pageSize: Config.blog.articlesInPage }), 'page/');
+}
+
+const { page } = Astro.props;
+---
+
+<BlogList lang={Config.blog.lang} pageTitle={Config.blog.title} noindex={page.currentPage != 1} page={page} description={Config.blog.description} />

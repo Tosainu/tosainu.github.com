@@ -1,9 +1,0 @@
-resolver: lts-19.24
-
-packages:
-  - .
-
-extra-deps:
-  - git: https://github.com/jaspervdj/hakyll.git
-    commit: d4b966d19ed763515135ef8ee9f69dd35e40e130  # it's not latest, https://github.com/jaspervdj/hakyll/pull/844 breaks my environment
-  - hakyll-sass-0.2.4

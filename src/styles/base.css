@@ -1,0 +1,10 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-[16px] leading-[1.825] lg:text-[18px];
+  }
+}
+
+@tailwind components;
+@tailwind utilities;

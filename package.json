@@ -9,7 +9,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "normalize.css": "^8.0.1",
     "posthtml": "^0.16.6",
     "posthtml-embed-fontawesome": "link:./plugins/posthtml-embed-fontawesome",

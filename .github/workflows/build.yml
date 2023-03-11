@@ -1,5 +1,12 @@
-name: CI
-on: [push]
+on:
+  workflow_call:
+    outputs:
+      artifact_name:
+        description: "Artifact name that can access from subsequent jobs"
+        value: ${{ jobs.build.outputs.artifact_name }}
+      artifact_path:
+        description: "Artifact file path"
+        value: ${{ jobs.build.outputs.artifact_path }}
 
 jobs:
   build:
@@ -7,7 +14,9 @@ jobs:
     env:
       ASTRO_TELEMETRY_DISABLED: true
       FORCE_COLOR: true
-
+    outputs:
+      artifact_name: ${{ steps.save_params.outputs.artifact_name }}
+      artifact_path: ${{ steps.save_params.outputs.artifact_path }}
     steps:
       - uses: actions/checkout@v3.3.0
         with:
@@ -31,28 +40,8 @@ jobs:
           name: blog
           path: dist.tar.xz
 
-  deploy:
-    runs-on: ubuntu-22.04
-    needs: build
-
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
-    steps:
-      - uses: actions/download-artifact@v3.0.2
-        with:
-          name: blog
-
-      - run: tar xvf dist.tar.xz
-
-      - name: Deploy
-        env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Save parameters
         run: |
-          cd dist
-          git init
-          git config user.name "GitHub Actions"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git switch --orphan gh-pages
-          git add -A
-          git commit --allow-empty -m "(⋈◍＞◡＜◍)。✧♡ "
-          git push -f "https://${GITHUB_ACTOR}:${TOKEN}@github.com/${GITHUB_REPOSITORY}" HEAD
+          echo 'artifact_name=blog' >> "$GITHUB_OUTPUT"
+          echo 'artifact_path=dist.tar.xz' >> "$GITHUB_OUTPUT"
+        id: save_params

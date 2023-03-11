@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+
+  deploy:
+    runs-on: ubuntu-22.04
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v3.0.2
+        with:
+          name: ${{ needs.build.outputs.artifact_name }}
+      - run: mkdir -p dist && tar xf "${{ needs.build.outputs.artifact_path }}" --strip-components=1 -C dist
+      - uses: actions/configure-pages@v3.0.4
+      - uses: actions/upload-pages-artifact@v1.0.7
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v1.2.5
+        id: deployment

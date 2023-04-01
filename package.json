@@ -19,7 +19,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.1.7",
+    "astro": "^2.1.9",
     "katex": "^0.16.4",
     "rehype-katex": "^6.0.2",
     "remark-math": "^5.1.1",

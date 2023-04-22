@@ -29,7 +29,7 @@ jobs:
         with:
           name: ${{ needs.build.outputs.artifact_name }}
       - run: mkdir -p dist && tar xf "${{ needs.build.outputs.artifact_path }}" --strip-components=1 -C dist
-      - uses: actions/configure-pages@v3.0.5
+      - uses: actions/configure-pages@v3.0.6
       - uses: actions/upload-pages-artifact@v1.0.8
         with:
           path: dist

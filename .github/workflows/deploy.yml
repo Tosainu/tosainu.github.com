@@ -33,5 +33,5 @@ jobs:
       - uses: actions/upload-pages-artifact@v1.0.8
         with:
           path: dist
-      - uses: actions/deploy-pages@v2.0.0
+      - uses: actions/deploy-pages@v2.0.1
         id: deployment

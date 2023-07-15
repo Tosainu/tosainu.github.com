@@ -2,7 +2,7 @@ import type { GetStaticPathsResult, GetStaticPathsItem, Page } from 'astro'
 
 const applyPaginatePrefix = (
   staticPaths: GetStaticPathsResult,
-  prefix: string
+  prefix: string,
 ): GetStaticPathsResult =>
   staticPaths.map(({ params, props }): GetStaticPathsItem => {
     const paramName = 'page'

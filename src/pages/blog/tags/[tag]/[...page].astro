@@ -18,7 +18,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
         pageSize: Config.blog.articlesInPage,
         params: { tag },
       }),
-      'page/'
+      'page/',
     );
   });
 }

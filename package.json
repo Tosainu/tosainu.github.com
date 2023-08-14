@@ -13,7 +13,7 @@
     "typecheck": "astro check; tsc --noEmit"
   },
   "dependencies": {
-    "@astrojs/rss": "^2.4.3",
+    "@astrojs/rss": "^2.4.4",
     "@astrojs/tailwind": "^4.0.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",

@@ -9,7 +9,7 @@ tags:
 
 Ultra96 向けに提供される汎用の Linux ディストリビューションベースな環境として、例えば [PYNQ](http://www.pynq.io/) が Ubuntu ベースらしかったり、[ikwzm さんの Debian 10 イメージ](https://github.com/ikwzm/ZynqMP-FPGA-Linux) などが見つかります。ただ、自分としては普段使って慣れている [Arch Linux](https://www.archlinux.org/) 環境があるともっと嬉しいな... ということで、[Arch Linux ARM](https://archlinuxarm.org/) を動かしてみました。
 
-![](screenfetch.png)
+![](./screenfetch.png)
 
 この記事では、前半でインストール方法の一例を、後半で関連するファイル類などをあげた GitHub リポジトリ [Tosainu/zynqmp-arch][zynqmp-arch] について紹介していきます。
 
@@ -49,11 +49,11 @@ Arch Linux 環境に chroot する際には arch-install-scripts の [`arch-chro
 
 Ultra96 に載ってる Bluetooth を使いたい場合には少し設定が必要です。[Avnet/Ultra96-PYNQ](https://github.com/Avnet/Ultra96-PYNQ) リポジトリなどの情報によれば、まず PS の設定から UART 0 の MODEM にチェックを入れて
 
-![](psconfig.png)
+![](./psconfig.png)
 
 そのあと PS のブロックから生えた `emio_uart0_ctsn`, `emio_uart0_rtsn` を適当な名前のポートで外に出します。
 
-![](ps.png)
+![](./ps.png)
 
 あとはこんな感じの `.xdc` ファイルを追加して外に出したポートにピンを割り当てればよいそうです。
 

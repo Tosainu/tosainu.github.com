@@ -85,7 +85,7 @@ Earthly の主要操作はだいたいこんな感じです。基本的には `D
 それでは本題、Earthly をどうやって Zynq UltraScale+ のソフトウェアプロジェクトに適用したかです。この紹介にあたって、こんなものを作ってみました。
 
 <video controls loop>
-    <source src="led.mp4" type="video/mp4">
+    <source src="./led.mp4" type="video/mp4">
 </video>
 
 一言でいえば、特に理由もなく面倒なことをしている L チカの亜種です。RPU で動く LED 制御のベアメタルアプリケーションと APU 上の Ubuntu で動くアプリケーションが IPI (Inter-Processor Interrupt) を飛ばし合います。APU から RPU への IPI で LED 点滅開始、その後 APU が RPU から飛んでくる IPI に応答し続けないと LED は消えてしまうというものです。題材を複雑にしすぎても準備が大変なだけだし、かといって簡単にしすぎてもおもしろくないし…と悩んだ末のものになります。ソースコードはすべて GitHub リポジトリ [Tosainu/earthly-zynqmp-example](https://github.com/Tosainu/earthly-zynqmp-example) にあり、この記事は [`322ce449`](https://github.com/Tosainu/earthly-zynqmp-example/tree/322ce449da698ac1db1641cf12240bbfaa36d6eb) をベースに書いています。

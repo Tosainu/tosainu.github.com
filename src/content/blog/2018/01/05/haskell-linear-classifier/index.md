@@ -67,7 +67,7 @@ main = do
 ```
 
 出力された `dataset.svg` はこんな感じ。
-![dataset](dataset.svg)
+![dataset](./dataset.svg)
 
 この $C_1$ と $C_2$ を分類してみます。
 
@@ -211,7 +211,7 @@ toFile fo "ls1.svg" $ do
 
 最終的なコードは[これ](https://gist.github.com/Tosainu/8df05092c75a53711efbda52ecec4c64)で、出力された `ls1.svg` はこんな感じになりました。$C_1$ と $C_2$ の間に、それっぽく境界線が引けました。
 
-![ls1](ls1.svg)
+![ls1](./ls1.svg)
 
 ## ロジスティック回帰でパラメータを求める
 
@@ -234,7 +234,7 @@ main = do
 
 すると、出力された画像はこんな感じになってしまいました。最小二乗法は与えた全てのデータに対しての誤差を最小にしようとするので、外れ値や他クラスのデータがあるとそれに影響されてしまうわけですね。
 
-![ls2](ls2.svg)
+![ls2](./ls2.svg)
 
 そこで、次に示すロジスティック関数 (シグモイド関数) $\sigma (a)$ を使って、識別境界からの距離を確率的な距離 $[0, 1]$ としてみます。
 
@@ -242,7 +242,7 @@ $$
 \sigma (a) = \frac{1}{1 + \exp(- a)}
 $$
 
-![sigmoid](sigmoid.svg)
+![sigmoid](./sigmoid.svg)
 
 ある入力データ $\tilde{\boldsymbol{x}}$ が与えられたとき、それが $C_1$ に属する確率を $p(1 | \tilde{\boldsymbol{x}})$、そうでない確率を $p(0 | \tilde{\boldsymbol{x}})$ とし、次のように定めます。このように、ある線形関数 $y$ をロジスティック関数で変形したモデルのことを一般化線形モデルと呼ぶらしいです。
 
@@ -339,7 +339,7 @@ let f   x   w = sigmoid' (x #> w)
 
 最終的なコードは[これ](https://gist.github.com/Tosainu/02784b8e1233158436e623633a2b50b5)で、出力された `logistic.svg` はこんな感じになりました。最小二乗法のときに発生した境界線の傾きはなく、いい感じに線が引けました。
 
-![logistic](logistic.svg)
+![logistic](./logistic.svg)
 
 ## まとめ
 

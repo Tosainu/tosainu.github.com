@@ -13,7 +13,7 @@ tags:
 
 図にするとこんな感じ.  
 記事中では, この図のIPアドレス及びネットワークインターフェース名を使っていきます.  
-![diagram](l2tp-ipsec.png)
+![diagram](./l2tp-ipsec.png)
 
 <!--more-->
 

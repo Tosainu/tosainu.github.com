@@ -12,19 +12,6 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
     @apply h-screen font-['Raleway'];
   }
 
-  .link-icon svg:first-child {
-    @apply opacity-0;
-  }
-
-  .link-icon:active svg:first-child,
-  .link-icon:hover svg:first-child {
-    @apply opacity-100;
-  }
-
-  .avatar-fade-in {
-    animation: avatar-fade-in 0.4s ease-in;
-  }
-
   @keyframes avatar-fade-in {
     0% {
       opacity: 0;
@@ -47,30 +34,30 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
     </nav>
 
     <div class="absolute inset-0 flex flex-col items-center justify-center">
-      <img class="avatar-fade-in mb-2.5 h-44 rounded-full border-[5px] border-white" src={Config.author.avatar} />
+      <img class="animate-[avatar-fade-in_0.4s_ease-in] mb-2.5 h-44 rounded-full border-[5px] border-white" src={Config.author.avatar} />
       <h1 class="mb-6 text-4xl font-semibold leading-loose text-white">{Config.author.nickname}</h1>
       <div class="flex w-full max-w-sm justify-around">
         <span>
-          <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Twitter" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+          <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Twitter" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
             <FontawesomeIcon icon={faTwitter} class="fa-stack-1x text-current" />
           </a>
         </span>
         <span>
-          <a href={`https://github.com/${Config.author.social.github}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="GitHub" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+          <a href={`https://github.com/${Config.author.social.github}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="GitHub" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
             <FontawesomeIcon icon={faGithub} class="fa-stack-1x text-current" />
           </a>
         </span>
         <span>
-          <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Instagram" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+          <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Instagram" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
             <FontawesomeIcon icon={faInstagram} class="fa-stack-1x text-current" />
           </a>
         </span>
         <span>
-          <a href={`mailto:${Config.author.social.email}`} class="link-icon fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Mail">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white" />
+          <a href={`mailto:${Config.author.social.email}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Mail">
+            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
             <FontawesomeIcon icon={faEnvelope} class="fa-stack-1x text-current" />
           </a>
         </span>

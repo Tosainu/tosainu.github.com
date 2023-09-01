@@ -5,6 +5,9 @@ tags:
   - C++
   - FPGA
 ---
+import { Image } from 'astro:assets';
+import dmabufSvg from './dmabuf.svg';
+import nodmabufSvg from './nodmabuf.svg';
 
 [Ultra96](https://www.96boards.org/product/ultra96/) というデバイスがあります。Ultra96 は Xilinx 社の [Zynq UltraScale+ MPSoC](https://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html) が載っている開発ボードで、[FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) 開発から最新の ARM 開発、Linux カーネルやそのデバイスドライバ開発なんかも学べて、しかも$249で入手できるというコスパの高い[^1]デバイスです。
 
@@ -18,8 +21,6 @@ tags:
 関連するソースコードはほぼ全て [GitHub のリポジトリ](https://github.com/Tosainu/ultra96-fractal) に公開してあります。
 
 まだ当初予定していた機能を実装しきれていなかったりしますが、とりあえずシステム全体とその開発方法などを紹介していきたいと思います。
-
-<!--more-->
 
 ## Julia set
 
@@ -83,7 +84,7 @@ fn colorize(t: f32) -> image::Rgb<u8> {
 
 これを実行するとこんな感じの画像が出力されます。
 
-![](fractal_example.png)
+![](./fractal_example.png)
 
 ## FPGA で Julia set を描画する
 
@@ -181,7 +182,7 @@ $$
     b(t) &= 8.5 (1 - t)^3 t
 \end{aligned}
 $$
-![](color.svg)
+![](./color.svg)
 
 この関数は見ての通り乗算が多く、そのまま FPGA に落とせば計算に必要なクロックサイクル数は増えるし貴重な FPGA のリソースを大量に消費するしでなにもいいことがありません。今回これらの関数に与えられうる値は $\cfrac{0}{255}, \cfrac{1}{255}, \cfrac{2}{255}, \dots, \cfrac{255}{255}$ と決まっているので定数化が可能ですが、流石に手作業で 256 個の値を計算しハードコーディングするのは面倒だしメンテナンス性も下がって最悪です。
 
@@ -292,7 +293,7 @@ constexpr auto make_array(Function f)
 IP は Intellectual Property の略で、再利用可能な回路デザインのことを指します。ソフトウェア開発で例えるならライブラリのようなものでしょうか。そして最近の FPGA 開発ツールは様々な IP を GUI 上で配置・接続することで目的のシステムを開発する機能を搭載しているものがあり、Vivado では IP Integrator がそれに当たります。IP Integrator で作成したデザインはブロックデザインと呼ばれています。
 
 今回作成した Julia set explorer のブロックデザインは次のようになっています。表示されているものは簡略化されたもので、クリックすると Vivado から直接出力した詳細なものが表示されます。
-[![](bd_simple.png)](bd.pdf)
+[![](./bd_simple.png)](bd.pdf)
 
 `fractal_0` が Vivado HLS で出力した Julia set 描画回路の IP で、`m_axis` がその出力ポートです。出力された画像の信号は、周波数の調整やデータの簡単な下処理を行うための IP を通したうえで、[AXI Video DMA (AXI VDMA)](https://www.xilinx.com/products/intellectual-property/axi_video_dma.html) という IP に接続されています。この IP は Vivado にバンドルされているもので、ストリーム形式の映像データをメモリへ転送したり、逆にメモリから映像を読み出してストリーム形式で出力するものです。今回は描画した Julia set の画像をメモリに書き込み、PS からその画像を読み出せるようにする役割があります。
 
@@ -320,9 +321,11 @@ Ultra96 向け PetaLinux プロジェクトの作成は、[ここ](http://zedboa
 
 といっても必要な手順はそんなに多くありません。まず以下のコマンドでプロジェクトを作成します。
 
-    $ petalinux-create --type project --template zynqMP --name <project-name>
-    $ cd <project-name>
-    $ petalinux-config --get-hw-description=<path-to-hdf-dir>
+```
+$ petalinux-create --type project --template zynqMP --name <project-name>
+$ cd <project-name>
+$ petalinux-config --get-hw-description=<path-to-hdf-dir>
+```
 
 最後の `petalinux-config` を実行すると、Linux カーネルで `make menuconfig` したときのような画面が出てくるので以下の値を設定します。
 
@@ -613,7 +616,7 @@ KERNEL_MODULE_AUTOLOAD_append = " <module-name>"
 ## 描画した Julia set をカッコよく表示できるようにする
 
 最後に PL で描画した Julia set を表示したりゲームパッドで操作するためのアプリケーションを実装しました。実装したコードが[これ](https://github.com/Tosainu/ultra96-fractal/blob/1ed4e5e409d6445a85741149c112322cc6fc251c/petalinux_project/project-spec/meta-user/recipes-apps/fractal-explorer/files/main.cc)[^6]で、動作している様子がこんな感じです。ウィンドウ全体に描画した Julia set を表示しつつ、左上に Julia set のパラメータを表示しています[^7]。
-![](screenshot.png)
+![](./screenshot.png)
 
 [^6]: いきあたりばったりな実装をしていてアレなことになっているのでなんとかしたい...
 
@@ -721,7 +724,7 @@ while (1) {
 ```
 `glTexSubImage2D` の部分で**全然速度が出てくれません。** ちょっと時間計測をしたときの記憶があいまいなので正確な値は書けないのですが、今回の 1920px x 1080px の RGBA な画像 (約 7.9MB) を転送するケースで 50ms ~ 90ms 程度のオーダの時間が掛かっていました。この原因としては、単純に画像のコピーがあまり軽い処理でないということに加え、V4L2 のバッファとして割り当てられた領域のメモリキャッシュが (おそらく) 無効化されていることによるものだと推測しています。
 
-<img src="nodmabuf.svg" width="70%">
+<Image src={nodmabufSvg} style="width: 70%" alt="" />
 
 [^11]: これも細かな処理を省いているのでこのコードはコピペではたぶん動きません
 
@@ -729,7 +732,7 @@ while (1) {
 
 dma-buf の動作を簡単な図にするとこんな感じです。まず、共有したいメモリ領域を持つデバイスからそのメモリ領域に関する情報へアクセスするためのファイルディスクリプタを export します。そのファイルディスクリプタを共有先のデバイスに import することで、共有先のデバイスから共有元のメモリ領域に直接アクセスすることが可能となる、というものだそうです。dma-buf 利用前と比較し、データのコピーは必要なくなり、またユーザ空間でやり取りするデータもファイルディスクリプタだけと非常に簡単なものになっています。
 
-<img src="dmabuf.svg" width="70%">
+<Image src={dmabufSvg} style="width: 70%" alt="" />
 
 ということで、dma-buf を使った実装をしていきます。V4L2 のバッファを export するには [`ioctl VIDIOC_EXPBUF`](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/vidioc-expbuf.html) を使います。
 ```c

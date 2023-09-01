@@ -35,9 +35,9 @@ JTAG 用のピンも、ある GPIO の Alternate mode として実装されて�
 
 Raspberry Pi の P1 ヘッダの役割は[このページの図](https://elinux.org/RPi_Low-level_peripherals#P1_Header)などがわかりやすいです。これらを参考にしながら Bus Blaster と接続していきます。Bus Blaster は基板上にピンの役割が書いてあるのがいいですね。
 
-![](IMG_0631.jpg)
+![](./IMG_0631.jpg)
 
-![](IMG_0630.jpg)
+![](./IMG_0630.jpg)
 
 Bus Blaster の JP4 に刺さっているジャンパピンは、今回は外したほうが良さそうです。JP4 は Bus Blaster からターゲットに給電する・しないを切り替えるものです。Raspberry Pi は電源供給用の USB Micro-B 端子があるので Bus Blaster からの給電は必要ないですし、Bus Blaster から供給できるのは 3.3v 200mA が最大で Raspberry Pi を動かすには弱いためです。
 

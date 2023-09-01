@@ -43,7 +43,7 @@ Docker イメージを作成する前にいくつかの準備が必要です。
 
 まずインストーラをダウンロードします。これはダウンロードに Xilinx のアカウントが必要で、`Dockerfile` から `curl` 等でダウンロードするということができないためです。[ここ](https://www.xilinx.com/support/download.html) へアクセスし、**Vivado HLx 2018.2: All OS installer Single-File Download** のリンクからインストーラをダウンロードします。Web Installer は `Dockerfile` でインストールを自動化するにあたり必要になる Batch install が使えない[^1]のでダメです。
 
-![](vivado_website.png)
+![](./vivado_website.png)
 
 次に Batch install に必要なインストールの設定ファイルを生成します。この設定ファイルはダウンロードしたファイルを解凍すると出てくるシェルスクリプト `xsetup` にコマンドラインオプション `-b ConfigGen` を付けて実行することで生成できます。この `xsetup` も勝手に `~/.Xilinx` ディレクトリを作成したりしてくるし、そもそも拾ってきた実行ファイルをむやみにホストで直に実行したくないので Docker コンテナの中でやってしまいましょう。
 
@@ -225,7 +225,7 @@ exec /usr/local/bin/gosu user "$@"
 
 実際に動作させてみるとこんな感じです。
 
-![](docker_run.png)
+![](./docker_run.png)
 
 では Vivado などのソフトウェアを立ち上げていきます。Docker コンテナ内の X11 アプリケーションを呼び出す方法にはいくつかのアプローチがあるようですが、今回は `/tmp/.X11-unix/` を共有してしまう方法を紹介しようと思います。まず次のコマンドで作業ユーザによるローカルからの X11 のリクエストを許可するようにします。
 
@@ -299,7 +299,7 @@ Vivado HLS で C simulation を実行すると、こんな感じのリンカエ�
 
 これは、Project Settings を開き、Simulation のページにある Linker Flags に `-B/usr/lib/x86_64-linux-gnu/` を指定することで解決します。
 
-![](hls_ldflags.png)
+![](./hls_ldflags.png)
 
 おそらく何かパッケージが足りないせいなんだと思いますが、特定には至っていません...
 

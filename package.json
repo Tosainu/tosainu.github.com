@@ -10,7 +10,7 @@
     "eslint": "eslint .",
     "prettier": "prettier --check './src/**/*{astro,css,ts}' '*.{cjs,mjs,js}' package.json",
     "prettier:fix": "prettier --write './src/**/*{astro,css,ts}' '*.{cjs,mjs,js}' package.json",
-    "typecheck": "astro check; tsc --noEmit"
+    "typecheck": "astro check && tsc --noEmit"
   },
   "dependencies": {
     "@astrojs/mdx": "^1.1.5",

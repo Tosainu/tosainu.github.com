@@ -4,14 +4,15 @@ import applyPaginatePrefix from '@/utils/applyPaginatePrefix';
 import sortById from '@/utils/sortById';
 import * as Config from '@/config';
 
-import type { GetStaticPathsOptions } from 'astro';
+import type { GetStaticPaths, GetStaticPathsOptions, InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
 
-export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+export const getStaticPaths = (async ({ paginate }: GetStaticPathsOptions) => {
   const blog = sortById(await getCollection('blog'));
   return applyPaginatePrefix(paginate(blog, { pageSize: Config.blog.articlesInPage }), 'page/');
-}
+}) satisfies GetStaticPaths;
 
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { page } = Astro.props;
 ---
 

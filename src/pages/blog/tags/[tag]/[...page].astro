@@ -5,11 +5,11 @@ import applyPaginatePrefix from '@/utils/applyPaginatePrefix';
 import sortById from '@/utils/sortById';
 import * as Config from '@/config';
 
-import type { GetStaticPathsOptions } from 'astro';
+import type { GetStaticPaths, GetStaticPathsOptions, InferGetStaticParamsType, InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
 import { faTag } from '@fortawesome/free-solid-svg-icons';
 
-export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+export const getStaticPaths = (async ({ paginate }: GetStaticPathsOptions) => {
   const blog = await getCollection('blog');
   const tags = [...new Set(blog.flatMap((p) => p.data.tags))];
   return tags.flatMap((tag) => {
@@ -21,10 +21,13 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
       'page/',
     );
   });
-}
+}) satisfies GetStaticPaths;
 
+type Params = InferGetStaticParamsType<typeof getStaticPaths>;
+const { tag } = Astro.params as Params;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { page } = Astro.props;
-const { tag } = Astro.params;
 ---
 
 <BlogList lang={Config.blog.lang} pageTitle={`Tag: ${tag} | ${Config.blog.title}`} noindex={page.currentPage != 1} page={page} description={Config.blog.description}>

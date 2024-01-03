@@ -13,14 +13,14 @@
     "typecheck": "astro check && tsc --noEmit"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.1.5",
+    "@astrojs/mdx": "^2.0.3",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@tailwindcss/typography": "^0.5.10",
-    "astro": "^3.6.4",
+    "astro": "^4.0.9",
     "katex": "^0.16.9",
     "rehype-katex": "^7.0.0",
     "remark-math": "^5.1.1",

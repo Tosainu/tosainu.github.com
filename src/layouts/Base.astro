@@ -3,7 +3,7 @@ import type { SiteProps } from '@/types';
 import GTag from '@/components/GoogleTag.astro';
 import * as Config from '@/config';
 import '../styles/base.css';
-
+import { AstroFont } from 'astro-font';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import 'katex/dist/katex.css';
 
@@ -31,7 +31,19 @@ const { description, lang, noindex, pageTitle } = Astro.props;
     <meta property="og:image" content={Config.site.root + Config.site.image} />
     <title>{pageTitle}</title>
     <link href="/feed.xml" title="RSS Feed" type="application/rss+xml" rel="alternate" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet" />
+    <AstroFont
+      config={[
+        {
+          src: [],
+          preload: false,
+          display: "swap",
+          name: "Raleway",
+          selector: "body",
+          fallback: "sans-serif",
+          googleFontsURL: 'https://fonts.googleapis.com/css?family=Raleway:400,600',
+        },
+      ]}
+    />
   </head>
   <body>
     <slot />

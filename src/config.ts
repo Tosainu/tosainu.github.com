@@ -4,7 +4,7 @@ export const site = {
   title: "Tosainu's Portfolio",
   description: "Tosainu's Portfolio Page",
   root: 'https://myon.info',
-  footer: '© 2011-2023 Tosainu.',
+  footer: '© 2011-2024 Tosainu.',
   lang: 'en',
   gtagId: 'G-NX0M9ZW278',
   image: '/images/icon/cocoa-512.jpg',

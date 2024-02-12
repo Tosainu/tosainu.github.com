@@ -1,0 +1,120 @@
+---
+title: Ryzen 7 8700G + ECC メモリーで組んじゃったヒト
+tags:
+    - DIY PC
+---
+
+import { Picture } from 'astro:assets';
+
+<Picture
+    src="/blog/2024/02/12/ryzen-7-8700g/DSC_8420.avif"
+    alt=""
+    width="2048"
+    height="1365"
+    formats={['avif']}
+/>
+
+AMD の新しいデスクトップ向けプロセッサー AMD Ryzen 7 8700G を[発売日に購入](https://x.com/myon___/status/1753247461341368660)して PC を組みました。PC 組むのは雑に生えてきたものを除けば[2013年](/blog/2013/01/05/entry/)以来ですね。あれからもう10年以上経ってるのやばい…
+
+この PC は、それまで一番利用頻度の高かった [ThinkPad X13 Gen1 (AMD)](/blog/2020/09/01/thinkpad-x13/) を入れ換えるカタチで導入しました。生活スタイルが変わってラップトップを持ち出す機会が大幅に減少したのと、そうした数少ないラップトップを持ち出したいケースでは音楽データやカメラで撮った写真の管理目的で買っちゃった MacBook Air のほうが都合よいのがわかってきて、この PC がラップトップである必要性に疑問を持ったのがきっかけです。これに加えて、もし新しくデスクトップを生やすなら、SATA 接続な HDD 資産の維持のために未だ現役な IvyBridge 世代の CPU が載っているデスクトップ PC もついでに置き換えられてよさそうなのに気づきます。この HDD は今も大容量データ保管とラップトップなどのバックアップ先に使っていたのですが、利用頻度の高い PC から物理的に離れていることによる扱いにくさと世代が古いパーツで構成されているゆえの管理の煩わしさから、これもなんとかしたいなとずっと感じていたのでした。
+
+こうして久しぶりの PC パーツ検討がはじまりました。今回のコンセプトはこんな感じ:
+
+<dl>
+
+<dt>
+    AMD のプロセッサー
+</dt>
+<dd>
+    X13 の Ryzen が体験よかったので、今回 AMD で組むのはほぼ確定でした。LGA2011 を選ぶようなヒトなので Socket sTR5 の風貌に惹かれるものがありましたが、マザーボードだけで1台組めるようなお値段する世界だったので早々に諦め Socket AM5 にフォーカスしました。そのほかの要件をふまえても Ryzen Threadripper はマッチしないのがわかりましたし。
+
+    スペック面で目に見えるわかりやすい変化もほしいので、Ryzen 5 PRO 4650U / Core i7-3930K の6コアから1段アップの8コア以上のもので絞りました。
+</dd>
+
+<dt>
+    外付け GPU 無しで DisplayPort 出力
+</dt>
+<dd>
+    いわゆる「メイン機」扱いになる PC になるとはいえ、ラップトップの置き換えが目的なのであまり power-hungry な PC にはしたくありませんでした。ゲームはしなくなってしまったので、3大電力消費デバイス[^top3-power-hungry]の1つ GPU は専用カードを載せずに CPU 内臓のものを使う、載せるとしても古すぎないローエンド品で検討しました。とはいえ 4K ディスプレイ環境でボトルネックを感じさせることのないよう、性能にある程度の余裕は持っていて欲しさがありました。
+
+    ディスプレイとの接続は、既存のディスプレイや周辺機器の都合から DisplayPort あるいは USB-C / Thunderbolt 経由で出せるのがマストでした。
+
+    [^top3-power-hungry]: CPU, GPU, _FPGA Accelerator Card_
+</dd>
+
+<dt>
+    <u>ECC メモリー</u>で 64GB 以上
+</dt>
+<dd>
+    Linus Torvalds 氏の影響を受けているので、次に組むときは ECC 付きのメモリーがいいなと思っていました。また前述した SATA 接続の HDD 資産は ZFS ではないものの RAID を組んでたりするので、ECC があるとより安心感が高まって心理的にもよさそうかなと。
+
+    容量は 16GB だと X13 購入時の懸念通り私の作業では注意しないといけない場合が多々あり、32GB は i7-3930K で組んだときすでに経験しているので、その倍の 64GB 以上で検討しました。ところで今って 24GB とか 48GB なメモリーモジュールがあるんですね。マザーボードのスペックシートを見ていて、4スロットで 96GB とか 192GB ってどーやって組むんだろうとか思っていました。
+</dd>
+
+</dl>
+
+<Picture
+    src="/blog/2024/02/12/ryzen-7-8700g/DSC_8371.avif"
+    alt=""
+    width="2048"
+    height="1365"
+    formats={['avif']}
+/>
+
+そして新規で揃えたパーツがこんな感じ:
+
+- [AMD Ryzen 7 8700G](https://www.amd.com/en/products/apu/amd-ryzen-7-8700g)
+- [ASUS TUF GAMING B650M-PLUS](https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus/)
+- [Micron 32GB DDR5-5600 ECC UDIMM 2Rx8 CL46](https://www.crucial.com/memory/server-ddr5/mtc20c2085s1ec56br) (MTC20C2085S1EC56BR x2)
+- [Noctua NH-U12S chromax.black](https://noctua.at/en/nh-u12s-chromax-black)
+- [KIOXIA EXCERIA PRO NVMe SSD 1TB](https://www.kioxia.com/ja-jp/personal/ssd/exceria-pro.html) (SSD-CK1.0N4P/N)
+- [Fractal Design Ion+ 2 Platinum 560W](https://www.fractal-design.com/products/power-supplies/ion/ion-2-platinum-560w/black/) (FD-P-IA2P-560)
+
+CPU はタイトル通り Ryzen 7 8700G です。最初は Ryzen 7 7800X3D/7700X/7600X か Ryzen 9 7900X3D あたりで迷っていましたが、Ryzen 8000G シリーズの話題を見つけて一転。同じ "Zen 4" アーキテクチャだけど Ryzen 7000 が TSMC 5nm FinFET なのに対して TSMC 4nm FinFET であること、余裕のある内臓グラフィックス、そして ECC メモリー対応だと少なくとも確認当時のスペックシートに書かれていたことが決め手でした。
+
+AM5 かつ ECC メモリー対応なマザーボード、となるとまずメーカーが限られてきます。Supermicro が [H13SAE-MF](https://www.supermicro.com/ja/products/motherboard/h13sae-mf) を出していて気になりましたが、Ryzen 8000G 対応が不明なのと、何より安くはないんだろうなという予想の更に倍くらいのお値段したので除外。そのあとは DisplayPort がついているもので基板の色やシルクが好みなものを選びました。TUF GAMING B650M-PLUS は全体的に派手でないデザインでとてもよく、強そうなヒートシンクも好印象です。パーツ選びを始めた段階で大きく値下げする店舗が出てきて、入手するまで在庫が心配な日々でした。
+
+そしてメモリー。予定通り DDR5 で ECC な UDIMM です。最初は同じシリーズの DDR5-4800 を考えていましたが、DDR5-5600 なものがほとんど同じ値段で出てきたのでこちらにしました。このメモリーモジュールは XMP/EXPO などは対応していなさそうで、今回の構成で DDR5-5600 するにはいくつか手動でパラメーター設定が必要でした。といっても速度を指定したらあとはマザーボードがだいたい SPD 通りの値を選んでくれたので、そこまで困ることはありませんでした。
+
+CPU クーラーは付属してきそうでしたが別途購入。メタルカラーが露出しているヒートシンクだと、特に素手で触れてしまったところを中心に時間経過とともにくすんでくるのが悲しくて、なにかいいのはないかと探し見つけたのが Noctua の chromax.black シリーズでした。黒くなっているので目立つようなくすみは出てこないかなーと思ったのと、何より黒基調の TUF GAMING B650M-PLUS とあわせるとすごいよさそうに見えたので。閉じると中が見えないケース使ってるのにね。
+
+Ryzen 8000G では PCI Express 4.0 になることや発熱の心配から、SSD は無難そうな PCIe 4.0 対応のものを選択。メーカーは今まで Plextor や Crucial を使ってきたので、今回ほかのを試してみようと KIOXIA にしました。それにしても SSD も速くなりましたね。あの [VPCZ2 の「第3世代 SSD RAID」](https://www.sony.jp/vaio/products/Z23/feature_2.html#L1_90) はベンチマークソフト上で 800 MB/s 以上出ていた記憶がありますが、いまや単体でその10倍近く、モノによってはそれ以上出ちゃうんですね。
+
+電源、本当に何選んだらいいかわからない… というのも、i7-3930K で組んだとき使った電源ユニットは信頼できそうだと思っていたシリーズだったのに[バラしたら信じられないクオリティのはんだ付け](https://x.com/myon___/status/1302413841070874625)だった経験があり。今回はケースでも以前から興味があって使ってみたいと思っていたメーカー Fractal Design のものを選択。ケーブルがとてもしなやかで、ケース内の取り回しがとてもしやすかったです。あとは本体が入っていたバッグの面ファスナーを開けたときに思わず笑顔になりました。流石にバラしてないのではんだ付けがどうなっているかはわかりませんが、かなりよい電源だと思います。80PLUS Platinum なだけあってか容量のわりに結構いいお値段しましたが。
+
+<details>
+    <summary>クリックで画像を表示</summary>
+    <Picture
+        src="/blog/2024/02/12/ryzen-7-8700g/DSC_8400.avif"
+        alt=""
+        width="2048"
+        height="1365"
+        formats={['avif']}
+    />
+</details>
+
+ケースなど、これ以外のパーツは手持ちを流用するとしました。
+
+<Picture
+    src="/blog/2024/02/12/ryzen-7-8700g/DSC_8391.avif"
+    alt=""
+    width="1280"
+    height="1656"
+    formats={['avif']}
+/>
+
+さて、タイトルや本文中の含みのある記述からもお察しかと思いますが… **Ryzen 7 8700G、ECC メモリー対応してませんでした〜〜〜っ!**
+
+MemTest86 のコンフィグやシステム情報が見れる画面で ECC support が No と出ていたときからあれっとなり、そこから設定を見直しまくったり、ECC Error Injection みたいな動作確認をしてみるいい感じの方法がないか調べること1週間。[AMD Web サイトのスペックシートのページが (ひっそりと) 更新されて ECC Support の項目が消えている](https://www.reddit.com/r/hardware/comments/1ajwc3k/amd_silently_removed_ecc_support_from_ryzen_8700g/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)らしいのを知ります。Internet Archive を見ると [2024/01/08 の時点](https://web.archive.org/web/20240108154556/https://www.amd.com/en/product/14066)では ECC Support: Yes の項目がある記憶通りの情報が載っています。しかし改めて現在の確認してみると確かに… ECC Support の行が消えています。うわぁマジかぁ、という感じです。かなりかなしい。
+
+販売開始前の製品のスペックシートを信用しきってしまっただとか最新情報の確認を怠っただとかこちらに非があるんだろうけども、AMD 側から事前に情報があるとよかったのにと思わないかといわれると嘘になりますね。まぁ少し高いメモリー買ったのに動かなかったとはならず、ECC 以外は問題なく動いていそうで済んでよかったと思うべきなのかなと。とはいえ、さすがにこれから Ryzen 7000 シリーズを買い直すとまではいかなくとも、次の新しい AM5 な CPU ("Zen5" 採用?) がちゃんと ECC メモリーに対応していたらすぐ入れ換えたくなっちゃうかもしれません。ECC メモリーは今回のコンセプトの1つで、パーツもそれ前提で揃えちゃっているので。
+
+<Picture
+    src="/blog/2024/02/12/ryzen-7-8700g/DSC_8403.avif"
+    alt=""
+    width="2048"
+    height="1365"
+    formats={['avif']}
+/>
+
+とりあえず ECC メモリーの件以外は概ね満足している PC になりました。Arch Linux をインストール、というか X13 の SSD から `dd` でそのまま持ってきて若干の設定変更をして問題なく動いています。RAID 組んでる HDD も問題なく移行できました。PC 類の入れ換えと統合で部屋も片付いたのもうれしいですね。これからガシガシがんばってもらいます。

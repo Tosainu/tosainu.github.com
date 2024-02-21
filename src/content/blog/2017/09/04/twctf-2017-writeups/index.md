@@ -132,19 +132,19 @@ glibc は、よく知られた unlink attack を[こんな感じのチェック]
 さて、今回のプログラムは確保した領域を配列`list`で管理している。なんとかして`list`を書き換えることができれば、任意のアドレスの書き換えが可能になる。  
 そこでまず、`list`の要素が**チャンクの先頭を指す**ような状況を作り出す。3つの領域 (0x88, 0xf8, 0x88 bytes、buffer 4~6 とする) を確保し、buffer 5 を解放しておく。
 
-![heap1](./1.svg)
+![heap1](/blog/2017/09/04/twctf-2017-writeups/1.svg)
 
 この状態で buffer 4 から 0x88 + 1 bytes 書き込み、chunk 5 の`size`を 0x101 から 0x1f1 に書き換える。
 
-![heap2](./2.svg)
+![heap2](/blog/2017/09/04/twctf-2017-writeups/2.svg)
 
 そのあと2つの領域 (0x108, 0x88 bytes、buffer 5, 7 とする) を確保すると、`size`を偽装したチャンクが切り分けられ、こんな感じになる。このとき、**buffer 6 を指している`list[6]`が chunk 7 の先頭も指すことになる**。
 
-![heap3](./3.svg)
+![heap3](/blog/2017/09/04/twctf-2017-writeups/3.svg)
 
 こうしてできた buffer 5 と buffer 7 を使って、unsafe unlink attack を行う。今回のプログラムでは解放済みの領域に書き込むことは難しいので、chunk 7 の`fd`、`bk`をセットし、さらに後ろのチャンクの`PREV_INUSE`ビットをクリアして解放されたことにする。
 
-![heap3](./4.svg)
+![heap3](/blog/2017/09/04/twctf-2017-writeups/4.svg)
 
 このあと buffer 5 の解放をすると、`list[6]`が`list[3]`を指すようになる。
 

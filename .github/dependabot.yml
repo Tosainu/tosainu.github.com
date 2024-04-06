@@ -12,7 +12,7 @@ updates:
     groups:
       fontawesome:
         patterns:
-          - "@fontawesome/*"
+          - "@fortawesome/*"
   - package-ecosystem: github-actions
     directory: /
     schedule:

@@ -26,13 +26,13 @@ jobs:
         with:
           node-version: 21.6.2
 
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
 
-      - run: npm run typecheck
-      - run: npm run eslint
-      - run: npm run prettier
+      - run: yarn run typecheck
+      - run: yarn run eslint
+      - run: yarn run prettier
 
-      - run: npx astro build
+      - run: yarn astro build
       - run: tar cvf dist.tar.xz dist
 
       - uses: actions/upload-artifact@v4.3.1

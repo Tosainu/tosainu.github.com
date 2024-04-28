@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: 21.7.3
 
+      - run: corepack enable
+
       - run: yarn install --frozen-lockfile
 
       - run: yarn run typecheck

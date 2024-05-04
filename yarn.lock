@@ -1863,9 +1863,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-eslint-parser@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "astro-eslint-parser@npm:1.0.1"
+"astro-eslint-parser@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "astro-eslint-parser@npm:1.0.2"
   dependencies:
     "@astrojs/compiler": "npm:^2.0.0"
     "@typescript-eslint/scope-manager": "npm:^7.0.0"
@@ -1880,7 +1880,7 @@ __metadata:
     globby: "npm:^11.1.0"
     is-glob: "npm:^4.0.3"
     semver: "npm:^7.3.8"
-  checksum: 10c0/41ab0c5e0a8004deed1f175011ccdefebc8ac79bd0c9e5d2589a7e783dae39983083979d2346144becc23d512a49e3efd83c1e9fa4e6e2b2c83c33b3fc91ee40
+  checksum: 10c0/0e7565d74e8cd662e4afe89db54d386428fba112ffdce13e9e375c7a8074e70c086b6cc47f050a9791a282a3aa37aa6a40eea5c92d8f5b5ace44ed81ac6b0bd6
   languageName: node
   linkType: hard
 
@@ -2043,7 +2043,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:^7.8.0"
     astro: "npm:4.7.1"
     eslint: "npm:^8.57.0"
-    eslint-plugin-astro: "npm:^1.0.3"
+    eslint-plugin-astro: "npm:^1.1.2"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     katex: "npm:^0.16.10"
     prettier: "npm:^3.2.5"
@@ -2755,21 +2755,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-astro@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "eslint-plugin-astro@npm:1.0.3"
+"eslint-plugin-astro@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "eslint-plugin-astro@npm:1.1.2"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
     "@typescript-eslint/types": "npm:^7.7.1"
-    astro-eslint-parser: "npm:^1.0.1"
+    astro-eslint-parser: "npm:^1.0.2"
     eslint-compat-utils: "npm:^0.5.0"
-    globals: "npm:^13.0.0"
+    globals: "npm:^15.0.0"
     postcss: "npm:^8.4.14"
     postcss-selector-parser: "npm:^6.0.10"
   peerDependencies:
     eslint: ">=8.57.0"
-  checksum: 10c0/4d6cd6fa1a3d7e233e2edbae74fec709e27f0e8f3dbe15d152b48c239cbc79aba2f64fb8a7cb1ebf3d35cc0799e41ea3b15cad6234f445eb4ae3f9e1b7027eb7
+  checksum: 10c0/858b0c13c2976e75c9d9ff113507684b2b647f33f0e3185b1b48ba88e45ee94c37116051d66fc759a094656f707af4e233e0644ff96035c1351c500052b7b900
   languageName: node
   linkType: hard
 
@@ -3319,12 +3319,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^13.0.0, globals@npm:^13.19.0":
+"globals@npm:^13.19.0":
   version: 13.24.0
   resolution: "globals@npm:13.24.0"
   dependencies:
     type-fest: "npm:^0.20.2"
   checksum: 10c0/d3c11aeea898eb83d5ec7a99508600fbe8f83d2cf00cbb77f873dbf2bcb39428eff1b538e4915c993d8a3b3473fa71eeebfe22c9bb3a3003d1e26b1f2c8a42cd
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.0.0":
+  version: 15.1.0
+  resolution: "globals@npm:15.1.0"
+  checksum: 10c0/ae9cd15057dc6a21d6dbafe9f47b66bd063c6d3c9215fa1e8294bd130d89f188c48370a11a9525a5a33bd8689fc4fdfd3f474d930692d7abb7459cd982503336
   languageName: node
   linkType: hard
 

@@ -110,7 +110,7 @@ tan(x) with linespoints
 ## CSV形式のファイルを扱う
 
 最近のデジタルオシロは優秀で, USB端子からUSBフラッシュメモリ等に表示しているデータをCSV形式で出力できたりします.  
-実際に[以下のRC回路の過渡現象を観測した時のデータ](https://drive.google.com/open?id=0B2w3TbN4IJZoUGhBc3kzdkRGZkU&authuser=0)がありますので, これで遊んでみましょう.  
+実際に[以下のRC回路の過渡現象を観測した時のデータ](https://drive.google.com/file/d/0B2w3TbN4IJZoUGhBc3kzdkRGZkU/view?usp=drive_link&resourcekey=0-XjwQGuymU1vLFuN3zWFiag)がありますので, これで遊んでみましょう.  
 ![cu](https://lh3.googleusercontent.com/-XZB9bneydzc/VYYYnYiCM8I/AAAAAAAAE7I/gLL5BC4GtbQ/s800/schemeit-project.png)
 
 ### CSV形式のファイルを読み込む
@@ -186,7 +186,7 @@ set xtics 1e-3
 
 ### CSV形式のデータに対して演算を行う
 
-[以下のようなRCローパスフィルタ回路の実験をした時のデータ](https://drive.google.com/open?id=0B2w3TbN4IJZoUEloUHAwV2dZU1k&authuser=0)がありますので, 周波数特性のグラフを作成してみます.  
+[以下のようなRCローパスフィルタ回路の実験をした時のデータ](https://drive.google.com/file/d/0B2w3TbN4IJZoUEloUHAwV2dZU1k/view?usp=sharing&resourcekey=0-OvvgvEbtye88yH_8-IpiYA)がありますので, 周波数特性のグラフを作成してみます.  
 ![lpf](https://lh3.googleusercontent.com/-PYR-ShF1YcM/VYYp3G-TPuI/AAAAAAAAE74/GW9YmO3WxQQ/s800/New-Project.png)
 
 CSV形式のデータに対して演算を行うには, `using ほげ:ふが`の部分を弄ってやります.  

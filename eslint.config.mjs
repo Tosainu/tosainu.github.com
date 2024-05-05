@@ -19,7 +19,7 @@ export default typescript.config(
       sourceType: 'module',
       globals: {
         ...globals.browser,
-        ...globals.es2022,
+        ...globals.es2021,
         ...globals.node,
       },
     },

@@ -10,7 +10,9 @@ noindex: true
 <p>さて本題。</p>
 <p>たまたま開いた『ぽちっとな』のプロジェクトファイル。</p>
 <p>壊れてました。</p>
-<img src="https://lh6.googleusercontent.com/_k8x9PZSlKHk/TXrs6q5ZJvI/AAAAAAAAAgw/FFPVG4LPhY8/s640/pinpon.png" />
+
+![](./pinpon.png)
+
 <p>なんだよ、55エラー、1警告って。</p>
 <p>&nbsp;</p>
 <p>まぁ、くだらないソフトだったし、友達にも</p>

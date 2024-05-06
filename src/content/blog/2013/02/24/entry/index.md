@@ -8,7 +8,9 @@ tags:
 <p>どーもです。</p>
 <p>&nbsp;</p>
 <p>今日はずっと玄箱弄ってました。</p>
-<p><img src="https://lh6.googleusercontent.com/-IVEbesdqREM/USnx7gF6eyI/AAAAAAAABKY/8N40UCmY6t0/s640/DSC07136.JPG" /></p>
+
+![](./DSC07136.JPG)
+
 <p>あの超geek向けのLinuxディストリ<a href="http://www.gentoo.org/">Gentoo</a>を動かそうと粘ってました。</p>
 <p>日本の玄箱関係のサイトが減り始めている中、未だ<a href="http://buffalo.nas-central.org/wiki/Install_The_2007_PPC_Gentoo">外国のWikiにこんな記事</a>があったらやるしか無いじゃないですか！</p>
 <p>&nbsp;</p>

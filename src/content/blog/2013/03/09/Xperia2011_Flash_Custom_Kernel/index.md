@@ -149,6 +149,6 @@ $ fastboot reboot
 また, カスタムカーネルのフォーラム記事で "Wipe Battery Statusを実行しろ" などの指示がある場合はそれも行います.
 
 設定 -> 端末情報のカーネルバージョンが変化していることや, 無線LANなどすべての機能が動作することを確認してカーネル焼き作業は終了です.
-![kernel](https://lh5.googleusercontent.com/-QTB_lGPpfRA/UhqnAWclbsI/AAAAAAAAChs/fImgXGNsvRY/s640/screenshot_2013-08-26_0946.png)
+![kernel](./screenshot_2013-08-26_0946.png)
 
 お疲れ様でした.

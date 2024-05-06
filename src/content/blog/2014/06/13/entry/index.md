@@ -17,7 +17,7 @@ tags:
 あ、2014/07/04, 05は名古屋でオープンソースカンファレンスがありますよ皆さん！
 
 さて話がそれましたが、セキュキャンの参加資格を見たんですよね。  
-![sc](https://lh6.googleusercontent.com/-b_DAh8pMxEM/U5qLE2g8-XI/AAAAAAAADSw/THRaG7Rjy_Y/s640/2014-06-13-135847_3840x1080_scrot.png "sc")
+![sc](./2014-06-13-135847_3840x1080_scrot.png "sc")
 
 > セキュリティまたはプログラミングに関して、講習を受けられるだけの基礎知識、および積極的に取り組む姿勢を持っていること。
 
@@ -25,7 +25,7 @@ tags:
 
 \_(┐「﹃ﾟ｡)\_
 
-![nai](https://lh3.googleusercontent.com/-oW6PaxGmDmc/U5qNZn6uWXI/AAAAAAAADS8/zQT7xBPG7uE/s800/sonamonohanai.jpg "nai")
+![nai](./sonamonohanai.jpg "nai")
 
 はーーーっ
 

@@ -8,7 +8,7 @@ tags:
 ## CocoaTwit
 
 以前から何度かつぶやいていた自作Twitterクライアント, [**CocoaTwit-QWebView**](https://github.com/Tosainu/CocoaTwit/tree/QWebView)を公開しました.  
-![img](https://lh4.googleusercontent.com/-jk8X_B1uYi0/VPF3b9cvJII/AAAAAAAAD9U/3zAolbThC8Y/s640/2015-02-28-170528_3000x1920_scrot.png)
+![img](./2015-02-28-170528_3000x1920_scrot.png)
 
 **A Simple and Cute Twitter Client**をコンセプトに, シンプルなデザインかつ細かな拡張のしやすいTwitterクライアントを目指しています.  
 また, 僕が今まで使ってきたTwitterクライアントの手が届かなかったところを改善して実装していこうと思っています.  
@@ -91,7 +91,7 @@ camelCaseな書き方を我慢するとしても, マクロの副作用に気を
 
 単純に[`QPushButton`](http://doc.qt.io/qt-5/qpushbutton.html)等の用意されたWidgetを配置していく程度のアプリケーションなら何の問題もないのですが, 今回作成したいのはTwitterクライアントです.  
 例えばタイムライン表示を実装するとします. TweetDeckほど複雑な表示でなくとも, 最低限アイコンとscreen\_name, tweet本文を独立して表示できるListViewが欲しいわけです.  
-![tl](https://lh6.googleusercontent.com/-T_p5Iyi_HDc/VMt4Iu1oDLI/AAAAAAAAD7o/SO9a8-u8fbg/s800/twitteritem.png)
+![tl](./twitteritem.png)
 
 QtにこのようなWidgetは用意されていないので, ちょっと弄る必要があります.  
 QtのListViewである[`QListView`](http://doc.qt.io/qt-5/qlistview.html)を拡張するには, 必要に応じて[`QAbstractListModel`](http://doc.qt.io/qt-5/qabstractlistmodel.html)等を継承した独自のModelを作成し, また[`QStyledItemDelegate`](http://doc.qt.io/qt-5/qstyleditemdelegate.html)を継承したクラスを適用させて`QListView`のItemをPaintするときの動作を上書きしていくようです. 詳しくは[こちら](http://doc.qt.io/qt-5/model-view-programming.html).
@@ -149,7 +149,7 @@ $ make
 $ ./QWebView_example
 ```
 
-![example](https://lh6.googleusercontent.com/-h9rrhxDATYo/VLOHLGrOFxI/AAAAAAAAD4U/cZhcZTFEtHg/s640/2015-01-12-173150_1920x1080_scrot.png)
+![example](./2015-01-12-173150_1920x1080_scrot.png)
 
 これだけです. 簡単ですね.  
 ちなみに, `main.cc`の8行目の`R"( ... )"`はC++11からのRaw String Literal[^5]と呼ばれるものです.
@@ -162,7 +162,7 @@ $ ./QWebView_example
 DOM要素を扱う[`QWebElement`](http://doc.qt.io/qt-5/qwebelement.html)を使うことでいろいろできます.  
 Sample: [Tosainu / QWebView\_dom.pro](https://gist.github.com/Tosainu/1a678513e0496384de7e)
 
-![dom](https://lh4.googleusercontent.com/-z-xsqRJ1v9M/VMxJY2j0WdI/AAAAAAAAD78/Iml4ERjLxxo/s640/out.opt.gif)
+![dom](./out.opt_2.gif)
 
 ### 要素を取得する
 
@@ -243,7 +243,7 @@ webview->page()->mainFrame()->addToJavaScriptWindowObject("jsobj", jo);
 ```
 
 上に挙げたサンプルプログラムでは, ページに配置されたClick!ボタンをクリックすると, こんな感じで**QMessageBox::information()**が表示されたと思います.  
-![htmlc++](https://lh3.googleusercontent.com/-gE9dr4NqFHA/VLtwvQVOCFI/AAAAAAAAD6c/LjOpaxnFiqg/s800/out.opt.gif)
+![htmlc++](./out.opt.gif)
 
 ### C++ -> HTML(JavaScript)
 
@@ -261,14 +261,14 @@ jsobj.hogeSignal.connect(fugaSlot);
 ```
 
 サンプルプログラムでは, 下部のQPushButtonをクリックすると`hogeSignal`が発火するようにしてありますので, ボタンをクリックすると<http://myon.info/>に飛んだと思います.  
-![c++html](https://lh6.googleusercontent.com/-yjxBsii2Yvo/VLtyAQz9A3I/AAAAAAAAD6s/gnZRxYhRad8/s640/out.opt.gif)
+![c++html](./out.opt_4.gif)
 
 ### 値の受け渡し
 
 関数が相互に呼び出せるようになったので, 今度は値のやり取りをしてみます.  
 Sample: [Tosainu / QWebView\_exchange-value.pro](https://gist.github.com/Tosainu/b6180de2eb852fc7eea8)
 
-![exchangeval](https://lh5.googleusercontent.com/-A2EcEJnZILw/VLtlex-Wi0I/AAAAAAAAD6I/SJWeIlNzDpU/s800/out.opt.gif)
+![exchangeval](./out.opt_3.gif)
 
 やり取りする相手がJavaScriptですが, なにか特別な書き方が必要というわけではありません.  
 サンプルでは文字列の受け渡ししかしていませんが, [The Qt WebKit Bridge | Qt 5.4](http://doc.qt.io/qt-5/qtwebkit-bridge.html)によると以下のような型が扱えると紹介されています. <del>(面倒で全て試せてない)</del>

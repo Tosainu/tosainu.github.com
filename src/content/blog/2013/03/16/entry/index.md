@@ -9,8 +9,12 @@ noindex: true
 <p>どんなものかというと、海外のFlashサイトです。</p>
 <p>まぁ、詳しいことは上のリンクや<a href="http://dic.nicovideo.jp/a/walfas">ここ</a>を参考にしてもらうとして、</p>
 <p>&nbsp;</p>
-<p><img src="https://lh6.googleusercontent.com/-HvPE2YVmc38/UUQnKAONqaI/AAAAAAAABrQ/T6UeiIcTtto/s640/Screenshot%2520from%25202013-03-16%252016%253A57%253A20.png" /></p>
-<p><img src="https://lh3.googleusercontent.com/-nxhr11MQHIk/UUQp447bPsI/AAAAAAAABrg/ZPCAMRN6Uds/s640/Screenshot%2520from%25202013-03-16%252017%253A13%253A19.png" /></p>
+
+![](./Screenshot_from_2013-03-16_16:57:20.png)
+
+
+![](./Screenshot_from_2013-03-16_17:13:19.png)
+
 <p>いや、まぁこの原作とかキャラ名は触れないこととして・・・</p>
 <p>&nbsp;</p>
 <p>なんかこの絵良くないですか？</p>

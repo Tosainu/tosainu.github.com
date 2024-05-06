@@ -63,7 +63,7 @@ gnuplot> plot 10 * sin(x) with line, \
 >tan(x) with linespoints
 ```
 
-![1](https://lh3.googleusercontent.com/-K8JOOgQ1Oos/VYYH7TkS9JI/AAAAAAAAE6o/KmOmWZjv9QU/s800/1.png)
+![1](./1.png)
 
 グリッド線を表示させる場合は, プロットする前に`set grid`を実行します.  
 また, `set grid xtics`や `set grid ytics`とすればx軸のみやy軸のみにグリッド線を表示させることができます.
@@ -105,13 +105,13 @@ tan(x) with linespoints
 ファイルへの出力も上のサンプル通りです.
 
 ちなみに, Vimではオムニ補完が効くほか, QuickRunのようなプラグインでVimから実行できたり, エラーをquickfixに表示できたりもします. 最高.  
-![2](https://lh3.googleusercontent.com/-nuaf5lC0Jlg/VYYSUSdq7LI/AAAAAAAAE64/cP_DVd02oL8/s800/2015-06-21-102251_3840x1080_scrot.png)
+![2](./2015-06-21-102251_3840x1080_scrot.png)
 
 ## CSV形式のファイルを扱う
 
 最近のデジタルオシロは優秀で, USB端子からUSBフラッシュメモリ等に表示しているデータをCSV形式で出力できたりします.  
 実際に[以下のRC回路の過渡現象を観測した時のデータ](https://drive.google.com/file/d/0B2w3TbN4IJZoUGhBc3kzdkRGZkU/view?usp=drive_link&resourcekey=0-XjwQGuymU1vLFuN3zWFiag)がありますので, これで遊んでみましょう.  
-![cu](https://lh3.googleusercontent.com/-XZB9bneydzc/VYYYnYiCM8I/AAAAAAAAE7I/gLL5BC4GtbQ/s800/schemeit-project.png)
+![cu](./schemeit-project.png)
 
 ### CSV形式のファイルを読み込む
 
@@ -151,7 +151,7 @@ plot '3_1_2.csv' using 1:2 with l title 'CH1', \
      '' using 1:3 with l title 'CH2'
 ```
 
-![rc](https://lh3.googleusercontent.com/-VRxQy1Miecs/VYYfTeT0lWI/AAAAAAAAE7Y/3iwvo3IzEl8/s800/rc-tran2.png)
+![rc](./rc-tran2.png)
 
 ## その他個人的によく使う機能
 
@@ -182,12 +182,12 @@ set xtics 1e-3
 
 のように指定します.
 
-![rc2](https://lh3.googleusercontent.com/-lqqwCDvAT-c/VYYk0wU24pI/AAAAAAAAE7o/J0mjTOH8Ong/s800/rc-tran.png)
+![rc2](./rc-tran.png)
 
 ### CSV形式のデータに対して演算を行う
 
 [以下のようなRCローパスフィルタ回路の実験をした時のデータ](https://drive.google.com/file/d/0B2w3TbN4IJZoUEloUHAwV2dZU1k/view?usp=sharing&resourcekey=0-OvvgvEbtye88yH_8-IpiYA)がありますので, 周波数特性のグラフを作成してみます.  
-![lpf](https://lh3.googleusercontent.com/-PYR-ShF1YcM/VYYp3G-TPuI/AAAAAAAAE74/GW9YmO3WxQQ/s800/New-Project.png)
+![lpf](./New-Project.png)
 
 CSV形式のデータに対して演算を行うには, `using ほげ:ふが`の部分を弄ってやります.  
 列の値は`$列番号`って感じで取得できますので, 電圧利得`|Gv| = 20 * log10(Vout / Vin) [dB]`は,
@@ -203,7 +203,7 @@ set logscale x
 ```
 
 でx軸を対数軸にして出力してやると...  
-![lpf](https://lh3.googleusercontent.com/-ppC9QaRRNsE/VYYzRjTSKRI/AAAAAAAAE8E/9jjxHPDgTm0/s800/rc-lpf.png)
+![lpf](./rc-lpf.png)
 
 ### グラフをなめらかにする
 
@@ -243,7 +243,7 @@ set output 'rc-lpf2.png'
 plot [] [:0] './lpf2.csv' using 1:(20*log10($3 / $2)) smooth bezier with l title 'Gv'
 ```
 
-![lpf2](https://lh3.googleusercontent.com/-7Q8ZQ0wppOY/VYY4K3Pa5wI/AAAAAAAAE8U/GEZ1pKQQuI4/s800/rc-lpf2.png)
+![lpf2](./rc-lpf2.png)
 
 ## おわり
 

@@ -77,7 +77,9 @@ $ sudo npm install socket.io
 </pre>
 <p>&nbsp;</p>
 <p>さて、今日書いたプログラムです。</p>
-<p><img src="https://lh3.googleusercontent.com/-PoZ-ymBXQN4/Ukk81_JSGnI/AAAAAAAACnU/FfGkx9Qeh3c/s640/Screenshot%2520from%25202013-09-30%252017%253A55%253A27.png" /></p>
+
+![](./Screenshot_from_2013-09-30_17:55:27.png)
+
 <p>ブラウザのフォームにテキストを入れてボタンを押すと、サーバーのlogにそのテキストが表示されます。</p>
 <p>また、フォームに「ping」と入力しボタンを押すと、サーバーが「pong」を返しフォームに表示させるようになってます。</p>
 <p>※エラー処理等、細かいことはあまり気にしてませんw</p>

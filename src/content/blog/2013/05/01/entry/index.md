@@ -8,12 +8,16 @@ tags:
 <p>どーもです～</p>
 <p>&nbsp;</p>
 <p>2013年4月のアクセス数ですが、</p>
-<p><img src="https://lh3.googleusercontent.com/-3KVTZdreAsw/UYDlF8-v52I/AAAAAAAAB_w/yDVPKn-nnig/s640/201304.png" /></p>
+
+![](./201304.png)
+
 <p><span style="font-size:36px;">10,000超えたwww</span></p>
 <p>&nbsp;</p>
 <p>とはいうものの、全然嬉しくないですね。</p>
 <p>記事別のアクセス数をみてみると、</p>
-<p><img src="https://lh4.googleusercontent.com/-JwpAAe1U0S4/UYDlcMPP2qI/AAAAAAAACAA/jFicZibNMNo/s640/content.png" /></p>
+
+![](./content.png)
+
 <p><a href="http://tosainu.wktk.so/view/266">スパムが来ている記事</a>のアクセス数が<span style="font-size:24px;">桁違いに多い</span></p>
 <p>&nbsp;</p>
 <p>スパム対策をしたものの、相変わらず当サイトへのアクセスは続いているようです。</p>
@@ -51,19 +55,25 @@ tags:
 <p>どんな盛り方を設定するものかわかったものの、<span style="color:red;">VID</span>がどのくらいか調べないと盛る量の検討がつきません。</p>
 <p>調べると、<a href="http://www.hwinfo.com/download64.html">「HWINFO64」</a>が便利そうです。</p>
 <p>ダウンロードし、Sensors-onlyのチェックを入れて起動するとこんなウィンドウが出てきます。</p>
-<p><img src="https://lh3.googleusercontent.com/-ek8rXrXmfmI/UYDlGJF-0BI/AAAAAAAAB_0/s6IrGbHaNfA/s640/hwinfo64.png" /></p>
+
+![](./hwinfo64.png)
+
 <p>Core #x VID ・・・のところがコアごとのVIDです。</p>
 <p>BCLK100MHZ、TurboRatio45の状態でOCCTをかけるとVIDは1.382[V]まで上昇しました。</p>
 <p>ということで今回は余裕を持たせ、VcoreをOffsetMode:+0.020[V]にしてみました。</p>
 <p>&nbsp;</p>
 <h3>結果</h3>
 <p><u>Prime95をかけてみたところ</u></p>
-<p><img src="https://lh6.googleusercontent.com/-1MeUWNSrcCA/UYDynBslRdI/AAAAAAAACAQ/6UjmydXxtAs/s640/full.png" /></p>
+
+![](./full.png)
+
 <p>4500MHzでのVIDである1.382[V]に確かに約0.02[V]盛られています。</p>
 <p>Maxが1.424[V]になっていますが、おそらくLLCが働いたのでしょう。</p>
 <p>&nbsp;</p>
 <p><u>アイドル</u></p>
-<p><img src="https://lh6.googleusercontent.com/-81aFihsGa7I/UYDyna7I81I/AAAAAAAACAU/Kd711y6vgYo/s640/idle.png" /></p>
+
+![](./idle.png)
+
 <p><span style="font-size:24px;">キター</span></p>
 <p>ちゃんと電圧が下がっています！</p>
 <p>また、アイドルでのCPU温度は5度くらい下がりました♪</p>

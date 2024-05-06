@@ -19,7 +19,8 @@ tags:
 手放したくないです、本当に。
 
 SIMがコレなので、おそらく新規契約になってしまうのかなぁ....  
-[![sim](https://lh6.googleusercontent.com/-4l4vwJR67bY/U0ELnxi1gTI/AAAAAAAADJw/TrB55kK-AH8/s400/IMG_1735.JPG "sim")](https://picasaweb.google.com/lh/photo/3jUuQkY97dJDqtAsCFx1XNMTjNZETYmyPJy0liipFm0?feat=directlink "sim")
+
+![sim](./IMG_1735.JPG "sim")
 
 このSIM使えば、Softbankの2つ折り携帯用プランが適用されて、ほとんど電話代だけの通信が可能になるのですが。
 

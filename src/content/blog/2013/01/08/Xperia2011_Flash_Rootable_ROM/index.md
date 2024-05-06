@@ -39,10 +39,10 @@ Flashtoolを起動します.
 64bit版Windowsを使っている方は必ずFlashtool64を起動してください. (ついでに64bitJavaも必要です)
 
 左上の雷マークをクリック. Mode Selectorが出てくるのでFlashmodeを選択してOKをクリック.  
-![flashtool](https://lh5.googleusercontent.com/-NCeRlROUYvI/UAgpJGL4r0I/AAAAAAAACRQ/IBr4fpKcxps/s640/flash001.jpg)
+![flashtool](./flash001.jpg)
 
 先ほど追加したファームを選択してOKをクリック. 今回はSO-01cです.  
-![selectfirm](https://lh4.googleusercontent.com/-QxghU45LqCE/UAgonUOi7EI/AAAAAAAACRQ/1ux5VLFrWuE/s640/flash002.png)
+![selectfirm](./flash002.png)
 
 あとは画面の指示に従ってファームウェアを書き込みます.  
 Xperia Arcは電源を切った状態でBackボタンを押しながらPCに接続します. 書き込みが始まるまで(下のインジケータが動き始めるまで)はBackボタンは離してはいけません.

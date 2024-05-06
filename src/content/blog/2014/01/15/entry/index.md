@@ -31,7 +31,9 @@ VAIO ZにArch Linuxを入れて幸せなのですが、
 
 ## 動作モードの変更
 
-<img src="https://lh6.googleusercontent.com/-smQYlaCva2I/UtVUmz7NAmI/AAAAAAAAC68/Cpe3iXQnlh4/s640/Untitled.png" />
+
+![](./Untitled.png)
+
 
 Windowsの付属ソフトに「VAIO Control Center」ってのがありますが、その中の設定項目である電源オプションの設定は
 

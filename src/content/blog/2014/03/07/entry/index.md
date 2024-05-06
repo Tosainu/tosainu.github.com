@@ -6,9 +6,13 @@ tags:
 ---
 どーもです。
 
-<img src="https://lh5.googleusercontent.com/-XoKivWIxV-E/UxlZ2n5NcBI/AAAAAAAADBo/889Z-pZBzoI/s640/IMG_1631.JPG" />
 
-<img src="https://lh4.googleusercontent.com/-FijF9e1kEAw/UxlZ1-Dv3PI/AAAAAAAADBs/jEuuzZ2dooA/s640/IMG_1632.JPG" />
+![](./IMG_1631.JPG)
+
+
+
+![](./IMG_1632.JPG)
+
 
 はい、買ってしまいました。
 
@@ -53,9 +57,13 @@ tags:
 ## 大きさ
 並べてみるとこんな感じです。
 
-<img src="https://lh3.googleusercontent.com/-H5O219_iTb8/UxlgFrA3WcI/AAAAAAAADC8/Fho6XuWVX_o/s640/IMG_1647.JPG" />
 
-<img src="https://lh3.googleusercontent.com/-FFPyzXu2m8U/UxlgUaKgqFI/AAAAAAAADDI/-hBoEkBqL5E/s640/IMG_1648.JPG" />
+![](./IMG_1647.JPG)
+
+
+
+![](./IMG_1648.JPG)
+
 
 若干小さくなったかな〜って感じです。
 
@@ -70,13 +78,19 @@ Corsairケースで失敗したせいもあって、僕がケースを選ぶと�
 
 見てくださいこの厚さの違い！丈夫さが全然違います。
 
-<img src="https://lh4.googleusercontent.com/-lQ00IRfAIwg/UxlgF2H_IbI/AAAAAAAADDA/4dSMwp3wPLA/s640/IMG_1646.JPG" />
 
-<img src="https://lh3.googleusercontent.com/-vsBALNiZ9kE/UxlgE9iOy5I/AAAAAAAADCw/8dJwC0zfXdU/s640/IMG_1645.JPG" />
+![](./IMG_1646.JPG)
+
+
+
+![](./IMG_1645.JPG)
+
 
 そして何よりベイ自体の丈夫さ。
 
-<img src="https://lh5.googleusercontent.com/--RsFqD_rkv0/UxlgXPGPd6I/AAAAAAAADDQ/xVaAret4LVA/s640/IMG_1649.JPG" />
+
+![](./IMG_1649.JPG)
+
 
 Corsairのケースでは配置が変更できる分、マウンタは購入時から平行四辺形です。
 
@@ -84,7 +98,9 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 それに対してAntec P100、見ての通り丈夫な作りをしています。
 
-<img src="https://lh3.googleusercontent.com/-Ogw0EukcURs/UxlaNGTx2rI/AAAAAAAADCE/dP2ecK1_KM0/s640/IMG_1637.JPG" />
+
+![](./IMG_1637.JPG)
+
 
 トレイが「カシャッ」としっかり固定されるのもびっくりしました。
 
@@ -97,13 +113,19 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 すごく静かです。
 
-<img src="https://lh6.googleusercontent.com/-CimvKES9jkU/UxlaKp9WFgI/AAAAAAAADB0/xOIsifRV6Mc/s640/IMG_1640.JPG" />
+
+![](./IMG_1640.JPG)
+
 
 電源を設置する場所に張り付けられたゴムシート、HDDマウンタに付いた丈夫なゴム、そして丈夫な足、ケース側面に貼られたスポンジなど、防音のための機構がいくつもありいい感じです。
 
-<img src="https://lh6.googleusercontent.com/-7hk661RAqJQ/UxladR0fR8I/AAAAAAAADCU/anqRJi7_zSs/s640/IMG_1642.JPG" />
 
-<img src="https://lh5.googleusercontent.com/-JyM6dG-JIRI/UxlacEOLFaI/AAAAAAAADCM/hzBrroZ-N08/s640/IMG_1641.JPG" />
+![](./IMG_1642.JPG)
+
+
+
+![](./IMG_1641.JPG)
+
 
 &nbsp;
 
@@ -114,9 +136,13 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 可動部分が多かったり凸凹が多いと、その部分にホコリ等が溜ってしまうじゃないですか。あれがどうしても許せなかったんです。
 
-<img src="https://lh5.googleusercontent.com/-7ghQ34cIZnw/UxlZ0QSuc7I/AAAAAAAADBc/ceabgsSs61M/s640/IMG_1633.JPG" />
 
-<img src="https://lh6.googleusercontent.com/-WXZjVspfqZ4/UxlaLxB9amI/AAAAAAAADB8/CCk6LGV94r4/s640/IMG_1634.JPG" />
+![](./IMG_1633.JPG)
+
+
+
+![](./IMG_1634.JPG)
+
 
 &nbsp;
 
@@ -127,15 +153,21 @@ Corsairのケースでは配置が変更できる分、マウンタは購入時�
 
 P100の一目見て極性のわかるケーブルには涙が出そうになりました。
 
-<img src="https://lh3.googleusercontent.com/-tgXncYV6OTE/UxlJ5hAzE9I/AAAAAAAADAA/RWGVybqtP6c/s640/IMG_1607.JPG" />
+
+![](./IMG_1607.JPG)
+
 
 ほか、フロントIOのオーディオケーブルがHD AudioとAC'97の両対応だったり、USB3.0と2.0両対応だったりと、旧世代パーツにも何気に対応していて驚きました。
 
-<img src="https://lh5.googleusercontent.com/-TTBwGeaw1fk/UxlKFmvlT7I/AAAAAAAADAI/uv7CZ95jhOU/s640/IMG_1613.JPG" />
+
+![](./IMG_1613.JPG)
+
 
 裏のスペースも結構広く、余裕を持った裏配線ができると思います。
 
-<img src="https://lh6.googleusercontent.com/-sTMBbusl0M4/UxlKJlNqXdI/AAAAAAAADAQ/4sP_Ud31CM0/s640/IMG_1625.JPG" />
+
+![](./IMG_1625.JPG)
+
 
 &nbsp;
 
@@ -149,7 +181,9 @@ P100の一目見て極性のわかるケーブルには涙が出そうになり�
 ### ネジがわかりにくい
 取説の記述もなく迷いました。忘備録も兼ねてメモしておきます。
 
-<img src="https://lh4.googleusercontent.com/-WIFbzKUjLtI/UxlR8d0RDnI/AAAAAAAADBI/GK6ZIJb4k5o/s640/IMG_1609.JPG" />
+
+![](./IMG_1609.JPG)
+
 
 左から、
 

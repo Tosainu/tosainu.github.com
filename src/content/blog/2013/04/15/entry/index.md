@@ -85,9 +85,15 @@ tags:
  </tr>
 </table>
 <p>&nbsp;</p>
-<p><img src="https://lh4.googleusercontent.com/-Vj8H0AqZSY4/UWvLHY6_zaI/AAAAAAAAB8o/XPy8YRcw0oU/s640/wei.png" /></p>
-<p><img src="https://lh4.googleusercontent.com/-xq6fa5q-M7c/UWvLJif2SWI/AAAAAAAAB8w/IFqhxa2Jyq4/s640/wei.png" /></p>
-<p><img src="https://lh3.googleusercontent.com/-Psy1t2o6SlI/UWvLTooRoBI/AAAAAAAAB9I/ZV6ljFtZv9A/s640/wei.png" /></p>
+
+![](./wei_2.png)
+
+
+![](./wei_3.png)
+
+
+![](./wei.png)
+
 <p>&nbsp;</p>
 <h3>CINEBENCH 11.5</h3>
 <table>
@@ -113,9 +119,15 @@ tags:
  </tr>
 </table>
 <p>&nbsp;</p>
-<p><img src="https://lh4.googleusercontent.com/-W1Ra-tJrkO0/UWvLQmeOdwI/AAAAAAAAB84/xeJltDxWbvc/s640/cinebench.png" /></p>
-<p><img src="https://lh3.googleusercontent.com/-gZanp5aMEqw/UWvLSyAYL1I/AAAAAAAAB9A/IdhmYysPOa4/s640/cine.png" /></p>
-<p><img src="https://lh6.googleusercontent.com/--VLNKdblLxc/UWvLU6EHrAI/AAAAAAAAB9Q/yMAwHXGNRkI/s640/cine.png" /></p>
+
+![](./cinebench.png)
+
+
+![](./cine.png)
+
+
+![](./cine_2.png)
+
 <p>&nbsp;</p>
 <h3>3DMark Vantage</h3>
 <table>

@@ -10,5 +10,7 @@ noindex: true
 <p>まだURLの調整が終わっていおらず、今までのサイトにアクセスされてしまうことがあるようですが、</p>
 <p>これからもよろしくお願いします。</p>
 <p>&nbsp;</p>
-<p><img src="https://lh4.googleusercontent.com/-ITq_zvhg-kQ/UVOgYsTCb0I/AAAAAAAABzM/qBGr16mcVVE/s640/Screenshot%2520from%25202013-03-26%252019%253A04%253A30.png" /></p>
+
+![](./Screenshot_from_2013-03-26_19:04:30.png)
+
 <p>でけぇ</p>

@@ -3,12 +3,16 @@ title: 悟り
 date: 2013-03-23 13:27:14+0900
 noindex: true
 ---
-<p><img src="https://lh6.googleusercontent.com/-Cf5yznWwcGg/UU0rmb_7HgI/AAAAAAAABxc/yIAhIBnuvjg/s640/IMG_0313.JPG" /></p>
+
+![](./IMG_0313.JPG)
+
 <p>これ今日の昼食なんだけど、たぶん今までで一番きれいなビッグマックだとおもう。</p>
 <p>全国のマクドナルド厨房の人はせめてこれを目指すんだ！！</p>
 <p>&nbsp;</p>
 <p>ニコ動のタグに時々？</p>
-<p><img src="https://lh3.googleusercontent.com/-RiRdZfZdxII/UU0ttl3PCWI/AAAAAAAABxk/TL5YdNF-4T0/s800/Screenshot%2520from%25202013-03-23%252013%253A16%253A14.png" height="90" width="159" /></p>
+
+![](./Screenshot_from_2013-03-23_13:16:14.png)
+
 <p>こんなのがあるんだけど、どうしても気になったので調べてみただけ。</p>
 <p>&nbsp;</p>
 <p>参考</p>

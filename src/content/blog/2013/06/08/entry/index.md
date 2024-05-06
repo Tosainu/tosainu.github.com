@@ -4,7 +4,9 @@ date: 2013-06-08 16:24:39+0900
 noindex: true
 ---
 <p><span style="font-size:36px;">アツイー</span></p>
-<img src="https://lh6.googleusercontent.com/-uGtXi2shwDQ/UbLSuAtLGdI/AAAAAAAACNQ/iXNvZHqkDiU/s640/IMG_0574.JPG" />
+
+![](./IMG_0574.JPG)
+
 <p>暑いです。</p>
 <p>&nbsp;</p>
 <p>200w（3930k@4.6GHz）+150w（660ti）の熱源とガンガン当たる西日のおかげで、</p>
@@ -25,7 +27,9 @@ noindex: true
 <p>以前からちまちま進めてきたGTASAですが、</p>
 <p>とうとう<span style="font-size:24px;">ラストミッション直前</span>まで行きました！</p>
 <p>&nbsp;</p>
-<p><img src="https://lh3.googleusercontent.com/-kyHjMd3cyCE/UbLarPckgZI/AAAAAAAACNg/OBKVy5OFpF4/s640/gta_sa%25202013-06-08%252013-56-29-20.png" /></p>
+
+![](./gta_sa_2013-06-08_13-56-29-20.png)
+
 <p>縄張が足りないとかでクリアはまだ先になりそうですが。</p>
 <p>&nbsp;</p>
 <p>抗争起こすのって大変なんですよね。</p>

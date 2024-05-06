@@ -17,28 +17,38 @@ tags:
 <p>オーバークロック自体はかなり前からやっていたし、（ソケ478の北森pen4とか939のあちゅろんとか）</p>
 <p>3930kのオーバークロック自体は組んでからもちょくちょくAI Suiteから試していましたが、</p>
 <p>なかなか上手く回ってくれず4500MHz止まりだったんです。</p>
-<p><img src="https://lh5.googleusercontent.com/-hurYFkX2ios/UT0joYRKdFI/AAAAAAAABoE/M9jRYfnJJMQ/s800/4500.png" height="411" width="416" /></p>
+
+![](./4500.png)
+
 <p>&nbsp;</p>
 <p>2月になってAI Suiteがなんかいろいろ調子悪くなってアンインストールしてからは遊んでなかったけれども、</p>
 <p>昨日はBIOSから設定を見直しながら再挑戦。</p>
 <p>&nbsp;</p>
 <p>そして・・・</p>
-<p><img src="https://lh6.googleusercontent.com/--AOkGzmB9Xg/UT0jqNLgOHI/AAAAAAAABoU/SxdF2PbUkhA/s800/4600.png" height="414" width="417" /></p>
+
+![](./4600.png)
+
 <p><span style="font-size:36px;">4600キター</span></p>
 <p>&nbsp;</p>
 <p>まだ盛れる・・・エイっ</p>
-<p><img src="https://lh3.googleusercontent.com/-TgX4SvrMglA/UT0jrF9hGJI/AAAAAAAABoc/cstv4CRK3-s/s800/4700.png" height="414" width="417" /></p>
+
+![](./4700.png)
+
 <p><span style="font-size:36px;">4700キィ゛ェア゛アアアタアアア</span></p>
 <p>&nbsp;</p>
 <p>余裕でベンチが回るくらい安定しています。</p>
 <p>&nbsp;</p>
 <p>流行ってるゲームのベンチって何だろ？という理由で始めたFFXIVベンチ（Low）</p>
 <p>定格では8422でした。</p>
-<p><img src="https://lh6.googleusercontent.com/-uI8caUYIwIA/UT0maFHYalI/AAAAAAAABpM/9NvLlGxiVyE/s640/FFXIV%2520Bench%252020130103.png" /></p>
+
+![](./FFXIV_Bench_20130103.png)
+
 <p>これなら10000目指せるんじゃね？と思い、以前からそれを目標にいろいろ粘っていました。</p>
 <p>&nbsp;</p>
 <p>4700が回った状態でさらにAfterburnerでグラボも盛ってやり・・・</p>
-<p><img src="https://lh6.googleusercontent.com/-LPtIIbrEQv4/UT0j31wB0EI/AAAAAAAABpE/iEn8OO9R3RQ/s640/ffbenchlow%25209957%252020130310.png" /></p>
+
+![](./ffbenchlow_9957_20130310.png)
+
 <p><span style="font-size:36px;">9957達成！</span></p>
 <p>&nbsp;</p>
 <p>もう少し、あと少し・・・・</p>

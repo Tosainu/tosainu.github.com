@@ -48,16 +48,16 @@ RTMを使うことでSlack上で起きた出来事をリアルタイムで取得
 今回作成するBot用のユーザを追加します.
 
 [Build Your Own | Slack](https://slack.com/apps/build)を開き, 右側の**Make a Custom Integration**ボタンをクリックします.  
-![custom integratioon](https://lh3.googleusercontent.com/-Sxa9w1uvrHo/VqQ_9dhamrI/AAAAAAAAF3s/1sZ7DV8R1hA/s800-Ic42/2016-01-24-114429_1920x1080_scrot.png)
+![custom integratioon](./2016-01-24-114429_1920x1080_scrot.png)
 
 追加したいチームのBuild a Custom Integrationページに移動したら, **Bots**を選択.  
-![make bot](https://lh3.googleusercontent.com/-nM0fG2rMQoI/VqQ_9dI2L5I/AAAAAAAAF34/TccwmkxdEXY/s640-Ic42/2016-01-24-114447_1920x1080_scrot.png)
+![make bot](./2016-01-24-114447_1920x1080_scrot.png)
 
 任意のUsernameを設定して完了です.  
-![username](https://lh3.googleusercontent.com/-ww7BaymaO1Q/VqRBVQTXbZI/AAAAAAAAF4I/JDrZTjgvB0Y/s640-Ic42/2016-01-24-114610_1920x1080_scrot.png)
+![username](./2016-01-24-114610_1920x1080_scrot.png)
 
 Integration Settingsの**API Token**を後で使うので控えておきます.  
-![token](https://lh3.googleusercontent.com/-law3zjyOKrA/VqQ_95TedcI/AAAAAAAAF30/ADnOK5nRJ5o/s640-Ic42/2016-01-24-114704_1920x1080_scrot.png)
+![token](./2016-01-24-114704_1920x1080_scrot.png)
 
 ## slack-ruby-clientでBotを書く
 
@@ -131,7 +131,7 @@ $ bundle exec ruby bot.rb
 某所Slackに **C++で困ったら誰かが教えてくれる場所** というチャンネルを立てたので, 他所のSlackで見たことのある見出し通りのBotがあると便利そうだなーと思っていたので作りました.  
 <https://gist.github.com/Tosainu/6b9eb76e56bdceaacb15>
 
-![slack](https://lh3.googleusercontent.com/-TZACTTl9x8U/VqQuqtcW7WI/AAAAAAAAF3E/S3TdUEotdig/s800-Ic42/2016-01-23-132924_1920x1080_scrot.png)
+![slack](./2016-01-23-132924_1920x1080_scrot.png)
 
 Bot宛のDM, もしくはBotを招待したチャンネルで
 

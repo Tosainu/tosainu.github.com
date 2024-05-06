@@ -46,7 +46,7 @@ tags:
 ### CWM recovery
 
 試しに、現在の状態をバックアップ/リストアしてみましょう.  
-![cwm](https://lh3.googleusercontent.com/-lZm7hroXGfE/UjMqehvBRTI/AAAAAAAACjk/_xawE2n_9nw/s640/IMG_0995.JPG)
+![cwm](./IMG_0995.JPG)
 
 音量上下キーで操作し, ホームが決定, 戻るで上のメニューに戻ります.  
 `backup and restore -> backup`でシステムのバックアップ, `backup and restore -> restore`を選び任意のバックアップファイルを選ぶことでリストアできます.

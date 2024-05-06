@@ -6,7 +6,9 @@ noindex: true
 <p>どーもです。</p>
 <p>&nbsp;</p>
 <p>お気に入りのゲームGTA SAの飛行機教習所？ミッションクリアしました〜</p>
-<p><img src="https://lh3.googleusercontent.com/-SACQAlBCyRU/UYuXBJ5LsJI/AAAAAAAACFE/__8YTTa6lNw/s640/gta_sa%25202013-05-09%252019-36-06-69.png" /></p>
+
+![](./gta_sa_2013-05-09_19-36-06-69.png)
+
 <p>（いろいろ突っ込まないでねww）</p>
 <p>なんか少し前に流行った厨二チックなポーズみたいですねwww</p>
 <p>キャプチャソフトのショートカットキーをctrl+F10にしているせいで、攻撃中のポーズになってしまいました。</p>
@@ -28,7 +30,9 @@ noindex: true
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>そうそう、新しいサイトデザインで使用する予定のヘッダー画像ができましたよ！</p>
-<p><img src="https://lh6.googleusercontent.com/-Lj6_ciMJZhg/UYuW-CkmfWI/AAAAAAAACE8/q4qkJ9JtLwc/s640/IMG_0128.jpg" /></p>
+
+![](./IMG_0128.jpg)
+
 <p>カメラ替えただけで結構イメージ変わりますね。（今のはDSC-W220、新画像はS110）</p>
 <p>シャープになった感じがします。</p>
 <p>&nbsp;</p>

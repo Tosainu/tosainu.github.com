@@ -60,13 +60,13 @@ ROMの解説をよく読むようにしましょう.
 
 主にゲーム等, 設定後と移行させる必要があるアプリのバックアップを行います.  
 [TitaniumBackup](https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup)使用すると便利でしょう.  
-![titanium](https://lh6.googleusercontent.com/-27-ErcCevCs/UjMpo6-flrI/AAAAAAAACjY/QqXMjmlp8ZI/s640/device-2013-09-14-000422.png)
+![titanium](./device-2013-09-14-000422.png)
 
 ### ROMのバックアップ
 
 CWMリカバリ等を使いROMごとバックアップを取ります.  
 カスタムROM導入に失敗した場合や気に入らなかった場合にすぐ戻せるようにするためです.  
-![bkup](https://lh3.googleusercontent.com/-lZm7hroXGfE/UjMqehvBRTI/AAAAAAAACjk/_xawE2n_9nw/s640/IMG_0995.JPG)
+![bkup](./IMG_0995.JPG)
 
 ### SIMを抜く (不正通信を防止するため)
 
@@ -85,7 +85,7 @@ GBカスタムROMなら公式GBファーム, ICS以降のカスタムROMなら�
 特にICS以降のカスタムROMでこのようなことが起きやすいので注意します.
 
 次に用意したカスタムカーネルを焼きます. 手順は前回のページを参考に.  
-![kernel](https://lh5.googleusercontent.com/-QO3rCaPuPE0/UjMwy8AyDbI/AAAAAAAACj0/EIjKMXR95nA/s640/IMG_0997.JPG)
+![kernel](./IMG_0997.JPG)
 
 カーネルを焼いたら, そのままCWMリカバリに入ります.  
 そうしたら
@@ -97,7 +97,7 @@ GBカスタムROMなら公式GBファーム, ICS以降のカスタムROMなら�
 5. format /system
 
 を実行します. (カスタムリカバリに項目がない場合はとばす)  
-![clean](https://lh5.googleusercontent.com/-W5UF5bGZxb8/UjMw19HaUhI/AAAAAAAACj8/wfRS8jhzDD8/s640/IMG_0998.JPG)
+![clean](./IMG_0998.JPG)
 
 次にダウンロードしたZIPを焼く作業に移ります.  
 今回のような場合は
@@ -106,21 +106,21 @@ GBカスタムROMなら公式GBファーム, ICS以降のカスタムROMなら�
 2. gapps(gapps-gb-20110828-signed.zip)
 
 の順番で焼きます.  
-![flash](https://lh6.googleusercontent.com/-FHMx9SSpz9Q/UjMxJgQQdMI/AAAAAAAACkU/iCmC3YnVVeI/s640/IMG_1000.JPG)
+![flash](./IMG_1000.JPG)
 
 焼き終わったら再起動です.
 
 初回起動は時間のかかる場合がありますが, 待ちましょう.  
 (さすがに10分以上かかっても起動しない場合は失敗している可能性があります)  
-![boot](https://lh6.googleusercontent.com/-O2s0A4CafHg/UjMxEwlnOVI/AAAAAAAACkM/DMmek-d-b_s/s640/IMG_1001.JPG)
+![boot](./IMG_1001.JPG)
 
 ### 焼き上がり✌('ω'✌ )三✌('ω')✌三( ✌'ω')✌
 
-![home](https://lh3.googleusercontent.com/-y_QnQXHl_Ic/UjMxN6BMrTI/AAAAAAAACkc/EFeDqPyFYm8/s640/IMG_1002.JPG)
+![home](./IMG_1002.JPG)
 
-![sysinfo](https://lh4.googleusercontent.com/-BNrf7PCGyTk/UjMzSi0imNI/AAAAAAAACkw/rL7gXEH-PDU/s640/screenshot-1379086754663.png)
+![sysinfo](./screenshot-1379086754663.png)
 
 あとは思いっきりカスタマイズしちゃってくださいw  
 ↓ネタで草書体フォントを設定した例  
-![sousho](https://lh6.googleusercontent.com/-WEb9a84Ve-Y/UjMyuMUSLfI/AAAAAAAACko/Ef4bihwBvMk/s640/screenshot-1347605209424.png)
+![sousho](./screenshot-1347605209424.png)
 

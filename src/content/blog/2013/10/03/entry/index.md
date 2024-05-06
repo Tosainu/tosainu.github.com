@@ -14,7 +14,9 @@ tags:
 <p>目玉機能の一つでもあるUSEフラグを「気持ち悪い」と言い出してしまう始末・・・</p>
 <p>&nbsp;</p>
 <p>ですが今回、うまく行ったのでメモも兼ねて記事にすることにしました。</p>
-<p><img src="https://lh6.googleusercontent.com/-nyejBa3nS9Y/Uk1pp6WhacI/AAAAAAAACos/3-FyYZ-0wHQ/s640/Screenshot%2520from%25202013-10-02%252009%253A34%253A11.png" /></p>
+
+![](./Screenshot_from_2013-10-02_09:34:11.png)
+
 <p>&nbsp;</p>
 <p>それではとさいぬのくだらないtweetとスクショと共にお楽しみくださいw</p>
 <p>また、この記事では「gentooのインストール方法」にはあまり触れませんのでご了承ください。</p>
@@ -33,7 +35,9 @@ tags:
 <p>ちょうど予備のHDDがすべて使用中だったため、Virtualboxで作成した仮想マシンにインストールしました。</p>
 <p>ホストはメイン機、OSはArch Linuxです。</p>
 <p>設定はこんなかんじです。</p>
-<p><img src="https://lh5.googleusercontent.com/-S-cwaB4FDwE/Uk1qMQ1y-PI/AAAAAAAACo0/zWfaPBf6pSE/s640/Screenshot%2520from%25202013-10-01%252022%253A27%253A43.png" /></p>
+
+![](./Screenshot_from_2013-10-01_22:27:43.png)
+
 <p>&nbsp;</p>
 <h2>GentooInstallBattle!</h2>
 <p>22:34頃、インストール開始</p>
@@ -133,8 +137,12 @@ MAKEOPTS="-j8"
 <p>&nbsp;</p>
 <h3>#GenTwooがすべてFailedになる</h3>
 <p>DASHBOARDを真っ紅に染め、さらに未だランキングに居座ってるアカウントはこちらになりますw</p>
-<p><img src="https://lh6.googleusercontent.com/-ExYmSaLO1E4/Uk12h3yRK8I/AAAAAAAACpM/VX2Cx-kxcqI/s640/Screenshot%2520from%25202013-10-03%252022%253A50%253A28.png" /></p>
-<p><img src="https://lh3.googleusercontent.com/-Ix4Qi0bcjPU/Uk12hkqruoI/AAAAAAAACpI/wRgqoGIWnh0/s800/Screenshot%2520from%25202013-10-03%252022%253A50%253A34.png" height="383" width="218" /></p>
+
+![](./Screenshot_from_2013-10-03_22:50:28.png)
+
+
+![](./Screenshot_from_2013-10-03_22:50:34.png)
+
 <p>原因は未だ把握できておりません</p>
 <p>誰か情報おねがいします・・・</p>
 <p>&nbsp;</p>

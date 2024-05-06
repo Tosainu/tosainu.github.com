@@ -5,7 +5,7 @@ tags:
   - Gochiusa
 ---
 
-![flag](https://lh3.googleusercontent.com/-fTCrPb7rNkI/Vy37V3nzgqI/AAAAAAAAGEs/eDBd046d-6wzfcXCvm_oldLezb_x9VHlgCCo/s640/IMG_3406.JPG)  
+![flag](./IMG_3406.JPG)  
 Rabbit House Tea Party 2016 お疲れ様でした!!!  
 こういったアニメのイベントに参加するのは初めてなのですが, 本当に最高な1日でした!!!
 
@@ -36,8 +36,8 @@ Rabbit House Tea Party 2016 お疲れ様でした!!!
 
 いろいろあって自分たちの前に並んでいた**イベントベテランのD氏**と仲良くなって, 以後T氏と合わせて3人で行動した. 偶然にも皆昼公演の座席の列がほとんど同じで, 特にD氏は僕のななめ後ろの席と近くて驚いた.  
 前日の物販と同様, 販売開始後しばらくして千夜ちゃんキーホルダーの売り切れのアナウンスがあったりしたけど, 気になっていたもの(下の画像+イベントバッグ)はすべて入手できてよかった. とはいえ, 物販を脱出できたのは 10:30 過ぎ. 実に4時間半以上並んでいたようだ. イベント慣れしてるD氏やT氏は元気そうだったけど, 僕はこの時点で結構つらかった...  
-![s1](https://lh3.googleusercontent.com/-MR7tj6gZvEw/Vy5zhDN9axI/AAAAAAAAGFU/mcF01L7G_t0UvntACQ2nhbRab05IF0f9gCCo/s640/IMG_3433.JPG)  
-![s2](https://lh3.googleusercontent.com/-34UE8wabclo/Vy4OVoVdMgI/AAAAAAAAGFE/jINTUKphsawHDKp0lwnH1gQ8bFljZnFagCCo/s640/IMG_3432.JPG)
+![s1](./IMG_3433.JPG)  
+![s2](./IMG_3432.JPG)
 
 ## 昼公演
 
@@ -59,13 +59,13 @@ Rabbit House Tea Party 2016 お疲れ様でした!!!
 <a data-flickr-embed="true" data-footer="true"  href="https://www.flickr.com/photos/tosainu/albums/72157667847131152" title="rabbit-house-tea-party-2016"><img src="https://farm8.staticflickr.com/7018/26845679786_cc3d9ab3b3_n.jpg" width="320" height="240" alt="rabbit-house-tea-party-2016"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 個人的には**ティッピータワー**が良かった. 会場のステンドグラス?とも合って綺麗だった.  
-![tippy](https://lh3.googleusercontent.com/-tmLeodUUM5Y/Vy6NZ7qhs5I/AAAAAAAAGGU/ppZj_-JifVoaP6nWh6jkZVL6BkLdy76iACCo/s640/IMG_3411.JPG)
+![tippy](./IMG_3411.JPG)
 
 **"魔法少女チノ" 等身大フィギュア**  
-![chino](https://lh3.googleusercontent.com/-6h5pWzvA5Rs/Vy6N0zyCuRI/AAAAAAAAGGQ/_4sH4qtztOoNJzu3cxfBijhh4iTDcH88gCCo/s640/IMG_3367.JPG)
+![chino](./IMG_3367.JPG)
 
 **佐倉綾音さんのサイン**  
-![ayaneru](https://lh3.googleusercontent.com/-nd8y2nfA1gs/Vy6NwByoeFI/AAAAAAAAGGM/aDkz61o8eNcslF93ga6D6z_fNACLwh0PgCCo/s640/IMG_3388.JPG)
+![ayaneru](./IMG_3388.JPG)
 
 ---
 

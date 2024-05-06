@@ -48,8 +48,12 @@ noindex: true
 元々、電子工作なども趣味でした。というよりも、電子の分野に興味を持ったのは小1の頃からなので、情報分野に興味を持った時期よりもうんと早いです。  
 中学校に入ったころには父親を何とか説得し名古屋の大須に出かけることができ、1万円近いパーツを買い込んだこともあります。 
 ここでつくろうとしていたのは"オーディオミキサ"。学校の行事で使おうと回路を色々調べて設計(というよりは既存回路図の組み合わせ)したのですが、結局学校の先生が某社製のPAをどこからか用意したおかげで結局現在でも未完成・放置状態です。  
-<img src="https://lh3.googleusercontent.com/-N7Tz1ro6PJU/Uzknub2csAI/AAAAAAAADIM/0zm9zLf3hnA/s640/IMG_1701.JPG" />  
-<img src="https://lh4.googleusercontent.com/-yPe49LJasnk/UzknuueQfnI/AAAAAAAADII/_OOmo9Ve1j4/s640/IMG_1703.JPG" />  
+
+![](./IMG_1701.JPG)
+
+
+![](./IMG_1703.JPG)
+
 ユニバーサル基板の裏側は酸化が既に進行し、半田の載りはもう最悪です。
 
 PCにももちろん興味がありましたが、プログラミングに初めて触れたのは中2のTNCT体験入学の時です。この時はまるで新しい世界を見つけたような感じでした。(大袈裟)  
@@ -73,8 +77,12 @@ PCにももちろん興味がありましたが、プログラミングに初め
 ## 寮はクソ
 学寮はクソです。大事なことなので何度も言います、寮はクソです。
 
-<img src="https://lh6.googleusercontent.com/-Qa4DkkFchss/Uzkn7wWleVI/AAAAAAAADIU/XRcduwBpzzE/s640/DSC06046.JPG" />  
-<img src="https://lh6.googleusercontent.com/-Q457-Gvv9zc/UzkoRC804DI/AAAAAAAADIc/AeqhHqjuYdU/s640/DSC06623.JPG" />
+
+![](./DSC06046.JPG)
+
+
+![](./DSC06623.JPG)
+
 
 っとまぁ、こんなふざけた写真は置いておいて、寮はクソです。
 
@@ -116,7 +124,9 @@ PCにももちろん興味がありましたが、プログラミングに初め
 この学校には転科という制度があります。一定の成績があり、且つ転科試験に合格すれば、2年時までは学科の変更が認められるというものです。
 
 僕はこれに2回の希望届を出しました。2年の1年目と2年目両方でです。  
-<img src="https://lh6.googleusercontent.com/-cfq012mdIdc/Uzll0t3GJtI/AAAAAAAADI0/QjNC3r07wCI/s640/IMG_1518.JPG" />
+
+![](./IMG_1518.JPG)
+
 
 しかしGPA(成績のABC判定を数値化したときの平均値)不足で転科の資格すらもらえませんでした。
 

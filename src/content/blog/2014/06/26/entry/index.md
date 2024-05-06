@@ -12,7 +12,7 @@ tags:
 [以前, uimの "vi-cooperative mode" を紹介しました.](http://tosainu.wktk.so/view/366 "uim")  
 しかし最近, 諸事情でQt5を扱っているのですが, なんとuimがまともにQt5をサポートしていない！！
 
-![segfault](https://lh5.googleusercontent.com/-Zf3MgXhQSTo/U6vk_7te0gI/AAAAAAAADWA/aw6WR-3yWwY/s800/2014-06-22-215946_3840x1080_scrot.png "segfault")  
+![segfault](./2014-06-22-215946_3840x1080_scrot.png "segfault")  
 uimの安定板にはQt5のサポートコードがまだ取り込まれておらず, また最新ブランチからビルドしてもQt5アプリをSegmentation Faultさせてしまう始末...
 
 ってことで, fcitx, そしてArch LinuxのCommunityレポジトリにも取り込まれたfcitx-mozcに移行することにしました.  
@@ -42,13 +42,13 @@ fcitx
 ## fcitxの設定
 
 通知領域のfcitxアイコンの右クリックで設定を開く  
-![menu](https://lh5.googleusercontent.com/-HV7goHkv-Mg/U6vxal0fppI/AAAAAAAADWc/_7Hcah7GLWs/s800/fcitxconf.png "menu")
+![menu](./fcitxconf.png "menu")
 
 デフォルトの入力言語が日本語入力なのは鬱陶しいので, mozcよりも上に適当なキーボードの設定を追加(僕は英字配列のキーボードを使っているのでEnglishにしました)  
-![kbd](https://lh4.googleusercontent.com/-TMArZ6jM1Vc/U6vxaoxCk0I/AAAAAAAADWk/qQtleyE4qsc/s640/fcitxconfpanel1.png "kbd")
+![kbd](./fcitxconfpanel1.png "kbd")
 
 Trigger Input Methodに日本語入力のON/OFFキーを設定  
-![trig](https://lh5.googleusercontent.com/-Vxxqd2v1cdg/U6vxapTrGhI/AAAAAAAADWg/tEnRnpeCXi0/s640/fcitxconfpanel2.png "trig")
+![trig](./fcitxconfpanel2.png "trig")
 
 ## Vimの設定(vi-cooperative modeもどき)
 

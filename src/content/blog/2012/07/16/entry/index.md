@@ -7,9 +7,17 @@ tags:
   - Xperia arc
 ---
 <p>昨日注文したXperia Arc</p>
-<p>なぜか今日の午前中に届いた</p><img src="https://lh4.googleusercontent.com/-hXcmfDGTZfo/UAP7NLTIMnI/AAAAAAAAAoA/rpc8BF35HXM/s288/DSC061362.jpg" height="216" width="288" /><br />Amazonさん早すぎるよ～ 嬉しいけど</p>
+<p>なぜか今日の午前中に届いた</p>
+
+![](./DSC061362.jpg)
+
+<p>Amazonさん早すぎるよ～ 嬉しいけど</p>
 <p>&nbsp;</p>
-<p>SIMフリー済みなので、ソフトバンクSIMを挿すとこのとおり<br /><img src="https://lh5.googleusercontent.com/-OebdSnBcu3M/UAP9KOP9twI/AAAAAAAAAoQ/p0Vb9deq_Rw/s640/screenshot_2012-07-16_2024.jpg" /><br />SoftBankなXperiaになってしまいました～</p>
+<p>SIMフリー済みなので、ソフトバンクSIMを挿すとこのとおり</p><
+
+![](./screenshot_2012-07-16_2024.jpg)
+
+<p>SoftBankなXperiaになってしまいました～</p>
 <p>&nbsp;</p>
 <p>只今いろいろ設定中</p>
 <p>1.ビルド番号4.0.1.C.1.9(Android2.3.4)の導入</p>

@@ -12,7 +12,7 @@ tags:
 そんなこともあり以前からVPSを検討していましたが, 主に資金面での問題やその他諸々で契約できずにいました.
 
 そんな中, 先週のOSC@Nagoyaで, なんとConoHa3,000分のクーポンを頂いてしまいまして...  
-![conoha](https://lh6.googleusercontent.com/-VnByMug8FYY/U8Jv_zwgXBI/AAAAAAAADaE/i59wdqiAE1E/s640/IMG_1970.JPG "conoha")
+![conoha](./IMG_1970.JPG "conoha")
 
 "これは申し込まなきゃいけないッ" ってことでConoHaはじめました.
 

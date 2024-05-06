@@ -11,7 +11,7 @@ date: 2014-07-19 00:00:00+0900
 
 さて, 僕の部屋にも17型のCRTがありました. Windows95が入ったPCを友人氏からもらった時についてきたやつです.  
 以前はメインのモニタとしてこのCRTを使っていましたが, [昨年液晶ディスプレイを買って](http://tosainu.wktk.so/view/270)以来はただ邪魔な置物と化していました.  
-![crt](https://lh5.googleusercontent.com/-654PjvoAgmI/U8odP8oXChI/AAAAAAAADbQ/l_sTAA1vDRs/s640/IMG_1976.JPG)
+![crt](./IMG_1976.JPG)
 
 何とか処分できないものかと探していると, [パソコンファーム](http://www.highbridge-computer.jp/recycle/)なる業者さんを発見, しかも期間限定企画で**対象製品が1つあれば送料無料**なんて凄いことをやってるじゃありませんか!!  
 ってことで早速お願いしてきました.
@@ -20,10 +20,10 @@ date: 2014-07-19 00:00:00+0900
 
 今回の企画では対象となる製品が1台以上含まれていないといけないようです.  
 そこで, 電源周りが逝ったのか起動後しばらくすると落ちてしまうようになってしまった白VAIOたん(VGN-CR52B),  
-![vaio](https://lh3.googleusercontent.com/-cyQjqiOfils/U8odP6plcwI/AAAAAAAADbU/HM09iSLm7q0/s640/IMG_1978.JPG)
+![vaio](./IMG_1978.JPG)
 
 そして使い道もなくジャンク屋で買ってしまった天板がパカパカのHP製ノート(通称: ヒューレット**パッカーン**ド)  
-![hp](https://lh6.googleusercontent.com/-7RF5FvtbDAk/U8odP1w0NTI/AAAAAAAADbY/t_2UGyFBgpM/s640/IMG_1981.JPG)
+![hp](./IMG_1981.JPG)
 
 その他CPUクーラー数個と[315円のDVDプレイヤー](http://tosainu.wktk.so/view/198)一緒に送ることにしました.
 

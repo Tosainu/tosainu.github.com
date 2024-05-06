@@ -60,7 +60,7 @@ private:
 
 まず, C/C++のソースファイルを **ビルド** して実行ファイルが出来上がるまでの過程を再確認しておきましょう.  
 この **ビルド** と呼ばれる過程を簡単な図にすると以下のようになります.  
-![build](https://lh3.googleusercontent.com/-XJZrQi6qhPI/VnP_dDGsjuI/AAAAAAAAFug/fpETx4e8SHU/s800-Ic42/build.png)
+![build](./build.png)
 
 ソースファイルはまず **プリプロセッサ** によるコンパイル前の準備を受けます.  
 ここでは今回扱う`#define`をはじめ, `#include`や`#ifdef`といった`#`で始まる **プリプロセッサ命令** が処理されます.  

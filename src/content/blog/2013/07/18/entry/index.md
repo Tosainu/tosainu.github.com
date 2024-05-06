@@ -6,13 +6,19 @@ noindex: true
 <p>どーもです。</p>
 <p>&nbsp;</p>
 <p>GTASAに続き、GTAIVをちまちまプレイ中です。</p>
-<p><img src="https://lh3.googleusercontent.com/-p-NeWyacZGw/Uefj9bbK2gI/AAAAAAAACbw/c6t8clUg_Gs/s640/GTAIV%25202013-07-14%252014-45-16-29.png" /></p>
-<p><img src="https://lh4.googleusercontent.com/-3GD_PD_i1NI/UefkHGcEeYI/AAAAAAAACb4/2tA-zLF9crs/s640/GTAIV%25202013-07-18%252021-17-04-89.png" /></p>
+
+![](./GTAIV_2013-07-14_14-45-16-29.png)
+
+
+![](./GTAIV_2013-07-18_21-17-04-89.png)
+
 <p>さっき銀行強盗ミッションをやっとクリアしたところです。</p>
 <p>いやぁ、大変だった。</p>
 <p>&nbsp;</p>
 <p>さて、僕は安さにつられてGTAIVをSteamで買いました。</p>
-<p><img src="https://lh6.googleusercontent.com/-GUBoxVbBFWM/UefmqA7CXtI/AAAAAAAACcI/bqNDnL6Ao1U/s640/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25201.png" /></p>
+
+![](./E5908DE7A7B0E69CAAE8A8ADE5AE9A_1.png)
+
 <p>ですが、Mod追加等でちょっと戸惑ったので、メモしておきます。</p>
 <p>&nbsp;</p>
 <h3>まず・・・</h3>
@@ -30,7 +36,9 @@ noindex: true
 <p>&nbsp;</p>
 <p>解凍した中にある<span style="color:red;">xlive.dll</span>をGTAIVのインストールフォルダに突っ込みます。</p>
 <p>ほかのファイルは入れてはいけません。</p>
-<p><img src="https://lh5.googleusercontent.com/-buqZd-meCZo/Uefr8Ww8lrI/AAAAAAAACcc/sdovdQIRa5s/s640/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25202.png" /></p>
+
+![](./E5908DE7A7B0E69CAAE8A8ADE5AE9A_2.png)
+
 <p>GTAIVのインストール先ですが、Steamをインストールしたフォルダの中にあります。</p>
 <p>インストール先を自分で変えていなければここ↓にあるはずです。</p>
 <p>C:\Program Files (x86)\Steam\SteamApps\common\Grand Theft Auto IV\GTAIV</p>
@@ -59,9 +67,13 @@ noindex: true
 <p>64bit：HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Rockstar Games\Grand Theft Auto IV</p>
 <p>32bit：HKEY_LOCAL_MACHINE\SOFTWARE\Rockstar Games\Grand Theft Auto IV</p>
 <p>を開き、</p>
-<p><img src="https://lh4.googleusercontent.com/-bG0FtmtqrM4/UefxH151cdI/AAAAAAAACc0/ckxmefW4zP4/s640/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25203.png" /></p>
+
+![](./E5908DE7A7B0E69CAAE8A8ADE5AE9A_3.png)
+
 <p>右クリックで新規→文字列値</p>
-<p><img src="https://lh3.googleusercontent.com/-qyOLGCK_j0c/UefxH1YsnoI/AAAAAAAACcw/f1vI2I2a1Eo/s640/%25E5%2590%258D%25E7%25A7%25B0%25E6%259C%25AA%25E8%25A8%25AD%25E5%25AE%259A%25204.png" /></p>
+
+![](./E5908DE7A7B0E69CAAE8A8ADE5AE9A_4.png)
+
 <p>名前をINSTALL_LANG、値を1041にします。</p>
 <p>&nbsp;</p>
 <p>これで文字化けは解消されたはずです。</p>
@@ -72,7 +84,9 @@ noindex: true
 <p>&nbsp;</p>
 <h3>Speedometer IVの導入</h3>
 <p>スピードメーターです。なぜか入れたくなるんですよねぇ・・・</p>
-<p><img src="https://lh4.googleusercontent.com/-9tx7Diw9x6c/Uefz9rriQ8I/AAAAAAAACdE/FYfWmaHm9O0/s640/GTAIV%25202013-07-14%252014-45-16-29.png" /></p>
+
+![](./GTAIV_2013-07-14_14-45-16-29_2.png)
+
 <p>&nbsp;</p>
 <p>これと</p>
 <p><a href="http://www.gtaforums.com/index.php?showtopic=420021">GTAForums.com -> [WIP|SCR|IV] Speedometer IV</a></p>
@@ -95,6 +109,8 @@ noindex: true
 <p>&nbsp;</p>
 <p>それにしてもMod入れにくくなりましたね。</p>
 <p>一度試しにレミリアスキンModを入れてみましたが・・・面倒すぎです。</p>
-<p><img src="https://lh6.googleusercontent.com/-q2gKPKbzQzU/Uef4akqYT0I/AAAAAAAACdU/sLVoVKKu8ZU/s640/GTAIV%25202013-05-18%252012-35-45-02.png" /></p>
+
+![](./GTAIV_2013-05-18_12-35-45-02.png)
+
 <p>&nbsp;</p>
 <p>ではでは～</p>

@@ -10,7 +10,9 @@ noindex: true
 <p>うん、何がしたかったんだろうね。</p>
 <p>&nbsp;</p>
 <p>そして、うｐ早々</p>
-<p><img src="https://lh5.googleusercontent.com/-xwYy-MStC6Y/UUpZw5jzC8I/AAAAAAAABxI/uVdTR__RKrU/s800/nico.png" height="140" width="400" /></p>
+
+![](./nico.png)
+
 <p>このタグ付いちゃったよww</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

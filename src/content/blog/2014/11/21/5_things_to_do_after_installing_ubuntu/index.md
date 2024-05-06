@@ -19,7 +19,7 @@ tags:
 
 ## 5位: Chromium
 
-![chromium](https://lh6.googleusercontent.com/-W8UARVzo6no/VG8_t5AjayI/AAAAAAAADrE/6grqSKAXX74/s800/Chromium_11_Logo.png)
+![chromium](./Chromium_11_Logo.png)
 
 ブラウザは重要ですよね. せっかく新しくUbuntuを入れたにもかかわらず, 何をしてよいのかをググることができませんからね.
 
@@ -31,7 +31,7 @@ Chromiumは, あの有名なGoogle ChromeのOpensource版です. 名前は違い
 
 ## 4位: LibreOffice
 
-![LibreOffice](https://lh4.googleusercontent.com/-rJW_jhsr8II/VG8_t7HZNFI/AAAAAAAADq4/xQv7q9frxdU/s800/LibreOffice_external_logo.png)
+![LibreOffice](./LibreOffice_external_logo.png)
 
 いわゆる互換オフィスとか呼ばれることもあるソフトです. もしかしたらWindowsでも使っていたことのある方は多いんじゃないでしょうか.
 
@@ -41,7 +41,7 @@ Chromiumは, あの有名なGoogle ChromeのOpensource版です. 名前は違い
 
 ## 3位: Vim
 
-![Vim](https://lh3.googleusercontent.com/-8ipYL9SCy08/VG8_urwZKrI/AAAAAAAADrM/st4cfjo5Qs0/s800/Vimlogo.png)
+![Vim](./Vimlogo.png)
 
 Ubuntu入れたらなんかプログラミングしたくなった!! とかはよくありますよね.  
 そうでなくても, 設定ファイルの編集なんかで "一番いいエディタを頼む" なんて状況には絶対に遭遇すると思います.
@@ -53,7 +53,7 @@ Ubuntu入れたらなんかプログラミングしたくなった!! とかは�
 
 ## 2位: mari0
 
-![mari0](https://lh6.googleusercontent.com/-rWfj2Mrey9g/VG8_t_tLkiI/AAAAAAAADq8/xAmao6IWmsE/s800/Mari0_video_game_logo.png)
+![mari0](./Mari0_video_game_logo.png)
 
 やっぱりゲームしたくなりますよね.  
 よく "Linuxにはゲームが無い" とか言われたりしますが, そんなことはないです.
@@ -66,7 +66,7 @@ mari0は, 某社のマリ○に似せたゲームです.
 
 ## 1位: Wine
 
-![wine](https://lh5.googleusercontent.com/-CAQilpWhnNQ/VG8_u95G54I/AAAAAAAADrQ/9ipYz7PGFWo/s800/WINE-Logo.png)
+![wine](./WINE-Logo.png)
 
 さて, Linuxにもゲームがあることはわかっていただけたと思います.
 

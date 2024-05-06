@@ -9,7 +9,7 @@ GWですね。
 まぁ、4日しかないんでWeekと呼んでいいのかは非常にアレなんですが。
 
 やる事といえばもちろんコレでしょう。  
-![C++](https://lh6.googleusercontent.com/-Sw7aRfts3Io/U2UBJGGgfII/AAAAAAAADNM/Krtl6Bb7Chw/s640/IMG_1801.JPG "C++")
+![C++](./IMG_1801.JPG "C++")
 
 ウチの学校の図書館で見つけたので、早速借りてきました。  
 ウチの学校の図書館は2000年以前のJavaの本ばっかりしかない印象だったのですが、よく探してみるとEffective C++やEffective STLも最新巻ではありませんでしたが置いてありましたし、C++以外の言語では意外とHaskell本があったのが驚きです。しかも英語版のOreilly本ww  

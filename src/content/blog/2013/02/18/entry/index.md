@@ -24,19 +24,25 @@ noindex: true
 <p><a href="http://www.million-dollar-pc.com/">Million Dollar PC</a>に載せるようなものを目指してはないですが、ただ組んだだけってのは自作erとは呼べないと思ってます。</p>
 <p>とりあえず、ファンの載せ替えとファンコン導入を計画しています。</p>
 <p>ファンコンは既に購入済です。</p>
-<p><img src="https://lh6.googleusercontent.com/-Au87XeUcfUc/USD_xec8BqI/AAAAAAAABF0/yuYr6bfHTo4/s640/DSC07071.JPG" /></p>
+
+![](./DSC07071.JPG)
+
 <p><span style="font-size:24px;">風マスターPRO ACE</span>です。</p>
 <p>もう生産中止となっていて、探すのが大変でしたが、</p>
 <p>1's PCのアウトレットで2900円という価格で購入できました。</p>
 <p>ただの風マスターPROを買うよりも安いですね。ラッキー</p>
 <p>&nbsp;</p>
 <h3>Arduino UNOを拾った（笑）</h3>
-<p><img src="https://lh4.googleusercontent.com/-3_Gfuzz0u0o/USD_zuExA-I/AAAAAAAABF8/EeqWXt7dI9E/s640/DSC07072.JPG" /></p>
+
+![](./DSC07072.JPG)
+
 <p>何でも落ちている僕の学校です。もちろん動作しました。</p>
 <p>以前から興味があったデバイスなので、ちょっと触れてみようと思います。</p>
 <p>&nbsp;</p>
 <h3>ペリア関係の記事まとめるよ〜</h3>
-<p><img src="https://lh3.googleusercontent.com/-p2k5aHoZezo/USD_4uHMJeI/AAAAAAAABGM/jTDrFnF7XFc/s640/DSC07073.JPG" /></p>
+
+![](./DSC07073.JPG)
+
 <p>この週末勉強の他に何をやっていたかというと、</p>
 <p>先日の記事に書いた通り</p>
 <p><span style="font-size:24px;">2台のペリアアンロック</span>です。</p>
@@ -44,7 +50,9 @@ noindex: true
 <p>僕の周りでペリアを弄る人が増えてきたこともあるので、早めに書いてしまいたいと思っています。</p>
 <p>&nbsp;</p>
 <h3>VAIO ZにXPが入った！</h3>
-<p><img src="https://lh6.googleusercontent.com/-AJCddo3AWd8/USD_0kybIgI/AAAAAAAABGE/A_ni_pL3nLk/s640/DSC07055.JPG" /></p>
+
+![](./DSC07055.JPG)
+
 <p>画像はまだドライバを当てていないものなので、解像度は800x600で表示されていますが、</p>
 <p>13.1型フルHD、Corei7プロセッサ、8GBメモリ、厚さ約12mmな窓XPノートってなんか熱くないですか！？</p>
 <p>実際ただの無駄としかいえないのですが。（特にRAM8GBは32bitOSにry）</p>

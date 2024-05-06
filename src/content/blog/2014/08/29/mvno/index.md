@@ -14,7 +14,7 @@ tags:
 いろいろ迷いましたが, 数年前のように外出先で数十GBのデータをやり取りする機会も無くなりましたし大丈夫かなと思っています.
 
 手続きをしたのは7月末でしたが, 旅行とお盆休み, そして書類の不備等があって時間がかかりましたが, 何とか夏休み中に届いてよかったなぁって感じです.  
-![sim](https://lh4.googleusercontent.com/-cF_mC9cKXnE/VABcwc4KbxI/AAAAAAAADfI/tq__3yiD6dE/s640/IMG_2487.JPG)
+![sim](./IMG_2487.JPG)
 
 <!--more-->
 
@@ -24,8 +24,8 @@ tags:
 まぁいずれLTE対応端末が欲しいなぁと思っているのでこうしました. ちなみに同社には200yen/monthの3G専用SIM等もあります.
 
 ということで, 別で購入していたSIMアダプタを使いXperiaRayに挿してみたところ問題なく認識しました.  
-![simad](https://lh4.googleusercontent.com/-XowjomdU8ds/VABd48NMtYI/AAAAAAAADfU/lHqlmlguDAk/s640/IMG_2489.JPG)  
-![rai](https://lh6.googleusercontent.com/-2sff1eGkM2o/VABeHLwtMVI/AAAAAAAADfk/s9p9tCi7ZIc/s640/IMG_2488.JPG)
+![simad](./IMG_2489.JPG)  
+![rai](./IMG_2488.JPG)
 
 ## でもSoftBank SIMも使えないと困るよね
 
@@ -47,7 +47,7 @@ tags:
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 こんな感じで問題なくテザリングできました. 便利ですね.  
-![tether](https://lh4.googleusercontent.com/-3BIocgWu-n0/VABfWRqCz-I/AAAAAAAADgU/9NElvZgB0BQ/s640/IMG_2506.JPG)
+![tether](./IMG_2506.JPG)
 
 速度を実際に測ったわけではありませんが, 思ったよりは快適な感じです.  
 自宅無線LANと大差ないかもしれない(´･\_･`)
@@ -55,7 +55,7 @@ tags:
 ちなみに, ROMはLegacyXperiaのCM10.2を利用しました.  
 軽量だということからCM7.2も検討したのですが, Androidが標準で搭載してきたData usageが使いたかったのと, 最近のアプリ対応状況などからこうしました.  
 また, バックグラウンドでの通信を最小限にしたいことなどからGoogle Playを始めとするgappsも入れず, ネットワーク関係のプリインを片っ端から無効化してこんな感じにしました.  
-![arc](https://lh5.googleusercontent.com/-7aVzSNHWZNk/VABfZwpBL4I/AAAAAAAADgg/5ulz7A4h1Do/s640/IMG_2520.JPG)
+![arc](./IMG_2520.JPG)
 
 ## でもでもタッチパネル逝った携帯をどうやって使うのさ?
 

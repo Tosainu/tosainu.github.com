@@ -89,8 +89,8 @@ Walkman Zの標準状態での日本語フォントであるモトヤLシーダ3
 
 これらを同様に/system/fonts等に送って端末を再起動させれば反映されます。
 
-![pa](https://lh6.googleusercontent.com/-yApAMR-q-nA/U05yI7fUdgI/AAAAAAAADLk/MB9vtJaE5Ho/s800/Screenshot_2014-04-16-20-54-56.png "pa")  
-![regex](https://lh3.googleusercontent.com/-LoY0kcnW66o/U05yJNe8WOI/AAAAAAAADLo/HinrFrAOP9k/s800/Screenshot_2014-04-16-20-55-25.png "regex")
+![pa](./Screenshot_2014-04-16-20-54-56.png "pa")  
+![regex](./Screenshot_2014-04-16-20-55-25.png "regex")
 
 ## スクリーンショット撮影時のシャッター音の無効化
 `/system/media/audio/ui/camera_click.ogg`を削除または無効な名前(\*.ogg.bak等)にリネームします。
@@ -134,6 +134,6 @@ java -jar smali.jar $@
 
 これで再起動を掛けると反映されます。SystemUI.apk等の書き換えは非常に危険なので、上コマンドのような置換を行いましょう。
 
-![icon](https://lh3.googleusercontent.com/-tOwtNfph08s/U052nAKYieI/AAAAAAAADL0/v-Pur6eOWvQ/s800/icon.png "icon")
+![icon](./icon.png "icon")
 
 ではではー

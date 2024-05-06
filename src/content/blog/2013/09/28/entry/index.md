@@ -7,14 +7,18 @@ noindex: true
 <p>&nbsp;</p>
 <p>どうもとさいぬです。</p>
 <p>なんかいろいろあって某友人氏にイヤホン貰いましたw</p>
-<p><img src="https://lh3.googleusercontent.com/-OXA6gRSBZ1I/UkW-7WiEjJI/AAAAAAAACmI/XaxdTkyL850/s640/IMG_1101.JPG" /></p>
+
+![](./IMG_1101.JPG)
+
 <p>イヤーピースは紛失していたためWalkman付属のものを無理やり使用、きつかったけどハマりました。</p>
 <p><del><span class="fontsize1">キツイ穴に無理やり...ｹﾞﾌﾝｹﾞﾌﾝ</span></del></p>
 <p>&nbsp;</p>
 <p>オーテクさんのイヤホンは低音域とても強いですね～</p>
 <p>少し強すぎな気もします。</p>
 <p>Walkmanではイコライザ弄ってみるといい感じになりました。</p>
-<p><img src="https://lh3.googleusercontent.com/-kSiDqDbdRbw/UkXArRvIiwI/AAAAAAAACmU/iA2OS6CT9Nc/s640/BVJWOvZCIAAUxCl.png" /></p>
+
+![](./BVJWOvZCIAAUxCl.png)
+
 <p>&nbsp;</p>
 <p>Walkmanイヤホンであった「低音域が強く出た時に高音域が潰されてしまう」はかなり軽減されましたね。</p>
 <p>それでいて迫力のある低音がしっかり出てくれるのはびっくりです。</p>

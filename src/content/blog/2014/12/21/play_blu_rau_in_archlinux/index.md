@@ -102,7 +102,7 @@ $ yaourt -S makemkv
 ```
 
 起動してみると, なんと**ごちうさBDを認識した**のです!!  
-![makemkv](https://lh4.googleusercontent.com/-BQH3ACxvq3U/VJa16KpZqUI/AAAAAAAAD1U/BnqS5swRvfs/s640/Screenshot%2520from%25202014-12-21%252020%253A57%253A54.png)
+![makemkv](./Screenshot_from_2014-12-21_20:57:54.png)
 
 さらになんとかならないかと情報を集めていると, **[MakeMKVに含まれるlibmmbdがlibaacsの代わりに利用でき, シンボリックリンクを張ることでプレイヤー等で再生が可能になる](http://www.makemkv.com/forum2/viewtopic.php?f=3&t=7009)**という情報を発見!  
 しかも, Arch LinuxではAURで公開もされているようです.
@@ -120,17 +120,17 @@ $ yaourt -Sy vlc
 ```
 
 vlcを起動し, 上部メニューのMedia-\>Open Diskをクリック,  
-![menu](https://lh6.googleusercontent.com/-ygC-xWkeAa4/VJa7foJtIqI/AAAAAAAAD1w/aXxNyy_KMmY/s800/menu.png)
+![menu](./menu.png)
 
 Blu-rayにチェックを入れて, またBDドライブのパスを設定してPlayをクリック.  
 すると......  
-![dialog](https://lh3.googleusercontent.com/-SM-srYEznMg/VJa7fvUS40I/AAAAAAAAD10/bDM3z3RLK78/s800/Screenshot%2520from%25202014-12-21%252021%253A16%253A31.png)
+![dialog](./Screenshot_from_2014-12-21_21:16:31.png)
 
 (＾ω＾≡＾ω＾)おっおっ  
-![op](https://lh3.googleusercontent.com/-JijMeiq2cJs/VJa7eHYY4II/AAAAAAAAD1s/6-BIo0XGE_I/s640/Screenshot%2520from%25202014-12-21%252021%253A19%253A08.png)
+![op](./Screenshot_from_2014-12-21_21:19:08.png)
 
 **ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!**  
-![title](https://lh6.googleusercontent.com/-DgJPUivZ3uE/VJa7yRqWidI/AAAAAAAAD18/UGmTK0O76yw/s640/IMG_2638.JPG)
+![title](./IMG_2638.JPG)
 
 あぁ, 長かった..... やっとごちうさを見ることができるぜ.....  
 ではではー[^3]

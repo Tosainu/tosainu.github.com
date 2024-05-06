@@ -11,11 +11,15 @@ noindex: true
 
 というのも、ウチの本棚(と思われる)ものはこんな状態ですし
 
-<img src="https://lh6.googleusercontent.com/-YkTK5jm0mJk/Uu-zXmFQtwI/AAAAAAAAC9E/A5X7bEoAHoE/s640/IMG_1515.JPG" />
+
+![](./IMG_1515.JPG)
+
 
 教科書にいたっては悲惨なことに・・・
 
-<img src="https://lh5.googleusercontent.com/-k39XKrJeP1s/Uu-07LhtNgI/AAAAAAAAC9Y/T-6-kh0dxy4/s640/IMG_1517.JPG" />
+
+![](./IMG_1517.JPG)
+
 
 &nbsp;
 
@@ -40,15 +44,21 @@ SoftwareDesign(2010)1年分をもらってきましたw
 
 どうも一般的な本棚の収納部の大きさは高さ210mm程度らしいです。
 
-<img src="https://lh4.googleusercontent.com/-Wm6A7g4QvXY/Uu-2JtvKb9I/AAAAAAAAC9s/duX56xian6Y/s800/B0034G4HKQ_03.jpg" height="300" width="300" />
+
+![](./B0034G4HKQ_03.jpg)
+
 
 これの何がいけないかって、A5サイズの本がギリギリ入らない大きさでして・・・
 
-<img src="https://lh5.googleusercontent.com/-HUC-J0KyL2M/Uu-1YktP_sI/AAAAAAAAC9g/OCD_7hXox74/s640/IMG_1509.JPG" />
+
+![](./IMG_1509.JPG)
+
 
 僕の所持する教科書は勿論、一部のコミックなどもこのA5サイズ
 
-<img src="https://lh3.googleusercontent.com/-CF67a4S3olU/Uu-zhpbdYPI/AAAAAAAAC9M/HYYsCeg-Qrs/s640/IMG_1511.JPG" />
+
+![](./IMG_1511.JPG)
+
 
 うー、ナンテコッタイ
 

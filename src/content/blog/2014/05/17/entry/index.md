@@ -7,7 +7,9 @@ noindex: true
 
 いろいろ話題になっていた此ノ木よしる先生の "SE"、今更ですが購入し読んでみました。
 
-<img src="https://lh5.googleusercontent.com/-XU17tS3ofPY/U3YmXEk-JlI/AAAAAAAADRY/usW5RLtpVdQ/s640/IMG_1859.JPG" height="480" width="640" />
+
+![](./IMG_1859.JPG)
+
 
 ネタバレは避けたいので雑な感想になりますが、公式サイトで読める1話での期待通り、本当にぶっ飛んだ設定でおもしろいかったです。  
 そして最後での急展開、続きがとても気になりますねぇ。。。。。

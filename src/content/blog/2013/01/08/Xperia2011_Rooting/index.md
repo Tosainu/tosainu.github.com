@@ -19,8 +19,8 @@ Flashtoolを起動し, その状態でデバッグモードを有効にした端
 ここで接続した端末の種類を選択するウィンドウが出ると思いますが, 接続した端末が一覧にない場合は適当なものを選択しておけば大丈夫です. (XperiaArcとか)
 
 上部メニューの`Advanced -> Root -> Force zergRush`を実行すると...  
-![flashtool](https://lh5.googleusercontent.com/-erk4RgZS1SM/UZdFbxrieZI/AAAAAAAACJA/dMDl96BkKs8/s640/flashtool.png)
+![flashtool](./flashtool.png)
 
 
 何度か端末が再起動をした後root権限の取得はは完了します. お疲れ様でした。  
-![rooted](https://lh6.googleusercontent.com/-AA3TAJaAGC8/UZc__JWurbI/AAAAAAAACIw/W9wj3qjXzJQ/s640/IMG_0518.JPG)
+![rooted](./IMG_0518.JPG)

@@ -15,15 +15,15 @@ tags:
 まず, 新しい本棚を買ってもらいました.  
 [以前](/blog/2014/02/04/entry/)からA5サイズのコミックが入る本棚を探していましたが, やっといい感じのを見つけることが出来ました.  
 最近少しづつ増えているコミック類はもちろん, 雑に積まれていた教科書の類も綺麗に収納できて良いです.  
-![book](https://lh3.googleusercontent.com/-ebcGf8KoeV4/VCwwnJ2yC6I/AAAAAAAADjI/lvXYI7Yo9d0/s640/IMG_2541.JPG)
+![book](./IMG_2541.JPG)
 
 また, 本棚の収納力が上がったおかげで机の上の本を移動することができ, その結果机をより広く使えるようになりました.  
 PCはVAIO Zたんをメインで使うことにしてディスプレイを縦に設置してみました.  
-![desk](https://lh4.googleusercontent.com/-2bXF2XgIN-k/VCwwphjhBPI/AAAAAAAADjQ/4DoevBl7y68/s640/IMG_2540.JPG)
+![desk](./IMG_2540.JPG)
 
 あとは大量に出たガラクタの類や幼稚園時代のスケッチブックなどのゴミの回収を待つだけですね.  
 僕の地域では月に1回しか金属や小さな家電等のゴミを回収してくれる日がないので辛いです.  
-![gomi](https://lh3.googleusercontent.com/-rkSDBBp4nHc/VCwwh4PnL0I/AAAAAAAADjA/852wtrk1mMs/s640/IMG_2543.JPG)
+![gomi](./IMG_2543.JPG)
 
 やっぱり片付いた部屋は気持ちがいいですね. ∩(＞◡＜\*)∩
 

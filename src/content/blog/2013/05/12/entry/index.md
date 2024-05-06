@@ -8,8 +8,12 @@ noindex: true
 <p>&nbsp;</p>
 <p>ブログでも何度か紹介していますが、定期的に動画を作ってニコ動にあげています。</p>
 <p>その投稿動画の内、いくつかには</p>
-<p><img src="https://lh4.googleusercontent.com/-0r0YNrFg0z4/UY7LW0oONLI/AAAAAAAACFw/4uhvBDTzOmc/s800/Screenshot%2520from%25202013-05-12%252007%253A47%253A52.png" height="133" width="343" /></p>
-<p><img src="https://lh5.googleusercontent.com/-tBHxE-9FMPs/UY7LWyTXqNI/AAAAAAAACFs/A8vLLg2jDoo/s800/Screenshot%2520from%25202013-05-12%252007%253A48%253A23.png" height="48" width="180" /></p>
+
+![](./Screenshot_from_2013-05-12_07:47:52.png)
+
+
+![](./Screenshot_from_2013-05-12_07:48:23.png)
+
 <p>などのコメントが付いているわけです。</p>
 <p>&nbsp;</p>
 <p>さすがにちょっと首を吊りたくなりましたが、ちょっと真面目にこのコメントに返信してみたいと思います。</p>

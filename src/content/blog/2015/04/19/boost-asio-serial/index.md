@@ -9,7 +9,7 @@ tags:
 にゃんにゃん.
 
 [自作の某ライブラリ](https://github.com/Tosainu/twitpp)でhttpクライアントとして使っている[Boost.Asio](http://www.boost.org/doc/libs/1_58_0/doc/html/boost_asio.html)ですが, シリアル通信もできるっぽいので, 雑にArduinoとPing-Pongしてみました.  
-![arduino](https://lh3.googleusercontent.com/-qIVAKRgxKYM/VTNcTHRUcPI/AAAAAAAAED4/Gr-1YU_LKIA/s640/IMG_2763.JPG)
+![arduino](./IMG_2763.JPG)
 
 ## 環境
 

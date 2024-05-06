@@ -36,7 +36,7 @@ OS X on HDDはWin on HDDほどの不満はなかったものの, やはりSSDに
 
 しかし最近**[Clover](http://sourceforge.net/projects/cloverefiboot/)**というUEFI対応のブートローダが話題で, 使えそうだったので再挑戦してみました.
 
-![gs](https://lh3.googleusercontent.com/-5t7sGZITAxY/Vv3YKA2O7gI/AAAAAAAAF_g/FjSq4Hq7MFc1ZVOoKF10D10r40McaW7zQCCo/s800-Ic42/borat_great_success.jpg)
+![gs](./borat_great_success.jpg)
 
 ### Components
 
@@ -67,10 +67,10 @@ OS X on HDDはWin on HDDほどの不満はなかったものの, やはりSSDに
 
 重要そうな部分の画像を貼っておきます.  
 よくVT-xやVT-dは切ったほうがよい等の記述を見かけますが, 別に有効のままで問題無いと思います.  
-![bios1](https://lh6.googleusercontent.com/-BWXoH5wjG6Q/VQfe7iW08EI/AAAAAAAAECg/XKGYzrOn3b0/s640/150317073429.png)  
-![bios2](https://lh6.googleusercontent.com/-Cfyoidh_fyc/VQfe6JIO50I/AAAAAAAAECQ/-iRKuKM5l6g/s640/150317073312.png)  
-![bios3](https://lh6.googleusercontent.com/-foGzyTQx-SY/VQfe7AfGLSI/AAAAAAAAECc/P8NCDCHjtfI/s640/150317073358.png)  
-![bios4](https://lh6.googleusercontent.com/-UN6qLc57VRs/VQfe62GDxVI/AAAAAAAAECY/1_ImvB21Aew/s640/150317073350.png)
+![bios1](./150317073429.png)  
+![bios2](./150317073312.png)  
+![bios3](./150317073358.png)  
+![bios4](./150317073350.png)
 
 ### OS X Installation
 
@@ -107,10 +107,10 @@ Cloverのメニューが表示されたらキーボードの`o`でオプショ�
 
 インストール後の設定をいろいろやってくれるMultiBeastは定番ですが, そのまま起動して指示通りに操作するとChameleonをインストールしようとしてくるため, 今回のようにCloverを使う場合には少々不便です.  
 そこで, MultiBeast.appの右クリックメニューからShow Package Contentsで中身を開き, `Contents/Resources/AppleIntelE1000e-v3.1.0.pkg`を抜き出してインストールすることにしました.  
-![MultiBeast](https://lh5.googleusercontent.com/-FWVT6z7-U8o/VQa0Uk5o8xI/AAAAAAAAD-g/HSjSGRb7TBM/s800/Screen%2520Shot%25202015-03-16%2520at%252019.43.53.png)
+![MultiBeast](./Screen_Shot_2015-03-16_at_19.43.53.png)
 
 NICドライバのインストール後はKext Wizardを開き, **Repair permissions/Rebuild cacheを行ってから**再起動します.  
-![Kext Wizard](https://lh5.googleusercontent.com/-ILQSADMA2Vc/VQa3PawRYcI/AAAAAAAAD-s/RFkv6L0ASv0/s800/Screen%2520Shot%25202015-03-16%2520at%252019.55.34.png)
+![Kext Wizard](./Screen_Shot_2015-03-16_at_19.55.34.png)
 
 ### System Update
 
@@ -147,15 +147,15 @@ x79というのは(一般的には)特殊なプラットフォームであるた
 上記記事中のリンクにもある [Asus Rampage IV Extreme Guide: Create your DSDT in 5 min using MacIASL.](http://www.tonymacx86.com/dsdt/114418-asus-rampage-iv-extreme-guide-create-your-dsdt-5-min-using-maciasl.html) を参考に作業しました.
 
 [MaciASL](http://sourceforge.net/projects/maciasl/)を開き, File -> New from ACPI -> DSDT を選択.  
-![maciasl menu](https://lh5.googleusercontent.com/-LdPGdWKl8FU/VQdz8coA4bI/AAAAAAAAD-8/RYLxPpcagC4/s800/Screen%2520Shot%25202015-03-17%2520at%25209.21.16.png)
+![maciasl menu](./Screen_Shot_2015-03-17_at_9.21.16.png)
 
 開いたウィンドウ上部のPatchをクリックし, 下部のOpenから[1スレッド目のAttached Filesにある R4E\_DSDT\_Patch\_10-2014.txt](http://www.tonymacx86.com/general-help/127574-guide-asus-x79-os-x-controlled-speedstep.html)を読み込ませApply.  
 ファイル名がどう見てもR4E用ですが, R4Fでも(今のところ)問題はなかったです.  
-![maciasl patch](https://lh4.googleusercontent.com/-q8dB8-feg_g/VQd0_6IZ4rI/AAAAAAAAD_I/l2YQ61H3P5A/s640/Screen%2520Shot%25202015-03-17%2520at%25209.27.05.png)
+![maciasl patch](./Screen_Shot_2015-03-17_at_9.27.05.png)
 
 ウィンドウ上部のCompileをクリックし問題がないことを確認した後, File -> Save As を選択.  
 File Formatを`ACPI Machine Language Binary`, File Nameを`DSDT.aml`にして適当な場所に保存しておきます.  
-![maciasl save](https://lh5.googleusercontent.com/-BsbvM2v_siQ/VQd3nol7RgI/AAAAAAAAD_U/Z_JXRgaJ_ZU/s800/Screen%2520Shot%25202015-03-17%2520at%25209.36.44.png)
+![maciasl save](./Screen_Shot_2015-03-17_at_9.36.44.png)
 
 ### Create ssdt.aml
 
@@ -209,7 +209,7 @@ Do you want to open ssdt.dsl (y/n)? n
 
 [Cloverのサイト](http://sourceforge.net/projects/cloverefiboot/)から最新のインストーラをダウンロードし(今回はv2.3-r3193), `Clover_v2.3k_r3193.pkg`を実行.  
 Continue -> Continue -> Customize と進み, こんな感じにチェックを入れてInstallしました.  
-![clover](https://lh3.googleusercontent.com/-6Dn9YZH7FXM/VQd7AcTiuAI/AAAAAAAAD_g/FHXJksd1OSY/s800/Screen%2520Shot%25202015-03-17%2520at%25209.52.18.png)
+![clover](./Screen_Shot_2015-03-17_at_9.52.18.png)
 
 Cloverの設定等が置かれるESPをマウントするために, Macのターミナルから
 
@@ -283,7 +283,7 @@ $ sudo grub-mkconfig -o /boot/grub/grub.cfg
 もうインストールに使ったUSBメモリなしで起動できるようになりました.  
 また, こんな感じにSpeedStepが効いているのを確認できると思います.
 
-![idle](https://lh4.googleusercontent.com/-9p-kDqGZcGQ/VQeTP4yFHAI/AAAAAAAAEAM/QHcyU_ZsoR4/s800/Screen%2520Shot%25202015-03-17%2520at%252011.30.49.png) ![load](https://lh6.googleusercontent.com/-DIMK-tocEWQ/VQeTP5Svm0I/AAAAAAAAEAI/bT87PeCPuMU/s800/Screen%2520Shot%25202015-03-17%2520at%252011.31.07.png)
+![idle](./Screen_Shot_2015-03-17_at_11.30.49.png) ![load](./Screen_Shot_2015-03-17_at_11.31.07.png)
 
 ## Install Softwares
 
@@ -417,7 +417,7 @@ chromium    gimp     iterm2               onyx
 
 デフォルトのFinderは**ファイル/ディレクトリのカットができなかったり**, **Icon Viewで項目が自動整列されなかったり**と不便なのですが, それを可能にしてくれます.  
 設定はこんな感じにしてみました.  
-![xf](https://lh6.googleusercontent.com/-avvACsAfRuo/VQe6dKDOR3I/AAAAAAAAEAc/wewaRxpzdXA/s640/Screen%2520Shot%25202015-03-17%2520at%252014.23.43.png)
+![xf](./Screen_Shot_2015-03-17_at_14.23.43.png)
 
 #### Karabinder
 
@@ -426,13 +426,13 @@ Macを使ってみてからずっと気になっていたのですが, Key Repea
 
 もっと早くできないかと調べていて出会ったのがこれです.  
 とりあえず`Delay Until Repeat`を`275ms`, `Key Repeat`を`27ms`に設定して様子を見ています.  
-![kb](https://lh5.googleusercontent.com/-8FATmQAE2zs/VQe8ABatnaI/AAAAAAAAEAo/fcV2sipF7JY/s640/Screen%2520Shot%25202015-03-17%2520at%252014.30.12.png)
+![kb](./Screen_Shot_2015-03-17_at_14.30.12.png)
 
 また, MacにはCommand key (`⌘`)がありますが, 僕にはこのキーの扱いにどうも馴染めませんでした.  
 というのも, Macのキーボードショートカットは(非Macer的には)変わっていて, 例えばコピーやペーストなどの普段Ctrlキーを使うキーボードショートカットがCommandキーとの組み合わせになっていたりするのです.
 
 そのため System Preferences -> keyboard -> Modifier Keys を開いてこんなかんじにCommandとCtrlを入れ替える設定をしてみました.  
-![key](https://lh4.googleusercontent.com/-nrh7AMgrZfY/VQe_VKOAQBI/AAAAAAAAEA0/n5C00dbCPvc/s640/Screen%2520Shot%25202015-03-17%2520at%252014.41.59.png)
+![key](./Screen_Shot_2015-03-17_at_14.41.59.png)
 
 しかし, この設定はターミナルで問題を起こします.  
 僕はよく`^C`とか`^D`を使ったりするのですが, これらはMacでもCtrlキーを使うため, 上の設定ではキーボードのCommandキーに相当するキーを使わないといけなくなります.
@@ -444,20 +444,20 @@ Macを使ってみてからずっと気になっていたのですが, Key Repea
 
 壁紙だけ流行に乗りました.  
 画面が縦なのは, 接続しているディスプレイを普段ノートパソコンのサブディスプレイとして使っているからです.
-![Desktop](https://lh4.googleusercontent.com/-Bg2fs1i3ZJQ/VQfpuTyPkHI/AAAAAAAAEC0/BkJ_DsQFpm8/s800/Screen%2520Shot%25202015-03-17%2520at%252017.42.50.png)
+![Desktop](./Screen_Shot_2015-03-17_at_17.42.50.png)
 
 Mac Proです. (大嘘)  
-![abouthismac](https://lh4.googleusercontent.com/-EG2UO1SvXz4/VQfebQ3P-GI/AAAAAAAAEB8/nfmQOw8Vusk/s800/Screen%2520Shot%25202015-03-17%2520at%252016.47.24.png)
+![abouthismac](./Screen_Shot_2015-03-17_at_16.47.24.png)
 
 起動ドライブのSSD. 特に何かしたわけじゃないけどTRIM対応してた.  
-![ssd](https://lh4.googleusercontent.com/-UczBOmObDRY/VQfebWJDJSI/AAAAAAAAECA/7-PddVdGHZQ/s640/Screen%2520Shot%25202015-03-17%2520at%252016.48.19.png)
+![ssd](./Screen_Shot_2015-03-17_at_16.48.19.png)
 
 まぁまぁな感じ.  
-![ssdbench](https://lh4.googleusercontent.com/-SgH0RE6Fa08/VQfdn_BVAGI/AAAAAAAAEBk/NVPAsYJWJAk/s640/Screen%2520Shot%25202015-03-17%2520at%252016.52.32.png)
+![ssdbench](./Screen_Shot_2015-03-17_at_16.52.32.png)
 
 氏ねベンチ新旧. OpenGLが若干落ちるが, CPUはWin版と大して変わらない結果が出せた.
-![cine11.5](https://lh5.googleusercontent.com/-sDnQ6-q6-1g/VQfdlfSYBVI/AAAAAAAAEBY/9P9ZXEv9328/s640/Screen%2520Shot%25202015-03-17%2520at%252016.43.56.png)  
-![cine15](https://lh4.googleusercontent.com/-s2nu0K2BMYE/VQfdj419VMI/AAAAAAAAEBM/Jqt2_JmLaP8/s640/Screen%2520Shot%25202015-03-17%2520at%252016.46.58.png)
+![cine11.5](./Screen_Shot_2015-03-17_at_16.43.56.png)  
+![cine15](./Screen_Shot_2015-03-17_at_16.46.58.png)
 
 ## Great Success!
 

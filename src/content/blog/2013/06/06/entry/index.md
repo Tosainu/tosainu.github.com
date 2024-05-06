@@ -66,7 +66,9 @@ finished. total time: 0.001s
 <p>端末が再起動しますので、Vol-ボタンを何度か押してCWMリカバリに入ります。</p>
 <p>&nbsp;</p>
 <h3>Ubuntu Touchを書き込む</h3>
-<p><img src="https://lh6.googleusercontent.com/-yng6DtLu0uw/UbBv8WT4GqI/AAAAAAAACMo/mdfsv1zwm2E/s640/DSC_0002.JPG" /></p>
+
+![](./DSC_0002.JPG)
+
 <p>CWMリカバリに入ったら、</p>
 <ol>
 <li>Factory Reset</li>
@@ -83,7 +85,9 @@ finished. total time: 0.001s
 <p>&nbsp;</p>
 <h3>起動！！</h3>
 <p>Rayたんの場合、カーネルのロゴはまるで画面が割れたかのようにバグるし、ブートアニメーション等もなく黒画面が続くなどで不安でしたが、なんとか起動しますた。</p>
-<p><img src="https://lh5.googleusercontent.com/-x0pcfU8RUzc/UbBv8V53XXI/AAAAAAAACMk/qOgprFG6iA0/s640/DSC_0003.JPG" /></p>
+
+![](./DSC_0003.JPG)
+
 <p>&nbsp;</p>
 <h3>感想</h3>
 <p>XDAフォーラム内での言葉を使うとすれば、</p>

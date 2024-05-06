@@ -8,7 +8,9 @@ tags:
 <p>どーもです〜</p>
 <p>&nbsp;</p>
 <p>以前から興味があったHackintosh（林檎社以外のマシンに林檎社OSを入れること）の体験をしてみました。</p>
-<p><img src="https://lh3.googleusercontent.com/-2oR-vV7vphw/UYJmYhfq7OI/AAAAAAAACA0/xrsadofFsNA/s640/IMG_0433.JPG" /></p>
+
+![](./IMG_0433.JPG)
+
 <p>あくまで今回は主に動作確認と手順の確認が目的だったため、少々グレーな方法を使いましたが、</p>
 <p>あのLinux厨のとさいぬが、</p>
 <p><span style="font-size:24px;">「別にMacもアリかな・・・」</span></p>

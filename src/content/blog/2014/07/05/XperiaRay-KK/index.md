@@ -48,14 +48,14 @@ tags:
 
 ARTモードでは非常に快適に動作し, CPUは1.4GHzにオーバークロックしているもののベンチマークでは1.6GHz以上に相当するほどのスコアを出すことが出来ました. CPUのスコアは1500程度も向上しているので驚きです.
 
-![dalvik](https://lh5.googleusercontent.com/-U-jK-6jrSw4/U7fr8excTHI/AAAAAAAADYQ/HlEWnPXXPUg/s800/Screenshot_2014-06-30-21-14-51.png "dalvik")  
-![art](https://lh6.googleusercontent.com/-mTQVqCVBEO4/U7fr8qPsuqI/AAAAAAAADYU/yVXi0MXThWs/s800/Screenshot_2014-06-30-21-37-08.png "art")
+![dalvik](./Screenshot_2014-06-30-21-14-51.png "dalvik")  
+![art](./Screenshot_2014-06-30-21-37-08.png "art")
 
 しかしながらARTモードで動作させるのにも欠点がありまして.  
 まず, Androidは内部でapkファイルをインストールすると端末に最適化されたdexファイルを生成します. これがdalvik-cacheと呼ばれるわけです.  
 ARTで起動させた場合, この中間ファイルがdalvikと比べ少々容量が大きくなるようで, ただでさえ少ない内蔵ストレージを圧迫します.  
 画像のようにTwitterクライアントと日本語IMEを入れることしかできないような状態です. もちろん, システムアプリのアップデートなどできる訳ありません.  
-![In](https://lh5.googleusercontent.com/-Ls1WEFi1tL8/U7fuoK6x7hI/AAAAAAAADYg/5yRvWksJLE0/s800/Screenshot_2014-07-04-10-17-00.png "In")
+![In](./Screenshot_2014-07-04-10-17-00.png "In")
 
 さらに, 以前のバージョンであればS2E等のアプリによりSDカード上に作成したext4パーティションにデータを移す等のことも出来ましたが, KitKatでは未対応らしくそれらの手段も難しいと思われます. (すべて確認したわけではないが)  
 僕は今のところ大きな不満もなく使っていますが, アプリをガンガン入れたい方にはARTは厳しいかもしれません.

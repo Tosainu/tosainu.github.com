@@ -3,7 +3,9 @@ title: 帰ってきますた〜
 date: 2013-03-02 20:59:55+0900
 noindex: true
 ---
-<p><img src="https://lh6.googleusercontent.com/-BMu_A99y3zg/UTHkNKu8l6I/AAAAAAAABQI/rWW9k2vQ-7g/s640/IMG_20130301_103945.jpg" /></p>
+
+![](./IMG_20130301_103945.jpg)
+
 <p>どもでーす。</p>
 <p>東京から帰ってきましたー</p>
 <p>&nbsp;</p>
@@ -12,7 +14,9 @@ noindex: true
 <p>うん、しばらくはパーツ屋回れないな・・・</p>
 <p>&nbsp;</p>
 <p>また、今回の旅行？でカメラを買い換えました。</p>
-<p><img src="https://lh6.googleusercontent.com/-qitgCW3IuHw/UTHkacSjhDI/AAAAAAAABQo/WmfQW4251Xo/s640/IMG_20130302_141823.jpg" /></p>
+
+![](./IMG_20130302_141823.jpg)
+
 <p>&nbsp;</p>
 <p>写真左側のCANON PowerShot S110です。</p>
 <p>（右側は友人のS100、これの性能に惚れたのでS110にしました）</p>
@@ -37,9 +41,13 @@ noindex: true
 <p>報告は明日になりそうです。</p>
 <p>とりあえず、今ある写真を適当にうｐしたので貼っておきます。</p>
 <p>&nbsp;</p>
-<p><img src="https://lh5.googleusercontent.com/-8S0vby9oA_c/UTHkPtcVwOI/AAAAAAAABQY/lb40jnw-o4g/s640/IMG_20130301_104605.jpg" /></p>
+
+![](./IMG_20130301_104605.jpg)
+
 <p>&nbsp;</p>
-<p><img src="https://lh4.googleusercontent.com/-aQg8dPQ9zVM/UTHkZfiF6lI/AAAAAAAABQg/WyU8bb0rVcM/s640/IMG_20130301_164605.jpg" /></p>
+
+![](./IMG_20130301_164605.jpg)
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>って、これしかねーのかよ</p>

@@ -6,7 +6,9 @@ noindex: true
 <p>どうもとさいぬです。</p>
 <p>&nbsp;</p>
 <p>自作機1号の窓7が気がつくとこんなことに・・・</p>
-<p><img src="https://lh5.googleusercontent.com/-Np0oZc0Krkg/UZpAOIImS4I/AAAAAAAACJs/HMCjNNe-ttQ/s640/kimoifont.png" /></p>
+
+![](./kimoifont.png)
+
 <p>&nbsp;</p>
 <p><span style="font-size:24px;">キモイ・・・キモすぎるぞ・・・・・・</span></p>
 <p>&nbsp;</p>
@@ -20,5 +22,7 @@ noindex: true
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p><img src="https://lh5.googleusercontent.com/-5Cg8-IiPe_M/UZpAOMTmEnI/AAAAAAAACJw/4KRngoRv-MQ/s640/modotta.png" /></p>
+
+![](./modotta.png)
+
 <p>わーい戻ったー</p>

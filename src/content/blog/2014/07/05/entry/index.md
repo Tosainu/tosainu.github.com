@@ -11,7 +11,7 @@ noindex: true
 先ほどの記事でも書きましたが, 木曜日に軽い気胸だということが発覚しまして......(・_・;)  
 前日まで "行けないかな〜" と思っていましたが, まだ違和感はあるものの随分良くなったため行くことが出来ました. 本当に良かった.
 
-![ent](https://lh6.googleusercontent.com/-dEVX30gHf2E/U7f5-ojUu6I/AAAAAAAADZA/_p-5J67Qcw8/s640/IMG_1957.JPG)
+![ent](./IMG_1957.JPG)
 
 <blockquote class="twitter-tweet tw-align-center " lang="en"><p>到着しました✌ <a href="http://t.co/BH5MUYEk4G">pic.twitter.com/BH5MUYEk4G</a></p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485246701263802368">July 5, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -21,7 +21,7 @@ noindex: true
 
 [Haskell他マスコットキャラクターシール作成の記録 - Togetterまとめ](http://togetter.com/li/685435)
 
-![dhas](https://lh6.googleusercontent.com/-OFpcTpbD5nU/U7f57do13TI/AAAAAAAADYw/U49k5GjVjFw/s640/IMG_1955.JPG)
+![dhas](./IMG_1955.JPG)
 
 <blockquote class="twitter-tweet tw-align-center" lang="en"><p>D言語くんxHaskellくん貼った <a href="http://t.co/etAvthdVOL">pic.twitter.com/etAvthdVOL</a></p>&mdash; ATUC256L4U (@myon___) <a href="https://twitter.com/myon___/statuses/485346248359038976">July 5, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -70,12 +70,12 @@ WordBench Nagoya さん
 :   自分が生まれる前に登場した30MHzほどのCPUを搭載したマシンでも普通に動いてるのにはものすごく感動のような気分を感じた.
 :   あと, ステッカー多過ぎw
 
-![ste](https://lh5.googleusercontent.com/-o2LHP1b9YKo/U7f5-oO_UoI/AAAAAAAADY8/7VcGiShn6Rk/s640/IMG_1954.JPG)
+![ste](./IMG_1954.JPG)
 
 ほかにもいろいろ展示があり, ちょっと初めての感覚に戸惑いましたがとても楽しかったです.  
 ぜひ次回も近くで開催されたら言って見合いと思います.
 
-![senri](https://lh6.googleusercontent.com/-INRRBz1mx4M/U7gBkX3sM5I/AAAAAAAADZc/OA1m46ogPh8/s640/IMG_1962.JPG)
+![senri](./IMG_1962.JPG)
 
 本当にありがとうございました〜
 

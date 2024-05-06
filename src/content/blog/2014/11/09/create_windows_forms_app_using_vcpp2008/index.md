@@ -46,7 +46,7 @@ VS系ってこんなに起動遅かったっけ.......?
 
 MessageBoxに表示させる文字列に特別な指定はなかったので, 演習0のストレスから手が滑ってこんなコードを書きました.
 
-![1](https://lh5.googleusercontent.com/-ADEup-Yj46E/VF7dHdRZyQI/AAAAAAAADoA/kDf085_PHhs/s800/1.png)
+![1](./1.png)
 
 ```cpp
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -87,7 +87,7 @@ private:
 2つのTextBoxに値を入力し, 中央のComboBoxで演算方法(+-\*/)を選択して結果をLabelに表示するプログラムです.  
 また, 追加課題として三角形の面積とべき乗計算もできるようにもします.
 
-![2](https://lh6.googleusercontent.com/-bEatjyNh-RM/VF7dHch-fJI/AAAAAAAADn8/Y2WsJqiiE3s/s800/2-2.png)
+![2](./2-2.png)
 
 ```cpp
 // ソースの一番上
@@ -134,7 +134,7 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 
 Form作るのがクッソめんどかった.
 
-![3](https://lh3.googleusercontent.com/-TKexZYpIagY/VF7dIPAwkRI/AAAAAAAADoE/a4SQYT4uHW8/s800/3.png)
+![3](./3.png)
 
 たぶん, Button1個設置したらそれをコピーして\<C-v\>連打が楽だと思う.
 

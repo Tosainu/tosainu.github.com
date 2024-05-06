@@ -38,7 +38,7 @@ SoftBankと帯域が同じなところや, 有名なカスタムROMである**Cy
 ## 届いた
 端末は2012/7/16の午前中に届いた. 予定は19日だったのでびっくり.
 
-![arc](https://lh4.googleusercontent.com/-hXcmfDGTZfo/UAP7NLTIMnI/AAAAAAAACRQ/EnIXI7zIwJ0/s640/DSC061362.jpg)
+![arc](./DSC061362.jpg)
 
 docomoの袋付きで笑ったw
 

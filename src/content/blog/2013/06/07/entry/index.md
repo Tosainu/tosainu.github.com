@@ -6,7 +6,9 @@ noindex: true
 <p>どーもです</p>
 <p>あまりに嬉しかったんで、受け取った駅のエスカレーター前でVAIO Z開いて更新です。</p>
 <p>&nbsp;</p>
-<p><img src="https://lh6.googleusercontent.com/-runr8Q82TQY/UbG8NMlcRiI/AAAAAAAACNA/31qYJYouMfE/s640/DSC_0005.JPG" /></p>
+
+![](./DSC_0005.JPG)
+
 <p><span style="font-size:36px;">カメラ</span></p>
 <p><span style="font-size:36px;">見つかりましたぁ！！！！！</span></p>
 <p>&nbsp;</p>

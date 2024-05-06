@@ -9,7 +9,9 @@ tags:
 <p>&nbsp;</p>
 <p>えーと、画像見てもらったほうが早い。</p>
 <p>こんなもの作ろうとしてます。</p>
-<p><img src="https://lh5.googleusercontent.com/-4dYBupR0N2s/UkgjtsUGMRI/AAAAAAAACnA/30ir8jWbU4U/s640/out.jpeg" /></p>
+
+![](./out.jpeg)
+
 <p>RasPiをラジコンカーに載せて、操縦します。</p>
 <p>ただ操縦するだけでは面白くないのでWebCamを載せストリーミング、Webアプリを動かして外部のPCからブラウザ上で操縦できるようにしてみようかと。</p>
 <p>&nbsp;</p>

@@ -363,7 +363,9 @@ $ sudo reboot
 
 Sign Inボタン左側の歯車アイコンから、"Cinnamon"を選択してログインします。
 
-<img src="https://lh6.googleusercontent.com/-5i55N68kJc8/UnxCdZtgN9I/AAAAAAAACss/djZT31p2mdw/s640/IMG_1258.JPG" />
+
+![](./IMG_1258.JPG)
+
 
 &nbsp;
 
@@ -388,7 +390,9 @@ $ fc-cache -vr
 
 あとはWMの設定等でフォントを設定してください。参考までに、僕はこのように設定しました。
 
-<img src="https://lh4.googleusercontent.com/-MvMSiayJbe0/UnxuQ80kJNI/AAAAAAAACtE/k-zp1JtsTUo/s640/Screenshot%2520from%25202013-11-08%252013%253A50%253A59.png" />
+
+![](./Screenshot_from_2013-11-08_13:50:59.png)
+
 
 &nbsp;
 
@@ -454,9 +458,13 @@ uimの設定画面を開き、
 $ uim-pref-gtk3
 ```
 
-<img src="https://lh4.googleusercontent.com/-WgcwXU-Udhg/UnyAz8swZ9I/AAAAAAAACtU/71g0Lp_D_e8/s640/Screenshot%2520from%25202013-11-08%252015%253A07%253A06.png" />
 
-<img src="https://lh6.googleusercontent.com/-dmY0qm5-fGc/UnyAzl9z8AI/AAAAAAAACtc/fWflQhMXYqo/s640/Screenshot%2520from%25202013-11-08%252015%253A11%253A12.png" />
+![](./Screenshot_from_2013-11-08_15:07:06.png)
+
+
+
+![](./Screenshot_from_2013-11-08_15:11:12.png)
+
 
 という感じに設定し、もう一度ログインすれば・・・・・・・・きっと・・・・・・・・・・
 
@@ -531,7 +539,9 @@ Menu→Sound & Video→GNOME Mplayerから起動、
 
 Edit→Preferrencesから設定画面を開いて、MPlayerタブの"MPlayer Default Optical Device"に"/dev/sr0"(マシンのデフォルトの光学ドライブのパス)を設定することで、外部のコーデック等のインストールも必要なくDVDの再生ができることを確認しました。
 
-<img src="https://lh6.googleusercontent.com/-U01WEHhdbfk/UnxCgaN89II/AAAAAAAACs0/YJjjJQ_8NDU/s640/IMG_1260.JPG" />
+
+![](./IMG_1260.JPG)
+
 
 &nbsp;
 

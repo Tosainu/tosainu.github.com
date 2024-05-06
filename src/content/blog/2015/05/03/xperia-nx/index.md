@@ -8,7 +8,7 @@ tags:
 
 にゃーん.
 
-![nx](https://lh3.googleusercontent.com/-vip6wdL84yo/VUW31gXn66I/AAAAAAAAEMs/vGyggxgfsgo/s640/IMG_2771.JPG)
+![nx](./IMG_2771.JPG)
 
 友人氏より, Xperia NXを譲ってもらいました.  
 僕にとっては初めてのXperia 2012, そして初めての1GB-RAMな端末です.

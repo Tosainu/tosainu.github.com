@@ -48,7 +48,7 @@ tags:
 ## エナジードリンク
 
 某イベントで初エナドリを飲んで以来ハマって, その後いろいろなエナドリに手を出すことになった.  
-![drink](https://lh3.googleusercontent.com/-4A9Njr8aJu0/VJ53wM0o8oI/AAAAAAAAD2c/AdC_rmhUIpE/s640/IMG_2644.JPG)  
+![drink](./IMG_2644.JPG)  
 個人的には定番のRed Bullが一番好きだけれど, SAMURIDEも結構良かった.
 
 ただ, 7, 8月頃はエナドリの飲み過ぎのせいか食欲が思いっきり落ちていたので, 飲み過ぎには十分注意してください.

@@ -6,7 +6,9 @@ tags:
   - Linux
   - Arduino
 ---
-<p>どもどもー</p><p><img src="https://lh3.googleusercontent.com/-fFh3rCgGq9g/UlFSJC09C-I/AAAAAAAACpw/rmMps_jgNy4/s640/IMG_1127.JPG" /></p>
+<p>どもどもー</p>
+![](./IMG_1127.JPG)
+
 <p>ここ3日、ずっとAVRマイコンをAssemblyでプログラミングしていました。<span class="fontsize1">（きっと）</span></p>
 <p>何となくわかってきたのでとりあえずメモ。</p>
 <p>&nbsp;</p>
@@ -18,8 +20,12 @@ tags:
 <p>ちなみに載っているマイコンはATmega328Pです。</p>
 <p>&nbsp;</p>
 <p>図のようにパーツを接続しました。</p>
-<p><img src="https://lh3.googleusercontent.com/-Ho2irIwLDKM/UlFRzc2ArII/AAAAAAAACpo/i4w3oCKcjnU/s640/IMG_1125.JPG" /></p>
-<p><img src="https://lh3.googleusercontent.com/-urAHq4AQKEM/UlFRc4ZG1cI/AAAAAAAACpg/n5tVlJuu6h0/s640/IMG_1141.JPG" /></p>
+
+![](./IMG_1125.JPG)
+
+
+![](./IMG_1141.JPG)
+
 <p>&nbsp;</p>
 <h2>追加するパッケージ</h2>
 <h3>avra</h3>

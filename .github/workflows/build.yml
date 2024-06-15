@@ -18,7 +18,7 @@ jobs:
       artifact_name: ${{ steps.save_params.outputs.artifact_name }}
       artifact_path: ${{ steps.save_params.outputs.artifact_path }}
     steps:
-      - uses: actions/checkout@v4.1.6
+      - uses: actions/checkout@v4.1.7
         with:
           submodules: true
 

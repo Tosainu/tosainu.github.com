@@ -1285,10 +1285,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shikijs/core@npm:1.6.4":
-  version: 1.6.4
-  resolution: "@shikijs/core@npm:1.6.4"
-  checksum: 10c0/ce45c5d85393fd8f310cbb891599b9855ec19fe595aa36efdeed39a86d24c41a38af742620aa6f616764035a9fefb415cf5a3ba3a1d667822447f0a2380f8fc7
+"@shikijs/core@npm:1.9.0":
+  version: 1.9.0
+  resolution: "@shikijs/core@npm:1.9.0"
+  checksum: 10c0/0b0ec958a9ad579eb7678032eb9b5f1c82cc771bb094b750afe76ef499451049d5e1797b4fcce4bab713761e633629347f46190005cfd07bd4b81eda029a19ca
   languageName: node
   linkType: hard
 
@@ -1947,9 +1947,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:4.10.2":
-  version: 4.10.2
-  resolution: "astro@npm:4.10.2"
+"astro@npm:4.11.0":
+  version: 4.11.0
+  resolution: "astro@npm:4.11.0"
   dependencies:
     "@astrojs/compiler": "npm:^2.8.0"
     "@astrojs/internal-helpers": "npm:0.4.0"
@@ -1963,7 +1963,7 @@ __metadata:
     "@babel/types": "npm:^7.24.7"
     "@types/babel__core": "npm:^7.20.5"
     "@types/cookie": "npm:^0.6.0"
-    acorn: "npm:^8.11.3"
+    acorn: "npm:^8.12.0"
     aria-query: "npm:^5.3.0"
     axobject-query: "npm:^4.0.0"
     boxen: "npm:^7.1.1"
@@ -2003,13 +2003,13 @@ __metadata:
     resolve: "npm:^1.22.8"
     semver: "npm:^7.6.2"
     sharp: "npm:^0.33.3"
-    shiki: "npm:^1.6.3"
+    shiki: "npm:^1.6.5"
     string-width: "npm:^7.1.0"
     strip-ansi: "npm:^7.1.0"
     tsconfck: "npm:^3.1.0"
     unist-util-visit: "npm:^5.0.0"
     vfile: "npm:^6.0.1"
-    vite: "npm:^5.2.13"
+    vite: "npm:^5.3.1"
     vitefu: "npm:^0.2.5"
     which-pm: "npm:^2.2.0"
     yargs-parser: "npm:^21.1.1"
@@ -2020,7 +2020,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/8687bffe7234e999aed423135640342d71ca8e4e51817a31522f413a1610501258715cb020b0b19a9b709eea9ee72f0234332be03253578501d4b1865c1fd6b0
+  checksum: 10c0/98c6f626aa69a9e205a8653a49b21503e5bdb8e77bc9a7acda5855302ef6eec52256c476e253eecebe3045761c1247d0acdfc56598fe190d7355123cb90c5cc2
   languageName: node
   linkType: hard
 
@@ -2103,7 +2103,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": "npm:^6.5.1"
     "@fortawesome/free-solid-svg-icons": "npm:^6.5.1"
     "@tailwindcss/typography": "npm:^0.5.13"
-    astro: "npm:4.10.2"
+    astro: "npm:4.11.0"
     eslint: "npm:^9.5.0"
     eslint-plugin-astro: "npm:^1.2.2"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
@@ -6378,12 +6378,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:^1.6.3":
-  version: 1.6.4
-  resolution: "shiki@npm:1.6.4"
+"shiki@npm:^1.6.5":
+  version: 1.9.0
+  resolution: "shiki@npm:1.9.0"
   dependencies:
-    "@shikijs/core": "npm:1.6.4"
-  checksum: 10c0/759c03a30eddf8da9a361ddeedc4c70781f99df6e25287d658d9edbbcca0d092ce1cec8e3bc665a4d4c758e8dde87d82235730963c0f91a8aa8dcae2e478090c
+    "@shikijs/core": "npm:1.9.0"
+  checksum: 10c0/bc2dd4547a2afec62e2ecba8f2e85bf48d99c5b3b3fb7247f9159f7437a8f83d20afdca75fe5a6ceffe409b5c008671f09dd5546b66a35d895c7dd1eaf1b261b
   languageName: node
   linkType: hard
 
@@ -7178,7 +7178,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.2.13":
+"vite@npm:^5.3.1":
   version: 5.3.1
   resolution: "vite@npm:5.3.1"
   dependencies:

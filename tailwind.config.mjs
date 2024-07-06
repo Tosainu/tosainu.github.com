@@ -13,6 +13,12 @@ export default {
             '--tw-prose-links': theme('colors.sky[700]'),
             '--tw-prose-headings': 'inherit',
             '--tw-prose-code': 'inherit',
+            'code::before': {
+              content: 'none',
+            },
+            'code::after': {
+              content: 'none',
+            },
             fontSize: 'inherit',
             lineHeight: 'inherit',
             maxWidth: '100%',

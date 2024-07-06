@@ -187,7 +187,7 @@ expect {
 exit [lindex [wait] 3]
 ```
 
-スクリプトはコマンドラインの引数 `$argv` から2つの値を取ります。1つ目は実行ファイル (`xsetup` を想定)、2つ目はメールアドレスとパスワードを記述したファイルです。メールアドレスとパスワードは、ファイルの1行目と2行目に順に記述されているものとします。`split` で分割し、それぞれを変数 `$username` と `$password` に格納しています。`spawn` で `xsetup -b AuthTokenGen` を実行し、続く `expect` で入出力を処理します。`xsetup` が `E-mail Address:` と表示したら `$username`、`Password:` と表示したら `$password` を入力、という操作が記述されています。
+スクリプトはコマンドラインの引数 `$argv` から2つの値を取ります。1つ目は `xsetup` を想定した実行ファイルへのパス、2つ目はメールアドレスとパスワードを記述したファイルへのパスです。メールアドレスとパスワードは、ファイルの1行目と2行目に順に記述されているものとします。`split` で分割し、それぞれを変数 `$username` と `$password` に格納しています。`spawn` で `xsetup -b AuthTokenGen` を実行し、続く `expect` で入出力を処理します。`xsetup` が `E-mail Address:` と表示したら `$username`、`Password:` と表示したら `$password` を入力、という操作が記述されています。
 
 このスクリプトは `auth_token_gen.exp` と名前を付けて保存しました。メールアドレスとパスワードを記述したファイルを `secret.txt` とすれば、次のコマンドで `xsetup -b AuthTokenGen` がユーザー入力なしに完了します。
 
@@ -262,7 +262,7 @@ Batch Mode のインストールでは、インストール内容の詳細をテ
 
 前回の記事でもそうしているように、拾ってきたバイナリはあまりそのまま実行したくないので、今回も Docker 経由で生成させます。せっかくなので、少し工夫してやります。
 
-前のセクションで示したとおり、`Dockerfile` 中に、インストーラーを展開する build stage  `installer` があります。これを流用して、`xsetup -b ConfigGen` も実行します。今回は Vivado をインストールしたいので、`-p.--product`, `-e,--edition` にそれぞれ `Vivado`, `Vivado ML Standard` を指定します。また自分は `/opt` に入れたい派なので、`-l.--location` を `/opt/Xilinx` にしています。
+前のセクションで示したとおり、`Dockerfile` 中に、インストーラーを展開する build stage  `installer` があります。これを流用して、`xsetup -b ConfigGen` も実行します。今回は Vivado をインストールしたいので、`-p,--product`, `-e,--edition` にそれぞれ `Vivado`, `Vivado ML Standard` を指定します。また自分は `/opt` に入れたい派なので、`-l,--location` を `/opt/Xilinx` にしています。
 
 ```dockerfile
 FROM installer AS do-configgen

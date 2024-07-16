@@ -2102,7 +2102,7 @@ __metadata:
     "@tailwindcss/typography": "npm:^0.5.13"
     astro: "npm:4.11.5"
     eslint: "npm:^9.7.0"
-    eslint-plugin-astro: "npm:^1.2.2"
+    eslint-plugin-astro: "npm:^1.2.3"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     globals: "npm:^15.8.0"
     katex: "npm:^0.16.11"
@@ -2812,9 +2812,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-astro@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "eslint-plugin-astro@npm:1.2.2"
+"eslint-plugin-astro@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "eslint-plugin-astro@npm:1.2.3"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
@@ -2826,7 +2826,7 @@ __metadata:
     postcss-selector-parser: "npm:^6.0.10"
   peerDependencies:
     eslint: ">=8.57.0"
-  checksum: 10c0/8a43093cddd3240c9a9b9067848f593d75079a0efb079852b2c20abd693e96774d2103fe8a3cf2a82fb3809c4240e04d9e1b4a549559f95cc7e5b24916b37772
+  checksum: 10c0/e24e07050d98e6e8596608750f94b7bd0cacd325e5e3864e11ebc9fc88993feee0f08b22034410861e7c6b8302725bab3eb2732d8be35b647eb5fb75bdaf9ba0
   languageName: node
   linkType: hard
 

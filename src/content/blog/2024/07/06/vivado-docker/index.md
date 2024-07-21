@@ -254,7 +254,7 @@ CMD ["/bin/bash"]
 
 `FROM installer AS do-install` で、`install_config.txt` に応じたインストールをしています。`xsetup -b AuthTokenGen` は Expect 経由で、そのあとは SFD Installer のときと同様に `xsetup -b Install` という感じです。最後に使わないファイルを消しています。`secret.txt` は [Build secrets](https://docs.docker.com/build/building/secrets/) の仕組みを使って渡しています。カレントディレクトリに `secret.txt` がある場合、`docker build` に `--secret id=secret,src=secret.txt` を渡します。
 
-最後の記述が最終的なコンテナイメージを定義しています。`do-install` でインストール自体は完了していますが、展開したインストーラーなど不要なファイルが含まれています。イメージサイズを少しでも削減するため `base` 作り直しています。`ENTRYPOINT` の行が、前回の記事でも取り上げたホストとコンテナ内の UID を一致させる hack です。本記事でも後述します。
+最後の記述が最終的なコンテナイメージを定義しています。`do-install` でインストール自体は完了していますが、展開したインストーラーなど不要なファイルが含まれています。イメージサイズを少しでも削減するため `base` から作り直しています。`ENTRYPOINT` の行が、前回の記事でも取り上げたホストとコンテナ内の UID を一致させる hack です。本記事でも後述します。
 
 ## `install_config.txt` も Docker 経由で
 

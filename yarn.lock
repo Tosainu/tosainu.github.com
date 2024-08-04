@@ -29,11 +29,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/check@npm:^0.8.3":
-  version: 0.8.3
-  resolution: "@astrojs/check@npm:0.8.3"
+"@astrojs/check@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "@astrojs/check@npm:0.9.1"
   dependencies:
-    "@astrojs/language-server": "npm:^2.12.7"
+    "@astrojs/language-server": "npm:^2.13.1"
     chokidar: "npm:^3.5.3"
     fast-glob: "npm:^3.3.1"
     kleur: "npm:^4.1.5"
@@ -42,7 +42,7 @@ __metadata:
     typescript: ^5.0.0
   bin:
     astro-check: dist/bin.js
-  checksum: 10c0/4bc9b084e39770ec89264cdc871dbdda48a010c18469f4373cb4fae6a990bd596b10eb89f3d9ee4dc6762a259383d68d40252043e40af92676f85d697f9a4ee1
+  checksum: 10c0/3aa2d0c464a8cb76b7a7203617772d99e791451efe063fe1b776a96ce0b0ff955bfc8c9a4b8b0e512422420f202f06046d8403e6f04b43084b990a1e2f2db02a
   languageName: node
   linkType: hard
 
@@ -50,6 +50,13 @@ __metadata:
   version: 2.7.1
   resolution: "@astrojs/compiler@npm:2.7.1"
   checksum: 10c0/e0fc7bde31dafe318ea47859d2277a5ea7fb1b924c72febfdb64e5572ea47a8e028ef110e75b24e6e2a53423a926230420955039c9688baac1c5ab42b25e14dc
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler@npm:^2.10.1":
+  version: 2.10.1
+  resolution: "@astrojs/compiler@npm:2.10.1"
+  checksum: 10c0/0825c8e540fedb0fafd203eeedd7352e33439a4e578a3dec6520d49b291db48bd30e7f0e13fbbdc17f315c5b34ce7faf46f5bbca9c2be2fde4f3e47ede1784e6
   languageName: node
   linkType: hard
 
@@ -67,11 +74,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/language-server@npm:^2.12.7":
-  version: 2.12.8
-  resolution: "@astrojs/language-server@npm:2.12.8"
+"@astrojs/language-server@npm:^2.13.1":
+  version: 2.13.1
+  resolution: "@astrojs/language-server@npm:2.13.1"
   dependencies:
-    "@astrojs/compiler": "npm:^2.9.1"
+    "@astrojs/compiler": "npm:^2.10.1"
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
     "@volar/kit": "npm:~2.4.0-alpha.15"
     "@volar/language-core": "npm:~2.4.0-alpha.15"
@@ -98,7 +105,7 @@ __metadata:
       optional: true
   bin:
     astro-ls: bin/nodeServer.js
-  checksum: 10c0/26b96aed9c4e80b918eedb863ccdbb6c444efe8a0d60235f3425e51d93fa65ada82947e98aeb66aa41464dac76749adecd262c6d3dbdc01da69bc036bf87ad6a
+  checksum: 10c0/ee52a9d6128484246bbe0e3532bf40e0c7aaf0ccb4165b437fcf9e477a278787ef1bb814459201490f0ee96835addac7e5475b6c80965e6c07f3f96e820af4ad
   languageName: node
   linkType: hard
 
@@ -2135,7 +2142,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "blog@workspace:."
   dependencies:
-    "@astrojs/check": "npm:^0.8.3"
+    "@astrojs/check": "npm:^0.9.1"
     "@astrojs/mdx": "npm:^3.1.3"
     "@astrojs/rss": "npm:^4.0.7"
     "@astrojs/tailwind": "npm:^5.1.0"

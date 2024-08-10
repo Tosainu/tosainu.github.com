@@ -53,7 +53,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/compiler@npm:^2.10.0, @astrojs/compiler@npm:^2.10.1":
+"@astrojs/compiler@npm:^2.10.1":
   version: 2.10.1
   resolution: "@astrojs/compiler@npm:2.10.1"
   checksum: 10c0/0825c8e540fedb0fafd203eeedd7352e33439a4e578a3dec6520d49b291db48bd30e7f0e13fbbdc17f315c5b34ce7faf46f5bbca9c2be2fde4f3e47ede1784e6
@@ -2028,11 +2028,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:4.13.1":
-  version: 4.13.1
-  resolution: "astro@npm:4.13.1"
+"astro@npm:4.13.3":
+  version: 4.13.3
+  resolution: "astro@npm:4.13.3"
   dependencies:
-    "@astrojs/compiler": "npm:^2.10.0"
+    "@astrojs/compiler": "npm:^2.10.1"
     "@astrojs/internal-helpers": "npm:0.4.1"
     "@astrojs/markdown-remark": "npm:5.2.0"
     "@astrojs/telemetry": "npm:3.1.0"
@@ -2082,7 +2082,7 @@ __metadata:
     rehype: "npm:^13.0.1"
     semver: "npm:^7.6.3"
     sharp: "npm:^0.33.3"
-    shiki: "npm:^1.12.0"
+    shiki: "npm:^1.12.1"
     string-width: "npm:^7.2.0"
     strip-ansi: "npm:^7.1.0"
     tsconfck: "npm:^3.1.1"
@@ -2099,7 +2099,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/7f7df725a5459e5106ee62a89bd260ad4d23f5fd9d77930a8ca4b8d9e2686eae02f8a431b5e93ff3180bee4cf519be7b25f22b1664c0123551c02d6dc91c32a1
+  checksum: 10c0/b36e0cfae8a880f1faabf702282e8b2ef987b492394349c9bfc3ed8bfe1eeb9faf262ffe9f988debfec53f4f0768acbd1de814da30ca458e1b69467ad81767a5
   languageName: node
   linkType: hard
 
@@ -2180,7 +2180,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": "npm:^6.6.0"
     "@fortawesome/free-solid-svg-icons": "npm:^6.6.0"
     "@tailwindcss/typography": "npm:^0.5.13"
-    astro: "npm:4.13.1"
+    astro: "npm:4.13.3"
     eslint: "npm:^9.9.0"
     eslint-plugin-astro: "npm:^1.2.3"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
@@ -6484,7 +6484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:^1.12.0":
+"shiki@npm:^1.12.1":
   version: 1.12.1
   resolution: "shiki@npm:1.12.1"
   dependencies:

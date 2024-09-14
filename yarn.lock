@@ -1697,7 +1697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:7.7.1, @typescript-eslint/types@npm:^7.0.0, @typescript-eslint/types@npm:^7.7.1":
+"@typescript-eslint/types@npm:7.7.1, @typescript-eslint/types@npm:^7.0.0":
   version: 7.7.1
   resolution: "@typescript-eslint/types@npm:7.7.1"
   checksum: 10c0/7d240503d9d0b12d68c8204167690609f02ededb77dcb035c1c8b932da08cf43553829c29a5f7889824a7337463c300343bc5abe532479726d4c83443a7e2704
@@ -1708,6 +1708,13 @@ __metadata:
   version: 8.4.0
   resolution: "@typescript-eslint/types@npm:8.4.0"
   checksum: 10c0/15e09ced84827c349553530a31822f06ae5bad456c03d561b7d0c64b6ad9b5d7ca795e030bd93e65d5a2cd41bfde36ed08dcd2ff9feaa8b60a67080827f47ecb
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/types@npm:^7.7.1 || ^8":
+  version: 8.5.0
+  resolution: "@typescript-eslint/types@npm:8.5.0"
+  checksum: 10c0/f0b666b5c001b9779bfd9e4c7d031843d07264429d5bcf5d636f26f96cd5d949a33f5d6a645b8d74b93daf565a468476a6a4935dd7135a200250fb03acbe4988
   languageName: node
   linkType: hard
 
@@ -2267,7 +2274,7 @@ __metadata:
     "@tailwindcss/typography": "npm:^0.5.15"
     astro: "npm:4.15.4"
     eslint: "npm:^9.10.0"
-    eslint-plugin-astro: "npm:^1.2.3"
+    eslint-plugin-astro: "npm:^1.2.4"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     globals: "npm:^15.9.0"
     katex: "npm:^0.16.11"
@@ -3014,13 +3021,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-astro@npm:^1.2.3":
-  version: 1.2.3
-  resolution: "eslint-plugin-astro@npm:1.2.3"
+"eslint-plugin-astro@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "eslint-plugin-astro@npm:1.2.4"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@jridgewell/sourcemap-codec": "npm:^1.4.14"
-    "@typescript-eslint/types": "npm:^7.7.1"
+    "@typescript-eslint/types": "npm:^7.7.1 || ^8"
     astro-eslint-parser: "npm:^1.0.2"
     eslint-compat-utils: "npm:^0.5.0"
     globals: "npm:^15.0.0"
@@ -3028,7 +3035,7 @@ __metadata:
     postcss-selector-parser: "npm:^6.0.10"
   peerDependencies:
     eslint: ">=8.57.0"
-  checksum: 10c0/e24e07050d98e6e8596608750f94b7bd0cacd325e5e3864e11ebc9fc88993feee0f08b22034410861e7c6b8302725bab3eb2732d8be35b647eb5fb75bdaf9ba0
+  checksum: 10c0/7be2b60376982882a95c29bbba6fdff04c211bb201364a15f6b8abba9b2680a515396e5a62b4aa150fbd1cc367b3a49370eeb06ff2ed779da41c3ef96f835586
   languageName: node
   linkType: hard
 

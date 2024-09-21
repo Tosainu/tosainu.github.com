@@ -29,7 +29,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.3",
     "@eslint/js": "^9.10.0",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.0",
     "eslint-plugin-astro": "^1.2.4",
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
     "globals": "^15.9.0",

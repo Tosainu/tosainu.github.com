@@ -1,4 +1,4 @@
-import type { AuthorWork } from '@/types'
+import type { AuthorWork, NavigationLink } from '@/types'
 
 export const site = {
   title: "Tosainu's Portfolio",
@@ -17,6 +17,17 @@ export const blog = {
   articlesInPage: 15,
 }
 
+export const links: NavigationLink[] = [
+  {
+    name: 'Photos',
+    url: 'https://photos.myon.info',
+  },
+  {
+    name: 'Blog',
+    url: '/blog/',
+  },
+]
+
 export const author = {
   name: 'Kenta Sato',
   nickname: 'Tosainu',
@@ -27,9 +38,10 @@ export const author = {
   shortbio: '❤ Arch Linux, ごちうさ',
   interests: [
     'Arch Linux',
-    'Programming (C++17, Rust, Haskell)',
-    'Embedded System',
+    'Programming (Rust, Haskell, C++20)',
+    'Embedded System (Zynq UltraScale+, RP2040)',
     'CTF (pwn)',
+    'Camera',
     'Is the order a rabbit?',
   ],
   social: {
@@ -43,28 +55,39 @@ export const author = {
 
 export const authorWorks: AuthorWork[] = [
   {
+    name: 'bp35c0-j11-stuff',
+    url: 'https://github.com/Tosainu/bp35c0-j11-stuff',
+    imageUrl: '/images/bp35c0-j11-stuff.jpg',
+    description: 'Energy meter built by BP35C0-J11 and RP2040',
+  },
+  {
     name: 'ultra96-fractal',
     url: 'https://github.com/Tosainu/ultra96-fractal',
+    imageUrl: '/images/ultra96-fractal.jpg',
     description: 'Hardware accelerated Julia set explorer running on Ultra96',
   },
   {
     name: 'earthly-zynqmp-example',
     url: 'https://github.com/Tosainu/earthly-zynqmp-example',
+    imageUrl: '/images/earthly-zynqmp-example.jpg',
     description: '🌍 Earthly x ZynqMP',
   },
   {
     name: 'zynqmp-arch',
     url: 'https://github.com/Tosainu/zynqmp-arch',
+    imageUrl: '/images/zynqmp-arch.png',
     description: 'Unofficial Arch Linux ARM porting for Xilinx Zynq UltraScale+ devices',
   },
   {
     name: 'pwn.hs',
     url: 'https://github.com/Tosainu/pwn.hs',
+    imageUrl: '/images/pwn.hs.png',
     description: 'Exploit development library for Haskeller',
   },
   {
     name: 'cute_AA.txt',
     url: 'https://gist.github.com/Tosainu/47ed11f068f942026494',
+    imageUrl: '/images/cute_AA.png',
     description: 'Cute Kaomoji (顔文字) dictionary',
   },
 ]

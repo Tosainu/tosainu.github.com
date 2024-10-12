@@ -37,7 +37,7 @@ jobs:
       - run: yarn astro build
       - run: tar cvf dist.tar.xz dist
 
-      - uses: actions/upload-artifact@v4.4.0
+      - uses: actions/upload-artifact@v4.4.3
         with:
           name: blog
           path: dist.tar.xz

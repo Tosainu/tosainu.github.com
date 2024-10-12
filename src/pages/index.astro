@@ -108,9 +108,9 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
           Config.authorWorks.map(({ description, imageUrl, name, url }) => (
             <>
               <a href={url} target="_blank" rel="nofollow noopener">
-                <div class="border border-gray-400 relative h-64 md:h-80 bg-cover bg-center bg-no-repeat overflow-hidden" style={`background-image: url(${imageUrl})`}>
+                <div class="border border-gray-400 relative h-64 md:h-80 bg-cover bg-center bg-no-repeat overflow-hidden group hover:border-sky-700 hover:brightness-110" style={`background-image: url(${imageUrl})`}>
                   <div class="transition absolute px-4 py-2 left-0 bottom-0 w-full bg-black/60 backdrop-blur-md">
-                    <h3 class="text-white text-lg font-semibold">{name}</h3>
+                    <h3 class="text-white text-lg font-semibold group-hover:underline">{name}</h3>
                     <span class="text-white text-sm">{description}</span>
                   </div>
                 </div>

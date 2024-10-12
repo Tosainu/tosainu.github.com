@@ -204,17 +204,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/tailwind@npm:^5.1.1":
-  version: 5.1.1
-  resolution: "@astrojs/tailwind@npm:5.1.1"
+"@astrojs/tailwind@npm:^5.1.2":
+  version: 5.1.2
+  resolution: "@astrojs/tailwind@npm:5.1.2"
   dependencies:
     autoprefixer: "npm:^10.4.20"
-    postcss: "npm:^8.4.45"
+    postcss: "npm:^8.4.47"
     postcss-load-config: "npm:^4.0.2"
   peerDependencies:
     astro: ^3.0.0 || ^4.0.0 || ^5.0.0-beta.0
     tailwindcss: ^3.0.24
-  checksum: 10c0/77a983e320eb20857fb8f2e55c8fedb1e4e2698d38d61fe14dfcb1a0b9c56242f471d7aa614b24418a2b79161ed12269fc021615bc4c2e7a4b7289dcdfae7e4c
+  checksum: 10c0/d465d8bea60b7424d42b7336966aafd72d738578e659887b8cb6a8b71444b5e7e056a957e1052a608dacc6d71f0553963b916fc03ec2d069031dac5702a042fe
   languageName: node
   linkType: hard
 
@@ -2419,7 +2419,7 @@ __metadata:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:^3.1.8"
     "@astrojs/rss": "npm:^4.0.8"
-    "@astrojs/tailwind": "npm:^5.1.1"
+    "@astrojs/tailwind": "npm:^5.1.2"
     "@eslint/js": "npm:^9.12.0"
     "@fortawesome/fontawesome-svg-core": "npm:^6.6.0"
     "@fortawesome/free-brands-svg-icons": "npm:^6.6.0"
@@ -6133,7 +6133,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.45":
+"postcss@npm:^8.4.47":
   version: 8.4.47
   resolution: "postcss@npm:8.4.47"
   dependencies:

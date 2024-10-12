@@ -1,5 +1,6 @@
 [submodule "icon"]
 	path = icon
+	branch = release
 	url = https://github.com/Tosainu/icon.git
 [submodule "third_party/earthfile-grammar"]
 	path = third_party/earthfile-grammar

@@ -168,13 +168,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/rss@npm:^4.0.7":
-  version: 4.0.7
-  resolution: "@astrojs/rss@npm:4.0.7"
+"@astrojs/rss@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "@astrojs/rss@npm:4.0.8"
   dependencies:
-    fast-xml-parser: "npm:^4.4.0"
+    fast-xml-parser: "npm:^4.5.0"
     kleur: "npm:^4.1.5"
-  checksum: 10c0/dc3ca62de077eb4f1130c289aff95d7f69a74258fc0f7ca2f79ecfa428ad704051860c5abf386acfd0cfc5a5b026b08699cd520306df16eb8eaaa881a8611ac7
+  checksum: 10c0/449381cbb69d7ad33d02b8fcf809ce4f81dcb60773861a7215119009aada5cea2f4c3e17274900a42683b718c35ed6358566255bf81981038d2cc9d4dd40e5c0
   languageName: node
   linkType: hard
 
@@ -2340,7 +2340,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:^3.1.7"
-    "@astrojs/rss": "npm:^4.0.7"
+    "@astrojs/rss": "npm:^4.0.8"
     "@astrojs/tailwind": "npm:^5.1.1"
     "@eslint/js": "npm:^9.12.0"
     "@fortawesome/fontawesome-svg-core": "npm:^6.6.0"
@@ -3432,14 +3432,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-xml-parser@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "fast-xml-parser@npm:4.4.0"
+"fast-xml-parser@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "fast-xml-parser@npm:4.5.0"
   dependencies:
     strnum: "npm:^1.0.5"
   bin:
     fxparser: src/cli/cli.js
-  checksum: 10c0/ce32fad713471a40bea67959894168f297a5dd0aba64b89a2abc71a4fec0b1ae1d49c2dd8d8719ca8beeedf477824358c8a486b360b9f3ef12abc2e355d11318
+  checksum: 10c0/71d206c9e137f5c26af88d27dde0108068a5d074401901d643c500c36e95dfd828333a98bda020846c41f5b9b364e2b0e9be5b19b0bdcab5cf31559c07b80a95
   languageName: node
   linkType: hard
 

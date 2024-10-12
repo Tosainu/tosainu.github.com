@@ -17,7 +17,7 @@ Zynq に限らず、規模の大きくなったソフトウェアは edit-build-
 
 [Earthly](https://earthly.dev/) はコンテナを活用した Build automation tool です。`Makefile` と `Dockerfile` を組み合わせたかのような `Earthfile` を見れば、これがどんなことをしてくれるものなのかすぐにイメージできるんじゃないかなと思います。実際、Earthly は buikdkit をバックエンドに使っていて、Docker の [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/) にかなり近い動作をします。各ターゲットはそれぞれ独立したコンテナ環境で実行されるので、ちゃんと設定さえすればどの実行環境でもほぼ同じビルドが再現できますし、ある別のターゲットで作られたものやリポジトリ管理外のファイルを暗黙的に参照してしまうこともありません。また、ターゲット間の依存関係に問題なければ可能な限り並列で実行してくれたり、一度実行したターゲットは自身が依存するファイルや別のターゲットに変更がない限りキャッシュが効いてくれるのもポイントです。これだけの利点がありながら、Earthly の導入作業は基本的には普段の dockerize と同じ感覚なので、個々のビルド方法自体は大きく変えなくてよく、比較的敷居が低いのも強みです。
 
-```docker
+```Earthfile
 hoge:
     FROM alpine
     RUN echo "Hoge!" > awesome.txt
@@ -98,7 +98,7 @@ Earthly の主要操作はだいたいこんな感じです。基本的には `D
 
 必要になるのは RPU と APU で動かすアプリケーションをビルドするクロスコンパイラ、ディスクイメージ作成のためにファイルシステムやパーティションテーブル操作系のツール、そして `.xsa` から BSP や FSBL, PMUFW などを生成するための Xilinx のツール類です。クロスコンパイラの大半と Xilinx のツール類は、PetaLinux Tools などで使われているらしい [xsct-trim](https://github.com/Xilinx/meta-xilinx-tools/blob/e2ff6325931b008565f558cb35ac38dfb01116c9/classes/xsct-tarball.bbclass#L7) から拝借しました。xsct-trim には AArch64 Linux 向けクロスコンパイラは入っていないので、かわりに Ubuntu の `crossbuild-essential-arm64` パッケージを使うことにしました。
 
-```docker
+```Earthfile
 prep:
     FROM ubuntu:jammy@sha256:20fa2d7bb4de7723f542be5923b06c4d704370f0390e4ae9e1c833c8785644c1
     RUN \
@@ -179,7 +179,7 @@ hsi generate_target -dir device-tree
 
 あとはこれを `xsct` に実行させれば OK です。ビルド時に可変なパラメータを宣言する [`ARG`](https://docs.earthly.dev/docs/earthfile#arg) で `.xsa` ファイルへのパスを渡せるようにしておきます。生成したファイルは全部 `SAVE ARTIFACT` して別のターゲットから取り出せるようにしておきます。FSBL, PMUFW, BSP のビルドはそれぞれ独立したターゲットにして、ターゲット単位のビルド並列化が効くようにします[^xlnx-makefile]。
 
-```docker
+```Earthfile
 generate-src:
     ARG --required XSA_FILE
 
@@ -221,7 +221,7 @@ RPU アプリケーションは、素直に Vitis を使ってテンプレート
 
 コードは CMake でビルドできるようにしました。[`FindLibXil.cmake`](https://github.com/Tosainu/earthly-zynqmp-example/blob/27538797d4663eb2637bf9e8570dc23e7465f126/apps/r5_0/cmake/Modules/FindLibXil.cmake) を書いたので、`libxil.a` などを `find_package()` で探せるようになっています。BSP をビルドしたターゲット `bsp-r5-0` からライブラリとヘッダファイルをコピーしてきて、それを `FindLibXil.cmake` が探せるように `-DLibXil_ROOT=` でパスを渡します。またクロスコンパイラを使ってビルドするために、CMake に toolchain file を渡して指示します。CMake は `-S`, `-B`, `-DLibXil_ROOT` などがカレントディレクトリからの相対パスを受け付けてくれるのに対して、`--toolchain` は絶対パス、またはビルドディレクトリ・ソースディレクトリからの相対パスを要求してくるのに注意です。
 
-```docker
+```Earthfile
 app-r5-0:
     FROM +prep
     COPY +bsp-r5-0/ libxil
@@ -240,7 +240,7 @@ app-r5-0:
 
 APU のアプリケーションも C++ で書いて CMake でビルドします。RPU と違って標準ライブラリと Linux の機能しか使わないので、クロスコンパイルのために toolchain file を渡す以外は特別な設定もなくいつもどおりです。
 
-```docker
+```Earthfile
 app-a53:
     FROM +prep
     COPY apps/a53 src
@@ -261,7 +261,7 @@ app-a53:
 
 カーネルのコンフィグファイルは実行環境に依存しない `defconfig` 形式を使うのが望ましいのですが、手抜きをして `menuconfig` で作ったものをそのままリポジトリに入れています。`SAVE ARTIFACT` するのは作った `.deb` パッケージと、あとで `.dts` をコンパイルするときに使うヘッダファイルです。
 
-```docker
+```Earthfile
 linux:
     FROM +prep
     RUN --mount=type=tmpfs,target=/tmp \
@@ -281,7 +281,7 @@ linux:
 
 Ubuntu 環境の構築には `mmdebstrap` を使ってみました。よく知られた `debootstrap` と比較して、処理時間が早いことや、より小さな環境を作りやすかったりするのがウリだそうです。
 
-```docker
+```Earthfile
 rootfs-base.tar:
     FROM --platform=linux/arm64 ubuntu:jammy@sha256:1bc0bc3815bdcfafefa6b3ef1d8fd159564693d0f8fbb37b8151074651a11ffb
     RUN apt-get update && \
@@ -319,7 +319,7 @@ rootfs-base.tar:
 
 作った Ubuntu の `.tar` にファイルの追加をしているのがこのターゲットです。追加するのは APU のアプリケーションやその他設定ファイル類です。ファイルを追加するだけなら `tar` を展開しなくてもできます。
 
-```docker
+```Earthfile
 rootfs.tar:
     FROM +prep
     COPY +rootfs-base.tar/rootfs-base.tar rootfs.tar
@@ -333,7 +333,7 @@ rootfs.tar:
 
 U-Boot のビルドは、`ARCH` に渡す値が `aarch64` に変わるくらいで Linux とほぼ同じです。ビルドで一緒に作られるツール `dtc` と `mkimage` がこの後の作業で必要なので、これらも忘れず `SAVE ARTIFACT` しておきます。
 
-```docker
+```Earthfile
 u-boot:
     FROM +prep
     RUN --mount=type=tmpfs,target=/tmp \
@@ -361,7 +361,7 @@ Device Tree Control  --->
 
 以前は arm-trusted-firmware やそれを略して ATF と呼ばれていたやつです。これもいつもどおりの方法でビルドします。`ZYNQMP_CONSOLE=cadence1` をつけるとメッセージ出力先が UART1 になってくれます。
 
-```docker
+```Earthfile
 tf-a:
     FROM +prep
     RUN --mount=type=tmpfs,target=/tmp \
@@ -378,7 +378,7 @@ tf-a:
 
 XSCT で生成した `.dts` に必要なものを追記して、それを U-Boot と Linux の両方にロードさせることにします。`gcc` はプリプロセッサを処理するために呼んでいます。渡しているオプションは [Linux カーネルにならった](https://github.com/Xilinx/linux-xlnx/blob/75872fda9ad270b611ee6ae2433492da1e22b688/scripts/Makefile.lib#L351-L355)ものです。
 
-```docker
+```Earthfile
 system.dtb:
     FROM +prep
     COPY +generate-src/device-tree .
@@ -394,7 +394,7 @@ system.dtb:
 
 `boot.bin` の生成に使う `bootgen` は [GitHub にソースコードがあります](https://github.com/Xilinx/bootgen)。まずこれをビルドします。ソースコードを持ってきて `make` すれば、同じディレクトリ内に実行ファイル `bootgen` が出来上がります。
 
-```docker
+```Earthfile
 bootgen:
     FROM +prep
     RUN --mount=type=tmpfs,target=/tmp \
@@ -424,7 +424,7 @@ all:
 
 あとはこれまでのターゲットでビルドしてきた必要なファイルと `.bif` ファイルを持ってきて、`bootgen` コマンドを実行すれば OK です。
 
-```docker
+```Earthfile
 boot.bin:
     FROM +prep
     COPY +app-r5-0/bin/ipi-led.elf .
@@ -444,7 +444,7 @@ boot.bin:
 
 U-Boot には、ブートデバイスのファイルシステム直下にあるスクリプト `boot.scr` を実行してくれる機能があります。これを使ってカーネルがある場所を指示したり、ロードしたカーネルでブートさせたりします。`boot.scr` は、U-Boot のコマンドをテキストファイルに書き、`mkimage` に渡して作ります。
 
-```docker
+```Earthfile
 boot.scr:
     FROM +prep
     COPY +u-boot/mkimage .
@@ -469,7 +469,7 @@ booti ${kernel_addr_r} - ${fdt_addr_r}
 
 最初にパーティション毎にイメージを作ってフォーマット & データのコピー、最後にそれらを結合して `sfdisk` でパーティションテーブルの書き込み、という感じのことをやっています。`loop` デバイスの作成や `mount` などを実行しているため、ここだけは仕方なく `--privileged` をつけています。いきなりディスクイメージを作らずパーティション毎にファイルを分けて構築しているのは、コンテナ内で `mount` は動くけど `losetup` はうまく動いてくれない場合があったことと、そもそもカーネルモジュール `loop` のパラメータ `max_part` が指定しなければ大抵0なため、パーティションを持つ `loop` デバイスの作成がコンテナ内だけの処理で完結しにくいためです。
 
-```docker
+```Earthfile
 disk.img.zst:
     FROM +prep
     COPY +boot.tar/ .
@@ -510,7 +510,7 @@ boot.tar:
 
 Earthly は1回のコマンド実行で1つのターゲットしか呼び出せないので、最終的に必要となるものをまとめるターゲットを作っておくのが便利です。今回の `Earthfile` では `build` がこれに対応します。`RUN` などのコマンドを使わないなら、`FROM` に `scratch` が指定できます。
 
-```docker
+```Earthfile
 build:
     FROM scratch
     COPY +disk.img.zst/ .
@@ -600,7 +600,7 @@ Device Drivers  --->
 
 そして Devicetree に UIO デバイスのノードを追加します。`compatible` や `uio_pdrv_genirq.of_id` に設定する文字列は、この界隈の慣習 (?) にならって `generic-uio` にしています。実際は何でもよいはずです。node-name も名前がかぶらなければ何でもよいと思います。一応 [Devicetree Specification](https://www.devicetree.org/specifications/) には Generic Names Recommendation というセクションがありますが、これに当てはまりそうなものはなさそうです。unit-address は対応するもののベースアドレスにしておくのが無難です。
 
-```c
+```dts
 / {
   ipi-ctrl@ff340000 {
     compatible = "generic-uio";
@@ -682,7 +682,7 @@ for (;;) {
 
 0x200 byte の領域の区切られ方も buffer index 順です。ということで RPU 0 (ch 1, idx 0) -> APU (ch 7, idx 3) の IPI では `0xff99'00c0` と `0xff99'00e0`、APU -> RPU 0 の IPI では `0xff99'0600` と `0xff99'0620` を使えばいいことがわかります。Linux の場合は Devicetree にこんな感じの設定をし、IPI レジスタと同様 `mmap` した領域を介してアクセスできるようにしました。なお、実際に Message Buffer を使っているのは APU から RPU に IPI するときだけです。
 
-```c
+```dts
 / {
   ipi-buffer@ff990000 {
     compatible = "generic-uio";

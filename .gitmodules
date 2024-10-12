@@ -1,3 +1,12 @@
 [submodule "icon"]
 	path = icon
 	url = https://github.com/Tosainu/icon.git
+[submodule "third_party/earthfile-grammar"]
+	path = third_party/earthfile-grammar
+	url = https://github.com/earthly/earthfile-grammar
+[submodule "third_party/llvm-syntax-highlighting"]
+	path = third_party/llvm-syntax-highlighting
+	url = https://github.com/colejcummins/llvm-syntax-highlighting
+[submodule "third_party/vscode-devicetree"]
+	path = third_party/vscode-devicetree
+	url = https://github.com/plorefice/vscode-devicetree

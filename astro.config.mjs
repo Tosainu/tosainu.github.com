@@ -5,6 +5,8 @@ import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 import tailwind from '@astrojs/tailwind';
 
+import fs from 'node:fs';
+
 const langDts = JSON.parse(
   fs.readFileSync('third_party/vscode-devicetree/syntaxes/dts.tmLanguage.json', 'utf8'),
 );

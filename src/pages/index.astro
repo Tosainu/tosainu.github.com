@@ -31,7 +31,7 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
       {
         Config.links.map(({ name, url }) => (
           <>
-            <a class="px-1 pb-1 ml-4 hover:border-b-4 hover:border-dashed" href={url}>
+            <a class="ml-4 px-1 pb-1 hover:border-b-4 hover:border-dashed" href={url}>
               <span class="pr-1">{name}</span>
               <FontawesomeIcon icon={faCaretRight} class="fa-lg" />
             </a>
@@ -41,30 +41,30 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
     </nav>
 
     <div class="absolute inset-0 flex flex-col items-center justify-center">
-      <img class="animate-[avatar-fade-in_0.4s_ease-in] mb-2.5 h-44 rounded-full border-[5px] border-white" src={Config.author.avatar} />
+      <img class="mb-2.5 h-44 animate-[avatar-fade-in_0.4s_ease-in] rounded-full border-[5px] border-white" src={Config.author.avatar} />
       <h1 class="mb-6 text-4xl font-semibold leading-loose text-white">{Config.author.nickname}</h1>
       <div class="flex w-full max-w-sm justify-around">
         <span>
-          <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Twitter" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
+          <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="Twitter" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
             <FontawesomeIcon icon={faTwitter} class="fa-stack-1x text-current" />
           </a>
         </span>
         <span>
-          <a href={`https://github.com/${Config.author.social.github}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="GitHub" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
+          <a href={`https://github.com/${Config.author.social.github}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="GitHub" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
             <FontawesomeIcon icon={faGithub} class="fa-stack-1x text-current" />
           </a>
         </span>
         <span>
-          <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Instagram" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
+          <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="Instagram" target="_blank" rel="nofollow noopener">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
             <FontawesomeIcon icon={faInstagram} class="fa-stack-1x text-current" />
           </a>
         </span>
         <span>
-          <a href={`mailto:${Config.author.social.email}`} class="group fa-stack fa-2x text-white hover:text-darkgray active:text-darkgray" title="Mail">
-            <FontawesomeIcon icon={faSquare} class="opacity-0 group-hover:opacity-100 group-active:opacity-100 fa-stack-2x text-white" />
+          <a href={`mailto:${Config.author.social.email}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="Mail">
+            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
             <FontawesomeIcon icon={faEnvelope} class="fa-stack-1x text-current" />
           </a>
         </span>
@@ -103,15 +103,15 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
   <section class="py-24 leading-loose text-darkgray">
     <div class="container mx-auto px-2">
       <h2 class="mb-8 text-3xl font-semibold">Works</h2>
-      <div class="grid xl:grid-cols-2 gap-x-8 gap-y-4">
+      <div class="grid gap-x-8 gap-y-4 xl:grid-cols-2">
         {
           Config.authorWorks.map(({ description, imageUrl, name, url }) => (
             <>
               <a href={url} target="_blank" rel="nofollow noopener">
-                <div class="border border-gray-400 relative h-64 md:h-80 bg-cover bg-center bg-no-repeat overflow-hidden group hover:border-sky-700 hover:brightness-110" style={`background-image: url(${imageUrl})`}>
-                  <div class="transition absolute px-4 py-2 left-0 bottom-0 w-full bg-black/60 backdrop-blur-md">
-                    <h3 class="text-white text-lg font-semibold group-hover:underline">{name}</h3>
-                    <span class="text-white text-sm">{description}</span>
+                <div class="group relative h-64 overflow-hidden border border-gray-400 bg-cover bg-center bg-no-repeat hover:border-sky-700 hover:brightness-110 md:h-80" style={`background-image: url(${imageUrl})`}>
+                  <div class="absolute bottom-0 left-0 w-full bg-black/60 px-4 py-2 backdrop-blur-md transition">
+                    <h3 class="text-lg font-semibold text-white group-hover:underline">{name}</h3>
+                    <span class="text-sm text-white">{description}</span>
                   </div>
                 </div>
               </a>

@@ -168,13 +168,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/rss@npm:^4.0.8":
-  version: 4.0.8
-  resolution: "@astrojs/rss@npm:4.0.8"
+"@astrojs/rss@npm:^4.0.9":
+  version: 4.0.9
+  resolution: "@astrojs/rss@npm:4.0.9"
   dependencies:
     fast-xml-parser: "npm:^4.5.0"
     kleur: "npm:^4.1.5"
-  checksum: 10c0/449381cbb69d7ad33d02b8fcf809ce4f81dcb60773861a7215119009aada5cea2f4c3e17274900a42683b718c35ed6358566255bf81981038d2cc9d4dd40e5c0
+  checksum: 10c0/9ad979a6f6093d5ad68f75520084cbcba8989f2fad9b3aa0b107e5b2870eb2cf9d67769a0f7ea5b36484baa84a52e5db05a6b0def636ee1f8477b82a874729d0
   languageName: node
   linkType: hard
 
@@ -2237,7 +2237,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:^3.1.8"
-    "@astrojs/rss": "npm:^4.0.8"
+    "@astrojs/rss": "npm:^4.0.9"
     "@astrojs/tailwind": "npm:^5.1.2"
     "@eslint/js": "npm:^9.13.0"
     "@fortawesome/fontawesome-svg-core": "npm:^6.6.0"

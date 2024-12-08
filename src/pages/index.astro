@@ -1,4 +1,5 @@
 ---
+import Avatar from '@/images/avatar.svg';
 import Base from '@/layouts/Base.astro';
 import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
 import * as Config from '@/config';
@@ -41,7 +42,7 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
     </nav>
 
     <div class="absolute inset-0 flex flex-col items-center justify-center">
-      <img class="mb-2.5 h-44 animate-[avatar-fade-in_0.4s_ease-in] rounded-full border-[5px] border-white" src={Config.author.avatar} />
+      <Avatar class="mb-2.5 h-44 w-44 animate-[avatar-fade-in_0.4s_ease-in] rounded-full border-[5px] border-white" />
       <h1 class="mb-6 text-4xl font-semibold leading-loose text-white">{Config.author.nickname}</h1>
       <div class="flex w-full max-w-sm justify-around">
         <span>

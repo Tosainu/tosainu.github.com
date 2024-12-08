@@ -77,8 +77,8 @@ const tags = [...new Set(blog.flatMap((p) => p.data.tags))].sort();
       <div class="flex flex-wrap items-start gap-x-2 gap-y-1">
         {
           tags.map((t) => (
-            <span class="flex flex-grow">
-              <LinkToTagPage class="w-full" tag={t} />
+            <span class="flex">
+              <LinkToTagPage tag={t} />
             </span>
           ))
         }

@@ -2090,9 +2090,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:5.1.2":
-  version: 5.1.2
-  resolution: "astro@npm:5.1.2"
+"astro@npm:5.1.5":
+  version: 5.1.5
+  resolution: "astro@npm:5.1.5"
   dependencies:
     "@astrojs/compiler": "npm:^2.10.3"
     "@astrojs/internal-helpers": "npm:0.4.2"
@@ -2159,7 +2159,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/eb61a0a959907bd86973038a52d2a226e274af3b2880b1d7baaec115400e70a1edd905d60c474f04b0fda481565507321fed38e78465a5b7127b48f126cd1a04
+  checksum: 10c0/17ddefb49c4e2d971a22fc290bcd491ab0678fa004daa96dc216620e30ae869d32585a91e127a1ec3a21497168afce46f6d4742fa8d6a0a458e3e7b402d8a34c
   languageName: node
   linkType: hard
 
@@ -2240,7 +2240,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": "npm:^6.7.2"
     "@fortawesome/free-solid-svg-icons": "npm:^6.7.2"
     "@tailwindcss/typography": "npm:^0.5.15"
-    astro: "npm:5.1.2"
+    astro: "npm:5.1.5"
     eslint: "npm:^9.17.0"
     eslint-plugin-astro: "npm:^1.3.1"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"

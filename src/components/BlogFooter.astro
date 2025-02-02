@@ -11,7 +11,7 @@ const blog = await getCollection('blog');
 const tags = [...new Set(blog.flatMap((p) => p.data.tags))].sort();
 ---
 
-<footer class="bg-gray-50 py-7 text-darkgray">
+<footer class="text-darkgray bg-gray-50 py-7">
   <div class="container mx-auto flex flex-row flex-wrap justify-between px-2">
     <div class="mb-7 basis-full md:basis-[39%] xl:basis-[28%]">
       <div class="mb-4 flex items-center space-x-1.5">

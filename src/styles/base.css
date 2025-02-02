@@ -1,4 +1,15 @@
-@tailwind base;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --color-darkgray: #3f434a;
+}
 
 @layer base {
   html {
@@ -6,5 +17,20 @@
   }
 }
 
-@tailwind components;
-@tailwind utilities;
+@utility prose {
+  --tw-prose-body: var(--color-darkgray);
+  --tw-prose-links: var(--color-sky-700);
+  --tw-prose-headings: 'inherit';
+  --tw-prose-code: 'inherit';
+
+  font-size: inherit;
+  line-height: inherit;
+  max-width: 100%;
+
+  :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))::before {
+    content: none;
+  }
+  :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))::after {
+    content: none;
+  }
+}

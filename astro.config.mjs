@@ -4,7 +4,8 @@ import mdx from '@astrojs/mdx';
 import preact from '@astrojs/preact';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
-import tailwind from '@astrojs/tailwind';
+
+import tailwindcss from '@tailwindcss/vite';
 
 import fs from 'node:fs';
 
@@ -26,15 +27,7 @@ export default defineConfig({
   experimental: {
     svg: true,
   },
-  integrations: [
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    mdx(),
-    preact(),
-  ],
+  integrations: [mdx(), preact()],
   markdown: {
     shikiConfig: {
       langs: [langDts, langEarthfile, langLlvm],
@@ -48,4 +41,7 @@ export default defineConfig({
   },
   output: 'static',
   trailingSlash: 'always',
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

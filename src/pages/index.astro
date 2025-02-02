@@ -1,11 +1,9 @@
 ---
 import Avatar from '@/images/avatar.svg';
 import Base from '@/layouts/Base.astro';
-import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
 import * as Config from '@/config';
 
-import { faTwitter, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, faSquare, faStar, faUser } from '@fortawesome/free-solid-svg-icons';
+import { BriefcaseBusiness, Cake, ChevronRight, Github, Instagram, Mail, MapPin, Star, Twitter, UserRound } from 'lucide-preact';
 ---
 
 <style>
@@ -32,9 +30,9 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
       {
         Config.links.map(({ name, url }) => (
           <>
-            <a class="ml-4 px-1 pb-1 hover:border-b-4 hover:border-dashed" href={url}>
-              <span class="pr-1">{name}</span>
-              <FontawesomeIcon icon={faCaretRight} class="fa-lg" />
+            <a class="ml-4 px-1 pb-1 hover:border-b-2" href={url}>
+              <span>{name}</span>
+              <ChevronRight class="inline-block align-text-bottom" />
             </a>
           </>
         ))
@@ -45,30 +43,18 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
       <Avatar class="mb-2.5 h-44 w-44 animate-[avatar-fade-in_0.4s_ease-in] rounded-full border-[5px] border-white" />
       <h1 class="mb-6 text-4xl font-semibold leading-loose text-white">{Config.author.nickname}</h1>
       <div class="flex w-full max-w-sm justify-around">
-        <span>
-          <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="Twitter" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
-            <FontawesomeIcon icon={faTwitter} class="fa-stack-1x text-current" />
-          </a>
-        </span>
-        <span>
-          <a href={`https://github.com/${Config.author.social.github}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="GitHub" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
-            <FontawesomeIcon icon={faGithub} class="fa-stack-1x text-current" />
-          </a>
-        </span>
-        <span>
-          <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="Instagram" target="_blank" rel="nofollow noopener">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
-            <FontawesomeIcon icon={faInstagram} class="fa-stack-1x text-current" />
-          </a>
-        </span>
-        <span>
-          <a href={`mailto:${Config.author.social.email}`} class="fa-stack fa-2x group text-white hover:text-darkgray active:text-darkgray" title="Mail">
-            <FontawesomeIcon icon={faSquare} class="fa-stack-2x text-white opacity-0 group-hover:opacity-100 group-active:opacity-100" />
-            <FontawesomeIcon icon={faEnvelope} class="fa-stack-1x text-current" />
-          </a>
-        </span>
+        <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="group flex size-14 items-center justify-center rounded-xl hover:bg-white active:bg-white" title="Twitter" target="_blank" rel="nofollow noopener">
+          <Twitter size={42} strokeWidth={2.25} class="stroke-white group-hover:stroke-darkgray group-active:stroke-darkgray" />
+        </a>
+        <a href={`https://github.com/${Config.author.social.github}`} class="group flex size-14 items-center justify-center rounded-xl hover:bg-white active:bg-white" title="GitHub" target="_blank" rel="nofollow noopener">
+          <Github size={42} strokeWidth={2.25} class="stroke-white group-hover:stroke-darkgray group-active:stroke-darkgray" />
+        </a>
+        <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="group flex size-14 items-center justify-center rounded-xl hover:bg-white active:bg-white" title="Instagram" target="_blank" rel="nofollow noopener">
+          <Instagram size={42} strokeWidth={2.25} class="stroke-white group-hover:stroke-darkgray group-active:stroke-darkgray" />
+        </a>
+        <a href={`mailto:${Config.author.social.email}`} class="group flex size-14 items-center justify-center rounded-xl hover:bg-white active:bg-white" title="Mail" target="_blank" rel="nofollow noopener">
+          <Mail size={42} strokeWidth={2.25} class="stroke-white group-hover:stroke-darkgray group-active:stroke-darkgray" />
+        </a>
       </div>
     </div>
   </header>
@@ -77,23 +63,23 @@ import { faBirthdayCake, faBuilding, faCaretRight, faEnvelope, faMapMarkerAlt, f
       <h2 class="mb-8 text-3xl font-semibold">About Me</h2>
       <dl class="grid grid-cols-[2rem_1fr]">
         <dt class="text-center">
-          <FontawesomeIcon icon={faUser} class="fa-fw" />
+          <UserRound class="inline-block align-text-bottom" />
         </dt>
         <dd>{Config.author.name} ({Config.author.nickname})</dd>
         <dt class="text-center">
-          <FontawesomeIcon icon={faMapMarkerAlt} class="fa-fw" />
+          <MapPin class="inline-block align-text-bottom" />
         </dt>
         <dd>{Config.author.location}</dd>
         <dt class="text-center">
-          <FontawesomeIcon icon={faBirthdayCake} class="fa-fw" />
+          <Cake class="inline-block align-text-bottom" />
         </dt>
         <dd>{Config.author.birthday}</dd>
         <dt class="text-center">
-          <FontawesomeIcon icon={faBuilding} class="fa-fw" />
+          <BriefcaseBusiness class="inline-block align-text-bottom" />
         </dt>
         <dd>{Config.author.job}</dd>
         <dt class="text-center">
-          <FontawesomeIcon icon={faStar} class="fa-fw" />
+          <Star class="inline-block align-text-bottom" />
         </dt>
         <dd>
           {Config.author.interests.map((i) => <span class="whitespace-nowrap after:whitespace-normal after:content-[',_'] last:after:content-none">{i}</span>)}

@@ -1,9 +1,9 @@
 ---
-import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
 import LinkToTagPage from '@/components/LinkToTagPage.astro';
 
+import { Calendar, Tag } from 'lucide-preact';
+
 import type { CollectionEntry } from 'astro:content';
-import { faCalendar, faTag } from '@fortawesome/free-solid-svg-icons';
 
 export interface Props {
   post: CollectionEntry<'blog'>;
@@ -18,22 +18,20 @@ const data = { ...post.data, date: `${year}/${month}/${day}` };
   <a class="mb-1 inline-block text-lg text-sky-700 underline" href={`/blog/${post.slug}/`}>
     <h2>{data.title}</h2>
   </a>
-  <ul class="flex flex-row items-baseline text-sm">
-    <li class="mr-2"><FontawesomeIcon icon={faCalendar} class="fa-lg" /></li>
-    <li class="mr-2">{data.date}</li>
+  <div class="flex flex-row items-center text-sm">
+    <Calendar />
+    <span class="ml-2">{data.date}</span>
     {
       data.tags.length > 0 && (
         <>
-          <li class="mr-2">
-            <FontawesomeIcon icon={faTag} class="fa-lg" />
-          </li>
+          <Tag class="ml-4" />
           {data.tags.map((t) => (
-            <li class="mr-2">
+            <span class="ml-2">
               <LinkToTagPage tag={t} />
-            </li>
+            </span>
           ))}
         </>
       )
     }
-  </ul>
+  </div>
 </section>

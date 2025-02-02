@@ -1,11 +1,10 @@
 ---
-import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
 import LinkToTagPage from '@/components/LinkToTagPage.astro';
 import sortById from '@/utils/sortById';
 import * as Config from '@/config';
 
-import { faTwitter, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faUser, faTag, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { File, Github, Instagram, Mail, Twitter, UserRound } from 'lucide-preact';
+
 import { getCollection } from 'astro:content';
 
 const blog = await getCollection('blog');
@@ -15,33 +14,34 @@ const tags = [...new Set(blog.flatMap((p) => p.data.tags))].sort();
 <footer class="bg-gray-50 py-7 text-darkgray">
   <div class="container mx-auto flex flex-row flex-wrap justify-between px-2">
     <div class="mb-7 basis-full md:basis-[39%] xl:basis-[28%]">
-      <h4 class="mb-4 text-lg font-bold">
-        <FontawesomeIcon icon={faUser} class="w-7 text-center" />About Me
-      </h4>
+      <div class="mb-4 flex items-center space-x-1.5">
+        <UserRound strokeWidth={2.25} />
+        <h4 class="text-lg font-bold">About Me</h4>
+      </div>
 
-      <div class="flex items-start">
-        <div class="mr-3 h-16 basis-16">
+      <div class="flex items-start space-x-4">
+        <div class="h-16 basis-16">
           <img class="rounded-full" src={Config.author.avatar} />
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col space-y-1">
           <h5 class="font-bold">
             <a class="text-sky-700 underline" href="/">
               {Config.author.nickname}
             </a>
           </h5>
           <span>{Config.author.shortbio}</span>
-          <div class="flex">
-            <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="mr-3 hover:text-sky-700 active:text-sky-700" title="Twitter" target="_blank" rel="nofollow noopener">
-              <FontawesomeIcon icon={faTwitter} class="fa-lg" />
+          <div class="flex space-x-3">
+            <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="hover:text-sky-700 active:text-sky-700" title="Twitter" target="_blank" rel="nofollow noopener">
+              <Twitter />
             </a>
-            <a href={`https://github.com/${Config.author.social.github}`} class="mr-3 hover:text-sky-700 active:text-sky-700" title="GitHub" target="_blank" rel="nofollow noopener">
-              <FontawesomeIcon icon={faGithub} class="fa-lg" />
+            <a href={`https://github.com/${Config.author.social.github}`} class="hover:text-sky-700 active:text-sky-700" title="GitHub" target="_blank" rel="nofollow noopener">
+              <Github />
             </a>
-            <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="mr-3 hover:text-sky-700 active:text-sky-700" title="Instagram" target="_blank" rel="nofollow noopener">
-              <FontawesomeIcon icon={faInstagram} class="fa-lg" />
+            <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="hover:text-sky-700 active:text-sky-700" title="Instagram" target="_blank" rel="nofollow noopener">
+              <Instagram />
             </a>
             <a href={`mailto:${Config.author.social.email}`} class="hover:text-sky-700 active:text-sky-700" title="Mail">
-              <FontawesomeIcon icon={faEnvelope} class="fa-lg" />
+              <Mail />
             </a>
           </div>
         </div>
@@ -49,9 +49,10 @@ const tags = [...new Set(blog.flatMap((p) => p.data.tags))].sort();
     </div>
 
     <div class="mb-7 basis-full md:block md:basis-[59%] xl:basis-[42%]">
-      <h4 class="mb-4 text-lg font-bold">
-        <FontawesomeIcon icon={faFile} class="w-7 text-center" />Recent Articles
-      </h4>
+      <div class="mb-4 flex items-center space-x-1.5">
+        <File strokeWidth={2.25} />
+        <h4 class="text-lg font-bold">Recent Articles</h4>
+      </div>
 
       <ul class="list-disc pl-7">
         {
@@ -70,9 +71,10 @@ const tags = [...new Set(blog.flatMap((p) => p.data.tags))].sort();
     </div>
 
     <div class="mb-7 basis-full xl:basis-[28%]">
-      <h4 class="mb-4 text-lg font-bold">
-        <FontawesomeIcon icon={faTag} class="w-7 text-center" />Tags
-      </h4>
+      <div class="mb-4 flex items-center space-x-1.5">
+        <File strokeWidth={2.25} />
+        <h4 class="hont-bold text-lg">Tags</h4>
+      </div>
 
       <div class="flex flex-wrap items-start gap-x-2 gap-y-1">
         {

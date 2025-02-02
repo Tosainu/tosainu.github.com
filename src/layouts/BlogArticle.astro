@@ -3,9 +3,8 @@ import type { SiteProps } from '@/types';
 import type { BlogSchema } from '@/content/_schema';
 import Blog from '@/layouts/Blog.astro';
 import LinkToTagPage from '@/components/LinkToTagPage.astro';
-import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
 
-import { faCalendar, faTag } from '@fortawesome/free-solid-svg-icons';
+import { Calendar, Tag } from 'lucide-preact';
 
 export interface Props extends SiteProps {
   frontmatter: BlogSchema;
@@ -22,24 +21,22 @@ const { frontmatter: data, ...props } = Astro.props;
           <h1 class="mb-4 text-4xl font-bold">
             {data.title}
           </h1>
-          <ul class="flex flex-row items-baseline text-sm">
-            <li class="mr-2"><FontawesomeIcon icon={faCalendar} class="fa-lg" /></li>
-            <li class="mr-2">{data.date}</li>
+          <div class="flex flex-row items-center text-sm">
+            <Calendar />
+            <span class="ml-2">{data.date}</span>
             {
               data.tags.length > 0 && (
                 <>
-                  <li class="mr-2">
-                    <FontawesomeIcon icon={faTag} class="fa-lg" />
-                  </li>
+                  <Tag class="ml-4" />
                   {data.tags.map((t) => (
-                    <li class="mr-2">
+                    <span class="ml-2">
                       <LinkToTagPage tag={t} />
-                    </li>
+                    </span>
                   ))}
                 </>
               )
             }
-          </ul>
+          </div>
         </div>
       </header>
       <div class="container mx-auto mb-7 px-2">

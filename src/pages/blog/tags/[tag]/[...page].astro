@@ -1,13 +1,11 @@
 ---
 import BlogList from '@/layouts/BlogList.astro';
-import FontawesomeIcon from '@/components/FontawesomeIcon.astro';
 import applyPaginatePrefix from '@/utils/applyPaginatePrefix';
 import sortById from '@/utils/sortById';
 import * as Config from '@/config';
 
 import type { GetStaticPaths, GetStaticPathsOptions, InferGetStaticParamsType, InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
-import { faTag } from '@fortawesome/free-solid-svg-icons';
 
 export const getStaticPaths = (async ({ paginate }: GetStaticPathsOptions) => {
   const blog = await getCollection('blog');
@@ -32,6 +30,6 @@ const { page } = Astro.props;
 
 <BlogList lang={Config.blog.lang} pageTitle={`Tag: ${tag} | ${Config.blog.title}`} noindex={page.currentPage != 1} page={page} description={Config.blog.description}>
   <div class="container mx-auto my-7 px-2">
-    <FontawesomeIcon icon={faTag} class="fa-lg" /> Tag: {tag}
+    Tag: {tag}
   </div>
 </BlogList>

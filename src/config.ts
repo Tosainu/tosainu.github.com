@@ -55,6 +55,12 @@ export const author = {
 
 export const authorWorks: AuthorWork[] = [
   {
+    name: 'gnss-7-seg-clock',
+    url: 'https://github.com/Tosainu/gnss-7-seg-clock',
+    imageUrl: '/images/gnss-7-seg-clock.jpg',
+    description: 'GNSS-powered, seven-segment table clock ',
+  },
+  {
     name: 'bp35c0-j11-stuff',
     url: 'https://github.com/Tosainu/bp35c0-j11-stuff',
     imageUrl: '/images/bp35c0-j11-stuff.jpg',

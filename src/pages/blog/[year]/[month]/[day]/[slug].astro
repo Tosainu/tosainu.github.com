@@ -24,6 +24,6 @@ const modData = { ...entry.data, date: `${year}/${month}/${day}` };
 const description = entry.data.description ?? entry.body.replaceAll(/\s+/g, ' ').trimStart().slice(0, 150);
 ---
 
-<BlogArticle lang={Config.blog.lang} pageTitle={`${modData.title} | ${Config.blog.title}`} noindex={modData.noindex ?? false} frontmatter={modData} description={description}>
+<BlogArticle lang={Config.blog.lang} pageTitle={`${modData.title} | ${Config.blog.title}`} noindex={modData.noindex ?? false} frontmatter={modData} description={description} pageType={'article'} cover={modData.cover}>
   <Content />
 </BlogArticle>

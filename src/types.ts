@@ -1,3 +1,5 @@
+import type { ImageMetadata } from 'astro'
+
 export type NavigationLink = {
   name: string
   url: string
@@ -15,4 +17,6 @@ export interface SiteProps {
   lang: string
   description: string
   noindex?: boolean
+  pageType?: 'website' | 'article'
+  cover?: ImageMetadata
 }

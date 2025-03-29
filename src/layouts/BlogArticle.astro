@@ -1,13 +1,14 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+
 import type { SiteProps } from '@/types';
-import type { BlogSchema } from '@/content/_schema';
 import Blog from '@/layouts/Blog.astro';
 import LinkToTagPage from '@/components/LinkToTagPage.astro';
 
 import { Calendar, Tag } from 'lucide-preact';
 
 export interface Props extends SiteProps {
-  frontmatter: BlogSchema;
+  frontmatter: CollectionEntry<'blog'>['data'];
 }
 
 const { frontmatter: data, ...props } = Astro.props;

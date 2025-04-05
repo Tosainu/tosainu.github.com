@@ -161,20 +161,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/preact@npm:^4.0.7":
-  version: 4.0.7
-  resolution: "@astrojs/preact@npm:4.0.7"
+"@astrojs/preact@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "@astrojs/preact@npm:4.0.8"
   dependencies:
     "@babel/plugin-transform-react-jsx": "npm:^7.25.9"
     "@babel/plugin-transform-react-jsx-development": "npm:^7.25.9"
     "@preact/preset-vite": "npm:^2.10.1"
-    "@preact/signals": "npm:^2.0.1"
+    "@preact/signals": "npm:^2.0.2"
     babel-plugin-transform-hook-names: "npm:^1.0.2"
     preact-render-to-string: "npm:^6.5.13"
-    vite: "npm:^6.2.3"
+    vite: "npm:^6.2.4"
   peerDependencies:
     preact: ^10.6.5
-  checksum: 10c0/9ac05aab16571261786281180df995e7845fd7cf2820c6072ac4394185be2e119c22477b43dc9e4caa40b08b1f0ec9472c225930980c1235ea21bafbcfec8ee2
+  checksum: 10c0/0bbccad5ba46370b4bd6860beea027213f5bdac5fe4ada505c2a95b2f328d9261c5b2bcb430ff3bec19148415e405c903c5897fc342ef8d5575b2bd4805b5651
   languageName: node
   linkType: hard
 
@@ -1224,14 +1224,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preact/signals@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@preact/signals@npm:2.0.1"
+"@preact/signals@npm:^2.0.2":
+  version: 2.0.3
+  resolution: "@preact/signals@npm:2.0.3"
   dependencies:
     "@preact/signals-core": "npm:^1.7.0"
   peerDependencies:
     preact: 10.x
-  checksum: 10c0/256059ce1aa9b17c965c11da35cd8825f19d6618b2b6a00ceaf3c2371564e2478fc065b36abfecd7252f2b9efb0517ff33074cd05bbc04a700c382481a7ba17c
+  checksum: 10c0/f1aaef24cb32422ffc1646ab824c9c39bb0594fe53b4fb235a1ddb93927ed996ab0d436c55111c089267889c0cdb3635fac6c21788fcc61f9518402a998cf967
   languageName: node
   linkType: hard
 
@@ -2350,7 +2350,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:4.2.3"
-    "@astrojs/preact": "npm:^4.0.7"
+    "@astrojs/preact": "npm:^4.0.8"
     "@astrojs/rss": "npm:^4.0.11"
     "@eslint/js": "npm:^9.24.0"
     "@tailwindcss/typography": "npm:^0.5.16"
@@ -7474,58 +7474,6 @@ __metadata:
     source-map: "npm:^0.7.4"
     stack-trace: "npm:^1.0.0-pre2"
   checksum: 10c0/74e0d860b4f539804da23e85ea6f16b341cc882c8c1ccffc5467b4c726c399aea87cd1bf244a21b58c664e27ad8de5aac56c070292332ccaed93ddf1e29f17dc
-  languageName: node
-  linkType: hard
-
-"vite@npm:^6.2.3":
-  version: 6.2.3
-  resolution: "vite@npm:6.2.3"
-  dependencies:
-    esbuild: "npm:^0.25.0"
-    fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.5.3"
-    rollup: "npm:^4.30.1"
-  peerDependencies:
-    "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
-    jiti: ">=1.21.0"
-    less: "*"
-    lightningcss: ^1.21.0
-    sass: "*"
-    sass-embedded: "*"
-    stylus: "*"
-    sugarss: "*"
-    terser: ^5.16.0
-    tsx: ^4.8.1
-    yaml: ^2.4.2
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    jiti:
-      optional: true
-    less:
-      optional: true
-    lightningcss:
-      optional: true
-    sass:
-      optional: true
-    sass-embedded:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-    tsx:
-      optional: true
-    yaml:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 10c0/ba6ad7e83e5a63fb0b6f62d3a3963624b8784bdc1bfa2a83e16cf268fb58c76bd9f8e69f39ed34bf8711cdb8fd7702916f878781da53c232c34ef7a85e0600cf
   languageName: node
   linkType: hard
 

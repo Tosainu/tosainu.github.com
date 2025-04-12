@@ -21,7 +21,7 @@
     "astro": "5.6.1",
     "katex": "^0.16.21",
     "lucide-preact": "^0.487.0",
-    "preact": "^10.26.4",
+    "preact": "^10.26.5",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "tailwindcss": "^4.1.3"

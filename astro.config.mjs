@@ -24,9 +24,6 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
-  experimental: {
-    svg: true,
-  },
   integrations: [mdx(), preact()],
   markdown: {
     shikiConfig: {

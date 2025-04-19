@@ -161,9 +161,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/preact@npm:^4.0.8":
-  version: 4.0.8
-  resolution: "@astrojs/preact@npm:4.0.8"
+"@astrojs/preact@npm:^4.0.9":
+  version: 4.0.9
+  resolution: "@astrojs/preact@npm:4.0.9"
   dependencies:
     "@babel/plugin-transform-react-jsx": "npm:^7.25.9"
     "@babel/plugin-transform-react-jsx-development": "npm:^7.25.9"
@@ -171,10 +171,10 @@ __metadata:
     "@preact/signals": "npm:^2.0.2"
     babel-plugin-transform-hook-names: "npm:^1.0.2"
     preact-render-to-string: "npm:^6.5.13"
-    vite: "npm:^6.2.4"
+    vite: "npm:^6.2.6"
   peerDependencies:
     preact: ^10.6.5
-  checksum: 10c0/0bbccad5ba46370b4bd6860beea027213f5bdac5fe4ada505c2a95b2f328d9261c5b2bcb430ff3bec19148415e405c903c5897fc342ef8d5575b2bd4805b5651
+  checksum: 10c0/0587bf2cb89b774e64f98b6c32e73f6d21742998fb03e6391094b824ea53ae608ddd18cadd52b875bfc26865412794d6d52df63f7936db312c79ba990cc8430c
   languageName: node
   linkType: hard
 
@@ -2343,7 +2343,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:4.2.3"
-    "@astrojs/preact": "npm:^4.0.8"
+    "@astrojs/preact": "npm:^4.0.9"
     "@astrojs/rss": "npm:^4.0.11"
     "@eslint/js": "npm:^9.24.0"
     "@tailwindcss/typography": "npm:^0.5.16"

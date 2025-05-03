@@ -161,17 +161,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/preact@npm:^4.0.10":
-  version: 4.0.10
-  resolution: "@astrojs/preact@npm:4.0.10"
+"@astrojs/preact@npm:^4.0.11":
+  version: 4.0.11
+  resolution: "@astrojs/preact@npm:4.0.11"
   dependencies:
     "@preact/preset-vite": "npm:^2.10.1"
-    "@preact/signals": "npm:^2.0.2"
+    "@preact/signals": "npm:^2.0.4"
     preact-render-to-string: "npm:^6.5.13"
-    vite: "npm:^6.2.6"
+    vite: "npm:^6.3.4"
   peerDependencies:
     preact: ^10.6.5
-  checksum: 10c0/9dd5b42c814b757f17b886b48445e6d0cb52f75e14faddf2f324123c4bc940518dca1709a2041c04b9dd73c41c4f721f1244dcd205378f7b1d38ba1c911857ce
+  checksum: 10c0/b860113b9585f27c4ca9916073b889b796b68fcb84dae2c32b3b47a077c06e26979a3ac527571febcbc605b899770bcd77c54d34b18a9408bc513390cb58176a
   languageName: node
   linkType: hard
 
@@ -1282,14 +1282,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preact/signals@npm:^2.0.2":
-  version: 2.0.3
-  resolution: "@preact/signals@npm:2.0.3"
+"@preact/signals@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "@preact/signals@npm:2.0.4"
   dependencies:
     "@preact/signals-core": "npm:^1.7.0"
   peerDependencies:
-    preact: 10.x
-  checksum: 10c0/f1aaef24cb32422ffc1646ab824c9c39bb0594fe53b4fb235a1ddb93927ed996ab0d436c55111c089267889c0cdb3635fac6c21788fcc61f9518402a998cf967
+    preact: ">= 10.25.0"
+  checksum: 10c0/eac08c9ab72ec23eb2aa2d14608a1eaae1259924dad5ea942b1e06ad8d127271349b0cc987d525e993d0c797a534a489404a55ce581392ae7ca84a525b3e7205
   languageName: node
   linkType: hard
 
@@ -2616,7 +2616,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:4.2.6"
-    "@astrojs/preact": "npm:^4.0.10"
+    "@astrojs/preact": "npm:^4.0.11"
     "@astrojs/rss": "npm:^4.0.11"
     "@eslint/js": "npm:^9.26.0"
     "@tailwindcss/typography": "npm:^0.5.16"

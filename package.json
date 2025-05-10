@@ -20,7 +20,7 @@
     "@tailwindcss/vite": "^4.1.5",
     "astro": "5.7.10",
     "katex": "^0.16.22",
-    "lucide-preact": "^0.507.0",
+    "lucide-preact": "^0.509.0",
     "preact": "^10.26.5",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",

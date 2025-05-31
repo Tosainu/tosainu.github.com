@@ -2534,7 +2534,7 @@ __metadata:
     globals: "npm:^16.2.0"
     katex: "npm:^0.16.22"
     lucide-preact: "npm:^0.511.0"
-    preact: "npm:^10.26.6"
+    preact: "npm:^10.26.8"
     prettier: "npm:^3.5.3"
     prettier-plugin-astro: "npm:^0.14.1"
     prettier-plugin-tailwindcss: "npm:^0.6.12"
@@ -6271,10 +6271,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.26.6":
-  version: 10.26.6
-  resolution: "preact@npm:10.26.6"
-  checksum: 10c0/af07817a24b76c48f0eb49895d2ab49d6e43097355b6f75271a4cab5c2886999968e9eab9331a48f0b7e3477bc16153b08cd1d6a24ebf1acea4016b7054daf29
+"preact@npm:^10.26.8":
+  version: 10.26.8
+  resolution: "preact@npm:10.26.8"
+  checksum: 10c0/83b6a38af15386c0d93bbaf12996d624354f9c511f79d188f0d673b8f91740849b0603c207da1f10450b07a8659333864a3735d3b5fe23a790ef6cb85d1107c8
   languageName: node
   linkType: hard
 

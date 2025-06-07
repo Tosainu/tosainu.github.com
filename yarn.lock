@@ -184,13 +184,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/rss@npm:^4.0.11":
-  version: 4.0.11
-  resolution: "@astrojs/rss@npm:4.0.11"
+"@astrojs/rss@npm:^4.0.12":
+  version: 4.0.12
+  resolution: "@astrojs/rss@npm:4.0.12"
   dependencies:
-    fast-xml-parser: "npm:^4.5.0"
+    fast-xml-parser: "npm:^5.2.0"
     kleur: "npm:^4.1.5"
-  checksum: 10c0/9ac4ec0801eb356d150c5259bc53dcaecb011f87261a347ad7bfc61931f5a330a3013e29ef04cccae0c39906c0881d3e361f5e38d2d5bb5833d6f395ad52b7cc
+  checksum: 10c0/f7541a39adf3572489b87c45569833df111f9bef672b116191f228860e6f410f0bdc899f6124c3d6cf14a51b745cbfa415d4ed4649d7966070e155363019749c
   languageName: node
   linkType: hard
 
@@ -2525,7 +2525,7 @@ __metadata:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:4.3.0"
     "@astrojs/preact": "npm:^4.1.0"
-    "@astrojs/rss": "npm:^4.0.11"
+    "@astrojs/rss": "npm:^4.0.12"
     "@eslint/js": "npm:^9.28.0"
     "@tailwindcss/typography": "npm:^0.5.16"
     "@tailwindcss/vite": "npm:^4.1.8"
@@ -3699,14 +3699,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-xml-parser@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "fast-xml-parser@npm:4.5.0"
+"fast-xml-parser@npm:^5.2.0":
+  version: 5.2.4
+  resolution: "fast-xml-parser@npm:5.2.4"
   dependencies:
-    strnum: "npm:^1.0.5"
+    strnum: "npm:^2.1.0"
   bin:
     fxparser: src/cli/cli.js
-  checksum: 10c0/71d206c9e137f5c26af88d27dde0108068a5d074401901d643c500c36e95dfd828333a98bda020846c41f5b9b364e2b0e9be5b19b0bdcab5cf31559c07b80a95
+  checksum: 10c0/a7ba613606dfdd9906a0f64293eea32e5ae38a798cc463d11ff514d0a303a07a5beef8d4ade9e73499e1376f86aa179c1c5f698c647824b4527c847b98fb415b
   languageName: node
   linkType: hard
 
@@ -7251,10 +7251,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strnum@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "strnum@npm:1.0.5"
-  checksum: 10c0/64fb8cc2effbd585a6821faa73ad97d4b553c8927e49086a162ffd2cc818787643390b89d567460a8e74300148d11ac052e21c921ef2049f2987f4b1b89a7ff1
+"strnum@npm:^2.1.0":
+  version: 2.1.1
+  resolution: "strnum@npm:2.1.1"
+  checksum: 10c0/1f9bd1f9b4c68333f25c2b1f498ea529189f060cd50aa59f1876139c994d817056de3ce57c12c970f80568d75df2289725e218bd9e3cdf73cd1a876c9c102733
   languageName: node
   linkType: hard
 

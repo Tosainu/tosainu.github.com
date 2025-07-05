@@ -2528,9 +2528,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:5.10.1":
-  version: 5.10.1
-  resolution: "astro@npm:5.10.1"
+"astro@npm:5.11.0":
+  version: 5.11.0
+  resolution: "astro@npm:5.11.0"
   dependencies:
     "@astrojs/compiler": "npm:^2.12.2"
     "@astrojs/internal-helpers": "npm:0.6.1"
@@ -2599,7 +2599,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/d90da35db4f14ead58cc251aac241fd144c6584bb8a4873333c7b7e2015a8a2712dcf2cbb4d92633cd7773e493d26aa9f0ac6afb0839252518706b2b1be5b2ee
+  checksum: 10c0/77d242d50f2fcddd8aff318f04db48b04a5fa601a7298034d50eaff9fd1db58d4199773b340e803ceaa31c90a0e7d42fdc09b5e8e5b08f85128c8d0f8436e793
   languageName: node
   linkType: hard
 
@@ -2676,7 +2676,7 @@ __metadata:
     "@eslint/js": "npm:^9.30.1"
     "@tailwindcss/typography": "npm:^0.5.16"
     "@tailwindcss/vite": "npm:^4.1.11"
-    astro: "npm:5.10.1"
+    astro: "npm:5.11.0"
     eslint: "npm:^9.30.1"
     eslint-plugin-astro: "npm:^1.3.1"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"

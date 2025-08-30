@@ -18,7 +18,7 @@
     "@astrojs/rss": "^4.0.12",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.12",
-    "astro": "5.13.3",
+    "astro": "5.13.5",
     "katex": "^0.16.22",
     "lucide-preact": "^0.542.0",
     "preact": "^10.27.1",

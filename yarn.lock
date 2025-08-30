@@ -2722,7 +2722,7 @@ __metadata:
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     globals: "npm:^16.3.0"
     katex: "npm:^0.16.22"
-    lucide-preact: "npm:^0.541.0"
+    lucide-preact: "npm:^0.542.0"
     preact: "npm:^10.27.1"
     prettier: "npm:^3.6.2"
     prettier-plugin-astro: "npm:^0.14.1"
@@ -5084,12 +5084,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-preact@npm:^0.541.0":
-  version: 0.541.0
-  resolution: "lucide-preact@npm:0.541.0"
+"lucide-preact@npm:^0.542.0":
+  version: 0.542.0
+  resolution: "lucide-preact@npm:0.542.0"
   peerDependencies:
     preact: ^10.5.13
-  checksum: 10c0/1e9473ce51114940de80c649bb9a1bf0de440739f646a81150f2871bea506f054c9cafe4b8227ac7df09a9977646189cc8107ff21229ad873e2855426f49b0d5
+  checksum: 10c0/4c8c530eb98abfe36e7dbcd8237540b8481f4db068d81e4c44860ffa5864c7c5b1704fbe1f37e413155519096badfcbefc152f71f82cb5968900dfd1c3e847be
   languageName: node
   linkType: hard
 

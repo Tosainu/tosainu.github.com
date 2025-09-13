@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "4.3.5",
-    "@astrojs/preact": "^4.1.0",
+    "@astrojs/preact": "^4.1.1",
     "@astrojs/rss": "^4.0.12",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.13",

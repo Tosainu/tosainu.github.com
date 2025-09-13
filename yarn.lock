@@ -161,17 +161,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/preact@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@astrojs/preact@npm:4.1.0"
+"@astrojs/preact@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@astrojs/preact@npm:4.1.1"
   dependencies:
-    "@preact/preset-vite": "npm:^2.10.1"
-    "@preact/signals": "npm:^2.0.4"
-    preact-render-to-string: "npm:^6.5.13"
-    vite: "npm:^6.3.5"
+    "@preact/preset-vite": "npm:^2.10.2"
+    "@preact/signals": "npm:^2.3.1"
+    preact-render-to-string: "npm:^6.6.1"
+    vite: "npm:^6.3.6"
   peerDependencies:
     preact: ^10.6.5
-  checksum: 10c0/0bba871c9ff1c6208d3cb687a4cb9032f39330db9a87c5632c01ed5a66102ea623ba1b10155bfedcf79a976bb1bfc39d7b01dfb061791703433fae49371d7fdb
+  checksum: 10c0/06899720c6e10c2ace2db5fafc39728b78236e2a5a32aebdd75e56433c49cdf108c85ea8d43f01c48818419b104527436beeeba0ff14faa6f84ecc93b3b1c7db
   languageName: node
   linkType: hard
 
@@ -1341,9 +1341,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preact/preset-vite@npm:^2.10.1":
-  version: 2.10.1
-  resolution: "@preact/preset-vite@npm:2.10.1"
+"@preact/preset-vite@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "@preact/preset-vite@npm:2.10.2"
   dependencies:
     "@babel/plugin-transform-react-jsx": "npm:^7.22.15"
     "@babel/plugin-transform-react-jsx-development": "npm:^7.22.5"
@@ -1351,30 +1351,30 @@ __metadata:
     "@rollup/pluginutils": "npm:^4.1.1"
     babel-plugin-transform-hook-names: "npm:^1.0.2"
     debug: "npm:^4.3.4"
-    kolorist: "npm:^1.8.0"
+    picocolors: "npm:^1.1.1"
     vite-prerender-plugin: "npm:^0.5.3"
   peerDependencies:
     "@babel/core": 7.x
-    vite: 2.x || 3.x || 4.x || 5.x || 6.x
-  checksum: 10c0/29ee1414acd920a961b9590de9800478155282fc16db05be5e427300bd29979607ba80b3f4a5f30c52d86d924de433529f63aa96c1a966685e73a43fc4a9974c
+    vite: 2.x || 3.x || 4.x || 5.x || 6.x || 7.x
+  checksum: 10c0/33bf384f463167e58a7ccb9014fdb7c9cac2a3147959af44d5cf86c86e3b660c3485486fc6c0261210ffe238e6e0e47cf0c8a677fcf40e6e49dab1facbc858ee
   languageName: node
   linkType: hard
 
-"@preact/signals-core@npm:^1.7.0":
-  version: 1.8.0
-  resolution: "@preact/signals-core@npm:1.8.0"
-  checksum: 10c0/fa773157621d881e7aefddb8dbded805d8203600211040cc4b5907726e288a163fa58558c1d36bc7085d75e6488af0a806322bbbed005d08be76a76f40244246
+"@preact/signals-core@npm:^1.12.0":
+  version: 1.12.1
+  resolution: "@preact/signals-core@npm:1.12.1"
+  checksum: 10c0/06e73a9b6b90ef5967687eb64003cc7c1abae1950ade55941c3eefeca5d4f642010bce3f267f00663703d7f1509c51ced4751733b7ef5dcba29707fe38d375a1
   languageName: node
   linkType: hard
 
-"@preact/signals@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "@preact/signals@npm:2.0.4"
+"@preact/signals@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@preact/signals@npm:2.3.1"
   dependencies:
-    "@preact/signals-core": "npm:^1.7.0"
+    "@preact/signals-core": "npm:^1.12.0"
   peerDependencies:
-    preact: ">= 10.25.0"
-  checksum: 10c0/eac08c9ab72ec23eb2aa2d14608a1eaae1259924dad5ea942b1e06ad8d127271349b0cc987d525e993d0c797a534a489404a55ce581392ae7ca84a525b3e7205
+    preact: ">= 10.25.0 || >=11.0.0-0"
+  checksum: 10c0/e41d27a18474f8a26d1a514ab5d5c45296d6a0a82a77051763bcaeda8306567ece525b39aded576b2abe3042166a840ef3b6a2868a028310bd6a288f34ddb3d2
   languageName: node
   linkType: hard
 
@@ -2808,7 +2808,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/mdx": "npm:4.3.5"
-    "@astrojs/preact": "npm:^4.1.0"
+    "@astrojs/preact": "npm:^4.1.1"
     "@astrojs/rss": "npm:^4.0.12"
     "@eslint/js": "npm:^9.35.0"
     "@tailwindcss/typography": "npm:^0.5.16"
@@ -4999,7 +4999,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kolorist@npm:^1.6.0, kolorist@npm:^1.8.0":
+"kolorist@npm:^1.6.0":
   version: 1.8.0
   resolution: "kolorist@npm:1.8.0"
   checksum: 10c0/73075db44a692bf6c34a649f3b4b3aea4993b84f6b754cbf7a8577e7c7db44c0bad87752bd23b0ce533f49de2244ce2ce03b7b1b667a85ae170a94782cc50f9b
@@ -6642,12 +6642,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact-render-to-string@npm:^6.5.13":
-  version: 6.5.13
-  resolution: "preact-render-to-string@npm:6.5.13"
+"preact-render-to-string@npm:^6.6.1":
+  version: 6.6.1
+  resolution: "preact-render-to-string@npm:6.6.1"
   peerDependencies:
-    preact: ">=10"
-  checksum: 10c0/10c6c424af03066b832cb3f2c44372dd64180e9e2a6038cccb758e06337b13b3dd399bf26697afff07d7c5b253fd6bc194524d726ec36d930e36ea2defbb60f7
+    preact: ">=10 || >= 11.0.0-0"
+  checksum: 10c0/983b70f57df71238281680980b55af6e82c418dd66fa46fa4565ee34accc2a4274288bffd0c6558ad868c2c04306c3af1bee7e207fe8323511fb0cdb746ba922
   languageName: node
   linkType: hard
 
@@ -8394,61 +8394,6 @@ __metadata:
     source-map: "npm:^0.7.4"
     stack-trace: "npm:^1.0.0-pre2"
   checksum: 10c0/74e0d860b4f539804da23e85ea6f16b341cc882c8c1ccffc5467b4c726c399aea87cd1bf244a21b58c664e27ad8de5aac56c070292332ccaed93ddf1e29f17dc
-  languageName: node
-  linkType: hard
-
-"vite@npm:^6.3.5":
-  version: 6.3.5
-  resolution: "vite@npm:6.3.5"
-  dependencies:
-    esbuild: "npm:^0.25.0"
-    fdir: "npm:^6.4.4"
-    fsevents: "npm:~2.3.3"
-    picomatch: "npm:^4.0.2"
-    postcss: "npm:^8.5.3"
-    rollup: "npm:^4.34.9"
-    tinyglobby: "npm:^0.2.13"
-  peerDependencies:
-    "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
-    jiti: ">=1.21.0"
-    less: "*"
-    lightningcss: ^1.21.0
-    sass: "*"
-    sass-embedded: "*"
-    stylus: "*"
-    sugarss: "*"
-    terser: ^5.16.0
-    tsx: ^4.8.1
-    yaml: ^2.4.2
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  peerDependenciesMeta:
-    "@types/node":
-      optional: true
-    jiti:
-      optional: true
-    less:
-      optional: true
-    lightningcss:
-      optional: true
-    sass:
-      optional: true
-    sass-embedded:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    terser:
-      optional: true
-    tsx:
-      optional: true
-    yaml:
-      optional: true
-  bin:
-    vite: bin/vite.js
-  checksum: 10c0/df70201659085133abffc6b88dcdb8a57ef35f742a01311fc56a4cfcda6a404202860729cc65a2c401a724f6e25f9ab40ce4339ed4946f550541531ced6fe41c
   languageName: node
   linkType: hard
 

@@ -161,17 +161,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/preact@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "@astrojs/preact@npm:4.1.1"
+"@astrojs/preact@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "@astrojs/preact@npm:4.1.2"
   dependencies:
     "@preact/preset-vite": "npm:^2.10.2"
     "@preact/signals": "npm:^2.3.1"
     preact-render-to-string: "npm:^6.6.1"
-    vite: "npm:^6.3.6"
+    vite: "npm:^6.4.1"
   peerDependencies:
     preact: ^10.6.5
-  checksum: 10c0/06899720c6e10c2ace2db5fafc39728b78236e2a5a32aebdd75e56433c49cdf108c85ea8d43f01c48818419b104527436beeeba0ff14faa6f84ecc93b3b1c7db
+  checksum: 10c0/d88fdba5fea499a5392788bbbf45930f6557d081670e343e33e6ba6a5f2cf4e48db775075398287e6b642a10f30b0555632193621dea980e7cab725066520abb
   languageName: node
   linkType: hard
 
@@ -2750,7 +2750,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.5"
     "@astrojs/mdx": "npm:4.3.8"
-    "@astrojs/preact": "npm:^4.1.1"
+    "@astrojs/preact": "npm:^4.1.2"
     "@astrojs/rss": "npm:^4.0.13"
     "@eslint/js": "npm:^9.38.0"
     "@tailwindcss/typography": "npm:^0.5.19"
@@ -8273,6 +8273,61 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/add701f1e72596c002275782e38d0389ab400c1be330c93a3009804d62db68097a936ca1c53c3301df3aaacfe5e328eab547060f31ef9c49a277ae50df6ad4fb
+  languageName: node
+  linkType: hard
+
+"vite@npm:^6.4.1":
+  version: 6.4.1
+  resolution: "vite@npm:6.4.1"
+  dependencies:
+    esbuild: "npm:^0.25.0"
+    fdir: "npm:^6.4.4"
+    fsevents: "npm:~2.3.3"
+    picomatch: "npm:^4.0.2"
+    postcss: "npm:^8.5.3"
+    rollup: "npm:^4.34.9"
+    tinyglobby: "npm:^0.2.13"
+  peerDependencies:
+    "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
+    jiti: ">=1.21.0"
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    sass-embedded: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.16.0
+    tsx: ^4.8.1
+    yaml: ^2.4.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    jiti:
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+    tsx:
+      optional: true
+    yaml:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10c0/77bb4c5b10f2a185e7859cc9a81c789021bc18009b02900347d1583b453b58e4b19ff07a5e5a5b522b68fc88728460bb45a63b104d969e8c6a6152aea3b849f7
   languageName: node
   linkType: hard
 

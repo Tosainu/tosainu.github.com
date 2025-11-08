@@ -161,9 +161,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/preact@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "@astrojs/preact@npm:4.1.2"
+"@astrojs/preact@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "@astrojs/preact@npm:4.1.3"
   dependencies:
     "@preact/preset-vite": "npm:^2.10.2"
     "@preact/signals": "npm:^2.3.1"
@@ -171,7 +171,7 @@ __metadata:
     vite: "npm:^6.4.1"
   peerDependencies:
     preact: ^10.6.5
-  checksum: 10c0/d88fdba5fea499a5392788bbbf45930f6557d081670e343e33e6ba6a5f2cf4e48db775075398287e6b642a10f30b0555632193621dea980e7cab725066520abb
+  checksum: 10c0/e68746444cb3a842bcb824b8d045863e1dd1895e3e370dc73799ac9f2049c60c79aa8884ddede846e4d7602cc2bc7ae464a129c08caa3d5a6dfab528cdf8810f
   languageName: node
   linkType: hard
 
@@ -2750,7 +2750,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.5"
     "@astrojs/mdx": "npm:4.3.9"
-    "@astrojs/preact": "npm:^4.1.2"
+    "@astrojs/preact": "npm:^4.1.3"
     "@astrojs/rss": "npm:^4.0.13"
     "@eslint/js": "npm:^9.39.1"
     "@tailwindcss/typography": "npm:^0.5.19"

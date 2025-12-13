@@ -19,7 +19,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "5.16.5",
-    "katex": "^0.16.25",
+    "katex": "^0.16.27",
     "lucide-preact": "^0.556.0",
     "preact": "^10.28.0",
     "rehype-katex": "^7.0.1",

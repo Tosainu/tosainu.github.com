@@ -2927,7 +2927,7 @@ __metadata:
     eslint-plugin-astro: "npm:^1.5.0"
     eslint-plugin-sort-destructure-keys: "npm:^2.0.0"
     globals: "npm:^17.2.0"
-    katex: "npm:^0.16.27"
+    katex: "npm:^0.16.28"
     lucide-preact: "npm:^0.563.0"
     preact: "npm:^10.28.2"
     prettier: "npm:^3.8.1"
@@ -5123,14 +5123,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"katex@npm:^0.16.27":
-  version: 0.16.27
-  resolution: "katex@npm:0.16.27"
+"katex@npm:^0.16.28":
+  version: 0.16.28
+  resolution: "katex@npm:0.16.28"
   dependencies:
     commander: "npm:^8.3.0"
   bin:
     katex: cli.js
-  checksum: 10c0/f5f9a8c9f422c8f798081cc3483d44f112d75f65968a643572d9cfa910b9ebcf47f3563111764b91b9298f32776dfc04ebaf950f515ff3f406f058a0b9a33c9a
+  checksum: 10c0/9c6e100ecb10c8e8315ab1d6ae16642b91e05642d821158149be520d629c3b47f30d8475fa8978d2d765a1d8e1bd66ab6afffe3a0409265de520edccab346b3e
   languageName: node
   linkType: hard
 

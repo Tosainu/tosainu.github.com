@@ -10,12 +10,12 @@ export interface Props {
 }
 
 const { post } = Astro.props;
-const [year, month, day, _] = post.slug.split('/');
+const [year, month, day, _] = post.id.split('/');
 const data = { ...post.data, date: `${year}/${month}/${day}` };
 ---
 
 <section class="mb-4">
-  <a class="mb-1 inline-block text-lg text-sky-700 underline" href={`/blog/${post.slug}/`}>
+  <a class="mb-1 inline-block text-lg text-sky-700 underline" href={`/blog/${post.id}/`}>
     <h2>{data.title}</h2>
   </a>
   <div class="flex flex-row items-center text-sm">

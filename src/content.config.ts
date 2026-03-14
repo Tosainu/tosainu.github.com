@@ -1,6 +1,9 @@
-import { defineCollection, z } from 'astro:content'
+import { defineCollection } from 'astro:content'
+import { z } from 'astro/zod'
+import { glob } from 'astro/loaders'
 
-const blogCollection = defineCollection({
+const blog = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
   schema: ({ image }) =>
     z
       .object({
@@ -14,6 +17,4 @@ const blogCollection = defineCollection({
       .strict(),
 })
 
-export const collections = {
-  blog: blogCollection,
-}
+export const collections = { blog }

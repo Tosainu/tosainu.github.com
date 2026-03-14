@@ -10,12 +10,12 @@ export const GET: APIRoute = async (_) => {
     title: Config.blog.title,
     description: Config.blog.description,
     site: Config.site.root,
-    items: blog.map(({ body, data, slug }) => {
-      const [year, month, day, _slug] = slug.split('/')
+    items: blog.map(({ body, data, id }) => {
+      const [year, month, day, _id] = id.split('/')
       return {
         title: data.title,
         pubDate: new Date(parseInt(year), parseInt(month) - 1, parseInt(day)),
-        link: `/blog/${slug}/`,
+        link: `/blog/${id}/`,
         content: body,
       }
     }),

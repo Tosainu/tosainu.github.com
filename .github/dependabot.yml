@@ -9,6 +9,11 @@ updates:
       timezone: Asia/Tokyo
     open-pull-requests-limit: 50
     versioning-strategy: increase
+    groups:
+      astro:
+        patterns:
+          - '@astrojs/*'
+          - astro
   - package-ecosystem: github-actions
     directory: /
     schedule:

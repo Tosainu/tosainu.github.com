@@ -60,7 +60,7 @@ const tags = [...new Set(blog.flatMap((p) => p.data.tags))].sort();
             .slice(0, 5)
             .map((p) => (
               <li>
-                <a class="text-sky-700 underline" href={`/blog/${p.slug}/`}>
+                <a class="text-sky-700 underline" href={`/blog/${p.id}/`}>
                   {' '}
                   {p.data.title}{' '}
                 </a>

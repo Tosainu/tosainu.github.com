@@ -13,12 +13,12 @@
     "typecheck": "astro check && tsc --noEmit"
   },
   "dependencies": {
-    "@astrojs/mdx": "5.0.0",
-    "@astrojs/preact": "^5.0.0",
+    "@astrojs/mdx": "5.0.2",
+    "@astrojs/preact": "^5.0.2",
     "@astrojs/rss": "^4.0.17",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "6.0.4",
+    "astro": "6.0.8",
     "katex": "^0.16.38",
     "lucide-preact": "^0.577.0",
     "preact": "^10.29.0",
@@ -27,7 +27,7 @@
     "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.7",
+    "@astrojs/check": "^0.9.8",
     "@eslint/js": "^10.0.1",
     "eslint": "^10.0.3",
     "eslint-plugin-astro": "^1.6.0",

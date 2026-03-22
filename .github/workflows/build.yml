@@ -29,13 +29,13 @@ jobs:
 
       - run: corepack enable
 
-      - run: yarn install --immutable
+      - run: pnpm install --frozen-lockfile
 
-      - run: yarn run typecheck
-      - run: yarn run eslint
-      - run: yarn run prettier
+      - run: pnpm run typecheck
+      - run: pnpm run eslint
+      - run: pnpm run prettier
 
-      - run: yarn astro build
+      - run: pnpm astro build
       - run: tar cvf dist.tar.xz dist
 
       - uses: actions/upload-artifact@v7.0.0

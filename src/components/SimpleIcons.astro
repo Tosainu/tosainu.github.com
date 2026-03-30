@@ -1,0 +1,15 @@
+---
+import type { SimpleIcon } from 'simple-icons';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type Props = Record<string, any> & {
+  icon: SimpleIcon;
+};
+
+const { icon, ...props } = Astro.props;
+---
+
+<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+  <title>{icon.title}</title>
+  <path d={icon.path}></path>
+</svg>

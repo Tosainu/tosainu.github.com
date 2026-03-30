@@ -1,9 +1,11 @@
 ---
 import LinkToTagPage from '@/components/LinkToTagPage.astro';
+import SimpleIcons from '@/components/SimpleIcons.astro';
 import sortById from '@/utils/sortById';
 import * as Config from '@/config';
 
-import { File, Github, Instagram, Mail, Twitter, UserRound } from 'lucide-preact';
+import { File, Mail, UserRound } from 'lucide-preact';
+import { siX, siGithub, siInstagram } from 'simple-icons';
 
 import { getCollection } from 'astro:content';
 
@@ -32,13 +34,13 @@ const tags = [...new Set(blog.flatMap((p) => p.data.tags))].sort();
           <span>{Config.author.shortbio}</span>
           <div class="flex space-x-3">
             <a href={`https://twitter.com/intent/user?user_id=${Config.author.social.twitterId}`} class="hover:text-sky-700 active:text-sky-700" title="Twitter" target="_blank" rel="nofollow noopener">
-              <Twitter />
+              <SimpleIcons icon={siX} width={24} height={24} class="fill-current" />
             </a>
             <a href={`https://github.com/${Config.author.social.github}`} class="hover:text-sky-700 active:text-sky-700" title="GitHub" target="_blank" rel="nofollow noopener">
-              <Github />
+              <SimpleIcons icon={siGithub} width={24} height={24} class="fill-current" />
             </a>
             <a href={`https://www.instagram.com/${Config.author.social.instagram}`} class="hover:text-sky-700 active:text-sky-700" title="Instagram" target="_blank" rel="nofollow noopener">
-              <Instagram />
+              <SimpleIcons icon={siInstagram} width={24} height={24} class="fill-current" />
             </a>
             <a href={`mailto:${Config.author.social.email}`} class="hover:text-sky-700 active:text-sky-700" title="Mail">
               <Mail />

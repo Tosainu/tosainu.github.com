@@ -3,8 +3,9 @@ import globals from 'globals';
 import js from '@eslint/js';
 import sortDestructureKeys from 'eslint-plugin-sort-destructure-keys';
 import typescript from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
-export default typescript.config(
+export default defineConfig(
   {
     ignores: ['dist/**', '**/*.d.ts'],
   },

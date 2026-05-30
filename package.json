@@ -13,12 +13,12 @@
     "typecheck": "astro check && tsc --noEmit"
   },
   "dependencies": {
-    "@astrojs/mdx": "5.0.6",
-    "@astrojs/preact": "^5.1.3",
+    "@astrojs/mdx": "6.0.1",
+    "@astrojs/preact": "^5.1.4",
     "@astrojs/rss": "^4.0.18",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.3.0",
-    "astro": "6.3.7",
+    "astro": "6.4.2",
     "katex": "^0.17.0",
     "lucide-preact": "^1.16.0",
     "preact": "^10.29.2",

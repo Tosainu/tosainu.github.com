@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx';
 import preact from '@astrojs/preact';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
+import { unified } from '@astrojs/markdown-remark';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -33,8 +34,10 @@ export default defineConfig({
         llvm: 'LLVM',
       },
     },
-    remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeKatex],
+    processor: unified({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
   },
   output: 'static',
   trailingSlash: 'always',

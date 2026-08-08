@@ -22,7 +22,7 @@
     "astro": "7.1.6",
     "katex": "^0.18.1",
     "lucide-preact": "^1.26.0",
-    "preact": "^10.29.7",
+    "preact": "^10.29.8",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "simple-icons": "^16.27.1",

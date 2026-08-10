@@ -32,7 +32,7 @@ export const author = {
   name: 'Kenta Sato',
   nickname: 'Tosainu',
   avatar: '/images/icon/cocoa.svg',
-  location: 'Tokyo, Japan (~2020 Aichi, Japan)',
+  location: 'Chiba, Japan (- July 2026: Tokyo, - Dec 2020: Aichi)',
   birthday: 'August 15th, 1995',
   job: 'Software Engineer',
   shortbio: '❤ Arch Linux, ごちうさ',

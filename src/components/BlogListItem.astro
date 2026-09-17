@@ -21,17 +21,15 @@ const data = { ...post.data, date: `${year}/${month}/${day}` };
   <div class="flex flex-row items-center text-sm">
     <Calendar />
     <span class="ml-2">{data.date}</span>
-    {
-      data.tags.length > 0 && (
-        <>
-          <Tag class="ml-4" />
-          {data.tags.map((t) => (
-            <span class="ml-2">
-              <LinkToTagPage tag={t} />
-            </span>
-          ))}
-        </>
-      )
-    }
+    {data.tags.length > 0 && (
+      <>
+        <Tag class="ml-4" />
+        {data.tags.map((t) => (
+          <span class="ml-2">
+            <LinkToTagPage tag={t} />
+          </span>
+        ))}
+      </>
+    )}
   </div>
 </section>

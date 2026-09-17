@@ -29,7 +29,5 @@ const { page } = Astro.props;
 ---
 
 <BlogList lang={Config.blog.lang} pageTitle={`Tag: ${tag} | ${Config.blog.title}`} noindex={page.currentPage != 1} page={page} description={Config.blog.description}>
-  <div class="container mx-auto my-7 px-2">
-    Tag: {tag}
-  </div>
+  <div class="container mx-auto my-7 px-2">Tag: {tag}</div>
 </BlogList>

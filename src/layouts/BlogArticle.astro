@@ -19,24 +19,20 @@ const { frontmatter: data, ...props } = Astro.props;
     <article>
       <header class="mb-7 bg-gray-50 py-7">
         <div class="container mx-auto px-2 py-2">
-          <h1 class="mb-4 text-4xl font-bold">
-            {data.title}
-          </h1>
+          <h1 class="mb-4 text-4xl font-bold">{data.title}</h1>
           <div class="flex flex-row items-center text-sm">
             <Calendar />
             <span class="ml-2">{data.date}</span>
-            {
-              data.tags.length > 0 && (
-                <>
-                  <Tag class="ml-4" />
-                  {data.tags.map((t) => (
-                    <span class="ml-2">
-                      <LinkToTagPage tag={t} />
-                    </span>
-                  ))}
-                </>
-              )
-            }
+            {data.tags.length > 0 && (
+              <>
+                <Tag class="ml-4" />
+                {data.tags.map((t) => (
+                  <span class="ml-2">
+                    <LinkToTagPage tag={t} />
+                  </span>
+                ))}
+              </>
+            )}
           </div>
         </div>
       </header>

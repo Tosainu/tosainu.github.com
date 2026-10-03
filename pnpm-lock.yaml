@@ -45,8 +45,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0(supports-color@7.2.0)
       simple-icons:
-        specifier: ^16.32.0
-        version: 16.32.0
+        specifier: ^16.33.0
+        version: 16.33.0
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -2936,8 +2936,8 @@ packages:
   simple-code-frame@1.3.0:
     resolution: {integrity: sha512-MB4pQmETUBlNs62BBeRjIFGeuy/x6gGKh7+eRUemn1rCFhqo7K+4slPqsyizCbcbYLnaYqaoZ2FWsZ/jN06D8w==}
 
-  simple-icons@16.32.0:
-    resolution: {integrity: sha512-BwqATHxAulx7X6kNdTkecy7PBjLkgtAHcgrwYLd9iA+cD2At9DzhJwdwaSELk2+aZe01IfiM/Wxtyp68Dvup2A==}
+  simple-icons@16.33.0:
+    resolution: {integrity: sha512-z14u6A8ngAg9mgERRsNO8YkjIMefehIpBk7A8Dz3Gd91945qFP19MLPSHgV4z8P5u/MRYd5e07OTzaDoB4d6qA==}
     engines: {node: '>=0.12.18'}
 
   sisteransi@1.0.5:
@@ -6675,7 +6675,7 @@ snapshots:
     dependencies:
       kolorist: 1.8.0
 
-  simple-icons@16.32.0: {}
+  simple-icons@16.33.0: {}
 
   sisteransi@1.0.5: {}
 

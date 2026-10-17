@@ -33,8 +33,8 @@ importers:
         specifier: ^0.19.0
         version: 0.19.0
       lucide-preact:
-        specifier: ^1.52.0
-        version: 1.52.0(preact@10.29.8)
+        specifier: ^1.57.0
+        version: 1.57.0(preact@10.29.8)
       preact:
         specifier: ^10.29.8
         version: 10.29.8(preact-render-to-string@6.8.0)
@@ -2369,8 +2369,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-preact@1.52.0:
-    resolution: {integrity: sha512-bTWQJ4tzCWZ3UipPGRwj/m4bnojnObP2lD2NvznFNlTbzX6Q8b+F43d2cpegkS88B1zF6ioB7QqAPFgRJnd87A==}
+  lucide-preact@1.57.0:
+    resolution: {integrity: sha512-SfjifQYoVSYoKjMs1plpTSLgZi+rW2YnmVUXkXP/Jw/jLW9I7OTZ5Ftrahtb+GrwFyCmbS1j1zz3VxW7JLSvjQ==}
     peerDependencies:
       preact: ^10.27.2 || ^11.0.0-0
 
@@ -3893,7 +3893,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.2.5(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@bruits/satteri-win32-arm64-msvc@0.10.5':
@@ -4278,17 +4278,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
-    dependencies:
-      '@emnapi/core': 1.11.1
-      '@emnapi/runtime': 1.11.1
-      '@tybys/wasm-util': 0.10.4
-    optional: true
-
   '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     dependencies:
       '@emnapi/core': 1.11.3
       '@emnapi/runtime': 1.11.3
+      '@tybys/wasm-util': 0.10.4
+    optional: true
+
+  '@napi-rs/wasm-runtime@1.2.5(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
+    dependencies:
+      '@emnapi/core': 1.11.1
+      '@emnapi/runtime': 1.11.1
       '@tybys/wasm-util': 0.10.4
     optional: true
 
@@ -5792,7 +5792,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-preact@1.52.0(preact@10.29.8):
+  lucide-preact@1.57.0(preact@10.29.8):
     dependencies:
       preact: 10.29.8(preact-render-to-string@6.8.0)
 

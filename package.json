@@ -25,7 +25,7 @@
     "preact": "^11.1.0",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
-    "simple-icons": "^16.35.0",
+    "simple-icons": "^16.36.0",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
